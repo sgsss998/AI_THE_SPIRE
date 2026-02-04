@@ -1,0 +1,55 @@
+# AI_THE_SPIRE 默认配置文件
+# 所有可配置参数都在这里，无需修改代码
+
+# 训练相关配置
+training:
+  # 数据目录
+  data_dir: data
+  raw_dir: data/raw
+  processed_dir: data/processed
+  models_dir: data/models
+
+  # 训练参数
+  train_val_split: 0.2
+  early_stopping_patience: 10
+
+  # 强化学习参数
+  rl_algorithm: PPO
+  total_timesteps: 1000000
+  n_envs: 1
+  gamma: 0.99
+
+  # 模型配置
+  model:
+    type: sklearn  # sklearn, torch, tf
+    hidden_layers: [64, 32]
+    learning_rate: 0.001
+    batch_size: 32
+    epochs: 100
+    max_iter: 500
+
+# 游戏相关配置
+game:
+  character: silent  # silent, ironclad, defect
+  ascension: 0
+  max_hp: 70
+  base_energy: 3
+  card_library_path: configs/cards/silent.yaml
+  monster_library_path: configs/monsters.yaml
+
+# 日志配置
+log:
+  level: INFO
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  file: null
+  enable_slim_logging: true  # 精简日志（仅保留训练所需字段）
+
+# 协议配置
+protocol:
+  null_stuck_timeout: 10.0  # null 状态超时时间（秒）
+  fallback_commands:
+    - key Confirm
+    - wait
+    - choose 0
+    - choose 1
+    - choose 2
