@@ -1,0 +1,7 @@
+# StS 安装路径（请复制本文件为 sts_path.txt 并填写实际路径）
+/path/to/steam/steamapps/common/SlayTheSpire
+
+# StS 自带 JRE（Java 8），无需单独安装
+# 启动 ModTheSpire 时使用：
+# STS_JRE=<StS路径>/SlayTheSpire.app/Contents/Resources/jre/bin/java
+# 在 StS Resources 目录下执行：$STS_JRE -jar ModTheSpire.jar

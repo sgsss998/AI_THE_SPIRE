@@ -10,14 +10,14 @@
 
 ```bash
 # 基本用法
-python scripts/train_sl.py --data-dir combat_logs/sessions
+python scripts/train_sl.py --data-dir data/A20_Slient/Raw_Data_json_FORSL
 
 # 使用 PyTorch 后端
-python scripts/train_sl.py --data-dir combat_logs/sessions --model-type pytorch
+python scripts/train_sl.py --data-dir data/A20_Slient/Raw_Data_json_FORSL --model-type pytorch
 
 # 自定义参数
 python scripts/train_sl.py \
-    --data-dir combat_logs/sessions \
+    --data-dir data/A20_Slient/Raw_Data_json_FORSL \
     --model-type pytorch \
     --hidden-layers 128 64 \
     --epochs 200 \
@@ -143,33 +143,33 @@ python scripts/interactive.py \
 
 ```bash
 # 1. 用规则 Agent 收集数据
-# （运行游戏，数据自动保存到 combat_logs/sessions/）
+# （运行游戏，数据自动保存到 data/）
 
 # 2. 训练 SL 模型
 python scripts/train_sl.py \
-    --data-dir combat_logs/sessions \
+    --data-dir data/A20_Slient/Raw_Data_json_FORSL \
     --model-type pytorch \
     --epochs 200 \
-    --output models/sl_base.pkl
+    --output data/models/sl_base.pkl
 
 # 3. 用 SL 模型 Warm Start RL
 python scripts/train_rl.py \
-    --sl-model models/sl_base.pkl \
+    --sl-model data/models/sl_base.pkl \
     --timesteps 1000000 \
     --n-envs 8 \
-    --output models/rl_final.zip
+    --output data/models/rl_final.zip
 
 # 4. 评估最终模型
 python scripts/evaluate.py \
     --agent-type rl \
-    --model models/rl_final.zip \
+    --model data/models/rl_final.zip \
     --episodes 100 \
     --output results/final_eval.json
 
 # 5. 交互式测试
 python scripts/interactive.py \
     --agent-type rl \
-    --model models/rl_final.zip
+    --model data/models/rl_final.zip
 ```
 
 ## 工厂函数
@@ -189,18 +189,12 @@ agent = create_agent("supervised", "MySL", config={"model_type": "pytorch"})
 agent = create_agent("rl", "MyRL", config={"algorithm": "ppo"})
 ```
 
-## 旧版脚本（保留兼容）
+## 其他脚本
 
-以下旧版脚本保留用于兼容性，但建议使用新版脚本：
-
-- `train_model_sklearn.py`: 旧版 sklearn 训练
-- `test_model_inference.py`: 旧版推理测试
-- `read_state.py` / `read_state_rule_based.py`: 状态读取
-- `strategy.py` / `game_rules.py`: 旧版策略
-- `encode_state.py`: 状态编码
-- `prepare_step_data.py`: 数据准备
-- `convert_raw_to_turns.py`: 数据转换
-- `load_data.py`: 数据加载
-- `replay_test.py`: 日志回放测试
-- `track_progress.py`: 进度追踪
-- `send_input.py`: 测试输入
+| 脚本 | 说明 |
+|------|------|
+| `read_state.py` | 状态读取与调试 |
+| `extract_mod_schema.py` | 从 Mod 日志提取参数完整清单 |
+| `extract_ids_from_raw.py` | 从 Raw JSON 提取卡牌/遗物 ID |
+| `test_action_client.py` | 动作客户端测试 |
+| `test_action_server.py` | 动作服务端测试 |

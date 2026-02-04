@@ -32,18 +32,23 @@ AI_THE_SPIRE 是一个基于 Python 的杀戮尖塔 AI 项目，采用模块化�
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 
-# 安装依赖
-pip install -r requirements.txt
+# 安装依赖（见 requirements.md 或使用下方最小安装）
+pip install numpy scipy scikit-learn pyyaml
+# 可选：torch stable-baselines3 gymnasium（RL 训练）
 ```
 
-### 2. 运行规则 Agent
+### 2. 配置 StS 路径
+
+复制 `configs/sts_path.txt.example` 为 `configs/sts_path.txt`，填写本地 Slay the Spire 安装路径。
+
+### 3. 运行规则 Agent
 
 ```bash
 # 使用规则 Agent 自动玩一局
 python scripts/train.py interactive --agent-type rule
 ```
 
-### 3. 训练你的第一个模型
+### 4. 训练模型
 
 ```bash
 # 完整训练流程：收集数据 → 训练 SL → 训练 RL
@@ -59,59 +64,73 @@ python scripts/train.py pipeline \
 
 ```
 AI_THE_SPIRE/
-├── src/                    # 新架构源代码（推荐使用）
-│   ├── core/               # 核心数据结构
-│   │   ├── game_state.py   # GameState, Card, Monster 等
-│   │   ├── action.py       # Action 数据类
-│   │   └── config.py       # 配置管理
-│   ├── protocol/           # Mod 通信协议
-│   │   ├── reader.py       # stdin JSON 读取
-│   │   ├── writer.py       # stdout 命令发送
-│   │   └── parser.py       # 协议解析器
-│   ├── env/                # Gymnasium 环境
-│   │   └── sts_env.py      # StsEnvironment
-│   ├── agents/             # AI Agent
-│   │   ├── base.py         # Agent 基类
-│   │   ├── rule_based.py   # 规则 Agent
-│   │   ├── supervised.py   # 监督学习 Agent
-│   │   └── rl_agent.py     # 强化学习 Agent
-│   └── training/           # 训练模块
-│       ├── encoder.py      # 状态编码器
-│       └── experiment.py   # 实验管理
+├── src/                        # 源代码
+│   ├── core/                   # 核心数据结构
+│   │   ├── game_state.py       # GameState, Card, Monster 等
+│   │   ├── action.py           # Action 数据类
+│   │   └── config.py           # 配置管理
+│   ├── protocol/               # Mod 通信协议
+│   │   ├── reader.py           # stdin JSON 读取
+│   │   ├── writer.py           # stdout 命令发送
+│   │   └── parser.py           # 协议解析器
+│   ├── env/                    # Gymnasium 环境
+│   │   └── sts_env.py          # StsEnvironment, StsEnvWrapper
+│   ├── agents/                 # AI Agent
+│   │   ├── base.py             # Agent 基类, create_agent
+│   │   ├── rule_based.py       # 规则 Agent
+│   │   ├── supervised.py       # 监督学习 Agent
+│   │   └── rl_agent.py         # 强化学习 Agent
+│   └── training/               # 训练模块
+│       ├── encoder.py          # 状态编码器（旧版）
+│       ├── encoder_v2.py       # 状态编码器 V2（723 维）
+│       ├── encoder_utils.py   # ID 归一化与查表
+│       ├── power_parser.py     # Power 解析（力量/虚弱等）
+│       └── experiment.py      # 实验管理
 │
-├── scripts/                # 训练和测试脚本
-│   ├── train.py            # ⭐ 统一训练入口
-│   ├── collect_data.py     # 数据收集
-│   ├── train_sl.py         # SL 训练
-│   ├── train_rl.py         # RL 训练
-│   ├── evaluate.py         # 模型评估
-│   ├── interactive.py      # 交互测试
-│   └── README.md           # 脚本详细文档
+├── scripts/                    # 脚本
+│   ├── train.py                # ⭐ 统一训练入口
+│   ├── collect_data.py         # 数据收集
+│   ├── train_sl.py             # SL 训练
+│   ├── train_rl.py             # RL 训练
+│   ├── evaluate.py             # 模型评估
+│   ├── interactive.py          # 交互测试
+│   ├── read_state.py           # 状态读取
+│   ├── extract_mod_schema.py   # Mod 日志参数提取
+│   ├── extract_ids_from_raw.py # Raw 数据 ID 提取
+│   ├── test_action_client.py   # 动作客户端测试
+│   ├── test_action_server.py   # 动作服务端测试
+│   └── README.md               # 脚本详细文档
 │
-├── tests/                  # 单元测试（104 个测试）
-│   ├── test_core/          # 核心模块测试
-│   ├── test_protocol/      # 协议层测试
-│   ├── test_env/           # 环境测试
-│   ├── test_agents/        # Agent 测试
-│   └── test_training/      # 训练模块测试
+├── tests/                      # 单元测试
+│   ├── test_core/              # 核心模块测试
+│   ├── test_protocol/          # 协议层测试
+│   ├── test_env/               # 环境测试
+│   ├── test_agents/            # Agent 测试
+│   └── test_training/          # 训练模块测试
 │
-├── configs/                # 配置文件
-│   └── default.yaml        # 默认配置
+├── configs/                    # 配置文件
+│   ├── default.yaml            # 默认配置
+│   ├── encoder_v2_ids.yaml     # 卡牌/遗物/药水 ID 映射
+│   ├── sts_path.txt            # StS 安装路径（需自行配置，不提交）
+│   ├── sts_path.txt.example    # 路径配置示例
+│   └── window_policy.txt       # 窗口与焦点策略
 │
-├── combat_logs/            # 游戏日志
-│   └── sessions/           # 会话数据（用于训练）
+├── data/                       # 数据目录（不提交，见 .gitignore）
+│   ├── A20_Slient/             # A20 静默人类对局
+│   │   └── Raw_Data_json_FORSL/
+│   └── models/                 # 训练好的模型
 │
-├── experiments/            # 实验记录
-│   └── index.json          # 实验索引
+├── docs/                       # 文档
+│   ├── API.md                  # API 文档
+│   ├── ARCHITECTURE.md         # 架构说明
+│   ├── rules/                  # 游戏规则文档
+│   ├── planning_and_logs/      # 计划与开发日志
+│   ├── 状态向量s_技术规范.md   # 状态向量 s 技术规范
+│   ├── 状态向量s_前218维_表达式清单.md
+│   └── 杀戮尖塔_官方本体A20_卡牌遗物穷尽清单.md
 │
-├── models/                 # 训练好的模型
-│
-├── docs/                   # 文档
-│   ├── rules/              # 游戏规则文档
-│   └── phase4-plan.md      # SL+RL 计划
-│
-├── DEVELOPMENT_LOG.md      # ⚠️ 开发日志（不可删除）
-└── README.md               # 本文件
+├── requirements.md             # 依赖说明（含版本与兼容性）
+└── README.md                   # 本文件
 ```
 
 ---
@@ -128,7 +147,7 @@ python scripts/train.py --help
 python scripts/train.py collect --games 100
 
 # 训练 SL 模型
-python scripts/train.py sl --data-dir combat_logs/sessions
+python scripts/train.py sl --data-dir data/A20_Slient/Raw_Data_json_FORSL
 
 # 训练 RL 模型
 python scripts/train.py rl --timesteps 1M
@@ -142,11 +161,11 @@ python scripts/train.py pipeline \
 # 评估模型
 python scripts/train.py eval \
     --agent-type rl \
-    --model models/rl.zip \
+    --model data/models/rl.zip \
     --episodes 100
 
 # 交互测试
-python scripts/train.py interactive --agent-type rl --model models/rl.zip
+python scripts/train.py interactive --agent-type rl --model data/models/rl.zip
 ```
 
 ---
@@ -174,13 +193,13 @@ from src.agents import SupervisedAgentImpl, load_data_from_sessions
 agent = SupervisedAgentImpl("MySL", config={"model_type": "pytorch"})
 
 # 加载数据
-states, actions = load_data_from_sessions("combat_logs/sessions")
+states, actions = load_data_from_sessions("data/A20_Slient/Raw_Data_json_FORSL")
 
 # 训练
 result = agent.train(states, actions, epochs=200)
 
 # 保存
-agent.save("models/my_sl.pkl")
+agent.save("data/models/my_sl.pkl")
 
 # 使用
 agent.set_training_mode(False)
@@ -207,7 +226,7 @@ agent.set_environment(env)
 agent.train(total_timesteps=1000000, n_envs=4)
 
 # 保存
-agent.save("models/my_rl.zip")
+agent.save("data/models/my_rl.zip")
 ```
 
 ---
@@ -231,7 +250,7 @@ exp_id = create_experiment(
 tracker = get_tracker()
 tracker.complete_experiment(
     exp_id,
-    model_path="models/ppo.zip",
+    model_path="data/models/ppo.zip",
     notes="A20 胜率 65%"
 )
 
@@ -251,8 +270,8 @@ comparison = tracker.compare_experiments([exp_id1, exp_id2])
 
 ```yaml
 training:
-  data_dir: "combat_logs/sessions"
-  models_dir: "models"
+  data_dir: "data"
+  models_dir: "data/models"
   train_val_split: 0.2
   epochs: 100
   batch_size: 32
@@ -279,8 +298,6 @@ python -m pytest tests/test_agents/ -v
 python -m pytest tests/test_training/ -v
 ```
 
-当前测试覆盖：**104 个测试通过**
-
 ---
 
 ## 依赖问题说明
@@ -301,18 +318,16 @@ python scripts/train.py sl --data-dir data/ --model-type pytorch
 
 ---
 
-## 开发日志
-
-所有项目改动记录在 [DEVELOPMENT_LOG.md](./DEVELOPMENT_LOG.md) 中，**不可删除**。
-
----
-
 ## 文档索引
 
-- [DEVELOPMENT_LOG.md](./DEVELOPMENT_LOG.md) - 开发日志
+- [requirements.md](./requirements.md) - 依赖说明与版本
 - [scripts/README.md](./scripts/README.md) - 脚本详细文档
-- [docs/phase4-plan.md](./docs/phase4-plan.md) - SL+RL 计划
+- [docs/API.md](./docs/API.md) - API 文档
+- [docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md) - 架构说明
 - [docs/rules/](./docs/rules/) - 游戏规则文档
+- [docs/planning_and_logs/](./docs/planning_and_logs/) - 计划与开发日志
+- [docs/状态向量s_技术规范.md](./docs/状态向量s_技术规范.md) - 状态向量规范
+- [docs/杀戮尖塔_官方本体A20_卡牌遗物穷尽清单.md](./docs/杀戮尖塔_官方本体A20_卡牌遗物穷尽清单.md) - 卡牌遗物穷尽清单
 
 ---
 
