@@ -1,31 +1,36 @@
-# Encoder V2 映射表 - 用于 ~723 维状态编码（可扩展至 ~1500）
-# 数据来源：Slay the Spire Wiki (slaythespire.wiki.gg)、Raw_Data 提取、encoder.py
+# Encoder V2 映射表 - 用于 1840 维状态编码
+# 数据来源：杀戮尖塔穷尽清单、Slay the Spire Wiki、Raw_Data 验证
 # 验证日期：2025-02
 # 未知 ID 映射到 index 0 (UNKNOWN)
 # 编码器应对 ID 做归一化：忽略大小写、空格/下划线互换
 
 # ========== 卡牌 ID (Card IDs) ==========
 # 格式：id -> index (0-based)，用于 multi-hot / one-hot
-# 角色后缀：_R=铁甲(Ironclad), _G=静默(Silent), _B=缺陷(Defect), _P=观者(Watcher)
-# Mod 可能发送 "Blade Dance" 或 "Blade_Dance"，编码器需归一化
-# 游戏共约 270 张卡，此处取 200 维
+# 角色后缀：_R=铁甲, _G=静默, _B=缺陷, _P=观者
+# 穷尽：UNKNOWN + 诅咒14 + 状态12 + 铁甲73 + 静默73 + 缺陷73 + 观者75 + 无色47 = 368（编码器取前271）
 cards:
   # 0: UNKNOWN 占位（编码器将未知 ID 映射到此）
   - UNKNOWN
-  # 诅咒与状态（优先，常见于牌库）
+  # 诅咒 14（穷尽清单 1.7）
   - AscendersBane
-  - Slimed
-  - Dazed
-  - Wound
-  - Burn
-  - Void
+  - Clumsy
+  - CurseOfTheBell
+  - Decay
   - Doubt
-  - Regret
-  - Shame
   - Injury
   - Necronomicurse
-  - CurseOfTheBell
+  - Normality
+  - Pain
   - Pride
+  - Regret
+  - Shame
+  - Writhe
+  # 状态 12（穷尽清单 1.8，常见 5+ 扩展）
+  - Burn
+  - Dazed
+  - Slimed
+  - Void
+  - Wound
   # 铁甲战士 (Ironclad) - Basic
   - Strike_R
   - Defend_R
@@ -326,71 +331,24 @@ cards:
   - Miracle
   - Omega
   - RitualDagger
-  - Shiv
+  # 注：Shiv 已在静默 Common 中，此处不重复
 
 # ========== 遗物 ID (Relic IDs) ==========
-# 游戏共约 179 个遗物，Mod 可能发送 "Ring of the Snake" 或 "RingoftheSnake"
-# 参考：https://slaythespire.wiki.gg/wiki/Relics_List
+# 穷尽 180：UNKNOWN + 179 遗物，去重，统一 ID 格式（如 Snecko Skull）
 relics:
   - UNKNOWN
-  # 起始遗物
+  # 起始遗物 4
   - Ring of the Snake
   - Burning Blood
   - Cracked Core
   - Pure Water
-  - NeowsBlessing
-  # 常见遗物（Raw_Data + Wiki）
-  - Bag of Marbles
-  - Bag of Preparation
-  - Golden Idol
-  - Nunchaku
-  - Singing Bowl
-  - Snake Skull
-  - Gambling Chip
-  - Girya
-  - HandDrill
-  - MealTicket
-  - Molten Egg 2
-  - Mummified Hand
-  - Ornamental Fan
-  - Sling
-  - StoneCalendar
-  - Toy Ornithopter
-  - TwistedFunnel
-  - Vajra
-  # 通用遗物（Wiki 验证）
-  - anchor
-  - bag_of_preparation
-  - bell
-  - blood_vial
-  - busted_crown
-  - ceramic_fish
-  - chemical_x
-  - cursed_key
-  - dream_catcher
-  - ectoplasm
-  - frozen_egg
-  - frozen_eye
-  - gambling_chip
-  - hand_drill
-  - incense_burner
-  - lantern
-  - matryoshka
-  - meat_bucket
-  - odd_mushroom
-  - old_coin
-  - orange_pellets
-  - paper_frog
-  - ring_of_the_snake
-  - kunai
-  - shuriken
-  - burning_blood
-  - cracked_core
-  - vajra
+  # 普通遗物 43（去重，穷尽清单 2.3）
   - Akabeko
+  - Anchor
   - Ancient Tea Set
   - Art of War
   - Bag of Marbles
+  - Bag of Preparation
   - Blood Vial
   - Bronze Scales
   - Centennial Puzzle
@@ -417,6 +375,7 @@ relics:
   - The Boot
   - Tiny Chest
   - Toy Ornithopter
+  - Vajra
   - War Paint
   - Whetstone
   - Blue Candle
@@ -557,8 +516,7 @@ relics:
   - Warped Tongs
 
 # ========== 药水 ID (Potion IDs) ==========
-# 游戏约 40 种药水，Mod 可能发送 "LiquidMemories" 或 "Liquid Memories"
-# 参考：https://slaythespire.wiki.gg/wiki/Potions_List
+# 穷尽 45：UNKNOWN + 约 44 种药水
 potions:
   - UNKNOWN
   - Potion Slot
@@ -607,8 +565,7 @@ potions:
   - Ambrosia
 
 # ========== Power ID (Buff/Debuff) ==========
-# 用于玩家与怪物的 powers 列表，Wiki Buffs + Debuffs
-# Mod 发送 id 如 "Anger", "Curl Up", "Vulnerable"
+# 穷尽 80：UNKNOWN + 玩家/怪物 Buffs、Debuffs
 powers:
   - UNKNOWN
   # Raw_Data 验证
@@ -681,6 +638,27 @@ powers:
   - Confusion
   - Slow
   - No Draw
+  # 怪物/扩展 Powers（补足至 80）
+  - Surrounded
+  - Sharp Hide
+  - Mode Shift
+  - Invincible
+  - Malleable
+  - Reactive
+  - Time Warp
+  - Spore Cloud
+  - Explosive
+  - Life Link
+  - Minion
+  - Ritual
+  - TheBomb
+  - BackAttack
+  - BeatOfDeath
+  - Curiosity
+  - Pen Nib
+  - Phantasmal
+  - GainStrength
+  - LoseDexterity
 
 # ========== 意图类型 (Intent) ==========
 # Mod 发送的 intent 字符串，规格文档要求 13 种

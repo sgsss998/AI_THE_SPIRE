@@ -28,7 +28,7 @@ AI_THE_SPIRE/
 │   │   └── rl_agent.py            # 强化学习 Agent，PPO/A2C/DQN
 │   └── training/                  # 训练相关
 │       ├── encoder.py             # 状态编码器（旧版）
-│       ├── encoder_v2.py          # 状态编码器 V2，把 Mod 状态转成 723 维向量 s
+│       ├── encoder_v2.py          # 状态编码器 V2，把 Mod 状态转成 1840 维向量 s（与 Mod 日志互通）
 │       ├── encoder_utils.py       # ID 归一化、卡牌/遗物查表（依赖 encoder_v2_ids.yaml）
 │       ├── power_parser.py        # 从 player.powers 解析力量、虚弱、易伤等数值
 │       └── experiment.py          # 实验跟踪，记录训练 runs、模型路径、指标

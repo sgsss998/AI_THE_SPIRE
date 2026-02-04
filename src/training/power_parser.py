@@ -15,6 +15,8 @@ WEAK_IDS = {"weakened", "weak"}  # 虚弱
 VULNERABLE_IDS = {"vulnerable"}  # 易伤
 FRAIL_IDS = {"frail"}  # 脆弱
 FOCUS_IDS = {"bias", "focus"}  # 集中（缺陷用）
+POISON_IDS = {"poison"}  # 中毒（怪物）
+CURL_UP_IDS = {"curl_up"}  # 蜷缩（怪物）
 
 
 def _sum_power_amounts(powers: List[Dict[str, Any]], target_ids: set) -> int:
@@ -55,3 +57,13 @@ def parse_frail(powers: List[Dict[str, Any]]) -> int:
 def parse_focus(powers: List[Dict[str, Any]]) -> int:
     """从 player.powers 解析集中值（缺陷角色）"""
     return _sum_power_amounts(powers, FOCUS_IDS)
+
+
+def parse_poison(powers: List[Dict[str, Any]]) -> int:
+    """从 powers 解析中毒层数（玩家或怪物）"""
+    return _sum_power_amounts(powers, POISON_IDS)
+
+
+def parse_curl_up(powers: List[Dict[str, Any]]) -> int:
+    """从 powers 解析蜷缩层数（怪物）"""
+    return _sum_power_amounts(powers, CURL_UP_IDS)

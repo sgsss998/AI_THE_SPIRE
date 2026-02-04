@@ -1,6 +1,6 @@
 # 状态向量 s 技术规范
 
-> 核心：s 里的信息只能来自 Mod 日志的 state；用 multi-hot、one-hot 等办法把少量参数展开成 723 维（可扩到 ~1500）。
+> 核心：s 里的信息只能来自 Mod 日志的 state；用 multi-hot、one-hot 等办法展开成 **1840 维**。与 Mod 日志数据互通，字段路径一致。
 
 ---
 
@@ -24,7 +24,7 @@
 
 ---
 
-## 二、向量块设计（723 维）
+## 二、向量块设计（1840 维，见穷尽计划详细版）
 
 | 区块 | 维度 | 从哪来 | 咋编码 |
 |------|------|--------|--------|
@@ -56,7 +56,7 @@
 
 ## 四、ID 和归一化
 
-- **ID 从哪来**：`configs/encoder_v2_ids.yaml`，cards 200 个、relics 200、potions 50、powers 60、intents 13
+- **ID 从哪来**：`configs/encoder_v2_ids.yaml`，cards 271、relics 180、potions 45、powers 80、intents 13
 - **Raw_Data**：`data/A20_Slient/Raw_Data_json_FORSL/`，脚本 `extract_mod_schema.py`、`extract_ids_from_raw.py`
 - 未知 ID → 编号 0；编码前把 id 归一化（小写、空格和下划线统一）
 - **非战斗**：没有 combat_state 时，区块 2~5、7 全 0；区块 1 只用 game_state 里能拿到的
@@ -68,5 +68,12 @@
 1. [ ] 确认 encoder_v2_ids.yaml 的维度
 2. [ ] 实现 StateEncoderV2，只从保留字段读
 3. [ ] 实现 player.powers → 力量/虚弱/易伤 等解析
-4. [ ] 实现 8 个区块编码，拼成 723 维
+4. [x] 实现 10 个区块编码，拼成 1840 维（见 `docs/planning_and_logs/状态向量s_穷尽计划_详细版.md`）
 5. [ ] 缺的字段用默认值
+
+---
+
+## 附录：穷尽计划
+
+完整 1840 维规格、Mod 字段路径、实施检查清单见：
+[状态向量s_穷尽计划_详细版](../planning_and_logs/状态向量s_穷尽计划_详细版.md)
