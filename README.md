@@ -1,336 +1,141 @@
-# AI_THE_SPIRE — 杀戮尖塔 AI 开发项目
+# AI_THE_SPIRE
 
-本地开发针对 Slay the Spire 的小型 AI 模型（Mac Mini M4 16GB），从「能自动玩一局」到「可训练、可扩展」，最终可冲击 A20 连胜。**终极目标：NoSL 盗贼（静默猎手）28 连胜，超越人类 NoSL 盗贼 27 连胜纪录。**
+**A20 进阶静默猎手，冲击人类连胜记录的终极目标。** NoSL 盗贼人类纪录 27 连胜，本项目目标超越。
 
----
-
-## 项目概述
-
-AI_THE_SPIRE 是一个基于 Python 的杀戮尖塔 AI 项目，采用模块化架构设计，支持：
-
-- **规则驱动 AI**：基于预定义规则的决策系统
-- **监督学习 (SL)**：从游戏数据中学习策略
-- **强化学习 (RL)**：通过环境交互优化策略
-- **SL → RL Warm Start**：用 SL 模型初始化 RL 训练
-
-### 技术栈
-
-- **通信**：CommunicationMod (stdin/stdout JSON 协议)
-- **环境**：Gymnasium (OpenAI Gym 标准)
-- **SL 后端**：sklearn / PyTorch
-- **RL 框架**：Stable-Baselines3 (PPO, A2C, DQN)
-- **实验管理**：内置实验跟踪系统
+规则 Agent + 监督学习 (SL) + 强化学习 (RL)，三种方式从易到难：规则是写死的策略，SL 是跟人类学，RL 是 AI 自己打自己练。
 
 ---
 
-## 快速开始
-
-### 1. 安装依赖
-
-```bash
-# 创建虚拟环境
-python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
-
-# 安装依赖（见 requirements.md 或使用下方最小安装）
-pip install numpy scipy scikit-learn pyyaml
-# 可选：torch stable-baselines3 gymnasium（RL 训练）
-```
-
-### 2. 配置 StS 路径
-
-复制 `configs/sts_path.txt.example` 为 `configs/sts_path.txt`，填写本地 Slay the Spire 安装路径。
-
-### 3. 运行规则 Agent
-
-```bash
-# 使用规则 Agent 自动玩一局
-python scripts/train.py interactive --agent-type rule
-```
-
-### 4. 训练模型
-
-```bash
-# 完整训练流程：收集数据 → 训练 SL → 训练 RL
-python scripts/train.py pipeline \
-    --collect-games 50 \
-    --sl-epochs 100 \
-    --rl-timesteps 100000
-```
-
----
-
-## 项目结构
+## 项目结构（事无巨细）
 
 ```
 AI_THE_SPIRE/
-├── src/                        # 源代码
-│   ├── core/                   # 核心数据结构
-│   │   ├── game_state.py       # GameState, Card, Monster 等
-│   │   ├── action.py           # Action 数据类
-│   │   └── config.py           # 配置管理
-│   ├── protocol/               # Mod 通信协议
-│   │   ├── reader.py           # stdin JSON 读取
-│   │   ├── writer.py           # stdout 命令发送
-│   │   └── parser.py           # 协议解析器
-│   ├── env/                    # Gymnasium 环境
-│   │   └── sts_env.py          # StsEnvironment, StsEnvWrapper
-│   ├── agents/                 # AI Agent
-│   │   ├── base.py             # Agent 基类, create_agent
-│   │   ├── rule_based.py       # 规则 Agent
-│   │   ├── supervised.py       # 监督学习 Agent
-│   │   └── rl_agent.py         # 强化学习 Agent
-│   └── training/               # 训练模块
-│       ├── encoder.py          # 状态编码器（旧版）
-│       ├── encoder_v2.py       # 状态编码器 V2（723 维）
-│       ├── encoder_utils.py   # ID 归一化与查表
-│       ├── power_parser.py     # Power 解析（力量/虚弱等）
-│       └── experiment.py      # 实验管理
+├── src/                           # 核心源代码
+│   ├── core/                      # 游戏状态与动作定义
+│   │   ├── game_state.py          # GameState、Card、Monster、CombatState 等数据结构
+│   │   ├── action.py              # Action 数据类，所有可执行动作（出牌、选选项等）
+│   │   └── config.py              # 配置加载与解析
+│   ├── protocol/                  # 与 CommunicationMod 的通信层
+│   │   ├── reader.py              # 从 stdin 读取 Mod 发来的 JSON 状态
+│   │   ├── writer.py              # 向 stdout 发送命令（出牌、选选项等）
+│   │   └── parser.py              # 解析 JSON，转成 GameState
+│   ├── env/                       # RL 训练用的 Gymnasium 环境
+│   │   └── sts_env.py             # StsEnvironment、StsEnvWrapper，封装游戏为 step/reset 接口
+│   ├── agents/                    # AI 决策模块
+│   │   ├── base.py                # Agent 基类、create_agent 工厂函数
+│   │   ├── rule_based.py          # 规则 Agent，按预定义策略选动作
+│   │   ├── supervised.py          # 监督学习 Agent，用人类数据训练的模型决策
+│   │   └── rl_agent.py            # 强化学习 Agent，PPO/A2C/DQN
+│   └── training/                  # 训练相关
+│       ├── encoder.py             # 状态编码器（旧版）
+│       ├── encoder_v2.py          # 状态编码器 V2，把 Mod 状态转成 723 维向量 s
+│       ├── encoder_utils.py       # ID 归一化、卡牌/遗物查表（依赖 encoder_v2_ids.yaml）
+│       ├── power_parser.py        # 从 player.powers 解析力量、虚弱、易伤等数值
+│       └── experiment.py          # 实验跟踪，记录训练 runs、模型路径、指标
 │
-├── scripts/                    # 脚本
-│   ├── train.py                # ⭐ 统一训练入口
-│   ├── collect_data.py         # 数据收集
-│   ├── train_sl.py             # SL 训练
-│   ├── train_rl.py             # RL 训练
-│   ├── evaluate.py             # 模型评估
-│   ├── interactive.py          # 交互测试
-│   ├── read_state.py           # 状态读取
-│   ├── extract_mod_schema.py   # Mod 日志参数提取
-│   ├── extract_ids_from_raw.py # Raw 数据 ID 提取
-│   ├── test_action_client.py   # 动作客户端测试
-│   ├── test_action_server.py   # 动作服务端测试
-│   └── README.md               # 脚本详细文档
+├── scripts/                       # 可执行脚本
+│   ├── train.py                   # ⭐ 统一入口，collect/sl/rl/pipeline/eval/interactive 子命令
+│   ├── collect_data.py           # 收集人类对局数据，保存为 JSON
+│   ├── train_sl.py               # 监督学习训练
+│   ├── train_rl.py               # 强化学习训练
+│   ├── evaluate.py               # 评估 Agent 胜率等指标
+│   ├── interactive.py            # 让 AI 实际玩一局，观察行为
+│   ├── read_state.py             # 读取并打印当前游戏状态，调试用
+│   ├── extract_mod_schema.py     # 从 Mod 日志提取所有参数路径，排除法用
+│   ├── extract_ids_from_raw.py   # 从 Raw JSON 提取卡牌/遗物 ID，更新 encoder_v2_ids
+│   ├── test_action_client.py     # 动作客户端测试
+│   ├── test_action_server.py     # 动作服务端测试
+│   └── README.md                 # 脚本详细说明
 │
-├── tests/                      # 单元测试
-│   ├── test_core/              # 核心模块测试
-│   ├── test_protocol/          # 协议层测试
-│   ├── test_env/               # 环境测试
-│   ├── test_agents/            # Agent 测试
-│   └── test_training/          # 训练模块测试
+├── configs/                       # 配置文件
+│   ├── default.yaml              # 默认训练参数、游戏配置、日志配置
+│   ├── encoder_v2_ids.yaml       # 卡牌/遗物/药水/Power/Intent ID 映射表，编码器查表用
+│   ├── sts_path.txt              # StS 安装路径（本地配置，不提交）
+│   └── window_policy.txt         # 窗口与焦点策略（分辨率、全屏等）
 │
-├── configs/                    # 配置文件
-│   ├── default.yaml            # 默认配置
-│   ├── encoder_v2_ids.yaml     # 卡牌/遗物/药水 ID 映射
-│   ├── sts_path.txt            # StS 安装路径（需自行配置，不提交）
-│   ├── sts_path.txt.example    # 路径配置示例
-│   └── window_policy.txt       # 窗口与焦点策略
+├── data/                          # 数据目录（.gitignore，不提交）
+│   ├── A20_Slient/               # A20 静默人类对局
+│   │   └── Raw_Data_json_FORSL/  # 原始 JSON，每局一个文件
+│   └── models/                   # 训练好的模型 .pkl / .zip
 │
-├── data/                       # 数据目录（不提交，见 .gitignore）
-│   ├── A20_Slient/             # A20 静默人类对局
-│   │   └── Raw_Data_json_FORSL/
-│   └── models/                 # 训练好的模型
+├── docs/                          # 文档
+│   ├── README.md                 # 文档索引
+│   ├── API.md                    # API 文档
+│   ├── ARCHITECTURE.md           # 架构说明
+│   ├── rules/                    # 游戏规则与 Mod 协议
+│   │   ├── 00-index.md           # 规则总览
+│   │   ├── 01-game-flow.md       # 游戏流程
+│   │   ├── 02-combat-turn.md     # 战斗回合结构
+│   │   ├── 03-protocol.md        # CommunicationMod 协议
+│   │   ├── 04-data-recording.md   # 数据记录规则
+│   │   ├── 05-silent-basics.md    # 静默猎手基础
+│   │   ├── 06-ascension.md       # A20 难度加成
+│   │   ├── 07-llm-reference-sts-aislayer.md   # LLM 参考
+│   │   ├── 08-sts-ai-master-reference.md    # STS-AI-Master 参考
+│   │   └── ACTION_ID_MAP.md      # 动作 ID 映射
+│   ├── planning_and_logs/        # 计划与开发日志
+│   │   ├── DEVELOPMENT_LOG.md    # 开发日志
+│   │   ├── rules.md              # 规则
+│   │   ├── StS_AI开发计划-细颗粒度实施指南.md
+│   │   ├── 实施检查清单-可打印.md
+│   │   ├── 方案_Agent结合LLM_技术规范.md
+│   │   ├── 方案A_修改Mod记录人类动作_研究计划.md
+│   │   ├── 方案B_代理界面采集人类数据_技术规范.md
+│   │   └── 状态向量s_表达式与Mod转换_计划.md
+│   ├── 状态向量s_技术规范.md     # 状态向量 s 技术规范（排除法、维度、编码）
+│   ├── 状态向量s_前218维_表达式清单.md  # 前 218 维每维表达式
+│   └── 杀戮尖塔_官方本体A20_卡牌遗物穷尽清单.md  # 卡牌遗物穷尽清单
 │
-├── docs/                       # 文档
-│   ├── API.md                  # API 文档
-│   ├── ARCHITECTURE.md         # 架构说明
-│   ├── rules/                  # 游戏规则文档
-│   ├── planning_and_logs/      # 计划与开发日志
-│   ├── 状态向量s_技术规范.md   # 状态向量 s 技术规范
-│   ├── 状态向量s_前218维_表达式清单.md
-│   └── 杀戮尖塔_官方本体A20_卡牌遗物穷尽清单.md
+├── tests/                         # 单元测试
+│   ├── test_core/                # core 模块测试
+│   │   ├── test_game_state.py
+│   │   └── test_action_exhaustive.py
+│   ├── test_protocol/             # protocol 模块测试
+│   │   └── test_reader.py
+│   ├── test_env/                  # env 模块测试
+│   │   └── test_sts_env.py
+│   ├── test_agents/               # agents 模块测试
+│   │   ├── test_base.py
+│   │   ├── test_rule_based.py
+│   │   ├── test_supervised.py
+│   │   └── test_rl_agent.py
+│   └── test_training/             # training 模块测试
+│       └── test_experiment.py
 │
-├── requirements.md             # 依赖说明（含版本与兼容性）
-└── README.md                   # 本文件
+├── Received                       # Mod 通信管道（运行时用）
+├── Sending                        # Mod 通信管道（运行时用）
+├── requirements.md                # Python 依赖列表与版本说明
+├── rules_for_all.md               # Cursor 规则（RIPER-5 模式等）
+└── README.md                      # 本文件
 ```
 
 ---
 
-## 统一训练入口
-
-所有训练操作通过 `scripts/train.py` 进行：
+## 怎么跑
 
 ```bash
-# 查看帮助
-python scripts/train.py --help
+# 规则 Agent 自动玩一局（不需要模型）
+python scripts/train.py interactive --agent-type rule
 
-# 数据收集
-python scripts/train.py collect --games 100
-
-# 训练 SL 模型
-python scripts/train.py sl --data-dir data/A20_Slient/Raw_Data_json_FORSL
-
-# 训练 RL 模型
-python scripts/train.py rl --timesteps 1M
-
-# 完整流程（推荐）
-python scripts/train.py pipeline \
-    --collect-games 100 \
-    --sl-epochs 200 \
-    --rl-timesteps 1000000
-
-# 评估模型
-python scripts/train.py eval \
-    --agent-type rl \
-    --model data/models/rl.zip \
-    --episodes 100
-
-# 交互测试
-python scripts/train.py interactive --agent-type rl --model data/models/rl.zip
+# 完整训练：收集人类对局 → 训练 SL → 训练 RL
+python scripts/train.py pipeline --collect-games 50 --sl-epochs 100 --rl-timesteps 100000
 ```
+
+更多命令：`python scripts/train.py --help`
 
 ---
 
-## Agent 使用示例
+## 需要什么资源、去哪找
 
-### 规则 Agent
-
-```python
-from src.agents import create_agent
-
-# 创建规则 Agent
-agent = create_agent("rule", "MyRule")
-
-# 选择动作
-action = agent.select_action(state)
-```
-
-### 监督学习 Agent
-
-```python
-from src.agents import SupervisedAgentImpl, load_data_from_sessions
-
-# 创建 Agent
-agent = SupervisedAgentImpl("MySL", config={"model_type": "pytorch"})
-
-# 加载数据
-states, actions = load_data_from_sessions("data/A20_Slient/Raw_Data_json_FORSL")
-
-# 训练
-result = agent.train(states, actions, epochs=200)
-
-# 保存
-agent.save("data/models/my_sl.pkl")
-
-# 使用
-agent.set_training_mode(False)
-action = agent.select_action(state)
-```
-
-### 强化学习 Agent
-
-```python
-from src.agents import RLAgentImpl
-from src.env import StsEnvWrapper
-
-# 创建环境
-env = StsEnvWrapper(character="silent", ascension=0)
-
-# 创建 Agent
-agent = RLAgentImpl("MyRL", config={"algorithm": "ppo"})
-agent.set_environment(env)
-
-# Warm Start（可选）
-# agent.load_sl_model(sl_agent)
-
-# 训练
-agent.train(total_timesteps=1000000, n_envs=4)
-
-# 保存
-agent.save("data/models/my_rl.zip")
-```
+| 资源 | 说明 |
+|------|------|
+| **Slay the Spire** | Steam 购买，需安装 |
+| **CommunicationMod** | [Steam 创意工坊](https://steamcommunity.com/app/646570/workshop/) 或 [GitHub](https://github.com/ForgottenArbiter/CommunicationMod)，游戏和本项目的桥梁 |
+| **ModTheSpire** | 运行 Mod 的加载器，同上 |
+| **Python 依赖** | `requirements.md` 有列表，`pip install numpy scipy scikit-learn pyyaml` 起步，RL 还需 `torch stable-baselines3 gymnasium` |
 
 ---
 
-## 实验管理
+## 项目特例（容易踩坑）
 
-内置实验跟踪系统，方便管理多次训练：
-
-```python
-from src.training import create_experiment, get_tracker
-
-# 创建实验
-exp_id = create_experiment(
-    name="ppo_baseline",
-    agent_type="rl",
-    algorithm="ppo",
-    tags=["baseline", "a20"]
-)
-
-# 训练完成后更新
-tracker = get_tracker()
-tracker.complete_experiment(
-    exp_id,
-    model_path="data/models/ppo.zip",
-    notes="A20 胜率 65%"
-)
-
-# 获取最佳实验
-best = tracker.get_best_experiment(metric="eval_win_rate")
-print(f"最佳实验: {best['id']}, 胜率: {best['value']}")
-
-# 比较实验
-comparison = tracker.compare_experiments([exp_id1, exp_id2])
-```
-
----
-
-## 配置文件
-
-编辑 `configs/default.yaml` 自定义配置：
-
-```yaml
-training:
-  data_dir: "data"
-  models_dir: "data/models"
-  train_val_split: 0.2
-  epochs: 100
-  batch_size: 32
-
-game:
-  character: "silent"  # ironclad, silent, defect, watcher
-  ascension: 0
-
-model:
-  hidden_layers: [128, 128]
-  learning_rate: 0.001
-```
-
----
-
-## 测试
-
-```bash
-# 运行所有测试
-python -m pytest tests/ -v
-
-# 运行特定模块测试
-python -m pytest tests/test_agents/ -v
-python -m pytest tests/test_training/ -v
-```
-
----
-
-## 依赖问题说明
-
-### sklearn 与 numpy 2.0+ 兼容性
-
-如果遇到 `AttributeError: _ARRAY_API not found` 错误：
-
-**方案 1**：降级 numpy/scipy
-```bash
-pip install "numpy<2.0" "scipy<2.0"
-```
-
-**方案 2**（推荐）：使用 PyTorch 后端
-```bash
-python scripts/train.py sl --data-dir data/ --model-type pytorch
-```
-
----
-
-## 文档索引
-
-- [requirements.md](./requirements.md) - 依赖说明与版本
-- [scripts/README.md](./scripts/README.md) - 脚本详细文档
-- [docs/API.md](./docs/API.md) - API 文档
-- [docs/ARCHITECTURE.md](./docs/ARCHITECTURE.md) - 架构说明
-- [docs/rules/](./docs/rules/) - 游戏规则文档
-- [docs/planning_and_logs/](./docs/planning_and_logs/) - 计划与开发日志
-- [docs/状态向量s_技术规范.md](./docs/状态向量s_技术规范.md) - 状态向量规范
-- [docs/杀戮尖塔_官方本体A20_卡牌遗物穷尽清单.md](./docs/杀戮尖塔_官方本体A20_卡牌遗物穷尽清单.md) - 卡牌遗物穷尽清单
-
----
-
-## 许可证
-
-本项目仅供学习和研究使用。
+**sklearn + numpy 2.0 会报 `_ARRAY_API not found`**：用 `--model-type pytorch` 或 `pip install "numpy<2.0" "scipy<2.0"`。
