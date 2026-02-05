@@ -25,3 +25,7 @@ dist/
 
 # Data (large files)
 data/
+
+# Mod 通信管道（运行时可能生成）
+Received
+Sending

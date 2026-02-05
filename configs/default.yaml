@@ -3,11 +3,12 @@
 
 # 训练相关配置
 training:
-  # 数据目录
-  data_dir: data
-  raw_dir: data/raw
-  processed_dir: data/processed
-  models_dir: data/models
+  # 数据目录（统一保存在 data/A20_Silent 下）
+  data_dir: data/A20_Silent
+  raw_dir: data/A20_Silent/raw
+  processed_dir: data/A20_Silent/processed
+  models_dir: data/A20_Silent/models
+  experiments_dir: data/A20_Silent/experiments
 
   # 训练参数
   train_val_split: 0.2

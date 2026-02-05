@@ -13,8 +13,14 @@
 - potion use/discard [potion_index] [target?] - 使用/丢弃药水
 - end - 结束回合
 - proceed - 确认/前进
+- confirm - 确认按钮
 - cancel - 取消
 - choose [index/name] - 选择选项
+- key [key_name] - 按键
+- click [x] [y] - 点击
+- return - 返回
+- skip - 跳过
+- leave - 离开
 - start [class] [ascension] [seed?] - 开始新游戏
 - state - 获取状态
 - ready - 初始化握手
@@ -32,6 +38,7 @@ class ActionType(Enum):
     END_TURN = "end"
     CHOOSE = "choose"
     PROCEED = "proceed"
+    CONFIRM = "confirm"          # 确认（如选牌界面的确认按钮）
     CANCEL = "cancel"
     POTION_USE = "potion_use"
     POTION_DISCARD = "potion_discard"
@@ -39,19 +46,24 @@ class ActionType(Enum):
     STATE = "state"
     READY = "ready"
     WAIT = "wait"  # 用于等待状态，不发送命令
+    KEY = "key"                # 按键命令
+    CLICK = "click"            # 点击命令
+    RETURN = "return"          # 返回命令
+    SKIP = "skip"              # 跳过命令
+    LEAVE = "leave"            # 离开命令
 
 
-@dataclass(frozen=True)
+@dataclass
 class Action:
     """动作
-    不可变数据类，表示一个游戏动作。
+    数据类，表示一个游戏动作。
 
     索引约定：
     - 内部使用 0-based 索引（card_index, target_index, potion_index）
     - Mod 协议使用 1-based 索引（play 命令），但 choose 命令保持 0-based
     - to_command() 会自动转换
 
-    策略决策空间（173 维）- 药水原子化设计：
+    策略决策空间（179 维）- 药水原子化设计：
     ┌─────────────────────────────────────────────────────────────────────────────┐
     │ 出牌动作 (70个)：                                                           │
     │   0-69：出第N张牌（无目标或目标=敌人1-6）                                    │
@@ -62,12 +74,12 @@ class Action:
     │   丢弃药水 (5个)：105-109                                                    │
     │                                                                             │
     │ 选择动作 (60个)：110-169                                                     │
-    │ 控制动作 (3个)：170-172 (end/proceed/cancel)                                │
+    │ 控制动作 (9个)：170-178 (end/proceed/confirm/cancel/key/click/return/skip/leave) │
     │                                                                             │
     │ 系统功能（不在动作空间中）：state, wait                                     │
     └─────────────────────────────────────────────────────────────────────────────┘
 
-    策略决策空间：173 个离散动作（不含 state/wait）
+    策略决策空间：179 个离散动作（不含 state/wait）
     """
     type: ActionType
     card_index: Optional[int] = None      # 出牌索引（0-based，内部使用）
@@ -78,6 +90,7 @@ class Action:
     player_class: Optional[str] = None    # 角色类（用于 start 命令）
     ascension: Optional[int] = None       # 异层等级（用于 start 命令）
     seed: Optional[str] = None            # 随机种子（用于 start 命令）
+    _command_override: Optional[str] = None  # 内部：覆盖 to_command() 的返回值（用于 confirm 等特殊命令）
 
     def to_command(self) -> str:
         """转换为 CommunicationMod 命令
@@ -85,6 +98,10 @@ class Action:
         Returns:
             Mod 协议命令字符串
         """
+        # 检查是否有命令覆盖（用于 confirm 等特殊命令）
+        if self._command_override is not None:
+            return self._command_override
+
         # 出牌：play [card_index+1] [target?]
         # Mod 的 target 为 0-based（敌人1=0），内部 target_index 为 1-based（敌人1=1）
         if self.type == ActionType.PLAY_CARD and self.card_index is not None:
@@ -104,9 +121,13 @@ class Action:
             elif self.choice_index is not None:
                 return f"choose {self.choice_index}"
 
-        # 前进/确认
+        # 前进/继续
         if self.type == ActionType.PROCEED:
             return "proceed"
+
+        # 确认（用于选牌界面的确认按钮等）
+        if self.type == ActionType.CONFIRM:
+            return "confirm"
 
         # 取消
         if self.type == ActionType.CANCEL:
@@ -142,6 +163,26 @@ class Action:
         # 等待（不发送命令）
         if self.type == ActionType.WAIT:
             return "wait"
+
+        # 按键
+        if self.type == ActionType.KEY:
+            return self._command_override or "key up"
+
+        # 点击
+        if self.type == ActionType.CLICK:
+            return self._command_override or "click"
+
+        # 返回
+        if self.type == ActionType.RETURN:
+            return "return"
+
+        # 跳过
+        if self.type == ActionType.SKIP:
+            return "skip"
+
+        # 离开
+        if self.type == ActionType.LEAVE:
+            return "leave"
 
         return "state"
 
@@ -182,9 +223,13 @@ class Action:
                 # 不是数字，则是名称
                 return cls(type=ActionType.CHOOSE, choice_name=parts[1])
 
-        # 前进/确认
+        # 前进/继续
         if cmd_type == "proceed":
             return cls(type=ActionType.PROCEED)
+
+        # 确认（用于选牌界面的确认按钮等）
+        if cmd_type == "confirm":
+            return cls(type=ActionType.CONFIRM)
 
         # 取消
         if cmd_type == "cancel":
@@ -213,6 +258,26 @@ class Action:
         # 等待
         if cmd_type == "wait":
             return cls(type=ActionType.WAIT)
+
+        # 按键：key [key_name]
+        if cmd_type == "key" and len(parts) >= 2:
+            return cls(type=ActionType.KEY, _command_override=cmd.strip())
+
+        # 点击：click [x] [y]
+        if cmd_type == "click":
+            return cls(type=ActionType.CLICK, _command_override=cmd.strip())
+
+        # 返回
+        if cmd_type == "return":
+            return cls(type=ActionType.RETURN)
+
+        # 跳过
+        if cmd_type == "skip":
+            return cls(type=ActionType.SKIP)
+
+        # 离开
+        if cmd_type == "leave":
+            return cls(type=ActionType.LEAVE)
 
         # 默认返回状态
         return cls(type=ActionType.STATE)
@@ -265,8 +330,13 @@ class Action:
 
     @classmethod
     def proceed(cls) -> 'Action':
-        """创建前进/确认动作"""
+        """创建前进/继续动作"""
         return cls(type=ActionType.PROCEED)
+
+    @classmethod
+    def confirm(cls) -> 'Action':
+        """创建确认动作（用于选牌界面的确认按钮等场景）"""
+        return cls(type=ActionType.CONFIRM)
 
     @classmethod
     def cancel(cls) -> 'Action':
@@ -318,13 +388,49 @@ class Action:
         """创建等待动作（不发送命令）"""
         return cls(type=ActionType.WAIT)
 
+    @classmethod
+    def key(cls, key_name: str) -> 'Action':
+        """创建按键动作（用于键盘输入等场景）
+
+        Args:
+            key_name: 按键名称（如 "up", "down", "left", "right", "enter", "escape" 等）
+        """
+        return cls(type=ActionType.KEY, _command_override=f"key {key_name}")
+
+    @classmethod
+    def click(cls, x: int = -1, y: int = -1) -> 'Action':
+        """创建点击动作（用于鼠标点击等场景）
+
+        Args:
+            x: X 坐标（-1 表示默认/不指定）
+            y: Y 坐标（-1 表示默认/不指定）
+        """
+        if x >= 0 and y >= 0:
+            return cls(type=ActionType.CLICK, _command_override=f"click {x} {y}")
+        return cls(type=ActionType.CLICK, _command_override="click")
+
+    @classmethod
+    def return_action(cls) -> 'Action':
+        """创建返回动作（用于返回上级界面等场景）"""
+        return cls(type=ActionType.RETURN)
+
+    @classmethod
+    def skip(cls) -> 'Action':
+        """创建跳过动作（用于跳过当前选择等场景）"""
+        return cls(type=ActionType.SKIP)
+
+    @classmethod
+    def leave(cls) -> 'Action':
+        """创建离开动作（用于离开当前场景等场景）"""
+        return cls(type=ActionType.LEAVE)
+
     # ==================== 动作 ID 映射 ====================
 
     def to_id(self, hand_size: int = 10, max_monsters: int = 6,
               max_potions: int = 5, max_choose: int = 60) -> int:
         """转换为动作 ID（用于训练标签）
 
-        策略决策空间（173 维）- 药水原子化设计：
+        策略决策空间（179 维）- 药水原子化设计：
         ┌─────────────────────────────────────────────────────────────────────────────┐
         │ 出牌动作 (70个)：                                                           │
         │   0-9：   出第N张牌（无目标/玩家自己）                                       │
@@ -351,10 +457,16 @@ class Action:
         │ 选择动作 (60个)：110-169                                                    │
         │   110-169：choose 0-59                                                     │
         │                                                                             │
-        │ 控制动作 (3个)：170-172                                                      │
+        │ 控制动作 (9个)：170-178                                                      │
         │   170： end                                                                │
         │   171： proceed                                                            │
-        │   172： cancel                                                             │
+        │   172： confirm                                                            │
+        │   173： cancel                                                             │
+        │   174： key                                                                │
+        │   175： click                                                              │
+        │   176： return                                                             │
+        │   177： skip                                                               │
+        │   178： leave                                                              │
         │                                                                             │
         │ 系统功能（不在动作空间中）：state, wait                                     │
         └─────────────────────────────────────────────────────────────────────────────┘
@@ -366,7 +478,7 @@ class Action:
             max_choose: 最大选择数（默认60）
 
         Returns:
-            动作 ID (0-172)，或 -1（系统功能不在策略空间内）
+            动作 ID (0-178)，或 -1（系统功能不在策略空间内）
         """
         # 出牌动作 (0-69)
         if self.type == ActionType.PLAY_CARD and self.card_index is not None:
@@ -401,13 +513,37 @@ class Action:
         if self.type == ActionType.END_TURN:
             return 170
 
-        # 前进/确认
+        # 前进/继续
         if self.type == ActionType.PROCEED:
             return 171
 
+        # 确认
+        if self.type == ActionType.CONFIRM:
+            return 172
+
         # 取消
         if self.type == ActionType.CANCEL:
-            return 172
+            return 173
+
+        # 按键
+        if self.type == ActionType.KEY:
+            return 174
+
+        # 点击
+        if self.type == ActionType.CLICK:
+            return 175
+
+        # 返回
+        if self.type == ActionType.RETURN:
+            return 176
+
+        # 跳过
+        if self.type == ActionType.SKIP:
+            return 177
+
+        # 离开
+        if self.type == ActionType.LEAVE:
+            return 178
 
         # 获取状态（系统级功能，不在策略空间中）
         if self.type == ActionType.STATE:
@@ -435,7 +571,7 @@ class Action:
         """从动作 ID 创建（用于模型预测）
 
         Args:
-            action_id: 动作 ID (0-172)
+            action_id: 动作 ID (0-178)
             hand_size: 手牌数量（用于验证）
 
         Returns:
@@ -487,15 +623,39 @@ class Action:
         elif action_id == 170:
             return cls.end_turn()
 
-        # 前进/确认
+        # 前进/继续
         elif action_id == 171:
             return cls.proceed()
 
-        # 取消
+        # 确认
         elif action_id == 172:
+            return cls.confirm()
+
+        # 取消
+        elif action_id == 173:
             return cls.cancel()
 
-        # 超出策略空间（173 个动作）
+        # 按键
+        elif action_id == 174:
+            return cls.key("up")
+
+        # 点击
+        elif action_id == 175:
+            return cls.click()
+
+        # 返回
+        elif action_id == 176:
+            return cls.return_action()
+
+        # 跳过
+        elif action_id == 177:
+            return cls.skip()
+
+        # 离开
+        elif action_id == 178:
+            return cls.leave()
+
+        # 超出策略空间（179 个动作）
         else:
             # 返回 cancel 作为安全的后备
             # （理论上不应该到这里，因为动作被 mask 限制了）
@@ -509,8 +669,8 @@ class Action:
 # ========== 常量定义 ==========
 
 # 完整动作空间（穷举所有 CommunicationMod 命令）
-ACTION_SPACE_SIZE = 173    # 总动作空间大小（策略决策，不含 state/wait）
-ACTION_SPACE_EXTENDED = 173
+ACTION_SPACE_SIZE = 179    # 总动作空间大小（策略决策，不含 state/wait）
+ACTION_SPACE_EXTENDED = 179
 
 # 动作 ID 边界
 ACTION_CARD_END = 70         # 出牌动作结束 ID (0-69)
@@ -518,10 +678,16 @@ ACTION_POTION_USE_END = 105  # 使用药水结束 ID (70-104, 5不指定+5×6指
 ACTION_POTION_DISCARD_END = 110  # 丢弃药水结束 ID (105-109)
 ACTION_CHOOSE_END = 170      # 选择动作结束 ID (110-169)
 
-# 特殊动作 ID
+# 特殊动作 ID（控制动作：170-178）
 ACTION_END_ID = 170          # 结束回合的固定 ID
-ACTION_PROCEED_ID = 171      # 前进/确认
-ACTION_CANCEL_ID = 172       # 取消
+ACTION_PROCEED_ID = 171      # 前进/继续
+ACTION_CONFIRM_ID = 172      # 确认（如选牌界面的确认按钮）
+ACTION_CANCEL_ID = 173       # 取消
+ACTION_KEY_ID = 174          # 按键
+ACTION_CLICK_ID = 175        # 点击
+ACTION_RETURN_ID = 176       # 返回
+ACTION_SKIP_ID = 177         # 跳过
+ACTION_LEAVE_ID = 178        # 离开
 # ACTION_STATE_ID 和 ACTION_WAIT_ID 已移除
 # state 和 wait 是系统级功能，由主循环处理，不属于 AI 策略决策空间
 
@@ -537,7 +703,7 @@ ACTION_SPACE_SIMPLE = 11
 
 # 动作空间文档字符串
 ACTION_SPACE_DOC = """
-策略决策空间（173 维）- 基于 CommunicationMod (spirecomm) 协议：
+策略决策空间（179 维）- 基于 CommunicationMod (spirecomm) 协议：
 
 【架构原则】
 - state 和 wait 是系统级功能，由主循环处理，不属于 AI 决策空间
@@ -569,10 +735,16 @@ ACTION_SPACE_DOC = """
 │ 选择动作 (60个)：110-169                                                      │
 │   110-169：choose 0-59（商店、事件、奖励、地图、火堆删牌等）                │
 │                                                                             │
-│ 控制动作 (3个)：170-172                                                       │
+│ 控制动作 (9个)：170-178                                                       │
 │   170：end（结束回合）                                                       │
 │   171：proceed（确认/前进）                                                  │
-│   172：cancel（取消）                                                        │
+│   172：confirm（确认按钮）                                                   │
+│   173：cancel（取消）                                                        │
+│   174：key（按键）                                                           │
+│   175：click（点击）                                                         │
+│   176：return（返回）                                                        │
+│   177：skip（跳过）                                                          │
+│   178：leave（离开）                                                         │
 │                                                                             │
 │ 系统功能（不在动作空间中）：state, wait                                     │
 └─────────────────────────────────────────────────────────────────────────────┘
@@ -584,8 +756,14 @@ CommunicationMod 命令格式参考：
 - potion discard [index]              - 丢弃药水
 - end                                 - 结束回合
 - proceed                             - 确认/前进
+- confirm                             - 确认按钮（选牌界面等）
 - cancel                              - 取消
 - choose [index/name]                 - 选择
+- key [key_name]                      - 按键（如 up, down, left, right, enter）
+- click [x] [y]                       - 点击坐标（可选）
+- return                              - 返回上级
+- skip                                - 跳过
+- leave                               - 离开场景
 - start [class] [ascension] [seed?]   - 开始游戏
 - state                               - 获取状态（系统级，主循环调用）
 - ready                               - 握手信号（系统级）

@@ -7,7 +7,7 @@ from datetime import datetime
 
 # 一局一文件：每次开新局（Neow Event）新建一个 JSON 文件
 # 局结束判定：仅基于 GAME_OVER（死亡/胜利），主动放弃不纳入
-DATA_DIR = "/Volumes/T7/AI_THE_SPIRE/data/A20_Slient/Raw_Data_json_FORSL"
+DATA_DIR = "/Volumes/T7/AI_THE_SPIRE/data/A20_Silent/Raw_Data_json_FORSL"
 os.makedirs(DATA_DIR, exist_ok=True)
 
 

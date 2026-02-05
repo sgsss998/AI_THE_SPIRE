@@ -15,10 +15,6 @@ AI_THE_SPIRE/
 │   │   ├── game_state.py          # GameState、Card、Monster、CombatState 等数据结构
 │   │   ├── action.py              # Action 数据类，所有可执行动作（出牌、选选项等）
 │   │   └── config.py              # 配置加载与解析
-│   ├── protocol/                  # 与 CommunicationMod 的通信层
-│   │   ├── reader.py              # 从 stdin 读取 Mod 发来的 JSON 状态
-│   │   ├── writer.py              # 向 stdout 发送命令（出牌、选选项等）
-│   │   └── parser.py              # 解析 JSON，转成 GameState
 │   ├── env/                       # RL 训练用的 Gymnasium 环境
 │   │   └── sts_env.py             # StsEnvironment、StsEnvWrapper，封装游戏为 step/reset 接口
 │   ├── agents/                    # AI 决策模块
@@ -42,8 +38,6 @@ AI_THE_SPIRE/
 │   ├── read_state.py             # 读取并打印当前游戏状态，调试用
 │   ├── extract_mod_schema.py     # 从 Mod 日志提取所有参数路径，排除法用
 │   ├── extract_ids_from_raw.py   # 从 Raw JSON 提取卡牌/遗物 ID，更新 encoder_ids
-│   ├── test_action_client.py     # 动作客户端测试
-│   ├── test_action_server.py     # 动作服务端测试
 │   └── README.md                 # 脚本详细说明
 │
 ├── configs/                       # 配置文件
@@ -52,7 +46,7 @@ AI_THE_SPIRE/
 │   └── requirements.md           # Python 依赖列表与版本说明
 │
 ├── data/                          # 数据目录（.gitignore，不提交）
-│   ├── A20_Slient/               # A20 静默人类对局
+│   ├── A20_Silent/               # A20 静默人类对局
 │   │   └── Raw_Data_json_FORSL/  # 原始 JSON，每局一个文件
 │   └── models/                   # 训练好的模型 .pkl / .zip
 │
@@ -81,8 +75,6 @@ AI_THE_SPIRE/
 │   ├── 状态向量s_技术规范.md     # 状态向量 s 技术规范（排除法、维度、编码）
 │   └── 杀戮尖塔_官方本体A20_卡牌遗物穷尽清单.md  # 卡牌遗物穷尽清单
 │
-├── Received                       # Mod 通信管道（运行时用）
-├── Sending                        # Mod 通信管道（运行时用）
 ├── rules_for_all.md               # Cursor 规则（RIPER-5 模式等）
 └── README.md                      # 本文件
 ```

@@ -46,7 +46,7 @@ def main():
     powers = set()
     intents = set()
 
-    data_dir = Path(__file__).parent.parent / "data" / "A20_Slient" / "Raw_Data_json_FORSL"
+    data_dir = Path(__file__).parent.parent / "data" / "A20_Silent" / "Raw_Data_json_FORSL"
     for f in sorted(data_dir.glob("*.json")):
         print(f"Processing {f.name}...", file=sys.stderr)
         with open(f) as fp:

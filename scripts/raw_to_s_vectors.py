@@ -19,7 +19,7 @@ def main():
     parser.add_argument("--format", choices=["json", "text"], default="text")
     args = parser.parse_args()
 
-    data_dir = Path(__file__).parent.parent / "data" / "A20_Slient" / "Raw_Data_json_FORSL"
+    data_dir = Path(__file__).parent.parent / "data" / "A20_Silent" / "Raw_Data_json_FORSL"
     if not data_dir.exists():
         print(f"数据目录不存在: {data_dir}", file=sys.stderr)
         return 1

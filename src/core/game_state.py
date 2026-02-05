@@ -351,6 +351,7 @@ class GameState:
     # 扩展字段
     relics: List[str] = field(default_factory=list)  # 遗物ID列表
     choice_list: List[Any] = field(default_factory=list)  # 选择列表（商店/奖励/事件）
+    screen_state: Dict[str, Any] = field(default_factory=dict)  # 屏幕状态（含 HAND_SELECT 的 selected 等）
     gold: int = 0  # 金币（encoder 需要）
     current_hp: int = 0  # 当前生命（非战斗时）
     max_hp: int = 70  # 最大生命（非战斗时）
@@ -405,6 +406,9 @@ class GameState:
             "choice_list", gs.get("choices", gs.get("cards", gs.get("event", [])))
         )
 
+        # 解析 screen_state（包含 HAND_SELECT 的 selected、CARD_REWARD 的 cards 等）
+        screen_state = gs.get("screen_state", {})
+
         # 解析 hp、gold（战斗时从 combat.player，否则从 game_state）
         cur_hp = combat.player.current_hp if combat else gs.get("current_hp", 0)
         mx_hp = combat.player.max_hp if combat else gs.get("max_hp", 70)
@@ -420,6 +424,7 @@ class GameState:
             ready_for_command=response.get("ready_for_command", False),
             relics=relics,
             choice_list=choice_list,
+            screen_state=screen_state,
             gold=gs.get("gold", 0),
             current_hp=cur_hp,
             max_hp=mx_hp,

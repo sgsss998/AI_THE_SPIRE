@@ -419,7 +419,10 @@ def get_tracker() -> ExperimentTracker:
     """获取全局实验跟踪器"""
     global _tracker
     if _tracker is None:
-        _tracker = ExperimentTracker()
+        from src.core.config import get_config
+        config = get_config()
+        exp_dir = getattr(config.training, "experiments_dir", "data/A20_Silent/experiments")
+        _tracker = ExperimentTracker(experiments_dir=exp_dir)
     return _tracker
 
 

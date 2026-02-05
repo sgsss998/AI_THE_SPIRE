@@ -35,7 +35,7 @@ def collect_keys(obj, path="", keys_by_path: dict = None):
 
 
 def main():
-    data_dir = Path(__file__).parent.parent / "data" / "A20_Slient" / "Raw_Data_json_FORSL"
+    data_dir = Path(__file__).parent.parent / "data" / "A20_Silent" / "Raw_Data_json_FORSL"
     all_keys = defaultdict(lambda: {"types": set(), "sample": None, "seen_in": set()})
 
     for f in sorted(data_dir.glob("*.json")):

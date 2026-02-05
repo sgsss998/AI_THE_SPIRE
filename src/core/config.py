@@ -26,11 +26,12 @@ class ModelConfig:
 @dataclass
 class TrainingConfig:
     """训练配置"""
-    # 数据路径
-    data_dir: str = "data"
-    raw_dir: str = "data/raw"
-    processed_dir: str = "data/processed"
-    models_dir: str = "data/models"
+    # 数据路径（统一在 data/A20_Silent 下）
+    data_dir: str = "data/A20_Silent"
+    raw_dir: str = "data/A20_Silent/raw"
+    processed_dir: str = "data/A20_Silent/processed"
+    models_dir: str = "data/A20_Silent/models"
+    experiments_dir: str = "data/A20_Silent/experiments"
 
     # 训练参数
     train_val_split: float = 0.2

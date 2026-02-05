@@ -1,6 +1,6 @@
 # Mod 日志参数清单
 
-> 数据来源：`data/A20_Slient/Raw_Data_json_FORSL/Silent_A20_HUMAN_20260203_220221.json`  
+> 数据来源：`data/A20_Silent/Raw_Data_json_FORSL/Silent_A20_HUMAN_20260203_220221.json`  
 > **核验日期**：2025-02，已对原始 JSON 逐项实测，以下内容与 Mod 实际返回一致。
 
 ---

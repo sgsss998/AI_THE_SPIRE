@@ -10,14 +10,14 @@
 
 ```bash
 # 基本用法
-python scripts/train_sl.py --data-dir data/A20_Slient/Raw_Data_json_FORSL
+python scripts/train_sl.py --data-dir data/A20_Silent/Raw_Data_json_FORSL
 
 # 使用 PyTorch 后端
-python scripts/train_sl.py --data-dir data/A20_Slient/Raw_Data_json_FORSL --model-type pytorch
+python scripts/train_sl.py --data-dir data/A20_Silent/Raw_Data_json_FORSL --model-type pytorch
 
 # 自定义参数
 python scripts/train_sl.py \
-    --data-dir data/A20_Slient/Raw_Data_json_FORSL \
+    --data-dir data/A20_Silent/Raw_Data_json_FORSL \
     --model-type pytorch \
     --hidden-layers 128 64 \
     --epochs 200 \
@@ -27,14 +27,14 @@ python scripts/train_sl.py \
 ```
 
 **参数说明：**
-- `--data-dir`: 训练数据目录（JSONL 格式）
+- `--data-dir`: 训练数据目录（支持 Raw_Data_json_FORSL 的 .json 或 session.jsonl）
 - `--model-type`: sklearn 或 pytorch（默认: sklearn）
 - `--hidden-layers`: 隐藏层大小（默认: 64 32）
 - `--epochs`: 训练轮数（默认: 100）
 - `--batch-size`: 批次大小（默认: 32）
 - `--learning-rate`: 学习率（默认: 0.001）
 - `--val-split`: 验证集比例（默认: 0.2）
-- `--output`: 模型输出路径
+- `--output`: 模型输出路径（默认保存到 data/A20_Silent/models/）
 
 ### 2. train_rl.py - 强化学习训练
 
@@ -157,20 +157,20 @@ python scripts/interactive.py \
 
 - 按上述配置好 `command` 后，在游戏中开始新局即可
 - 脚本通过 stdin/stdout 与 Mod 通信，自动发送 `ready` 握手
-- 规则 Agent 全程自动决策，记录每个 (s, a) 到 `combat_logs/sessions/<session_name>/session.jsonl`
+- 规则 Agent 全程自动决策，数据保存到 `data/A20_Silent/Raw_Data_json_FORSL/Silent_A20_HUMAN_<timestamp>.json`
 
 **方式 B：手动测试**（需游戏已启动且 Mod 已连接）
 
 ```bash
 # 在项目根目录
-PYTHONPATH=. python -u scripts/collect_data.py --real-game --games 1 --session-name real_session
+PYTHONPATH=. python -u scripts/collect_data.py --real-game --games 1
 ```
 
 ### 参数说明
 
 - `--real-game`: 启用真实游戏模式（stdin/stdout 连接 CommunicationMod）
 - `--games 1`: 采集 1 局（真实游戏通常一次一局）
-- `--session-name`: 会话名称，数据保存到 `combat_logs/sessions/<name>/session.jsonl`
+- `--output-dir`: 数据目录，默认 `data/A20_Silent/Raw_Data_json_FORSL`
 
 ### 排查：Mod 无反应 / 游戏不能自己玩
 
@@ -178,22 +178,17 @@ PYTHONPATH=. python -u scripts/collect_data.py --real-game --games 1 --session-n
 
 2. **config 示例**（使用 venv 的 python 和完整路径）：
    ```
-   command=/Volumes/T7/AI_THE_SPIRE/venv/bin/python -u /Volumes/T7/AI_THE_SPIRE/scripts/collect_data.py --real-game --agent-type rule --games 1 --session-name real_game_001
+   command=/Volumes/T7/AI_THE_SPIRE/venv/bin/python -u /Volumes/T7/AI_THE_SPIRE/scripts/collect_data.py --real-game --agent-type rule --games 1
    runAtGameStart=true
    ```
 
 3. **验证脚本能启动**：在项目根目录执行 `./venv/bin/python -u scripts/collect_data.py --real-game --games 1`，若出现「环境未返回有效状态」属正常（无游戏连接时）。若出现 ImportError 则说明依赖或路径有问题。
 
-4. **调试日志**：真实游戏模式下会写入 `collect_data.log`（项目根目录），可查看运行情况。
+4. **调试日志**：真实游戏模式下会写入 `data/A20_Silent/collect_data.log`，可查看运行情况。
 
 5. **部分 Mod 版本**：若 `runAtGameStart` 无效，尝试在游戏内 Mod 菜单中手动点击「Start External Process」或类似按钮启动脚本。
 
-6. **collect_data 修复说明**：Mod 发送首帧后会等待响应，若脚本在创建 env（含 StateEncoder）时耗时过长，Mod 可能超时。collect_data 已改为：先建 protocol、agent → 立即读首帧并响应 → 再建 env，从而避免超时。
-
-7. **诊断脚本**：若仍无反应，用 `mod_diagnose.py` 排查：
-   - 临时修改 config 的 command 为：`.../venv/bin/python -u .../scripts/mod_diagnose.py`
-   - 进游戏开始新局
-   - 查看 `mod_diagnose.log`：若有「启动」记录说明 Mod 启动了脚本；若有「收到第 N 行」说明通信正常
+6. **Mod 错误日志**：CommunicationMod 会将脚本的 stdout/stderr 写入 `communication_mod_errors.log`（通常在游戏或 ModTheSpire 目录），可查看是否有 Python 报错。
 
 ---
 
@@ -203,33 +198,33 @@ PYTHONPATH=. python -u scripts/collect_data.py --real-game --games 1 --session-n
 
 ```bash
 # 1. 用规则 Agent 收集数据
-# （运行游戏，数据自动保存到 data/）
+# （运行游戏，数据自动保存到 data/A20_Silent/Raw_Data_json_FORSL/）
 
 # 2. 训练 SL 模型
 python scripts/train_sl.py \
-    --data-dir data/A20_Slient/Raw_Data_json_FORSL \
+    --data-dir data/A20_Silent/Raw_Data_json_FORSL \
     --model-type pytorch \
     --epochs 200 \
-    --output data/models/sl_base.pkl
+    --output data/A20_Silent/models/sl_base.pkl
 
 # 3. 用 SL 模型 Warm Start RL
 python scripts/train_rl.py \
-    --sl-model data/models/sl_base.pkl \
+    --sl-model data/A20_Silent/models/sl_base.pkl \
     --timesteps 1000000 \
     --n-envs 8 \
-    --output data/models/rl_final.zip
+    --output data/A20_Silent/models/rl_final.zip
 
 # 4. 评估最终模型
 python scripts/evaluate.py \
     --agent-type rl \
-    --model data/models/rl_final.zip \
+    --model data/A20_Silent/models/rl_final.zip \
     --episodes 100 \
-    --output results/final_eval.json
+    --output data/A20_Silent/eval_results.json
 
 # 5. 交互式测试
 python scripts/interactive.py \
     --agent-type rl \
-    --model data/models/rl_final.zip
+    --model data/A20_Silent/models/rl_final.zip
 ```
 
 ## 工厂函数
@@ -256,5 +251,3 @@ agent = create_agent("rl", "MyRL", config={"algorithm": "ppo"})
 | `read_state.py` | 状态读取与调试 |
 | `extract_mod_schema.py` | 从 Mod 日志提取参数完整清单 |
 | `extract_ids_from_raw.py` | 从 Raw JSON 提取卡牌/遗物 ID |
-| `test_action_client.py` | 动作客户端测试 |
-| `test_action_server.py` | 动作服务端测试 |

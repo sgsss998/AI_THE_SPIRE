@@ -13,7 +13,7 @@ from src.training.encoder_mvp import encode, get_output_dim
 
 
 def main():
-    data_dir = Path(__file__).parent.parent / "data" / "A20_Slient" / "Raw_Data_json_FORSL"
+    data_dir = Path(__file__).parent.parent / "data" / "A20_Silent" / "Raw_Data_json_FORSL"
     if not data_dir.exists():
         print(f"数据目录不存在: {data_dir}")
         return 1

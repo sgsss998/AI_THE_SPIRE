@@ -86,7 +86,7 @@ def parse_args():
     # pipeline 命令
     pipeline_parser = subparsers.add_parser('pipeline', help='完整训练流程')
     pipeline_parser.add_argument('--collect-games', type=int, default=50, help='收集游戏局数')
-    pipeline_parser.add_argument('--data-dir', type=str, default='combat_logs/sessions', help='数据目录')
+    pipeline_parser.add_argument('--data-dir', type=str, default='data/A20_Silent/Raw_Data_json_FORSL', help='数据目录（collect 输出 / SL 输入）')
     pipeline_parser.add_argument('--model-type', type=str, default='pytorch', choices=['sklearn', 'pytorch'])
     pipeline_parser.add_argument('--sl-epochs', type=int, default=100, help='SL 训练轮数')
     pipeline_parser.add_argument('--rl-timesteps', type=int, default=100000, help='RL 训练步数')
@@ -104,7 +104,7 @@ def parse_args():
     eval_parser.add_argument('--episodes', type=int, default=10, help='评估回合数')
     eval_parser.add_argument('--character', type=str, default='silent', help='角色')
     eval_parser.add_argument('--ascension', type=int, default=0, help='Ascension 等级')
-    eval_parser.add_argument('--output', type=str, default=None, help='结果输出路径')
+    eval_parser.add_argument('--output', type=str, default='data/A20_Silent/eval_results.json', help='结果输出路径')
 
     # interactive 命令
     interactive_parser = subparsers.add_parser('interactive', help='交互式测试')
@@ -230,7 +230,7 @@ def cmd_pipeline(args):
         # 自动生成 SL 模型路径
         from datetime import datetime
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        sl_model_path = f"models/sl_{timestamp}.pkl"
+        sl_model_path = f"data/A20_Silent/models/sl_{timestamp}.pkl"
 
         sys.argv = [
             'train_sl.py',

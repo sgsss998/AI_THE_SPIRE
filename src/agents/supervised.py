@@ -308,7 +308,7 @@ class SupervisedAgentImpl(SupervisedAgent):
             state: 游戏状态（GameState 或 Mod 格式 dict）
 
         Returns:
-            动作概率数组，shape=(173,)
+            动作概率数组，shape=(179,)
         """
         from src.core.action import ACTION_SPACE_SIZE
 
@@ -403,11 +403,40 @@ def load_training_data(data_dir: str) -> tuple:
     states = []
     actions = []
 
-    # 扫描数据文件（支持子目录中的 session.jsonl）
+    # 扫描数据文件：支持 Raw_Data_json_FORSL 的 .json（JSON 数组）和 session.jsonl
     data_path = Path(data_dir)
+    json_files = sorted(data_path.glob("**/*.json"))
     jsonl_files = sorted(data_path.glob("**/*.jsonl"))
 
-    logger.info(f"[load_training_data] Found {len(jsonl_files)} data files")
+    logger.info(f"[load_training_data] Found {len(json_files)} .json, {len(jsonl_files)} .jsonl files")
+
+    def _parse_record(record: dict):
+        """从 record 解析 state 和 action。record 可能是 {state, action} 或 {mod_fields, action}"""
+        mod_data = record.get("state", record)
+        action_str = record.get("action", "")
+        if not action_str or action_str in ("state", "wait"):
+            return None, None  # 跳过无决策帧
+        state = GameState.from_mod_response(mod_data)
+        action = Action.from_command(action_str)
+        return state, action
+
+    for f in json_files:
+        logger.info(f"[load_training_data] Loading {f.name}")
+        try:
+            with open(f, 'r', encoding='utf-8') as fp:
+                arr = json.load(fp)
+            if not isinstance(arr, list):
+                continue
+            for record in arr:
+                try:
+                    s, a = _parse_record(record)
+                    if s is not None and a is not None:
+                        states.append(s)
+                        actions.append(a)
+                except Exception as e:
+                    logger.warning(f"Failed to parse record: {e}")
+        except Exception as e:
+            logger.warning(f"Failed to load {f}: {e}")
 
     for jsonl_file in jsonl_files:
         logger.info(f"[load_training_data] Loading {jsonl_file.name}")
@@ -418,13 +447,10 @@ def load_training_data(data_dir: str) -> tuple:
                     continue
                 try:
                     record = json.loads(line)
-                    # 解析状态
-                    state = GameState.from_mod_response(record.get("state", record))
-                    action_str = record.get("action", "")
-                    action = Action.from_command(action_str)
-
-                    states.append(state)
-                    actions.append(action)
+                    s, a = _parse_record(record)
+                    if s is not None and a is not None:
+                        states.append(s)
+                        actions.append(a)
                 except Exception as e:
                     logger.warning(f"Failed to parse record: {e}")
 

@@ -10,14 +10,20 @@
 - 计算奖励函数（基于伤害、击杀、回合数等）
 - 判断回合是否结束
 
-【动作空间：173 维离散动作】
+【动作空间：179 维离散动作】
 基于 CommunicationMod (spirecomm) 协议穷举所有可能的动作：
   0-69:   出牌（支持 0-6 个目标）
   70-109: 药水（使用/丢弃）
   110-169: 选择选项（商店/事件/奖励/地图/火堆删牌等，最多60个）
   170:    结束回合
   171:    确认/前进
-  172:    取消
+  172:    确认按钮
+  173:    取消
+  174:    按键
+  175:    点击
+  176:    返回
+  177:    跳过
+  178:    离开
 
 【观察空间：~252 维连续向量】
 包含：手牌、玩家状态、怪物信息、遗物、牌库、房间、药水等
@@ -393,7 +399,7 @@ class StsEnvironment(gym.Env):
         """
         生成动作掩码（用于 Action Masking）
 
-        【用途】将合法动作列表转换为 173 维的 0/1 向量
+        【用途】将合法动作列表转换为 179 维的 0/1 向量
         - 1 表示该动作合法，可以被选择
         - 0 表示该动作不合法，应该被屏蔽
 
@@ -529,172 +535,36 @@ class StsEnvironment(gym.Env):
 
 class StsEnvWrapper:
     """
-    环境包装器 - 连接 Gymnasium 环境和 CommunicationMod
+    环境包装器 - 封装 StsEnvironment 为 Gymnasium 接口
 
-    【核心功能】
-    - 桥接 Gymnasium 环境和实际游戏的 Mod 通信
-    - 将动作 ID 转换为 Mod 命令并发送
-    - 从 Mod 读取游戏状态并更新环境
-
-    【两种使用模式】
-    1. 真实游戏模式（protocol != None）：
-       - 连接到 CommunicationMod
-       - 实际与杀戮尖塔游戏交互
-
-    2. 模拟训练模式（protocol == None）：
-       - 不需要真实游戏
-       - 用于离线训练、单元测试等
-
-    【使用示例】
-    ```python
-    # 真实游戏模式
-    protocol = ModProtocol(stdin, stdout)
-    env_wrapper = StsEnvWrapper(protocol=protocol)
-
-    # 模拟训练模式
-    env_wrapper = StsEnvWrapper(mode="extended")
-    env_wrapper.set_state(mock_game_state)
-    ```
+    【用途】模拟训练、离线评估。真实游戏请用 collect_data.py（直接 stdin/stdout 连 Mod）。
     """
 
     def __init__(
         self,
-        protocol=None,
         mode: str = "extended",
         character: str = "silent",
         ascension: int = 0,
     ):
-        """
-        初始化包装器
-
-        Args:
-            protocol: ModProtocol 实例（可选，用于实际游戏）
-            mode: 编码模式 ("simple" 或 "extended")
-            character: 角色 (silent, ironclad, defect)
-            ascension: Ascension 等级
-        """
         self.env = StsEnvironment(mode=mode)
-        self.protocol = protocol
-        self._last_action: Optional[Action] = None
         self.mode = mode
         self.character = character
         self.ascension = ascension
-
-        # Gymnasium 兼容属性
         self.observation_space = self.env.observation_space
         self.action_space = self.env.action_space
 
     def reset(self) -> Tuple[np.ndarray, Dict]:
-        """
-        重置环境并返回初始观察
-
-        【流程】
-        1. 如果有 protocol，从游戏读取初始状态
-        2. 调用环境的 reset 方法
-        3. 因 env.reset() 会清空 _current_state，需重新 set_state 并确保 info["state"] 正确
-
-        Returns:
-            (observation, info) 元组，info["state"] 为 GameState
-        """
-        if self.protocol is not None:
-            # 读取初始状态（collect_data 已提前发送 ready）
-            state = self.protocol.read_state()
-            # 若首次读到空/EOF，发送 state 请求并重试（Mod 可能先发空行）
-            if state is None:
-                for _ in range(5):
-                    self.protocol.send_command("state")
-                    state = self.protocol.read_state()
-                    if state is not None:
-                        break
-            if state is None:
-                return self.env.reset()
-            self.env.set_state(state)
-            result = self.env.reset()
-            # env.reset() 会清空 _current_state，需恢复
-            self.env.set_state(state)
-            obs = self.env._encode_observation()
-            info = result[1]
-            info["state"] = state
-            return obs, info
+        """重置环境"""
         return self.env.reset()
 
     def step(self, action: int) -> Tuple[np.ndarray, float, bool, bool, Dict]:
-        """
-        执行动作并返回结果
-
-        【真实游戏模式流程】
-        1. 获取当前游戏状态
-        2. 将动作 ID 转换为 Mod 命令
-        3. 发送命令给游戏
-        4. 读取新的游戏状态
-        5. 调用环境的 step 方法
-
-        Args:
-            action: 动作 ID (0-109)
-
-        Returns:
-            (observation, reward, terminated, truncated, info) 元组
-        """
-        if self.protocol is not None:
-            # 获取当前状态
-            state = self._current_state_from_env()
-            if state is None:
-                state = self.protocol.read_state()
-                self.env.set_state(state)
-
-            # 将动作 ID 转换为命令
-            mod_action = self._action_to_command(action, state)
-
-            # 发送命令到游戏
-            self.protocol.send_action(mod_action)
-
-            # 读取新状态
-            new_state = self.protocol.read_state()
-            self.env.set_state(new_state)
-
-        # 执行环境步骤（计算奖励、判断结束等）
+        """执行动作"""
         return self.env.step(action)
 
-    def _current_state_from_env(self) -> Optional[GameState]:
-        """从环境获取当前游戏状态"""
-        return self.env._current_state
-
     def set_state(self, state: GameState):
-        """
-        设置游戏状态
-
-        【用途】用于模拟训练、单元测试等不需要真实游戏的场景
-        """
+        """设置游戏状态（用于模拟、测试）"""
         self.env.set_state(state)
-
-    def _action_to_command(self, action: int, state: GameState) -> Action:
-        """
-        将动作 ID 转换为 Mod 命令
-
-        【完整动作空间：110 维】
-        ┌─────────────────────────────────────────────────────────────────────────────┐
-        │ 出牌动作 (70个)：0-69                                                      │
-        │ 药水动作 (12个)：70-81                                                    │
-        │ 丢弃药水 (3个)：82-84                                                     │
-        │ 选择动作 (20个)：85-104                                                   │
-        │ 其他动作 (5个)：105-109                                                   │
-        └─────────────────────────────────────────────────────────────────────────────┘
-
-        Args:
-            action: 动作 ID (0-109)
-            state: 当前游戏状态
-
-        Returns:
-            Action 对象
-        """
-        # action_id=-1 表示 Action.state()（系统轮询），需发送 "state" 而非 cancel
-        if action < 0:
-            return Action(type=ActionType.STATE)
-        return Action.from_id(action)
 
     def close(self):
         """关闭环境"""
         self.env.close()
-        if self.protocol is not None:
-            # 可以在这里关闭 protocol 连接
-            pass
