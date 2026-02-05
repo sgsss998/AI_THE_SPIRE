@@ -153,8 +153,20 @@ class RuleBasedAgentImpl(RuleBasedAgent):
             return self._decide_choice(state)
 
         # 动画/过渡阶段（如怪物死亡）：发 wait 让 Mod 推进，否则会卡住
-        if not state.ready_for_command and "wait" in state.available_commands:
-            return Action.wait()
+        if not state.ready_for_command:
+            # 优先尝试 wait（等待动画结束）
+            if "wait" in state.available_commands:
+                return Action.wait()
+            # 其次尝试 end（可能在回合结束的过渡状态）
+            elif "end" in state.available_commands:
+                return Action.end_turn()
+            # 最后尝试 confirm/proceed（某些特殊过渡状态）
+            elif "confirm" in state.available_commands:
+                return Action.confirm()
+            elif "proceed" in state.available_commands:
+                return Action.proceed()
+            # 兜底：返回 state 获取最新状态
+            return Action.state()
 
         # 其他情况返回 state
         return Action.state()
@@ -264,7 +276,8 @@ class RuleBasedAgentImpl(RuleBasedAgent):
         logger.debug(f"[防卡住] 可用命令: {commands}")
 
         # 策略 1: 优先级顺序（直接从可用命令中选择）
-        priority = ["confirm", "proceed", "cancel", "end", "skip", "return", "leave", "key", "click"]
+        # 注意：end 必须在 key/click 之前，因为战斗中 end 是正常的结束回合命令
+        priority = ["confirm", "proceed", "cancel", "end", "skip", "return", "leave", "click", "key"]
 
         for cmd_name in priority:
             if cmd_name in commands and cmd_name not in self._blacklisted_commands:
@@ -282,10 +295,17 @@ class RuleBasedAgentImpl(RuleBasedAgent):
                 elif cmd_name == "end":
                     return Action.end_turn()
                 elif cmd_name == "skip":
-                    return Action.choose(-1)  # skip 通常是 choose -1
-                elif cmd_name in ("key", "click"):
-                    # 这些命令需要参数，暂时跳过
-                    continue
+                    return Action.skip()
+                elif cmd_name == "return":
+                    return Action.return_action()
+                elif cmd_name == "leave":
+                    return Action.leave()
+                elif cmd_name == "click":
+                    # 生成默认的 click 命令（不带坐标，让 Mod 处理）
+                    return Action.click()
+                elif cmd_name == "key":
+                    # 生成默认的 key 命令（使用 "enter" 作为安全默认值）
+                    return Action.key("enter")
                 else:
                     return Action.from_command(cmd_name)
 
@@ -318,15 +338,24 @@ class RuleBasedAgentImpl(RuleBasedAgent):
             if cmd not in self._blacklisted_commands:
                 logger.info(f"[防卡住] 随机选择命令: {cmd}")
                 # 对于简单命令，直接使用
-                if cmd in ("confirm", "proceed", "cancel", "end"):
-                    if cmd == "confirm":
-                        return Action.confirm()
-                    elif cmd == "proceed":
-                        return Action.proceed()
-                    elif cmd == "cancel":
-                        return Action.cancel()
-                    elif cmd == "end":
-                        return Action.end_turn()
+                if cmd == "confirm":
+                    return Action.confirm()
+                elif cmd == "proceed":
+                    return Action.proceed()
+                elif cmd == "cancel":
+                    return Action.cancel()
+                elif cmd == "end":
+                    return Action.end_turn()
+                elif cmd == "skip":
+                    return Action.skip()
+                elif cmd == "return":
+                    return Action.return_action()
+                elif cmd == "leave":
+                    return Action.leave()
+                elif cmd == "click":
+                    return Action.click()
+                elif cmd == "key":
+                    return Action.key("enter")
                 else:
                     try:
                         return Action.from_command(cmd)
