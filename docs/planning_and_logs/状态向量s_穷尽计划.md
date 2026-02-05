@@ -237,7 +237,7 @@ exhaust_pile 的 full multi-hot 271。
 
 ### 6.1 配置与 ID 映射
 
-1. [ ] 按穷尽清单更新 `encoder_v2_ids.yaml`：cards 271、relics 180、potions 45、powers 80
+1. [ ] 按穷尽清单更新 `encoder_ids.yaml`：cards 271、relics 180、potions 45、powers 80
 2. [ ] 实现 `encoder_utils.py`：relic_id_to_index、power_id_to_index、potion_id_to_index、intent_to_index
 3. [ ] 验证 Mod 实际发送的 ID 与 YAML 的覆盖（运行 extract_ids_from_raw 检查漏网）
 

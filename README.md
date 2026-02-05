@@ -27,9 +27,8 @@ AI_THE_SPIRE/
 │   │   ├── supervised.py          # 监督学习 Agent，用人类数据训练的模型决策
 │   │   └── rl_agent.py            # 强化学习 Agent，PPO/A2C/DQN
 │   └── training/                  # 训练相关
-│       ├── encoder.py             # 状态编码器（旧版）
-│       ├── encoder_v2.py          # 状态编码器 V2，把 Mod 状态转成 1840 维向量 s（与 Mod 日志互通）
-│       ├── encoder_utils.py       # ID 归一化、卡牌/遗物查表（依赖 encoder_v2_ids.yaml）
+│       ├── encoder.py             # 状态编码器，把 Mod 状态转成 1840 维向量 s（与 Mod 日志互通）
+│       ├── encoder_utils.py       # ID 归一化、卡牌/遗物查表（依赖 encoder_ids.yaml）
 │       ├── power_parser.py        # 从 player.powers 解析力量、虚弱、易伤等数值
 │       └── experiment.py          # 实验跟踪，记录训练 runs、模型路径、指标
 │
@@ -42,16 +41,15 @@ AI_THE_SPIRE/
 │   ├── interactive.py            # 让 AI 实际玩一局，观察行为
 │   ├── read_state.py             # 读取并打印当前游戏状态，调试用
 │   ├── extract_mod_schema.py     # 从 Mod 日志提取所有参数路径，排除法用
-│   ├── extract_ids_from_raw.py   # 从 Raw JSON 提取卡牌/遗物 ID，更新 encoder_v2_ids
+│   ├── extract_ids_from_raw.py   # 从 Raw JSON 提取卡牌/遗物 ID，更新 encoder_ids
 │   ├── test_action_client.py     # 动作客户端测试
 │   ├── test_action_server.py     # 动作服务端测试
 │   └── README.md                 # 脚本详细说明
 │
 ├── configs/                       # 配置文件
 │   ├── default.yaml              # 默认训练参数、游戏配置、日志配置
-│   ├── encoder_v2_ids.yaml       # 卡牌/遗物/药水/Power/Intent ID 映射表，编码器查表用
-│   ├── sts_path.txt              # StS 安装路径（本地配置，不提交）
-│   └── window_policy.txt         # 窗口与焦点策略（分辨率、全屏等）
+│   ├── encoder_ids.yaml          # 卡牌/遗物/药水/Power/Intent ID 映射表，编码器查表用
+│   └── requirements.md           # Python 依赖列表与版本说明
 │
 ├── data/                          # 数据目录（.gitignore，不提交）
 │   ├── A20_Slient/               # A20 静默人类对局
@@ -74,37 +72,17 @@ AI_THE_SPIRE/
 │   │   ├── 08-sts-ai-master-reference.md    # STS-AI-Master 参考
 │   │   └── ACTION_ID_MAP.md      # 动作 ID 映射
 │   ├── planning_and_logs/        # 计划与开发日志
-│   │   ├── DEVELOPMENT_LOG.md    # 开发日志
 │   │   ├── rules.md              # 规则
 │   │   ├── StS_AI开发计划-细颗粒度实施指南.md
 │   │   ├── 实施检查清单-可打印.md
-│   │   ├── 方案_Agent结合LLM_技术规范.md
-│   │   ├── 方案A_修改Mod记录人类动作_研究计划.md
-│   │   ├── 方案B_代理界面采集人类数据_技术规范.md
-│   │   └── 状态向量s_表达式与Mod转换_计划.md
+│   │   ├── 状态向量s_穷尽计划.md
+│   │   ├── 状态向量s_穷尽计划_详细版.md
+│   │   └── 项目文件必要性审查计划.md
 │   ├── 状态向量s_技术规范.md     # 状态向量 s 技术规范（排除法、维度、编码）
-│   ├── 状态向量s_前218维_表达式清单.md  # 前 218 维每维表达式
 │   └── 杀戮尖塔_官方本体A20_卡牌遗物穷尽清单.md  # 卡牌遗物穷尽清单
-│
-├── tests/                         # 单元测试
-│   ├── test_core/                # core 模块测试
-│   │   ├── test_game_state.py
-│   │   └── test_action_exhaustive.py
-│   ├── test_protocol/             # protocol 模块测试
-│   │   └── test_reader.py
-│   ├── test_env/                  # env 模块测试
-│   │   └── test_sts_env.py
-│   ├── test_agents/               # agents 模块测试
-│   │   ├── test_base.py
-│   │   ├── test_rule_based.py
-│   │   ├── test_supervised.py
-│   │   └── test_rl_agent.py
-│   └── test_training/             # training 模块测试
-│       └── test_experiment.py
 │
 ├── Received                       # Mod 通信管道（运行时用）
 ├── Sending                        # Mod 通信管道（运行时用）
-├── requirements.md                # Python 依赖列表与版本说明
 ├── rules_for_all.md               # Cursor 规则（RIPER-5 模式等）
 └── README.md                      # 本文件
 ```
@@ -132,10 +110,30 @@ python scripts/train.py pipeline --collect-games 50 --sl-epochs 100 --rl-timeste
 | **Slay the Spire** | Steam 购买，需安装 |
 | **CommunicationMod** | [Steam 创意工坊](https://steamcommunity.com/app/646570/workshop/) 或 [GitHub](https://github.com/ForgottenArbiter/CommunicationMod)，游戏和本项目的桥梁 |
 | **ModTheSpire** | 运行 Mod 的加载器，同上 |
-| **Python 依赖** | `requirements.md` 有列表，`pip install numpy scipy scikit-learn pyyaml` 起步，RL 还需 `torch stable-baselines3 gymnasium` |
+| **Python 依赖** | `configs/requirements.md` 有列表，`pip install numpy scipy scikit-learn pyyaml` 起步，RL 还需 `torch stable-baselines3 gymnasium` |
 
 ---
 
 ## 项目特例（容易踩坑）
 
 **sklearn + numpy 2.0 会报 `_ARRAY_API not found`**：用 `--model-type pytorch` 或 `pip install "numpy<2.0" "scipy<2.0"`。
+
+---
+
+## 开发者日志：s 向量设计核心共识（2025-02）
+
+### 对话精华
+
+1. **信息包含关系**：s 向量中所有参数所反映的信息量，一定是 Mod 日志返回信息的**子集**。
+2. **提取策略**：只需从 Mod log 中提取所需的关键信息，作为 s 向量的参数来源。
+3. **维度膨胀**：s 向量的维度一定**远大于** Mod log 的原始参数数量，因为：
+   - 同一参数可能需要 4、5 个甚至更多向量维度来表示；
+   - 例如：血量 → 当前值比例、与最大值比例、是否濒死等；
+   - 例如：卡牌 → multi-hot 穷尽所有张、每张的 cost/type/is_playable 等。
+4. **设计重心**：从 Mod log 中挑选需要最终体现到 s 向量里的参数，是机器学习项目中最关键的设计环节。
+
+### 小结
+
+- s 的信息源 = Mod log 的子集；
+- s 的维度 = 对子集的展开与编码（multi-hot、比例、one-hot 等）；
+- 下一步：逐项讨论从 Mod log 中挑选哪些参数进入 s。

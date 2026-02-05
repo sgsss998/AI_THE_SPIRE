@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 从 Raw_Data JSON 中提取所有唯一的 card/relic/potion/power/intent ID，
-用于补充 encoder_v2_ids.yaml。
+用于补充 encoder_ids.yaml。
 """
 import json
 import sys

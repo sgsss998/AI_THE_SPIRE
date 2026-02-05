@@ -304,13 +304,20 @@ class CombatState:
         player = Player.from_dict(d.get("player", {}))
         monsters = [Monster.from_dict(m) for m in d.get("monsters", [])]
 
+        dp = d.get("draw_pile")
+        dcp = d.get("discard_pile", d.get("discard"))
+        draw_pile_count = len(dp) if isinstance(dp, list) else d.get("draw_pile_count", 0)
+        discard_pile_count = (
+            len(dcp) if isinstance(dcp, list) else d.get("discard_pile_count", dcp or 0)
+        )
+
         return cls(
             hand=hand,
             player=player,
             monsters=monsters,
             turn=d.get("turn", 1),
-            draw_pile_count=d.get("draw_pile", 0),
-            discard_pile_count=d.get("discard", 0),
+            draw_pile_count=draw_pile_count,
+            discard_pile_count=discard_pile_count,
         )
 
     def to_dict(self) -> Dict[str, Any]:
@@ -344,6 +351,9 @@ class GameState:
     # 扩展字段
     relics: List[str] = field(default_factory=list)  # 遗物ID列表
     choice_list: List[Any] = field(default_factory=list)  # 选择列表（商店/奖励/事件）
+    gold: int = 0  # 金币（encoder 需要）
+    current_hp: int = 0  # 当前生命（非战斗时）
+    max_hp: int = 70  # 最大生命（非战斗时）
     draw: int = 0  # 抽牌数
     discard: int = 0  # 弃牌数
     exhaust: int = 0  # 消耗数
@@ -390,8 +400,14 @@ class GameState:
         # 解析遗物
         relics = gs.get("relics", [])
 
-        # 解析选择列表
-        choice_list = gs.get("choices", gs.get("cards", gs.get("event", [])))
+        # 解析选择列表（Mod 用 choice_list，兼容 choices/cards/event）
+        choice_list = gs.get(
+            "choice_list", gs.get("choices", gs.get("cards", gs.get("event", [])))
+        )
+
+        # 解析 hp、gold（战斗时从 combat.player，否则从 game_state）
+        cur_hp = combat.player.current_hp if combat else gs.get("current_hp", 0)
+        mx_hp = combat.player.max_hp if combat else gs.get("max_hp", 70)
 
         return cls(
             room_phase=room_phase,
@@ -404,6 +420,9 @@ class GameState:
             ready_for_command=response.get("ready_for_command", False),
             relics=relics,
             choice_list=choice_list,
+            gold=gs.get("gold", 0),
+            current_hp=cur_hp,
+            max_hp=mx_hp,
         )
 
     def to_dict(self) -> Dict[str, Any]:
@@ -424,6 +443,44 @@ class GameState:
             "ready_for_command": self.ready_for_command,
             "relics": self.relics,
             "choices": self.choice_list,
+        }
+
+    def to_mod_response(self) -> Dict[str, Any]:
+        """转为 encoder 所需的 Mod 格式，与 configs/Mod日志_参数清单 结构一致。"""
+        phase = (
+            self.room_phase.value
+            if hasattr(self.room_phase, "value")
+            else str(self.room_phase)
+        )
+        cur_hp = self.combat.player.current_hp if self.combat else self.current_hp
+        mx_hp = self.combat.player.max_hp if self.combat else self.max_hp
+        gs = {
+            "floor": self.floor,
+            "act": self.act,
+            "room_phase": phase,
+            "screen_type": self.screen_type or "",
+            "choice_list": self.choice_list,
+            "choices": self.choice_list,
+            "current_hp": cur_hp,
+            "max_hp": mx_hp,
+            "gold": self.gold,
+        }
+        if self.combat:
+            cs = self.combat
+            gs["combat_state"] = {
+                "hand": [c.to_dict() for c in cs.hand],
+                "draw_pile": [{}] * cs.draw_pile_count,
+                "discard_pile": [{}] * cs.discard_pile_count,
+                "monsters": [m.to_dict() for m in cs.monsters],
+                "player": cs.player.to_dict(),
+            }
+        else:
+            gs["combat_state"] = None
+        return {
+            "game_state": gs,
+            "available_commands": self.available_commands,
+            "ready_for_command": self.ready_for_command,
+            "in_game": self.in_game,
         }
 
     def hash(self) -> str:

@@ -1,0 +1,686 @@
+# Encoder V2 映射表 - 用于 1840 维状态编码
+# 数据来源：杀戮尖塔穷尽清单、Slay the Spire Wiki、Raw_Data 验证
+# 验证日期：2025-02
+# 未知 ID 映射到 index 0 (UNKNOWN)
+# 编码器应对 ID 做归一化：忽略大小写、空格/下划线互换
+
+# ========== 卡牌 ID (Card IDs) ==========
+# 格式：id -> index (0-based)，用于 multi-hot / one-hot
+# 角色后缀：_R=铁甲, _G=静默, _B=缺陷, _P=观者
+# 穷尽：UNKNOWN + 诅咒14 + 状态12 + 铁甲73 + 静默73 + 缺陷73 + 观者75 + 无色47 = 368（编码器取前271）
+cards:
+  # 0: UNKNOWN 占位（编码器将未知 ID 映射到此）
+  - UNKNOWN
+  # 诅咒 14（穷尽清单 1.7）
+  - AscendersBane
+  - Clumsy
+  - CurseOfTheBell
+  - Decay
+  - Doubt
+  - Injury
+  - Necronomicurse
+  - Normality
+  - Pain
+  - Pride
+  - Regret
+  - Shame
+  - Writhe
+  # 状态 12（穷尽清单 1.8，常见 5+ 扩展）
+  - Burn
+  - Dazed
+  - Slimed
+  - Void
+  - Wound
+  # 铁甲战士 (Ironclad) - Basic
+  - Strike_R
+  - Defend_R
+  - Bash
+  # 铁甲 - Common
+  - Anger
+  - Armaments
+  - Body Slam
+  - Clash
+  - Cleave
+  - Clothesline
+  - Flex
+  - Havoc
+  - Headbutt
+  - Heavy Blade
+  - Iron Wave
+  - Perfected Strike
+  - Pommel Strike
+  - Shrug It Off
+  - Sword Boomerang
+  - Thunderclap
+  - True Grit
+  - Twin Strike
+  - Warcry
+  - Wild Strike
+  # 铁甲 - Uncommon
+  - Battle Trance
+  - Blood for Blood
+  - Bloodletting
+  - Burning Pact
+  - Carnage
+  - Combust
+  - Dark Embrace
+  - Disarm
+  - Dropkick
+  - Dual Wield
+  - Entrench
+  - Evolve
+  - Feel No Pain
+  - Fire Breathing
+  - Flame Barrier
+  - Ghostly Armor
+  - Hemokinesis
+  - Infernal Blade
+  - Inflame
+  - Intimidate
+  - Metallicize
+  - Power Through
+  - Pummel
+  - Rage
+  - Rampage
+  - Reckless Charge
+  - Rupture
+  - Searing Blow
+  - Second Wind
+  - Seeing Red
+  - Sentinel
+  - Sever Soul
+  - Shockwave
+  - Spot Weakness
+  - Uppercut
+  - Whirlwind
+  # 铁甲 - Rare
+  - Barricade
+  - Berserk
+  - Bludgeon
+  - Brutality
+  - Corruption
+  - Demon Form
+  - Double Tap
+  - Exhume
+  - Feed
+  - Fiend Fire
+  - Immolate
+  - Impervious
+  - Juggernaut
+  - Limit Break
+  - Offering
+  - Reaper
+  # 静默 (Silent) - Basic
+  - Strike_G
+  - Defend_G
+  - Neutralize
+  - Survivor
+  # 静默 - Common
+  - Acrobatics
+  - Backflip
+  - Bane
+  - Blade Dance
+  - Bouncing Flask
+  - Calculated Gamble
+  - Caltrops
+  - Catalyst
+  - Choke
+  - Cloak And Dagger
+  - Concentrate
+  - Crippling Cloud
+  - Dash
+  - Deadly Poison
+  - Deflect
+  - Dodge and Roll
+  - Escape Plan
+  - Expertise
+  - Finisher
+  - Flying Knee
+  - Heel Hook
+  - Infinite Blades
+  - Leg Sweep
+  - Masterful Stab
+  - Noxious Fumes
+  - Outmaneuver
+  - Poisoned Stab
+  - Predator
+  - Prepared
+  - Quick Slash
+  - Riddle With Holes
+  - Setup
+  - Shiv
+  - Skewer
+  - Slice
+  - Sneaky Strike
+  - Sucker Punch
+  - Terror
+  - Underhanded Strike
+  - Well Laid Plans
+  # 静默 - Uncommon
+  - Backstab
+  - Blur
+  - Burst
+  - Corpse Explosion
+  - Distraction
+  - Endless Agony
+  - Eviscerate
+  - Flechettes
+  - Footwork
+  - Malaise
+  - Nightmare
+  - Phantasmal Killer
+  - Piercing Wail
+  - Reflex
+  - Tactician
+  - Thousand Cuts
+  - Tools of the Trade
+  - Unload
+  - Wraith Form
+  # 静默 - Rare
+  - After Image
+  - Bullet Time
+  - Doppelganger
+  - Envenom
+  - Grand Finale
+  - Storm of Steel
+  # 缺陷 (Defect) - Basic
+  - Strike_B
+  - Defend_B
+  - Zap
+  - Dualcast
+  # 缺陷 - Common
+  - Ball Lightning
+  - Barrage
+  - Beam Cell
+  - Charge Battery
+  - Cold Snap
+  - Compile Driver
+  - Coolheaded
+  - Go for the Eyes
+  - Hologram
+  - Leap
+  - Rebound
+  - Recursion
+  - Stack
+  - Steam Barrier
+  - Streamline
+  - Sweeping Beam
+  - Turbo
+  # 缺陷 - Uncommon
+  - Aggregate
+  - Auto Shields
+  - Blizzard
+  - Boot Sequence
+  - Bullseye
+  - Capacitor
+  - Chaos
+  - Chill
+  - Consume
+  - Darkness
+  - Defragment
+  - Doom and Gloom
+  - Double Energy
+  - Equilibrium
+  - FTL
+  - Force Field
+  - Fusion
+  - Genetic Algorithm
+  - Glacier
+  - Heatsinks
+  - Hello World
+  - Loop
+  - Melter
+  - Overclock
+  - Recycle
+  - Reinforced Body
+  - Reprogram
+  - Rip and Tear
+  - Scrape
+  - Self Repair
+  - Skim
+  - Static Discharge
+  - Storm
+  - Sunder
+  - Tempest
+  - White Noise
+  # 缺陷 - Rare
+  - All for One
+  - Amplify
+  - Biased Cognition
+  - Buffer
+  - Core Surge
+  - Creative AI
+  - Echo Form
+  - Electrodynamics
+  - Fission
+  - Hyperbeam
+  - Machine Learning
+  - Meteor Strike
+  - Multicast
+  - Rainbow
+  - Reboot
+  - Seek
+  - Thunder Strike
+  # 观者 (Watcher) - Basic
+  - Strike_P
+  - Defend_P
+  - Eruption
+  - Vigilance
+  # 观者 - Common/Uncommon/Rare（部分）
+  - Bowling Bash
+  - Conclude
+  - Consecrate
+  - Crescendo
+  - Crush Joints
+  - CutThroughFate
+  - EmptyBody
+  - EmptyFist
+  - EmptyMind
+  - Evaluate
+  - FlurryOfBlows
+  - FlyingSleeves
+  - FollowUp
+  - Halt
+  - JustLucky
+  - PressurePoints
+  - Prostrate
+  - Protect
+  - SashWhip
+  - SignatureMove
+  - SimmeringFury
+  - TalkToTheHand
+  - Tantrum
+  - Wallop
+  - Weave
+  - WindmillStrike
+  # 无色 (Colorless) - 部分
+  - Apotheosis
+  - HandOfGreed
+  - Magnetism
+  - Master of Strategy
+  - Mayhem
+  - Metamorphosis
+  - Panacea
+  - Panic Button
+  - Purity
+  - Sadistic Nature
+  - Secret Technique
+  - Secret Weapon
+  - The Bomb
+  - Thinking Ahead
+  - Transmutation
+  - Trip
+  - Violence
+  - Apparition
+  - Beta
+  - Dark Shackles
+  - Deep Breath
+  - Discovery
+  - Dramatic Entrance
+  - Enlightenment
+  - Finesse
+  - Flash of Steel
+  - Forethought
+  - Good Instincts
+  - Impatience
+  - Jack Of All Trades
+  - Madness
+  - Mind Blast
+  - Swift Strike
+  - J.A.X.
+  - Miracle
+  - Omega
+  - RitualDagger
+  # 注：Shiv 已在静默 Common 中，此处不重复
+
+# ========== 遗物 ID (Relic IDs) ==========
+# 穷尽 180：UNKNOWN + 179 遗物，去重，统一 ID 格式（如 Snecko Skull）
+relics:
+  - UNKNOWN
+  # 起始遗物 4
+  - Ring of the Snake
+  - Burning Blood
+  - Cracked Core
+  - Pure Water
+  # 普通遗物 43（去重，穷尽清单 2.3）
+  - Akabeko
+  - Anchor
+  - Ancient Tea Set
+  - Art of War
+  - Bag of Marbles
+  - Bag of Preparation
+  - Blood Vial
+  - Bronze Scales
+  - Centennial Puzzle
+  - Ceramic Fish
+  - Damaru
+  - Data Disk
+  - Dream Catcher
+  - Happy Flower
+  - Juzu Bracelet
+  - Lantern
+  - Maw Bank
+  - Meal Ticket
+  - Oddly Smooth Stone
+  - Omamori
+  - Orichalcum
+  - Pen Nib
+  - Potion Belt
+  - Preserved Insect
+  - Red Skull
+  - Regal Pillow
+  - Smiling Mask
+  - Snecko Skull
+  - Strawberry
+  - The Boot
+  - Tiny Chest
+  - Toy Ornithopter
+  - Vajra
+  - War Paint
+  - Whetstone
+  - Blue Candle
+  - Bottled Flame
+  - Bottled Lightning
+  - Bottled Tornado
+  - Darkstone Periapt
+  - Duality
+  - Eternal Feather
+  - Frozen Egg
+  - Gold-Plated Cables
+  - Gremlin Horn
+  - Horn Cleat
+  - Ink Bottle
+  - Kunai
+  - Letter Opener
+  - Matryoshka
+  - Meat on the Bone
+  - Mercury Hourglass
+  - Molten Egg
+  - Mummified Hand
+  - Ninja Scroll
+  - Ornamental Fan
+  - Pantograph
+  - Paper Krane
+  - Paper Phrog
+  - Pear
+  - Question Card
+  - Self-Forming Clay
+  - Shuriken
+  - Singing Bowl
+  - Strike Dummy
+  - Sundial
+  - Symbiotic Virus
+  - Teardrop Locket
+  - The Courier
+  - Toxic Egg
+  - White Beast Statue
+  - Bird-Faced Urn
+  - Calipers
+  - Captain's Wheel
+  - Champion Belt
+  - Charon's Ashes
+  - Cloak Clasp
+  - Dead Branch
+  - Du-Vu Doll
+  - Emotion Chip
+  - Fossilized Helix
+  - Gambling Chip
+  - Ginger
+  - Golden Eye
+  - Ice Cream
+  - Incense Burner
+  - Lizard Tail
+  - Magic Flower
+  - Mango
+  - Old Coin
+  - Peace Pipe
+  - Pocketwatch
+  - Prayer Wheel
+  - Shovel
+  - Stone Calendar
+  - The Specimen
+  - Thread and Needle
+  - Tingsha
+  - Torii
+  - Tough Bandages
+  - Tungsten Rod
+  - Turnip
+  - Unceasing Top
+  - Wing Boots
+  - Astrolabe
+  - Black Blood
+  - Black Star
+  - Busted Crown
+  - Calling Bell
+  - Coffee Dripper
+  - Cursed Key
+  - Ectoplasm
+  - Empty Cage
+  - Frozen Core
+  - Fusion Hammer
+  - Holy Water
+  - Hovering Kite
+  - Inserter
+  - Mark of Pain
+  - Nuclear Battery
+  - Pandora's Box
+  - Philosopher's Stone
+  - Ring of the Serpent
+  - Runic Cube
+  - Runic Dome
+  - Runic Pyramid
+  - Sacred Bark
+  - Slaver's Collar
+  - Snecko Eye
+  - Sozu
+  - Tiny House
+  - Velvet Choker
+  - Violet Lotus
+  - Wrist Blade
+  - Brimstone
+  - Cauldron
+  - Chemical X
+  - Clockwork Souvenir
+  - Dolly's Mirror
+  - Frozen Eye
+  - Hand Drill
+  - Lee's Waffle
+  - Medical Kit
+  - Melange
+  - Membership Card
+  - Orange Pellets
+  - Orrery
+  - Prismatic Shard
+  - Runic Capacitor
+  - Sling of Courage
+  - Strange Spoon
+  - The Abacus
+  - Toolbox
+  - Twisted Funnel
+  - Bloody Idol
+  - Cultist Headpiece
+  - Enchiridion
+  - Face of Cleric
+  - Golden Idol
+  - Gremlin Visage
+  - Mark of the Bloom
+  - Mutagenic Strength
+  - N'loth's Gift
+  - N'loth's Hungry Face
+  - Necronomicon
+  - Nilry's Codex
+  - Odd Mushroom
+  - Red Mask
+  - Spirit Poop
+  - Ssserpent Head
+  - Warped Tongs
+
+# ========== 药水 ID (Potion IDs) ==========
+# 穷尽 45：UNKNOWN + 约 44 种药水
+potions:
+  - UNKNOWN
+  - Potion Slot
+  - Explosive Potion
+  - LiquidMemories
+  - SteroidPotion
+  - FearPotion
+  - Fire Potion
+  - Poison Potion
+  - Block Potion
+  - Swift Potion
+  - Strength Potion
+  - Dexterity Potion
+  - Colorless Potion
+  - EssenceOfSteel
+  - CultistPotion
+  - Attack Potion
+  - Blessing of the Forge
+  - Energy Potion
+  - Flex Potion
+  - Power Potion
+  - Skill Potion
+  - Speed Potion
+  - Weak Potion
+  - Blood Potion
+  - Focus Potion
+  - Bottled Miracle
+  - Ancient Potion
+  - DistilledChaos
+  - Duplication Potion
+  - Gambler's Brew
+  - Liquid Bronze
+  - Regen Potion
+  - Smoke Bomb
+  - Snecko Oil
+  - Elixir
+  - Cunning Potion
+  - Potion of Capacity
+  - Stance Potion
+  - Entropic Brew
+  - Fairy in a Bottle
+  - Fruit Juice
+  - Heart of Iron
+  - GhostInAJar
+  - Essence of Darkness
+  - Ambrosia
+
+# ========== Power ID (Buff/Debuff) ==========
+# 穷尽 80：UNKNOWN + 玩家/怪物 Buffs、Debuffs
+powers:
+  - UNKNOWN
+  # Raw_Data 验证
+  - Anger
+  - Artifact
+  - Curl Up
+  - Entangled
+  - Flex
+  - Frail
+  - Metallicize
+  - Poison
+  - Split
+  - Strength
+  - Vulnerable
+  - Weakened
+  # Buffs (Wiki)
+  - Dexterity
+  - Weak
+  - Ritual
+  - Barricade
+  - After Image
+  - Noxious Fumes
+  - Footwork
+  - Accuracy
+  - Envenom
+  - Thousand Cuts
+  - Well Laid Plans
+  - Blur
+  - Intangible
+  - Buffer
+  - Thorns
+  - Plated Armor
+  - Regeneration
+  - Rupture
+  - Combust
+  - Evolve
+  - Feel No Pain
+  - Flame Barrier
+  - Juggernaut
+  - Dark Embrace
+  - Corruption
+  - Demon Form
+  - Double Tap
+  - Limit Break
+  - Inflame
+  - Spot Weakness
+  - Battle Trance
+  - Berserk
+  - Brutality
+  - Disarm
+  - Entrench
+  - Impervious
+  - Power Through
+  - Shrug It Off
+  - True Grit
+  - Body Slam
+  # Debuffs (Wiki)
+  - Shackled
+  - Choked
+  - Constricted
+  - Corpse Explosion
+  - Draw Reduction
+  - Fasting
+  - Hex
+  - Lock-On
+  - Mark
+  - No Block
+  - Wraith Form
+  - Bias
+  - Confusion
+  - Slow
+  - No Draw
+  # 怪物/扩展 Powers（补足至 80）
+  - Surrounded
+  - Sharp Hide
+  - Mode Shift
+  - Invincible
+  - Malleable
+  - Reactive
+  - Time Warp
+  - Spore Cloud
+  - Explosive
+  - Life Link
+  - Minion
+  - Ritual
+  - TheBomb
+  - BackAttack
+  - BeatOfDeath
+  - Curiosity
+  - Pen Nib
+  - Phantasmal
+  - GainStrength
+  - LoseDexterity
+
+# ========== 意图类型 (Intent) ==========
+# Mod 发送的 intent 字符串，规格文档要求 13 种
+intents:
+  - UNKNOWN
+  - ATTACK
+  - DEFEND
+  - BUFF
+  - DEBUFF
+  - ATTACK_BUFF
+  - ATTACK_DEBUFF
+  - STRONG_DEBUFF
+  - DEFEND_BUFF
+  - SLEEP
+  - STUN
+  - DEBUG
+  - NONE
+
+# ========== Mod 实际提供的字段（从 Raw_Data 验证） ==========
+# 卡牌 hand/draw_pile/discard_pile: id, name, cost, type, uuid, upgrades, is_playable, has_target, ethereal, exhausts, rarity
+# 怪物 monsters: id, name, current_hp, max_hp, block, intent, move_id, move_base_damage, move_adjusted_damage, move_hits, is_gone, half_dead, powers[]
+# 怪物 powers: id, name, amount
+# 玩家 player: energy, current_hp, block, max_hp, orbs, powers[]
+# 遗物 relics: id, name, counter
+# 药水 potions: id, name, can_use, can_discard, requires_target

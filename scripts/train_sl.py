@@ -10,8 +10,8 @@ import argparse
 import logging
 from pathlib import Path
 
-# 添加 src 到路径
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
+# 添加项目根目录到路径，以便正确解析 from src.xxx 导入
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
 from src.agents import SupervisedAgentImpl, load_data_from_sessions
 from src.core.config import get_config
@@ -151,8 +151,10 @@ def main():
     logger.info("=" * 60)
     logger.info("训练完成!")
     logger.info("=" * 60)
-    logger.info(f"验证集准确率: {result.get('accuracy', 'N/A'):.4f}")
-    logger.info(f"训练集准确率: {result.get('train_accuracy', 'N/A'):.4f}")
+    acc = result.get('accuracy')
+    train_acc = result.get('train_accuracy')
+    logger.info(f"验证集准确率: {acc:.4f}" if acc is not None else "验证集准确率: N/A")
+    logger.info(f"训练集准确率: {train_acc:.4f}" if train_acc is not None else "训练集准确率: N/A")
     logger.info(f"模型类型: {result.get('model_type')}")
     logger.info(f"隐藏层: {result.get('hidden_layers')}")
     logger.info("=" * 60)

@@ -8,7 +8,7 @@
 import os
 import pickle
 import logging
-from typing import Dict, Any, List, Optional
+from typing import Dict, Any, List, Optional, Union
 from pathlib import Path
 from datetime import datetime
 
@@ -20,6 +20,19 @@ from src.core.action import Action
 from src.core.config import get_config
 
 logger = logging.getLogger(__name__)
+
+
+def _create_policy_net(input_dim, hidden_layers, output_dim):
+    """创建 PyTorch 策略网络（模块级函数，便于 pickle）"""
+    import torch.nn as nn
+    layers = []
+    prev_dim = input_dim
+    for dim in hidden_layers:
+        layers.append(nn.Linear(prev_dim, dim))
+        layers.append(nn.ReLU())
+        prev_dim = dim
+    layers.append(nn.Linear(prev_dim, output_dim))
+    return nn.Sequential(*layers)
 
 
 class SupervisedAgentImpl(SupervisedAgent):
@@ -38,7 +51,8 @@ class SupervisedAgentImpl(SupervisedAgent):
 
         # 模型实例
         self._model = None
-        self._encoder = None
+        self._encoder_encode_fn = None
+        self._encoder_output_dim = None
 
         # 训练历史
         self._training_history = []
@@ -47,9 +61,16 @@ class SupervisedAgentImpl(SupervisedAgent):
         self._load_encoder()
 
     def _load_encoder(self):
-        """加载状态编码器"""
-        from src.training.encoder import StateEncoder
-        self._encoder = StateEncoder(mode="extended")  # 使用扩展模式
+        """加载 MVP 状态编码器"""
+        from src.training.encoder_mvp import encode, get_output_dim
+        self._encoder_encode_fn = encode
+        self._encoder_output_dim = get_output_dim()
+
+    def _encoder_encode(self, state_or_dict: Union[GameState, Dict]) -> np.ndarray:
+        """编码状态为向量，支持 GameState 或 Mod 格式 dict。"""
+        if isinstance(state_or_dict, dict):
+            return self._encoder_encode_fn(state_or_dict)
+        return self._encoder_encode_fn(state_or_dict.to_mod_response())
 
     def train(
         self,
@@ -94,11 +115,11 @@ class SupervisedAgentImpl(SupervisedAgent):
         logger.info(f"[{self.name}] Training completed. Accuracy: {result.get('accuracy', 'N/A')}")
         return result
 
-    def _encode_states(self, states: List[GameState]) -> np.ndarray:
+    def _encode_states(self, states) -> np.ndarray:
         """编码状态为向量"""
         encoded = []
         for state in states:
-            vec = self._encoder.encode_state(state)
+            vec = self._encoder_encode(state)
             encoded.append(vec)
         return np.array(encoded)
 
@@ -212,11 +233,15 @@ class SupervisedAgentImpl(SupervisedAgent):
             logger.error(f"[{self.name}] PyTorch not installed")
             raise ImportError("PyTorch is required for model_type='pytorch'")
 
-        # 划分训练/验证集
-        from sklearn.model_selection import train_test_split
-        X_train, X_val, y_train, y_val = train_test_split(
-            X, y, test_size=val_split, random_state=42, stratify=y
-        )
+        # 划分训练/验证集（纯 numpy，避免 sklearn 的 NumPy 2.x 兼容性问题）
+        n = len(X)
+        np.random.seed(42)
+        indices = np.random.permutation(n)
+        n_val = int(n * val_split)
+        val_idx = indices[:n_val]
+        train_idx = indices[n_val:]
+        X_train, X_val = X[train_idx], X[val_idx]
+        y_train, y_val = y[train_idx], y[val_idx]
 
         # 转换为 Tensor
         X_train_t = torch.FloatTensor(X_train)
@@ -228,26 +253,13 @@ class SupervisedAgentImpl(SupervisedAgent):
         train_dataset = TensorDataset(X_train_t, y_train_t)
         train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
 
-        # 定义模型
-        class PolicyNet(nn.Module):
-            def __init__(self, input_dim=30, hidden_layers=(64, 32), output_dim=11):
-                super().__init__()
-                layers = []
-                prev_dim = input_dim
-                for dim in hidden_layers:
-                    layers.append(nn.Linear(prev_dim, dim))
-                    layers.append(nn.ReLU())
-                    prev_dim = dim
-                layers.append(nn.Linear(prev_dim, output_dim))
-                self.network = nn.Sequential(*layers)
+        # 定义模型（使用模块级函数，便于 pickle）
+        from src.core.action import ACTION_SPACE_SIZE
 
-            def forward(self, x):
-                return self.network(x)
-
-        model = PolicyNet(
+        model = _create_policy_net(
             input_dim=X.shape[1],
             hidden_layers=hidden_layers,
-            output_dim=11
+            output_dim=ACTION_SPACE_SIZE,
         )
 
         criterion = nn.CrossEntropyLoss()
@@ -266,12 +278,12 @@ class SupervisedAgentImpl(SupervisedAgent):
                 optimizer.step()
                 epoch_loss += loss.item()
 
-            # 验证
+            # 验证（避免 .numpy() 在 NumPy 2.x 下的兼容性问题）
             model.eval()
             with torch.no_grad():
                 val_outputs = model(X_val_t)
-                val_pred = val_outputs.argmax(dim=1).numpy()
-                val_acc = (val_pred == y_val).mean()
+                val_pred = val_outputs.argmax(dim=1).tolist()
+                val_acc = sum(1 for p, t in zip(val_pred, y_val) if p == t) / len(y_val) if len(y_val) > 0 else 0.0
 
             if (epoch + 1) % 20 == 0:
                 logger.info(
@@ -288,36 +300,35 @@ class SupervisedAgentImpl(SupervisedAgent):
             "hidden_layers": hidden_layers,
         }
 
-    def predict_proba(self, state: GameState) -> np.ndarray:
+    def predict_proba(self, state) -> np.ndarray:
         """
         预测动作概率分布
 
         Args:
-            state: 游戏状态
+            state: 游戏状态（GameState 或 Mod 格式 dict）
 
         Returns:
-            动作概率数组，shape=(11,)
+            动作概率数组，shape=(173,)
         """
-        if self._model is None:
-            # 未训练，返回均匀分布
-            return np.ones(11, dtype=np.float32) / 11
+        from src.core.action import ACTION_SPACE_SIZE
 
-        # 编码状态
-        state_vec = self._encoder.encode_state(state)
+        if self._model is None:
+            return np.ones(ACTION_SPACE_SIZE, dtype=np.float32) / ACTION_SPACE_SIZE
+
+        state_vec = self._encoder_encode(state)
         state_vec = state_vec.reshape(1, -1)
 
-        # 获取概率
         if self.model_type == "sklearn":
             proba = self._model.predict_proba(state_vec)[0]
-        else:  # pytorch
+        else:
             try:
                 import torch
                 with torch.no_grad():
                     output = self._model(torch.FloatTensor(state_vec))
-                    proba = torch.softmax(output, dim=1).numpy()
+                    proba = torch.softmax(output, dim=1).numpy()[0]
             except Exception as e:
                 logger.error(f"[{self.name}] PyTorch prediction error: {e}")
-                return np.ones(11, dtype=np.float32) / 11
+                return np.ones(ACTION_SPACE_SIZE, dtype=np.float32) / ACTION_SPACE_SIZE
 
         return proba.astype(np.float32)
 
@@ -327,12 +338,14 @@ class SupervisedAgentImpl(SupervisedAgent):
 
         os.makedirs(os.path.dirname(path), exist_ok=True)
 
+        from src.training.encoder_mvp import encode
         save_data = {
             "model": self._model,
             "model_type": self.model_type,
             "config": self.config,
             "training_history": self._training_history,
-            "encoder": self._encoder,
+            "encoder_module": "encoder_mvp",
+            "encoder_encode": encode,
         }
 
         with open(path, 'wb') as f:
@@ -351,7 +364,14 @@ class SupervisedAgentImpl(SupervisedAgent):
         self.model_type = save_data.get("model_type", "sklearn")
         self.config = save_data.get("config", {})
         self._training_history = save_data.get("training_history", [])
-        self._encoder = save_data.get("encoder")
+        self._encoder_encode_fn = save_data.get("encoder_encode")
+        if self._encoder_encode_fn is None:
+            from src.training.encoder_mvp import encode, get_output_dim
+            self._encoder_encode_fn = encode
+            self._encoder_output_dim = get_output_dim()
+        else:
+            from src.training.encoder_mvp import get_output_dim
+            self._encoder_output_dim = get_output_dim()
 
         logger.info(f"[{self.name}] Model loaded (type: {self.model_type})")
 
@@ -383,9 +403,9 @@ def load_training_data(data_dir: str) -> tuple:
     states = []
     actions = []
 
-    # 扫描数据文件
+    # 扫描数据文件（支持子目录中的 session.jsonl）
     data_path = Path(data_dir)
-    jsonl_files = sorted(data_path.glob("*.jsonl"))
+    jsonl_files = sorted(data_path.glob("**/*.jsonl"))
 
     logger.info(f"[load_training_data] Found {len(jsonl_files)} data files")
 

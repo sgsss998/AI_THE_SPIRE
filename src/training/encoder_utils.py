@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Encoder V2 工具：ID 归一化 + 查表
+Encoder 工具：ID 归一化 + 查表
 
-把 Mod 日志里的 id 转成 encoder_v2_ids.yaml 里的编号，供编码用。
+把 Mod 日志里的 id 转成 encoder_ids.yaml 里的编号，供 encoder 用。
 与 Mod 日志数据互通：支持 Mod 发送的各种 id 格式（空格/下划线、大小写）。
 """
 import re
@@ -13,7 +13,7 @@ import yaml
 
 # 项目根目录
 _PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
-_IDS_PATH = _PROJECT_ROOT / "configs" / "encoder_v2_ids.yaml"
+_IDS_PATH = _PROJECT_ROOT / "configs" / "encoder_ids.yaml"
 
 # 穷尽维度（与 Mod 日志互通，索引超出时映射到 0）
 CARD_DIM = 271
@@ -31,7 +31,7 @@ _intent_to_index: Optional[Dict[str, int]] = None
 
 
 def _load_ids() -> dict:
-    """加载 encoder_v2_ids.yaml"""
+    """加载 encoder_ids.yaml"""
     with open(_IDS_PATH, encoding="utf-8") as f:
         return yaml.safe_load(f)
 

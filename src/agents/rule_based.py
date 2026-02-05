@@ -90,6 +90,14 @@ class RuleBasedAgentImpl(RuleBasedAgent):
         if state.ready_for_command and "choose" in state.available_commands:
             return self._decide_choice(state)
 
+        # 动画/过渡阶段（如怪物死亡）：发 wait 让 Mod 推进，否则会卡住
+        if not state.ready_for_command and "wait" in state.available_commands:
+            return Action.wait()
+
+        # 奖励页/空面板等：有 proceed 则点前进（如 COMBAT_REWARD 奖励领完后）
+        if state.ready_for_command and "proceed" in state.available_commands:
+            return Action.proceed()
+
         # 其他情况返回 state
         return Action.state()
 

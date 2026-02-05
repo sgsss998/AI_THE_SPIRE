@@ -4,7 +4,7 @@
 
 包含状态编码、数据集处理、模型训练、实验跟踪等功能。
 """
-from .encoder import StateEncoder, encode_state, encode_action, decode_action
+from .encoder import encode, get_output_dim, OUTPUT_DIM
 from .experiment import (
     ExperimentTracker,
     ExperimentConfig,
@@ -14,10 +14,9 @@ from .experiment import (
 )
 
 __all__ = [
-    "StateEncoder",
-    "encode_state",
-    "encode_action",
-    "decode_action",
+    "encode",
+    "get_output_dim",
+    "OUTPUT_DIM",
     "ExperimentTracker",
     "ExperimentConfig",
     "ExperimentResult",

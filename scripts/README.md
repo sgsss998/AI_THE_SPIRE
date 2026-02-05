@@ -137,6 +137,66 @@ python scripts/interactive.py \
 - `--character`: 角色（默认: silent）
 - `--ascension`: Ascension 等级（默认: 0）
 
+## 真实游戏数据采集（--real-game）
+
+在**真实游戏环境**中打一局并记录每个 (s, a) 键值对，用于监督学习训练。
+
+### 前置条件
+
+1. **Slay the Spire** + **ModTheSpire** + **CommunicationMod** 已安装
+2. 配置 CommunicationMod 的 `config.properties`（Mac: `~/Library/Preferences/ModTheSpire/CommunicationMod/config.properties`），将 `command` 设为：
+   ```
+   command=python3 -u <项目根目录>/scripts/collect_data.py --real-game --agent-type rule --games 1 --session-name real_session
+   runAtGameStart=true
+   ```
+3. 启动游戏，开始新局（选择角色后 Mod 会自动启动脚本）
+
+### 运行方式
+
+**方式 A：由游戏 Mod 自动启动**（推荐）
+
+- 按上述配置好 `command` 后，在游戏中开始新局即可
+- 脚本通过 stdin/stdout 与 Mod 通信，自动发送 `ready` 握手
+- 规则 Agent 全程自动决策，记录每个 (s, a) 到 `combat_logs/sessions/<session_name>/session.jsonl`
+
+**方式 B：手动测试**（需游戏已启动且 Mod 已连接）
+
+```bash
+# 在项目根目录
+PYTHONPATH=. python -u scripts/collect_data.py --real-game --games 1 --session-name real_session
+```
+
+### 参数说明
+
+- `--real-game`: 启用真实游戏模式（stdin/stdout 连接 CommunicationMod）
+- `--games 1`: 采集 1 局（真实游戏通常一次一局）
+- `--session-name`: 会话名称，数据保存到 `combat_logs/sessions/<name>/session.jsonl`
+
+### 排查：Mod 无反应 / 游戏不能自己玩
+
+1. **触发时机**：`runAtGameStart=true` 表示在**开始新局**时启动脚本，不是主菜单。需：启动游戏 → 点击 Play → 选择角色（铁甲/静默/故障）→ 进入第一层后 Mod 才会启动脚本。
+
+2. **config 示例**（使用 venv 的 python 和完整路径）：
+   ```
+   command=/Volumes/T7/AI_THE_SPIRE/venv/bin/python -u /Volumes/T7/AI_THE_SPIRE/scripts/collect_data.py --real-game --agent-type rule --games 1 --session-name real_game_001
+   runAtGameStart=true
+   ```
+
+3. **验证脚本能启动**：在项目根目录执行 `./venv/bin/python -u scripts/collect_data.py --real-game --games 1`，若出现「环境未返回有效状态」属正常（无游戏连接时）。若出现 ImportError 则说明依赖或路径有问题。
+
+4. **调试日志**：真实游戏模式下会写入 `collect_data.log`（项目根目录），可查看运行情况。
+
+5. **部分 Mod 版本**：若 `runAtGameStart` 无效，尝试在游戏内 Mod 菜单中手动点击「Start External Process」或类似按钮启动脚本。
+
+6. **collect_data 修复说明**：Mod 发送首帧后会等待响应，若脚本在创建 env（含 StateEncoder）时耗时过长，Mod 可能超时。collect_data 已改为：先建 protocol、agent → 立即读首帧并响应 → 再建 env，从而避免超时。
+
+7. **诊断脚本**：若仍无反应，用 `mod_diagnose.py` 排查：
+   - 临时修改 config 的 command 为：`.../venv/bin/python -u .../scripts/mod_diagnose.py`
+   - 进游戏开始新局
+   - 查看 `mod_diagnose.log`：若有「启动」记录说明 Mod 启动了脚本；若有「收到第 N 行」说明通信正常
+
+---
+
 ## 完整训练流程示例
 
 ### SL → RL Warm Start 流程

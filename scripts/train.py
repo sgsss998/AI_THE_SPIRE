@@ -10,8 +10,8 @@ import argparse
 import logging
 from pathlib import Path
 
-# 添加 src 到路径
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', 'src'))
+# 添加项目根目录到路径，以便正确解析 from src.xxx 导入
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
 from src.core.config import get_config
 

@@ -591,15 +591,31 @@ class StsEnvWrapper:
         【流程】
         1. 如果有 protocol，从游戏读取初始状态
         2. 调用环境的 reset 方法
+        3. 因 env.reset() 会清空 _current_state，需重新 set_state 并确保 info["state"] 正确
 
         Returns:
-            (observation, info) 元组
+            (observation, info) 元组，info["state"] 为 GameState
         """
         if self.protocol is not None:
-            # 读取初始状态
+            # 读取初始状态（collect_data 已提前发送 ready）
             state = self.protocol.read_state()
+            # 若首次读到空/EOF，发送 state 请求并重试（Mod 可能先发空行）
+            if state is None:
+                for _ in range(5):
+                    self.protocol.send_command("state")
+                    state = self.protocol.read_state()
+                    if state is not None:
+                        break
+            if state is None:
+                return self.env.reset()
             self.env.set_state(state)
-
+            result = self.env.reset()
+            # env.reset() 会清空 _current_state，需恢复
+            self.env.set_state(state)
+            obs = self.env._encode_observation()
+            info = result[1]
+            info["state"] = state
+            return obs, info
         return self.env.reset()
 
     def step(self, action: int) -> Tuple[np.ndarray, float, bool, bool, Dict]:
@@ -671,7 +687,9 @@ class StsEnvWrapper:
         Returns:
             Action 对象
         """
-        # 使用 Action.from_id 进行统一转换（简单高效）
+        # action_id=-1 表示 Action.state()（系统轮询），需发送 "state" 而非 cancel
+        if action < 0:
+            return Action(type=ActionType.STATE)
         return Action.from_id(action)
 
     def close(self):

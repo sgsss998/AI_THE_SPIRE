@@ -1,525 +1,433 @@
 #!/usr/bin/env python3
 """
-扩展的状态编码器
+状态编码器：把 Mod 日志里的 state 转成 1840 维向量 s
 
-将游戏状态编码为固定维度的向量，用于 ML/RL 模型。
-支持简单模式（30维）和扩展模式（~180维）。
+与 Mod 日志数据互通：直接读取 game_state、combat_state 的字段路径，
+缺失字段用默认值，非战斗时区块 2-9 填 0。
+
+区块结构：
+- s[0]~s[19]：玩家核心 20 维
+- s[20]~s[350]：手牌 331 维（multi-hot 271 + 每槽 6 维）
+- s[351]~s[629]：抽牌堆 279 维（multi-hot 271 + 类型占比 8）
+- s[630]~s[900]：弃牌堆 271 维
+- s[901]~s[1171]：消耗堆 271 维
+- s[1172]~s[1251]：玩家 Powers 80 维
+- s[1252]~s[1551]：怪物 300 维（6×50）
+- s[1552]~s[1731]：遗物 180 维
+- s[1732]~s[1796]：药水 65 维
+- s[1797]~s[1839]：全局 43 维
 """
+import hashlib
 import numpy as np
-from typing import Dict, List, Any, Optional, Set
+from typing import Dict, Any, List
 
-from src.core.game_state import (
-    GameState, Card, CardType, Monster, IntentType, CombatState, RoomPhase
+from src.training.encoder_utils import (
+    card_id_to_index,
+    relic_id_to_index,
+    potion_id_to_index,
+    power_id_to_index,
+    intent_to_index,
+    CARD_DIM,
+    RELIC_DIM,
+    POTION_DIM,
+    POWER_DIM,
+    INTENT_DIM,
 )
+from src.training.power_parser import (
+    parse_strength,
+    parse_dexterity,
+    parse_weak,
+    parse_vulnerable,
+    parse_frail,
+    parse_focus,
+    parse_poison,
+    parse_curl_up,
+)
+
+# 归一化用的最大值（与 Mod 日志数值范围兼容）
+MAX_HP = 999
+MAX_BLOCK = 99
+MAX_ENERGY = 10
+MAX_GOLD = 999
+MAX_POWER = 50
+MAX_DEBUFF = 15
+MAX_HAND = 10
+MAX_DRAW = 80
+MAX_DISCARD = 80
+MAX_EXHAUST = 50
+MAX_CARDS_DISCARDED = 15
+MAX_TIMES_DAMAGED = 50
+MAX_TURN = 50
+MAX_ORB_SLOTS = 10  # 缺陷机器人 orb 槽位上限
+MAX_DAMAGE = 99
+
+# 卡牌类型 → 标量
+CARD_TYPE_MAP = {
+    "attack": 0.2,
+    "skill": 0.4,
+    "power": 0.6,
+    "status": 0.0,
+    "curse": 0.0,
+}
+
+OUTPUT_DIM = 1840
+
+
+def _clamp_norm(val: float, max_val: float) -> float:
+    """把数压到 0~1：val/max_val，max_val=0 时返回 0"""
+    if max_val <= 0:
+        return 0.0
+    return float(np.clip(val / max_val, 0.0, 1.0))
+
+
+def _encode_block1_player_core(mod_response: Dict[str, Any]) -> np.ndarray:
+    """区块 1：玩家核心，20 维。非战斗时部分字段从 game_state 取。"""
+    out = np.zeros(20, dtype=np.float32)
+    gs = mod_response.get("game_state") or {}
+    cs = gs.get("combat_state") or {}
+    player = cs.get("player") or {}
+    hand = cs.get("hand") or []
+    draw_pile = cs.get("draw_pile") or []
+    discard_pile = cs.get("discard_pile") or []
+    exhaust_pile = cs.get("exhaust_pile") or []
+
+    current_hp = player.get("current_hp", gs.get("current_hp", 0))
+    max_hp = max(player.get("max_hp", gs.get("max_hp", 1)), 1)
+    out[0] = _clamp_norm(current_hp, max_hp)
+    out[1] = _clamp_norm(min(gs.get("max_hp", player.get("max_hp", 70)), MAX_HP), MAX_HP)
+    out[2] = _clamp_norm(min(player.get("block", 0), MAX_BLOCK), MAX_BLOCK)
+    out[3] = _clamp_norm(min(player.get("energy", 0), MAX_ENERGY), MAX_ENERGY)
+    max_energy = 3  # Phase 1 固定
+    out[4] = _clamp_norm(min(max_energy, MAX_ENERGY), MAX_ENERGY)
+    out[5] = _clamp_norm(min(gs.get("gold", 0), MAX_GOLD), MAX_GOLD)
+
+    powers = player.get("powers") or []
+    out[6] = _clamp_norm(min(parse_strength(powers), MAX_POWER), MAX_POWER)
+    out[7] = _clamp_norm(min(parse_dexterity(powers), 30), 30)
+    out[8] = _clamp_norm(min(parse_weak(powers), MAX_DEBUFF), MAX_DEBUFF)
+    out[9] = _clamp_norm(min(parse_vulnerable(powers), MAX_DEBUFF), MAX_DEBUFF)
+    out[10] = _clamp_norm(min(parse_frail(powers), MAX_DEBUFF), MAX_DEBUFF)
+    out[11] = _clamp_norm(min(parse_focus(powers), MAX_DEBUFF), MAX_DEBUFF)
+
+    out[12] = _clamp_norm(min(len(hand), MAX_HAND), MAX_HAND)
+    out[13] = _clamp_norm(min(len(draw_pile), MAX_DRAW), MAX_DRAW)
+    out[14] = _clamp_norm(min(len(discard_pile), MAX_DISCARD), MAX_DISCARD)
+    out[15] = _clamp_norm(min(len(exhaust_pile), MAX_EXHAUST), MAX_EXHAUST)
+    out[16] = _clamp_norm(
+        min(cs.get("cards_discarded_this_turn", 0), MAX_CARDS_DISCARDED),
+        MAX_CARDS_DISCARDED,
+    )
+    out[17] = _clamp_norm(
+        min(cs.get("times_damaged", 0), MAX_TIMES_DAMAGED),
+        MAX_TIMES_DAMAGED,
+    )
+    # 缺陷机器人 orb 槽位：len(orbs) 为当前 orb 数，上限 10 槽
+    orbs = player.get("orbs") or []
+    out[18] = _clamp_norm(min(len(orbs), MAX_ORB_SLOTS), MAX_ORB_SLOTS)
+    out[19] = _clamp_norm(min(cs.get("turn", 0), MAX_TURN), MAX_TURN)
+    return out
+
+
+def _encode_block2_hand(mod_response: Dict[str, Any]) -> np.ndarray:
+    """区块 2：手牌 331 维（multi-hot 271 + 每槽 6 维×10）"""
+    out = np.zeros(331, dtype=np.float32)
+    gs = mod_response.get("game_state") or {}
+    cs = gs.get("combat_state") or {}
+    hand: List[Dict] = cs.get("hand") or []
+
+    for card in hand:
+        cid = card.get("id") or card.get("name") or ""
+        idx = card_id_to_index(cid)
+        if 0 <= idx < CARD_DIM:
+            out[idx] += 1
+
+    for i in range(10):
+        base = 271 + i * 6
+        if i < len(hand):
+            c = hand[i]
+            cost = max(c.get("cost", 0), 0)
+            out[base + 0] = _clamp_norm(min(cost, 5), 5)
+            type_str = (c.get("type") or "").lower()
+            out[base + 1] = CARD_TYPE_MAP.get(type_str, 0.0)
+            out[base + 2] = 1.0 if c.get("is_playable", False) else 0.0
+            out[base + 3] = 1.0 if c.get("has_target", False) else 0.0
+            upgrades = c.get("upgrades", 0)
+            out[base + 4] = _clamp_norm(min(upgrades, 2), 2)
+            ethereal = c.get("ethereal", False)
+            exhausts = c.get("exhausts", False)
+            out[base + 5] = 1.0 if (ethereal or exhausts) else 0.0
+        # 空槽已为 0
+    return out
+
+
+def _count_type_ratio(pile: List[Dict], card_type: str) -> float:
+    """统计牌堆中某类型的占比"""
+    if not pile:
+        return 0.0
+    count = sum(1 for c in pile if (c.get("type") or "").lower() == card_type)
+    return count / len(pile)
+
+
+def _count_status_curse_ratio(pile: List[Dict]) -> float:
+    if not pile:
+        return 0.0
+    count = sum(
+        1
+        for c in pile
+        if (c.get("type") or "").lower() in ("status", "curse")
+    )
+    return count / len(pile)
+
+
+def _encode_block3_draw_pile(mod_response: Dict[str, Any]) -> np.ndarray:
+    """区块 3：抽牌堆 279 维（multi-hot 271 + 类型占比 8）"""
+    out = np.zeros(279, dtype=np.float32)
+    gs = mod_response.get("game_state") or {}
+    cs = gs.get("combat_state") or {}
+    draw_pile = cs.get("draw_pile") or []
+    discard_pile = cs.get("discard_pile") or []
+
+    for card in draw_pile:
+        cid = card.get("id") or card.get("name") or ""
+        idx = card_id_to_index(cid)
+        if 0 <= idx < CARD_DIM:
+            out[idx] += 1
+
+    out[271] = _count_type_ratio(draw_pile, "attack")
+    out[272] = _count_type_ratio(draw_pile, "skill")
+    out[273] = _count_type_ratio(draw_pile, "power")
+    out[274] = _count_status_curse_ratio(draw_pile)
+    out[275] = _count_type_ratio(discard_pile, "attack")
+    out[276] = _count_type_ratio(discard_pile, "skill")
+    out[277] = _count_type_ratio(discard_pile, "power")
+    out[278] = _count_status_curse_ratio(discard_pile)
+    return out
+
+
+def _encode_block4_discard_pile(mod_response: Dict[str, Any]) -> np.ndarray:
+    """区块 4：弃牌堆 271 维"""
+    out = np.zeros(271, dtype=np.float32)
+    gs = mod_response.get("game_state") or {}
+    cs = gs.get("combat_state") or {}
+    discard_pile = cs.get("discard_pile") or []
+    for card in discard_pile:
+        cid = card.get("id") or card.get("name") or ""
+        idx = card_id_to_index(cid)
+        if 0 <= idx < CARD_DIM:
+            out[idx] += 1
+    return out
+
+
+def _encode_block5_exhaust_pile(mod_response: Dict[str, Any]) -> np.ndarray:
+    """区块 5：消耗堆 271 维"""
+    out = np.zeros(271, dtype=np.float32)
+    gs = mod_response.get("game_state") or {}
+    cs = gs.get("combat_state") or {}
+    exhaust_pile = cs.get("exhaust_pile") or []
+    for card in exhaust_pile:
+        cid = card.get("id") or card.get("name") or ""
+        idx = card_id_to_index(cid)
+        if 0 <= idx < CARD_DIM:
+            out[idx] += 1
+    return out
+
+
+def _encode_block6_player_powers(mod_response: Dict[str, Any]) -> np.ndarray:
+    """区块 6：玩家 Powers 80 维"""
+    out = np.zeros(80, dtype=np.float32)
+    gs = mod_response.get("game_state") or {}
+    cs = gs.get("combat_state") or {}
+    player = cs.get("player") or {}
+    powers = player.get("powers") or []
+    for p in powers:
+        pid = p.get("id") or p.get("name") or ""
+        idx = power_id_to_index(pid)
+        if 0 <= idx < POWER_DIM:
+            out[idx] += p.get("amount", 0)
+    return out
+
+
+def _encode_block7_monsters(mod_response: Dict[str, Any]) -> np.ndarray:
+    """区块 7：怪物 300 维（6×50）"""
+    out = np.zeros(300, dtype=np.float32)
+    gs = mod_response.get("game_state") or {}
+    cs = gs.get("combat_state") or {}
+    monsters: List[Dict] = cs.get("monsters") or []
+    for m in range(6):
+        base = m * 50
+        if m >= len(monsters):
+            continue
+        mon = monsters[m]
+        chp = mon.get("current_hp", 0)
+        mhp = max(mon.get("max_hp", 1), 1)
+        out[base + 0] = _clamp_norm(chp, mhp)
+        out[base + 1] = _clamp_norm(min(mon.get("block", 0), MAX_BLOCK), MAX_BLOCK)
+
+        intent_str = mon.get("intent") or ""
+        intent_idx = intent_to_index(intent_str)
+        if 0 <= intent_idx < INTENT_DIM:
+            out[base + 2 + intent_idx] = 1.0
+
+        adj = mon.get("move_adjusted_damage", 0) or 0
+        hits = mon.get("move_hits", 1) or 1
+        dmg = max(0, adj * hits)
+        out[base + 15] = _clamp_norm(min(dmg, MAX_DAMAGE), MAX_DAMAGE)
+        out[base + 16] = 0.0 if mon.get("is_gone", False) else 1.0
+        out[base + 17] = 1.0 if mon.get("half_dead", False) else 0.0
+
+        mpowers = mon.get("powers") or []
+        out[base + 18] = _clamp_norm(min(parse_strength(mpowers), 30), 30)
+        out[base + 19] = _clamp_norm(min(parse_vulnerable(mpowers), MAX_DEBUFF), MAX_DEBUFF)
+        out[base + 20] = _clamp_norm(min(parse_weak(mpowers), MAX_DEBUFF), MAX_DEBUFF)
+        out[base + 21] = _clamp_norm(min(parse_poison(mpowers), 99), 99)
+        out[base + 22] = _clamp_norm(min(parse_curl_up(mpowers), 10), 10)
+
+        mid = mon.get("id") or mon.get("name") or ""
+        h = int(hashlib.md5(mid.encode()).hexdigest(), 16) % 1000
+        out[base + 23] = h / 1000.0
+        # base+24 ~ base+49 预留，填 0
+    return out
+
+
+def _encode_block8_relics(mod_response: Dict[str, Any]) -> np.ndarray:
+    """区块 8：遗物 180 维"""
+    out = np.zeros(180, dtype=np.float32)
+    gs = mod_response.get("game_state") or {}
+    relics = gs.get("relics") or []
+    for r in relics:
+        rid = r.get("id") or r.get("name") or ""
+        idx = relic_id_to_index(rid)
+        if 0 <= idx < RELIC_DIM:
+            out[idx] += 1
+    return out
+
+
+def _encode_block9_potions(mod_response: Dict[str, Any]) -> np.ndarray:
+    """区块 9：药水 65 维（multi-hot 45 + 每槽 4 维×5）"""
+    out = np.zeros(65, dtype=np.float32)
+    gs = mod_response.get("game_state") or {}
+    potions = gs.get("potions") or []
+    for p in potions:
+        pid = p.get("id") or p.get("name") or ""
+        idx = potion_id_to_index(pid)
+        if 0 <= idx < POTION_DIM:
+            out[idx] += 1
+    for i in range(5):
+        base = 45 + i * 4
+        if i < len(potions):
+            pot = potions[i]
+            out[base + 0] = 1.0 if pot.get("can_use", False) else 0.0
+            out[base + 1] = 1.0 if pot.get("can_discard", False) else 0.0
+            out[base + 2] = 1.0 if pot.get("requires_target", False) else 0.0
+            out[base + 3] = 1.0
+        else:
+            out[base + 3] = 0.0
+    return out
+
+
+def _encode_block10_global(mod_response: Dict[str, Any]) -> np.ndarray:
+    """区块 10：全局 43 维"""
+    out = np.zeros(43, dtype=np.float32)
+    gs = mod_response.get("game_state") or {}
+    cmds = mod_response.get("available_commands") or []
+    ss = gs.get("screen_state") or {}
+    options = ss.get("options") or []
+
+    out[0] = _clamp_norm(min(gs.get("floor", 0), 60), 60)
+    act = gs.get("act", 1)
+    if act == 1:
+        out[1] = 1.0
+    elif act == 2:
+        out[2] = 1.0
+    elif act == 3:
+        out[3] = 1.0
+
+    phase = (gs.get("room_phase") or gs.get("screen_type") or "").upper()
+    phase_map = {
+        "COMBAT": 4,
+        "EVENT": 5,
+        "MAP": 6,
+        "SHOP": 7,
+        "REST": 8,
+        "BOSS": 9,
+        "NONE": 10,
+        "CARD_REWARD": 11,
+    }
+    idx = phase_map.get(phase, 12)
+    out[idx] = 1.0
+
+    out[13] = 1.0 if "play" in cmds else 0.0
+    out[14] = 1.0 if "end" in cmds else 0.0
+    out[15] = 1.0 if "choose" in cmds else 0.0
+    out[16] = 1.0 if "proceed" in cmds else 0.0
+    out[17] = 1.0 if "potion" in cmds else 0.0
+    out[18] = _clamp_norm(min(len(options), 60), 60)
+    # 19-42 预留
+    return out
+
+
+def encode(mod_response: Dict[str, Any]) -> np.ndarray:
+    """
+    把 Mod 一帧的 JSON 转成 1840 维向量 s。
+
+    与 Mod 日志互通：mod_response 为 Mod 返回的整帧，
+    含 game_state、combat_state、available_commands 等。
+    缺失 combat_state 时，区块 2-9 填 0。
+    """
+    s = np.zeros(OUTPUT_DIM, dtype=np.float32)
+    gs = mod_response.get("game_state") or {}
+    has_combat = bool(gs.get("combat_state"))
+
+    b1 = _encode_block1_player_core(mod_response)
+    s[0:20] = b1
+
+    if has_combat:
+        b2 = _encode_block2_hand(mod_response)
+        b3 = _encode_block3_draw_pile(mod_response)
+        b4 = _encode_block4_discard_pile(mod_response)
+        b5 = _encode_block5_exhaust_pile(mod_response)
+        b6 = _encode_block6_player_powers(mod_response)
+        b7 = _encode_block7_monsters(mod_response)
+        s[20:351] = b2
+        s[351:630] = b3
+        s[630:901] = b4
+        s[901:1172] = b5
+        s[1172:1252] = b6
+        s[1252:1552] = b7
+    # 非战斗时 20:1552 保持为 0
+
+    b8 = _encode_block8_relics(mod_response)
+    b9 = _encode_block9_potions(mod_response)
+    b10 = _encode_block10_global(mod_response)
+    s[1552:1732] = b8
+    s[1732:1797] = b9
+    s[1797:1840] = b10
+
+    return s
+
+
+def get_output_dim() -> int:
+    """返回 1840"""
+    return OUTPUT_DIM
 
 
 class StateEncoder:
     """
-    扩展的状态编码器
+    状态编码器包装类 - 供 sts_env、rl_agent 等使用
 
-    支持两种模式：
-    - simple: 30维（基础版本，兼容旧版）
-    - extended: ~180维（完整版本，支持所有游戏场景）
+    将 GameState 转为 1840 维观察向量。
+    mode 参数保留以兼容旧接口，当前仅支持 extended（1840 维）。
     """
-
-    # ========== 常见遗物列表（前30个） ==========
-    COMMON_RELICS = [
-        # 通用遗物
-        "anchor", "bag_of_preparation", "bell", "blood_vial", "busted_crown",
-        "captor_ring", "ceramic_fish", "chemical_x", "cursed_key", "dream_catcher",
-        "ectoplasm", "enchaved_coffee", "fire_breathing", "frozen_egg", "frozen_eye",
-        "gambling_chip", "golden_eye", "greedy_hat", "hand_drill", "incense_burner",
-        "ingot", "lantern", "lice", "matryoshka", "meat_bucket", "mjolnir",
-        "monkey_paw", "odd_mushroom", "old_coin", "orange_pellets", "paper_frog",
-        # 静默遗物
-        "ring_of_the_snake", "kunai", "footwear", "nanowand", "shuriken",
-        # 铁甲遗物
-        "burning_blood", "cracked_core", "vajra",
-    ]
-
-    # ========== 卡牌池（扩展） ==========
-    ALL_CARD_IDS = [
-        # 铁甲战士
-        'Strike_R', 'Strike_G', 'Strike_B',
-        'Defend_R', 'Defend_G', 'Defend_B',
-        'Bash', 'Cleave', 'Iron_Wave', 'Pommel_Strike',
-        'Shrug_It_Off', 'Shield_Bash', 'Disarm', 'Iron_Wave',
-        # 静默
-        'Neutralize', 'Survivor', 'Backflip', 'Blade_Dance',
-        'Deadly_Poison', 'All', 'Catalyze', 'Cloak_And_Dagger',
-        'Dagger_Throw', 'Dodge_And_Roll', 'Flying_Knee', 'Footwork',
-        'Outmaneuver', 'Poison_Stab', 'Precision', 'Prepared',
-        'Slice', 'Sneaky_Strike', 'Sucker_Punch', 'Tesla_Coil',
-        'Acrobatics', 'Adrenaline', 'Bane', 'Blade_Dance',
-        'Bouncing_Flask', 'Bullet_Time', 'Burst', 'Calculated_Gamble',
-        'Choke', 'Cloak_And_Dagger', 'Deadly_Poison', 'Deflect',
-        'Dodge_And_Roll', 'Escape_Plan', 'Expertise', 'Finisher',
-        'Flechettes', 'Flying_Knee', 'Footwork', 'Ghostly_Wield',
-        'Grand_Finish', 'Heel_Hook', 'Infinite_Blades', 'Leg_Sweep',
-        'Malaise', 'Masterful_Stab', 'Maven', 'No_Sleep',
-        'Phantasmal_Killer', 'Predatory_Strike', 'Prepare', 'Quick_Play',
-        'Riddle_With_Holes', 'Riddle_With_Hags', 'Rip_And_Tear', 'Security',
-        'Setup', 'Shiv', 'Slice', 'Sly_Witness',
-        'Smokescreen', 'Storm_Of_Steel', 'Sucker_Punch', 'Survivor',
-        'Tactician', 'Technomancer', 'Thief', 'Trip',
-        'Unload', 'Venomology', 'Vorpal_Strike', 'Weave',
-        # 缺陷
-        'Strike_D', 'Defend_D',
-    ]
-
-    # ========== 敌人意图 ==========
-    INTENT_TYPES = ['ATTACK', 'DEFEND', 'BUFF', 'DEBUFF', 'ATTACK_BUFF', 'ATTACK_DEBUFF', 'UNKNOWN', 'NONE']
-
-    # ========== 最大值 ==========
-    MAX_MONSTERS = 6  # 史莱姆Boss分裂后最多6个
-    MAX_HP = 999
-    MAX_BLOCK = 50
-    MAX_ENERGY = 10
-    MAX_GOLD = 999
-    MAX_POWER = 30
-    MAX_FOCUS = 10
-    MAX_HAND_SIZE = 10
-
     def __init__(self, mode: str = "extended"):
-        """
-        初始化编码器
-
-        Args:
-            mode: "simple" (30维) 或 "extended" (~180维)
-        """
         self.mode = mode
-        if mode == "simple":
-            self.output_dim = 30
-        else:
-            # 计算扩展模式的总维度
-            self.output_dim = self._calculate_extended_dim()
-
-    def _calculate_extended_dim(self) -> int:
-        """计算扩展模式的维度"""
-        dim = 0
-        # 手牌基础编码（卡牌池 one-hot）
-        dim += len(self.ALL_CARD_IDS)  # ~90 维
-        # 手牌详细信息
-        dim += self.MAX_HAND_SIZE * 3  # cost + type + playable
-        # 玩家状态
-        dim += 15  # HP/block/energy/gold/power/etc
-        # 怪物信息
-        dim += self.MAX_MONSTERS * 10  # 6个怪物 × 10维
-        # 遗物
-        dim += len(self.COMMON_RELICS)  # 30 维
-        # 牌库信息
-        dim += 10
-        # 房间信息
-        dim += 5
-        # 药水信息
-        dim += 5
-        return dim
-
-    def encode_state(self, state: GameState) -> np.ndarray:
-        """
-        编码游戏状态
-
-        Args:
-            state: GameState 对象
-
-        Returns:
-            编码后的向量
-        """
-        if self.mode == "simple":
-            return self._encode_simple(state)
-        else:
-            return self._encode_extended(state)
-
-    def _encode_simple(self, state: GameState) -> np.ndarray:
-        """简单编码（30维，兼容旧版）"""
-        if state.combat is None:
-            return np.zeros(30, dtype=np.float32)
-
-        combat = state.combat
-
-        # 静默默认卡牌
-        SILENT_CARD_IDS = [
-            'Strike_R', 'Strike_G', 'Strike_B',
-            'Defend_R', 'Defend_G', 'Defend_B',
-            'Neutralize', 'Survivor', 'Bash',
-            'Backflip', 'Blade Dance', 'Deadly Poison', 'All',
-        ]
-
-        # 手牌编码（静默默认牌）
-        hand_encoding = np.zeros(12, dtype=np.float32)
-        for card in combat.hand:
-            if card.id in SILENT_CARD_IDS:
-                idx = SILENT_CARD_IDS.index(card.id)
-                hand_encoding[idx] += 1
-
-        # 其他信息
-        hand_count = min(len(combat.hand), 10)
-        energy = combat.player.energy
-        player_hp = self._normalize_hp(combat.player.current_hp, combat.player.max_hp)
-        player_block = min(combat.player.block, 20) / 20.0
-
-        # 怪物编码（第一个活着的怪物）
-        living = [m for m in combat.monsters if m.is_alive]
-        if living:
-            monster = living[0]
-            monster_hp = self._normalize_hp(monster.current_hp, monster.max_hp)
-            intent = self._encode_intent_simple(monster.intent)
-        else:
-            monster_hp = 0.0
-            intent = np.zeros(5, dtype=np.float32)
-
-        # 拼接
-        encoding = np.concatenate([
-            hand_encoding,
-            [hand_count, energy, player_hp, player_block, monster_hp],
-            intent,
-        ])
-
-        # 填充到30维
-        if len(encoding) < 30:
-            padded = np.zeros(30, dtype=np.float32)
-            padded[:len(encoding)] = encoding
-            return padded
-        return encoding[:30].astype(np.float32)
-
-    def _encode_extended(self, state: GameState) -> np.ndarray:
-        """扩展编码（~180维）"""
-        parts = []
-
-        # 1. 手牌基础编码（卡牌池 one-hot）
-        hand_base = self._encode_hand_base(state.combat)
-        parts.append(hand_base)
-
-        # 2. 手牌详细信息
-        hand_detail = self._encode_hand_detail(state.combat)
-        parts.append(hand_detail)
-
-        # 3. 玩家状态
-        player_state = self._encode_player_state(state)
-        parts.append(player_state)
-
-        # 4. 怪物信息（6个怪物 × 10维）
-        monster_state = self._encode_monsters_extended(state.combat)
-        parts.append(monster_state)
-
-        # 5. 遗物编码
-        relics = self._encode_relics(state)
-        parts.append(relics)
-
-        # 6. 牌库信息
-        deck = self._encode_deck_info(state.combat)
-        parts.append(deck)
-
-        # 7. 房间信息
-        room = self._encode_room_info(state)
-        parts.append(room)
-
-        # 8. 药水信息
-        potions = self._encode_potions(state.combat)
-        parts.append(potions)
-
-        # 拼接所有部分
-        encoding = np.concatenate(parts)
-
-        # 填充或截断到目标维度
-        return self._pad_or_truncate(encoding)
-
-    def _encode_hand_base(self, combat: Optional[CombatState]) -> np.ndarray:
-        """手牌基础编码（卡牌池 one-hot）"""
-        encoding = np.zeros(len(self.ALL_CARD_IDS), dtype=np.float32)
-
-        if combat is None:
-            return encoding
-
-        for card in combat.hand:
-            if card.id in self.ALL_CARD_IDS:
-                idx = self.ALL_CARD_IDS.index(card.id)
-                encoding[idx] += 1
-
-        return encoding
-
-    def _encode_hand_detail(self, combat: Optional[CombatState]) -> np.ndarray:
-        """手牌详细信息（cost + type + playable）"""
-        encoding = np.zeros(self.MAX_HAND_SIZE * 3, dtype=np.float32)
-
-        if combat is None:
-            return encoding
-
-        for i, card in enumerate(combat.hand[:self.MAX_HAND_SIZE]):
-            # cost 归一化
-            encoding[i * 3] = min(card.cost, 3) / 3.0
-            # type one-hot
-            encoding[i * 3 + 1] = self._card_type_to_int(card.card_type)
-            # is_playable
-            encoding[i * 3 + 2] = 1.0 if card.is_playable else 0.0
-
-        return encoding
-
-    def _encode_player_state(self, state: GameState) -> np.ndarray:
-        """玩家状态编码"""
-        if state.combat is None or state.combat.player is None:
-            return np.zeros(15, dtype=np.float32)
-
-        player = state.combat.player
-
-        # 金币从 GameState 获取，如果没有则从 Player
-        gold = state.gold if hasattr(state, 'gold') else player.gold
-
-        return np.array([
-            # HP 相关
-            self._normalize_hp(player.current_hp, player.max_hp),
-            min(player.block, self.MAX_BLOCK) / self.MAX_BLOCK,
-            # 能量
-            player.energy / self.MAX_ENERGY,
-            player.max_energy / self.MAX_ENERGY,
-            # 金币
-            min(gold, self.MAX_GOLD) / self.MAX_GOLD,
-            # 力量状态
-            min(player.strength, self.MAX_POWER) / self.MAX_POWER,
-            min(player.dexterity, self.MAX_POWER) / self.MAX_POWER,
-            min(player.focus, self.MAX_FOCUS) / self.MAX_FOCUS,
-            # 牌库信息
-            min(player.orbs, 10) / 10.0,  # 能量槽
-            # 抽弃信息
-            min(state.draw, 10) / 10.0,
-            min(state.discard, 10) / 10.0,
-            min(state.exhaust, 10) / 10.0,
-            # 其他
-            float(player.draw_this_turn > 0),  # 是否有额外抽牌
-            float(player.ethereal_count > 0),  # 是否有虚无牌
-            float(player.temp_hand_size),  # 临时手牌（能量）
-        ], dtype=np.float32)
-
-    def _encode_monsters_extended(self, combat: Optional[CombatState]) -> np.ndarray:
-        """怪物信息编码（6个怪物 × 10维）"""
-        encoding = np.zeros(self.MAX_MONSTERS * 10, dtype=np.float32)
-
-        if combat is None:
-            return encoding
-
-        living_monsters = [m for m in combat.monsters if m.is_alive][:self.MAX_MONSTERS]
-
-        for i, monster in enumerate(living_monsters):
-            base_idx = i * 10
-
-            # HP 归一化
-            encoding[base_idx] = self._normalize_hp(monster.current_hp, monster.max_hp)
-
-            # 格挡归一化
-            encoding[base_idx + 1] = min(monster.block, self.MAX_BLOCK) / self.MAX_BLOCK
-
-            # 意图 one-hot（5维）
-            intent_encoding = self._encode_intent_extended(monster.intent)
-            encoding[base_idx + 2:base_idx + 7] = intent_encoding
-
-            # 力量/敏捷
-            encoding[base_idx + 7] = min(monster.strength, self.MAX_POWER) / self.MAX_POWER
-            encoding[base_idx + 8] = min(monster.dexterity if hasattr(monster, 'dexterity') else 0, self.MAX_POWER) / self.MAX_POWER
-
-            # 是否存活
-            encoding[base_idx + 9] = 1.0 if monster.is_alive else 0.0
-
-        return encoding
-
-    def _encode_intent_simple(self, intent: IntentType) -> np.ndarray:
-        """简单意图编码（5维）"""
-        encoding = np.zeros(5, dtype=np.float32)
-        intent_str = intent.value if hasattr(intent, 'value') else str(intent)
-
-        mapping = {
-            'ATTACK': 0,
-            'DEFEND': 1,
-            'BUFF': 2,
-            'DEBUFF': 3,
-            'UNKNOWN': 4,
-        }
-
-        if intent_str in mapping:
-            encoding[mapping[intent_str]] = 1.0
-        else:
-            encoding[4] = 1.0
-
-        return encoding
-
-    def _encode_intent_extended(self, intent: IntentType) -> np.ndarray:
-        """扩展意图编码（5维）"""
-        encoding = np.zeros(5, dtype=np.float32)
-        intent_str = intent.value if hasattr(intent, 'value') else str(intent)
-
-        # 简化映射（合并复杂的意图类型）
-        if 'ATTACK' in intent_str:
-            encoding[0] = 1.0
-        elif 'DEFEND' in intent_str:
-            encoding[1] = 1.0
-        elif 'BUFF' in intent_str or 'STRENGTH' in intent_str:
-            encoding[2] = 1.0
-        elif 'DEBUFF' in intent_str or 'WEAK' in intent_str or 'VULNERABLE' in intent_str:
-            encoding[3] = 1.0
-        else:
-            encoding[4] = 1.0
-
-        return encoding
-
-    def _encode_relics(self, state: GameState) -> np.ndarray:
-        """遗物编码（30维 one-hot）"""
-        encoding = np.zeros(len(self.COMMON_RELICS), dtype=np.float32)
-
-        if state.relics is None:
-            return encoding
-
-        for relic in state.relics:
-            if relic in self.COMMON_RELICS:
-                idx = self.COMMON_RELICS.index(relic)
-                encoding[idx] = 1.0
-
-        return encoding
-
-    def _encode_deck_info(self, combat: Optional[CombatState]) -> np.ndarray:
-        """牌库信息"""
-        encoding = np.zeros(10, dtype=np.float32)
-
-        if combat is None or combat.player is None:
-            return encoding
-
-        player = combat.player
-
-        # 简化：按类型统计（攻击/技能/能力/其他）
-        # 这里用归一化的数量代替
-        encoding[0] = min(player.hand_size, 10) / 10.0
-        encoding[1] = min(player.draw_pile_count, 20) / 20.0
-        encoding[2] = min(player.discard_pile_count, 20) / 20.0
-        encoding[3] = min(player.exhaust_pile_count, 10) / 10.0
-
-        return encoding
-
-    def _encode_room_info(self, state: GameState) -> np.ndarray:
-        """房间信息"""
-        encoding = np.zeros(5, dtype=np.float32)
-
-        # 房间类型 one-hot（4维）
-        if state.room_phase == RoomPhase.COMBAT:
-            encoding[0] = 1.0
-        elif state.room_phase == RoomPhase.SHOP:
-            encoding[1] = 1.0
-        elif state.room_phase == RoomPhase.REST:
-            encoding[2] = 1.0
-        elif state.room_phase == RoomPhase.EVENT:
-            encoding[3] = 1.0
-
-        # 楼层归一化（假设最多60层）
-        encoding[4] = min(state.floor, 60) / 60.0
-
-        return encoding
-
-    def _encode_potions(self, combat: Optional[CombatState]) -> np.ndarray:
-        """药水信息"""
-        encoding = np.zeros(5, dtype=np.float32)
-
-        if combat is None:
-            return encoding
-
-        # 是否有药水
-        if combat.potions and len(combat.potions) > 0:
-            encoding[0] = 1.0
-            # 药水数量
-            encoding[1] = min(len(combat.potions), 3) / 3.0
-            # 常用药水类型简化
-            for potion in combat.potions[:2]:
-                if 'attack' in str(potion).lower():
-                    encoding[2] = 1.0
-                elif 'block' in str(potion).lower():
-                    encoding[3] = 1.0
-                elif 'flex' in str(potion).lower():
-                    encoding[4] = 1.0
-
-        return encoding
-
-    def _card_type_to_int(self, card_type: CardType) -> float:
-        """卡牌类型转换为数值"""
-        mapping = {
-            CardType.ATTACK: 0.3,
-            CardType.SKILL: 0.6,
-            CardType.POWER: 1.0,
-            CardType.STATUS: 0.0,
-            CardType.CURSE: 0.0,
-            CardType.UNKNOWN: 0.0,
-        }
-        return mapping.get(card_type, 0.0)
-
-    def _normalize_hp(self, current_hp: int, max_hp: int) -> float:
-        """归一化血量"""
-        if max_hp == 0:
-            return 0.0
-        return max(0.0, min(1.0, current_hp / max_hp))
-
-    def _pad_or_truncate(self, encoding: np.ndarray) -> np.ndarray:
-        """填充或截断到指定维度"""
-        if len(encoding) < self.output_dim:
-            padded = np.zeros(self.output_dim, dtype=np.float32)
-            padded[:len(encoding)] = encoding
-            return padded
-        elif len(encoding) > self.output_dim:
-            return encoding[:self.output_dim].astype(np.float32)
-        return encoding.astype(np.float32)
+        self._dim = OUTPUT_DIM
 
     def get_output_dim(self) -> int:
-        """获取输出维度"""
-        return self.output_dim
+        return self._dim
 
-
-# ========== 静默默认卡牌列表（简单模式用） ==========
-SILENT_CARD_IDS = [
-    'Strike_R', 'Strike_G', 'Strike_B',
-    'Defend_R', 'Defend_G', 'Defend_B',
-    'Neutralize', 'Survivor', 'Bash',
-    'Backflip', 'Blade Dance', 'Deadly Poison', 'All',
-]
-
-
-# ========== 兼容旧版函数接口 ==========
-def encode_state(state: Dict[str, Any]) -> np.ndarray:
-    """
-    旧版兼容接口（使用扩展模式）
-
-    Args:
-        state: 状态字典或 GameState 对象
-
-    Returns:
-        编码向量
-    """
-    if isinstance(state, dict):
-        game_state = GameState.from_mod_response(state)
-    else:
-        game_state = state
-
-    encoder = StateEncoder(mode="extended")
-    return encoder.encode_state(game_state)
-
-
-def encode_action(action_str: str, hand_size: int = 0) -> int:
-    """
-    编码动作为标签（简单模式，仅用于兼容）
-
-    扩展模式请使用 Action.to_id()
-    """
-    if action_str == 'end':
-        return 70  # 扩展模式的结束回合ID
-    elif action_str.startswith('play'):
-        try:
-            parts = action_str.split()
-            card_idx = int(parts[1]) - 1  # 转为 0-based
-            if 0 <= card_idx <= 9:
-                return card_idx  # 无目标
-        except (ValueError, IndexError):
-            pass
-    return -1
-
-
-def decode_action(action_id: int) -> str:
-    """解码动作 ID（简单模式）"""
-    if action_id >= 70:
-        return 'end'
-    elif 0 <= action_id <= 9:
-        return f'play {action_id + 1} 0'
-    else:
-        return 'state'
+    def encode_state(self, state) -> np.ndarray:
+        """将 GameState 编码为观察向量"""
+        if state is None:
+            return np.zeros(self._dim, dtype=np.float32)
+        mod_response = state.to_mod_response()
+        return encode(mod_response)

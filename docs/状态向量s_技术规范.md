@@ -56,7 +56,7 @@
 
 ## 四、ID 和归一化
 
-- **ID 从哪来**：`configs/encoder_v2_ids.yaml`，cards 271、relics 180、potions 45、powers 80、intents 13
+- **ID 从哪来**：`configs/encoder_ids.yaml`，cards 271、relics 180、potions 45、powers 80、intents 13
 - **Raw_Data**：`data/A20_Slient/Raw_Data_json_FORSL/`，脚本 `extract_mod_schema.py`、`extract_ids_from_raw.py`
 - 未知 ID → 编号 0；编码前把 id 归一化（小写、空格和下划线统一）
 - **非战斗**：没有 combat_state 时，区块 2~5、7 全 0；区块 1 只用 game_state 里能拿到的
@@ -65,7 +65,7 @@
 
 ## 五、实施清单
 
-1. [ ] 确认 encoder_v2_ids.yaml 的维度
+1. [ ] 确认 encoder_ids.yaml 的维度
 2. [ ] 实现 StateEncoderV2，只从保留字段读
 3. [ ] 实现 player.powers → 力量/虚弱/易伤 等解析
 4. [x] 实现 10 个区块编码，拼成 1840 维（见 `docs/planning_and_logs/状态向量s_穷尽计划_详细版.md`）

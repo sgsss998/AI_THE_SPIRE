@@ -40,7 +40,7 @@ mod_response (顶层)
 
 ---
 
-## 二、encoder_v2_ids.yaml 穷尽规格
+## 二、encoder_ids.yaml 穷尽规格
 
 ### 2.1 cards 段（271 条）
 
@@ -62,7 +62,7 @@ mod_response (顶层)
 
 **索引 321–367**：无色 47 张
 
-**文件路径**：`/Volumes/T7/AI_THE_SPIRE/configs/encoder_v2_ids.yaml`
+**文件路径**：`/Volumes/T7/AI_THE_SPIRE/configs/encoder_ids.yaml`
 
 ### 2.2 relics 段（180 条）
 
@@ -244,7 +244,7 @@ mod_response (顶层)
 | base+23 | monster_id_hash | monsters[m].id | hash(id) % 1000 / 1000（或 monster_id_to_index 若穷尽） | 0 |
 | base+24 ~ base+49 | monster_powers_multi | monsters[m].powers | 26 维，power_id_to_index 映射，amount 累加 | 全 0 |
 
-**注**：monster_powers 若超过 26 维，可截断或合并到 other；或扩展为 80 维与玩家 powers 对齐。**简化**：base+24~base+49 为 26 维，对应 encoder_v2_ids 中「怪物常见 powers」子集；或与玩家 powers 共用 80 维，取前 26。**约定**：base+24~base+49 为怪物 powers 的 26 维 multi-hot（amount 值，非 0/1），power 索引与 encoder_v2_ids.powers 前 26 个对应；其余 powers 合并到 other_powers_count_norm 放入 base+22 或新增一维。为简化，base+24~base+49 填 0，仅用 base+18~22 的 5 种关键 power；base+23 保留 monster_id_hash。
+**注**：monster_powers 若超过 26 维，可截断或合并到 other；或扩展为 80 维与玩家 powers 对齐。**简化**：base+24~base+49 为 26 维，对应 encoder_ids 中「怪物常见 powers」子集；或与玩家 powers 共用 80 维，取前 26。**约定**：base+24~base+49 为怪物 powers 的 26 维 multi-hot（amount 值，非 0/1），power 索引与 encoder_ids.powers 前 26 个对应；其余 powers 合并到 other_powers_count_norm 放入 base+22 或新增一维。为简化，base+24~base+49 填 0，仅用 base+18~22 的 5 种关键 power；base+23 保留 monster_id_hash。
 
 **最终约定**：每怪物 50 维 = hp_ratio(1) + block_norm(1) + intent_onehot(13) + damage_norm(1) + alive(1) + half_dead(1) + strength(1) + vulnerable(1) + weak(1) + poison(1) + curl_up(1) + monster_id_hash(1) + 预留(26)。
 
@@ -383,7 +383,7 @@ i ∈ [0, 4]，共 5 槽。
 
 ### 17.1 配置更新
 
-1. [x] 打开 `configs/encoder_v2_ids.yaml`，将 cards 段按穷尽清单补全（诅咒 14、状态 12，去重 Shiv）
+1. [x] 打开 `configs/encoder_ids.yaml`，将 cards 段按穷尽清单补全（诅咒 14、状态 12，去重 Shiv）
 2. [x] 将 relics 段去重、按穷尽清单补全（Snake Skull→Snecko Skull，补 Anchor/Bag of Preparation/Vajra）
 3. [x] 将 potions 段保持 45 条
 4. [x] 将 powers 段补全至 80+ 条
@@ -435,7 +435,7 @@ i ∈ [0, 4]，共 5 槽。
 
 | 文件 | 变更类型 |
 |------|----------|
-| configs/encoder_v2_ids.yaml | 修改：cards/relics/potions/powers 穷尽 |
+| configs/encoder_ids.yaml | 修改：cards/relics/potions/powers 穷尽 |
 | src/training/encoder_utils.py | 修改：新增 4 个查表函数 |
 | src/training/encoder_v2.py | 修改：OUTPUT_DIM、10 个区块、encode 逻辑 |
 | src/training/power_parser.py | 可选修改 |
