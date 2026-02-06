@@ -23,6 +23,12 @@ POWER_DIM = 80
 INTENT_DIM = 13
 MONSTER_DIM = 75
 
+# 新增维度 V2
+ORB_TYPE_DIM = 5        # 冰/雷/火/暗/未知
+EVENT_DIM = 50          # 事件 ID
+ROOM_SUBTYPE_DIM = 15   # 房间细分类型
+CARD_TYPE_DIM = 5       # 攻击/技能/能力/状态/诅咒
+
 # 懒加载
 _card_id_to_index: Optional[Dict[str, int]] = None
 _relic_id_to_index: Optional[Dict[str, int]] = None
@@ -210,3 +216,108 @@ def monster_id_to_index(monster_id: str) -> int:
     norm = normalize_id(monster_id)
     idx = _monster_id_to_index.get(norm, 0)
     return idx if 0 <= idx < MONSTER_DIM else 0
+
+
+# ========== 球类型映射 (Orb Types) ==========
+# 固定映射，不需要从 yaml 读取
+_ORB_TYPE_MAP = {
+    "frost": 0,      # 冰球
+    "lightning": 1,  # 雷球
+    "plasma": 2,     # 火球
+    "dark": 3,       # 暗球
+    "chaos": 4,      # 混沌球（观者）
+    "empty": 0,      # 空槽映射到未知
+}
+
+
+def orb_type_to_index(orb_type: str) -> int:
+    """
+    球类型转编号：0~4。
+    Mod 发送如 "Frost", "Lightning", "Plasma", "Dark", "Chaos"。
+    """
+    norm = normalize_id(orb_type)
+    return _ORB_TYPE_MAP.get(norm, 0)
+
+
+# ========== 事件 ID 映射 ==========
+_event_id_to_index: Optional[Dict[str, int]] = None
+
+
+def _build_event_id_to_index() -> Dict[str, int]:
+    """构建 event_id -> index 字典"""
+    data = _load_ids()
+    events: List[str] = data.get("events", [])
+    result = {}
+    for idx, eid in enumerate(events):
+        if eid:
+            norm = normalize_id(eid)
+            if norm and norm not in result:
+                result[norm] = idx
+    return result
+
+
+def event_id_to_index(event_id: str) -> int:
+    """
+    事件 id 查编号：0~EVENT_DIM-1。找不到返回 0（UNKNOWN）。
+    Mod 发送事件名，如 "The Shrine", "Big Fish"。
+    """
+    global _event_id_to_index
+    if _event_id_to_index is None:
+        _event_id_to_index = _build_event_id_to_index()
+    norm = normalize_id(event_id)
+    idx = _event_id_to_index.get(norm, 0)
+    return idx if 0 <= idx < EVENT_DIM else 0
+
+
+# ========== 房间细分类型映射 ==========
+# 固定映射，不需要从 yaml 读取
+_ROOM_SUBTYPE_MAP = {
+    # 怪物房
+    "monster_normal": 0,    # 普通怪物房
+    "monster_elite": 1,     # 精英房
+    "monster_boss": 2,      # Boss房
+    # 休息室
+    "rest_normal": 3,       # 普通休息室（火堆）
+    "rest_fire": 4,         # 升级火堆
+    "rest_massage": 5,      # 按摩
+    "rest_match": 6,        # 举重
+    # 商店
+    "shop": 7,              # 商店
+    # 事件房
+    "event": 8,             # 普通事件
+    "event_shrine": 9,      # 祭坛事件
+    # 其他
+    "treasure": 10,         # 宝箱房
+    "super_secret": 11,     # 超级秘密房
+    "secret": 12,           # 秘密房
+    "none": 13,             # 无房间类型
+    "unknown": 13,          # 未知
+}
+
+
+def room_subtype_to_index(subtype: str) -> int:
+    """
+    房间细分类型转编号：0~13。
+    根据 room_phase 和其他信息综合判断。
+    """
+    norm = normalize_id(subtype)
+    return _ROOM_SUBTYPE_MAP.get(norm, 13)
+
+
+# ========== 卡牌类型映射 ==========
+_CARD_TYPE_MAP = {
+    "attack": 0,
+    "skill": 1,
+    "power": 2,
+    "status": 3,
+    "curse": 4,
+}
+
+
+def card_type_to_index(card_type: str) -> int:
+    """
+    卡牌类型转编号：0~4。
+    Mod 发送如 "Attack", "Skill", "Power", "Status", "Curse"。
+    """
+    norm = normalize_id(card_type)
+    return _CARD_TYPE_MAP.get(norm, 0)

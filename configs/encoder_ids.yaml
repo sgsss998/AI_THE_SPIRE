@@ -812,3 +812,80 @@ monsters:
 # 玩家 player: energy, current_hp, block, max_hp, orbs, powers[]
 # 遗物 relics: id, name, counter
 # 药水 potions: id, name, can_use, can_discard, requires_target
+
+# ========== 事件 ID (Event IDs) ==========
+# 穷尽约 50 个常见事件
+events:
+  - UNKNOWN
+  # Act 1 事件
+  - The Shrine
+  - Big Fish
+  - The Cleric
+  - The Mausoleum
+  - The Village
+  - The Woman in Blue
+  - Accursed Blacksmith
+  - The House of M
+  - Accursed Dark
+  - The Tomb of Lord Red Mask
+  - The Magic Flute
+  - The Face
+  - The Courtyard
+  - The Library
+  - The Flooded Hollow
+  - The Durian
+  - The Mousetrap
+  - The Mine
+  - The Secret Portal
+  # Act 2 事件
+  - The Golden Shrine
+  - The Divide
+  - The Design
+  - The Mysterious Sphere
+  - The Otherworld
+  - The Enemy
+  - The Cache
+  - The Colosseum
+  - The Windy Peaks
+  - The Dungeon
+  - The Elemental
+  - The Sensory Stone
+  - The Writer
+  - The Mushroom Path
+  - The Augur
+  - The Crystal
+  - The Helmet
+  - The Colosseum
+  - The Transmogrifier
+  - The Circus
+  # Act 3 事件
+  - The Ankh
+  - The Bonfire
+  - The Coffin
+  - The Gathering
+  - The Ancestor
+  - The Dry Chamber
+  - The Eye
+  - The Forgotten Altar
+  - The Key
+  - The Liars Game
+  - The World of Goop
+  - The Wheel
+  # 特殊事件
+  - The Moist Knight
+  - The Pearl
+  - We Meet Again
+  - Nloths Hungry Face
+  - The Spiral
+  - Designer
+  - Purifier
+  - The Vault
+  - Falling
+  - Knowing Skull
+  - Du-Vu Doll
+  - Scrape Ooze
+  - The Serpent
+  - Nightmare
+  - Treasure Hunter
+  - Meeting The Juggernaut
+  - The Realm of Endless Doors
