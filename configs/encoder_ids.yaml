@@ -5,11 +5,11 @@
 # 编码器应对 ID 做归一化：忽略大小写、空格/下划线互换
 #
 # 静默猎手专用：固定 A20 难度 + 静默职业，只拿猎人职业牌
-# 卡牌：UNKNOWN + 诅咒13 + 状态5 + 静默75 + 无色42 = 136
+# 卡牌：UNKNOWN + 诅咒14 + 状态5 + 静默75 + 无色47 = 142
 
 # ========== 卡牌 ID (Card IDs) ==========
 # 格式：id -> index (0-based)，用于 multi-hot / one-hot
-# 静默专用：UNKNOWN + 诅咒13 + 状态5 + 静默75 + 无色42 = 136
+# 静默专用：UNKNOWN + 诅咒14 + 状态5 + 静默75 + 无色47 = 142
 cards:
   # 0: UNKNOWN 占位（编码器将未知 ID 映射到此）
   - UNKNOWN
@@ -23,6 +23,7 @@ cards:
   - Necronomicurse
   - Normality
   - Pain
+  - Parasite
   - Pride
   - Regret
   - Shame
@@ -158,6 +159,12 @@ cards:
   - RitualDagger
   - Safety
   - Insight
+  # 新增无色牌
+  - Panache
+  - Bite
+  - Expunger
+  - Smite
+  - Through Violence
   # 注：Shiv 已在静默 Common 中，此处不重复
 
 # ========== 遗物 ID (Relic IDs) ==========

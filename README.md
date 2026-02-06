@@ -2,25 +2,56 @@
 
 <div align="center">
 
-[![Python](https://img.shields.io/badge/Python-3.14-blue.svg)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/Python-3.14+-blue.svg)](https://www.python.org/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)](https://pytorch.org/)
 [![RL](https://img.shields.io/badge/RL-stable--baselines3-green.svg)](https://github.com/DLR-RM/stable-baselines3)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-基于强化学习的《杀戮尖塔》AI 项目
+### 基于 Reinforcement Learning 的《Slay the Spire》AI 项目
+
+**目标**：在 Ascension 20 难度下，使用静默猎手挑战 NoSL 模式
+
+**技术路线**：规则基线 → 监督学习（从人类数据） → 强化学习（自我优化）
 
 </div>
 
 ---
 
+## 目录
+
+- [项目简介](#项目简介)
+- [系统架构](#系统架构)
+- [状态编码器 V2](#状态编码器-v2)
+- [动作空间](#动作空间)
+- [数据流程](#数据流程)
+- [项目结构](#项目结构)
+- [快速开始](#快速开始)
+- [开发文档](#开发文档)
+- [更新日志](#更新日志)
+
+---
+
 ## 项目简介
 
-本项目使用强化学习技术，让 AI 自主学习《杀戮尖塔》的游戏策略。
+本项目使用**强化学习技术**训练 AI 自主学习《杀戮尖塔》的游戏策略。
 
-**目标**：在进阶20难度下，使用静默猎手角色，挑战 NoSL（No Save & Loading，不存读档）模式的人类纪录（当前27场连胜）。
+### 核心特性
 
-**技术路线**：规则基线 → 监督学习（从人类数据学习）→ 强化学习（自我对弈优化）
+- 🎮 **静默猎手专用**：针对 A20 难度 + 静默职业优化
+- 📊 **状态编码器**：2945 维 S 向量，覆盖完整游戏状态
+- 🎯 **动作空间**：179 维离散动作，支持所有游戏操作
+- 🔄 **完整训练流程**：从 Mod Log → 预处理 → 训练 → 评估
+- 🛡️ **Action Masking**：只选择当前合法动作
 
-**当前版本**：静默猎手专用编码器（A20固定难度，完整75张卡牌池）
+### 技术栈
+
+| 组件 | 技术 | 说明 |
+|------|------|------|
+| 游戏通信 | [CommunicationMod](https://github.com/ForgottenArbiter/CommunicationMod) | JSON 协议 |
+| 状态编码 | 自定义编码器 | 2945 维 S 向量 |
+| RL 框架 | Gymnasium + Stable-Baselines3 | PPO/A2C 算法 |
+| 神经网络 | PyTorch | 策略网络 + 价值网络 |
+| 配置管理 | YAML | 灵活的配置系统 |
 
 ---
 
@@ -29,66 +60,228 @@
 ### 训练流程
 
 ```
-规则基线 (数据收集)
+┌─────────────┐
+│  Mod Log    │  真实游戏数据
+└──────┬──────┘
        ↓
-监督学习 (热启动)
+┌─────────────┐
+│  预处理     │  (s, a) 对生成
+└──────┬──────┘
        ↓
-强化学习 (PPO/A2C)
+┌─────────────┐
+│ 监督学习    │  行为克隆
+└──────┬──────┘
        ↓
-    自我对弈优化
+┌─────────────┐
+│ 强化学习    │  PPO/A2C 优化
+└──────┬──────┘
+       ↓
+┌─────────────┐
+│   评估      │  性能测试
+└─────────────┘
 ```
 
-### 技术栈
+### 组件架构
 
-| 组件 | 技术 |
-|------|------|
-| 游戏通信 | CommunicationMod (JSON) |
-| 状态编码 | 自定义 ~2900维 S-向量（静默专用） |
-| 动作空间 | 179维离散空间 |
-| RL框架 | Gymnasium + Stable-Baselines3 |
-| 神经网络 | PyTorch |
+```
+┌───────────────────────────────────────────────────────────────┐
+│                        训练入口                            │
+│                    scripts/train.py                         │
+│  ┌────────────────────────────────────────────────────────┐   │
+│  │ pipeline │ collect │ sl │ rl │ eval │ interactive │   │
+│  └────────────────────────────────────────────────────────┘   │
+└───────────────────────────────────────────────────────────────┘
+                              ↓
+┌───────────────────────────────────────────────────────────────┐
+│                      核心模块层                              │
+│  ┌──────────┐  ┌─────────────┐  ┌──────────────┐  ┌─────────┐  │
+│  │  核心    │  │    训练      │  │    智能体     │  │  环境   │  │
+│  │          │  │              │  │              │  │         │  │
+│  │ action.py│  │ encoder.py  │  │supervised.py │ │sts_env.py│ │
+│  │config.py │  │encoder_dims.py│  │  rl_agent.py │  │         │  │
+│  │game_state│  │encoder_utils│  │rule_based.py │  │         │  │
+│  └──────────┘  │power_parser│  └──────────────┘  └─────────┘  │
+│  └──────────┘  └─────────────┘  └──────────────┘  └─────────┘  │
+└───────────────────────────────────────────────────────────────┘
+                              ↓
+┌───────────────────────────────────────────────────────────────┐
+│                      数据层                                  │
+│  ┌─────────────────────────────────────────────────────────┐  │
+│  │          Mod Log 原始数据                              │  │
+│  │  data/A20_Silent/Raw_Data_json_FORSL/*.json             │  │
+│  └─────────────────────────────────────────────────────────┘  │
+│  ┌─────────────────────────────────────────────────────────┐  │
+│  │          预处理后的训练数据                            │  │
+│  │  data/training_data_*.json                             │  │
+│  │  data/s_vectors.npy / data/actions.npy                   │  │
+│  └─────────────────────────────────────────────────────────┘  │
+└───────────────────────────────────────────────────────────────┘
+```
 
 ---
 
-## 状态编码 (S-向量)
+## 状态编码器 V2
 
-游戏状态编码为 **~2900维向量**，分为10个区块（静默猎手专用版本）：
+### 总览
+
+**总维度**：2945 维
+**设计原则**：静默猎手专用（A20 固定难度）
+**数据来源**：100% 基于 Mod 日志字段
+
+### 区块结构
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│  区块          范围          维度    内容                    │
-├─────────────────────────────────────────────────────────────┤
-│  玩家核心    [0-45]        46     HP、能量、金币、护甲等     │
-│  手牌        [46-429]      384    手牌详情（136张卡牌池）     │
-│  抽牌堆      [430-763]     334    牌库组成                  │
-│  弃牌堆      [764-1097]    334                            │
-│  消耗堆      [1098-1331]   234                            │
-│  能力效果    [1332-1431]   100    Power 状态               │
-│  怪物        [1432-2049]   618    怪物状态、意图            │
-│  遗物        [2050-2249]   200                            │
-│  药水        [2250-2449]   200                            │
-│  全局状态    [2450-2949]   500    楼层、房间类型等          │
-└─────────────────────────────────────────────────────────────┘
+┌────────────────────────────────────────────────────────────────────┐
+│ 区块          | 范围        | 维度  | 内容                              │
+├────────────────────────────────────────────────────────────────────┤
+│ 玩家核心      │ [0-16]      │  17  │ HP/能量/护甲/金币/钥匙               │
+│ 手牌         │ [17-406]    │ 390  │ 144 multi-hot + 21×10 + 统计        │
+│ 抽牌堆       │ [407-746]   │ 340  │ 144 multi-hot + 详细统计             │
+│ 弃牌堆       │ [747-1086]  │ 340  │ 同上                               │
+│ 消耗堆       │ [1087-1326] │ 240  │ 同上                               │
+│ 玩家Powers  │ [1327-1426] │ 100  │ Power效果                           │
+│ 怪物         │ [1427-2045] │ 618  │ 6怪物×103维                        │
+│ 遗物         │ [2045-2244] │ 200  │ 180 multi-hot + 统计                  │
+│ 药水         │ [2245-2444] │ 200  │ 45 multi-hot + 槽位信息               │
+│ 全局         │ [2445-2944] │ 500  │ 楼层/事件/地图/战斗动态/牌组变化      │
+└────────────────────────────────────────────────────────────────────┘
 ```
 
-### 编码原则
+### 区块10：全局状态详细结构（新增功能）
 
-1. 所有参数来源于 Mod 日志（无外部信息）
-2. 单个游戏参数可映射到多个向量维度
-3. 非战斗状态使用零填充
-4. **静默专用**：固定 A20 难度 + 静默职业，精简卡牌池（130张）
+```
+[0-22]      基础信息（楼层、章节、房间阶段、可用命令）
+[23-72]     事件ID one-hot (50维)
+[73-87]     房间细分类型 one-hot (15维)
+[88-112]    地图路径信息 (25维)
+[113-136]   更多buff/debuff状态 (24维)
+[137-200]   地图编码 (64维)
+[201-209]   重要字段 (9维)
+            ├── 商店删牌信息 (2维)
+            ├── 正在打出的牌 (2维)
+            ├── 受击次数 (1维)
+            └── 奖励类型 (4维)
+[210-320]   ⭐ 战斗动态信息 (111维) - 新增
+            ├── limbo牌信息 (3维)
+            ├── 怪物行为模式 (8维)
+            ├── 预计伤害来源 (10维)
+            └── 本回合动态 (20维)
+[321-400]   ⭐ 牌组变化统计 (80维) - 新增
+            ├── 牌组构成变化 (15维)
+            ├── 已消耗牌统计 (35维)
+            └── 升级牌统计 (15维)
+[401-499]   预留 (99维)
+```
+
+### 新增功能（2026-02-07）
+
+| 功能 | 说明 | Mod 日志来源 |
+|------|------|---------------|
+| **战斗动态** | limbo 牌、怪物行为模式、预计伤害 | `combat_state.limbo`, `monsters[].last_move_id` |
+| **牌组变化** | 牌组构成、已消耗牌、升级牌统计 | `game_state.deck`, `combat_state.exhaust_pile` |
+
+### 静默专用优化
+
+| 删除项 | 原因 |
+|--------|------|
+| 角色编码 (3维) | 固定静默猎手 |
+| 难度编码 (1维) | 固定 A20 |
+| Orbs 编码 (15维) | 静默不用能量球 |
+| 其他职业卡牌 | 只保留静默 75 张 |
+
+### 卡牌池
+
+```
+总卡牌数：144 张
+├── UNKNOWN     1 张（占位符）
+├── 诅咒        14 张
+├── 状态        5 张
+├── 静默职业    75 张
+└── 无色        47 种（事件/商店/遗物获得）
+```
 
 ---
 
-## 动作空间 (179维)
+## 动作空间
 
-| 类别 | 数量 | 说明 |
-|------|------|------|
-| 出牌 | 70 | 每张牌 × 6目标 |
-| 使用药水 | 20 | |
-| 丢弃药水 | 20 | |
-| 屏幕选择 | 60 | 事件/商店/奖励 |
-| 控制动作 | 9 | 结束回合、确认等 |
+### 179 维离散动作
+
+```
+┌───────────────────────────────────────────────────────────────┐
+│ 动作类型      | ID 范围      | 数量  | 说明                           │
+├──────────────────────────────────────────────────────────────┤
+│ 出牌动作      | 0-69         | 70   │ 10张牌 × 7个目标              │
+│ 使用药水      | 70-74        | 5    │ 不指定目标                     │
+│ 使用药水(目标) | 75-104       | 30   │ 对敌人1-6                     │
+│ 丢弃药水      | 105-109      | 5    │                                 │
+│ 选择选项      | 110-169      | 60   │ 事件/商店/卡牌奖励            │
+│ 结束回合      | 170          | 1    │ ACTION_END_ID                  │
+│ 确认/前进    | 171          | 1    │                                 │
+│ 确认按钮      | 172          | 1    │                                 │
+│ 其他控制      | 173-178      | 6    │ cancel/key/click/return/skip/leave│
+└──────────────────────────────────────────────────────────────┘
+```
+
+### 动作掩码 (Action Masking)
+
+每一步返回当前可用的动作掩码，AI 只需从可用动作中选择：
+
+```python
+# 示例：战斗中有 6 张可打出的牌
+action_mask = {0: 1, 1: 1, 2: 1, 3: 1, 4: 1, 5: 1, 100: 1}
+
+# 示例：事件选择
+action_mask = {110: 1, 111: 1, 112: 1}  # 3个选项可用
+```
+
+---
+
+## 数据流程
+
+### 完整数据处理流程
+
+```
+1. Mod Log 原始数据
+   data/A20_Silent/Raw_Data_json_FORSL/*.json
+   ↓
+2. 预处理 (scripts/preprocess_training_data.py)
+   ├── encode(): 生成 S 向量 (2945维)
+   ├── create_action_mask(): 生成动作掩码
+   └── infer_actual_action(): 推断实际执行的动作
+   ↓
+3. 训练数据文件
+   ├── training_data_*.json    # 完整数据 (含元数据)
+   ├── s_vectors.npy           # 状态矩阵 (N × 2945)
+   └── actions.npy             # 动作标签 (N,)
+   ↓
+4. 训练
+   ├── 监督学习：从 (s, a) 学习策略
+   └── 强化学习：用 (s, action_mask) 优化策略
+```
+
+### 预处理脚本功能
+
+**脚本**：`scripts/preprocess_training_data.py`
+
+**功能**：
+- 从 Mod Log 生成 (s, a) 训练对
+- 支持单文件和批量处理
+- 自动推断实际执行的动作
+- 生成 JSON 和 NumPy 两种格式
+
+**使用方法**：
+
+```bash
+# 单文件处理
+python scripts/preprocess_training_data.py \
+    -i data/A20_Silent/Raw_Data_json_FORSL/file.json \
+    -o data/training_data.json
+
+# 批量处理
+python scripts/preprocess_training_data.py -b \
+    -i data/A20_Silent/Raw_Data_json_FORSL \
+    -o data/processed/
+```
 
 ---
 
@@ -96,290 +289,189 @@
 
 ```
 AI_THE_SPIRE/
-├── src/
-│   ├── core/                      # 数据结构
-│   │   ├── game_state.py          # GameState, Card, Monster
-│   │   ├── action.py              # 动作空间定义
-│   │   └── config.py
-│   ├── env/
-│   │   └── sts_env.py             # Gymnasium 环境
-│   ├── agents/                    # AI 实现
-│   │   ├── base.py
-│   │   ├── rule_based.py          # 规则 AI
-│   │   ├── supervised.py          # 监督学习
-│   │   └── rl_agent.py            # 强化学习
-│   └── training/
-│       ├── encoder.py             # S-向量编码器
-│       ├── encoder_utils.py
-│       └── power_parser.py
-├── scripts/
-│   ├── train.py                   # 主入口
-│   ├── collect_data.py
-│   ├── train_sl.py
-│   ├── train_rl.py
-│   └── evaluate.py
-├── configs/
-│   ├── default.yaml
-│   └── encoder_ids.yaml
-└── docs/
-    └── MOD_LOG_PARAMETERS.md
+├── src/                           # 源代码
+│   ├── core/                       # 核心模块
+│   │   ├── action.py              # 动作空间定义 (179维)
+│   │   ├── config.py              # 配置管理
+│   │   └── game_state.py          # 游戏状态类
+│   │
+│   ├── training/                   # 训练模块
+│   │   ├── encoder.py             # ⭐ 状态编码器 (2945维)
+│   │   ├── encoder_dims.py        # ⭐ 维度常量定义
+│   │   ├── encoder_utils.py       # ID 映射工具
+│   │   └── power_parser.py         # Power 解析
+│   │
+│   ├── agents/                    # 智能体
+│   │   ├── base.py                # Agent 基类
+│   │   ├── supervised.py          # 监督学习 Agent
+│   │   ├── rl_agent.py            # 强化学习 Agent
+│   │   └── rule_based.py          # 基于规则的 Agent
+│   │
+│   └── env/                       # 环境模块
+│       └── sts_env.py             # Gymnasium 环境接口
+│
+├── scripts/                       # 训练脚本
+│   ├── train.py                   # ⭐ 统一训练入口
+│   ├── train_sl.py                # 监督学习训练
+│   ├── train_rl.py                # 强化学习训练
+│   ├── evaluate.py                # 模型评估
+│   └── preprocess_training_data.py # ⭐ 数据预处理
+│
+├── configs/                       # 配置文件
+│   ├── encoder_ids.yaml          # ⭐ 卡牌/遗物/药水 ID 映射表
+│   └── default.yaml              # 默认配置
+│
+├── data/                          # 数据目录
+│   ├── A20_Silent/                # 静默猎手数据
+│   │   └── Raw_Data_json_FORSL/  # Mod Log 原始数据
+│   ├── training_data_*.json       # 预处理后的训练数据
+│   ├── s_vectors.npy              # 状态矩阵 (PyTorch 训练用)
+│   └── actions.npy                # 动作标签 (PyTorch 训练用)
+│
+├── docs/                          # 文档
+│   └── MOD_LOG_PARAMETERS.md      # Mod 协议文档
+│
+├── rules_for_all.md               # 全局规则
+└── README.md                      # 本文件
 ```
 
 ---
 
 ## 快速开始
 
-### 前置要求
+### 环境要求
 
-- 《杀戮尖塔》游戏本体
-- [CommunicationMod](https://github.com/ForgottenArbiter/CommunicationMod)
 - Python 3.14+
+- 《杀戮尖塔》游戏本体
+- [CommunicationMod](https://github.com/ForgottenArbiter/CommunicationMod)（可选，用于真实游戏）
 
-### 安装
+### 安装依赖
 
 ```bash
-pip install "numpy<2.0" "scipy<2.0" scikit-learn pyyaml
+pip install numpy==1.26.4
+pip install scipy scikit-learn pyyaml
 pip install torch torchvision torchaudio
-pip install stable-baselines3 gymnasium
+pip install gymnasium stable-baselines3
 ```
 
-### 使用
+### 数据预处理
 
 ```bash
-# 观看规则 AI 玩一局
-python scripts/train.py interactive --agent-type rule
+# 将 Mod Log 转换为训练数据
+python scripts/preprocess_training_data.py \
+    -i data/A20_Silent/Raw_Data_json_FORSL/Silent_A20_HUMAN_20260205_233501.json \
+    -o data/training_data.json
+```
 
+输出文件：
+- `training_data.json` - 完整训练数据（JSON 格式）
+- `s_vectors.npy` - 状态矩阵
+- `actions.npy` - 动作标签
+
+### 训练模型
+
+```bash
 # 完整训练流程
-python scripts/train.py pipeline --collect-games 50 --sl-epochs 100 --rl-timesteps 100000
+python scripts/train.py pipeline \
+    --data-dir data/A20_Silent/Raw_Data_json_FORSL \
+    --collect-games 50 \
+    --sl-epochs 100 \
+    --rl-timesteps 100000
 
-# 单独执行
-python scripts/train.py collect   # 收集数据
-python scripts/train.py sl        # 监督学习
-python scripts/train.py rl        # 强化学习
-python scripts/train.py eval      # 评估
+# 单独步骤
+python scripts/train.py sl --data-dir data/    # 监督学习
+python scripts/train.py rl --sl-model models/sl.pkl  # 强化学习
+python scripts/train.py eval --agent-type rl       # 评估
 ```
 
 ---
 
-## 技术特性
+## 开发文档
 
-- **防卡死机制**：命令重复检测、状态哈希检测、命令黑名单
-- **热启动**：使用监督学习模型初始化 RL，加速收敛
-- **动作掩码**：只选择当前合法动作
-- **模块化设计**：核心层/环境层/智能体层分离
+### 编码器使用
 
----
+```python
+from src.training.encoder import encode, get_output_dim
 
-## 已知问题
+# 从 Mod 响应生成 S 向量
+mod_response = {
+    "game_state": {...},
+    "available_commands": [...],
+    ...
+}
 
-**NumPy 2.0 兼容性**：`sklearn + numpy 2.0` 会报错
-
-```bash
-pip install "numpy<2.0" "scipy<2.0"
+s_vector = encode(mod_response)
+print(f"S 向量维度: {len(s_vector)}")  # 2945
+print(f"非零元素: {(s_vector != 0).sum()}")
 ```
 
+### ID 映射使用
+
+```python
+from src.training.encoder_utils import card_id_to_index
+
+# 卡牌 ID → 索引
+index = card_id_to_index("Backflip")  # 静默卡牌
+print(f"Backflip 索引: {index}")  # 0-143
+```
+
+### 自定义训练
+
+参考：
+- `scripts/train_sl.py` - 监督学习实现
+- `scripts/train_rl.py` - 强化学习实现
+- `src/agents/supervised.py` - Agent 实现
+
 ---
 
-## 开发记录
+## 更新日志
+
+### 2026-02-07：编码器 V2 + 数据预处理
+
+**状态编码器更新**
+- ✅ 总维度：2945 维（静默专用）
+- ✅ 新增：战斗动态信息（111维）
+- ✅ 新增：牌组变化统计（80维）
+- ✅ 删除：角色/难度/Orbs 编码（静默不用）
+- ✅ 卡牌池：144 张（静默75 + 诅咒14 + 状态5 + 无色47）
+
+**新增功能**
+- ✅ 数据预处理脚本 `scripts/preprocess_training_data.py`
+- ✅ 动作掩码生成（支持 choose/play/end 等所有命令）
+- ✅ 实际动作推断（从相邻记录推断）
+- ✅ 批量处理支持
+
+**数据处理**
+- ✅ 从 Mod Log 生成 (s, a) 训练对
+- ✅ 支持 JSON 和 NumPy 两种输出格式
+- ✅ 完整的元数据记录
 
 ### 2026-02-06：静默专用编码器完善
 
-- 完整卡牌池：补充缺失的6张静默卡牌（Adrenaline、All Out Attack、Dagger Spray、Die Die Die、Glass Knife、Precise Strike、Rapture、Throwing Knife）
-- 最终卡牌数量：UNKNOWN + 诅咒13 + 状态5 + 静默75 + 无色42 = 136张
-- 删除冗余编码：移除角色/难度/Orbs编码（静默不用）
-- 调整参数上限：MAX_HP=200, MAX_BLOCK=999, MAX_ENERGY=20, MAX_POWER=99
-- 总维度从3426减少到2950（减少约14%）
+- 完善卡牌池：144 张卡牌
+- 删除冗余编码：角色/难度/Orbs
+- 调整参数上限：MAX_HP=200, MAX_BLOCK=999, MAX_ENERGY=20
 
-### 2026-02-04：S-向量设计共识
+### 2026-02-05：初始版本
 
-- S-向量参数是 Mod 日志的子集
-- 维度远大于原始参数数量（多 hot 编码）
-- 参数选择是最关键的设计决策
-
-### 进度
-
-| 时间      | 里程碑                          |
-| ------- | ----------------------------- |
-| 2026-01 | 动作空间定义完成 (179)             |
-| 2026-02 | S-向量编码器完成 (~2900维)        |
-| 2026-02 | 静默专用编码器完善 (~2950维)        |
-| 待定      | 监督学习训练                       |
-| 待定      | 强化学习训练                       |
+- 动作空间定义（179 维）
+- S 向量编码器实现
+- 基础训练框架
 
 ---
 
 ## 参考资源
 
-- [CommunicationMod](https://github.com/ForgottenArbiter/CommunicationMod)
-- [Stable-Baselines3](https://github.com/DLR-RM/stable-Baselines3)
-- [Gymnasium](https://github.com/Farama-Foundation/Gymnasium)
+- [CommunicationMod](https://github.com/ForgottenArbiter/CommunicationMod) - 游戏通信协议
+- [Stable-Baselines3](https://github.com/DLR-RM/stable-baselines3) - RL 框架
+- [Gymnasium](https://github.com/Farama-Foundation/Gymnasium) - RL 环境标准
+
 ---
 
-AI_THE_SPIRE 项目完整分析报告
+## 贡献
 
-  项目概述
+欢迎提交 Issue 和 Pull Request！
 
-  AI_THE_SPIRE 是一个基于强化学习的《杀戮尖塔》(Slay the Spire) AI 项目，目标是让 AI 自主学习游戏策略，挑战进阶20难度的 NoSL 模式人类纪录（27场连胜）。
+## 许可证
 
-  技术路线: 规则基线 → 监督学习（SL）→ 强化学习（RL）
-
-  ---
-  核心架构
-
-  1. 目录结构
-
-  AI_THE_SPIRE/
-  ├── src/
-  │   ├── core/              # 核心数据结构
-  │   │   ├── game_state.py  # 游戏状态定义
-  │   │   ├── action.py      # 动作空间定义 (179维)
-  │   │   └── config.py      # 配置管理
-  │   ├── env/
-  │   │   └── sts_env.py     # Gymnasium RL环境
-  │   ├── agents/
-  │   │   ├── base.py        # Agent基类
-  │   │   ├── rule_based.py  # 规则AI
-  │   │   ├── supervised.py  # 监督学习
-  │   │   └── rl_agent.py    # 强化学习
-  │   └── training/
-  │       ├── encoder.py     # S向量编码器 (~3126维)
-  │       ├── encoder_utils.py
-  │       └── power_parser.py
-  ├── scripts/               # 训练脚本
-  ├── configs/               # 配置文件
-  └── data/                  # 数据存储
-
-  2. 核心数据结构 (game_state.py)
-
-  类层次结构:
-  GameState (游戏总状态)
-  ├── RoomPhase (房间阶段枚举)
-  ├── CardType (卡牌类型枚举)
-  ├── IntentType (怪物意图枚举)
-  ├── Card (卡牌 - frozen dataclass)
-  ├── Player (玩家状态)
-  ├── Monster (怪物状态)
-  ├── CombatState (战斗状态)
-  └── GameState (完整游戏状态)
-
-  关键方法:
-  - GameState.from_mod_response(): 从 CommunicationMod JSON 创建状态
-  - GameState.to_mod_response(): 转换为 Mod 格式用于编码
-
-  3. 动作空间 (action.py)
-
-  179维离散动作空间:
-  - 0-69: 出牌 (10张牌 × 7个目标)
-  - 70-109: 药水 (使用/丢弃)
-  - 110-169: 选择选项
-  - 170-178: 控制动作 (end/proceed/confirm/cancel等)
-
-  关键方法:
-  - Action.to_command(): 转换为 Mod 命令字符串
-  - Action.from_command(): 从命令解析
-  - Action.to_id(): 转换为训练标签
-  - Action.from_id(): 从模型预测创建
-
-  4. 状态编码 (encoder.py)
-
-  S向量 V2 - 静默专用: ~2900维，分10个区块
-  ┌───────────────┬──────┬─────────────────────────────────────────┐
-  │     区块      │ 维度 │                  内容                   │
-  ├───────────────┼──────┼─────────────────────────────────────────┤
-  │ 1. 玩家核心   │ 46   │ HP/能量/护甲/金币/钥匙（删除角色/难度/Orbs） │
-  ├───────────────┼──────┼─────────────────────────────────────────┤
-  │ 2. 手牌       │ 378  │ 130维卡牌multi-hot + 21×10牌属性 + 统计 │
-  ├───────────────┼──────┼─────────────────────────────────────────┤
-  │ 3. 抽牌堆     │ 328  │ 130维卡牌multi-hot + 详细统计           │
-  ├───────────────┼──────┼─────────────────────────────────────────┤
-  │ 4. 弃牌堆     │ 328  │ 同上                                    │
-  ├───────────────┼──────┼─────────────────────────────────────────┤
-  │ 5. 消耗堆     │ 228  │ 同上                                    │
-  ├───────────────┼──────┼─────────────────────────────────────────┤
-  │ 6. 玩家Powers │ 100  │ Power效果one-hot                        │
-  ├───────────────┼──────┼─────────────────────────────────────────┤
-  │ 7. 怪物       │ 618  │ 6怪物×103维 (ID/HP/意图/类型等)         │
-  ├───────────────┼──────┼─────────────────────────────────────────┤
-  │ 8. 遗物       │ 200  │ 180维multi-hot + 统计                   │
-  ├───────────────┼──────┼─────────────────────────────────────────┤
-  │ 9. 药水       │ 200  │ 45维multi-hot + 每槽5×5 + 统计          │
-  ├───────────────┼──────┼─────────────────────────────────────────┤
-  │ 10. 全局      │ 500  │ 楼层/事件ID/地图/房间细分等             │
-  └───────────────┴──────┴─────────────────────────────────────────┘
-
-  静默专用优化：
-  - 卡牌池精简：只保留静默(69) + 诅咒(13) + 状态(5) + 无色(42) = 130张
-  - 删除角色编码（固定静默）
-  - 删除难度编码（固定A20）
-  - 删除Orbs编码（静默不用）
-  - 调整参数上限（MAX_HP=200, MAX_BLOCK=999）
-
-  5. RL环境 (sts_env.py)
-
-  StsEnvironment 类:
-  - 观察空间: ~2900维连续向量
-  - 动作空间: Discrete(179)
-  - Action Masking: 返回合法动作列表
-  - 奖励函数: 基于伤害、击杀、HP变化等
-  - 终止条件: 游戏结束/战斗结束/死亡/胜利
-
-  ---
-  训练流程
-
-  完整Pipeline
-
-  1. 数据收集 (collect_data.py)
-     ↓ 真实游戏数据
-  2. 监督学习 (train_sl.py)
-     ↓ 初始化RL策略
-  3. 强化学习 (train_rl.py)
-     ↓ PPO/A2C优化
-  4. 评估 (evaluate.py)
-
-  脚本说明
-
-  train.py: 统一训练入口
-  - pipeline: 完整流程
-  - collect: 数据收集
-  - sl: 监督学习
-  - rl: 强化学习
-  - eval: 评估
-  - interactive: 交互测试
-
-  train_rl.py: RL训练专用
-  - 支持 PPO/A2C/DQN 算法
-  - Warm Start 从 SL 模型初始化
-  - 支持并行环境训练
-
-  ---
-  设计特点
-
-  1. 防卡死机制: 命令重复检测、状态哈希检测、命令黑名单
-  2. 热启动: 使用 SL 模型初始化 RL，加速收敛
-  3. 动作掩码: 只选择当前合法动作
-  4. 模块化设计: 核心层/环境层/智能体层分离
-  5. 完整训练流程: 从数据收集到 RL 训练的完整 pipeline
-
-  ---
-  技术栈
-  ┌──────────┬───────────────────────────────────┐
-  │   组件   │              技术                 │
-  ├──────────┼───────────────────────────────────┤
-  │ 游戏通信 │ CommunicationMod (JSON)          │
-  ├──────────┼───────────────────────────────────┤
-  │ 状态编码 │ 自定义 ~2900维 S-向量（静默专用） │
-  ├──────────┼───────────────────────────────────┤
-  │ 动作空间 │ 179维离散空间                    │
-  ├──────────┼───────────────────────────────────┤
-  │ RL框架   │ Gymnasium + Stable-Baselines3    │
-  ├──────────┼───────────────────────────────────┤
-  │ 神经网络 │ PyTorch + sklearn                │
-  ├──────────┼───────────────────────────────────┤
-  │ 配置管理 │ YAML                             │
-  └──────────┴───────────────────────────────────┘
-  ---
-  已知问题
-
-  1. NumPy 2.0兼容性: sklearn + numpy 2.0 会报错
-  2. CommunicationMod依赖: 需要安装 Mod 才能与真实游戏通信
-  3. 数据收集: 真实游戏数据收集需要配置 Mod 的 command 参数
+MIT License

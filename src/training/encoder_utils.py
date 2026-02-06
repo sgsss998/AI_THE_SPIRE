@@ -15,20 +15,25 @@ import yaml
 _PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 _IDS_PATH = _PROJECT_ROOT / "configs" / "encoder_ids.yaml"
 
-# 穷尽维度（与 Mod 日志互通，索引超出时映射到 0）
-# 静默猎手专用：UNKNOWN + 诅咒13 + 状态5 + 静默75 + 无色42 = 136
-CARD_DIM = 136
-RELIC_DIM = 180
-POTION_DIM = 45
-POWER_DIM = 80
-INTENT_DIM = 13
-MONSTER_DIM = 75
-
-# 新增维度 V2
-ORB_TYPE_DIM = 5        # 冰/雷/火/暗/未知
-EVENT_DIM = 50          # 事件 ID
-ROOM_SUBTYPE_DIM = 15   # 房间细分类型
-CARD_TYPE_DIM = 5       # 攻击/技能/能力/状态/诅咒
+# 从 encoder_dims 导入维度常量（统一来源）
+# 防止维度不一致问题
+try:
+    from src.training.encoder_dims import (
+        CARD_DIM, RELIC_DIM, POTION_DIM, POWER_DIM, INTENT_DIM, MONSTER_DIM,
+        ORB_TYPE_DIM, EVENT_DIM, ROOM_SUBTYPE_DIM, CARD_TYPE_DIM
+    )
+except ImportError:
+    # 如果导入失败，使用备用定义
+    CARD_DIM = 144
+    RELIC_DIM = 180
+    POTION_DIM = 45
+    POWER_DIM = 80
+    INTENT_DIM = 13
+    MONSTER_DIM = 75
+    ORB_TYPE_DIM = 5
+    EVENT_DIM = 50
+    ROOM_SUBTYPE_DIM = 15
+    CARD_TYPE_DIM = 5
 
 # 懒加载
 _card_id_to_index: Optional[Dict[str, int]] = None
@@ -305,6 +310,47 @@ def room_subtype_to_index(subtype: str) -> int:
     return _ROOM_SUBTYPE_MAP.get(norm, 13)
 
 
+# ========== 怪物类型判断 ==========
+# 完整的 Boss ID 列表（用于判断怪物类型）
+_BOSS_IDS = {
+    "slimeboss", "guardian", "hexaghost", "bronzeautomaton",
+    "collector", "champ", "awakenedone", "timeeater",
+    "donu", "deca", "heart", "corrupt", "spire",
+    "theguardian", "thecollector", "thechamp", "theawakenedone",
+    "thetimeeater", "corruptheart", "spireshield", "spirespear",
+}
+
+# 完整的精英 ID 列表
+_ELITE_IDS = {
+    "gremlinnob", "lagavulin", "bookofstabbing",
+    "gremlinleader", "slaverboss", "gianthead",
+    "nemesis", "reptomancer",
+}
+
+
+def get_monster_type(monster_id: str) -> int:
+    """
+    根据怪物 ID 判断类型：0=普通, 1=精英, 2=Boss
+
+    Args:
+        monster_id: 怪物 ID（会自动归一化）
+
+    Returns:
+        int: 0=普通, 1=精英, 2=Boss
+    """
+    mid_lower = normalize_id(monster_id)
+
+    # 检查是否是 Boss
+    if any(boss in mid_lower for boss in _BOSS_IDS):
+        return 2
+
+    # 检查是否是精英
+    if any(elite in mid_lower for elite in _ELITE_IDS):
+        return 1
+
+    return 0
+
+
 # ========== 卡牌类型映射 ==========
 _CARD_TYPE_MAP = {
     "attack": 0,
@@ -322,3 +368,22 @@ def card_type_to_index(card_type: str) -> int:
     """
     norm = normalize_id(card_type)
     return _CARD_TYPE_MAP.get(norm, 0)
+
+
+# ========== 卡牌稀有度映射 ==========
+_RARITY_MAP = {
+    "basic": 0,
+    "common": 1,
+    "uncommon": 2,
+    "rare": 3,
+    "special": 4,
+}
+
+
+def card_rarity_to_index(rarity: str) -> int:
+    """
+    卡牌稀有度转编号：0~4。
+    Mod 发送如 "BASIC", "COMMON", "UNCOMMON", "RARE", "SPECIAL"。
+    """
+    norm = normalize_id(rarity)
+    return _RARITY_MAP.get(norm, 1)  # 默认为 COMMON
