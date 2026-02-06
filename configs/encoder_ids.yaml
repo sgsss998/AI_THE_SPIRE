@@ -1,13 +1,15 @@
-# Encoder V2 映射表 - 用于 ~2900 维 S 向量状态编码
+# Encoder V2 映射表 - 静默猎手专用编码器
 # 数据来源：杀戮尖塔穷尽清单、slaythespire.wiki.gg、monsters.json、MOD_LOG 验证
 # 验证日期：2025-02
 # 未知 ID 映射到 index 0 (UNKNOWN)
 # 编码器应对 ID 做归一化：忽略大小写、空格/下划线互换
+#
+# 静默猎手专用：固定 A20 难度 + 静默职业，只拿猎人职业牌
+# 卡牌：UNKNOWN + 诅咒13 + 状态5 + 静默75 + 无色42 = 136
 
 # ========== 卡牌 ID (Card IDs) ==========
 # 格式：id -> index (0-based)，用于 multi-hot / one-hot
-# 角色后缀：_R=铁甲, _G=静默, _B=缺陷, _P=观者
-# 穷尽：UNKNOWN + 诅咒14 + 状态12 + 铁甲73 + 静默73 + 缺陷73 + 观者75 + 无色47 = 368（编码器取前271）
+# 静默专用：UNKNOWN + 诅咒13 + 状态5 + 静默75 + 无色42 = 136
 cards:
   # 0: UNKNOWN 占位（编码器将未知 ID 映射到此）
   - UNKNOWN
@@ -31,85 +33,6 @@ cards:
   - Slimed
   - Void
   - Wound
-  # 铁甲战士 (Ironclad) - Basic
-  - Strike_R
-  - Defend_R
-  - Bash
-  # 铁甲 - Common
-  - Anger
-  - Armaments
-  - Body Slam
-  - Clash
-  - Cleave
-  - Clothesline
-  - Flex
-  - Havoc
-  - Headbutt
-  - Heavy Blade
-  - Iron Wave
-  - Perfected Strike
-  - Pommel Strike
-  - Shrug It Off
-  - Sword Boomerang
-  - Thunderclap
-  - True Grit
-  - Twin Strike
-  - Warcry
-  - Wild Strike
-  # 铁甲 - Uncommon
-  - Battle Trance
-  - Blood for Blood
-  - Bloodletting
-  - Burning Pact
-  - Carnage
-  - Combust
-  - Dark Embrace
-  - Disarm
-  - Dropkick
-  - Dual Wield
-  - Entrench
-  - Evolve
-  - Feel No Pain
-  - Fire Breathing
-  - Flame Barrier
-  - Ghostly Armor
-  - Hemokinesis
-  - Infernal Blade
-  - Inflame
-  - Intimidate
-  - Metallicize
-  - Power Through
-  - Pummel
-  - Rage
-  - Rampage
-  - Reckless Charge
-  - Rupture
-  - Searing Blow
-  - Second Wind
-  - Seeing Red
-  - Sentinel
-  - Sever Soul
-  - Shockwave
-  - Spot Weakness
-  - Uppercut
-  - Whirlwind
-  # 铁甲 - Rare
-  - Barricade
-  - Berserk
-  - Bludgeon
-  - Brutality
-  - Corruption
-  - Demon Form
-  - Double Tap
-  - Exhume
-  - Feed
-  - Fiend Fire
-  - Immolate
-  - Impervious
-  - Juggernaut
-  - Limit Break
-  - Offering
-  - Reaper
   # 静默 (Silent) - Basic
   - Strike_G
   - Defend_G
@@ -179,153 +102,19 @@ cards:
   # 静默 - Rare
   - After Image
   - Bullet Time
+  - Die Die Die
   - Doppelganger
   - Envenom
+  - Glass Knife
   - Grand Finale
   - Storm of Steel
-  # 缺陷 (Defect) - Basic
-  - Strike_B
-  - Defend_B
-  - Zap
-  - Dualcast
-  # 缺陷 - Common
-  - Ball Lightning
-  - Barrage
-  - Beam Cell
-  - Charge Battery
-  - Cold Snap
-  - Compile Driver
-  - Coolheaded
-  - Go for the Eyes
-  - Hologram
-  - Leap
-  - Rebound
-  - Recursion
-  - Stack
-  - Steam Barrier
-  - Streamline
-  - Sweeping Beam
-  - Turbo
-  # 缺陷 - Uncommon
-  - Aggregate
-  - Auto Shields
-  - Blizzard
-  - Boot Sequence
-  - Bullseye
-  - Capacitor
-  - Chaos
-  - Chill
-  - Consume
-  - Darkness
-  - Defragment
-  - Doom and Gloom
-  - Double Energy
-  - Equilibrium
-  - FTL
-  - Force Field
-  - Fusion
-  - Genetic Algorithm
-  - Glacier
-  - Heatsinks
-  - Hello World
-  - Loop
-  - Melter
-  - Overclock
-  - Recycle
-  - Reinforced Body
-  - Reprogram
-  - Rip and Tear
-  - Scrape
-  - Self Repair
-  - Skim
-  - Static Discharge
-  - Storm
-  - Sunder
-  - Tempest
-  - White Noise
-  # 缺陷 - Rare
-  - All for One
-  - Amplify
-  - Biased Cognition
-  - Buffer
-  - Core Surge
-  - Creative AI
-  - Echo Form
-  - Electrodynamics
-  - Fission
-  - Hyperbeam
-  - Machine Learning
-  - Meteor Strike
-  - Multicast
-  - Rainbow
-  - Reboot
-  - Seek
-  - Thunder Strike
-  # 观者 (Watcher) - Basic
-  - Strike_P
-  - Defend_P
-  - Eruption
-  - Vigilance
-  # 观者 - Common
-  - Bowling Bash
-  - Conclude
-  - Consecrate
-  - Crescendo
-  - Crush Joints
-  - CutThroughFate
-  - EmptyBody
-  - EmptyFist
-  - EmptyMind
-  - Evaluate
-  - FlurryOfBlows
-  - FlyingSleeves
-  - FollowUp
-  - Halt
-  - JustLucky
-  - PressurePoints
-  - Prostrate
-  - Protect
-  - SashWhip
-  - SignatureMove
-  - SimmeringFury
-  - TalkToTheHand
-  - Tantrum
-  - Wallop
-  - Weave
-  - WindmillStrike
-  # 观者 - Uncommon
-  - Alpha
-  - Battle Hymn
-  - Conjure Blade
-  - Deceive Reality
-  - Fasting
-  - Fear No Evil
-  - Indignation
-  - Inner Peace
-  - Lesson Learned
-  - Like Water
-  - Meditate
-  - Nirvana
-  - Reach Heaven
-  - Rushdown
-  - Sanctity
-  - Sands of Time
-  - Study
-  - Swivel
-  - Third Eye
-  - Wave of the Hand
-  - Wheel Kick
-  - Worship
-  # 观者 - Rare
-  - Blasphemy
-  - Brilliance
-  - Deva Form
-  - Master Reality
-  - Omniscience
-  - Prayer
-  - Scrawl
-  - Vault
-  - Wish
+  # 静默 - 补充缺失卡牌
+  - Adrenaline
+  - All Out Attack
+  - Dagger Spray
+  - Precise Strike
+  - Rapture
+  - Throwing Knife
   # 无色 (Colorless) - 穷尽 47
   - Apotheosis
   - HandOfGreed

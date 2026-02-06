@@ -1,31 +1,31 @@
 #!/usr/bin/env python3
 """
-状态编码器 V2：把 Mod 日志里的 state 转成 S 向量
+状态编码器 V2 - 静默专用：把 Mod 日志里的 state 转成 S 向量
 
 与 Mod 日志数据互通：直接读取 game_state、combat_state 的字段路径，
 缺失字段用默认值，非战斗时区块 2-7 填 0。
 
-10 区块结构 V2（总计 ~3126 维）：
-- s[0]~s[57]：玩家核心 58 维（扩展：钥匙/最大能量/Orbs）
-- s[58]~s[557]：手牌 500 维（扩展：每张牌21属性×10）
-- s[558]~s[1007]：抽牌堆 450 维（扩展：更多统计）
-- s[1008]~s[1457]：弃牌堆 450 维（扩展：更多统计）
-- s[1458]~s[1807]：消耗堆 350 维（扩展：更多统计）
-- s[1808]~s[1907]：玩家 Powers 100 维
-- s[1908]~s[2525]：怪物 618 维（扩展：每怪103维×6）
-- s[2526]~s[2725]：遗物 200 维
-- s[2726]~s[2925]：药水 200 维
-- s[2926]~s[3425]：全局 500 维（扩展：地图/事件/房间细分）
+静默猎手专用：固定 A20 难度 + 静默职业，只拿猎人职业牌
 
-V2 主要改进：
-1. 移除冗余维度（难度、回合、牌组大小各保留1维）
-2. 新增钥匙状态（红/蓝/绿宝石）
-3. 新增最大能量
-4. 扩展 Orbs 编码（球类型、Evoke计数）
-5. 手牌每张牌扩展到21属性（含升级状态、灼热次数、类型等）
-6. 牌堆增加更多统计信息
-7. 怪物增加类型标记（普通/精英/Boss）
-8. 全局区块大幅扩展（事件ID、地图路径、房间细分）
+10 区块结构 V2 - 静默专用（总计 ~3002 维）：
+- s[0]~s[45]：玩家核心 46 维（删除角色/难度/Orbs编码）
+- s[46]~s[423]：手牌 378 维（136 multi-hot + 21×10 + 统计）
+- s[424]~s[751]：抽牌堆 328 维（136 multi-hot + 统计）
+- s[752]~s[1079]：弃牌堆 328 维（136 multi-hot + 统计）
+- s[1080]~s[1367]：消耗堆 228 维（136 multi-hot + 统计）
+- s[1368]~s[1407]：玩家 Powers 100 维
+- s[1408]~s[2025]：怪物 618 维（每怪103维×6）
+- s[2026]~s[2225]：遗物 200 维
+- s[2226]~s[2425]：药水 200 维
+- s[2426]~s[2925]：全局 500 维
+
+静默专用改进：
+1. 删除角色编码（固定静默）
+2. 删除难度编码（固定A20）
+3. 删除Orbs编码（静默不用）
+4. 精简卡牌池（只保留静默+诅咒+状态+无色，136张）
+5. 简化升级逻辑（静默无无限升级牌）
+6. 调整参数上限（MAX_HP=200, MAX_BLOCK=999, MAX_ENERGY=20, MAX_POWER=99）
 """
 import numpy as np
 from typing import Dict, Any, List
@@ -37,7 +37,6 @@ from src.training.encoder_utils import (
     power_id_to_index,
     intent_to_index,
     monster_id_to_index,
-    orb_type_to_index,
     event_id_to_index,
     room_subtype_to_index,
     card_type_to_index,
@@ -47,7 +46,6 @@ from src.training.encoder_utils import (
     POWER_DIM,
     INTENT_DIM,
     MONSTER_DIM,
-    ORB_TYPE_DIM,
     EVENT_DIM,
     ROOM_SUBTYPE_DIM,
     CARD_TYPE_DIM,
@@ -80,11 +78,12 @@ from src.training.power_parser import (
 )
 
 # 归一化用的最大值（与 Mod 日志数值范围兼容）
-MAX_HP = 999
-MAX_BLOCK = 99
-MAX_ENERGY = 10
+# 静默猎手专用调整
+MAX_HP = 200          # 静默血量较低，降低上限
+MAX_BLOCK = 999        # 静默可以叠很高的护甲
+MAX_ENERGY = 20        # 预留更多能量空间
 MAX_GOLD = 999
-MAX_POWER = 50
+MAX_POWER = 99         # 提高Power上限
 MAX_DEBUFF = 15
 MAX_HAND = 10
 MAX_DRAW = 80
@@ -96,13 +95,13 @@ MAX_TURN = 50
 MAX_ORB_SLOTS = 10
 MAX_DAMAGE = 99
 
-# 区块维度 V2
-# 区块1: 扩展为 58 维（移除冗余 + 新增钥匙/最大能量/Orbs扩展）
-BLOCK1_DIM = 58
-BLOCK2_DIM = 500  # 手牌（扩展：271 multi-hot + 21×10 牌属性 + 统计）
-BLOCK3_DIM = 450  # 抽牌堆（扩展：增加更多牌属性统计）
-BLOCK4_DIM = 450  # 弃牌堆（扩展：增加更多牌属性统计）
-BLOCK5_DIM = 350  # 消耗堆（扩展：增加更多牌属性统计）
+# 区块维度 V2 - 静默专用
+# 区块1: 简化为 46 维（删除角色/难度/Orbs编码，静默不用）
+BLOCK1_DIM = 46
+BLOCK2_DIM = 384  # 手牌（136 multi-hot + 21×10 牌属性 + 统计）
+BLOCK3_DIM = 334  # 抽牌堆（136 multi-hot + 更多统计）
+BLOCK4_DIM = 334  # 弃牌堆（136 multi-hot + 更多统计）
+BLOCK5_DIM = 234  # 消耗堆（136 multi-hot + 更多统计）
 BLOCK6_DIM = 100  # 玩家 Powers
 BLOCK7_DIM = 618  # 怪物（扩展：每怪103维×6）
 BLOCK8_DIM = 200  # 遗物
@@ -133,27 +132,18 @@ def _clamp_norm(val: float, max_val: float) -> float:
 
 def _encode_block1_player_core(mod_response: Dict[str, Any]) -> np.ndarray:
     """
-    区块 1：玩家核心 V2，58 维。
+    区块 1：玩家核心 V2 - 静默专用，46 维。
 
-    新结构：
+    新结构（删除角色/难度/Orbs编码）：
     [0-7]   HP/能量/护甲/金币（简化冗余）
-    [8-11]  角色 one-hot (4维)
-    [12]    难度（删除冗余）
-    [13]    预留（原难度冗余位）
-    [14-17] 章节 one-hot (4维)
-    [18-24] 房间阶段 one-hot (7维)
-    [25-29] Buff/Debuff (5维)
-    [30]    回合（删除冗余）
-    [31]    预留（原回合冗余位）
-    [32]    牌组大小（删除冗余）
-    [33]    预留（原牌组冗余位）
-    [34-39] 本回合统计 + 牌堆数量 (6维)
-    [40]    Orb槽位数
-    [41-43] 钥匙状态（红/蓝/绿宝石）
-    [44]    最大能量
-    [45-48] 当前球类型 one-hot (4维)
-    [49]    Evoke 计数
-    [50-57] 预留 (8维)
+    [8-11]  章节 one-hot (4维)
+    [12-18] 房间阶段 one-hot (7维)
+    [19-23] Buff/Debuff (5维)
+    [24]    回合
+    [25-30] 本回合统计 + 牌堆数量 (6维)
+    [31-33] 钥匙状态（红/蓝/绿宝石）
+    [34]    最大能量
+    [35-45] 预留 (11维，用于未来扩展)
     """
     out = np.zeros(BLOCK1_DIM, dtype=np.float32)
     gs = mod_response.get("game_state") or {}
@@ -177,146 +167,105 @@ def _encode_block1_player_core(mod_response: Dict[str, Any]) -> np.ndarray:
     out[6] = _clamp_norm(min(gs.get("gold", 0), MAX_GOLD), MAX_GOLD)
     out[7] = min(gs.get("gold", 0) / 999.0, 1.0)
 
-    # [8-11] 角色 one-hot 4 维
-    char = (gs.get("class") or "").upper()
-    if "IRONCLAD" in char or "THE_IRONCLAD" in char:
-        out[8] = 1.0
-    elif "SILENT" in char or "THE_SILENT" in char:
-        out[9] = 1.0
-    elif "DEFECT" in char or "THE_DEFECT" in char:
-        out[10] = 1.0
-    elif "WATCHER" in char or "THE_WATCHER" in char:
-        out[11] = 1.0
-
-    # [12] 难度（删除冗余，只保留一种归一化）
-    asc = gs.get("ascension_level", 0)
-    out[12] = _clamp_norm(min(asc, 20), 20)
-    # [13] 预留（原冗余位）
-
-    # [14-17] 章节 one-hot 4 维
+    # [8-11] 章节 one-hot 4 维
     act = gs.get("act", 1)
     if act == 1:
-        out[14] = 1.0
+        out[8] = 1.0
     elif act == 2:
-        out[15] = 1.0
+        out[9] = 1.0
     elif act == 3:
-        out[16] = 1.0
+        out[10] = 1.0
     else:
-        out[17] = 1.0
+        out[11] = 1.0
 
-    # [18-24] 房间阶段 one-hot 7 维
+    # [12-18] 房间阶段 one-hot 7 维
     phase = (gs.get("room_phase") or gs.get("screen_type") or "").upper()
     phase_map = {
-        "COMBAT": 18, "EVENT": 19, "MAP": 20, "SHOP": 21,
-        "REST": 22, "BOSS": 23, "NONE": 24,
+        "COMBAT": 12, "EVENT": 13, "MAP": 14, "SHOP": 15,
+        "REST": 16, "BOSS": 17, "NONE": 18,
     }
-    idx = phase_map.get(phase, 24)
+    idx = phase_map.get(phase, 18)
     out[idx] = 1.0
 
-    # [25-29] Buff/Debuff 计数 5 维
+    # [19-23] Buff/Debuff 计数 5 维
     powers = player.get("powers") or []
-    out[25] = _clamp_norm(min(parse_strength(powers), MAX_POWER), MAX_POWER)
-    out[26] = _clamp_norm(min(parse_dexterity(powers), 30), 30)
-    out[27] = _clamp_norm(min(parse_weak(powers), MAX_DEBUFF), MAX_DEBUFF)
-    out[28] = _clamp_norm(min(parse_vulnerable(powers), MAX_DEBUFF), MAX_DEBUFF)
-    out[29] = _clamp_norm(min(parse_frail(powers), MAX_DEBUFF), MAX_DEBUFF)
+    out[19] = _clamp_norm(min(parse_strength(powers), MAX_POWER), MAX_POWER)
+    out[20] = _clamp_norm(min(parse_dexterity(powers), 30), 30)
+    out[21] = _clamp_norm(min(parse_weak(powers), MAX_DEBUFF), MAX_DEBUFF)
+    out[22] = _clamp_norm(min(parse_vulnerable(powers), MAX_DEBUFF), MAX_DEBUFF)
+    out[23] = _clamp_norm(min(parse_frail(powers), MAX_DEBUFF), MAX_DEBUFF)
 
-    # [30] 回合（删除冗余）
-    out[30] = _clamp_norm(min(cs.get("turn", 0), MAX_TURN), MAX_TURN)
-    # [31] 预留（原冗余位）
+    # [24] 回合
+    out[24] = _clamp_norm(min(cs.get("turn", 0), MAX_TURN), MAX_TURN)
 
-    # [32] 牌组大小（删除冗余）
-    deck_size = len(deck) if deck else len(hand) + len(draw_pile) + len(discard_pile) + len(exhaust_pile)
-    out[32] = _clamp_norm(min(deck_size, 50), 50)
-    # [33] 预留（原冗余位）
-
-    # [34-39] 本回合统计 + 牌堆数量
-    out[34] = _clamp_norm(
+    # [25-30] 本回合统计 + 牌堆数量 (6维)
+    out[25] = _clamp_norm(
         min(cs.get("cards_discarded_this_turn", 0), MAX_CARDS_DISCARDED),
         MAX_CARDS_DISCARDED,
     )
-    out[35] = _clamp_norm(
+    out[26] = _clamp_norm(
         min(cs.get("times_damaged", 0), MAX_TIMES_DAMAGED),
         MAX_TIMES_DAMAGED,
     )
-    out[36] = _clamp_norm(min(len(hand), MAX_HAND), MAX_HAND)
-    out[37] = _clamp_norm(min(len(draw_pile), MAX_DRAW), MAX_DRAW)
-    out[38] = _clamp_norm(min(len(discard_pile), MAX_DISCARD), MAX_DISCARD)
-    out[39] = _clamp_norm(min(len(exhaust_pile), MAX_EXHAUST), MAX_EXHAUST)
+    out[27] = _clamp_norm(min(len(hand), MAX_HAND), MAX_HAND)
+    out[28] = _clamp_norm(min(len(draw_pile), MAX_DRAW), MAX_DRAW)
+    out[29] = _clamp_norm(min(len(discard_pile), MAX_DISCARD), MAX_DISCARD)
+    out[30] = _clamp_norm(min(len(exhaust_pile), MAX_EXHAUST), MAX_EXHAUST)
 
-    # [40] Orb槽位数
-    orbs = player.get("orbs") or []
-    out[40] = _clamp_norm(min(len(orbs), MAX_ORB_SLOTS), MAX_ORB_SLOTS)
-
-    # [41-43] 钥匙状态（红/蓝/绿宝石）
-    # 从遗物或游戏状态中获取钥匙信息
+    # [31-33] 钥匙状态（红/蓝/绿宝石）
     relics = gs.get("relics") or []
     relic_ids = [r.get("id", r.get("name", "")).lower() for r in relics]
-    out[41] = 1.0 if any("ruby" in rid for rid in relic_ids) else 0.0  # 红宝石
-    out[42] = 1.0 if any("sapphire" in rid or "blue" in rid for rid in relic_ids) else 0.0  # 蓝宝石
-    out[43] = 1.0 if any("emerald" in rid or "green" in rid for rid in relic_ids) else 0.0  # 绿宝石
+    out[31] = 1.0 if any("ruby" in rid for rid in relic_ids) else 0.0  # 红宝石
+    out[32] = 1.0 if any("sapphire" in rid or "blue" in rid for rid in relic_ids) else 0.0  # 蓝宝石
+    out[33] = 1.0 if any("emerald" in rid or "green" in rid for rid in relic_ids) else 0.0  # 绿宝石
 
-    # [44] 最大能量
+    # [34] 最大能量
     max_energy = player.get("max_energy", 3)
-    out[44] = _clamp_norm(min(max_energy, 10), 10)
+    out[34] = _clamp_norm(min(max_energy, 20), 20)  # MAX_ENERGY=20
 
-    # [45-48] 当前球类型 one-hot (4维：冰/雷/火/暗)
-    if orbs and len(orbs) > 0:
-        # 编码第一个球的类型（或可以用其他策略）
-        first_orb = orbs[0] if isinstance(orbs[0], dict) else {"id": str(orbs[0])}
-        orb_id = first_orb.get("id", "") if isinstance(first_orb, dict) else str(first_orb)
-        orb_idx = orb_type_to_index(orb_id)
-        if 0 <= orb_idx < 4:
-            out[45 + orb_idx] = 1.0
-
-    # [49] Evoke 计数（本轮已 evoke 数）
-    # 从游戏状态或玩家状态中获取 evoke 计数
-    evoke_count = player.get("orbs_evoked", 0) or cs.get("orbs_evoked", 0) or 0
-    out[49] = _clamp_norm(min(evoke_count, 10), 10)
-
-    # [50-57] 预留 (8维)
-    # 未来可扩展：更多球体信息、能量历史等
+    # [35-45] 预留 (11维)
+    # 未来可扩展：更多状态信息
 
     return out
 
 
 def _encode_block2_hand(mod_response: Dict[str, Any]) -> np.ndarray:
     """
-    区块 2：手牌 V2，500 维。
+    区块 2：手牌 V2 - 静默专用，384 维。
 
     新结构：
-    [0-270]     271维 卡牌 multi-hot
-    [271-480]   210维 每张牌21属性×10张
+    [0-135]     136维 卡牌 multi-hot（静默专用）
+    [136-345]   210维 每张牌21属性×10张
                 每张牌21维：
                 - cost (1)
                 - is_playable (1)
                 - has_target (1)
-                - is_ethereal (1) [新增] 虚无
-                - is_exhaust (1) [新增] 消耗
-                - is_stripped (1) [新增] 被夺
-                - cost_for_turn (1) [新增] 本回合费用
-                - type one-hot (5) [新增] 攻击/技能/能力/状态/诅咒
-                - is_upgraded (1) [新增] 是否升级
-                - upgrade_times (1) [新增] 升级次数（灼热专用）
+                - is_ethereal (1) 虚无
+                - is_exhaust (1) 消耗
+                - is_stripped (1) 被夺
+                - cost_for_turn (1) 本回合费用
+                - type one-hot (5) 攻击/技能/能力/状态/诅咒
+                - is_upgraded (1) 是否升级（静默无无限升级牌）
+                - upgrade_times (1) 升级次数（简化）
                 - reserved (3)
-    [481-490]   10维 统计
-    [491-499]   9维 预留
+    [346-355]   10维 统计
+    [356-383]   28维 预留
     """
     out = np.zeros(BLOCK2_DIM, dtype=np.float32)
     gs = mod_response.get("game_state") or {}
     cs = gs.get("combat_state") or {}
     hand: List[Dict] = cs.get("hand") or []
 
-    # [0-270] 卡牌 multi-hot
+    # [0-135] 卡牌 multi-hot
     for card in hand:
         cid = card.get("id") or card.get("name") or ""
         idx = card_id_to_index(cid)
         if 0 <= idx < CARD_DIM:
             out[idx] += 1
 
-    # [271-480] 每张牌21属性×10张
+    # [136-345] 每张牌21属性×10张
     for i in range(10):
-        base = 271 + i * 21
+        base = 136 + i * 21
         if i < len(hand):
             c = hand[i]
             # 基础属性
@@ -340,34 +289,26 @@ def _encode_block2_hand(mod_response: Dict[str, Any]) -> np.ndarray:
             if 0 <= type_idx < 5:
                 out[base + 7 + type_idx] = 1.0
 
-            # 升级状态
+            # 升级状态（静默无无限升级牌，简化逻辑）
             upgrades = c.get("upgrades", 0) or 0
-            card_id = (c.get("id") or c.get("name") or "").lower()
-
-            # 灼热特殊处理：可以无限升级
-            is_afk = "afk" in card_id
-            # 状态/诅咒牌不能升级
             is_status_curse = card_type in ("status", "curse")
 
             if is_status_curse:
                 # 状态/诅咒牌永远不可升级
                 out[base + 12] = 0.0
                 out[base + 13] = 0.0
-            elif is_afk:
-                # 灼热：记录升级次数
-                out[base + 12] = 1.0 if upgrades > 0 else 0.0
-                out[base + 13] = _clamp_norm(min(upgrades, 50), 50)  # 灼热可能很高
             else:
                 # 普通牌：最多升级1次
                 out[base + 12] = 1.0 if upgrades > 0 else 0.0
                 out[base + 13] = 1.0 if upgrades > 0 else 0.0
 
-            # [14-16] 预留
+            # [14-16] 预留（11-16维预留）
         else:
             # 超过10张牌的部分留空
+            pass
 
-    # [481-490] 手牌统计
-    base = 481
+    # [346-355] 手牌统计
+    base = 346
     out[base + 0] = min(len(hand), 10) / 10.0
     zero_cost = sum(1 for c in hand if (c.get("cost") or 0) == 0)
     out[base + 1] = min(zero_cost, 10) / 10.0
@@ -387,7 +328,7 @@ def _encode_block2_hand(mod_response: Dict[str, Any]) -> np.ndarray:
     out[base + 8] = _clamp_norm(min(total_cost, 20), 20)
     out[base + 9] = 0.0  # 预留
 
-    # [491-499] 预留 (9维)
+    # [356-383] 预留 (28维)
     # 未来可扩展：手牌位置信息、连击信息等
 
     return out
@@ -412,27 +353,27 @@ def _count_status_curse_ratio(pile: List[Dict]) -> float:
 
 def _encode_block3_draw_pile(mod_response: Dict[str, Any]) -> np.ndarray:
     """
-    区块 3：抽牌堆 V2，450 维。
+    区块 3：抽牌堆 V2 - 静默专用，334 维。
 
     新结构：
-    [0-270]     271维 卡牌 multi-hot
-    [271-340]   70维 详细统计（扩展）
-    [341-449]   109维 预留（可用于更多统计）
+    [0-135]     136维 卡牌 multi-hot（静默专用）
+    [136-205]   70维 详细统计
+    [206-333]   128维 预留
     """
     out = np.zeros(BLOCK3_DIM, dtype=np.float32)
     gs = mod_response.get("game_state") or {}
     cs = gs.get("combat_state") or {}
     draw_pile = cs.get("draw_pile") or []
 
-    # [0-270] 卡牌 multi-hot
+    # [0-135] 卡牌 multi-hot
     for card in draw_pile:
         cid = card.get("id") or card.get("name") or ""
         idx = card_id_to_index(cid)
         if 0 <= idx < CARD_DIM:
             out[idx] += 1
 
-    # [271-340] 详细统计
-    base = 271
+    # [136-218] 详细统计
+    base = 136
     pile_size = len(draw_pile)
 
     # 基础统计
@@ -478,35 +419,35 @@ def _encode_block3_draw_pile(mod_response: Dict[str, Any]) -> np.ndarray:
         out[base + 15] = 0.0
         out[base + 16] = 0.0
 
-    # [17-69] 预留 (53维) - 未来可用于更复杂的统计
-    # 例如：特定卡牌组合、费用分布等
+    # [17-69] 预留 (53维)
+    # 未来可用于更复杂的统计
 
     return out
 
 
 def _encode_block4_discard_pile(mod_response: Dict[str, Any]) -> np.ndarray:
     """
-    区块 4：弃牌堆 V2，450 维。
+    区块 4：弃牌堆 V2 - 静默专用，334 维。
 
     新结构：
-    [0-270]     271维 卡牌 multi-hot
-    [271-340]   70维 详细统计（扩展）
-    [341-449]   109维 预留
+    [0-135]     136维 卡牌 multi-hot（静默专用）
+    [136-205]   70维 详细统计
+    [206-333]   128维 预留
     """
     out = np.zeros(BLOCK4_DIM, dtype=np.float32)
     gs = mod_response.get("game_state") or {}
     cs = gs.get("combat_state") or {}
     discard_pile = cs.get("discard_pile") or []
 
-    # [0-270] 卡牌 multi-hot
+    # [0-135] 卡牌 multi-hot
     for card in discard_pile:
         cid = card.get("id") or card.get("name") or ""
         idx = card_id_to_index(cid)
         if 0 <= idx < CARD_DIM:
             out[idx] += 1
 
-    # [271-340] 详细统计
-    base = 271
+    # [136-218] 详细统计
+    base = 136
     pile_size = len(discard_pile)
 
     # 基础统计
@@ -551,27 +492,27 @@ def _encode_block4_discard_pile(mod_response: Dict[str, Any]) -> np.ndarray:
 
 def _encode_block5_exhaust_pile(mod_response: Dict[str, Any]) -> np.ndarray:
     """
-    区块 5：消耗堆 V2，350 维。
+    区块 5：消耗堆 V2 - 静默专用，234 维。
 
     新结构：
-    [0-270]     271维 卡牌 multi-hot
-    [271-320]   50维 详细统计（扩展）
-    [321-349]   29维 预留
+    [0-135]     136维 卡牌 multi-hot（静默专用）
+    [136-185]   50维 详细统计
+    [186-233]   48维 预留
     """
     out = np.zeros(BLOCK5_DIM, dtype=np.float32)
     gs = mod_response.get("game_state") or {}
     cs = gs.get("combat_state") or {}
     exhaust_pile = cs.get("exhaust_pile") or []
 
-    # [0-270] 卡牌 multi-hot
+    # [0-135] 卡牌 multi-hot
     for card in exhaust_pile:
         cid = card.get("id") or card.get("name") or ""
         idx = card_id_to_index(cid)
         if 0 <= idx < CARD_DIM:
             out[idx] += 1
 
-    # [271-320] 详细统计
-    base = 271
+    # [136-198] 详细统计
+    base = 136
     pile_size = len(exhaust_pile)
 
     # 基础统计
@@ -598,7 +539,6 @@ def _encode_block5_exhaust_pile(mod_response: Dict[str, Any]) -> np.ndarray:
     out[base + 10] = upgraded_cnt / max(pile_size, 1)
 
     # [11-49] 预留 (39维)
-    # 未来可扩展：特定消耗牌统计（如灼热、正常等）
 
     return out
 
@@ -772,7 +712,7 @@ def _encode_block10_global(mod_response: Dict[str, Any]) -> np.ndarray:
     [23-72]     事件ID one-hot (50维) [新增]
     [73-87]     房间细分类型 one-hot (15维) [新增]
     [88-112]    地图路径信息 (25维) [新增]
-    [113-149]   更多buff/debuff状态 (37维) [新增]
+    [113-136]   更多buff/debuff状态 (37维) [新增]
     [150-499]   预留 (350维)
     """
     out = np.zeros(BLOCK10_DIM, dtype=np.float32)
@@ -853,7 +793,7 @@ def _encode_block10_global(mod_response: Dict[str, Any]) -> np.ndarray:
     out[91] = _clamp_norm(min(map_data.get("connections", 0), 100), 100)  # 连接数
     # [92-112] 预留 (21维) - 未来可用于更复杂的地图信息
 
-    # [113-149] 更多buff/debuff状态 (37维) [新增]
+    # [113-136] 更多buff/debuff状态 (37维) [新增]
     # 这些是全局或特殊状态，不适合放在区块1或6
     cs = gs.get("combat_state") or {}
     player = cs.get("player") or {}
@@ -876,8 +816,8 @@ def _encode_block10_global(mod_response: Dict[str, Any]) -> np.ndarray:
     out[127] = _clamp_norm(min(parse_juggernaut(powers), 20), 20)
     out[128] = _clamp_norm(min(parse_after_image(powers), 10), 10)
     out[129] = _clamp_norm(min(parse_corruption(powers), 1), 1)  # 腐化是bool
-    out[130] = _clamp_norm(min(parse_barricade(powers), 1), 1)  # 路障是bool
-    # [131-149] 预留 (19维) - 更多buff/debuff
+    out[136] = _clamp_norm(min(parse_barricade(powers), 1), 1)  # 路障是bool
+    # [131-136] 预留 (19维) - 更多buff/debuff
 
     # [150-499] 预留 (350维)
     # 未来可扩展：

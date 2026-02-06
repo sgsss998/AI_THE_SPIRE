@@ -16,7 +16,8 @@ _PROJECT_ROOT = Path(__file__).resolve().parent.parent.parent
 _IDS_PATH = _PROJECT_ROOT / "configs" / "encoder_ids.yaml"
 
 # 穷尽维度（与 Mod 日志互通，索引超出时映射到 0）
-CARD_DIM = 271
+# 静默猎手专用：UNKNOWN + 诅咒13 + 状态5 + 静默75 + 无色42 = 136
+CARD_DIM = 136
 RELIC_DIM = 180
 POTION_DIM = 45
 POWER_DIM = 80
