@@ -21,6 +21,7 @@ RELIC_DIM = 180
 POTION_DIM = 45
 POWER_DIM = 80
 INTENT_DIM = 13
+MONSTER_DIM = 75
 
 # 懒加载
 _card_id_to_index: Optional[Dict[str, int]] = None
@@ -28,6 +29,7 @@ _relic_id_to_index: Optional[Dict[str, int]] = None
 _potion_id_to_index: Optional[Dict[str, int]] = None
 _power_id_to_index: Optional[Dict[str, int]] = None
 _intent_to_index: Optional[Dict[str, int]] = None
+_monster_id_to_index: Optional[Dict[str, int]] = None
 
 
 def _load_ids() -> dict:
@@ -182,3 +184,29 @@ def intent_to_index(intent: str) -> int:
     norm = normalize_id(intent)
     idx = _intent_to_index.get(norm, 0)
     return idx if 0 <= idx < INTENT_DIM else 0
+
+
+def _build_monster_id_to_index() -> Dict[str, int]:
+    """构建 monster_id -> index 字典"""
+    data = _load_ids()
+    monsters: List[str] = data.get("monsters", [])
+    result = {}
+    for idx, mid in enumerate(monsters):
+        if mid:
+            norm = normalize_id(mid)
+            if norm and norm not in result:
+                result[norm] = idx
+    return result
+
+
+def monster_id_to_index(monster_id: str) -> int:
+    """
+    怪物 id 查编号：0~74。找不到返回 0（UNKNOWN）。
+    Mod 发送如 "SpikeSlime_S", "Cultist"。
+    """
+    global _monster_id_to_index
+    if _monster_id_to_index is None:
+        _monster_id_to_index = _build_monster_id_to_index()
+    norm = normalize_id(monster_id)
+    idx = _monster_id_to_index.get(norm, 0)
+    return idx if 0 <= idx < MONSTER_DIM else 0
