@@ -1,5 +1,7 @@
 # AI_THE_SPIRE
 
+![AI_THE_SPIRE 封面](./cover-ai-the-spire-v1.png)
+
 <div align="center">
 
 [![Python](https://img.shields.io/badge/Python-3.14+-blue.svg)](https://www.python.org/)
@@ -475,3 +477,10 @@ print(f"Backflip 索引: {index}")  # 0-143
 ## 许可证
 
 MIT License
+
+---
+
+微信号：`soplaoming`  
+| 微信二维码 | 收款码 |
+|---|---|
+| ![微信二维码](./wechat-qrcode.jpg) | ![收款码](./wechat-pay-qrcode.jpg) |
