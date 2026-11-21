@@ -1,0 +1,12 @@
+{
+  "name": "_sa_r5_wheel",
+  "parent_sha256": "5f81347346994e460ceaa8e500ff3f08637a33f2eb4a220cff467fc8f6105fa5",
+  "file": "_sa_r5_wheel.cpython-312-darwin.so",
+  "sha256": "71e8c86dffc245b74ffaf88ed8a08fb3245d799d97053dff1c6ec93594800dc1",
+  "sources": {
+    "experiments/sa_calibration_round5/wheel/offer.cpp": "3d87a186d4eb4d80afc74c96f0cd077c6d55a39a8f2097d515da84721a31a4e4",
+    "experiments/sa_calibration_round5/wheel/build.py": "bcaf8d1549371b4c6402b85e3073320a524c83f29f28f9a7197cab80006ac5d1",
+    "experiments/policy_backend_hand_order/build/59283701-22d9-4b6c-a24d-dbb5b115cd55/BUILD.json": "5f81347346994e460ceaa8e500ff3f08637a33f2eb4a220cff467fc8f6105fa5",
+    "vendor/sts_lightspeed/src/game/GameContext.cpp": "58239c60631a1d93a7b268aa1f24949f171851be4c383148b7bffcbc1678fb67"
+  }
+}

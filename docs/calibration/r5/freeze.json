@@ -1,0 +1,20 @@
+{
+  "created_utc": "2026-11-21T19:31:25.815399+00:00",
+  "parent_commit": "c165cd0ee4c84e5f85ffeb720938007c7e8d532d",
+  "parent_local_edition_sha256": "d2e2ed2b0ef3adff609a1b8162c429074a3e7f255b563ae6a225cbc025ccff3f",
+  "components": {
+    "release.py": "252e1f354afd429962d767c7b99bbb3bc298053c18fe54b0dea6d291c861f712",
+    "chest/session.py": "f28588c5642a1909d57751f447428a2521f7c3e56af7b9537e1ab8121afa77a9",
+    "shop/session.py": "803f33930cfd4fd73375e7a7a0a7959efeee8d28f034986adbda9209e34c4867",
+    "wheel/session.py": "72eca66abd944a7096348626bdafd85c3369af2cff6be4f4199f8c1ac8720db6",
+    "wheel/offer.cpp": "3d87a186d4eb4d80afc74c96f0cd077c6d55a39a8f2097d515da84721a31a4e4",
+    "wheel/build.py": "bcaf8d1549371b4c6402b85e3073320a524c83f29f28f9a7197cab80006ac5d1",
+    "wheel/build/BUILD.json": "d5fe7fbd23f645b598c011a5fcef587e7809fc06335e72eb58baa332359b0b80"
+  },
+  "state_space": 3122,
+  "action_space": 193,
+  "training_updates": 0,
+  "supersedes": "4fd9ade2df083e8ab3694d3fbaa9c60ac9d9bc11b4a9381d581f9800d0239de4",
+  "reason": "Count the actual store choices with full potion slots and insufficient gold",
+  "edition": "rc2"
+}
