@@ -1,0 +1,127 @@
+{
+  "source_game_sha256": "dd60a613a6178e08f1a57bcb8d5747e33c21fd49e743b88d76e9d74042803b2a",
+  "isolated_game_sha256": "880ca5646d02065a061bbbdf7cc106dc1443d5afc6b9560f512486b098fd627b",
+  "retail_equals_isolated_for_all_catalogued_sources": true,
+  "scenes": 18,
+  "native_reference_only": {
+    "cards": {
+      "entries": 423,
+      "asset": "localization/eng/cards.json",
+      "sha256": "864d2d024ebc423bc7722a4c8f704f26e995d8ea440d804148f1b5ed2398f2b1"
+    },
+    "relics": {
+      "entries": 195,
+      "asset": "localization/eng/relics.json",
+      "sha256": "2527d6b59063d9905d4c575611d2f33500943090d415de0048e46fdeed75d7c3"
+    },
+    "potions": {
+      "entries": 45,
+      "asset": "localization/eng/potions.json",
+      "sha256": "0e28ac6eaea7046061d5e163d28f4a158f8de0998428d98074ecf20d05b80958"
+    },
+    "monsters": {
+      "entries": 72,
+      "asset": "localization/eng/monsters.json",
+      "sha256": "c78460c5faedba0da97832e9abaa1376c2300436495ee9dd84d4165d89af0361"
+    },
+    "events": {
+      "entries": 54,
+      "asset": "localization/eng/events.json",
+      "sha256": "ed878f84ff97b86bae8b6c4b83b63fe3d8e61b58dc77d6396979333990f44517"
+    },
+    "powers": {
+      "entries": 178,
+      "asset": "localization/eng/powers.json",
+      "sha256": "32116a638adfdcf786847bdfb40b739bffecda646b6c534773387e885ccb7d13"
+    }
+  },
+  "native_catalog_ids": 967,
+  "historical_R1": {
+    "questions": 71,
+    "as_recorded": {
+      "已验准": 38,
+      "缺证据": 18,
+      "本场景不适用": 3,
+      "已发现问题": 12
+    },
+    "source_sha256": "3f27d15f11520a9a8926ceb1529cda13ab7a60c9353e6a1b0bc40c914f46d6b7"
+  },
+  "subsequent_versioned_questions": {
+    "G": {
+      "已确认接口缺口": 1,
+      "缺证据": 4
+    },
+    "R2": {
+      "已验准": 4,
+      "已确认差异": 2
+    },
+    "R3": {
+      "已验准": 11,
+      "已确认接口缺口": 1,
+      "模拟已验": 2,
+      "已确认差异": 2
+    }
+  },
+  "total_versioned_rows": 98,
+  "independent_source_files": {
+    "experiments/sa_calibration_round1/state/OPENINGS.json": "f4c9dbd9b29add32b6b523e340f7ffabca21cda02cd1b2c2ec777666ebf5dfcb",
+    "experiments/sa_calibration_round1/actions/RESULT.json": "02e8dcec08d8ee1205d76edd390d5eedf1d59f82253052ce78ad30e69887d2eb",
+    "experiments/neow_gold_removal_640/RETAIL.json": "8e3975abb9607f5185f6a92f38b3088e39bc769e5024b3a3dc18305e1322a85e",
+    "experiments/policy_setup_confirmation/REPORT.md": "4240ab83b798341d0922a5abf53177f747478effb5ecc0b400a307d5ce5b3869",
+    "experiments/public_hand_fees/REPORT.md": "c17811ebe73e41195866b2b4807cf2e95f764b7ee581d9d7be18439f7c54b834",
+    "experiments/act2_intent/REPORT.md": "9e70b47bc8ec1728ad49233b79da505384b05c1f7c7a1f70dbc44bf4330d4c8c",
+    "experiments/dome_intent_640/REPORT.md": "7a320839e97d629689dc059de70d853d1974fc37396a8b0323c5514f6b63f591",
+    "experiments/poison_death193/REPORT.md": "7dcae91c0cbc37b1b5924acb7a13003e758b7356d15deffb20835e6b6fefd2af",
+    "experiments/natural_death_parity193/REPORT.md": "54254d0e205a1e40cc3e9b86f908e2dae07d2e13174027136fae9f9323db38d6",
+    "experiments/sa_calibration_round1/anchors/RESULT.json": "38c6e17a4986c674b70a2ea76370f0bebe6f00c2ee32b20d1bb6ebaa922b3eab",
+    "experiments/action193_compat/REPORT.md": "961bdd73daedf98c2a1878aa327f2f6385de3a986f52919adef945d3b3f6f29f",
+    "experiments/sa_calibration_round1/actions/CANDIDATE.json": "86d8d876c20943f21e0ee3423ec963409904d3580ee86d7bbd3e46691bb92194",
+    "experiments/hand_potion193/REPORT.md": "9954a6ad64aef84670ee4adabe5a44368f32ca9ad980a8dc1586c37fb5000917",
+    "experiments/compact_silent_a20/boss_reward_release/REPORT.md": "f2dcd7e109c0a0960e97001c20274721dcea99d819bc35881e6565b8198bc81d",
+    "experiments/compact_silent_a20/neow_treasure/RETAIL.json": "f18e8a2bcdfedc80eb19870bdf61f52717cd0b8fcaf5986de8b64e495287ef2c",
+    "experiments/shop_progress193/REPORT.md": "58a88a763f6ae0f318923fe137a8452cf57bd94da71194be43873a5f1af0f40f",
+    "experiments/public_grid_confirmation/REPORT.md": "92985e606ab73e67794b5ac79fc30405f494b181f1b46e40efb08022dcc9de21",
+    "experiments/neow_boss_swap/REPORT.md": "faefccff28aeb10c3ac7f573d025ded3a2dd5553ff19423af8af88901c988a7d",
+    "experiments/paired_compact193/ENTRY_REPORT.md": "69b03ef06a729bc4caf029e4193dcd308ad08b4ce4e91cd9dd8ae5645f951863",
+    "experiments/retail_map_layout193/REPORT.md": "80cfd3358b8f49e7462b5d8aa739a72ac68935192a584de3e62938fd1c9fdc26",
+    "experiments/sa_calibration_round1/state/SCENARIOS.json": "4978c8612b9a7bb659cd8e8001bb18b7cd4d94663040ad5f9c359de42d9b2d1a",
+    "experiments/event_result_frontiers193/REPORT.md": "d5f650cd1e1f801d256cd168a7d8c744bd5afa1711e717e5bb72ad58ce1cf743",
+    "experiments/event_result_frontiers193/RETAIL_WORLD_OF_GOOP.json": "ceaa47bcce74f82aba67c8e0b730c658a9bd46314bae40c86d2059c92b231f45",
+    "experiments/wing_removal_640/REPORT.md": "9eb05edd4be36f208f086ea0fe69fda612585d085743c6a9d5ce6cc974746f81",
+    "experiments/match_retail193/REPORT.md": "ca03712cf479c0bb4433b122e7c0f7618e3ce63326faa141695f44eb829a294c",
+    "experiments/after_image_map193/REPORT.md": "9781f59ecaa87edb48402b692802733ca44486141e273b6b63091684fdd73a32",
+    "experiments/sa_calibration_round1/privileged/RESULT.json": "8e59ec26ab859a61a60d7d09eef4fc000892786cb845873bd38356525b33d618",
+    "experiments/sa_calibration_round1/privileged/schema.json": "03c15151723ded52dac94806adc7fe70d593e9ec78a9c0a1832617244aa20471",
+    "experiments/sa_calibration_round1/fidelity/supplement/RESULT.json": "c7fe4fbd51fc021f6852c987bcbcfe5eb07a57a8dfb049f0e190b9bf7843fbb8",
+    "experiments/act2_intent/VISIBILITY.json": "f975fd51a8d4e0df10b029d0b4bc0654a10c84b96f3455cff887c739580822e0",
+    "experiments/sa_calibration_round1/fidelity/RESULT.json": "65bb9f35c4df265cf815484364bfc98805d215323eee64b9ddad1328a11efa65",
+    "experiments/sa_calibration_round1/fidelity/SCRAP_RULE.json": "3ab19491b5a5254758686d09674cf4f8788cdbe99042c317dc85b7deae032a7b",
+    "experiments/sa_calibration_round1/fidelity/boss/RESULT.json": "16b387d22eae9c759531f4093422d1b2da80ba120f96950938b7b4c90ba8f067",
+    "experiments/sa_calibration_round1/fidelity/boss/run_20261120_185031_796982/RESULT.json": "fa9a378aec558ced21184b546122b28e76ab85096341b52054aee86d838a7dcd",
+    "../AI_THE_SPIRE_实机验证/20261115_SA验收/bridge/sessions/526ddf2a-7a2a-430d-9065-9d94dcadc041/raw.jsonl": "ec5082d2695f785e3dc42db77778674769341b5859200c3663ade772d600641a",
+    "../AI_THE_SPIRE_实机验证/20261115_SA验收/next_iteration/live_v6/bridge/sessions/074e5f91-3e75-4060-8c12-2c05d14ec03d/raw.jsonl": "dc72925c684e778e4ea2e31501a68f3efc53b92a1d483a9acbe40e3c5698dd04",
+    "experiments/sa_calibration_round1/fidelity/random/RESULT.json": "b655f40fee4bc3ea10cdbc4b6fa15a331225c27399fea70b30e2aace3332d7ef",
+    "experiments/sa_calibration_round1/fidelity/random/START_INPUT.json": "c60753dd6793c5a82e8f6414b968923d5fe3d56f3c192323dd4e71d1defe3982",
+    "experiments/sa_calibration_round1/fidelity/SEEDS_BEFORE_RANDOM.json": "9ac6cfe713c421e9a9fce19ac99eb273ebea585581989f826701a4e18586209d",
+    "experiments/sa_calibration_round1/fidelity/random/SHUFFLES.json": "e892e5ff76230de7c5824435e8063570d3c3ec283e61ca55851eee80d96806fd",
+    "experiments/sa_calibration_round2/events/RESULT.json": "043f11f151a8e0bcffb60c453fa9497132ed7a37d20b3ad28cfeb350e81dc2a4",
+    "experiments/sa_calibration_round2/frontiers/FROZEN.json": "a7a8c0f01dd63fed9d3d4b24b54e509a088a9115951b6f9a3e5bb5db00a1c006",
+    "experiments/sa_calibration_round2/boss/RESULT.json": "1cdb08e031b886b173a385fc11292e34322adf8e78638e5705cd0fe3ca164f63",
+    "experiments/sa_calibration_round2/diagnostic_slime/RESULT.json": "329866708f6e36be609f4dc665dc1591f95f6bc5ff6434e036cbda781fcf56f5",
+    "experiments/sa_calibration_round3/grid/RESULT.json": "4941c293c812ac3be18df62324c6f425d412cb17c559dfb6f14848d3fea496c6",
+    "experiments/sa_calibration_round3/death/OFFICIAL.json": "33fd3cf2dca5c740e2cbc5eff6be91b7bc8a10311e7db2fab7a233f8828993a3",
+    "experiments/sa_calibration_round3/death/SPLIT.json": "e2db5971fb8151c52b096a05cedb64bd33a694bc3f32b75ffacccf8789bbbfcf",
+    "experiments/sa_calibration_round3/death/COHORT.json": "e4f54c25551daaf4fd257615ebedeed916b02873c949a07ab8167e9fd34aa904",
+    "experiments/sa_calibration_round3/grid/COHORT.json": "04ac6e47ade9c65a7b60089a370e023d0ec7552703d083b0aa85c06a42d22121",
+    "experiments/sa_calibration_round3/coverage/hand_terms/RESULTS.json": "366badc0774e2ae5b687ea47caaba6e2dd9573054b00ef4256b53c746eacd0a4",
+    "experiments/sa_calibration_round3/compat/RESULT.json": "48aea677679ee8e6a7f9ad6b74219585ecf46407bf7bfbe3f2c595da311c5bda",
+    "experiments/sa_calibration_round3/compat/LAYOUT.json": "485e6dfd600a2b564d8bc5dfc5018f02affcf8490efce079de0c9c6af6dfd66b",
+    "experiments/sa_calibration_round3/fresh/RESULT.json": "44db92906bc3a6ed39ab8d9a6f66442a95129eb05ee01aa9032e9968feb5ae04"
+  },
+  "outputs": {
+    "SCENES.csv": "1495946150e097e2584d5a0738f6c76e2ba3dd74bfc3a60a55eccf2414d0b4ea",
+    "QUESTIONS.csv": "451e636daf92b4c451d2f7ea94d80a09e55e8ad84fde7b8af6c42a06c64e5168",
+    "OBJECT_IDS.csv": "857b70a3510c3f17f22dc41c3567966f268297cf9d1914c5e1cd2ca27b454a1c"
+  },
+  "interpretation": "历史问题保留当版结论，后续核对可追到具体新版本。目录包含其他角色和未使用对象。场景、问题或原版条目数均不代表全游戏正确率。"
+}

@@ -1,0 +1,381 @@
+{
+  "source_full_sha256": "0cc34d80e0439fe0ee0328df7a3db4254c979823b8f41b0bed9c5457b4564447",
+  "counts": {
+    "fungus_death": 20,
+    "wing_remove": 15,
+    "neow_transform": 18
+  },
+  "targets": [
+    {
+      "seed": 19,
+      "group": "fungus_death",
+      "floor": 7,
+      "actions_before_stop": 129,
+      "trace_sha256": "73c79698c4db5c9741a881e7369182527e791745c0f799ea5895daf715790559"
+    },
+    {
+      "seed": 55,
+      "group": "fungus_death",
+      "floor": 5,
+      "actions_before_stop": 137,
+      "trace_sha256": "fad03c64d4b68bc77a1112db6b94f4ed7d44e43d903e6879300a6d7b50e4b305"
+    },
+    {
+      "seed": 59,
+      "group": "fungus_death",
+      "floor": 4,
+      "actions_before_stop": 84,
+      "trace_sha256": "d5789bf1ce4e7d85656b621e59dc812746d84cbaf9355cd015dae52a99744717"
+    },
+    {
+      "seed": 1000011,
+      "group": "wing_remove",
+      "floor": 2,
+      "actions_before_stop": 35,
+      "trace_sha256": "5ec0e6798af809242e2ce73e2a44197f62e66c8c57c2661bccd85e9d008b7a3c"
+    },
+    {
+      "seed": 1000027,
+      "group": "fungus_death",
+      "floor": 4,
+      "actions_before_stop": 96,
+      "trace_sha256": "03941aa76151f938065b1b0619267668a1b3acb935a8838f7aef0f295485cadf"
+    },
+    {
+      "seed": 1000030,
+      "group": "wing_remove",
+      "floor": 2,
+      "actions_before_stop": 19,
+      "trace_sha256": "f66b800b7124ec769ace3c3e070717d128173df83152fbcdffe4580f7db4fc8a"
+    },
+    {
+      "seed": 1000061,
+      "group": "fungus_death",
+      "floor": 7,
+      "actions_before_stop": 138,
+      "trace_sha256": "a78ba734f5cb002dd50cc7be5cfdae8ca54721b976bfbb008bb3348bd13552b3"
+    },
+    {
+      "seed": 2000014,
+      "group": "neow_transform",
+      "floor": 0,
+      "actions_before_stop": 2,
+      "trace_sha256": "7bfec2184c9b30546644d8781f641f939ea75cb0e7086ea688d6ad785258fd56"
+    },
+    {
+      "seed": 2000015,
+      "group": "wing_remove",
+      "floor": 3,
+      "actions_before_stop": 67,
+      "trace_sha256": "baf4e5a8eb50f48f57739570178e3cd98d96f2e8d1b52afccdb502404840e9ad"
+    },
+    {
+      "seed": 2000040,
+      "group": "fungus_death",
+      "floor": 4,
+      "actions_before_stop": 100,
+      "trace_sha256": "9796baf5b183fa4f785f93db560f833435b522153963d706907cc6f144d39923"
+    },
+    {
+      "seed": 2000054,
+      "group": "fungus_death",
+      "floor": 4,
+      "actions_before_stop": 124,
+      "trace_sha256": "a254d64ba82d61a3bb7e2e5c277f2c59d71bd579264df991fb5262a464bb0785"
+    },
+    {
+      "seed": 2000055,
+      "group": "neow_transform",
+      "floor": 0,
+      "actions_before_stop": 2,
+      "trace_sha256": "1e0f619cd615d54b79945b83ed4cf3662197c09ae0621a1b6857bccb8ec3d2e3"
+    },
+    {
+      "seed": 2000056,
+      "group": "neow_transform",
+      "floor": 0,
+      "actions_before_stop": 2,
+      "trace_sha256": "204f2120275a53b112ea739f58e51b8b456055854763f8cca636c90be299ac92"
+    },
+    {
+      "seed": 2000058,
+      "group": "wing_remove",
+      "floor": 5,
+      "actions_before_stop": 70,
+      "trace_sha256": "55d03d6612d6761b238e0f0f571344b47bc4e23d9104052dd05f772061bbeaaf"
+    },
+    {
+      "seed": 2000060,
+      "group": "neow_transform",
+      "floor": 0,
+      "actions_before_stop": 2,
+      "trace_sha256": "b70c56799ae0219bdb126a32c856ed3ceb4ed5d10521ed2527d679d9bd6761fc"
+    },
+    {
+      "seed": 2000066,
+      "group": "fungus_death",
+      "floor": 7,
+      "actions_before_stop": 141,
+      "trace_sha256": "233ab6d0cee597e1458f60952c29c4e3164ce16ac47f9dd4007617950d2743a0"
+    },
+    {
+      "seed": 3000017,
+      "group": "fungus_death",
+      "floor": 4,
+      "actions_before_stop": 119,
+      "trace_sha256": "d051abf20db8e7ca814c1f9ced669c399afbe49db468ff4d7ade73855cc3d631"
+    },
+    {
+      "seed": 3000037,
+      "group": "neow_transform",
+      "floor": 0,
+      "actions_before_stop": 2,
+      "trace_sha256": "28e80a489bbfb64042df1c62479f4dd8524a7f12a2a3a6abe031c7cc3ef822c2"
+    },
+    {
+      "seed": 3000040,
+      "group": "fungus_death",
+      "floor": 7,
+      "actions_before_stop": 97,
+      "trace_sha256": "f3803719f3292e1f153eae1a0419072bb1e1179ee1f41774d47d6c9a3a0cf80e"
+    },
+    {
+      "seed": 3000046,
+      "group": "fungus_death",
+      "floor": 4,
+      "actions_before_stop": 91,
+      "trace_sha256": "365e81c12ed29300c538121577e1c22232a9c13ba61984fabb13a80d49219ef5"
+    },
+    {
+      "seed": 3000047,
+      "group": "neow_transform",
+      "floor": 0,
+      "actions_before_stop": 2,
+      "trace_sha256": "c5f5c4a77d4e1960a7b142f55ebb69e6e048d57b01d828aa0f9238ff2ea6a2cb"
+    },
+    {
+      "seed": 3000059,
+      "group": "wing_remove",
+      "floor": 4,
+      "actions_before_stop": 98,
+      "trace_sha256": "deb6bacf41a83eb84cfe8af2546ae26b1674add4633247c36ecbfc5e4ec77ac3"
+    },
+    {
+      "seed": 3000065,
+      "group": "wing_remove",
+      "floor": 2,
+      "actions_before_stop": 32,
+      "trace_sha256": "367665beb2976188ccf7aa4b20f264e66cca962a1d94249b982f06dc1960d520"
+    },
+    {
+      "seed": 4000034,
+      "group": "wing_remove",
+      "floor": 2,
+      "actions_before_stop": 25,
+      "trace_sha256": "ed5464640a85821e163860b48db253401114a40ef75e0832a690456943212a89"
+    },
+    {
+      "seed": 4000037,
+      "group": "fungus_death",
+      "floor": 5,
+      "actions_before_stop": 113,
+      "trace_sha256": "295f02826739c584a64d397f112e18f10a1ac5c9a70cd3870449217b22608ebd"
+    },
+    {
+      "seed": 4000057,
+      "group": "neow_transform",
+      "floor": 0,
+      "actions_before_stop": 2,
+      "trace_sha256": "7a82d586a5146ae4b3e443e74e5d17e69255f268e23ea4202d52a6b028477569"
+    },
+    {
+      "seed": 4000062,
+      "group": "wing_remove",
+      "floor": 4,
+      "actions_before_stop": 99,
+      "trace_sha256": "27712db4b8f5213c1bdc30453f5a485ba6bdbc7b38762e8919f98b79e78d83d9"
+    },
+    {
+      "seed": 5000006,
+      "group": "fungus_death",
+      "floor": 5,
+      "actions_before_stop": 106,
+      "trace_sha256": "66625e9bbfd3f79309d4eba778c9cfeb4b923209d31da5c3ec863358bc89bc3b"
+    },
+    {
+      "seed": 5000026,
+      "group": "neow_transform",
+      "floor": 0,
+      "actions_before_stop": 2,
+      "trace_sha256": "5526478f21a08bfb02584a3b7b71e089e701ff192c8bf3df80a7234125f88f6c"
+    },
+    {
+      "seed": 5000046,
+      "group": "wing_remove",
+      "floor": 3,
+      "actions_before_stop": 70,
+      "trace_sha256": "b16d73e48528cd607611023ea1a4e8060313f39e9b66dad90a315c8c1f66c2ba"
+    },
+    {
+      "seed": 6000018,
+      "group": "fungus_death",
+      "floor": 11,
+      "actions_before_stop": 114,
+      "trace_sha256": "00a59531e97d43e186cb6bc99e99d377637c6817e07e9d75016aba880cd3dc2f"
+    },
+    {
+      "seed": 6000031,
+      "group": "neow_transform",
+      "floor": 0,
+      "actions_before_stop": 2,
+      "trace_sha256": "569583daed80eb4d81a45e7cd64443d130eff4b56c6c5a43d70e31e258923bdc"
+    },
+    {
+      "seed": 6000040,
+      "group": "fungus_death",
+      "floor": 4,
+      "actions_before_stop": 45,
+      "trace_sha256": "10eaaf5f934868d385732dfd041dc5d7fc4ed0a14c97a2a1afd8ba4d0325ea3b"
+    },
+    {
+      "seed": 6000051,
+      "group": "neow_transform",
+      "floor": 0,
+      "actions_before_stop": 2,
+      "trace_sha256": "56f609cd9f589e076f271256ad26516c5053030c3bdabd38c3dd33a63e8df084"
+    },
+    {
+      "seed": 6000065,
+      "group": "fungus_death",
+      "floor": 5,
+      "actions_before_stop": 108,
+      "trace_sha256": "90d4e92f3257e8a41806bf0732fdccca2730ecc914b2204f446bae76f12e0d71"
+    },
+    {
+      "seed": 7000032,
+      "group": "fungus_death",
+      "floor": 10,
+      "actions_before_stop": 185,
+      "trace_sha256": "5d4327a6cf126d9f294584f4a016d2b3f070e062a79ae72b566152ede1852456"
+    },
+    {
+      "seed": 7000035,
+      "group": "fungus_death",
+      "floor": 4,
+      "actions_before_stop": 96,
+      "trace_sha256": "30ab3edd8e58328113fd7adb87cabec17ae20cdb1e5ae23eecd242ce30c8665c"
+    },
+    {
+      "seed": 7000041,
+      "group": "neow_transform",
+      "floor": 0,
+      "actions_before_stop": 2,
+      "trace_sha256": "5dbb10c4e40bda4340fa726b3e7f03966af43099a5b93489757707c453258e00"
+    },
+    {
+      "seed": 7000044,
+      "group": "neow_transform",
+      "floor": 0,
+      "actions_before_stop": 2,
+      "trace_sha256": "c47b88f61c616d95a6d269eee7540ec1c0a4ba7ac54301d664929e93a8fe679b"
+    },
+    {
+      "seed": 7000047,
+      "group": "wing_remove",
+      "floor": 3,
+      "actions_before_stop": 40,
+      "trace_sha256": "2633a166cab7efbd7b52aaee464d363b1bfee339a5a56f6c1524894ecf6c59cf"
+    },
+    {
+      "seed": 7000053,
+      "group": "neow_transform",
+      "floor": 0,
+      "actions_before_stop": 2,
+      "trace_sha256": "00ce02a0a82a694619c553c7f7e88885e9543c11947ab756e1c9de14f663f49c"
+    },
+    {
+      "seed": 7000054,
+      "group": "wing_remove",
+      "floor": 4,
+      "actions_before_stop": 90,
+      "trace_sha256": "3cf5f10e20aa0d90cff58164a9555e0e7edfe2f63bbec7b266a77c7a97861fea"
+    },
+    {
+      "seed": 8000031,
+      "group": "wing_remove",
+      "floor": 4,
+      "actions_before_stop": 55,
+      "trace_sha256": "b8a2b8b740e4506bb27075f98632c18e08014f25f012950a7928c9d4c2f7fe45"
+    },
+    {
+      "seed": 8000034,
+      "group": "neow_transform",
+      "floor": 0,
+      "actions_before_stop": 2,
+      "trace_sha256": "77660d1c7a64366caa3edae3dcc408618bbaeac068f065454411cf5c55262911"
+    },
+    {
+      "seed": 8000042,
+      "group": "neow_transform",
+      "floor": 0,
+      "actions_before_stop": 2,
+      "trace_sha256": "5915ee237d5212eda33367941a885ccbb8aaa71be74b8011fce7273b76dec4d4"
+    },
+    {
+      "seed": 9000008,
+      "group": "fungus_death",
+      "floor": 5,
+      "actions_before_stop": 165,
+      "trace_sha256": "65211803c4a01e2ebe314c3f79f46c2d86edb2cd4b73d1237e1b42d4c66ff1c3"
+    },
+    {
+      "seed": 9000020,
+      "group": "fungus_death",
+      "floor": 4,
+      "actions_before_stop": 102,
+      "trace_sha256": "9497164587b9b554a7602298270dba7cf4c9f9ddf98ab9f25f26af2eaa53fd1a"
+    },
+    {
+      "seed": 9000028,
+      "group": "wing_remove",
+      "floor": 2,
+      "actions_before_stop": 12,
+      "trace_sha256": "a5f0e19602166509b40a0e923b60d357d4d6959d048d5a65582400bd4a422c2f"
+    },
+    {
+      "seed": 9000030,
+      "group": "neow_transform",
+      "floor": 0,
+      "actions_before_stop": 2,
+      "trace_sha256": "1bcc273b5b4ccdd4af8bb522220daa7f0a747dff77021caf41b424e71d8b7f34"
+    },
+    {
+      "seed": 9000036,
+      "group": "wing_remove",
+      "floor": 4,
+      "actions_before_stop": 88,
+      "trace_sha256": "c4e455240d98d346d8f6cc1a14896f971d8bf6b600f558f8c41f9fe32ed82c3b"
+    },
+    {
+      "seed": 9000045,
+      "group": "wing_remove",
+      "floor": 5,
+      "actions_before_stop": 153,
+      "trace_sha256": "55c57f6dada501ba8a7f33f586ea5e6516f1ca1bad0e0de01aebc8db0182a1b4"
+    },
+    {
+      "seed": 9000054,
+      "group": "neow_transform",
+      "floor": 0,
+      "actions_before_stop": 2,
+      "trace_sha256": "4e8a6b7bda917f1e5c5d08ff1c9e0d9feb79b2865667436ec3251458fe26c567"
+    },
+    {
+      "seed": 9000066,
+      "group": "neow_transform",
+      "floor": 0,
+      "actions_before_stop": 2,
+      "trace_sha256": "ada13fb3933317006340750f7ac455d6025856ce91a91b380389c3dedd96cc2f"
+    }
+  ]
+}
