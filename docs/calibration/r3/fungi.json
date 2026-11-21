@@ -1,0 +1,329 @@
+{
+  "signature_sha256": "40688dc0b745768d87c84e94c3fe6f86f1eeb655da1a59fc2f38d968f7f5de37",
+  "decoder_sha256": "3b6f91649a61f34224af83a0564f3b4ec68b63e5ec9e60ad6afce305b8bfd0a3",
+  "anchors": [
+    {
+      "seed": 54072726,
+      "sequence": 335,
+      "original_raw_sha256": "ec5082d2695f785e3dc42db77778674769341b5859200c3663ade772d600641a",
+      "lethal_receipt": {
+        "sequence": 334,
+        "action": 2,
+        "command": "play 3",
+        "before_hash": "ddfde8ead32f4f4ecefd0ecd4fc27fb20c09a1104fa321f312c2ab206d34ae1f",
+        "after_hash": "fec4fa4932971a9119a5f5d2be795cf0dfc53e3713c2610a73773fd536f52549",
+        "receipt_sha256": "1bb09f57df4caae8006339bcadbf64a93cea6d9419c6f11f8d3c08801a53796c",
+        "request_id": "6348d2f9-6dd4-4f86-9944-81ef94fadd66"
+      },
+      "follow_receipt": {
+        "sequence": 335,
+        "action": 170,
+        "command": "end",
+        "before_hash": "fec4fa4932971a9119a5f5d2be795cf0dfc53e3713c2610a73773fd536f52549",
+        "after_hash": "19f84b2e8c860d7ad91d864f66670c5628a624e9322b616af440836fa9250a2d",
+        "receipt_sha256": "9939e548f9b5ccabbf4dedc08a5531b45af643f8d86f0a7d0e24330fa8a2af52",
+        "request_id": "7ed9ecde-32da-4cab-b75d-5515bae964fb"
+      },
+      "original_before": {
+        "hp": 42,
+        "block": 13,
+        "energy": 0,
+        "turn": 3,
+        "vulnerable": 2,
+        "enemies": [
+          [
+            0,
+            24,
+            0,
+            2
+          ],
+          [
+            10,
+            28,
+            0,
+            2
+          ],
+          [
+            10,
+            28,
+            0,
+            2
+          ]
+        ]
+      },
+      "original_after": {
+        "hp": 39,
+        "block": 0,
+        "energy": 3,
+        "turn": 4,
+        "vulnerable": 1,
+        "enemies": [
+          [
+            0,
+            24,
+            0,
+            0
+          ],
+          [
+            10,
+            28,
+            0,
+            2
+          ],
+          [
+            10,
+            28,
+            0,
+            2
+          ]
+        ]
+      },
+      "r3": {
+        "a": 170,
+        "mask": [
+          170
+        ],
+        "prev": {
+          "hp": 42,
+          "block": 13,
+          "energy": 0,
+          "turn": 3,
+          "vulnerable": 2,
+          "enemies": [
+            [
+              0,
+              24,
+              0,
+              2
+            ],
+            [
+              10,
+              28,
+              0,
+              2
+            ],
+            [
+              10,
+              28,
+              0,
+              2
+            ]
+          ]
+        },
+        "after": {
+          "hp": 39,
+          "block": 0,
+          "energy": 3,
+          "turn": 4,
+          "vulnerable": 1,
+          "enemies": [
+            [
+              0,
+              24,
+              0,
+              0
+            ],
+            [
+              10,
+              28,
+              0,
+              2
+            ],
+            [
+              10,
+              28,
+              0,
+              2
+            ]
+          ]
+        },
+        "next_mask": [],
+        "ticks": [
+          132,
+          133
+        ],
+        "state_version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1",
+        "full_mask_known": false,
+        "width": 3122,
+        "shape_after": 3122,
+        "split_before": [
+          null,
+          false,
+          false,
+          null,
+          null
+        ],
+        "split_after": [
+          null,
+          false,
+          false,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "seed": 54073952,
+      "sequence": 526,
+      "original_raw_sha256": "dc72925c684e778e4ea2e31501a68f3efc53b92a1d483a9acbe40e3c5698dd04",
+      "lethal_receipt": {
+        "sequence": 525,
+        "action": 20,
+        "command": "play 1 1",
+        "before_hash": "e5fbc10349c0f2936d0be1d16a6a4bc6a851bc21a82221b4100958bb81ed0355",
+        "after_hash": "c3726b4ca1f5f728f2a960906f4eade904cf7bfd0d787d44be50e0ba36507f99",
+        "receipt_sha256": "e9a690bb1c3c268e248797524508969fd9ee2986ab5accdde2a43560e4a6ee33",
+        "request_id": "3464be4f-7abf-40e1-8070-431d5b9cd779"
+      },
+      "follow_receipt": {
+        "sequence": 526,
+        "action": 10,
+        "command": "play 1 0",
+        "before_hash": "c3726b4ca1f5f728f2a960906f4eade904cf7bfd0d787d44be50e0ba36507f99",
+        "after_hash": "c8949bb00e407d3af55116a1ea514002b4facd712813ce79cc58509d290acfef",
+        "receipt_sha256": "8c80a0fd1319a6890aa6edb114a2adb9a156e1f1cb6254d0d28aab2fdaa818e7",
+        "request_id": "2f5416b3-d7cc-4024-903f-a7b147d0029a"
+      },
+      "original_before": {
+        "hp": 57,
+        "block": 19,
+        "energy": 3,
+        "turn": 2,
+        "vulnerable": 2,
+        "enemies": [
+          [
+            26,
+            26,
+            0,
+            2
+          ],
+          [
+            0,
+            24,
+            0,
+            2
+          ]
+        ]
+      },
+      "original_after": {
+        "hp": 57,
+        "block": 19,
+        "energy": 2,
+        "turn": 2,
+        "vulnerable": 2,
+        "enemies": [
+          [
+            17,
+            26,
+            0,
+            2
+          ],
+          [
+            0,
+            24,
+            0,
+            0
+          ]
+        ]
+      },
+      "r3": {
+        "a": 10,
+        "mask": [
+          10
+        ],
+        "prev": {
+          "hp": 57,
+          "block": 19,
+          "energy": 3,
+          "turn": 2,
+          "vulnerable": 2,
+          "enemies": [
+            [
+              26,
+              26,
+              0,
+              2
+            ],
+            [
+              0,
+              24,
+              0,
+              2
+            ]
+          ]
+        },
+        "after": {
+          "hp": 57,
+          "block": 19,
+          "energy": 2,
+          "turn": 2,
+          "vulnerable": 2,
+          "enemies": [
+            [
+              17,
+              26,
+              0,
+              2
+            ],
+            [
+              0,
+              24,
+              0,
+              0
+            ]
+          ]
+        },
+        "next_mask": [],
+        "ticks": [
+          116,
+          117
+        ],
+        "state_version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1",
+        "full_mask_known": false,
+        "width": 3122,
+        "shape_after": 3122,
+        "split_before": [
+          false,
+          null,
+          null,
+          null,
+          null
+        ],
+        "split_after": [
+          false,
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    }
+  ],
+  "positive_formal_simulated_decision": {
+    "seed": 12,
+    "original_reference": "saved R2 simulator trace",
+    "reference_trace_sha256": "23a417cf26cf5bc99318a3cf59378d20333c70bf3480170abcda1cfdfb989245",
+    "prefix_actions": 85,
+    "width": 3122,
+    "floor": 5.0,
+    "slots": [
+      {
+        "id": "ACID_SLIME_L",
+        "hp": 71.0,
+        "max": 71.0
+      },
+      null,
+      null,
+      null,
+      null
+    ],
+    "flags": [
+      true,
+      null,
+      null,
+      null,
+      null
+    ]
+  },
+  "archived_boss_original_and_same_kernel": "SPLIT.json"
+}

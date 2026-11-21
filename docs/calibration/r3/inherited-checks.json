@@ -1,0 +1,1107 @@
+{
+  "R3_interface_sha256": "40688dc0b745768d87c84e94c3fe6f86f1eeb655da1a59fc2f38d968f7f5de37",
+  "R2_manifest_sha256": "428c2d830023a430f1dc46829b64d34a0e13bce206d58cf87cd977d287ea3f90",
+  "R2_verified_files": 104,
+  "checker_sha256": "65dd67bb0afd7826611cb6347b5b1821626969ab295b9f9f577211e7840975b8",
+  "draw": {
+    "seed": 12115232018289411771,
+    "nonrepeating_inputs": 98,
+    "repeating_inputs": 248,
+    "terminal_hp": 0.0,
+    "terminal_gold": 132.0,
+    "actual_inputs": 346,
+    "equal_observations": 347,
+    "source_sha256": {
+      "experiments/sa_calibration_round1/fidelity/random/ACTIONS.jsonl": "89d4837cf986ebb9818b139c40d64e923d50808bd4f675abc2857b771e91045d",
+      "experiments/sa_calibration_round2/live/ACTIONS.jsonl": "47cff233cf27ec151541f4cd958c2e2eacee3d52956e495dc8fa17d487a4f2b1"
+    },
+    "ordered_float64_stream_sha256": "e1e69d930d4ea85d944152d09cbbfba48f752126e4902eb8f8f3772f949cbfb5",
+    "available_counts": {
+      "0": 263,
+      "2": 84
+    },
+    "terminal_both": true,
+    "tea_zero_frames": 347,
+    "eligible": 18,
+    "actual_reshuffle_action_indices": [
+      10,
+      18,
+      37,
+      47,
+      56,
+      325,
+      333,
+      342
+    ],
+    "historical_per_draw_receipt_agreement": 18,
+    "draws": [
+      {
+        "action": 5,
+        "floor": 1,
+        "turn": 1,
+        "prediction": [
+          "Strike_G",
+          0
+        ],
+        "original_uuid": "5f25cfa5-2220-4868-b3cc-314ac9128464",
+        "draw_count_before": 6,
+        "whole_hand": [
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Neutralize",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ]
+        ],
+        "original_cards_returned_from_discard": [],
+        "native_capture_ids": [
+          "native_1795171727236_78594847878000:capture:7",
+          "native_1795171727236_78594847878000:capture:8"
+        ]
+      },
+      {
+        "action": 10,
+        "floor": 1,
+        "turn": 2,
+        "prediction": [
+          "Strike_G",
+          0
+        ],
+        "original_uuid": "4979ee00-14cb-4b4f-99e1-345ea915ebd0",
+        "draw_count_before": 1,
+        "whole_hand": [
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ]
+        ],
+        "original_cards_returned_from_discard": [
+          "a1ffaf60-3408-46f5-8e0d-dcb6c1344554",
+          "07c966d8-14d9-445d-bf88-145ebe71e50a",
+          "64416d39-289c-4321-bdef-c5b5928102b4",
+          "8bcff6c6-0d68-41ba-b01d-750118de1841"
+        ],
+        "native_capture_ids": [
+          "native_1795171727236_78594847878000:capture:12",
+          "native_1795171727236_78594847878000:capture:13"
+        ]
+      },
+      {
+        "action": 14,
+        "floor": 1,
+        "turn": 3,
+        "prediction": [
+          "Survivor",
+          0
+        ],
+        "original_uuid": "793d7eca-9adc-43f0-a4bd-c742e307c5ef",
+        "draw_count_before": 8,
+        "whole_hand": [
+          [
+            "Survivor",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Slimed",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Neutralize",
+            0
+          ]
+        ],
+        "original_cards_returned_from_discard": [],
+        "native_capture_ids": [
+          "native_1795171727236_78594847878000:capture:16",
+          "native_1795171727236_78594847878000:capture:17"
+        ]
+      },
+      {
+        "action": 18,
+        "floor": 1,
+        "turn": 4,
+        "prediction": [
+          "Strike_G",
+          0
+        ],
+        "original_uuid": "5f25cfa5-2220-4868-b3cc-314ac9128464",
+        "draw_count_before": 3,
+        "whole_hand": [
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Slimed",
+            0
+          ]
+        ],
+        "original_cards_returned_from_discard": [
+          "07c966d8-14d9-445d-bf88-145ebe71e50a"
+        ],
+        "native_capture_ids": [
+          "native_1795171727236_78594847878000:capture:20",
+          "native_1795171727236_78594847878000:capture:21"
+        ]
+      },
+      {
+        "action": 22,
+        "floor": 1,
+        "turn": 5,
+        "prediction": [
+          "Defend_G",
+          0
+        ],
+        "original_uuid": "2015435a-d50d-445c-9e89-cdad40c3f463",
+        "draw_count_before": 9,
+        "whole_hand": [
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Slimed",
+            0
+          ],
+          [
+            "Survivor",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ]
+        ],
+        "original_cards_returned_from_discard": [],
+        "native_capture_ids": [
+          "native_1795171727236_78594847878000:capture:24",
+          "native_1795171727236_78594847878000:capture:25"
+        ]
+      },
+      {
+        "action": 33,
+        "floor": 2,
+        "turn": 1,
+        "prediction": [
+          "Strike_G",
+          0
+        ],
+        "original_uuid": "cfa68621-b466-4fdf-94c1-f51911cb2cea",
+        "draw_count_before": 7,
+        "whole_hand": [
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "AscendersBane",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ]
+        ],
+        "original_cards_returned_from_discard": [],
+        "native_capture_ids": [
+          "native_1795174908052_81775655483000:capture:13",
+          "native_1795174908052_81775655483000:capture:14"
+        ]
+      },
+      {
+        "action": 37,
+        "floor": 2,
+        "turn": 2,
+        "prediction": [
+          "Survivor",
+          0
+        ],
+        "original_uuid": "15fada97-b89f-4770-af5f-6e34c3b9f909",
+        "draw_count_before": 2,
+        "whole_hand": [
+          [
+            "Survivor",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Dodge and Roll",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ]
+        ],
+        "original_cards_returned_from_discard": [
+          "4b049db5-fcd8-4da2-9b79-3a80e9592254",
+          "5f19c289-5707-4d33-add0-88f57e1f826f",
+          "2d9c5b5d-9a19-4c0a-84b8-4495ba8f0744"
+        ],
+        "native_capture_ids": [
+          "native_1795174908052_81775655483000:capture:17",
+          "native_1795174908052_81775655483000:capture:18"
+        ]
+      },
+      {
+        "action": 43,
+        "floor": 2,
+        "turn": 3,
+        "prediction": [
+          "Strike_G",
+          0
+        ],
+        "original_uuid": "cfa68621-b466-4fdf-94c1-f51911cb2cea",
+        "draw_count_before": 8,
+        "whole_hand": [
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ]
+        ],
+        "original_cards_returned_from_discard": [],
+        "native_capture_ids": [
+          "native_1795174908052_81775655483000:capture:23",
+          "native_1795174908052_81775655483000:capture:24"
+        ]
+      },
+      {
+        "action": 47,
+        "floor": 2,
+        "turn": 4,
+        "prediction": [
+          "Strike_G",
+          0
+        ],
+        "original_uuid": "e0f2106e-be19-4416-b275-7118618c78e1",
+        "draw_count_before": 3,
+        "whole_hand": [
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Neutralize",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ]
+        ],
+        "original_cards_returned_from_discard": [
+          "5b231b52-e2a7-41e7-a885-2a2033b7d0b7",
+          "9ae3c819-b05f-47f9-abf8-67e2add31fd4"
+        ],
+        "native_capture_ids": [
+          "native_1795174908052_81775655483000:capture:27",
+          "native_1795174908052_81775655483000:capture:28"
+        ]
+      },
+      {
+        "action": 52,
+        "floor": 2,
+        "turn": 5,
+        "prediction": [
+          "Defend_G",
+          0
+        ],
+        "original_uuid": "cf22c586-3512-4566-8ade-480b153194bd",
+        "draw_count_before": 8,
+        "whole_hand": [
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Dodge and Roll",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ]
+        ],
+        "original_cards_returned_from_discard": [],
+        "native_capture_ids": [
+          "native_1795174908052_81775655483000:capture:32",
+          "native_1795174908052_81775655483000:capture:33"
+        ]
+      },
+      {
+        "action": 56,
+        "floor": 2,
+        "turn": 6,
+        "prediction": [
+          "Strike_G",
+          0
+        ],
+        "original_uuid": "4b049db5-fcd8-4da2-9b79-3a80e9592254",
+        "draw_count_before": 3,
+        "whole_hand": [
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Survivor",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ]
+        ],
+        "original_cards_returned_from_discard": [
+          "9ae3c819-b05f-47f9-abf8-67e2add31fd4",
+          "2d9c5b5d-9a19-4c0a-84b8-4495ba8f0744"
+        ],
+        "native_capture_ids": [
+          "native_1795174908052_81775655483000:capture:36",
+          "native_1795174908052_81775655483000:capture:37"
+        ]
+      },
+      {
+        "action": 62,
+        "floor": 2,
+        "turn": 7,
+        "prediction": [
+          "Strike_G",
+          0
+        ],
+        "original_uuid": "e0f2106e-be19-4416-b275-7118618c78e1",
+        "draw_count_before": 8,
+        "whole_hand": [
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Neutralize",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ]
+        ],
+        "original_cards_returned_from_discard": [],
+        "native_capture_ids": [
+          "native_1795174908052_81775655483000:capture:42",
+          "native_1795174908052_81775655483000:capture:43"
+        ]
+      },
+      {
+        "action": 321,
+        "floor": 3,
+        "turn": 1,
+        "prediction": [
+          "Survivor",
+          0
+        ],
+        "original_uuid": "15fada97-b89f-4770-af5f-6e34c3b9f909",
+        "draw_count_before": 7,
+        "whole_hand": [
+          [
+            "Survivor",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ]
+        ],
+        "original_cards_returned_from_discard": [],
+        "native_capture_ids": [
+          "native_1795174908052_81775655483000:capture:301",
+          "native_1795174908052_81775655483000:capture:302"
+        ]
+      },
+      {
+        "action": 325,
+        "floor": 3,
+        "turn": 2,
+        "prediction": [
+          "Strike_G",
+          0
+        ],
+        "original_uuid": "5b231b52-e2a7-41e7-a885-2a2033b7d0b7",
+        "draw_count_before": 2,
+        "whole_hand": [
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ]
+        ],
+        "original_cards_returned_from_discard": [
+          "cfa68621-b466-4fdf-94c1-f51911cb2cea",
+          "ef30bdd0-66d5-427e-b909-175c10017542"
+        ],
+        "native_capture_ids": [
+          "native_1795174908052_81775655483000:capture:305",
+          "native_1795174908052_81775655483000:capture:306"
+        ]
+      },
+      {
+        "action": 329,
+        "floor": 3,
+        "turn": 3,
+        "prediction": [
+          "Defend_G",
+          0
+        ],
+        "original_uuid": "c92ead16-dcde-4816-b6ed-a652effbff03",
+        "draw_count_before": 8,
+        "whole_hand": [
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Dodge and Roll",
+            0
+          ]
+        ],
+        "original_cards_returned_from_discard": [],
+        "native_capture_ids": [
+          "native_1795174908052_81775655483000:capture:309",
+          "native_1795174908052_81775655483000:capture:310"
+        ]
+      },
+      {
+        "action": 333,
+        "floor": 3,
+        "turn": 4,
+        "prediction": [
+          "Defend_G",
+          0
+        ],
+        "original_uuid": "cf22c586-3512-4566-8ade-480b153194bd",
+        "draw_count_before": 3,
+        "whole_hand": [
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Neutralize",
+            0
+          ],
+          [
+            "Survivor",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ]
+        ],
+        "original_cards_returned_from_discard": [
+          "f12786f6-8345-4853-bbfc-bd674d897f25"
+        ],
+        "native_capture_ids": [
+          "native_1795174908052_81775655483000:capture:313",
+          "native_1795174908052_81775655483000:capture:314"
+        ]
+      },
+      {
+        "action": 338,
+        "floor": 3,
+        "turn": 5,
+        "prediction": [
+          "Strike_G",
+          0
+        ],
+        "original_uuid": "e0f2106e-be19-4416-b275-7118618c78e1",
+        "draw_count_before": 8,
+        "whole_hand": [
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Dodge and Roll",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ]
+        ],
+        "original_cards_returned_from_discard": [],
+        "native_capture_ids": [
+          "native_1795174908052_81775655483000:capture:318",
+          "native_1795174908052_81775655483000:capture:319"
+        ]
+      },
+      {
+        "action": 342,
+        "floor": 3,
+        "turn": 6,
+        "prediction": [
+          "Strike_G",
+          0
+        ],
+        "original_uuid": "2d9c5b5d-9a19-4c0a-84b8-4495ba8f0744",
+        "draw_count_before": 3,
+        "whole_hand": [
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ]
+        ],
+        "original_cards_returned_from_discard": [
+          "f12786f6-8345-4853-bbfc-bd674d897f25"
+        ],
+        "native_capture_ids": [
+          "native_1795174908052_81775655483000:capture:322",
+          "native_1795174908052_81775655483000:capture:323"
+        ]
+      }
+    ]
+  },
+  "tea": {
+    "seed": 54072728,
+    "source_hashes": {
+      "raw.jsonl": "ec5082d2695f785e3dc42db77778674769341b5859200c3663ade772d600641a",
+      "attempts.jsonl": "814f5d4fdb3ca17e03af547a68be6e689fe790a7a2f3e0e72a8ee136fd8066a9"
+    },
+    "actual_public_inputs": 184,
+    "public_stop": {
+      "sequence": 752,
+      "floor": 11,
+      "action": 110,
+      "gaps": [
+        "reward_page_semantics_unverified"
+      ]
+    },
+    "public_points": [
+      {
+        "sequence": 746,
+        "pending": 0,
+        "original_counter": -1,
+        "actions": [
+          171
+        ]
+      },
+      {
+        "sequence": 747,
+        "pending": 0,
+        "original_counter": -1,
+        "actions": [
+          105,
+          110,
+          111
+        ]
+      },
+      {
+        "sequence": 748,
+        "pending": 1,
+        "original_counter": -2,
+        "actions": [
+          105,
+          110,
+          111,
+          112
+        ]
+      },
+      {
+        "sequence": 750,
+        "pending": 1,
+        "original_counter": -2,
+        "actions": [
+          105,
+          110,
+          111,
+          112
+        ]
+      },
+      {
+        "sequence": 751,
+        "pending": 1,
+        "original_counter": -2,
+        "actions": [
+          105,
+          110,
+          171
+        ]
+      },
+      {
+        "sequence": 752,
+        "pending": 1,
+        "original_counter": -2,
+        "actions": []
+      }
+    ],
+    "controlled_comparison": {
+      "sequence": 751,
+      "preceding_receipt": {
+        "sequence": 750,
+        "action": 112,
+        "command": "choose 2",
+        "before_hash": "5ddf26ab6017c94d7e32cbdd3251913df5008d0aecbc30be2793a834bd8fd2a3",
+        "after_hash": "d2bea1d524e445679ba199c8402530987bd3e74b4feebf3f69c278cacf777538",
+        "receipt_sha256": "d73d2469b54b1b22acb918c001228cd51a4ce9d3fcc000e569875656a6874bf8",
+        "request_id": "0d38dec2-5a76-4ebc-b9f6-f380d2f95092"
+      },
+      "shared_S3121_sha256": "2224927fdf4cd6cd0bb229ce7afb4a4fd74fb31052e7163e1a4f27e1015e8e01",
+      "R3_S3122_normal_sha256": "8b216ac3c0274f6897f5fb58a42732439e87f9c729e0342c975ea59fe1044618",
+      "R3_S3122_control_sha256": "931d61748162d68d51c51336ae61749f932656689b32cc8f0308f224d7cdcb52",
+      "differing_indices": [
+        3121
+      ],
+      "shared_A193_sha256": "0aedbae182f4d2399d5cb90cd37bd6c5a8865cab409ee525733d8478432d86ef"
+    },
+    "additional_tea_history_draws": [
+      {
+        "sequence": 568,
+        "card": [
+          "Defend_G",
+          0
+        ],
+        "uuid": "ffc79cf3-1520-4aa8-9db0-f600e9ee417e",
+        "receipt_sha256": "dafb1c71b9a22f54ecb0fa38455df03cef5af674d3e07c66c8a91b37d8f28cd6"
+      },
+      {
+        "sequence": 572,
+        "card": [
+          "Strike_G",
+          0
+        ],
+        "uuid": "5ecbae54-3fd1-4d6a-92ec-530a08414a4f",
+        "receipt_sha256": "5f8088cad4244ea489cbb6ad1ea09ccc3cc2b1fc6924811fa7a0e09998e0038a"
+      },
+      {
+        "sequence": 577,
+        "card": [
+          "Defend_G",
+          0
+        ],
+        "uuid": "20f5095a-b0f4-43e9-a756-2ab77cba34d8",
+        "receipt_sha256": "13ee48474e46e43f525cf39990200f23f0373f88b8e16bec878a0c6d3ce0562f"
+      },
+      {
+        "sequence": 581,
+        "card": [
+          "Defend_G",
+          0
+        ],
+        "uuid": "73cd19ab-c7c4-41c1-913e-f0330ade8f50",
+        "receipt_sha256": "a1c85c7b8ba0f07f11eb69fab6d04d991499aa864b3fe23bb1791416213b1ed8"
+      },
+      {
+        "sequence": 587,
+        "card": [
+          "Defend_G",
+          0
+        ],
+        "uuid": "ffc79cf3-1520-4aa8-9db0-f600e9ee417e",
+        "receipt_sha256": "4ac5d21853811024cefe4de8ee26b8bb19f9deab0a68247ba8ce9e90bdcee0f3"
+      },
+      {
+        "sequence": 604,
+        "card": [
+          "Defend_G",
+          0
+        ],
+        "uuid": "ffc79cf3-1520-4aa8-9db0-f600e9ee417e",
+        "receipt_sha256": "ade202f5a3a2910912d08c5128c12c18600da18dc865a37556c3878768cda97a"
+      },
+      {
+        "sequence": 609,
+        "card": [
+          "Defend_G",
+          0
+        ],
+        "uuid": "70a22bc8-f812-48e2-a0aa-db4f61f1d934",
+        "receipt_sha256": "2dafdcded960918d577e311ae077208fde85086e75298ce72e9e49bec21de0fc"
+      },
+      {
+        "sequence": 622,
+        "card": [
+          "Defend_G",
+          0
+        ],
+        "uuid": "73cd19ab-c7c4-41c1-913e-f0330ade8f50",
+        "receipt_sha256": "9952989c2134309e45ceb27734049d11f70b55d13934db534bdb4cd4c8c05b63"
+      },
+      {
+        "sequence": 629,
+        "card": [
+          "Defend_G",
+          0
+        ],
+        "uuid": "ffc79cf3-1520-4aa8-9db0-f600e9ee417e",
+        "receipt_sha256": "5df0d77d63ca2f5b0911a599529ca0b0bb33f006d4d5b535e05d4118e66d04af"
+      },
+      {
+        "sequence": 634,
+        "card": [
+          "AscendersBane",
+          0
+        ],
+        "uuid": "da93c12d-3139-4b31-8d51-ffecb5d0ddfa",
+        "receipt_sha256": "48b3cc7f13eef239e86e43d6ec4561e4202d4b38410e3f4c72e69c07cd52c718"
+      },
+      {
+        "sequence": 639,
+        "card": [
+          "Strike_G",
+          1
+        ],
+        "uuid": "5abc686b-7b7e-4f46-a666-552598885480",
+        "receipt_sha256": "ad94233c578f733f0a7007b8535556c90876357ec6609598b0b7d9730812ed17"
+      },
+      {
+        "sequence": 660,
+        "card": [
+          "Strike_G",
+          0
+        ],
+        "uuid": "5ecbae54-3fd1-4d6a-92ec-530a08414a4f",
+        "receipt_sha256": "f12433e3b8e72e74236665c4797f0537877ab06dca512a40bc4dbae5bd3b1ccc"
+      },
+      {
+        "sequence": 665,
+        "card": [
+          "Survivor",
+          0
+        ],
+        "uuid": "1e150bee-e2be-42df-bda0-fd459a5d34c8",
+        "receipt_sha256": "970a8dba6bbe598c3610317bd3a8f08e2cb8a87b463ccc9424ed7c5e8a56a680"
+      },
+      {
+        "sequence": 672,
+        "card": [
+          "Defend_G",
+          0
+        ],
+        "uuid": "20f5095a-b0f4-43e9-a756-2ab77cba34d8",
+        "receipt_sha256": "440dfb3bb6b7e1e3f57dd72fd8fda348e93713f17cc89de8cd59cb1785cd6460"
+      },
+      {
+        "sequence": 677,
+        "card": [
+          "Strike_G",
+          0
+        ],
+        "uuid": "b7b2269c-aa00-4e5b-894a-e56e0564fdfc",
+        "receipt_sha256": "012d9bba89ed1749c74254463e98ec5ca093fd7c6ee2e7df5b251254f8e14e05"
+      },
+      {
+        "sequence": 682,
+        "card": [
+          "Deflect",
+          0
+        ],
+        "uuid": "a11c44c7-47db-4a02-960f-229515f2a787",
+        "receipt_sha256": "446d0fb304c5ccef0c7d9525731b98efd17f64185ccdae3ca17ca550b79d4497"
+      },
+      {
+        "sequence": 687,
+        "card": [
+          "Flying Knee",
+          0
+        ],
+        "uuid": "0e75d28e-b38c-495b-b503-c3112ba2fdab",
+        "receipt_sha256": "9c3932cee39b0e66d518d6a38e5e49900437f09c5f7aa72e2d8d2f58f5302bd7"
+      },
+      {
+        "sequence": 709,
+        "card": [
+          "Cloak And Dagger",
+          0
+        ],
+        "uuid": "62153db7-99be-4904-b419-06229ae0514e",
+        "receipt_sha256": "9400f5669487e7191b5961839543cf366ebd0669a8023b036366dd4026be7cb5"
+      },
+      {
+        "sequence": 714,
+        "card": [
+          "Strike_G",
+          0
+        ],
+        "uuid": "5ecbae54-3fd1-4d6a-92ec-530a08414a4f",
+        "receipt_sha256": "c567a4702e0e9c58cc9c2081e9529fa59792d585a76ed883aa23e820295e6a6c"
+      },
+      {
+        "sequence": 723,
+        "card": [
+          "Strike_G",
+          1
+        ],
+        "uuid": "5abc686b-7b7e-4f46-a666-552598885480",
+        "receipt_sha256": "2159d60d87ae58a5518bc027db9615880e4e7dfc758216817ba849b96535788a"
+      },
+      {
+        "sequence": 728,
+        "card": [
+          "Defend_G",
+          0
+        ],
+        "uuid": "73cd19ab-c7c4-41c1-913e-f0330ade8f50",
+        "receipt_sha256": "6bdb8973465587f36dfb9d792437bb3b323b811aad7a89032b02ab8ab0383a7b"
+      },
+      {
+        "sequence": 734,
+        "card": [
+          "Survivor",
+          0
+        ],
+        "uuid": "1e150bee-e2be-42df-bda0-fd459a5d34c8",
+        "receipt_sha256": "394c51fc6105e904f7e0eb63c4077d3634e1d782a7a97f8e9cf4dbb46ed35b5a"
+      }
+    ],
+    "reset_cleared": true,
+    "stale_rejected": true,
+    "diagnostic_rule": "Only the already audited Ring + Tea / Kunai chest branch is enabled by the diagnostic backing.",
+    "diagnostic_inputs": 188,
+    "diagnostic_points": [
+      {
+        "sequence": 746,
+        "original_tea": -1,
+        "pending": 0,
+        "energy_both": null
+      },
+      {
+        "sequence": 747,
+        "original_tea": -1,
+        "pending": 0,
+        "energy_both": null
+      },
+      {
+        "sequence": 748,
+        "original_tea": -2,
+        "pending": 1,
+        "energy_both": null
+      },
+      {
+        "sequence": 750,
+        "original_tea": -2,
+        "pending": 1,
+        "energy_both": null
+      },
+      {
+        "sequence": 751,
+        "original_tea": -2,
+        "pending": 1,
+        "energy_both": null
+      },
+      {
+        "sequence": 752,
+        "original_tea": -2,
+        "pending": 1,
+        "energy_both": null
+      },
+      {
+        "sequence": 753,
+        "original_tea": -2,
+        "pending": 1,
+        "energy_both": null
+      },
+      {
+        "sequence": 754,
+        "original_tea": -2,
+        "pending": 1,
+        "energy_both": null
+      },
+      {
+        "sequence": 755,
+        "original_tea": -1,
+        "pending": 0,
+        "energy_both": 5
+      },
+      {
+        "sequence": 756,
+        "original_tea": -1,
+        "pending": 0,
+        "energy_both": 4
+      }
+    ]
+  }
+}

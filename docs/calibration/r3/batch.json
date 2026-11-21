@@ -1,0 +1,160 @@
+{
+  "created_at": "2026-11-21T16:48:11.102435+00:00",
+  "interface": {
+    "state_version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1",
+    "state_sha256": "9758f1f97deae6a003a7b31c95db0055b3f4e6251747742cace46c28bc2b5cad",
+    "card_registry_sha256": "cc7dd2446135675ad273bbdc09914909f8ab1c0aca854a8c00dd3d8b6f91a26a",
+    "action_version": "silent-canonical-row-a193-v1",
+    "action_adapter_version": "canonical-row-choice64-v1+frontier-settled+compact-decisions-v2+public-transitions-v1+ordinary-events-rewards-v1+shop-reward-discard-gold-and-death-settlement-v1+ending-route-paid-neow-permanent-upgrade-cancel-and-complete-card-masks-v2+ordinary-targets-and-victory-loot-v1+match-poison-and-idol-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+settled-neow-and-linked-chest-rewards-v1+round1-flex-chest-v1+round2-v1+round3-calibration-v1",
+    "action_contract_sha256": "0ae8ba53dfdde48ad0f4a4ae03cfd045fc2677ac50df3cae9a6ed7558962b78e",
+    "action_coordinates": "observation_monster_row",
+    "action_source_sha256": "991002a8a794556f29024c607c17f075d57c4f547711ef54c94a0aaed61d3451",
+    "state_decoder_sha256": "3b6f91649a61f34224af83a0564f3b4ec68b63e5ec9e60ad6afce305b8bfd0a3",
+    "backend_build_sha256": "5f81347346994e460ceaa8e500ff3f08637a33f2eb4a220cff467fc8f6105fa5",
+    "backend_commit": "482b3ef29c93746ada7d6fd0fd16885d7cc30b1f",
+    "backend_observation_version": 4,
+    "backend_observation_dimension": 1761,
+    "backend_actions": 146,
+    "observation_dimension": 3122,
+    "actions": 193
+  },
+  "run": {
+    "path": "runs/20261122_004058_318678_R3_final/RESULT.json",
+    "sha256": "8a4214c988a225e5941e2bf6df8b1164290c497e3f8fe5a688853977cf884bd1"
+  },
+  "full": {
+    "path": "runs/20261122_004058_318678_R3_final/full/RESULT.json",
+    "sha256": "67645e9215f89554bd3e1cb26de28a2cff0f70712521ed0d307a5371aa6980df"
+  },
+  "focused": {
+    "path": "runs/20261122_004058_318678_R3_final/focused/RESULT.json",
+    "sha256": "51c6015fcf77e4864cda35352b18b264d19fdfc3ed20bf8c6539c5f6c72f8493"
+  },
+  "analysis": {
+    "path": "analyses/20261122_004811_081989/RESULT.json",
+    "sha256": "4e813a8d6cf5ef06a2f59e6dba0f34865ed9f570ddccf713e189ad60686a5844"
+  },
+  "targets": {
+    "path": "FOCUSED_53.json",
+    "sha256": "a24cadab96cfcd46bc8a9931183b5f1ceef2f126ed90458f11ae4aee7879d73e"
+  },
+  "summary": {
+    "fixed": {
+      "seeds": 640,
+      "errors": 0,
+      "outcomes": {
+        "loss": 350,
+        "unsupported": 290
+      },
+      "decisions": 57363,
+      "resampled_changed_seeds": 36,
+      "changed_policy_observations": 47,
+      "forced_prefix_complete": 638,
+      "forced_endpoint_changed": 36,
+      "forced_rerun_seeds": 2,
+      "stopped_pages": {
+        "NEOW_RESULT_UNVERIFIED": 43,
+        "GRID_UNVERIFIED": 76,
+        "REWARD_UNVERIFIED": 53,
+        "DELEGATED": 87,
+        "EVENT_RESULT_UNVERIFIED": 30,
+        "SETUP_HAND": 1
+      },
+      "partial_mask_decisions": 2305,
+      "enhancement": {
+        "observations": 58003,
+        "availability": {
+          "0": 11475,
+          "2": 44819,
+          "1": 1709
+        },
+        "original_3118_equal": null,
+        "actions_equal": null,
+        "upgraded_top_observations": 514,
+        "tea_charged_observations": 0
+      }
+    },
+    "additional": {
+      "seeds": 64,
+      "errors": 0,
+      "outcomes": {
+        "loss": 24,
+        "unsupported": 40
+      },
+      "decisions": 4794,
+      "resampled_changed_seeds": 3,
+      "changed_policy_observations": 4,
+      "forced_prefix_complete": 64,
+      "forced_endpoint_changed": 3,
+      "forced_rerun_seeds": 0,
+      "stopped_pages": {
+        "NEOW_RESULT_UNVERIFIED": 7,
+        "EVENT_RESULT_UNVERIFIED": 4,
+        "DELEGATED": 11,
+        "GRID_UNVERIFIED": 13,
+        "REWARD_UNVERIFIED": 5
+      },
+      "partial_mask_decisions": 189,
+      "enhancement": {
+        "observations": 4858,
+        "availability": {
+          "0": 1057,
+          "2": 3601,
+          "1": 200
+        },
+        "original_3118_equal": null,
+        "actions_equal": null,
+        "upgraded_top_observations": 0,
+        "tea_charged_observations": 0
+      }
+    }
+  },
+  "focused_groups": {
+    "neow_transform_one": {
+      "seeds": 18,
+      "old_prefix_complete": 18,
+      "old_stop_opened": 18,
+      "actual_public_followup": 18,
+      "outcomes": {
+        "unsupported": 8,
+        "loss": 10
+      }
+    },
+    "wing_statue_remove_one": {
+      "seeds": 15,
+      "old_prefix_complete": 15,
+      "old_stop_opened": 15,
+      "actual_public_followup": 15,
+      "outcomes": {
+        "unsupported": 7,
+        "loss": 8
+      }
+    },
+    "dead_fungi_only_gap": {
+      "seeds": 20,
+      "old_prefix_complete": 20,
+      "old_stop_opened": 1,
+      "actual_public_followup": 1,
+      "outcomes": {
+        "unsupported": 20
+      }
+    }
+  },
+  "training_steps": 0,
+  "interpretation": "Legacy-prefix compatibility, first-stop opening and complete free-policy endpoints are separate. Only the official R3 session is used; no diagnostic kernel bypass.",
+  "semantic_prefix_reconciliation": {
+    "path": "semantic_prefix/20261122_004753_356394/RESULT.json",
+    "sha256": "78fd1bb205dfe3db390b4e756b4ba4d105b7a7312823d760ee33473cc780ebf7",
+    "strict_unmodified_complete": 702,
+    "additional_reconciled": 2,
+    "original_only_confirmations": 4,
+    "endpoints_all_3122_equal": true,
+    "intermediate_difference_indices": [
+      1769
+    ]
+  },
+  "report": {
+    "path": "REPORT.md",
+    "sha256": "611f50c650c573d30482c486a0a9c609ca4aacba56b44ade5bb2b85922ea9f2b"
+  }
+}
