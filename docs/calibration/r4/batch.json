@@ -1,0 +1,82 @@
+{
+  "signature": {
+    "state_version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1",
+    "state_sha256": "3ff6962afbb713ba85160f282d370a28e865c5207c741897a8a9e4f091614bcb",
+    "card_registry_sha256": "cc7dd2446135675ad273bbdc09914909f8ab1c0aca854a8c00dd3d8b6f91a26a",
+    "action_version": "silent-canonical-row-a193-v1",
+    "action_adapter_version": "canonical-row-choice64-v1+frontier-settled+compact-decisions-v2+public-transitions-v1+ordinary-events-rewards-v1+shop-reward-discard-gold-and-death-settlement-v1+ending-route-paid-neow-permanent-upgrade-cancel-and-complete-card-masks-v2+ordinary-targets-and-victory-loot-v1+match-poison-and-idol-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+settled-neow-and-linked-chest-rewards-v1+round1-flex-chest-v1+round2-v1+round3-calibration-v1+silent-a20-round4-v1",
+    "action_contract_sha256": "0ae8ba53dfdde48ad0f4a4ae03cfd045fc2677ac50df3cae9a6ed7558962b78e",
+    "action_coordinates": "observation_monster_row",
+    "action_source_sha256": "b56547879d761e26c0179ff1cfdfb17e737751130724ba4e4f8dca589bfa3ac3",
+    "state_decoder_sha256": "eca8839a563ea9b5471841af0288f66b88250a627ef0733259511f55ceff3883",
+    "backend_build_sha256": "5f81347346994e460ceaa8e500ff3f08637a33f2eb4a220cff467fc8f6105fa5",
+    "backend_commit": "482b3ef29c93746ada7d6fd0fd16885d7cc30b1f",
+    "backend_observation_version": 4,
+    "backend_observation_dimension": 1761,
+    "backend_actions": 146,
+    "observation_dimension": 3122,
+    "actions": 193
+  },
+  "reference_sha256": "67645e9215f89554bd3e1cb26de28a2cff0f70712521ed0d307a5371aa6980df",
+  "path": "runs/20261122_021451_739159_full/RESULT.json",
+  "sha256": "6da3f12f7a7c1aeaf9286dd37592e5c5ad52226bbce0a1c2e3855d48101d36cc",
+  "summary": {
+    "fixed": {
+      "seeds": 640,
+      "errors": 0,
+      "old_results": {
+        "loss": 350,
+        "unsupported": 290
+      },
+      "outcomes": {
+        "loss": 349,
+        "unsupported": 291
+      },
+      "transitions": {
+        "loss->loss": 345,
+        "unsupported->unsupported": 286,
+        "unsupported->loss": 4,
+        "loss->unsupported": 5
+      },
+      "decisions": 57580,
+      "complete_literal": 596,
+      "complete_after_unique_alignment": 640,
+      "changed_free_actions": 71,
+      "stop_pages": {
+        "NEOW_RESULT_UNVERIFIED": 44,
+        "GRID_UNVERIFIED": 77,
+        "REWARD_UNVERIFIED": 53,
+        "DELEGATED": 87,
+        "EVENT_RESULT_UNVERIFIED": 30
+      }
+    },
+    "additional": {
+      "seeds": 64,
+      "errors": 0,
+      "old_results": {
+        "loss": 24,
+        "unsupported": 40
+      },
+      "outcomes": {
+        "loss": 24,
+        "unsupported": 40
+      },
+      "transitions": {
+        "loss->loss": 24,
+        "unsupported->unsupported": 40
+      },
+      "decisions": 4799,
+      "complete_literal": 61,
+      "complete_after_unique_alignment": 64,
+      "changed_free_actions": 3,
+      "stop_pages": {
+        "NEOW_RESULT_UNVERIFIED": 7,
+        "EVENT_RESULT_UNVERIFIED": 4,
+        "DELEGATED": 11,
+        "GRID_UNVERIFIED": 13,
+        "REWARD_UNVERIFIED": 5
+      }
+    }
+  },
+  "training_steps": 0
+}

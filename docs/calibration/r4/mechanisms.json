@@ -1,0 +1,2956 @@
+{
+  "oracle_sha256": "d6434855fe6aac8da25607bad9fdac45d847eef53dc0de48335fcaee519ec09e",
+  "seed": {
+    "signed": "-8683615973261774583",
+    "unsigned": "9763128100447777033",
+    "seed_argument": null,
+    "in_previous_inventory": false,
+    "inventory_sha256": "e00bd2e911201b39993845ffc994db347fa65115da71f62bbd3c57697c802e8a",
+    "before_simulator": true
+  },
+  "original_sha256": "a1d663d675d444dbe32d2e304430dbdfb71eb4d05d7261adbad6e2562c189b33",
+  "script_sha256": "0e487a2f612ac631c3ffa51c48613483a0ebac8b5dc040dec4907cf343efcc0e",
+  "public": {
+    "path": "runs/20261122_024001_966342_sealed_reconciled/RESULT.json",
+    "sha256": "37ac52c821395d4f12e0d9fd31cbcb83d0225fb89c2b24702d9b5f19dda39036"
+  },
+  "diagnostic": {
+    "path": "runs/20261122_024003_685381_sealed_diagnostic/RESULT.json",
+    "sha256": "9152e61099de30d64eca295063a1a1416b80bd16b0cf9765132257c69c5d7274"
+  },
+  "scope": "formal and diagnostic mark the executed model step against the bracketed original input; per-field comparisons are recorded separately. Original UUIDs do not imply native UUIDs are present on the model side.",
+  "actual_shuffle": {
+    "count": 15,
+    "by_scope": {
+      "formal": 4,
+      "diagnostic": 11
+    },
+    "records": [
+      {
+        "index": 15,
+        "original_command": "end",
+        "floor": 1,
+        "original_before_hash": "baea944e9d22e895887a6a731ad69e7a4ffe65ac79085905a3f4405fcaec5bf7",
+        "original_after_hash": "2beae38d08049bae381e1e9ce11aa8c005fb82e4b6bfa74b586de3fff5255849",
+        "scope": "formal",
+        "mapped_action": 170,
+        "paired_field_groups": {
+          "before": {
+            "hand": true,
+            "pile_counts": true
+          },
+          "after": {
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "turn": [
+          2,
+          3
+        ],
+        "pile_counts_before": [
+          1,
+          10,
+          2
+        ],
+        "pile_counts_after": [
+          8,
+          0,
+          5
+        ],
+        "previous_discard_to_draw": [
+          "161b71a1-ed7f-46fa-a346-52647423bc73",
+          "2f2b6255-5c9a-43da-837a-eb9b69622f70",
+          "327912a4-6f4b-45a8-93ed-44b36072f7b1",
+          "79277e03-9ca3-4786-b185-7440a940a017",
+          "c7f8328f-ab98-4c94-a291-f0b73eff15ab",
+          "cc468cec-9983-42e8-9e52-495935c5bf56"
+        ],
+        "previous_discard_to_hand": [
+          "7f27aa60-d62e-4261-9125-c2df07e5da0e",
+          "8ba5a080-01b8-4087-a9ca-baa426517719",
+          "a16ead6e-8e30-4589-b2c9-28c84ef5a857",
+          "a76b6896-37f6-4dfc-b9b1-d0d580bf4e9c"
+        ],
+        "hand_after": [
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Dodge and Roll",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ]
+        ]
+      },
+      {
+        "index": 23,
+        "original_command": "end",
+        "floor": 1,
+        "original_before_hash": "e13bc56fc6d05189ff0be9b25b2befd6d73e67ba0c7d7a60b1ccb6e8969bb09d",
+        "original_after_hash": "6a657779ce1857b7954d6d76b3f89cef9b9bf5cf70fe0b0d53559eb3b73edf98",
+        "scope": "formal",
+        "mapped_action": 170,
+        "paired_field_groups": {
+          "before": {
+            "hand": true,
+            "pile_counts": true
+          },
+          "after": {
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "turn": [
+          4,
+          5
+        ],
+        "pile_counts_before": [
+          3,
+          8,
+          2
+        ],
+        "pile_counts_after": [
+          8,
+          0,
+          5
+        ],
+        "previous_discard_to_draw": [
+          "05256d5a-7f8e-45a8-b96c-7c99d9dc0d9d",
+          "7f27aa60-d62e-4261-9125-c2df07e5da0e",
+          "8ba5a080-01b8-4087-a9ca-baa426517719",
+          "954e4145-bb38-405d-b3f6-d791ed8c3732",
+          "a16ead6e-8e30-4589-b2c9-28c84ef5a857",
+          "cc468cec-9983-42e8-9e52-495935c5bf56"
+        ],
+        "previous_discard_to_hand": [
+          "978f15f5-9c9a-4761-9af9-0a2917273306",
+          "a76b6896-37f6-4dfc-b9b1-d0d580bf4e9c"
+        ],
+        "hand_after": [
+          [
+            "AscendersBane",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Dodge and Roll",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ]
+        ]
+      },
+      {
+        "index": 31,
+        "original_command": "end",
+        "floor": 1,
+        "original_before_hash": "5339b36fcddbb92ecbf78f5bc79ef1054c6856e95b29aa5dbf08d7ef942ae5ae",
+        "original_after_hash": "c044abb546ad151c9efbf6f5032df7edfdfc22a0136e7f2b566b302c9b98d234",
+        "scope": "formal",
+        "mapped_action": 170,
+        "paired_field_groups": {
+          "before": {
+            "hand": true,
+            "pile_counts": true
+          },
+          "after": {
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "turn": [
+          6,
+          7
+        ],
+        "pile_counts_before": [
+          3,
+          7,
+          2
+        ],
+        "pile_counts_after": [
+          7,
+          0,
+          5
+        ],
+        "previous_discard_to_draw": [
+          "79277e03-9ca3-4786-b185-7440a940a017",
+          "8ba5a080-01b8-4087-a9ca-baa426517719",
+          "954e4145-bb38-405d-b3f6-d791ed8c3732",
+          "978f15f5-9c9a-4761-9af9-0a2917273306",
+          "a76b6896-37f6-4dfc-b9b1-d0d580bf4e9c",
+          "cc468cec-9983-42e8-9e52-495935c5bf56"
+        ],
+        "previous_discard_to_hand": [
+          "2f2b6255-5c9a-43da-837a-eb9b69622f70"
+        ],
+        "hand_after": [
+          [
+            "Survivor",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ]
+        ]
+      },
+      {
+        "index": 72,
+        "original_command": "end",
+        "floor": 7,
+        "original_before_hash": "be235cc3d40b74f449985bc586a69c30fb8a7eb081e0a73357bcb6075e3f241c",
+        "original_after_hash": "8d68fc2ab4612193bc7936b0a789d55e1eb8a22b9418837a04cfa75a26f430d1",
+        "scope": "formal",
+        "mapped_action": 170,
+        "paired_field_groups": {
+          "before": {
+            "hand": true,
+            "pile_counts": true
+          },
+          "after": {
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "turn": [
+          2,
+          3
+        ],
+        "pile_counts_before": [
+          4,
+          11,
+          2
+        ],
+        "pile_counts_after": [
+          12,
+          0,
+          5
+        ],
+        "previous_discard_to_draw": [
+          "05256d5a-7f8e-45a8-b96c-7c99d9dc0d9d",
+          "161b71a1-ed7f-46fa-a346-52647423bc73",
+          "79277e03-9ca3-4786-b185-7440a940a017",
+          "8ba5a080-01b8-4087-a9ca-baa426517719",
+          "954e4145-bb38-405d-b3f6-d791ed8c3732",
+          "a16ead6e-8e30-4589-b2c9-28c84ef5a857",
+          "a76b6896-37f6-4dfc-b9b1-d0d580bf4e9c",
+          "d986a225-3d63-4eef-aadb-660e21270ab5",
+          "f3061f90-4e80-4189-8d4c-8c7c09767b0b",
+          "fbc41040-f30b-4397-93bd-fd5707c01558"
+        ],
+        "previous_discard_to_hand": [
+          "327912a4-6f4b-45a8-93ed-44b36072f7b1"
+        ],
+        "hand_after": [
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "AscendersBane",
+            0
+          ]
+        ]
+      },
+      {
+        "index": 114,
+        "original_command": "play 4 0",
+        "floor": 10,
+        "original_before_hash": "53ddb3217c4a94994bba7b5f2f4cad7bdf54900a5cbc1244e650224b55da5dea",
+        "original_after_hash": "5a4154123d1b7a59af2310adadce1127d17b9d3b1bcc24519ae662d3d144988a",
+        "scope": "diagnostic",
+        "mapped_action": 13,
+        "paired_field_groups": {
+          "before": {
+            "hand": true,
+            "pile_counts": true
+          },
+          "after": {
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "turn": [
+          3,
+          3
+        ],
+        "pile_counts_before": [
+          0,
+          12,
+          4
+        ],
+        "pile_counts_after": [
+          11,
+          0,
+          4
+        ],
+        "previous_discard_to_draw": [
+          "05256d5a-7f8e-45a8-b96c-7c99d9dc0d9d",
+          "7f27aa60-d62e-4261-9125-c2df07e5da0e",
+          "8ba5a080-01b8-4087-a9ca-baa426517719",
+          "954e4145-bb38-405d-b3f6-d791ed8c3732",
+          "978f15f5-9c9a-4761-9af9-0a2917273306",
+          "a76b6896-37f6-4dfc-b9b1-d0d580bf4e9c",
+          "c7f8328f-ab98-4c94-a291-f0b73eff15ab",
+          "cc468cec-9983-42e8-9e52-495935c5bf56",
+          "cdad3794-7b24-4e69-89d1-ab04cdd4ffbe",
+          "f3061f90-4e80-4189-8d4c-8c7c09767b0b",
+          "fbc41040-f30b-4397-93bd-fd5707c01558"
+        ],
+        "previous_discard_to_hand": [
+          "2f2b6255-5c9a-43da-837a-eb9b69622f70"
+        ],
+        "hand_after": [
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Survivor",
+            1
+          ],
+          [
+            "Strike_G",
+            0
+          ]
+        ]
+      },
+      {
+        "index": 127,
+        "original_command": "end",
+        "floor": 10,
+        "original_before_hash": "870000f09858616ca94d73a45e2f11235c17eb656f16de9fac69b70fcfe9d3f7",
+        "original_after_hash": "584edd998570ccb0a4d935e6e9d3f793463739821f75c7981968121a3cd09d1a",
+        "scope": "diagnostic",
+        "mapped_action": 170,
+        "paired_field_groups": {
+          "before": {
+            "hand": true,
+            "pile_counts": true
+          },
+          "after": {
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "turn": [
+          5,
+          6
+        ],
+        "pile_counts_before": [
+          0,
+          13,
+          3
+        ],
+        "pile_counts_after": [
+          11,
+          0,
+          5
+        ],
+        "previous_discard_to_draw": [
+          "05256d5a-7f8e-45a8-b96c-7c99d9dc0d9d",
+          "161b71a1-ed7f-46fa-a346-52647423bc73",
+          "2f2b6255-5c9a-43da-837a-eb9b69622f70",
+          "7f27aa60-d62e-4261-9125-c2df07e5da0e",
+          "8ba5a080-01b8-4087-a9ca-baa426517719",
+          "a76b6896-37f6-4dfc-b9b1-d0d580bf4e9c",
+          "c7f8328f-ab98-4c94-a291-f0b73eff15ab",
+          "cc468cec-9983-42e8-9e52-495935c5bf56"
+        ],
+        "previous_discard_to_hand": [
+          "79277e03-9ca3-4786-b185-7440a940a017",
+          "a16ead6e-8e30-4589-b2c9-28c84ef5a857",
+          "d986a225-3d63-4eef-aadb-660e21270ab5",
+          "f3061f90-4e80-4189-8d4c-8c7c09767b0b",
+          "fbc41040-f30b-4397-93bd-fd5707c01558"
+        ],
+        "hand_after": [
+          [
+            "Dagger Throw",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Blade Dance",
+            0
+          ],
+          [
+            "Cloak And Dagger",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ]
+        ]
+      },
+      {
+        "index": 153,
+        "original_command": "end",
+        "floor": 11,
+        "original_before_hash": "3189b2bb5a652e443d6cbe97e4b1f04cefada3e220024c8a8647accf6a5e2914",
+        "original_after_hash": "bcfa560d7f50bddb9ead3936517863f062af258bc1ad3f375c789be6efa396c1",
+        "scope": "diagnostic",
+        "mapped_action": 170,
+        "paired_field_groups": {
+          "before": {
+            "hand": true,
+            "pile_counts": true
+          },
+          "after": {
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "turn": [
+          3,
+          4
+        ],
+        "pile_counts_before": [
+          0,
+          16,
+          2
+        ],
+        "pile_counts_after": [
+          13,
+          0,
+          5
+        ],
+        "previous_discard_to_draw": [
+          "20425d38-a990-4076-87b6-294d47134d6e",
+          "2f2b6255-5c9a-43da-837a-eb9b69622f70",
+          "7f27aa60-d62e-4261-9125-c2df07e5da0e",
+          "8ba5a080-01b8-4087-a9ca-baa426517719",
+          "978f15f5-9c9a-4761-9af9-0a2917273306",
+          "a16ead6e-8e30-4589-b2c9-28c84ef5a857",
+          "a76b6896-37f6-4dfc-b9b1-d0d580bf4e9c",
+          "c7f8328f-ab98-4c94-a291-f0b73eff15ab",
+          "cc468cec-9983-42e8-9e52-495935c5bf56",
+          "d986a225-3d63-4eef-aadb-660e21270ab5",
+          "f3061f90-4e80-4189-8d4c-8c7c09767b0b",
+          "fbc41040-f30b-4397-93bd-fd5707c01558"
+        ],
+        "previous_discard_to_hand": [
+          "05256d5a-7f8e-45a8-b96c-7c99d9dc0d9d",
+          "161b71a1-ed7f-46fa-a346-52647423bc73",
+          "a88d25f9-f834-48c4-b39c-2cb8dea743de",
+          "cdad3794-7b24-4e69-89d1-ab04cdd4ffbe"
+        ],
+        "hand_after": [
+          [
+            "Backflip",
+            0
+          ],
+          [
+            "Survivor",
+            1
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Doubt",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ]
+        ]
+      },
+      {
+        "index": 180,
+        "original_command": "play 1",
+        "floor": 12,
+        "original_before_hash": "e0dde6a2ce3029ef1f01c71ab862c6e0febbf3bc007ed59e53f30b73c572d768",
+        "original_after_hash": "47e0a6a70d74f39b9e9d9651e7db39855d8345fef075f832d3aa8e096f0da25e",
+        "scope": "diagnostic",
+        "mapped_action": 0,
+        "paired_field_groups": {
+          "before": {
+            "hand": true,
+            "pile_counts": true
+          },
+          "after": {
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "turn": [
+          3,
+          3
+        ],
+        "pile_counts_before": [
+          0,
+          14,
+          5
+        ],
+        "pile_counts_after": [
+          13,
+          1,
+          5
+        ],
+        "previous_discard_to_draw": [
+          "161b71a1-ed7f-46fa-a346-52647423bc73",
+          "2f2b6255-5c9a-43da-837a-eb9b69622f70",
+          "5845c3be-265a-4078-9748-6dfb1e1146b2",
+          "79277e03-9ca3-4786-b185-7440a940a017",
+          "7f27aa60-d62e-4261-9125-c2df07e5da0e",
+          "8ba5a080-01b8-4087-a9ca-baa426517719",
+          "a16ead6e-8e30-4589-b2c9-28c84ef5a857",
+          "a88d25f9-f834-48c4-b39c-2cb8dea743de",
+          "c7f8328f-ab98-4c94-a291-f0b73eff15ab",
+          "cc468cec-9983-42e8-9e52-495935c5bf56",
+          "d986a225-3d63-4eef-aadb-660e21270ab5",
+          "f3061f90-4e80-4189-8d4c-8c7c09767b0b",
+          "fbc41040-f30b-4397-93bd-fd5707c01558"
+        ],
+        "previous_discard_to_hand": [
+          "a76b6896-37f6-4dfc-b9b1-d0d580bf4e9c"
+        ],
+        "hand_after": [
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Doubt",
+            0
+          ],
+          [
+            "Shiv",
+            0
+          ],
+          [
+            "Dodge and Roll",
+            1
+          ]
+        ]
+      },
+      {
+        "index": 192,
+        "original_command": "end",
+        "floor": 12,
+        "original_before_hash": "5511f946b4387ebd2f1142f09c49ac28170390ace2eb94d8018f9bd0b3924147",
+        "original_after_hash": "3c5263776defa2d6704821eb6d26b1e61dcc455bb44556435073f84231f63919",
+        "scope": "diagnostic",
+        "mapped_action": 170,
+        "paired_field_groups": {
+          "before": {
+            "hand": true,
+            "pile_counts": true
+          },
+          "after": {
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "turn": [
+          5,
+          6
+        ],
+        "pile_counts_before": [
+          1,
+          13,
+          4
+        ],
+        "pile_counts_after": [
+          13,
+          0,
+          5
+        ],
+        "previous_discard_to_draw": [
+          "161b71a1-ed7f-46fa-a346-52647423bc73",
+          "2f2b6255-5c9a-43da-837a-eb9b69622f70",
+          "79277e03-9ca3-4786-b185-7440a940a017",
+          "7f27aa60-d62e-4261-9125-c2df07e5da0e",
+          "954e4145-bb38-405d-b3f6-d791ed8c3732",
+          "a16ead6e-8e30-4589-b2c9-28c84ef5a857",
+          "a76b6896-37f6-4dfc-b9b1-d0d580bf4e9c",
+          "a88d25f9-f834-48c4-b39c-2cb8dea743de",
+          "c7f8328f-ab98-4c94-a291-f0b73eff15ab",
+          "cdad3794-7b24-4e69-89d1-ab04cdd4ffbe"
+        ],
+        "previous_discard_to_hand": [
+          "05256d5a-7f8e-45a8-b96c-7c99d9dc0d9d",
+          "978f15f5-9c9a-4761-9af9-0a2917273306",
+          "fbc41040-f30b-4397-93bd-fd5707c01558"
+        ],
+        "hand_after": [
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Cloak And Dagger",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ]
+        ]
+      },
+      {
+        "index": 222,
+        "original_command": "end",
+        "floor": 13,
+        "original_before_hash": "323faafaccc549aed0433bd24697bcdc16a8ce8b1c55f2b9666e9d7c67339425",
+        "original_after_hash": "c912be4ae86e7ede82251d0d00b757e936675639cb5d01308dcc7cb961d595f7",
+        "scope": "diagnostic",
+        "mapped_action": 170,
+        "paired_field_groups": {
+          "before": {
+            "hand": true,
+            "pile_counts": true
+          },
+          "after": {
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "turn": [
+          3,
+          4
+        ],
+        "pile_counts_before": [
+          0,
+          15,
+          4
+        ],
+        "pile_counts_after": [
+          14,
+          0,
+          5
+        ],
+        "previous_discard_to_draw": [
+          "05256d5a-7f8e-45a8-b96c-7c99d9dc0d9d",
+          "161b71a1-ed7f-46fa-a346-52647423bc73",
+          "5845c3be-265a-4078-9748-6dfb1e1146b2",
+          "7f27aa60-d62e-4261-9125-c2df07e5da0e",
+          "8ba5a080-01b8-4087-a9ca-baa426517719",
+          "a76b6896-37f6-4dfc-b9b1-d0d580bf4e9c",
+          "cdad3794-7b24-4e69-89d1-ab04cdd4ffbe",
+          "d986a225-3d63-4eef-aadb-660e21270ab5",
+          "f3061f90-4e80-4189-8d4c-8c7c09767b0b",
+          "fbc41040-f30b-4397-93bd-fd5707c01558"
+        ],
+        "previous_discard_to_hand": [
+          "79277e03-9ca3-4786-b185-7440a940a017",
+          "a16ead6e-8e30-4589-b2c9-28c84ef5a857",
+          "a88d25f9-f834-48c4-b39c-2cb8dea743de",
+          "c7f8328f-ab98-4c94-a291-f0b73eff15ab",
+          "cc468cec-9983-42e8-9e52-495935c5bf56"
+        ],
+        "hand_after": [
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Backflip",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ]
+        ]
+      },
+      {
+        "index": 237,
+        "original_command": "end",
+        "floor": 13,
+        "original_before_hash": "aca8b098932730c28e338302541740e2fac6cde93b8c40e219f6f3890e2020f3",
+        "original_after_hash": "3226b7c04d0881325f020b8cfb025d6a2d0b79eca70a31de4e9438eeb6cbc6bf",
+        "scope": "diagnostic",
+        "mapped_action": 170,
+        "paired_field_groups": {
+          "before": {
+            "hand": true,
+            "pile_counts": true
+          },
+          "after": {
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "turn": [
+          6,
+          7
+        ],
+        "pile_counts_before": [
+          0,
+          16,
+          2
+        ],
+        "pile_counts_after": [
+          13,
+          0,
+          5
+        ],
+        "previous_discard_to_draw": [
+          "161b71a1-ed7f-46fa-a346-52647423bc73",
+          "2f2b6255-5c9a-43da-837a-eb9b69622f70",
+          "79277e03-9ca3-4786-b185-7440a940a017",
+          "7f27aa60-d62e-4261-9125-c2df07e5da0e",
+          "8ba5a080-01b8-4087-a9ca-baa426517719",
+          "954e4145-bb38-405d-b3f6-d791ed8c3732",
+          "a16ead6e-8e30-4589-b2c9-28c84ef5a857",
+          "a76b6896-37f6-4dfc-b9b1-d0d580bf4e9c",
+          "cc468cec-9983-42e8-9e52-495935c5bf56",
+          "cdad3794-7b24-4e69-89d1-ab04cdd4ffbe",
+          "d986a225-3d63-4eef-aadb-660e21270ab5",
+          "f3061f90-4e80-4189-8d4c-8c7c09767b0b",
+          "fbc41040-f30b-4397-93bd-fd5707c01558"
+        ],
+        "previous_discard_to_hand": [
+          "5845c3be-265a-4078-9748-6dfb1e1146b2",
+          "a88d25f9-f834-48c4-b39c-2cb8dea743de",
+          "c7f8328f-ab98-4c94-a291-f0b73eff15ab"
+        ],
+        "hand_after": [
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Blade Dance",
+            0
+          ],
+          [
+            "Backflip",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ]
+        ]
+      },
+      {
+        "index": 269,
+        "original_command": "end",
+        "floor": 16,
+        "original_before_hash": "9b174d2e2817f9190207b19b94a2aa33dfd12d98bdc2df6890ea37ca7fb0da03",
+        "original_after_hash": "525ef1cc9b01bda06b2a6e495a54f82ec9e480a8c0190bac52817b8762cf372b",
+        "scope": "diagnostic",
+        "mapped_action": 170,
+        "paired_field_groups": {
+          "before": {
+            "hand": true,
+            "pile_counts": true
+          },
+          "after": {
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "turn": [
+          3,
+          4
+        ],
+        "pile_counts_before": [
+          1,
+          18,
+          2
+        ],
+        "pile_counts_after": [
+          17,
+          0,
+          5
+        ],
+        "previous_discard_to_draw": [
+          "006dd21e-9214-4d69-837a-eb2705d8241a",
+          "05256d5a-7f8e-45a8-b96c-7c99d9dc0d9d",
+          "161b71a1-ed7f-46fa-a346-52647423bc73",
+          "2f2b6255-5c9a-43da-837a-eb9b69622f70",
+          "5845c3be-265a-4078-9748-6dfb1e1146b2",
+          "74267676-4be6-4b9e-9a7a-21a87101bf7a",
+          "79277e03-9ca3-4786-b185-7440a940a017",
+          "7f27aa60-d62e-4261-9125-c2df07e5da0e",
+          "954e4145-bb38-405d-b3f6-d791ed8c3732",
+          "a76b6896-37f6-4dfc-b9b1-d0d580bf4e9c",
+          "a88d25f9-f834-48c4-b39c-2cb8dea743de",
+          "c7f8328f-ab98-4c94-a291-f0b73eff15ab",
+          "cc468cec-9983-42e8-9e52-495935c5bf56",
+          "d986a225-3d63-4eef-aadb-660e21270ab5",
+          "f3061f90-4e80-4189-8d4c-8c7c09767b0b"
+        ],
+        "previous_discard_to_hand": [
+          "a16ead6e-8e30-4589-b2c9-28c84ef5a857",
+          "cdad3794-7b24-4e69-89d1-ab04cdd4ffbe",
+          "fbc41040-f30b-4397-93bd-fd5707c01558"
+        ],
+        "hand_after": [
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Doubt",
+            0
+          ],
+          [
+            "Burn",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Cloak And Dagger",
+            0
+          ]
+        ]
+      },
+      {
+        "index": 287,
+        "original_command": "end",
+        "floor": 16,
+        "original_before_hash": "ce8f54b32846e708aa558bb5bb3d16c2c1a9ca6f83474c8ab8832217066eee6e",
+        "original_after_hash": "660eef05720bfcb0019be6d818f397a3e0f545da381f329e518aedc4a3db9870",
+        "scope": "diagnostic",
+        "mapped_action": 170,
+        "paired_field_groups": {
+          "before": {
+            "hand": true,
+            "pile_counts": true
+          },
+          "after": {
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "turn": [
+          6,
+          7
+        ],
+        "pile_counts_before": [
+          2,
+          18,
+          3
+        ],
+        "pile_counts_after": [
+          18,
+          0,
+          5
+        ],
+        "previous_discard_to_draw": [
+          "006dd21e-9214-4d69-837a-eb2705d8241a",
+          "24bb6347-f76b-4876-89dd-230562f59464",
+          "2f2b6255-5c9a-43da-837a-eb9b69622f70",
+          "5845c3be-265a-4078-9748-6dfb1e1146b2",
+          "79277e03-9ca3-4786-b185-7440a940a017",
+          "8ba5a080-01b8-4087-a9ca-baa426517719",
+          "954e4145-bb38-405d-b3f6-d791ed8c3732",
+          "a16ead6e-8e30-4589-b2c9-28c84ef5a857",
+          "a76b6896-37f6-4dfc-b9b1-d0d580bf4e9c",
+          "b4ed0987-c34d-4ce4-8ee0-45e337d0a4ad",
+          "c7f8328f-ab98-4c94-a291-f0b73eff15ab",
+          "cc468cec-9983-42e8-9e52-495935c5bf56",
+          "cdad3794-7b24-4e69-89d1-ab04cdd4ffbe",
+          "d3718296-2640-4d1d-afc7-23dee57bce79",
+          "d986a225-3d63-4eef-aadb-660e21270ab5",
+          "fbc41040-f30b-4397-93bd-fd5707c01558"
+        ],
+        "previous_discard_to_hand": [
+          "67892873-dcef-43cb-a6fd-ecd4f36fdd3b",
+          "a88d25f9-f834-48c4-b39c-2cb8dea743de"
+        ],
+        "hand_after": [
+          [
+            "Blade Dance",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Burn",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Backflip",
+            0
+          ]
+        ]
+      },
+      {
+        "index": 307,
+        "original_command": "end",
+        "floor": 16,
+        "original_before_hash": "0168340ecef38e2f1ecb2df3da664aece79dc7308699e2594449003b1386082f",
+        "original_after_hash": "ce8e6a2f88009ef54a441206ae7be9099a10bc1efc1ac77de42f82ff76ab1b77",
+        "scope": "diagnostic",
+        "mapped_action": 170,
+        "paired_field_groups": {
+          "before": {
+            "hand": true,
+            "pile_counts": true
+          },
+          "after": {
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "turn": [
+          9,
+          10
+        ],
+        "pile_counts_before": [
+          4,
+          20,
+          1
+        ],
+        "pile_counts_after": [
+          23,
+          0,
+          5
+        ],
+        "previous_discard_to_draw": [
+          "05256d5a-7f8e-45a8-b96c-7c99d9dc0d9d",
+          "161b71a1-ed7f-46fa-a346-52647423bc73",
+          "24bb6347-f76b-4876-89dd-230562f59464",
+          "2f2b6255-5c9a-43da-837a-eb9b69622f70",
+          "5845c3be-265a-4078-9748-6dfb1e1146b2",
+          "67892873-dcef-43cb-a6fd-ecd4f36fdd3b",
+          "7f27aa60-d62e-4261-9125-c2df07e5da0e",
+          "954e4145-bb38-405d-b3f6-d791ed8c3732",
+          "978f15f5-9c9a-4761-9af9-0a2917273306",
+          "a16ead6e-8e30-4589-b2c9-28c84ef5a857",
+          "a88d25f9-f834-48c4-b39c-2cb8dea743de",
+          "b4ed0987-c34d-4ce4-8ee0-45e337d0a4ad",
+          "bb14fb39-d5e1-4ef3-b596-06bd4e6038cc",
+          "cc468cec-9983-42e8-9e52-495935c5bf56",
+          "d3718296-2640-4d1d-afc7-23dee57bce79",
+          "d986a225-3d63-4eef-aadb-660e21270ab5",
+          "f3061f90-4e80-4189-8d4c-8c7c09767b0b",
+          "f91c318d-0e69-45f0-8bf9-238a070b6fa3",
+          "fbc41040-f30b-4397-93bd-fd5707c01558"
+        ],
+        "previous_discard_to_hand": [
+          "a76b6896-37f6-4dfc-b9b1-d0d580bf4e9c"
+        ],
+        "hand_after": [
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Dagger Throw",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Doubt",
+            0
+          ],
+          [
+            "Dodge and Roll",
+            1
+          ]
+        ]
+      },
+      {
+        "index": 335,
+        "original_command": "end",
+        "floor": 16,
+        "original_before_hash": "33f7e5fb7d7cc01f54d51501bba84500a72fc2b2104f9a45abe31a6ec4fd0b3c",
+        "original_after_hash": "e2bcbcd9650eb5ec83dfff6937eb7bcc13beed0e8a37f02794b886f00c69b92e",
+        "scope": "diagnostic",
+        "mapped_action": 170,
+        "paired_field_groups": {
+          "before": {
+            "hand": true,
+            "pile_counts": true
+          },
+          "after": {
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "turn": [
+          13,
+          14
+        ],
+        "pile_counts_before": [
+          4,
+          24,
+          4
+        ],
+        "pile_counts_after": [
+          27,
+          0,
+          5
+        ],
+        "previous_discard_to_draw": [
+          "006dd21e-9214-4d69-837a-eb2705d8241a",
+          "00b05172-110e-4d75-a4df-ab6d8a4e5b10",
+          "05256d5a-7f8e-45a8-b96c-7c99d9dc0d9d",
+          "05720a7a-0929-4704-bd67-b26e7f557e0e",
+          "0ead1c31-0146-4bf7-8c90-c72c65f116ef",
+          "1c556999-c226-4dc1-9f10-222594fd7878",
+          "231c3b5a-f697-45d7-bb2d-d440224ab340",
+          "2d43a875-35a4-440f-bb58-c12df8f37277",
+          "2f2b6255-5c9a-43da-837a-eb9b69622f70",
+          "5845c3be-265a-4078-9748-6dfb1e1146b2",
+          "79277e03-9ca3-4786-b185-7440a940a017",
+          "7f27aa60-d62e-4261-9125-c2df07e5da0e",
+          "8ba5a080-01b8-4087-a9ca-baa426517719",
+          "954e4145-bb38-405d-b3f6-d791ed8c3732",
+          "a76b6896-37f6-4dfc-b9b1-d0d580bf4e9c",
+          "a88d25f9-f834-48c4-b39c-2cb8dea743de",
+          "c7f8328f-ab98-4c94-a291-f0b73eff15ab",
+          "cdad3794-7b24-4e69-89d1-ab04cdd4ffbe",
+          "d3718296-2640-4d1d-afc7-23dee57bce79",
+          "d986a225-3d63-4eef-aadb-660e21270ab5",
+          "f3061f90-4e80-4189-8d4c-8c7c09767b0b",
+          "f91c318d-0e69-45f0-8bf9-238a070b6fa3",
+          "fbc41040-f30b-4397-93bd-fd5707c01558"
+        ],
+        "previous_discard_to_hand": [
+          "67892873-dcef-43cb-a6fd-ecd4f36fdd3b"
+        ],
+        "hand_after": [
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Burn",
+            1
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Burn",
+            1
+          ]
+        ]
+      }
+    ],
+    "definition": "original old discard UUID appears in later draw pile within same combat; public comparison tests resulting hand and pile counts, not native hidden order"
+  },
+  "separate_targeted_attacks": {
+    "count": 14,
+    "explicit_play_inputs": 12,
+    "incidental_actions": 2,
+    "by_scope": {
+      "formal": 8,
+      "diagnostic": 6
+    },
+    "explicit_slots_per_floor": {
+      "1": [
+        0,
+        1
+      ],
+      "7": [
+        0
+      ],
+      "11": [
+        1
+      ]
+    },
+    "records": [
+      {
+        "index": 17,
+        "original_command": "play 1 1",
+        "floor": 1,
+        "original_before_hash": "c262125341af691a1c96d51bf952762b9e4027f929134dffea6bebd886da5191",
+        "original_after_hash": "9e133b84b37d0dfac96cc010a67c867727d714e5761db6626ca6b8aa44720ece",
+        "scope": "formal",
+        "mapped_action": 20,
+        "paired_field_groups": {
+          "before": {
+            "enemies": true,
+            "hand": true,
+            "turn_energy_block": true
+          },
+          "after": {
+            "enemies": true,
+            "hand": true,
+            "turn_energy_block": true
+          }
+        },
+        "slot": 1,
+        "target": "FuzzyLouseDefensive",
+        "card": "Strike_G",
+        "before": [
+          8,
+          12
+        ],
+        "after": [
+          8,
+          8
+        ]
+      },
+      {
+        "index": 18,
+        "original_command": "play 1 1",
+        "floor": 1,
+        "original_before_hash": "9e133b84b37d0dfac96cc010a67c867727d714e5761db6626ca6b8aa44720ece",
+        "original_after_hash": "6b4d79f179cd1f1838c5014296597540e14bd332b8bfc3d28a9e4f5cf9128354",
+        "scope": "formal",
+        "mapped_action": 20,
+        "paired_field_groups": {
+          "before": {
+            "enemies": true,
+            "hand": true,
+            "turn_energy_block": true
+          },
+          "after": {
+            "enemies": true,
+            "hand": true,
+            "turn_energy_block": true
+          }
+        },
+        "slot": 1,
+        "target": "FuzzyLouseDefensive",
+        "card": "Strike_G",
+        "before": [
+          8,
+          8
+        ],
+        "after": [
+          8,
+          8
+        ]
+      },
+      {
+        "index": 26,
+        "original_command": "play 2 0",
+        "floor": 1,
+        "original_before_hash": "2cf22624e38d2bd852412fab955087417beba306ada507070e38b650a5adf70e",
+        "original_after_hash": "e91a44483676e7c7b1c34c0ba39f2d82f6981ddbbefbf2dd6d43853412d925f8",
+        "scope": "formal",
+        "mapped_action": 11,
+        "paired_field_groups": {
+          "before": {
+            "enemies": true,
+            "hand": true,
+            "turn_energy_block": true
+          },
+          "after": {
+            "enemies": true,
+            "hand": true,
+            "turn_energy_block": true
+          }
+        },
+        "slot": 0,
+        "target": "FuzzyLouseNormal",
+        "card": "Strike_G",
+        "before": [
+          8,
+          8
+        ],
+        "after": [
+          4,
+          8
+        ]
+      },
+      {
+        "index": 28,
+        "original_command": "play 2 0",
+        "floor": 1,
+        "original_before_hash": "53f4159f79761406991ef1304623ea64652b4b08735288de78d37ceb38238501",
+        "original_after_hash": "e367693a68bb8ceeda0d5c71b6f9b6b1d22895ee6c808234284404ad9c16f081",
+        "scope": "formal",
+        "mapped_action": 11,
+        "paired_field_groups": {
+          "before": {
+            "enemies": true,
+            "hand": true,
+            "turn_energy_block": true
+          },
+          "after": {
+            "enemies": true,
+            "hand": true,
+            "turn_energy_block": true
+          }
+        },
+        "slot": 0,
+        "target": "FuzzyLouseNormal",
+        "card": "Strike_G",
+        "before": [
+          4,
+          8
+        ],
+        "after": [
+          0,
+          8
+        ]
+      },
+      {
+        "index": 64,
+        "original_command": "play 3 0",
+        "floor": 7,
+        "original_before_hash": "1da5079caf1555530559036a3625fd5cfaf32f68b59cc0af8917ac0bf032cc87",
+        "original_after_hash": "b03647c3f8a603f530b1bfb709fcc7fd0016803f8ee5bdc3494f57b414139977",
+        "scope": "formal",
+        "mapped_action": 12,
+        "paired_field_groups": {
+          "before": {
+            "enemies": true,
+            "hand": true,
+            "turn_energy_block": true
+          },
+          "after": {
+            "enemies": true,
+            "hand": true,
+            "turn_energy_block": true
+          }
+        },
+        "slot": 0,
+        "target": "SpikeSlime_S",
+        "card": "Dagger Throw",
+        "before": [
+          15,
+          29
+        ],
+        "after": [
+          6,
+          29
+        ]
+      },
+      {
+        "index": 68,
+        "original_command": "play 3 0",
+        "floor": 7,
+        "original_before_hash": "056706c5a5a5be86b7d1e0d331b1e40f0ee94b7e2be91994b4f57a831a88a489",
+        "original_after_hash": "3a65a7a6b829a211c2c010fd0e16d5fe4aa8f97335eaaba53defc9febae93a25",
+        "scope": "formal",
+        "mapped_action": 12,
+        "paired_field_groups": {
+          "before": {
+            "enemies": true,
+            "hand": true,
+            "turn_energy_block": true
+          },
+          "after": {
+            "enemies": true,
+            "hand": true,
+            "turn_energy_block": true
+          }
+        },
+        "slot": 0,
+        "target": "SpikeSlime_S",
+        "card": "Strike_G",
+        "before": [
+          6,
+          23
+        ],
+        "after": [
+          0,
+          23
+        ]
+      },
+      {
+        "index": 136,
+        "original_command": "play 7 1",
+        "floor": 11,
+        "original_before_hash": "7e39a72cfe092568ccaf0b3a96a81d1952a2e8ca35dc5072cf561364450dcbc6",
+        "original_after_hash": "bea641b55cf4c99cfbea1af92210ffebe393e23a3eaed553ba3dfbd55518dcd1",
+        "scope": "diagnostic",
+        "mapped_action": 26,
+        "paired_field_groups": {
+          "before": {
+            "enemies": true,
+            "hand": true,
+            "turn_energy_block": true
+          },
+          "after": {
+            "enemies": true,
+            "hand": true,
+            "turn_energy_block": true
+          }
+        },
+        "slot": 1,
+        "target": "FungiBeast",
+        "card": "Shiv",
+        "before": [
+          27,
+          26
+        ],
+        "after": [
+          27,
+          22
+        ]
+      },
+      {
+        "index": 137,
+        "original_command": "play 7 1",
+        "floor": 11,
+        "original_before_hash": "bea641b55cf4c99cfbea1af92210ffebe393e23a3eaed553ba3dfbd55518dcd1",
+        "original_after_hash": "edd8d9b33b8b015d795a7bf3f8540ded9170f92d54a03f9ef38210b89a593058",
+        "scope": "diagnostic",
+        "mapped_action": 26,
+        "paired_field_groups": {
+          "before": {
+            "enemies": true,
+            "hand": true,
+            "turn_energy_block": true
+          },
+          "after": {
+            "enemies": true,
+            "hand": true,
+            "turn_energy_block": true
+          }
+        },
+        "slot": 1,
+        "target": "FungiBeast",
+        "card": "Shiv",
+        "before": [
+          27,
+          22
+        ],
+        "after": [
+          27,
+          18
+        ]
+      },
+      {
+        "index": 138,
+        "original_command": "play 7 1",
+        "floor": 11,
+        "original_before_hash": "edd8d9b33b8b015d795a7bf3f8540ded9170f92d54a03f9ef38210b89a593058",
+        "original_after_hash": "13f18e4bcf6d624df29e2365febb5fc8d0cc123b2cbcbf0b8ba48e58535fbce6",
+        "scope": "diagnostic",
+        "mapped_action": 26,
+        "paired_field_groups": {
+          "before": {
+            "enemies": true,
+            "hand": true,
+            "turn_energy_block": true
+          },
+          "after": {
+            "enemies": true,
+            "hand": true,
+            "turn_energy_block": true
+          }
+        },
+        "slot": 1,
+        "target": "FungiBeast",
+        "card": "Shiv",
+        "before": [
+          27,
+          18
+        ],
+        "after": [
+          27,
+          14
+        ]
+      },
+      {
+        "index": 139,
+        "original_command": "play 4 1",
+        "floor": 11,
+        "original_before_hash": "13f18e4bcf6d624df29e2365febb5fc8d0cc123b2cbcbf0b8ba48e58535fbce6",
+        "original_after_hash": "de1533c3dad19375996504ff5eef434f831021b733a8b789ffe7649c54e3afe6",
+        "scope": "diagnostic",
+        "mapped_action": 23,
+        "paired_field_groups": {
+          "before": {
+            "enemies": true,
+            "hand": true,
+            "turn_energy_block": true
+          },
+          "after": {
+            "enemies": true,
+            "hand": true,
+            "turn_energy_block": true
+          }
+        },
+        "slot": 1,
+        "target": "FungiBeast",
+        "card": "Strike_G",
+        "before": [
+          27,
+          14
+        ],
+        "after": [
+          27,
+          8
+        ]
+      },
+      {
+        "index": 140,
+        "original_command": "play 4 1",
+        "floor": 11,
+        "original_before_hash": "de1533c3dad19375996504ff5eef434f831021b733a8b789ffe7649c54e3afe6",
+        "original_after_hash": "6157f98b6249dae1f5687238a466d69912ec63db93103729995ba26ce9dff763",
+        "scope": "diagnostic",
+        "mapped_action": 23,
+        "paired_field_groups": {
+          "before": {
+            "enemies": true,
+            "hand": true,
+            "turn_energy_block": true
+          },
+          "after": {
+            "enemies": true,
+            "hand": true,
+            "turn_energy_block": true
+          }
+        },
+        "slot": 1,
+        "target": "FungiBeast",
+        "card": "Strike_G",
+        "before": [
+          27,
+          8
+        ],
+        "after": [
+          27,
+          2
+        ]
+      },
+      {
+        "index": 142,
+        "original_command": "play 4 1",
+        "floor": 11,
+        "original_before_hash": "9a8b8c1fef16cf9e6f83f5f5608b5f1b9767bc618d77eba7094732600f7270d4",
+        "original_after_hash": "345e9d13c073af5967d06c9c57906f17d16dae595058b894395f66facd2fc711",
+        "scope": "diagnostic",
+        "mapped_action": 23,
+        "paired_field_groups": {
+          "before": {
+            "enemies": true,
+            "hand": true,
+            "turn_energy_block": true
+          },
+          "after": {
+            "enemies": true,
+            "hand": true,
+            "turn_energy_block": true
+          }
+        },
+        "slot": 1,
+        "target": "FungiBeast",
+        "card": "Strike_G",
+        "before": [
+          27,
+          2
+        ],
+        "after": [
+          27,
+          0
+        ]
+      }
+    ],
+    "confirmed_incidental_actions": [
+      {
+        "index": 10,
+        "original_command": "confirm",
+        "floor": 1,
+        "original_before_hash": "051fbc2e86dcb0f4ec232392b5c46f8e92b3573ebf6b99334e154fa8214e0bd3",
+        "original_after_hash": "fb52ae2e46f04071ad84d2596c1a3c3ce6824f97240d013ba4167c5b4b728eec",
+        "scope": "formal",
+        "mapped_action": 172,
+        "paired_field_groups": {
+          "before": {
+            "hand": true,
+            "enemies": true,
+            "turn_energy_block": true
+          },
+          "after": {
+            "hand": true,
+            "enemies": true,
+            "turn_energy_block": true
+          }
+        },
+        "source_sequence": 57,
+        "uuid": "8ba5a080-01b8-4087-a9ca-baa426517719",
+        "card": "Strike_G",
+        "target": "FuzzyLouseNormal",
+        "slot": 0,
+        "before": [
+          14,
+          12
+        ],
+        "after": [
+          8,
+          12
+        ]
+      },
+      {
+        "index": 66,
+        "original_command": "confirm",
+        "floor": 7,
+        "original_before_hash": "f75732e2e12c83043cd18e68cb1fb505659691e3a78e5278d7afc54234ef0673",
+        "original_after_hash": "623a73c70948be31a07435404b13db9f71b5913d487e2d9f3c94243e9ed1e5bd",
+        "scope": "formal",
+        "mapped_action": 172,
+        "paired_field_groups": {
+          "before": {
+            "hand": true,
+            "enemies": true,
+            "turn_energy_block": true
+          },
+          "after": {
+            "hand": true,
+            "enemies": true,
+            "turn_energy_block": true
+          }
+        },
+        "source_sequence": 318,
+        "uuid": "79277e03-9ca3-4786-b185-7440a940a017",
+        "card": "Strike_G",
+        "target": "AcidSlime_M",
+        "slot": 1,
+        "before": [
+          6,
+          29
+        ],
+        "after": [
+          6,
+          23
+        ]
+      }
+    ]
+  },
+  "simultaneous_multi_enemy_damage": {
+    "native_attack_invocations_by_target_type": {
+      "ENEMY": 94
+    },
+    "all_enemy_nonattack_invocations": [
+      {
+        "index": 266,
+        "source": 1485,
+        "card": "PiercingWail",
+        "type": "SKILL",
+        "living": [
+          "Hexaghost"
+        ]
+      }
+    ],
+    "recorded_multi_hp_drops": [],
+    "observed_single_target_cards": [
+      "Dagger Throw",
+      "Shiv",
+      "Strike_G"
+    ],
+    "denominator": "Comparisons of bridged combat HP before/after in multi-live-enemy rooms; separate attacks do not establish AoE."
+  },
+  "ink_bottle": {
+    "acquired": [
+      {
+        "index": 98,
+        "original_command": "choose 0",
+        "floor": 9,
+        "original_before_hash": "56b7a7cbb3ce368195da519cafbe59092e06eaac7b1ff3efc4bb00f9ca216b4a",
+        "original_after_hash": "4934e9007ed87cb910d28d5923c05563018af66bb0083bc4b2b5a378299a5252",
+        "scope": "diagnostic",
+        "mapped_action": 110,
+        "paired_field_groups": {
+          "before": {
+            "relics": true,
+            "rewards": true
+          },
+          "after": {
+            "relics": true,
+            "rewards": true
+          }
+        },
+        "counter": 0
+      }
+    ],
+    "counter_wraps": [
+      {
+        "index": 111,
+        "original_command": "play 3",
+        "floor": 10,
+        "original_before_hash": "3f794a634975c92dd117daca846de88e17696c159c8f5855c927d40a8b145c9d",
+        "original_after_hash": "cef992bd08e3b9b44a37f50e31e4b0113c21e45ad8c483f95ac63a5fa624f342",
+        "scope": "diagnostic",
+        "mapped_action": 2,
+        "paired_field_groups": {
+          "before": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          },
+          "after": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "counter": [
+          9,
+          0
+        ],
+        "played": "Dodge and Roll",
+        "actual_new_drawn_faces": [
+          "Strike_G"
+        ],
+        "actual_new_drawn_uuids": [
+          "2f2b6255-5c9a-43da-837a-eb9b69622f70"
+        ]
+      },
+      {
+        "index": 126,
+        "original_command": "play 2 0",
+        "floor": 10,
+        "original_before_hash": "4eb041f29cf0b36cb1513c8a3ed5a7845ff4d98e280fec6d22e688bf44fe18ca",
+        "original_after_hash": "870000f09858616ca94d73a45e2f11235c17eb656f16de9fac69b70fcfe9d3f7",
+        "scope": "diagnostic",
+        "mapped_action": 11,
+        "paired_field_groups": {
+          "before": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          },
+          "after": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "counter": [
+          9,
+          0
+        ],
+        "played": "Strike_G",
+        "actual_new_drawn_faces": [
+          "Defend_G"
+        ],
+        "actual_new_drawn_uuids": [
+          "978f15f5-9c9a-4761-9af9-0a2917273306"
+        ]
+      },
+      {
+        "index": 144,
+        "original_command": "play 1",
+        "floor": 11,
+        "original_before_hash": "06ada48bca9f40b1d50349ef71fbf9806247bc0ea74e6480b5722deb8c469e66",
+        "original_after_hash": "28dfb553ef252389bc58a0728e53094edd6e9d0b21ce4d9c7f5ead2d0fa8e024",
+        "scope": "diagnostic",
+        "mapped_action": 0,
+        "paired_field_groups": {
+          "before": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          },
+          "after": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "counter": [
+          9,
+          0
+        ],
+        "played": "Defend_G",
+        "actual_new_drawn_faces": [
+          "AscendersBane"
+        ],
+        "actual_new_drawn_uuids": [
+          "327912a4-6f4b-45a8-93ed-44b36072f7b1"
+        ]
+      },
+      {
+        "index": 168,
+        "original_command": "play 4",
+        "floor": 12,
+        "original_before_hash": "03b3d9b99d1c21d80911027ebc2824ccc1ee18889e95106c2395550db9cbe72a",
+        "original_after_hash": "bf5962fa1c5cf525e2cb3a39adc2c9b0766ad3d09f1b0093375b5d0b68f8a46c",
+        "scope": "diagnostic",
+        "mapped_action": 3,
+        "paired_field_groups": {
+          "before": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          },
+          "after": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "counter": [
+          9,
+          0
+        ],
+        "played": "Backflip",
+        "actual_new_drawn_faces": [
+          "Survivor",
+          "AscendersBane",
+          "Dodge and Roll"
+        ],
+        "actual_new_drawn_uuids": [
+          "161b71a1-ed7f-46fa-a346-52647423bc73",
+          "327912a4-6f4b-45a8-93ed-44b36072f7b1",
+          "a76b6896-37f6-4dfc-b9b1-d0d580bf4e9c"
+        ]
+      },
+      {
+        "index": 180,
+        "original_command": "play 1",
+        "floor": 12,
+        "original_before_hash": "e0dde6a2ce3029ef1f01c71ab862c6e0febbf3bc007ed59e53f30b73c572d768",
+        "original_after_hash": "47e0a6a70d74f39b9e9d9651e7db39855d8345fef075f832d3aa8e096f0da25e",
+        "scope": "diagnostic",
+        "mapped_action": 0,
+        "paired_field_groups": {
+          "before": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          },
+          "after": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "counter": [
+          9,
+          0
+        ],
+        "played": "Defend_G",
+        "actual_new_drawn_faces": [
+          "Dodge and Roll"
+        ],
+        "actual_new_drawn_uuids": [
+          "a76b6896-37f6-4dfc-b9b1-d0d580bf4e9c"
+        ]
+      },
+      {
+        "index": 193,
+        "original_command": "play 4",
+        "floor": 12,
+        "original_before_hash": "3c5263776defa2d6704821eb6d26b1e61dcc455bb44556435073f84231f63919",
+        "original_after_hash": "19f8eb506c86d35debc1cc630ef031d619b1c7c55cb6e02de9b6c1484cabf4cc",
+        "scope": "diagnostic",
+        "mapped_action": 3,
+        "paired_field_groups": {
+          "before": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          },
+          "after": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "counter": [
+          9,
+          0
+        ],
+        "played": "Cloak And Dagger",
+        "actual_new_drawn_faces": [
+          "Blade Dance"
+        ],
+        "actual_new_drawn_uuids": [
+          "5845c3be-265a-4078-9748-6dfb1e1146b2"
+        ]
+      },
+      {
+        "index": 211,
+        "original_command": "play 1",
+        "floor": 13,
+        "original_before_hash": "86dad1e55a6da62a5cf96d683355e1a1b6c94079f2765bdb2e0bc723bc2d3fdb",
+        "original_after_hash": "b7e3489628b07f553535d6c5a2c4c9d308c20bdacd16cafe1fd9a20e3ee0ec57",
+        "scope": "diagnostic",
+        "mapped_action": 0,
+        "paired_field_groups": {
+          "before": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          },
+          "after": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "counter": [
+          9,
+          0
+        ],
+        "played": "Defend_G",
+        "actual_new_drawn_faces": [
+          "Defend_G"
+        ],
+        "actual_new_drawn_uuids": [
+          "cc468cec-9983-42e8-9e52-495935c5bf56"
+        ]
+      },
+      {
+        "index": 225,
+        "original_command": "play 2 0",
+        "floor": 13,
+        "original_before_hash": "e2cbcd4d1cc817aa11d03b7afe851ebf32cbae2d86759e7d718112b7d85f6f47",
+        "original_after_hash": "3608dfbccf4b86662ed276048100f6fd6c0001c2ae28a8411b2806f23a1de7d6",
+        "scope": "diagnostic",
+        "mapped_action": 11,
+        "paired_field_groups": {
+          "before": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          },
+          "after": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "counter": [
+          9,
+          0
+        ],
+        "played": "Strike_G",
+        "actual_new_drawn_faces": [
+          "Blade Dance"
+        ],
+        "actual_new_drawn_uuids": [
+          "5845c3be-265a-4078-9748-6dfb1e1146b2"
+        ]
+      },
+      {
+        "index": 253,
+        "original_command": "play 4",
+        "floor": 16,
+        "original_before_hash": "c74616e814b8e632a6de9392721899e67afa057c7ec8a9a9eb351618b1a07bcf",
+        "original_after_hash": "563d8fb91bf503e3b7072a213007bb0225a5a3a48c0736c79b12937a2d60d961",
+        "scope": "diagnostic",
+        "mapped_action": 3,
+        "paired_field_groups": {
+          "before": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          },
+          "after": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "counter": [
+          9,
+          0
+        ],
+        "played": "After Image",
+        "actual_new_drawn_faces": [
+          "Strike_G"
+        ],
+        "actual_new_drawn_uuids": [
+          "a16ead6e-8e30-4589-b2c9-28c84ef5a857"
+        ]
+      },
+      {
+        "index": 270,
+        "original_command": "play 5",
+        "floor": 16,
+        "original_before_hash": "525ef1cc9b01bda06b2a6e495a54f82ec9e480a8c0190bac52817b8762cf372b",
+        "original_after_hash": "94575f37f091bd3493d49e1e8c83b7e5a8ada373c4300f9cb4707bc322e8e3b9",
+        "scope": "diagnostic",
+        "mapped_action": 4,
+        "paired_field_groups": {
+          "before": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          },
+          "after": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "counter": [
+          9,
+          0
+        ],
+        "played": "Cloak And Dagger",
+        "actual_new_drawn_faces": [
+          "Defend_G"
+        ],
+        "actual_new_drawn_uuids": [
+          "c7f8328f-ab98-4c94-a291-f0b73eff15ab"
+        ]
+      },
+      {
+        "index": 282,
+        "original_command": "play 4 0",
+        "floor": 16,
+        "original_before_hash": "76408fb40c277a9201a4c52229712335b153e41f5353518b6f7f52aee8673087",
+        "original_after_hash": "34db93b79b8eb20cace1d2c137b480da928ed8a83a2f44df7a8259129b242af4",
+        "scope": "diagnostic",
+        "mapped_action": 13,
+        "paired_field_groups": {
+          "before": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          },
+          "after": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "counter": [
+          9,
+          0
+        ],
+        "played": "Dagger Throw",
+        "actual_new_drawn_faces": [
+          "Defend_G"
+        ],
+        "actual_new_drawn_uuids": [
+          "978f15f5-9c9a-4761-9af9-0a2917273306"
+        ]
+      },
+      {
+        "index": 296,
+        "original_command": "play 5 0",
+        "floor": 16,
+        "original_before_hash": "cba82e808a599d739830f5dc15e0c011c6c4fcbf575514e121793420c0eb171d",
+        "original_after_hash": "e320679a641653fd76f06f68c5d629cf65cda39399947cfe7ca14c09cb4df1ea",
+        "scope": "diagnostic",
+        "mapped_action": 14,
+        "paired_field_groups": {
+          "before": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          },
+          "after": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "counter": [
+          9,
+          0
+        ],
+        "played": "Shiv",
+        "actual_new_drawn_faces": [
+          "Dodge and Roll"
+        ],
+        "actual_new_drawn_uuids": [
+          "a76b6896-37f6-4dfc-b9b1-d0d580bf4e9c"
+        ]
+      },
+      {
+        "index": 315,
+        "original_command": "play 5 0",
+        "floor": 16,
+        "original_before_hash": "305f08fb9e6589d9e64e6ac88725b58580c4d469933bd5479ed72e1e47ef2edc",
+        "original_after_hash": "192a141ad95bf338e02f9e3fa83da8dd1e5e9f037b8252217a4ef0ef47892b13",
+        "scope": "diagnostic",
+        "mapped_action": 14,
+        "paired_field_groups": {
+          "before": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          },
+          "after": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "counter": [
+          9,
+          0
+        ],
+        "played": "Shiv",
+        "actual_new_drawn_faces": [
+          "Burn"
+        ],
+        "actual_new_drawn_uuids": [
+          "d3718296-2640-4d1d-afc7-23dee57bce79"
+        ]
+      },
+      {
+        "index": 331,
+        "original_command": "play 5 0",
+        "floor": 16,
+        "original_before_hash": "19122a98dc44dac5125d8b77faf9acdbdcbfa8d35e75decc1421f2f9185176bf",
+        "original_after_hash": "941072578f74e721d898ed450e65c02d02e8c75cbbe973c24a2cbf17f8821912",
+        "scope": "diagnostic",
+        "mapped_action": 14,
+        "paired_field_groups": {
+          "before": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          },
+          "after": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "counter": [
+          9,
+          0
+        ],
+        "played": "Shiv",
+        "actual_new_drawn_faces": [
+          "Burn"
+        ],
+        "actual_new_drawn_uuids": [
+          "b4ed0987-c34d-4ce4-8ee0-45e337d0a4ad"
+        ]
+      }
+    ],
+    "by_scope": {
+      "diagnostic": 14
+    },
+    "count": 14,
+    "definition": "9-to-0 InkBottle transitions with newly drawn card UUIDs checked against previous draw/discard. Some card plays have other draws; no unique attribution is inferred for those copies."
+  },
+  "snake_ring": {
+    "first_hands": [
+      {
+        "index": 6,
+        "original_command": "choose 2",
+        "floor": 1,
+        "original_before_hash": "0290ebbd7ca12ba4afbec64b71af10ac2be29131c8ac29064aac0716643c7556",
+        "original_after_hash": "1fcc3ee413a00f176a19b5bf3f85b42f04674e55cf40d0c4bc39e3ef09c3d7f0",
+        "scope": "formal",
+        "mapped_action": 112,
+        "paired_field_groups": {
+          "before": {
+            "relics": true
+          },
+          "after": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "opening_hand_size": 7,
+        "hand": [
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "AscendersBane",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Survivor",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ]
+        ]
+      },
+      {
+        "index": 60,
+        "original_command": "choose 0",
+        "floor": 7,
+        "original_before_hash": "c041e23d0b0e1ff07f8cadbc270a84ea26e090917afe0a5e22a20610721ce1f1",
+        "original_after_hash": "c7a296bf8093cfc01d08e81adfbfa6ee14c49a755639cda5c53c3e547cfad676",
+        "scope": "formal",
+        "mapped_action": 110,
+        "paired_field_groups": {
+          "before": {
+            "relics": true
+          },
+          "after": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "opening_hand_size": 7,
+        "hand": [
+          [
+            "AscendersBane",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Survivor",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Dagger Throw",
+            0
+          ],
+          [
+            "Blade Dance",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ]
+        ]
+      },
+      {
+        "index": 100,
+        "original_command": "choose 0",
+        "floor": 10,
+        "original_before_hash": "d54e08f3f359462b29c2c74e24797fbb7317b266cb79525d0ebbd47fbe0edc02",
+        "original_after_hash": "65c3f7a6d0281ab14eb48765bc172a8c6e3d345af6491556ddbe95204d99b68b",
+        "scope": "diagnostic",
+        "mapped_action": 110,
+        "paired_field_groups": {
+          "before": {
+            "relics": true
+          },
+          "after": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "opening_hand_size": 7,
+        "hand": [
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Blade Dance",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Doubt",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "After Image",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ]
+        ]
+      },
+      {
+        "index": 134,
+        "original_command": "choose 0",
+        "floor": 11,
+        "original_before_hash": "44c0e51bac28264a5c149ae43f80c5f97b865ee86651787cab40edf87d36fa60",
+        "original_after_hash": "c9f6a654857550a392ee79d5ec0813a5b00888564ba19e9fa39e717a30daddb2",
+        "scope": "diagnostic",
+        "mapped_action": 110,
+        "paired_field_groups": {
+          "before": {
+            "relics": true
+          },
+          "after": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "opening_hand_size": 7,
+        "hand": [
+          [
+            "Backflip",
+            0
+          ],
+          [
+            "Survivor",
+            1
+          ],
+          [
+            "Doubt",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Blade Dance",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ]
+        ]
+      },
+      {
+        "index": 167,
+        "original_command": "choose 0",
+        "floor": 12,
+        "original_before_hash": "44dd9bde4ae253de3dc512c8d7cc523b7c54cbcf2e15a1f7b6106b14b939d4da",
+        "original_after_hash": "03b3d9b99d1c21d80911027ebc2824ccc1ee18889e95106c2395550db9cbe72a",
+        "scope": "diagnostic",
+        "mapped_action": 110,
+        "paired_field_groups": {
+          "before": {
+            "relics": true
+          },
+          "after": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "opening_hand_size": 7,
+        "hand": [
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "After Image",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Backflip",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Blade Dance",
+            0
+          ],
+          [
+            "Dagger Throw",
+            0
+          ]
+        ]
+      },
+      {
+        "index": 204,
+        "original_command": "choose 0",
+        "floor": 13,
+        "original_before_hash": "974fc7fc8bdd03f2614d60dfa4bc8d32cab19141e64179f584354556827f8427",
+        "original_after_hash": "693c172af89aa706de2816d57400608ae9c47306b4c83b96b211c15833840577",
+        "scope": "diagnostic",
+        "mapped_action": 110,
+        "paired_field_groups": {
+          "before": {
+            "relics": true
+          },
+          "after": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "opening_hand_size": 7,
+        "hand": [
+          [
+            "AscendersBane",
+            0
+          ],
+          [
+            "Survivor",
+            1
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Cloak And Dagger",
+            0
+          ],
+          [
+            "Dodge and Roll",
+            1
+          ],
+          [
+            "Strike_G",
+            0
+          ]
+        ]
+      },
+      {
+        "index": 252,
+        "original_command": "choose 0",
+        "floor": 16,
+        "original_before_hash": "d35280046069e6ea2e44e578a221f4e377a5cfb17e5b5b71a48b4179d652edb6",
+        "original_after_hash": "c74616e814b8e632a6de9392721899e67afa057c7ec8a9a9eb351618b1a07bcf",
+        "scope": "diagnostic",
+        "mapped_action": 110,
+        "paired_field_groups": {
+          "before": {
+            "relics": true
+          },
+          "after": {
+            "relics": true,
+            "hand": true,
+            "pile_counts": true
+          }
+        },
+        "opening_hand_size": 7,
+        "hand": [
+          [
+            "Dagger Throw",
+            0
+          ],
+          [
+            "Dagger Throw",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "After Image",
+            0
+          ],
+          [
+            "Survivor",
+            1
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ]
+        ]
+      }
+    ],
+    "by_scope": {
+      "formal": 2,
+      "diagnostic": 5
+    },
+    "limits": "Original has Ring of the Snake at room entry and displays first hands. This does not isolate a causal counterfactual without the relic."
+  },
+  "serpent": [
+    {
+      "index": 38,
+      "original_command": "choose 0",
+      "floor": 2,
+      "original_before_hash": "0f98ad50bfa6e32faddd4f76a841cbc367370ffea8edf862390f47e8cdef42d9",
+      "original_after_hash": "2ea2289cdac438676351cc83e61273fab8dfe129367172ca4563dabe25c8e27b",
+      "scope": "formal",
+      "mapped_action": 110,
+      "paired_field_groups": {
+        "before": {
+          "resources": true,
+          "deck": true,
+          "page": true
+        },
+        "after": {
+          "resources": true,
+          "deck": true,
+          "page": true
+        }
+      },
+      "option": [
+        "agree",
+        "disagree"
+      ],
+      "gold": [
+        114,
+        114
+      ],
+      "deck_sizes": [
+        14,
+        14
+      ],
+      "new_cards": []
+    },
+    {
+      "index": 39,
+      "original_command": "choose 0",
+      "floor": 2,
+      "original_before_hash": "2ea2289cdac438676351cc83e61273fab8dfe129367172ca4563dabe25c8e27b",
+      "original_after_hash": "c6d67f473334d2914454e141da321935301d9fe4628e7f5888383aa16d2008bd",
+      "scope": "formal",
+      "mapped_action": 110,
+      "paired_field_groups": {
+        "before": {
+          "resources": true,
+          "deck": true,
+          "page": true
+        },
+        "after": {
+          "resources": true,
+          "deck": true,
+          "page": true
+        }
+      },
+      "option": [
+        "continue"
+      ],
+      "gold": [
+        114,
+        264
+      ],
+      "deck_sizes": [
+        14,
+        15
+      ],
+      "new_cards": [
+        "Doubt"
+      ]
+    },
+    {
+      "index": 40,
+      "original_command": "choose 0",
+      "floor": 2,
+      "original_before_hash": "c6d67f473334d2914454e141da321935301d9fe4628e7f5888383aa16d2008bd",
+      "original_after_hash": "1acffd5bdcdcb2042ed6330c425b1d686a61c75ad2e775bf8d52a106b114a149",
+      "scope": "formal",
+      "mapped_action": 110,
+      "paired_field_groups": {
+        "before": {
+          "resources": true,
+          "deck": true,
+          "page": true
+        },
+        "after": {
+          "resources": true,
+          "deck": true,
+          "page": true
+        }
+      },
+      "option": [
+        "leave"
+      ],
+      "gold": [
+        264,
+        264
+      ],
+      "deck_sizes": [
+        15,
+        15
+      ],
+      "new_cards": []
+    }
+  ],
+  "spores": [
+    {
+      "index": 142,
+      "original_command": "play 4 1",
+      "floor": 11,
+      "original_before_hash": "9a8b8c1fef16cf9e6f83f5f5608b5f1b9767bc618d77eba7094732600f7270d4",
+      "original_after_hash": "345e9d13c073af5967d06c9c57906f17d16dae595058b894395f66facd2fc711",
+      "scope": "diagnostic",
+      "mapped_action": 23,
+      "paired_field_groups": {
+        "before": {
+          "enemies": true,
+          "resources": true,
+          "turn_energy_block": true
+        },
+        "after": {
+          "enemies": true,
+          "resources": true,
+          "turn_energy_block": true
+        }
+      },
+      "before": [
+        27,
+        2
+      ],
+      "after": [
+        27,
+        0
+      ],
+      "native_powers_before": [
+        {
+          "Spore Cloud": 2,
+          "Strength": 5
+        },
+        {
+          "Spore Cloud": 2,
+          "Strength": 5
+        }
+      ],
+      "native_powers_after": [
+        {
+          "Spore Cloud": 2,
+          "Strength": 5
+        },
+        {
+          "Spore Cloud": 2,
+          "Strength": 5
+        }
+      ],
+      "vulnerable": [
+        0,
+        2
+      ]
+    },
+    {
+      "index": 143,
+      "original_command": "play 4",
+      "floor": 11,
+      "original_before_hash": "345e9d13c073af5967d06c9c57906f17d16dae595058b894395f66facd2fc711",
+      "original_after_hash": "06ada48bca9f40b1d50349ef71fbf9806247bc0ea74e6480b5722deb8c469e66",
+      "scope": "diagnostic",
+      "mapped_action": 3,
+      "paired_field_groups": {
+        "before": {
+          "enemies": true,
+          "resources": true,
+          "turn_energy_block": true
+        },
+        "after": {
+          "enemies": true,
+          "resources": true,
+          "turn_energy_block": true
+        }
+      },
+      "before": [
+        27,
+        0
+      ],
+      "after": [
+        27,
+        0
+      ],
+      "native_powers_before": [
+        {
+          "Spore Cloud": 2,
+          "Strength": 5
+        },
+        {
+          "Spore Cloud": 2,
+          "Strength": 5
+        }
+      ],
+      "native_powers_after": [
+        {
+          "Spore Cloud": 2,
+          "Strength": 5
+        },
+        {}
+      ],
+      "vulnerable": [
+        2,
+        2
+      ]
+    }
+  ],
+  "spore_vector_checks": {
+    "145": {
+      "raw_hash": "9a8b8c1fef16cf9e6f83f5f5608b5f1b9767bc618d77eba7094732600f7270d4",
+      "status": "KERNEL_DIAGNOSTIC",
+      "true": {
+        "vulnerable": 0,
+        "slots": [
+          [
+            27,
+            2,
+            5
+          ],
+          [
+            2,
+            2,
+            5
+          ]
+        ]
+      },
+      "model": {
+        "vulnerable": 0,
+        "slots": [
+          [
+            27,
+            2,
+            5
+          ],
+          [
+            2,
+            2,
+            5
+          ]
+        ]
+      },
+      "equal": true
+    },
+    "146": {
+      "raw_hash": "345e9d13c073af5967d06c9c57906f17d16dae595058b894395f66facd2fc711",
+      "status": "KERNEL_DIAGNOSTIC",
+      "true": {
+        "vulnerable": 2,
+        "slots": [
+          [
+            27,
+            2,
+            5
+          ],
+          [
+            0,
+            2,
+            5
+          ]
+        ]
+      },
+      "model": {
+        "vulnerable": 2,
+        "slots": [
+          [
+            27,
+            2,
+            5
+          ],
+          [
+            0,
+            2,
+            5
+          ]
+        ]
+      },
+      "equal": true
+    },
+    "147": {
+      "raw_hash": "06ada48bca9f40b1d50349ef71fbf9806247bc0ea74e6480b5722deb8c469e66",
+      "status": "KERNEL_DIAGNOSTIC",
+      "true": {
+        "vulnerable": 2,
+        "slots": [
+          [
+            27,
+            2,
+            5
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "model": {
+        "vulnerable": 2,
+        "slots": [
+          [
+            27,
+            2,
+            5
+          ],
+          [
+            0,
+            2,
+            5
+          ]
+        ]
+      },
+      "equal": false
+    }
+  },
+  "boss": {
+    "actions": 87,
+    "by_scope": {
+      "diagnostic": 87
+    },
+    "range": [
+      253,
+      339
+    ],
+    "first": {
+      "index": 253,
+      "original_command": "play 4",
+      "floor": 16,
+      "original_before_hash": "c74616e814b8e632a6de9392721899e67afa057c7ec8a9a9eb351618b1a07bcf",
+      "original_after_hash": "563d8fb91bf503e3b7072a213007bb0225a5a3a48c0736c79b12937a2d60d961",
+      "scope": "diagnostic",
+      "mapped_action": 3,
+      "paired_field_groups": {
+        "before": {
+          "resources": true,
+          "turn_energy_block": true,
+          "enemies": true,
+          "terminal": true
+        },
+        "after": {
+          "resources": true,
+          "turn_energy_block": true,
+          "enemies": true,
+          "terminal": true
+        }
+      },
+      "enemy": "Hexaghost",
+      "turn": [
+        1,
+        1
+      ],
+      "player_hp": [
+        66,
+        66
+      ],
+      "enemy_hp": [
+        [
+          264
+        ],
+        [
+          264
+        ]
+      ]
+    },
+    "last": {
+      "index": 339,
+      "original_command": "end",
+      "floor": 16,
+      "original_before_hash": "1717e4b7a69fec9148e73f006bec62e99e9ad6e7ee34c5261cdfb027baf917c9",
+      "original_after_hash": "ad33efc6ae824fce44bda3b99abf079e10fb1edb22e8f50a94bfe2ca275b2ee9",
+      "scope": "diagnostic",
+      "mapped_action": 170,
+      "paired_field_groups": {
+        "before": {
+          "resources": true,
+          "turn_energy_block": true,
+          "enemies": true,
+          "terminal": true
+        },
+        "after": {
+          "resources": true,
+          "turn_energy_block": true,
+          "enemies": true,
+          "terminal": true
+        }
+      },
+      "enemy": "Hexaghost",
+      "turn": [
+        14,
+        14
+      ],
+      "player_hp": [
+        5,
+        0
+      ],
+      "enemy_hp": [
+        [
+          107
+        ],
+        [
+          107
+        ]
+      ]
+    },
+    "first_damage_to_boss": {
+      "index": 254,
+      "original_command": "play 1 0",
+      "floor": 16,
+      "original_before_hash": "563d8fb91bf503e3b7072a213007bb0225a5a3a48c0736c79b12937a2d60d961",
+      "original_after_hash": "53df4bb4c7caeb00a41689e463460383a54516dd2811a21d3abdb626237be4ba",
+      "scope": "diagnostic",
+      "mapped_action": 10,
+      "paired_field_groups": {
+        "before": {
+          "resources": true,
+          "turn_energy_block": true,
+          "enemies": true,
+          "terminal": true
+        },
+        "after": {
+          "resources": true,
+          "turn_energy_block": true,
+          "enemies": true,
+          "terminal": true
+        }
+      },
+      "enemy": "Hexaghost",
+      "turn": [
+        1,
+        1
+      ],
+      "player_hp": [
+        66,
+        66
+      ],
+      "enemy_hp": [
+        [
+          264
+        ],
+        [
+          255
+        ]
+      ]
+    },
+    "last_paired_boss_input": {
+      "index": 339,
+      "original_command": "end",
+      "floor": 16,
+      "original_before_hash": "1717e4b7a69fec9148e73f006bec62e99e9ad6e7ee34c5261cdfb027baf917c9",
+      "original_after_hash": "ad33efc6ae824fce44bda3b99abf079e10fb1edb22e8f50a94bfe2ca275b2ee9",
+      "scope": "diagnostic",
+      "mapped_action": 170,
+      "paired_field_groups": {
+        "before": {
+          "resources": true,
+          "turn_energy_block": true,
+          "enemies": true,
+          "terminal": true
+        },
+        "after": {
+          "resources": true,
+          "turn_energy_block": true,
+          "enemies": true,
+          "terminal": true
+        }
+      },
+      "enemy": "Hexaghost",
+      "turn": [
+        14,
+        14
+      ],
+      "player_hp": [
+        5,
+        0
+      ],
+      "enemy_hp": [
+        [
+          107
+        ],
+        [
+          107
+        ]
+      ]
+    }
+  }
+}

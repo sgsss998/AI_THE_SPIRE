@@ -1,0 +1,1838 @@
+{
+  "comparison": "frozen R3 versus frozen R4; zero-based decision offsets",
+  "r3_full_sha256": "67645e9215f89554bd3e1cb26de28a2cff0f70712521ed0d307a5371aa6980df",
+  "r4_full_sha256": "6da3f12f7a7c1aeaf9286dd37592e5c5ad52226bbce0a1c2e3855d48101d36cc",
+  "script_sha256": "f86ab5f7bb98c9e7e59bfd654180c3cc232669873eedf78f4a212c5936d2ed1b",
+  "all_seeds": 704,
+  "transitions": {
+    "loss -> loss": 369,
+    "unsupported -> unsupported": 326,
+    "unsupported -> loss": 4,
+    "loss -> unsupported": 5
+  },
+  "outcome_changes": 9,
+  "causes": {
+    "old_unsupported_fungi_now_executable": 1,
+    "new_neow_choice_selected": 2,
+    "neow_changed_sampling_pool": 5,
+    "rng_shift_after_earlier_neow_mask_change": 1
+  },
+  "previous_losses_stopped_in_free_policy": 5,
+  "old_literal_path_still_loses": 5,
+  "old_path_loses_with_verified_unique_alignment": 5,
+  "serpent_alignment": {
+    "all_cases": 51,
+    "unique_steps": 74,
+    "literal_accepted_but_not_at_old_endpoint": [
+      1000062,
+      5000016,
+      6000047,
+      9000027
+    ],
+    "equal_aligned_endpoint_states": 51
+  },
+  "all_literal_interruptions": [
+    {
+      "seed": 14,
+      "literal_stop": {
+        "decision": 114,
+        "action": 15,
+        "page": "SERPENT_LEAVE",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          112,
+          "SERPENT_ACCEPTED_CONTINUE",
+          110
+        ],
+        [
+          112,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 35,
+      "literal_stop": {
+        "decision": 48,
+        "action": 21,
+        "page": "DELEGATED",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          46,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 41,
+      "literal_stop": {
+        "decision": 79,
+        "action": 0,
+        "page": "DELEGATED",
+        "done": false,
+        "supported": [
+          105,
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          77,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 62,
+      "literal_stop": {
+        "decision": 72,
+        "action": 111,
+        "page": "SERPENT_LEAVE",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          71,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 1000028,
+      "literal_stop": {
+        "decision": 66,
+        "action": 111,
+        "page": "SERPENT_LEAVE",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          65,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 1000033,
+      "literal_stop": {
+        "decision": 96,
+        "action": 0,
+        "page": "SERPENT_LEAVE",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          94,
+          "SERPENT_ACCEPTED_CONTINUE",
+          110
+        ],
+        [
+          94,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 1000046,
+      "literal_stop": {
+        "decision": 69,
+        "action": 13,
+        "page": "SERPENT_LEAVE",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          67,
+          "SERPENT_ACCEPTED_CONTINUE",
+          110
+        ],
+        [
+          67,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 1000066,
+      "literal_stop": {
+        "decision": 71,
+        "action": 21,
+        "page": "DELEGATED",
+        "done": false,
+        "supported": [
+          110,
+          111
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          69,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 2000016,
+      "literal_stop": {
+        "decision": 13,
+        "action": 111,
+        "page": "SERPENT_ACCEPTED_CONTINUE",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          12,
+          "SERPENT_ACCEPTED_CONTINUE",
+          110
+        ],
+        [
+          12,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 2000045,
+      "literal_stop": {
+        "decision": 39,
+        "action": 111,
+        "page": "SERPENT_LEAVE",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          38,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 2000051,
+      "literal_stop": {
+        "decision": 19,
+        "action": 22,
+        "page": "DELEGATED",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          17,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 2000058,
+      "literal_stop": {
+        "decision": 33,
+        "action": 4,
+        "page": "SERPENT_LEAVE",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          31,
+          "SERPENT_ACCEPTED_CONTINUE",
+          110
+        ],
+        [
+          31,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 3000039,
+      "literal_stop": {
+        "decision": 93,
+        "action": 5,
+        "page": "DELEGATED",
+        "done": false,
+        "supported": [
+          105,
+          110,
+          111
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          91,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 3000054,
+      "literal_stop": {
+        "decision": 71,
+        "action": 1,
+        "page": "DELEGATED",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          69,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 3000064,
+      "literal_stop": {
+        "decision": 106,
+        "action": 14,
+        "page": "DELEGATED",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          104,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 4000004,
+      "literal_stop": {
+        "decision": 55,
+        "action": 34,
+        "page": "DELEGATED",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          53,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 4000020,
+      "literal_stop": {
+        "decision": 51,
+        "action": 0,
+        "page": "SERPENT_LEAVE",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          49,
+          "SERPENT_ACCEPTED_CONTINUE",
+          110
+        ],
+        [
+          49,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 4000025,
+      "literal_stop": {
+        "decision": 55,
+        "action": 11,
+        "page": "SERPENT_LEAVE",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          53,
+          "SERPENT_ACCEPTED_CONTINUE",
+          110
+        ],
+        [
+          53,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 4000027,
+      "literal_stop": {
+        "decision": 22,
+        "action": 4,
+        "page": "SERPENT_LEAVE",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": [
+          "serpent_optional_potions_unverified"
+        ]
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          20,
+          "SERPENT_ACCEPTED_CONTINUE",
+          110
+        ],
+        [
+          20,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 4000040,
+      "literal_stop": {
+        "decision": 49,
+        "action": 111,
+        "page": "DELEGATED",
+        "done": false,
+        "supported": [
+          105,
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          47,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 5000004,
+      "literal_stop": {
+        "decision": 94,
+        "action": 111,
+        "page": "SERPENT_LEAVE",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          93,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 5000021,
+      "literal_stop": {
+        "decision": 54,
+        "action": 111,
+        "page": "SERPENT_ACCEPTED_CONTINUE",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          53,
+          "SERPENT_ACCEPTED_CONTINUE",
+          110
+        ],
+        [
+          53,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 5000022,
+      "literal_stop": {
+        "decision": 102,
+        "action": 111,
+        "page": "SERPENT_LEAVE",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          100,
+          "SERPENT_ACCEPTED_CONTINUE",
+          110
+        ],
+        [
+          100,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 5000039,
+      "literal_stop": {
+        "decision": 45,
+        "action": 1,
+        "page": "DELEGATED",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          43,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 5000052,
+      "literal_stop": {
+        "decision": 86,
+        "action": 6,
+        "page": "SERPENT_LEAVE",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          84,
+          "SERPENT_ACCEPTED_CONTINUE",
+          110
+        ],
+        [
+          84,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 5000060,
+      "literal_stop": {
+        "decision": 28,
+        "action": 111,
+        "page": "SERPENT_LEAVE",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          27,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 6000003,
+      "literal_stop": {
+        "decision": 52,
+        "action": 111,
+        "page": "SERPENT_LEAVE",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": [
+          "serpent_optional_potions_unverified"
+        ]
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          50,
+          "SERPENT_ACCEPTED_CONTINUE",
+          110
+        ],
+        [
+          50,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 6000012,
+      "literal_stop": {
+        "decision": 50,
+        "action": 112,
+        "page": "DELEGATED",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          48,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 6000025,
+      "literal_stop": {
+        "decision": 65,
+        "action": 13,
+        "page": "DELEGATED",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          63,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 6000038,
+      "literal_stop": {
+        "decision": 107,
+        "action": 111,
+        "page": "SERPENT_ACCEPTED_CONTINUE",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": [
+          "serpent_optional_potions_unverified"
+        ]
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          106,
+          "SERPENT_ACCEPTED_CONTINUE",
+          110
+        ],
+        [
+          106,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 6000066,
+      "literal_stop": {
+        "decision": 77,
+        "action": 13,
+        "page": "SERPENT_LEAVE",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          75,
+          "SERPENT_ACCEPTED_CONTINUE",
+          110
+        ],
+        [
+          75,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 7000019,
+      "literal_stop": {
+        "decision": 80,
+        "action": 111,
+        "page": "DELEGATED",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          75,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 7000037,
+      "literal_stop": {
+        "decision": 75,
+        "action": 12,
+        "page": "SERPENT_LEAVE",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          73,
+          "SERPENT_ACCEPTED_CONTINUE",
+          110
+        ],
+        [
+          73,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 7000062,
+      "literal_stop": {
+        "decision": 81,
+        "action": 5,
+        "page": "SERPENT_LEAVE",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          79,
+          "SERPENT_ACCEPTED_CONTINUE",
+          110
+        ],
+        [
+          79,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 8000010,
+      "literal_stop": {
+        "decision": 34,
+        "action": 22,
+        "page": "SERPENT_LEAVE",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": [
+          "serpent_optional_potions_unverified"
+        ]
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          32,
+          "SERPENT_ACCEPTED_CONTINUE",
+          110
+        ],
+        [
+          32,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 8000025,
+      "literal_stop": {
+        "decision": 35,
+        "action": 111,
+        "page": "DELEGATED",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          33,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 8000044,
+      "literal_stop": {
+        "decision": 74,
+        "action": 14,
+        "page": "SERPENT_LEAVE",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": [
+          "serpent_optional_potions_unverified"
+        ]
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          72,
+          "SERPENT_ACCEPTED_CONTINUE",
+          110
+        ],
+        [
+          72,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 9000014,
+      "literal_stop": {
+        "decision": 152,
+        "action": 112,
+        "page": "DELEGATED",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          150,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 9000029,
+      "literal_stop": {
+        "decision": 44,
+        "action": 10,
+        "page": "DELEGATED",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          42,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 9000030,
+      "literal_stop": {
+        "decision": 45,
+        "action": 12,
+        "page": "SERPENT_LEAVE",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          43,
+          "SERPENT_ACCEPTED_CONTINUE",
+          110
+        ],
+        [
+          43,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 9000051,
+      "literal_stop": {
+        "decision": 95,
+        "action": 111,
+        "page": "SERPENT_ACCEPTED_CONTINUE",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          94,
+          "SERPENT_ACCEPTED_CONTINUE",
+          110
+        ],
+        [
+          94,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 9000052,
+      "literal_stop": {
+        "decision": 63,
+        "action": 111,
+        "page": "SERPENT_LEAVE",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          62,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 9000055,
+      "literal_stop": {
+        "decision": 32,
+        "action": 3,
+        "page": "DELEGATED",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          30,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 9000063,
+      "literal_stop": {
+        "decision": 42,
+        "action": 111,
+        "page": "SERPENT_LEAVE",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          41,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 17000024,
+      "literal_stop": {
+        "decision": 80,
+        "action": 111,
+        "page": "SERPENT_LEAVE",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": []
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          78,
+          "SERPENT_ACCEPTED_CONTINUE",
+          110
+        ],
+        [
+          78,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 17000055,
+      "literal_stop": {
+        "decision": 45,
+        "action": 22,
+        "page": "SERPENT_LEAVE",
+        "done": false,
+        "supported": [
+          110
+        ],
+        "gaps": [
+          "serpent_optional_potions_unverified"
+        ]
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          43,
+          "SERPENT_ACCEPTED_CONTINUE",
+          110
+        ],
+        [
+          43,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    },
+    {
+      "seed": 17000058,
+      "literal_stop": {
+        "decision": 31,
+        "action": 111,
+        "page": "SHOP_ROOM",
+        "done": false,
+        "supported": [
+          110,
+          171
+        ],
+        "gaps": [
+          "shop_potions_relics_cancel_and_full_native_mask_unverified"
+        ]
+      },
+      "aligned_complete": true,
+      "aligned_stop": null,
+      "additional_single_inputs": [
+        [
+          28,
+          "SERPENT_LEAVE",
+          110
+        ]
+      ],
+      "aligned_endpoint_state_equal": true
+    }
+  ],
+  "old_prefix_still_interrupted_after_alignment": 0,
+  "records": [
+    {
+      "seed": 19,
+      "cohort": "fixed",
+      "r3_outcome": "unsupported",
+      "r4_outcome": "loss",
+      "r3_floor": 7,
+      "r4_floor": 7,
+      "r4_final_page": "DELEGATED",
+      "r4_final_gaps": [],
+      "strict_old_prefix_complete": true,
+      "strict_old_endpoint_reason": "prefix_end",
+      "strict_old_endpoint_state_equal": true,
+      "strict_first_missing": null,
+      "aligned_complete": true,
+      "aligned_endpoint_state_equal": true,
+      "first_material_decision": {
+        "r3_index": 129,
+        "r4_index": 129,
+        "old_floor": 7,
+        "new_floor": 7,
+        "old_page": "DELEGATED",
+        "new_page": "DELEGATED",
+        "old_mask": [],
+        "new_mask": [
+          170
+        ],
+        "same_s3122": true,
+        "changed_coordinates": [],
+        "old_ticks": 119,
+        "new_ticks": 119,
+        "cause": "old_unsupported_fungi_now_executable",
+        "old_action": null,
+        "new_action": 170
+      },
+      "first_support_change": {
+        "r3_index": 129,
+        "r4_index": 129,
+        "page": "DELEGATED",
+        "r3_supported": [],
+        "r4_supported": [
+          170
+        ]
+      },
+      "first_rng_position_change": null,
+      "first_shared_state_value_change": null,
+      "prior_unique_serpent_steps": []
+    },
+    {
+      "seed": 46,
+      "cohort": "fixed",
+      "r3_outcome": "loss",
+      "r4_outcome": "unsupported",
+      "r3_floor": 2,
+      "r4_floor": 3,
+      "r4_final_page": "DELEGATED",
+      "r4_final_gaps": [
+        "death_boundary_unknown"
+      ],
+      "strict_old_prefix_complete": true,
+      "strict_old_endpoint_reason": "loss",
+      "strict_old_endpoint_state_equal": true,
+      "strict_first_missing": null,
+      "aligned_complete": null,
+      "aligned_endpoint_state_equal": null,
+      "first_material_decision": {
+        "r3_index": 1,
+        "r4_index": 1,
+        "old_floor": 0,
+        "new_floor": 0,
+        "old_page": "NEOW_OFFERS",
+        "new_page": "NEOW_OFFERS",
+        "old_mask": [
+          110,
+          111,
+          113
+        ],
+        "new_mask": [
+          110,
+          111,
+          112,
+          113
+        ],
+        "same_s3122": true,
+        "changed_coordinates": [],
+        "old_ticks": 0,
+        "new_ticks": 0,
+        "cause": "new_neow_choice_selected",
+        "old_action": 111,
+        "new_action": 112,
+        "same_policy_rng_before_choice": true
+      },
+      "first_support_change": {
+        "r3_index": 1,
+        "r4_index": 1,
+        "page": "NEOW_OFFERS",
+        "r3_supported": [
+          110,
+          111,
+          113
+        ],
+        "r4_supported": [
+          110,
+          111,
+          112,
+          113
+        ]
+      },
+      "first_rng_position_change": null,
+      "first_shared_state_value_change": null,
+      "prior_unique_serpent_steps": []
+    },
+    {
+      "seed": 3000053,
+      "cohort": "fixed",
+      "r3_outcome": "loss",
+      "r4_outcome": "unsupported",
+      "r3_floor": 7,
+      "r4_floor": 0,
+      "r4_final_page": "NEOW_RESULT_UNVERIFIED",
+      "r4_final_gaps": [
+        "native_neow_direct_effect_timing_unverified"
+      ],
+      "strict_old_prefix_complete": true,
+      "strict_old_endpoint_reason": "loss",
+      "strict_old_endpoint_state_equal": true,
+      "strict_first_missing": null,
+      "aligned_complete": null,
+      "aligned_endpoint_state_equal": null,
+      "first_material_decision": {
+        "r3_index": 1,
+        "r4_index": 1,
+        "old_floor": 0,
+        "new_floor": 0,
+        "old_page": "NEOW_OFFERS",
+        "new_page": "NEOW_OFFERS",
+        "old_mask": [
+          110,
+          111,
+          113
+        ],
+        "new_mask": [
+          110,
+          111,
+          112,
+          113
+        ],
+        "same_s3122": true,
+        "changed_coordinates": [],
+        "old_ticks": 0,
+        "new_ticks": 0,
+        "cause": "neow_changed_sampling_pool",
+        "old_action": 111,
+        "new_action": 113,
+        "same_policy_rng_before_choice": true
+      },
+      "first_support_change": {
+        "r3_index": 1,
+        "r4_index": 1,
+        "page": "NEOW_OFFERS",
+        "r3_supported": [
+          110,
+          111,
+          113
+        ],
+        "r4_supported": [
+          110,
+          111,
+          112,
+          113
+        ]
+      },
+      "first_rng_position_change": null,
+      "first_shared_state_value_change": null,
+      "prior_unique_serpent_steps": []
+    },
+    {
+      "seed": 4000052,
+      "cohort": "fixed",
+      "r3_outcome": "loss",
+      "r4_outcome": "unsupported",
+      "r3_floor": 6,
+      "r4_floor": 5,
+      "r4_final_page": "DELEGATED",
+      "r4_final_gaps": [
+        "death_boundary_unknown"
+      ],
+      "strict_old_prefix_complete": true,
+      "strict_old_endpoint_reason": "loss",
+      "strict_old_endpoint_state_equal": true,
+      "strict_first_missing": null,
+      "aligned_complete": null,
+      "aligned_endpoint_state_equal": null,
+      "first_material_decision": {
+        "r3_index": 3,
+        "r4_index": 3,
+        "old_floor": 0,
+        "new_floor": 0,
+        "old_page": "DELEGATED",
+        "new_page": "DELEGATED",
+        "old_mask": [
+          110,
+          111,
+          112,
+          113
+        ],
+        "new_mask": [
+          110,
+          111,
+          112,
+          113
+        ],
+        "same_s3122": true,
+        "changed_coordinates": [],
+        "old_ticks": 1,
+        "new_ticks": 1,
+        "cause": "rng_shift_after_earlier_neow_mask_change",
+        "old_action": 113,
+        "new_action": 112,
+        "same_policy_rng_before_choice": false
+      },
+      "first_support_change": {
+        "r3_index": 1,
+        "r4_index": 1,
+        "page": "NEOW_OFFERS",
+        "r3_supported": [
+          110,
+          111,
+          113
+        ],
+        "r4_supported": [
+          110,
+          111,
+          112,
+          113
+        ]
+      },
+      "first_rng_position_change": {
+        "old_index": 1,
+        "r4_index": 1,
+        "page": "NEOW_OFFERS",
+        "old_mask": [
+          110,
+          111,
+          113
+        ],
+        "new_mask": [
+          110,
+          111,
+          112,
+          113
+        ],
+        "old_action": 113,
+        "new_action": 113
+      },
+      "first_shared_state_value_change": null,
+      "prior_unique_serpent_steps": []
+    },
+    {
+      "seed": 4000060,
+      "cohort": "fixed",
+      "r3_outcome": "unsupported",
+      "r4_outcome": "loss",
+      "r3_floor": 4,
+      "r4_floor": 4,
+      "r4_final_page": "DELEGATED",
+      "r4_final_gaps": [],
+      "strict_old_prefix_complete": true,
+      "strict_old_endpoint_reason": "unsupported",
+      "strict_old_endpoint_state_equal": true,
+      "strict_first_missing": null,
+      "aligned_complete": null,
+      "aligned_endpoint_state_equal": null,
+      "first_material_decision": {
+        "r3_index": 1,
+        "r4_index": 1,
+        "old_floor": 0,
+        "new_floor": 0,
+        "old_page": "NEOW_OFFERS",
+        "new_page": "NEOW_OFFERS",
+        "old_mask": [
+          110,
+          111,
+          113
+        ],
+        "new_mask": [
+          110,
+          111,
+          112,
+          113
+        ],
+        "same_s3122": true,
+        "changed_coordinates": [],
+        "old_ticks": 0,
+        "new_ticks": 0,
+        "cause": "neow_changed_sampling_pool",
+        "old_action": 113,
+        "new_action": 111,
+        "same_policy_rng_before_choice": true
+      },
+      "first_support_change": {
+        "r3_index": 1,
+        "r4_index": 1,
+        "page": "NEOW_OFFERS",
+        "r3_supported": [
+          110,
+          111,
+          113
+        ],
+        "r4_supported": [
+          110,
+          111,
+          112,
+          113
+        ]
+      },
+      "first_rng_position_change": {
+        "old_index": 1,
+        "r4_index": 1,
+        "page": "NEOW_OFFERS",
+        "old_mask": [
+          110,
+          111,
+          113
+        ],
+        "new_mask": [
+          110,
+          111,
+          112,
+          113
+        ],
+        "old_action": 113,
+        "new_action": 111
+      },
+      "first_shared_state_value_change": null,
+      "prior_unique_serpent_steps": []
+    },
+    {
+      "seed": 5000047,
+      "cohort": "fixed",
+      "r3_outcome": "loss",
+      "r4_outcome": "unsupported",
+      "r3_floor": 6,
+      "r4_floor": 4,
+      "r4_final_page": "REWARD_UNVERIFIED",
+      "r4_final_gaps": [
+        "reward_page_semantics_unverified"
+      ],
+      "strict_old_prefix_complete": true,
+      "strict_old_endpoint_reason": "loss",
+      "strict_old_endpoint_state_equal": true,
+      "strict_first_missing": null,
+      "aligned_complete": null,
+      "aligned_endpoint_state_equal": null,
+      "first_material_decision": {
+        "r3_index": 1,
+        "r4_index": 1,
+        "old_floor": 0,
+        "new_floor": 0,
+        "old_page": "NEOW_OFFERS",
+        "new_page": "NEOW_OFFERS",
+        "old_mask": [
+          110,
+          111,
+          113
+        ],
+        "new_mask": [
+          110,
+          111,
+          112,
+          113
+        ],
+        "same_s3122": true,
+        "changed_coordinates": [],
+        "old_ticks": 0,
+        "new_ticks": 0,
+        "cause": "neow_changed_sampling_pool",
+        "old_action": 111,
+        "new_action": 113,
+        "same_policy_rng_before_choice": true
+      },
+      "first_support_change": {
+        "r3_index": 1,
+        "r4_index": 1,
+        "page": "NEOW_OFFERS",
+        "r3_supported": [
+          110,
+          111,
+          113
+        ],
+        "r4_supported": [
+          110,
+          111,
+          112,
+          113
+        ]
+      },
+      "first_rng_position_change": null,
+      "first_shared_state_value_change": null,
+      "prior_unique_serpent_steps": []
+    },
+    {
+      "seed": 6000061,
+      "cohort": "fixed",
+      "r3_outcome": "unsupported",
+      "r4_outcome": "loss",
+      "r3_floor": 5,
+      "r4_floor": 5,
+      "r4_final_page": "DELEGATED",
+      "r4_final_gaps": [],
+      "strict_old_prefix_complete": true,
+      "strict_old_endpoint_reason": "unsupported",
+      "strict_old_endpoint_state_equal": true,
+      "strict_first_missing": null,
+      "aligned_complete": null,
+      "aligned_endpoint_state_equal": null,
+      "first_material_decision": {
+        "r3_index": 1,
+        "r4_index": 1,
+        "old_floor": 0,
+        "new_floor": 0,
+        "old_page": "NEOW_OFFERS",
+        "new_page": "NEOW_OFFERS",
+        "old_mask": [
+          110,
+          111,
+          113
+        ],
+        "new_mask": [
+          110,
+          111,
+          112,
+          113
+        ],
+        "same_s3122": true,
+        "changed_coordinates": [],
+        "old_ticks": 0,
+        "new_ticks": 0,
+        "cause": "neow_changed_sampling_pool",
+        "old_action": 111,
+        "new_action": 113,
+        "same_policy_rng_before_choice": true
+      },
+      "first_support_change": {
+        "r3_index": 1,
+        "r4_index": 1,
+        "page": "NEOW_OFFERS",
+        "r3_supported": [
+          110,
+          111,
+          113
+        ],
+        "r4_supported": [
+          110,
+          111,
+          112,
+          113
+        ]
+      },
+      "first_rng_position_change": null,
+      "first_shared_state_value_change": null,
+      "prior_unique_serpent_steps": []
+    },
+    {
+      "seed": 7000038,
+      "cohort": "fixed",
+      "r3_outcome": "unsupported",
+      "r4_outcome": "loss",
+      "r3_floor": 7,
+      "r4_floor": 1,
+      "r4_final_page": "DELEGATED",
+      "r4_final_gaps": [],
+      "strict_old_prefix_complete": true,
+      "strict_old_endpoint_reason": "unsupported",
+      "strict_old_endpoint_state_equal": true,
+      "strict_first_missing": null,
+      "aligned_complete": null,
+      "aligned_endpoint_state_equal": null,
+      "first_material_decision": {
+        "r3_index": 1,
+        "r4_index": 1,
+        "old_floor": 0,
+        "new_floor": 0,
+        "old_page": "NEOW_OFFERS",
+        "new_page": "NEOW_OFFERS",
+        "old_mask": [
+          110,
+          111,
+          113
+        ],
+        "new_mask": [
+          110,
+          111,
+          112,
+          113
+        ],
+        "same_s3122": true,
+        "changed_coordinates": [],
+        "old_ticks": 0,
+        "new_ticks": 0,
+        "cause": "new_neow_choice_selected",
+        "old_action": 111,
+        "new_action": 112,
+        "same_policy_rng_before_choice": true
+      },
+      "first_support_change": {
+        "r3_index": 1,
+        "r4_index": 1,
+        "page": "NEOW_OFFERS",
+        "r3_supported": [
+          110,
+          111,
+          113
+        ],
+        "r4_supported": [
+          110,
+          111,
+          112,
+          113
+        ]
+      },
+      "first_rng_position_change": null,
+      "first_shared_state_value_change": null,
+      "prior_unique_serpent_steps": []
+    },
+    {
+      "seed": 8000006,
+      "cohort": "fixed",
+      "r3_outcome": "loss",
+      "r4_outcome": "unsupported",
+      "r3_floor": 2,
+      "r4_floor": 5,
+      "r4_final_page": "DELEGATED",
+      "r4_final_gaps": [
+        "death_boundary_unknown"
+      ],
+      "strict_old_prefix_complete": true,
+      "strict_old_endpoint_reason": "loss",
+      "strict_old_endpoint_state_equal": true,
+      "strict_first_missing": null,
+      "aligned_complete": null,
+      "aligned_endpoint_state_equal": null,
+      "first_material_decision": {
+        "r3_index": 1,
+        "r4_index": 1,
+        "old_floor": 0,
+        "new_floor": 0,
+        "old_page": "NEOW_OFFERS",
+        "new_page": "NEOW_OFFERS",
+        "old_mask": [
+          110,
+          111,
+          113
+        ],
+        "new_mask": [
+          110,
+          111,
+          112,
+          113
+        ],
+        "same_s3122": true,
+        "changed_coordinates": [],
+        "old_ticks": 0,
+        "new_ticks": 0,
+        "cause": "neow_changed_sampling_pool",
+        "old_action": 111,
+        "new_action": 113,
+        "same_policy_rng_before_choice": true
+      },
+      "first_support_change": {
+        "r3_index": 1,
+        "r4_index": 1,
+        "page": "NEOW_OFFERS",
+        "r3_supported": [
+          110,
+          111,
+          113
+        ],
+        "r4_supported": [
+          110,
+          111,
+          112,
+          113
+        ]
+      },
+      "first_rng_position_change": null,
+      "first_shared_state_value_change": null,
+      "prior_unique_serpent_steps": []
+    }
+  ]
+}

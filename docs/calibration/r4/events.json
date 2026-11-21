@@ -1,0 +1,170 @@
+{
+  "entry": "experiments.sa_calibration_round4.release",
+  "wrapped_on_r3": false,
+  "module_sha256": "212be0bfb41805d1dcd0f1215ba3c6344004099353d04539f9c7a0332c23dc08",
+  "original_rule": {
+    "class_sha256": "fc95fdcd0c205e217bf817c9bfb478a03e7e7de3760a0967d1e4ae4aff229834",
+    "jar_sha256": "880ca5646d02065a061bbbdf7cc106dc1443d5afc6b9560f512486b098fd627b",
+    "class_name": "events.exordium.Sssserpent",
+    "fields": {
+      "S9": "event ID",
+      "S2969": "event phase",
+      "S2973": "quoted gold"
+    },
+    "decoded_offer": "Doubt is the unique curse named on this event offer. Relic effects at receipt time are separate."
+  },
+  "accepted": {
+    "seed": "35LAE5197HT9L",
+    "original_inputs": 93,
+    "real_model_actions": 92,
+    "original_only": [
+      50
+    ],
+    "quote": {
+      "gold": 150,
+      "curse": "Doubt"
+    },
+    "stages": [
+      {
+        "index": 51,
+        "hp": 56,
+        "gold": 2,
+        "deck_count": 15,
+        "end_card": [
+          "Blade Dance",
+          0
+        ],
+        "page": "DELEGATED",
+        "event_phase": 0,
+        "engine_steps": 42,
+        "original_sha256": "7d4deacd4b2dec642d1ec18cc1a421170089911e0fa92c92387e3df0b44d3242"
+      },
+      {
+        "index": 52,
+        "hp": 56,
+        "gold": 2,
+        "deck_count": 15,
+        "end_card": [
+          "Blade Dance",
+          0
+        ],
+        "page": "SERPENT_ACCEPTED_CONTINUE",
+        "event_phase": 1,
+        "engine_steps": 42,
+        "original_sha256": "b8967f7f8cd182a5cd211f92aa277df2c9f4fe569eea367d7d73ac92ca55cfca"
+      },
+      {
+        "index": 53,
+        "hp": 56,
+        "gold": 152,
+        "deck_count": 16,
+        "end_card": [
+          "Doubt",
+          0
+        ],
+        "page": "SERPENT_LEAVE",
+        "event_phase": 2,
+        "engine_steps": 43,
+        "original_sha256": "73cb33603617f58e0d35b0df7bbcaac53cdcafc4c9d4966d41c178109d18d639"
+      },
+      {
+        "index": 54,
+        "hp": 56,
+        "gold": 152,
+        "deck_count": 16,
+        "end_card": [
+          "Doubt",
+          0
+        ],
+        "page": "DELEGATED",
+        "event_phase": 0,
+        "engine_steps": 43,
+        "original_sha256": "187f6d1e6d0636bb8ab5d566aae35e69c570ae14b57fa28fc797172af5f853a1"
+      }
+    ],
+    "endpoint": {
+      "resources": [
+        0,
+        66,
+        152,
+        7,
+        1,
+        20
+      ],
+      "enemies": [
+        [
+          "gremlinnob",
+          37,
+          88,
+          0
+        ]
+      ],
+      "lost": true,
+      "engine_steps": 79
+    },
+    "receipt_sha256": "12134a0d0f0447d1f6b81ea6fb30ecf108de5ed238d5af2e34c06ec1a5ac19fb"
+  },
+  "declined": {
+    "seed": 54072726,
+    "actual_choice": "decline",
+    "stages": [
+      {
+        "hp": 66,
+        "gold": 128,
+        "deck_count": 16,
+        "end_card": [
+          "Backflip",
+          0
+        ],
+        "page": "DELEGATED",
+        "event_phase": 0,
+        "engine_steps": 69,
+        "original_sha256": "bf9c2f3e657b844e12618d4bf5f960f60e5d03557a981c7310df5a7e18d3527f"
+      },
+      {
+        "hp": 66,
+        "gold": 128,
+        "deck_count": 16,
+        "end_card": [
+          "Backflip",
+          0
+        ],
+        "page": "SERPENT_LEAVE",
+        "event_phase": 2,
+        "engine_steps": 70,
+        "original_sha256": "a31a6286c59fedfc7107dcad07a5ab838107051f98f5d5a6139e9e8d8354359a"
+      },
+      {
+        "hp": 66,
+        "gold": 128,
+        "deck_count": 16,
+        "end_card": [
+          "Backflip",
+          0
+        ],
+        "page": "DELEGATED",
+        "event_phase": 0,
+        "engine_steps": 70,
+        "original_sha256": "a30b8fd31d60efa0f41b14692ce5f4dee6d010e7a811e40734622222eb9ec023"
+      }
+    ]
+  },
+  "signature": {
+    "state_version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1",
+    "state_sha256": "3ff6962afbb713ba85160f282d370a28e865c5207c741897a8a9e4f091614bcb",
+    "card_registry_sha256": "cc7dd2446135675ad273bbdc09914909f8ab1c0aca854a8c00dd3d8b6f91a26a",
+    "action_version": "silent-canonical-row-a193-v1",
+    "action_adapter_version": "canonical-row-choice64-v1+frontier-settled+compact-decisions-v2+public-transitions-v1+ordinary-events-rewards-v1+shop-reward-discard-gold-and-death-settlement-v1+ending-route-paid-neow-permanent-upgrade-cancel-and-complete-card-masks-v2+ordinary-targets-and-victory-loot-v1+match-poison-and-idol-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+settled-neow-and-linked-chest-rewards-v1+round1-flex-chest-v1+round2-v1+round3-calibration-v1+silent-a20-round4-v1",
+    "action_contract_sha256": "0ae8ba53dfdde48ad0f4a4ae03cfd045fc2677ac50df3cae9a6ed7558962b78e",
+    "action_coordinates": "observation_monster_row",
+    "action_source_sha256": "b56547879d761e26c0179ff1cfdfb17e737751130724ba4e4f8dca589bfa3ac3",
+    "state_decoder_sha256": "eca8839a563ea9b5471841af0288f66b88250a627ef0733259511f55ceff3883",
+    "backend_build_sha256": "5f81347346994e460ceaa8e500ff3f08637a33f2eb4a220cff467fc8f6105fa5",
+    "backend_commit": "482b3ef29c93746ada7d6fd0fd16885d7cc30b1f",
+    "backend_observation_version": 4,
+    "backend_observation_dimension": 1761,
+    "backend_actions": 146,
+    "observation_dimension": 3122,
+    "actions": 193
+  }
+}

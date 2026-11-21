@@ -1,0 +1,204 @@
+{
+  "public_commit": "e24f78449d883fbf74d6c2e41a4b2cc6cf4a5e50",
+  "source_sha256": {
+    "RELEASE.json": "a6348d957d6bb8da11d2a6fd13658a1bdf12b5235680d368832f8d16241a6534",
+    "INTERFACE.json": "40688dc0b745768d87c84e94c3fe6f86f1eeb655da1a59fc2f38d968f7f5de37",
+    "regression/RESULT.json": "16a6f3404bc86121bef5361011b6210999782de8a8646c79961cc41e242c6ca7",
+    "coverage/RESULT.json": "35416a4dc71dd16fa34e5ec1a6f5ab5c58418e639fecece202fc45bad69c305f",
+    "death/COHORT.json": "e4f54c25551daaf4fd257615ebedeed916b02873c949a07ab8167e9fd34aa904",
+    "fresh/RESULT.json": "44db92906bc3a6ed39ab8d9a6f66442a95129eb05ee01aa9032e9968feb5ae04"
+  },
+  "parent_release_files": 89,
+  "interface": {
+    "state_version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1",
+    "state_sha256": "9758f1f97deae6a003a7b31c95db0055b3f4e6251747742cace46c28bc2b5cad",
+    "card_registry_sha256": "cc7dd2446135675ad273bbdc09914909f8ab1c0aca854a8c00dd3d8b6f91a26a",
+    "action_version": "silent-canonical-row-a193-v1",
+    "action_adapter_version": "canonical-row-choice64-v1+frontier-settled+compact-decisions-v2+public-transitions-v1+ordinary-events-rewards-v1+shop-reward-discard-gold-and-death-settlement-v1+ending-route-paid-neow-permanent-upgrade-cancel-and-complete-card-masks-v2+ordinary-targets-and-victory-loot-v1+match-poison-and-idol-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+settled-neow-and-linked-chest-rewards-v1+round1-flex-chest-v1+round2-v1+round3-calibration-v1",
+    "action_contract_sha256": "0ae8ba53dfdde48ad0f4a4ae03cfd045fc2677ac50df3cae9a6ed7558962b78e",
+    "action_coordinates": "observation_monster_row",
+    "action_source_sha256": "991002a8a794556f29024c607c17f075d57c4f547711ef54c94a0aaed61d3451",
+    "state_decoder_sha256": "3b6f91649a61f34224af83a0564f3b4ec68b63e5ec9e60ad6afce305b8bfd0a3",
+    "backend_build_sha256": "5f81347346994e460ceaa8e500ff3f08637a33f2eb4a220cff467fc8f6105fa5",
+    "backend_commit": "482b3ef29c93746ada7d6fd0fd16885d7cc30b1f",
+    "backend_observation_version": 4,
+    "backend_observation_dimension": 1761,
+    "backend_actions": 146,
+    "observation_dimension": 3122,
+    "actions": 193
+  },
+  "free_policy": {
+    "fixed": {
+      "loss": 350,
+      "unsupported": 290
+    },
+    "additional": {
+      "loss": 24,
+      "unsupported": 40
+    }
+  },
+  "batch_seed_count": {
+    "fixed": 640,
+    "additional": 64
+  },
+  "fungi": {
+    "19": {
+      "cohort": "fixed",
+      "floor": 7,
+      "lethal_action": 22,
+      "old_followups": [],
+      "trace": "73c79698c4db5c9741a881e7369182527e791745c0f799ea5895daf715790559"
+    },
+    "55": {
+      "cohort": "fixed",
+      "floor": 5,
+      "lethal_action": 10,
+      "old_followups": [],
+      "trace": "fad03c64d4b68bc77a1112db6b94f4ed7d44e43d903e6879300a6d7b50e4b305"
+    },
+    "59": {
+      "cohort": "fixed",
+      "floor": 4,
+      "lethal_action": 16,
+      "old_followups": [],
+      "trace": "d5789bf1ce4e7d85656b621e59dc812746d84cbaf9355cd015dae52a99744717"
+    },
+    "1000027": {
+      "cohort": "fixed",
+      "floor": 4,
+      "lethal_action": 21,
+      "old_followups": [],
+      "trace": "03941aa76151f938065b1b0619267668a1b3acb935a8838f7aef0f295485cadf"
+    },
+    "1000061": {
+      "cohort": "fixed",
+      "floor": 7,
+      "lethal_action": 21,
+      "old_followups": [],
+      "trace": "a78ba734f5cb002dd50cc7be5cfdae8ca54721b976bfbb008bb3348bd13552b3"
+    },
+    "2000040": {
+      "cohort": "fixed",
+      "floor": 4,
+      "lethal_action": 13,
+      "old_followups": [],
+      "trace": "9796baf5b183fa4f785f93db560f833435b522153963d706907cc6f144d39923"
+    },
+    "2000054": {
+      "cohort": "fixed",
+      "floor": 4,
+      "lethal_action": 23,
+      "old_followups": [],
+      "trace": "a254d64ba82d61a3bb7e2e5c277f2c59d71bd579264df991fb5262a464bb0785"
+    },
+    "2000066": {
+      "cohort": "fixed",
+      "floor": 7,
+      "lethal_action": 21,
+      "old_followups": [],
+      "trace": "233ab6d0cee597e1458f60952c29c4e3164ce16ac47f9dd4007617950d2743a0"
+    },
+    "3000017": {
+      "cohort": "fixed",
+      "floor": 4,
+      "lethal_action": 13,
+      "old_followups": [],
+      "trace": "d051abf20db8e7ca814c1f9ced669c399afbe49db468ff4d7ade73855cc3d631"
+    },
+    "3000040": {
+      "cohort": "fixed",
+      "floor": 7,
+      "lethal_action": 11,
+      "old_followups": [],
+      "trace": "f3803719f3292e1f153eae1a0419072bb1e1179ee1f41774d47d6c9a3a0cf80e"
+    },
+    "3000046": {
+      "cohort": "fixed",
+      "floor": 4,
+      "lethal_action": 11,
+      "old_followups": [],
+      "trace": "365e81c12ed29300c538121577e1c22232a9c13ba61984fabb13a80d49219ef5"
+    },
+    "4000037": {
+      "cohort": "fixed",
+      "floor": 5,
+      "lethal_action": 10,
+      "old_followups": [],
+      "trace": "295f02826739c584a64d397f112e18f10a1ac5c9a70cd3870449217b22608ebd"
+    },
+    "5000006": {
+      "cohort": "fixed",
+      "floor": 5,
+      "lethal_action": 23,
+      "old_followups": [],
+      "trace": "66625e9bbfd3f79309d4eba778c9cfeb4b923209d31da5c3ec863358bc89bc3b"
+    },
+    "6000018": {
+      "cohort": "fixed",
+      "floor": 11,
+      "lethal_action": 11,
+      "old_followups": [],
+      "trace": "00a59531e97d43e186cb6bc99e99d377637c6817e07e9d75016aba880cd3dc2f"
+    },
+    "6000040": {
+      "cohort": "fixed",
+      "floor": 4,
+      "lethal_action": 13,
+      "old_followups": [],
+      "trace": "10eaaf5f934868d385732dfd041dc5d7fc4ed0a14c97a2a1afd8ba4d0325ea3b"
+    },
+    "6000065": {
+      "cohort": "fixed",
+      "floor": 5,
+      "lethal_action": 11,
+      "old_followups": [],
+      "trace": "90d4e92f3257e8a41806bf0732fdccca2730ecc914b2204f446bae76f12e0d71"
+    },
+    "7000032": {
+      "cohort": "fixed",
+      "floor": 10,
+      "lethal_action": 22,
+      "old_followups": [],
+      "trace": "5d4327a6cf126d9f294584f4a016d2b3f070e062a79ae72b566152ede1852456"
+    },
+    "7000035": {
+      "cohort": "fixed",
+      "floor": 4,
+      "lethal_action": 14,
+      "old_followups": [],
+      "trace": "30ab3edd8e58328113fd7adb87cabec17ae20cdb1e5ae23eecd242ce30c8665c"
+    },
+    "9000008": {
+      "cohort": "fixed",
+      "floor": 5,
+      "lethal_action": 21,
+      "old_followups": [],
+      "trace": "65211803c4a01e2ebe314c3f79f46c2d86edb2cd4b73d1237e1b42d4c66ff1c3"
+    },
+    "9000020": {
+      "cohort": "fixed",
+      "floor": 4,
+      "lethal_action": 20,
+      "old_followups": [
+        10
+      ],
+      "trace": "9497164587b9b554a7602298270dba7cf4c9f9ddf98ab9f25f26af2eaa53fd1a"
+    },
+    "17000028": {
+      "cohort": "additional",
+      "floor": 4,
+      "lethal_action": 80,
+      "old_followups": [],
+      "trace": "72c087ff3b88e90c85a019b027231e4b03e98bcf1d9caa7085e98fca1397726b"
+    }
+  },
+  "holdout_reclassified_as_development": "35LAE5197HT9L",
+  "known_missing_opening_action": 112,
+  "old_snake_reward_difference": 52,
+  "taxonomy": {
+    "seeds": 129,
+    "groups": 23,
+    "trace_index_sha256": "9317cd1e9fa9405186078cac6afc1b8a04dde4819ae1b443876c93d9f29a8a47",
+    "csv_sha256": "e767899a4eefc46c1e09f8f2a7606821171905c3eafdc19b8799d9447d24d75b"
+  }
+}

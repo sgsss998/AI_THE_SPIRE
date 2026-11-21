@@ -1,0 +1,706 @@
+{
+  "interface_sha256": "5def52bee7a9aa97c65aa109e9625892ab2dab89301778b81be931290b4c7ada",
+  "input_hashes": {
+    "neow/RESULT.json": "07dee277d2da30568f93a03f694ffeec0fc0d523e355836ba89ed70aa8530ce3",
+    "neow/TEMPO.json": "6ab9cb27de3fa8bbdb92e65e73da18e3958592aacdc24e1a0232fde99b2170df",
+    "events/RESULT.json": "215114c4f472f3726e67ffd411f970b4ac5617e985f8f356a2d9b439b6e8f3fd",
+    "death/RESULT.json": "fa47959f838b5319b29fd9d4f68ea133373336ab2ace628d58b4345af79bee8b"
+  },
+  "width": 3122,
+  "actions": 193,
+  "paired_decisions": 15,
+  "distinct_vectors": 13,
+  "repeated_rows": [
+    [
+      4,
+      6
+    ],
+    [
+      5,
+      7
+    ]
+  ],
+  "identical_state_different_known_controls": [],
+  "rows": [
+    {
+      "scene": "neow",
+      "seed": "46",
+      "page": "NEOW_OFFERS",
+      "native_sequence": 4,
+      "state_sha256": "3e014523ec776ddf1311bcce1f7e511b41cd7e3576bb1b17ccbeb67d816a3982",
+      "model_supported": [
+        110,
+        111,
+        112,
+        113
+      ],
+      "model_marks_mask_complete": true,
+      "native_controls": [
+        110,
+        111,
+        112,
+        113
+      ],
+      "domain": "enabled_dialogue_rows",
+      "native_complete": false,
+      "actual_native_input_mapped_to_A": 112,
+      "fields": {
+        "S335_bonus": 17,
+        "S336_cost": 5,
+        "native_text": "obtain a curse transform 2 cards"
+      },
+      "source": "native_runtime/compact_fixture_neow_transform_seed46/fixture_control/observations/0001"
+    },
+    {
+      "scene": "neow",
+      "seed": "46",
+      "page": "NEOW_TRANSFORM_GRID",
+      "native_sequence": 5,
+      "state_sha256": "32926aecc64299493372f3300bfdb9f24e9e1fbe0984db9f2e7dba7818ae784c",
+      "model_supported": [
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121
+      ],
+      "model_marks_mask_complete": true,
+      "native_controls": [
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121
+      ],
+      "domain": "whole_canonical_action_contract",
+      "native_complete": true,
+      "actual_native_input_mapped_to_A": 121,
+      "fields": {
+        "S22_and_S1763_deck": 13,
+        "S27_required": 2,
+        "S28_selected": 0,
+        "S325_plus_6i_selected_rows": [],
+        "S2684_to_2695_permanent_references": [
+          204,
+          205,
+          206,
+          207,
+          208,
+          209,
+          210,
+          211,
+          212,
+          213,
+          214,
+          215
+        ]
+      },
+      "source": "native_runtime/compact_fixture_neow_transform_seed46/fixture_control/observations/0002"
+    },
+    {
+      "scene": "neow",
+      "seed": "46",
+      "page": "NEOW_TRANSFORM_GRID",
+      "native_sequence": 6,
+      "state_sha256": "3e57f23d0195a7564b2a3fd3204cc6e44dfb274d4f446af07435e53a80f8fdb6",
+      "model_supported": [
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121
+      ],
+      "model_marks_mask_complete": true,
+      "native_controls": [
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121
+      ],
+      "domain": "whole_canonical_action_contract",
+      "native_complete": true,
+      "actual_native_input_mapped_to_A": 115,
+      "fields": {
+        "S22_and_S1763_deck": 13,
+        "S27_required": 2,
+        "S28_selected": 1,
+        "S325_plus_6i_selected_rows": [
+          11
+        ],
+        "S2684_to_2695_permanent_references": [
+          204,
+          205,
+          206,
+          207,
+          208,
+          209,
+          210,
+          211,
+          212,
+          213,
+          214,
+          215
+        ]
+      },
+      "source": "native_runtime/compact_fixture_neow_transform_seed46/fixture_control/observations/0003"
+    },
+    {
+      "scene": "neow",
+      "seed": "48",
+      "page": "NEOW_OFFERS",
+      "native_sequence": 4,
+      "state_sha256": "7367d4fe2809f1ff78d8534e71e534f565d2cbb3ca23855660bab8fd1cc01842",
+      "model_supported": [
+        110,
+        111,
+        112,
+        113
+      ],
+      "model_marks_mask_complete": true,
+      "native_controls": [
+        110,
+        111,
+        112,
+        113
+      ],
+      "domain": "enabled_dialogue_rows",
+      "native_complete": false,
+      "actual_native_input_mapped_to_A": 112,
+      "fields": {
+        "S335_bonus": 17,
+        "S336_cost": 5,
+        "native_text": "obtain a curse transform 2 cards"
+      },
+      "source": "native_runtime/compact_native_r4_neow48_001/fixture_control/observations/offer"
+    },
+    {
+      "scene": "neow",
+      "seed": "48",
+      "page": "NEOW_TRANSFORM_GRID",
+      "native_sequence": 7,
+      "state_sha256": "9e7519ba1c5df0eb3e700e035b831d61aa72f558155cb4fa976eaec22d62de5f",
+      "model_supported": [
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121
+      ],
+      "model_marks_mask_complete": true,
+      "native_controls": [
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121
+      ],
+      "domain": "whole_canonical_action_contract",
+      "native_complete": true,
+      "actual_native_input_mapped_to_A": 111,
+      "fields": {
+        "S22_and_S1763_deck": 14,
+        "S27_required": 2,
+        "S28_selected": 0,
+        "S325_plus_6i_selected_rows": [],
+        "S2684_to_2695_permanent_references": [
+          204,
+          205,
+          206,
+          207,
+          208,
+          209,
+          210,
+          211,
+          212,
+          213,
+          214,
+          215
+        ]
+      },
+      "source": "native_runtime/compact_native_r4_neow48_001/fixture_control/observations/settled_grid"
+    },
+    {
+      "scene": "neow",
+      "seed": "48",
+      "page": "NEOW_TRANSFORM_GRID",
+      "native_sequence": 8,
+      "state_sha256": "b9a38462738230cbbd1b61f29978b07eb9931ed11c9e1bed59e67e5edb99b086",
+      "model_supported": [
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121
+      ],
+      "model_marks_mask_complete": true,
+      "native_controls": [
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121
+      ],
+      "domain": "whole_canonical_action_contract",
+      "native_complete": true,
+      "actual_native_input_mapped_to_A": 111,
+      "fields": {
+        "S22_and_S1763_deck": 14,
+        "S27_required": 2,
+        "S28_selected": 1,
+        "S325_plus_6i_selected_rows": [
+          1
+        ],
+        "S2684_to_2695_permanent_references": [
+          204,
+          205,
+          206,
+          207,
+          208,
+          209,
+          210,
+          211,
+          212,
+          213,
+          214,
+          215
+        ]
+      },
+      "source": "native_runtime/compact_native_r4_neow48_001/fixture_control/observations/after_0"
+    },
+    {
+      "scene": "neow",
+      "seed": "48",
+      "page": "NEOW_TRANSFORM_GRID",
+      "native_sequence": 9,
+      "state_sha256": "9e7519ba1c5df0eb3e700e035b831d61aa72f558155cb4fa976eaec22d62de5f",
+      "model_supported": [
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121
+      ],
+      "model_marks_mask_complete": true,
+      "native_controls": [
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121
+      ],
+      "domain": "whole_canonical_action_contract",
+      "native_complete": true,
+      "actual_native_input_mapped_to_A": 111,
+      "fields": {
+        "S22_and_S1763_deck": 14,
+        "S27_required": 2,
+        "S28_selected": 0,
+        "S325_plus_6i_selected_rows": [],
+        "S2684_to_2695_permanent_references": [
+          204,
+          205,
+          206,
+          207,
+          208,
+          209,
+          210,
+          211,
+          212,
+          213,
+          214,
+          215
+        ]
+      },
+      "source": "native_runtime/compact_native_r4_neow48_001/fixture_control/observations/after_1"
+    },
+    {
+      "scene": "neow",
+      "seed": "48",
+      "page": "NEOW_TRANSFORM_GRID",
+      "native_sequence": 10,
+      "state_sha256": "b9a38462738230cbbd1b61f29978b07eb9931ed11c9e1bed59e67e5edb99b086",
+      "model_supported": [
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121
+      ],
+      "model_marks_mask_complete": true,
+      "native_controls": [
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121
+      ],
+      "domain": "whole_canonical_action_contract",
+      "native_complete": true,
+      "actual_native_input_mapped_to_A": 110,
+      "fields": {
+        "S22_and_S1763_deck": 14,
+        "S27_required": 2,
+        "S28_selected": 1,
+        "S325_plus_6i_selected_rows": [
+          1
+        ],
+        "S2684_to_2695_permanent_references": [
+          204,
+          205,
+          206,
+          207,
+          208,
+          209,
+          210,
+          211,
+          212,
+          213,
+          214,
+          215
+        ]
+      },
+      "source": "native_runtime/compact_native_r4_neow48_001/fixture_control/observations/after_2"
+    },
+    {
+      "scene": "snake",
+      "seed": "10679156812119886636",
+      "page": "DELEGATED",
+      "native_sequence": 54,
+      "state_sha256": "544a67784bff8e69986067e236f18bf764b277d5c953d91e0109c050dc394313",
+      "model_supported": [
+        110,
+        111
+      ],
+      "model_marks_mask_complete": true,
+      "native_controls": [
+        110,
+        111
+      ],
+      "domain": "enabled_dialogue_rows",
+      "native_complete": false,
+      "actual_native_input_mapped_to_A": 110,
+      "fields": {
+        "S2_gold": 2,
+        "S22_deck": 15,
+        "S2969_phase": 0,
+        "S1769_option_count": 2,
+        "S9_event": 29,
+        "S2970_quote_bits": 4,
+        "S2973_gold": 150,
+        "decoded_curse": "Doubt",
+        "original_text": "[Agree] Gain 150 Gold. Become Cursed - Doubt."
+      },
+      "source": "7d4deacd4b2dec642d1ec18cc1a421170089911e0fa92c92387e3df0b44d3242"
+    },
+    {
+      "scene": "snake",
+      "seed": "10679156812119886636",
+      "page": "SERPENT_ACCEPTED_CONTINUE",
+      "native_sequence": 55,
+      "state_sha256": "6bc70dbe94a616b5baebf4cc213e5930c4a356e3272fe0e46e14367ea1922f69",
+      "model_supported": [
+        110
+      ],
+      "model_marks_mask_complete": true,
+      "native_controls": [
+        110
+      ],
+      "domain": "enabled_dialogue_rows",
+      "native_complete": false,
+      "actual_native_input_mapped_to_A": 110,
+      "fields": {
+        "S2_gold": 2,
+        "S22_deck": 15,
+        "S2969_phase": 1,
+        "S1769_option_count": 1
+      },
+      "source": "b8967f7f8cd182a5cd211f92aa277df2c9f4fe569eea367d7d73ac92ca55cfca"
+    },
+    {
+      "scene": "snake",
+      "seed": "10679156812119886636",
+      "page": "SERPENT_LEAVE",
+      "native_sequence": 56,
+      "state_sha256": "3b87bebb05b899e1fb58789d11749b17484e7d81b398940d707b8fedca2a715e",
+      "model_supported": [
+        110
+      ],
+      "model_marks_mask_complete": true,
+      "native_controls": [
+        110
+      ],
+      "domain": "enabled_dialogue_rows",
+      "native_complete": false,
+      "actual_native_input_mapped_to_A": 110,
+      "fields": {
+        "S2_gold": 152,
+        "S22_deck": 16,
+        "S2969_phase": 2,
+        "S1769_option_count": 1
+      },
+      "source": "73cb33603617f58e0d35b0df7bbcaac53cdcafc4c9d4966d41c178109d18d639"
+    },
+    {
+      "scene": "snake",
+      "seed": "54072726",
+      "page": "DELEGATED",
+      "native_sequence": 262,
+      "state_sha256": "db49825de9d32200d69f8d53260d8185acc9459d90c4bf871a7f2f3bf390ef4f",
+      "model_supported": [
+        105,
+        110,
+        111
+      ],
+      "model_marks_mask_complete": true,
+      "native_controls": [
+        110,
+        111
+      ],
+      "domain": "enabled_dialogue_rows",
+      "native_complete": false,
+      "actual_native_input_mapped_to_A": 111,
+      "fields": {
+        "S2_gold": 128,
+        "S22_deck": 16,
+        "S2969_phase": 0,
+        "S1769_option_count": 2,
+        "S9_event": 29,
+        "S2970_quote_bits": 4,
+        "S2973_gold": 150,
+        "decoded_curse": "Doubt",
+        "original_text": "[同意] 获得 150 金币。 被诅咒——疑虑。"
+      },
+      "source": "bf9c2f3e657b844e12618d4bf5f960f60e5d03557a981c7310df5a7e18d3527f"
+    },
+    {
+      "scene": "snake",
+      "seed": "54072726",
+      "page": "SERPENT_LEAVE",
+      "native_sequence": 263,
+      "state_sha256": "8bb6c68a870f9c08989fabc50e28105cde996512f7b3483b78401fe309d72061",
+      "model_supported": [
+        110
+      ],
+      "model_marks_mask_complete": false,
+      "native_controls": [
+        110
+      ],
+      "domain": "enabled_dialogue_rows",
+      "native_complete": false,
+      "actual_native_input_mapped_to_A": 110,
+      "fields": {
+        "S2_gold": 128,
+        "S22_deck": 16,
+        "S2969_phase": 2,
+        "S1769_option_count": 1
+      },
+      "source": "a31a6286c59fedfc7107dcad07a5ab838107051f98f5d5a6139e9e8d8354359a"
+    },
+    {
+      "scene": "fungi",
+      "seed": "19",
+      "page": "DELEGATED",
+      "native_sequence": 133,
+      "state_sha256": "fee07211d116ee8c2b88b107be8835210451f32b6bdd055530c080eacc63b215",
+      "model_supported": [
+        170
+      ],
+      "model_marks_mask_complete": false,
+      "native_controls": [
+        170
+      ],
+      "domain": "whole_canonical_action_contract",
+      "native_complete": true,
+      "actual_native_input_mapped_to_A": 170,
+      "fields": {
+        "S911_player_vulnerable": 2,
+        "S901_energy": 0,
+        "monsters": [
+          {
+            "slot": 0,
+            "start": 993,
+            "hp": 15,
+            "targetable": true,
+            "strength": 5,
+            "spore": 2
+          },
+          {
+            "slot": 1,
+            "start": 1045,
+            "hp": 0,
+            "targetable": false,
+            "strength": 5,
+            "spore": 2
+          }
+        ],
+        "bridge_candidate_actions": [
+          170
+        ],
+        "oracle_known_domains": [
+          "unchoose",
+          "play",
+          "potion_use",
+          "potion_discard",
+          "end",
+          "choose",
+          "confirm",
+          "cancel",
+          "skip",
+          "return",
+          "leave",
+          "proceed"
+        ]
+      },
+      "source": "63ce0570b942b7b0235b10cd20d8503cb3ab8389edd9086d838e399453273f2e"
+    },
+    {
+      "scene": "fungi",
+      "seed": "59",
+      "page": "DELEGATED",
+      "native_sequence": 87,
+      "state_sha256": "57ed4e46c24a371d904c88c46049495b3399f77844525fc93a20509418c29d1c",
+      "model_supported": [
+        23
+      ],
+      "model_marks_mask_complete": false,
+      "native_controls": [
+        105,
+        170
+      ],
+      "domain": "independent_partial",
+      "native_complete": false,
+      "actual_native_input_mapped_to_A": 23,
+      "fields": {
+        "S911_player_vulnerable": 2,
+        "S901_energy": 3,
+        "monsters": [
+          {
+            "slot": 0,
+            "start": 993,
+            "hp": 0,
+            "targetable": false,
+            "strength": 5,
+            "spore": 2
+          },
+          {
+            "slot": 1,
+            "start": 1045,
+            "hp": 22,
+            "targetable": true,
+            "strength": 0,
+            "spore": 2
+          }
+        ],
+        "bridge_candidate_actions": [
+          0,
+          1,
+          2,
+          4,
+          23,
+          70,
+          105,
+          170
+        ],
+        "oracle_known_domains": [
+          "unchoose",
+          "potion_discard",
+          "end",
+          "choose",
+          "confirm",
+          "cancel",
+          "skip",
+          "return",
+          "leave",
+          "proceed"
+        ]
+      },
+      "source": "08988d8023595ff3047ce6b51f6e8fc550dc610ae484229fe4efff2450f8c01d"
+    }
+  ],
+  "scope": "Compared native controls only within the same known domain. Missing or unexercised controls cannot establish equality. No global sufficiency or redundancy claim."
+}
