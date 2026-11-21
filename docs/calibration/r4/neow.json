@@ -1,0 +1,491 @@
+{
+  "interface": {
+    "state_version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1",
+    "state_sha256": "3ff6962afbb713ba85160f282d370a28e865c5207c741897a8a9e4f091614bcb",
+    "card_registry_sha256": "cc7dd2446135675ad273bbdc09914909f8ab1c0aca854a8c00dd3d8b6f91a26a",
+    "action_version": "silent-canonical-row-a193-v1",
+    "action_adapter_version": "canonical-row-choice64-v1+frontier-settled+compact-decisions-v2+public-transitions-v1+ordinary-events-rewards-v1+shop-reward-discard-gold-and-death-settlement-v1+ending-route-paid-neow-permanent-upgrade-cancel-and-complete-card-masks-v2+ordinary-targets-and-victory-loot-v1+match-poison-and-idol-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+settled-neow-and-linked-chest-rewards-v1+round1-flex-chest-v1+round2-v1+round3-calibration-v1+silent-a20-round4-v1",
+    "action_contract_sha256": "0ae8ba53dfdde48ad0f4a4ae03cfd045fc2677ac50df3cae9a6ed7558962b78e",
+    "action_coordinates": "observation_monster_row",
+    "action_source_sha256": "b56547879d761e26c0179ff1cfdfb17e737751130724ba4e4f8dca589bfa3ac3",
+    "state_decoder_sha256": "eca8839a563ea9b5471841af0288f66b88250a627ef0733259511f55ceff3883",
+    "backend_build_sha256": "5f81347346994e460ceaa8e500ff3f08637a33f2eb4a220cff467fc8f6105fa5",
+    "backend_commit": "482b3ef29c93746ada7d6fd0fd16885d7cc30b1f",
+    "backend_observation_version": 4,
+    "backend_observation_dimension": 1761,
+    "backend_actions": 146,
+    "observation_dimension": 3122,
+    "actions": 193
+  },
+  "frozen_interface_sha256": "5def52bee7a9aa97c65aa109e9625892ab2dab89301778b81be931290b4c7ada",
+  "freeze_sha256": "d8f7aeecc1a866da87033a805f3b9eced716565fb9c83a81bd887fce3a427e5c",
+  "formal_release_file": "b0e3df38bc21a6c1895a98c026babe1af1d32395de11856c32b8fcfcc55532a6",
+  "runtime_sha256": "4103779065a1b7fc0d9cb83da7457032e83ff5fa5df623956badfafe7e7fe747",
+  "retail_pairs": [
+    {
+      "seed": 46,
+      "timing": "fast",
+      "case_kind": "archived_targeted_retail",
+      "selected_permanent_positions": [
+        12,
+        6
+      ],
+      "removed_uuid": [
+        "ce9a7f71-c130-4195-b89b-bb71dad5041c",
+        "a79249b7-8e8c-43db-9705-f382f201e545"
+      ],
+      "suffix": [
+        "Shame",
+        "Dagger Throw",
+        "Choke"
+      ],
+      "bound_frames": [
+        {
+          "sequence": 3,
+          "sha256": "72eb37ee171fb34d350f0942ee2fbaf7067a185d9e3ebda7ac1742517b368fc0",
+          "deck": 13,
+          "page": "NEOW_TALK",
+          "action": null,
+          "source": "native_runtime/compact_fixture_neow_transform_seed46/fixture_control/observations/0000",
+          "engine_steps": 0
+        },
+        {
+          "sequence": 4,
+          "sha256": "b0dd9364c8e9bfa04a73e679f1db9afa49cd253e9a38e3f55cdd72af875059cd",
+          "deck": 13,
+          "page": "NEOW_OFFERS",
+          "action": 110,
+          "source": "native_runtime/compact_fixture_neow_transform_seed46/fixture_control/observations/0001",
+          "engine_steps": 0
+        },
+        {
+          "sequence": 5,
+          "sha256": "18ef1f455758fd5d1fc46d24ca8865289499ce5ae006929af5cdafc3df278ab0",
+          "deck": 13,
+          "page": "NEOW_TRANSFORM_GRID",
+          "action": 112,
+          "source": "native_runtime/compact_fixture_neow_transform_seed46/fixture_control/observations/0002",
+          "engine_steps": 1
+        },
+        {
+          "sequence": 6,
+          "sha256": "2a729852a568549ba77d5379148c84d3d3248c52b736e437455f2a248c643308",
+          "deck": 13,
+          "page": "NEOW_TRANSFORM_GRID",
+          "action": 121,
+          "source": "native_runtime/compact_fixture_neow_transform_seed46/fixture_control/observations/0003",
+          "engine_steps": 1
+        },
+        {
+          "sequence": 8,
+          "sha256": "59961587a6e791f59724c61c6bfa6608aad3bc7e944a88624efb81b5f8908ea7",
+          "deck": 14,
+          "page": "NEOW_TRANSFORM_LEAVE",
+          "action": 115,
+          "source": "native_runtime/compact_fixture_neow_transform_seed46/fixture_control/observations/0005",
+          "engine_steps": 3
+        },
+        {
+          "sequence": 9,
+          "sha256": "5808ded036e3efa64776d9c9c760be9c9fbf4c2d2a9675d6f4e852619dee8558",
+          "deck": 14,
+          "page": "DELEGATED",
+          "action": 110,
+          "source": "native_runtime/compact_fixture_neow_transform_seed46/fixture_control/observations/0006",
+          "engine_steps": 3
+        }
+      ],
+      "actual_journal_sha256": "3eefdb46046171bcea279424b212ff946f08654e901d0a6aff5c3ea7cb5d4008",
+      "original_grid_packet_outside_canonical_sequence": {
+        "sequence": 7,
+        "deck_count": 14,
+        "selected": 1,
+        "raw_sha256": "742db80aa6a89f7fa318562481ee5b1db4d146c1d4385a51eab7c830ff4db931"
+      },
+      "actual_inputs": [
+        110,
+        112,
+        121,
+        115,
+        110
+      ]
+    },
+    {
+      "seed": 48,
+      "timing": "settled",
+      "case_kind": "new_targeted_retail",
+      "selected_permanent_positions": [
+        2,
+        1
+      ],
+      "removed_uuid": [
+        "0ff1e8da-21f6-4df2-8e36-8db28a74cebc",
+        "d6d4567f-4291-4fa3-b834-5a5f9fe1fec0"
+      ],
+      "suffix": [
+        "Clumsy",
+        "Venomology",
+        "Wraith Form v2"
+      ],
+      "bound_frames": [
+        {
+          "sequence": 3,
+          "sha256": "5e5791db03a24f0493afa85475daf1b53c646d78616a34904a486612145ef0a6",
+          "deck": 13,
+          "page": "NEOW_TALK",
+          "action": null,
+          "source": "native_runtime/compact_native_r4_neow48_001/fixture_control/observations/talk",
+          "engine_steps": 0
+        },
+        {
+          "sequence": 4,
+          "sha256": "d2db8b2dc6e7528c3bcede36e489ae91e96106315e6fd29f481e84874f906c99",
+          "deck": 13,
+          "page": "NEOW_OFFERS",
+          "action": 110,
+          "source": "native_runtime/compact_native_r4_neow48_001/fixture_control/observations/offer",
+          "engine_steps": 0
+        },
+        {
+          "sequence": 7,
+          "sha256": "ec31ae03836a55f526567b4215d6f8dc9002a9299457da0512f25215f8507a73",
+          "deck": 14,
+          "page": "NEOW_TRANSFORM_GRID",
+          "action": 112,
+          "source": "native_runtime/compact_native_r4_neow48_001/fixture_control/observations/settled_grid",
+          "engine_steps": 1
+        },
+        {
+          "sequence": 8,
+          "sha256": "d566f1523a964649908c11ce235592258b28cda03021c62bcd68785108d02ebd",
+          "deck": 14,
+          "page": "NEOW_TRANSFORM_GRID",
+          "action": 111,
+          "source": "native_runtime/compact_native_r4_neow48_001/fixture_control/observations/after_0",
+          "engine_steps": 1
+        },
+        {
+          "sequence": 9,
+          "sha256": "58715a8d491523d2eaf435f8ae605a19a7b76a1a3473e98215761bce64b4b143",
+          "deck": 14,
+          "page": "NEOW_TRANSFORM_GRID",
+          "action": 111,
+          "source": "native_runtime/compact_native_r4_neow48_001/fixture_control/observations/after_1",
+          "engine_steps": 1
+        },
+        {
+          "sequence": 10,
+          "sha256": "617aaac27edf755c408bb31a1d5386fb65c3f1e2d039d55415670ead81ec4e58",
+          "deck": 14,
+          "page": "NEOW_TRANSFORM_GRID",
+          "action": 111,
+          "source": "native_runtime/compact_native_r4_neow48_001/fixture_control/observations/after_2",
+          "engine_steps": 1
+        },
+        {
+          "sequence": 11,
+          "sha256": "45244cff91d2a341193ae0865bbc5c5b508f3eda1f2b3d0dc698f07142668698",
+          "deck": 14,
+          "page": "NEOW_TRANSFORM_LEAVE",
+          "action": 110,
+          "source": "native_runtime/compact_native_r4_neow48_001/fixture_control/observations/after_3",
+          "engine_steps": 3
+        },
+        {
+          "sequence": 12,
+          "sha256": "9e85899e8e39cb4aa1f1a0153a0f793f2dd3888458443db3f83cddfa0f640ca9",
+          "deck": 14,
+          "page": "DELEGATED",
+          "action": 110,
+          "source": "native_runtime/compact_native_r4_neow48_001/fixture_control/observations/map",
+          "engine_steps": 3
+        }
+      ],
+      "actual_journal_sha256": "2a413557417f5b647f9a9bb08af004090c23470adcc1567af35ef08a3a45bf48",
+      "original_grid_packet_outside_canonical_sequence": {
+        "sequence": 5,
+        "deck_count": 13,
+        "selected": 0,
+        "raw_sha256": "0fb4dd5627bdc3c64ad13da117dabd48ac40569db769f873410e8509ac909dbb"
+      },
+      "actual_inputs": [
+        110,
+        112,
+        111,
+        111,
+        111,
+        110,
+        110
+      ]
+    }
+  ],
+  "scope_checks": [
+    {
+      "seed_u64": "46",
+      "offer": [
+        110,
+        111,
+        112,
+        113
+      ],
+      "grid_rows": 12,
+      "invalid_controls_rejected": [
+        109,
+        122,
+        172,
+        173
+      ],
+      "stale_rejected": true,
+      "wrong_version_rejected": true,
+      "repeat_click_undo": true
+    },
+    {
+      "seed_u64": "48",
+      "offer": [
+        110,
+        111,
+        112,
+        113
+      ],
+      "grid_rows": 12,
+      "invalid_controls_rejected": [
+        109,
+        122,
+        172,
+        173
+      ],
+      "stale_rejected": true,
+      "wrong_version_rejected": true,
+      "repeat_click_undo": true
+    },
+    {
+      "seed_u64": "10679156812119886636",
+      "offer": [
+        110,
+        111,
+        112,
+        113
+      ],
+      "grid_rows": 12,
+      "invalid_controls_rejected": [
+        109,
+        122,
+        172,
+        173
+      ],
+      "stale_rejected": true,
+      "wrong_version_rejected": true,
+      "repeat_click_undo": true
+    }
+  ],
+  "affirmed_curse_ordered_pairs": 264,
+  "previous_noncursed_ordered_pairs": 1452,
+  "simulated_cases": [
+    {
+      "seed": 15,
+      "pairs": 132,
+      "timing": "settled",
+      "resulting_wire_cards": [
+        [
+          173,
+          0
+        ],
+        [
+          231,
+          0
+        ]
+      ]
+    },
+    {
+      "seed": 16,
+      "pairs": 132,
+      "timing": "settled",
+      "resulting_wire_cards": [
+        [
+          55,
+          0
+        ],
+        [
+          112,
+          0
+        ]
+      ]
+    },
+    {
+      "seed": 20,
+      "pairs": 132,
+      "timing": "settled",
+      "resulting_wire_cards": [
+        [
+          54,
+          0
+        ],
+        [
+          96,
+          0
+        ]
+      ]
+    },
+    {
+      "seed": 29,
+      "pairs": 132,
+      "timing": "settled",
+      "resulting_wire_cards": [
+        [
+          215,
+          0
+        ],
+        [
+          140,
+          0
+        ]
+      ]
+    },
+    {
+      "seed": 35,
+      "pairs": 132,
+      "timing": "settled",
+      "resulting_wire_cards": [
+        [
+          45,
+          0
+        ],
+        [
+          247,
+          0
+        ]
+      ]
+    },
+    {
+      "seed": 44,
+      "pairs": 132,
+      "timing": "settled",
+      "resulting_wire_cards": [
+        [
+          183,
+          0
+        ],
+        [
+          87,
+          0
+        ]
+      ]
+    },
+    {
+      "seed": 45,
+      "pairs": 132,
+      "timing": "settled",
+      "resulting_wire_cards": [
+        [
+          19,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ]
+    },
+    {
+      "seed": 46,
+      "pairs": 132,
+      "timing": "fast",
+      "resulting_wire_cards": [
+        [
+          299,
+          0
+        ],
+        [
+          92,
+          0
+        ],
+        [
+          64,
+          0
+        ]
+      ]
+    },
+    {
+      "seed": 48,
+      "pairs": 132,
+      "timing": "settled",
+      "resulting_wire_cards": [
+        [
+          71,
+          0
+        ],
+        [
+          7,
+          0
+        ],
+        [
+          368,
+          0
+        ]
+      ]
+    },
+    {
+      "seed": 52,
+      "pairs": 132,
+      "timing": "settled",
+      "resulting_wire_cards": [
+        [
+          238,
+          0
+        ],
+        [
+          152,
+          0
+        ]
+      ]
+    },
+    {
+      "seed": 58,
+      "pairs": 132,
+      "timing": "settled",
+      "resulting_wire_cards": [
+        [
+          5,
+          0
+        ],
+        [
+          91,
+          0
+        ]
+      ]
+    },
+    {
+      "seed": 61,
+      "pairs": 132,
+      "timing": "settled",
+      "resulting_wire_cards": [
+        [
+          248,
+          0
+        ],
+        [
+          131,
+          0
+        ]
+      ]
+    },
+    {
+      "seed": 63,
+      "pairs": 132,
+      "timing": "settled",
+      "resulting_wire_cards": [
+        [
+          307,
+          0
+        ],
+        [
+          91,
+          0
+        ]
+      ]
+    }
+  ],
+  "retail_rng_reference": "d64b87ca1700dc351796d44c1b886e97b5f51687694af34aad42c00b9ad55d25",
+  "ordered_pairs_reference": "b139bbc23dacea90ae376828532ae4040f1a452d82d320426fc74dfc596fb6d0",
+  "hidden_or_ui_policy": "settled replays the actual post-award decision. fast preserves seed 46 first two fast grid decisions; no wall-clock equivalence claim."
+}

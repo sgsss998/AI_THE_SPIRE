@@ -1,0 +1,16 @@
+{
+  "utc": "2026-11-21T18:12:01.731709+00:00",
+  "components": {
+    "release.py": "b0e3df38bc21a6c1895a98c026babe1af1d32395de11856c32b8fcfcc55532a6",
+    "neow/session.py": "4103779065a1b7fc0d9cb83da7457032e83ff5fa5df623956badfafe7e7fe747",
+    "death/session.py": "810a81194bc3fc5a0c03a44c4825ab00c9eb4d65dfb9490bd3c089c38fe3bcc9",
+    "events/serpent.py": "212be0bfb41805d1dcd0f1215ba3c6344004099353d04539f9c7a0332c23dc08"
+  },
+  "default_neow_timing": "settled",
+  "supported_timing": [
+    "settled",
+    "fast"
+  ],
+  "parent": "e24f78449d883fbf74d6c2e41a4b2cc6cf4a5e50",
+  "training_updates": 0
+}

@@ -1,0 +1,1193 @@
+{
+  "interface": {
+    "state_version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1",
+    "state_sha256": "3ff6962afbb713ba85160f282d370a28e865c5207c741897a8a9e4f091614bcb",
+    "card_registry_sha256": "cc7dd2446135675ad273bbdc09914909f8ab1c0aca854a8c00dd3d8b6f91a26a",
+    "action_version": "silent-canonical-row-a193-v1",
+    "action_adapter_version": "canonical-row-choice64-v1+frontier-settled+compact-decisions-v2+public-transitions-v1+ordinary-events-rewards-v1+shop-reward-discard-gold-and-death-settlement-v1+ending-route-paid-neow-permanent-upgrade-cancel-and-complete-card-masks-v2+ordinary-targets-and-victory-loot-v1+match-poison-and-idol-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+settled-neow-and-linked-chest-rewards-v1+round1-flex-chest-v1+round2-v1+round3-calibration-v1+silent-a20-round4-v1",
+    "action_contract_sha256": "0ae8ba53dfdde48ad0f4a4ae03cfd045fc2677ac50df3cae9a6ed7558962b78e",
+    "action_coordinates": "observation_monster_row",
+    "action_source_sha256": "b56547879d761e26c0179ff1cfdfb17e737751130724ba4e4f8dca589bfa3ac3",
+    "state_decoder_sha256": "eca8839a563ea9b5471841af0288f66b88250a627ef0733259511f55ceff3883",
+    "backend_build_sha256": "5f81347346994e460ceaa8e500ff3f08637a33f2eb4a220cff467fc8f6105fa5",
+    "backend_commit": "482b3ef29c93746ada7d6fd0fd16885d7cc30b1f",
+    "backend_observation_version": 4,
+    "backend_observation_dimension": 1761,
+    "backend_actions": 146,
+    "observation_dimension": 3122,
+    "actions": 193
+  },
+  "final_interface": true,
+  "source_sha": "810a81194bc3fc5a0c03a44c4825ab00c9eb4d65dfb9490bd3c089c38fe3bcc9",
+  "cases": [
+    {
+      "seed": 19,
+      "actual_actions": 131,
+      "prefix_inputs": 129,
+      "action": {
+        "role": "follow",
+        "model_index": 129,
+        "model_action": 170,
+        "real_action": 170,
+        "command": "end",
+        "request": "7d26fd37-7fdd-4db1-877a-c8e6120d6ab2",
+        "before": 133,
+        "after": 134,
+        "before_hash": "63ce0570b942b7b0235b10cd20d8503cb3ab8389edd9086d838e399453273f2e",
+        "after_hash": "348f51ba7654f427cb6ae99a749696f12b51871eeb7afd73bc73e72007fbc6cf",
+        "identity": {
+          "binding": "same explicit control/potion slot",
+          "control": 170
+        }
+      },
+      "matching_before": {
+        "hp": 4,
+        "block": 5,
+        "energy": 0,
+        "turn": 3,
+        "vulnerable": 2,
+        "enemies": [
+          [
+            15,
+            27,
+            0,
+            2
+          ],
+          [
+            0,
+            27,
+            0,
+            2
+          ]
+        ]
+      },
+      "matching_immediate_after": {
+        "hp": 0,
+        "block": 0,
+        "energy": 0,
+        "turn": 3,
+        "vulnerable": 2,
+        "enemies": [
+          [
+            15,
+            27,
+            0,
+            2
+          ],
+          [
+            0,
+            27,
+            0,
+            0
+          ]
+        ]
+      },
+      "native_after_passive_query": {
+        "hp": 0,
+        "block": 0,
+        "energy": 0,
+        "turn": 3,
+        "vulnerable": 2,
+        "enemies": [
+          [
+            15,
+            27,
+            0,
+            2
+          ],
+          [
+            0,
+            27,
+            0,
+            0
+          ]
+        ]
+      },
+      "immediate_strength": [
+        5,
+        0
+      ],
+      "passive_strength": [
+        5,
+        0
+      ],
+      "immediate_dead_flag": true,
+      "passive_dead_flag": true,
+      "physical_bindings": {
+        "card": [
+          "Strike_G",
+          0
+        ],
+        "native_slot": 2,
+        "model_slot": 2,
+        "occurrence": 0,
+        "target": "fungibeast",
+        "native_target": 1,
+        "model_target": 1
+      },
+      "original_partial_actions": [
+        170
+      ],
+      "reward_conditioned": false,
+      "real_terminal": true,
+      "game_over": {
+        "score": 86,
+        "victory": false
+      },
+      "archive_hashes": {
+        "native_runtime/compact_fixture_r4_fungi_19/r4_death/RESULT.json": "c6432fddadc7cef8b049b65afdf552aafaf320c7bf0a2930b011da001b9c374f",
+        "native_runtime/compact_fixture_r4_fungi_19/r4_death/SETTLED.json": "33806f00f81b9f2a48ee40e9d0732c67036792b3c233fd30026905ddad12c81e",
+        "native_runtime/compact_fixture_r4_fungi_19/r4_death/actions.jsonl": "63c3bbcb9599b6279f024baa9e694386e52571eeb7e2ce6f2dbc9745221d0ccf",
+        "native_runtime/compact_fixture_r4_fungi_19/bridge/sessions/a3228cab-02a1-42b6-a5cb-324b8da823a4/raw.jsonl": "049c7292206a8f111fd5d3264ffb9890a6c62f292e10c6108c80d762079e8c9f",
+        "native_runtime/compact_fixture_r4_fungi_19/bridge/sessions/a3228cab-02a1-42b6-a5cb-324b8da823a4/attempts.jsonl": "99bc54aaf3f053d4daa57261cf301dcde4555d1313692d04daf2201a765f5c64",
+        "native_runtime/compact_fixture_r4_fungi_19/target.json": "a05064354c75a6278dfc4ff54b78c2d3fc3d6c6acb087710580163fb19f574bb",
+        "native_runtime/compact_fixture_r4_fungi_19/fixture_receipt.json": "04bb60c984e6990da564a84c5f53d5919edcb7a5909860508cd1cad6b5a7bbff",
+        "native_runtime/compact_fixture_r4_fungi_19/process_exit.json": "0e3685db15ba1a566a38cb1a5eb06037c58fb030de649221070fe7e9cbe26780"
+      }
+    },
+    {
+      "seed": 59,
+      "actual_actions": 85,
+      "prefix_inputs": 84,
+      "action": {
+        "role": "follow",
+        "model_index": 84,
+        "model_action": 23,
+        "real_action": 23,
+        "command": "play 4 1",
+        "request": "2a3c1fe4-2773-4613-a16b-a45ec88e5a1f",
+        "before": 87,
+        "after": 88,
+        "before_hash": "08988d8023595ff3047ce6b51f6e8fc550dc610ae484229fe4efff2450f8c01d",
+        "after_hash": "bb06d69d65f7725341926cbeb7e428f16b189f06ea68644879e665f5b2850020",
+        "identity": {
+          "card": [
+            "Strike_G",
+            0
+          ],
+          "native_slot": 3,
+          "model_slot": 3,
+          "occurrence": 0,
+          "target": "fungibeast",
+          "native_target": 1,
+          "model_target": 1
+        }
+      },
+      "matching_before": {
+        "hp": 38,
+        "block": 0,
+        "energy": 3,
+        "turn": 2,
+        "vulnerable": 2,
+        "enemies": [
+          [
+            0,
+            24,
+            0,
+            2
+          ],
+          [
+            22,
+            28,
+            0,
+            2
+          ]
+        ]
+      },
+      "matching_immediate_after": {
+        "hp": 38,
+        "block": 0,
+        "energy": 2,
+        "turn": 2,
+        "vulnerable": 2,
+        "enemies": [
+          [
+            0,
+            24,
+            0,
+            2
+          ],
+          [
+            16,
+            28,
+            0,
+            2
+          ]
+        ]
+      },
+      "native_after_passive_query": {
+        "hp": 38,
+        "block": 0,
+        "energy": 2,
+        "turn": 2,
+        "vulnerable": 2,
+        "enemies": [
+          [
+            0,
+            24,
+            0,
+            0
+          ],
+          [
+            16,
+            28,
+            0,
+            2
+          ]
+        ]
+      },
+      "immediate_strength": [
+        5,
+        0
+      ],
+      "passive_strength": [
+        0,
+        0
+      ],
+      "immediate_dead_flag": false,
+      "passive_dead_flag": true,
+      "physical_bindings": {
+        "card": [
+          "Strike_G",
+          0
+        ],
+        "native_slot": 6,
+        "model_slot": 6,
+        "occurrence": 1,
+        "target": "fungibeast",
+        "native_target": 0,
+        "model_target": 0
+      },
+      "original_partial_actions": [
+        0,
+        1,
+        2,
+        4,
+        23,
+        70,
+        105,
+        170
+      ],
+      "reward_conditioned": false,
+      "real_terminal": false,
+      "game_over": {},
+      "archive_hashes": {
+        "native_runtime/compact_fixture_r4_fungi_59/r4_death/RESULT.json": "49e61157e0a67a03eddd25a633df6930c665743af3c254b61eaf1836cd5ec375",
+        "native_runtime/compact_fixture_r4_fungi_59/r4_death/SETTLED.json": "4d638f0be0b27c8a2b8c94f105424ff7ce34a1aadb57c74ace829616015366e0",
+        "native_runtime/compact_fixture_r4_fungi_59/r4_death/actions.jsonl": "452c55ce7561b260c3ffc2dab65e5ef2db106c11488fc94ed664e5280589a86d",
+        "native_runtime/compact_fixture_r4_fungi_59/bridge/sessions/e58f0aad-2311-476e-b2ed-7a5d57001f4d/raw.jsonl": "e18d83f069598a1f7ba517c7f7c2cb8fe9130d0cb9f1f530b45425521cac533d",
+        "native_runtime/compact_fixture_r4_fungi_59/bridge/sessions/e58f0aad-2311-476e-b2ed-7a5d57001f4d/attempts.jsonl": "7f03dfaf89775bffe2d86084b77213b61f541d2568e4202fdbc75d8abf6a2c48",
+        "native_runtime/compact_fixture_r4_fungi_59/target.json": "0758684a80d251009d2651364f9ecd1e8f3092fceeb8f13659193f2106e815ea",
+        "native_runtime/compact_fixture_r4_fungi_59/fixture_receipt.json": "1aea1c618b0817b677785fea2bd4a6c2b8ff30780b9f39a9b572be09863a3472",
+        "native_runtime/compact_fixture_r4_fungi_59/process_exit.json": "c6b1bbcf8d68259a2d4ac604edff676513d975a0d8cd27f507ee2f3808f21a98"
+      }
+    }
+  ],
+  "fixed_original_cases": 20,
+  "formerly_open": 1,
+  "fixed_now_open": 6,
+  "fixed_newly_open": 5,
+  "fixed_successor_terminals": 1,
+  "rows": [
+    {
+      "seed": 19,
+      "old_prefix": 129,
+      "old_prefix_complete": true,
+      "advanced": true,
+      "available": [
+        170
+      ],
+      "initial_gaps": [
+        "spore_strike_or_end_other_actions_unverified"
+      ],
+      "width": 3122,
+      "version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1",
+      "after": {
+        "hp": 0,
+        "block": 0,
+        "energy": 0,
+        "turn": 3,
+        "vulnerable": 2,
+        "enemies": [
+          [
+            15,
+            27,
+            0,
+            2
+          ],
+          [
+            0,
+            27,
+            0,
+            0
+          ]
+        ]
+      },
+      "before": {
+        "hp": 4,
+        "block": 5,
+        "energy": 0,
+        "turn": 3,
+        "vulnerable": 2,
+        "enemies": [
+          [
+            15,
+            27,
+            0,
+            2
+          ],
+          [
+            0,
+            27,
+            0,
+            2
+          ]
+        ]
+      },
+      "next_supported": [],
+      "next_gaps": [],
+      "terminal": true,
+      "lost": true,
+      "strength_after": [
+        5,
+        0
+      ],
+      "cohort": "fixed",
+      "old_opened": false
+    },
+    {
+      "seed": 55,
+      "old_prefix": 137,
+      "old_prefix_complete": true,
+      "advanced": false,
+      "available": [],
+      "initial_gaps": [
+        "death_boundary_unknown"
+      ],
+      "width": 3122,
+      "version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1",
+      "cohort": "fixed",
+      "old_opened": false
+    },
+    {
+      "seed": 59,
+      "old_prefix": 84,
+      "old_prefix_complete": true,
+      "advanced": true,
+      "available": [
+        23
+      ],
+      "initial_gaps": [
+        "spore_strike_or_end_other_actions_unverified"
+      ],
+      "width": 3122,
+      "version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1",
+      "after": {
+        "hp": 38,
+        "block": 0,
+        "energy": 2,
+        "turn": 2,
+        "vulnerable": 2,
+        "enemies": [
+          [
+            0,
+            24,
+            0,
+            2
+          ],
+          [
+            16,
+            28,
+            0,
+            2
+          ]
+        ]
+      },
+      "before": {
+        "hp": 38,
+        "block": 0,
+        "energy": 3,
+        "turn": 2,
+        "vulnerable": 2,
+        "enemies": [
+          [
+            0,
+            24,
+            0,
+            2
+          ],
+          [
+            22,
+            28,
+            0,
+            2
+          ]
+        ]
+      },
+      "next_supported": [],
+      "next_gaps": [
+        "death_boundary_unknown"
+      ],
+      "terminal": false,
+      "lost": false,
+      "strength_after": [
+        5,
+        0
+      ],
+      "cohort": "fixed",
+      "old_opened": false
+    },
+    {
+      "seed": 1000027,
+      "old_prefix": 96,
+      "old_prefix_complete": true,
+      "advanced": false,
+      "available": [],
+      "initial_gaps": [
+        "death_boundary_unknown"
+      ],
+      "width": 3122,
+      "version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1",
+      "cohort": "fixed",
+      "old_opened": false
+    },
+    {
+      "seed": 1000061,
+      "old_prefix": 138,
+      "old_prefix_complete": true,
+      "advanced": false,
+      "available": [],
+      "initial_gaps": [
+        "death_boundary_unknown"
+      ],
+      "width": 3122,
+      "version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1",
+      "cohort": "fixed",
+      "old_opened": false
+    },
+    {
+      "seed": 2000040,
+      "old_prefix": 100,
+      "old_prefix_complete": true,
+      "advanced": true,
+      "available": [
+        21
+      ],
+      "initial_gaps": [
+        "spore_strike_or_end_other_actions_unverified"
+      ],
+      "width": 3122,
+      "version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1",
+      "after": {
+        "hp": 5,
+        "block": 0,
+        "energy": 1,
+        "turn": 4,
+        "vulnerable": 2,
+        "enemies": [
+          [
+            0,
+            27,
+            0,
+            2
+          ],
+          [
+            16,
+            28,
+            0,
+            2
+          ]
+        ]
+      },
+      "before": {
+        "hp": 5,
+        "block": 0,
+        "energy": 2,
+        "turn": 4,
+        "vulnerable": 2,
+        "enemies": [
+          [
+            0,
+            27,
+            0,
+            2
+          ],
+          [
+            22,
+            28,
+            0,
+            2
+          ]
+        ]
+      },
+      "next_supported": [],
+      "next_gaps": [
+        "death_boundary_unknown"
+      ],
+      "terminal": false,
+      "lost": false,
+      "strength_after": [
+        5,
+        5
+      ],
+      "cohort": "fixed",
+      "old_opened": false
+    },
+    {
+      "seed": 2000054,
+      "old_prefix": 124,
+      "old_prefix_complete": true,
+      "advanced": false,
+      "available": [],
+      "initial_gaps": [
+        "death_boundary_unknown"
+      ],
+      "width": 3122,
+      "version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1",
+      "cohort": "fixed",
+      "old_opened": false
+    },
+    {
+      "seed": 2000066,
+      "old_prefix": 141,
+      "old_prefix_complete": true,
+      "advanced": false,
+      "available": [],
+      "initial_gaps": [
+        "death_boundary_unknown"
+      ],
+      "width": 3122,
+      "version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1",
+      "cohort": "fixed",
+      "old_opened": false
+    },
+    {
+      "seed": 3000017,
+      "old_prefix": 119,
+      "old_prefix_complete": true,
+      "advanced": true,
+      "available": [
+        21
+      ],
+      "initial_gaps": [
+        "spore_strike_or_end_other_actions_unverified"
+      ],
+      "width": 3122,
+      "version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1",
+      "after": {
+        "hp": 16,
+        "block": 0,
+        "energy": 1,
+        "turn": 3,
+        "vulnerable": 2,
+        "enemies": [
+          [
+            0,
+            27,
+            0,
+            2
+          ],
+          [
+            16,
+            28,
+            0,
+            2
+          ]
+        ]
+      },
+      "before": {
+        "hp": 16,
+        "block": 0,
+        "energy": 2,
+        "turn": 3,
+        "vulnerable": 2,
+        "enemies": [
+          [
+            0,
+            27,
+            0,
+            2
+          ],
+          [
+            22,
+            28,
+            0,
+            2
+          ]
+        ]
+      },
+      "next_supported": [],
+      "next_gaps": [
+        "death_boundary_unknown"
+      ],
+      "terminal": false,
+      "lost": false,
+      "strength_after": [
+        5,
+        0
+      ],
+      "cohort": "fixed",
+      "old_opened": false
+    },
+    {
+      "seed": 3000040,
+      "old_prefix": 97,
+      "old_prefix_complete": true,
+      "advanced": false,
+      "available": [],
+      "initial_gaps": [
+        "death_boundary_unknown"
+      ],
+      "width": 3122,
+      "version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1",
+      "cohort": "fixed",
+      "old_opened": false
+    },
+    {
+      "seed": 3000046,
+      "old_prefix": 91,
+      "old_prefix_complete": true,
+      "advanced": false,
+      "available": [],
+      "initial_gaps": [
+        "death_boundary_unknown"
+      ],
+      "width": 3122,
+      "version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1",
+      "cohort": "fixed",
+      "old_opened": false
+    },
+    {
+      "seed": 4000037,
+      "old_prefix": 113,
+      "old_prefix_complete": true,
+      "advanced": false,
+      "available": [],
+      "initial_gaps": [
+        "death_boundary_unknown"
+      ],
+      "width": 3122,
+      "version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1",
+      "cohort": "fixed",
+      "old_opened": false
+    },
+    {
+      "seed": 5000006,
+      "old_prefix": 106,
+      "old_prefix_complete": true,
+      "advanced": false,
+      "available": [],
+      "initial_gaps": [
+        "death_boundary_unknown"
+      ],
+      "width": 3122,
+      "version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1",
+      "cohort": "fixed",
+      "old_opened": false
+    },
+    {
+      "seed": 6000018,
+      "old_prefix": 114,
+      "old_prefix_complete": true,
+      "advanced": true,
+      "available": [
+        20
+      ],
+      "initial_gaps": [
+        "spore_strike_or_end_other_actions_unverified"
+      ],
+      "width": 3122,
+      "version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1",
+      "after": {
+        "hp": 46,
+        "block": 0,
+        "energy": 0,
+        "turn": 1,
+        "vulnerable": 0,
+        "enemies": []
+      },
+      "before": {
+        "hp": 46,
+        "block": 0,
+        "energy": 2,
+        "turn": 4,
+        "vulnerable": 2,
+        "enemies": [
+          [
+            0,
+            24,
+            0,
+            2
+          ],
+          [
+            6,
+            28,
+            0,
+            2
+          ]
+        ]
+      },
+      "next_supported": [],
+      "next_gaps": [
+        "reward_page_semantics_unverified"
+      ],
+      "terminal": false,
+      "lost": false,
+      "strength_after": [],
+      "cohort": "fixed",
+      "old_opened": false
+    },
+    {
+      "seed": 6000040,
+      "old_prefix": 45,
+      "old_prefix_complete": true,
+      "advanced": false,
+      "available": [],
+      "initial_gaps": [
+        "death_boundary_unknown"
+      ],
+      "width": 3122,
+      "version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1",
+      "cohort": "fixed",
+      "old_opened": false
+    },
+    {
+      "seed": 6000065,
+      "old_prefix": 108,
+      "old_prefix_complete": true,
+      "advanced": false,
+      "available": [],
+      "initial_gaps": [
+        "death_boundary_unknown"
+      ],
+      "width": 3122,
+      "version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1",
+      "cohort": "fixed",
+      "old_opened": false
+    },
+    {
+      "seed": 7000032,
+      "old_prefix": 185,
+      "old_prefix_complete": true,
+      "advanced": false,
+      "available": [],
+      "initial_gaps": [
+        "death_boundary_unknown"
+      ],
+      "width": 3122,
+      "version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1",
+      "cohort": "fixed",
+      "old_opened": false
+    },
+    {
+      "seed": 7000035,
+      "old_prefix": 96,
+      "old_prefix_complete": true,
+      "advanced": false,
+      "available": [],
+      "initial_gaps": [
+        "death_boundary_unknown"
+      ],
+      "width": 3122,
+      "version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1",
+      "cohort": "fixed",
+      "old_opened": false
+    },
+    {
+      "seed": 9000008,
+      "old_prefix": 165,
+      "old_prefix_complete": true,
+      "advanced": false,
+      "available": [],
+      "initial_gaps": [
+        "death_boundary_unknown"
+      ],
+      "width": 3122,
+      "version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1",
+      "cohort": "fixed",
+      "old_opened": false
+    },
+    {
+      "seed": 9000020,
+      "old_prefix": 102,
+      "old_prefix_complete": true,
+      "advanced": true,
+      "available": [
+        10
+      ],
+      "initial_gaps": [
+        "spore_followup_other_actions_unverified"
+      ],
+      "width": 3122,
+      "version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1",
+      "after": {
+        "hp": 15,
+        "block": 0,
+        "energy": 1,
+        "turn": 2,
+        "vulnerable": 2,
+        "enemies": [
+          [
+            16,
+            25,
+            0,
+            2
+          ],
+          [
+            0,
+            24,
+            0,
+            0
+          ]
+        ]
+      },
+      "before": {
+        "hp": 15,
+        "block": 0,
+        "energy": 2,
+        "turn": 2,
+        "vulnerable": 2,
+        "enemies": [
+          [
+            25,
+            25,
+            0,
+            2
+          ],
+          [
+            0,
+            24,
+            0,
+            2
+          ]
+        ]
+      },
+      "next_supported": [],
+      "next_gaps": [
+        "death_boundary_unknown"
+      ],
+      "terminal": false,
+      "lost": false,
+      "strength_after": [
+        0,
+        0
+      ],
+      "cohort": "fixed",
+      "old_opened": true
+    },
+    {
+      "seed": 17000028,
+      "old_prefix": 28,
+      "old_prefix_complete": true,
+      "advanced": false,
+      "available": [],
+      "initial_gaps": [
+        "death_boundary_unknown"
+      ],
+      "width": 3122,
+      "version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1",
+      "cohort": "additional",
+      "old_opened": false
+    }
+  ],
+  "controls": [
+    {
+      "seed": 54072726,
+      "sequence": 335,
+      "original_raw_sha256": "ec5082d2695f785e3dc42db77778674769341b5859200c3663ade772d600641a",
+      "lethal_receipt": {
+        "sequence": 334,
+        "action": 2,
+        "command": "play 3",
+        "before_hash": "ddfde8ead32f4f4ecefd0ecd4fc27fb20c09a1104fa321f312c2ab206d34ae1f",
+        "after_hash": "fec4fa4932971a9119a5f5d2be795cf0dfc53e3713c2610a73773fd536f52549",
+        "receipt_sha256": "1bb09f57df4caae8006339bcadbf64a93cea6d9419c6f11f8d3c08801a53796c",
+        "request_id": "6348d2f9-6dd4-4f86-9944-81ef94fadd66"
+      },
+      "follow_receipt": {
+        "sequence": 335,
+        "action": 170,
+        "command": "end",
+        "before_hash": "fec4fa4932971a9119a5f5d2be795cf0dfc53e3713c2610a73773fd536f52549",
+        "after_hash": "19f84b2e8c860d7ad91d864f66670c5628a624e9322b616af440836fa9250a2d",
+        "receipt_sha256": "9939e548f9b5ccabbf4dedc08a5531b45af643f8d86f0a7d0e24330fa8a2af52",
+        "request_id": "7ed9ecde-32da-4cab-b75d-5515bae964fb"
+      },
+      "original_before": {
+        "hp": 42,
+        "block": 13,
+        "energy": 0,
+        "turn": 3,
+        "vulnerable": 2,
+        "enemies": [
+          [
+            0,
+            24,
+            0,
+            2
+          ],
+          [
+            10,
+            28,
+            0,
+            2
+          ],
+          [
+            10,
+            28,
+            0,
+            2
+          ]
+        ]
+      },
+      "original_after": {
+        "hp": 39,
+        "block": 0,
+        "energy": 3,
+        "turn": 4,
+        "vulnerable": 1,
+        "enemies": [
+          [
+            0,
+            24,
+            0,
+            0
+          ],
+          [
+            10,
+            28,
+            0,
+            2
+          ],
+          [
+            10,
+            28,
+            0,
+            2
+          ]
+        ]
+      },
+      "r3": {
+        "a": 170,
+        "mask": [
+          170
+        ],
+        "prev": {
+          "hp": 42,
+          "block": 13,
+          "energy": 0,
+          "turn": 3,
+          "vulnerable": 2,
+          "enemies": [
+            [
+              0,
+              24,
+              0,
+              2
+            ],
+            [
+              10,
+              28,
+              0,
+              2
+            ],
+            [
+              10,
+              28,
+              0,
+              2
+            ]
+          ]
+        },
+        "after": {
+          "hp": 39,
+          "block": 0,
+          "energy": 3,
+          "turn": 4,
+          "vulnerable": 1,
+          "enemies": [
+            [
+              0,
+              24,
+              0,
+              0
+            ],
+            [
+              10,
+              28,
+              0,
+              2
+            ],
+            [
+              10,
+              28,
+              0,
+              2
+            ]
+          ]
+        },
+        "next_mask": [],
+        "ticks": [
+          132,
+          133
+        ],
+        "state_version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1",
+        "full_mask_known": false,
+        "width": 3122,
+        "shape_after": 3122,
+        "split_before": [
+          null,
+          false,
+          false,
+          null,
+          null
+        ],
+        "split_after": [
+          null,
+          false,
+          false,
+          null,
+          null
+        ]
+      }
+    },
+    {
+      "seed": 54073952,
+      "sequence": 526,
+      "original_raw_sha256": "dc72925c684e778e4ea2e31501a68f3efc53b92a1d483a9acbe40e3c5698dd04",
+      "lethal_receipt": {
+        "sequence": 525,
+        "action": 20,
+        "command": "play 1 1",
+        "before_hash": "e5fbc10349c0f2936d0be1d16a6a4bc6a851bc21a82221b4100958bb81ed0355",
+        "after_hash": "c3726b4ca1f5f728f2a960906f4eade904cf7bfd0d787d44be50e0ba36507f99",
+        "receipt_sha256": "e9a690bb1c3c268e248797524508969fd9ee2986ab5accdde2a43560e4a6ee33",
+        "request_id": "3464be4f-7abf-40e1-8070-431d5b9cd779"
+      },
+      "follow_receipt": {
+        "sequence": 526,
+        "action": 10,
+        "command": "play 1 0",
+        "before_hash": "c3726b4ca1f5f728f2a960906f4eade904cf7bfd0d787d44be50e0ba36507f99",
+        "after_hash": "c8949bb00e407d3af55116a1ea514002b4facd712813ce79cc58509d290acfef",
+        "receipt_sha256": "8c80a0fd1319a6890aa6edb114a2adb9a156e1f1cb6254d0d28aab2fdaa818e7",
+        "request_id": "2f5416b3-d7cc-4024-903f-a7b147d0029a"
+      },
+      "original_before": {
+        "hp": 57,
+        "block": 19,
+        "energy": 3,
+        "turn": 2,
+        "vulnerable": 2,
+        "enemies": [
+          [
+            26,
+            26,
+            0,
+            2
+          ],
+          [
+            0,
+            24,
+            0,
+            2
+          ]
+        ]
+      },
+      "original_after": {
+        "hp": 57,
+        "block": 19,
+        "energy": 2,
+        "turn": 2,
+        "vulnerable": 2,
+        "enemies": [
+          [
+            17,
+            26,
+            0,
+            2
+          ],
+          [
+            0,
+            24,
+            0,
+            0
+          ]
+        ]
+      },
+      "r3": {
+        "a": 10,
+        "mask": [
+          10
+        ],
+        "prev": {
+          "hp": 57,
+          "block": 19,
+          "energy": 3,
+          "turn": 2,
+          "vulnerable": 2,
+          "enemies": [
+            [
+              26,
+              26,
+              0,
+              2
+            ],
+            [
+              0,
+              24,
+              0,
+              2
+            ]
+          ]
+        },
+        "after": {
+          "hp": 57,
+          "block": 19,
+          "energy": 2,
+          "turn": 2,
+          "vulnerable": 2,
+          "enemies": [
+            [
+              17,
+              26,
+              0,
+              2
+            ],
+            [
+              0,
+              24,
+              0,
+              0
+            ]
+          ]
+        },
+        "next_mask": [],
+        "ticks": [
+          116,
+          117
+        ],
+        "state_version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1",
+        "full_mask_known": false,
+        "width": 3122,
+        "shape_after": 3122,
+        "split_before": [
+          false,
+          null,
+          null,
+          null,
+          null
+        ],
+        "split_after": [
+          false,
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    }
+  ],
+  "passive_query_limitation": "Seed 59's R4 step returns the immediate original state. The later wall-clock animation completion alone does not generate a model decision.",
+  "training_updates": 0
+}
