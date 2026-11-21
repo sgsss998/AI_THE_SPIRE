@@ -1,0 +1,6670 @@
+{
+  "seed_unsigned": "10679156812119886636",
+  "signature_unchanged": true,
+  "original_actions_available": 93,
+  "replayed": 90,
+  "native_only_acknowledgements": 3,
+  "first_state_difference": {
+    "index": 49,
+    "phase": "after",
+    "differences": {
+      "page": {
+        "model": 5,
+        "original": 1
+      }
+    }
+  },
+  "first_action_set_difference": {
+    "index": 2,
+    "model": [
+      110,
+      111,
+      113
+    ],
+    "original": [
+      110,
+      111,
+      112,
+      113
+    ],
+    "navigation_only_difference": [],
+    "missing_in_model": [
+      112
+    ],
+    "extra_in_model": [],
+    "evidence_status": "reported_masks_not_all_actions_exercised"
+  },
+  "first_missing_public_action": null,
+  "stopped_at": null,
+  "frame_statistics": {
+    "all_actual_frames": {
+      "frames": 94,
+      "equal_frames": 91,
+      "field_groups": 1187,
+      "equal_field_groups": 1182
+    },
+    "frames_for_nonrepetitive_inputs": {
+      "frames": 94,
+      "equal_frames": 91,
+      "field_groups": 1187,
+      "equal_field_groups": 1182
+    }
+  },
+  "source_sha256": "c91d2f09e727375282ab520be46672976ce65a5230adb09437eb3603e936c479",
+  "original_seed_receipt": {
+    "signed": "-7767587261589664980",
+    "unsigned": "10679156812119886636",
+    "seed_argument": null,
+    "in_previous_inventory": false,
+    "inventory_sha256": "82edb67fc95152963647499c45021a3a39bd6054e5b70331184308acd2605ae5",
+    "before_simulator": true
+  },
+  "decisions": [
+    {
+      "index": 1,
+      "command": "choose 0",
+      "mapped_aid": 110,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          0,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          0,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          0,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          0,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          110
+        ],
+        "original": [
+          110
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 2,
+      "command": "choose 0",
+      "mapped_aid": 110,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          0,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          0,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          0,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          0,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          110,
+          111,
+          113
+        ],
+        "original": [
+          110,
+          111,
+          112,
+          113
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [
+          112
+        ],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 3,
+      "command": "choose 0",
+      "mapped_aid": 110,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          0,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          0,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          0,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          0,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121
+        ],
+        "original": [
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 4,
+      "command": "confirm",
+      "mapped_aid": 172,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          0,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          0,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          0,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          0,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          172
+        ],
+        "original": [
+          172,
+          173
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [
+          173
+        ],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 5,
+      "command": "choose 0",
+      "mapped_aid": 110,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          0,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          0,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {
+          "pre_first_node_x_sentinel": {
+            "model": [
+              -1,
+              -1
+            ],
+            "original": [
+              0,
+              -1
+            ]
+          }
+        },
+        "original_resources": [
+          59,
+          66,
+          99,
+          0,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          0,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          110
+        ],
+        "original": [
+          110
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 6,
+      "command": "choose 2",
+      "mapped_aid": 112,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {
+          "pre_first_node_x_sentinel": {
+            "model": [
+              -1,
+              -1
+            ],
+            "original": [
+              0,
+              -1
+            ]
+          }
+        },
+        "original_resources": [
+          59,
+          66,
+          99,
+          0,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          0,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          110,
+          111,
+          112
+        ],
+        "original": [
+          110,
+          111,
+          112,
+          176
+        ],
+        "navigation_only_difference": [
+          176
+        ],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 7,
+      "command": "play 1",
+      "mapped_aid": 0,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          0,
+          1,
+          2,
+          13,
+          14,
+          15,
+          23,
+          24,
+          25,
+          170
+        ],
+        "original": [
+          0,
+          1,
+          2,
+          13,
+          14,
+          15,
+          23,
+          24,
+          25,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 8,
+      "command": "play 1",
+      "mapped_aid": 0,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          0,
+          1,
+          12,
+          13,
+          14,
+          22,
+          23,
+          24,
+          170
+        ],
+        "original": [
+          0,
+          1,
+          12,
+          13,
+          14,
+          22,
+          23,
+          24,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 9,
+      "command": "play 1",
+      "mapped_aid": 0,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          0,
+          11,
+          12,
+          13,
+          21,
+          22,
+          23,
+          170
+        ],
+        "original": [
+          0,
+          11,
+          12,
+          13,
+          21,
+          22,
+          23,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 10,
+      "command": "end",
+      "mapped_aid": 170,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          170
+        ],
+        "original": [
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 11,
+      "command": "play 1 0",
+      "mapped_aid": 10,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          1,
+          2,
+          4,
+          10,
+          13,
+          20,
+          23,
+          170
+        ],
+        "original": [
+          1,
+          2,
+          4,
+          10,
+          13,
+          20,
+          23,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 12,
+      "command": "play 1",
+      "mapped_aid": 0,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          0,
+          1,
+          3,
+          12,
+          22,
+          170
+        ],
+        "original": [
+          0,
+          1,
+          3,
+          12,
+          22,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 13,
+      "command": "play 2 0",
+      "mapped_aid": 11,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          0,
+          2,
+          11,
+          21,
+          170
+        ],
+        "original": [
+          0,
+          2,
+          11,
+          21,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 14,
+      "command": "play 1",
+      "mapped_aid": 0,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          0,
+          1,
+          170
+        ],
+        "original": [
+          0,
+          1,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 15,
+      "command": "end",
+      "mapped_aid": 170,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          170
+        ],
+        "original": [
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 16,
+      "command": "play 2 0",
+      "mapped_aid": 11,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          0,
+          2,
+          4,
+          11,
+          13,
+          21,
+          23,
+          170
+        ],
+        "original": [
+          0,
+          2,
+          4,
+          11,
+          13,
+          21,
+          23,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 17,
+      "command": "play 1",
+      "mapped_aid": 0,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          0,
+          1,
+          3,
+          22,
+          170
+        ],
+        "original": [
+          0,
+          1,
+          3,
+          22,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 18,
+      "command": "play 3",
+      "mapped_aid": 2,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          0,
+          2,
+          21,
+          170
+        ],
+        "original": [
+          0,
+          2,
+          21,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 19,
+      "command": "end",
+      "mapped_aid": 170,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          59,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          170
+        ],
+        "original": [
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 20,
+      "command": "play 3 1",
+      "mapped_aid": 22,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          0,
+          1,
+          3,
+          22,
+          24,
+          170
+        ],
+        "original": [
+          0,
+          1,
+          3,
+          22,
+          24,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 21,
+      "command": "play 1",
+      "mapped_aid": 0,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          0,
+          1,
+          2,
+          23,
+          170
+        ],
+        "original": [
+          0,
+          1,
+          2,
+          23,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 22,
+      "command": "play 1",
+      "mapped_aid": 0,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          0,
+          1,
+          22,
+          170
+        ],
+        "original": [
+          0,
+          1,
+          22,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 23,
+      "command": "play 2 1",
+      "mapped_aid": 21,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          0,
+          21,
+          170
+        ],
+        "original": [
+          0,
+          21,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 24,
+      "command": "end",
+      "mapped_aid": 170,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          170
+        ],
+        "original": [
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 25,
+      "command": "play 3 1",
+      "mapped_aid": 22,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          0,
+          3,
+          21,
+          22,
+          24,
+          170
+        ],
+        "original": [
+          0,
+          3,
+          21,
+          22,
+          24,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 26,
+      "command": "play 3",
+      "mapped_aid": 2,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          0,
+          2,
+          21,
+          23,
+          170
+        ],
+        "original": [
+          0,
+          2,
+          21,
+          23,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 27,
+      "command": "play 2 1",
+      "mapped_aid": 21,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          0,
+          21,
+          22,
+          170
+        ],
+        "original": [
+          0,
+          21,
+          22,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 28,
+      "command": "play 2 1",
+      "mapped_aid": 21,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          0,
+          21,
+          170
+        ],
+        "original": [
+          0,
+          21,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 29,
+      "command": "end",
+      "mapped_aid": 170,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          57,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          170
+        ],
+        "original": [
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 30,
+      "command": "play 1",
+      "mapped_aid": 0,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          0,
+          1,
+          4,
+          22,
+          23,
+          170
+        ],
+        "original": [
+          0,
+          1,
+          4,
+          22,
+          23,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 31,
+      "command": "play 1",
+      "mapped_aid": 0,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          0,
+          3,
+          21,
+          22,
+          170
+        ],
+        "original": [
+          0,
+          3,
+          21,
+          22,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 32,
+      "command": "play 3",
+      "mapped_aid": 2,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          2,
+          20,
+          21,
+          170
+        ],
+        "original": [
+          2,
+          20,
+          21,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 33,
+      "command": "end",
+      "mapped_aid": 170,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          170
+        ],
+        "original": [
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 34,
+      "command": "play 3 1",
+      "mapped_aid": 22,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          0,
+          1,
+          22,
+          23,
+          24,
+          170
+        ],
+        "original": [
+          0,
+          1,
+          22,
+          23,
+          24,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 35,
+      "command": "play 3 1",
+      "mapped_aid": 22,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          0,
+          1,
+          22,
+          23,
+          170
+        ],
+        "original": [
+          0,
+          1,
+          22,
+          23,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 36,
+      "command": "choose 0",
+      "mapped_aid": 110,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          99,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          99,
+          1,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          114,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          114,
+          1,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          110,
+          111,
+          171
+        ],
+        "original": [
+          110,
+          111,
+          171
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 37,
+      "command": "choose 0",
+      "mapped_aid": 110,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          114,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          114,
+          1,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          114,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          114,
+          1,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          110,
+          171
+        ],
+        "original": [
+          110,
+          171
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 38,
+      "command": "choose 2",
+      "mapped_aid": 112,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          114,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          114,
+          1,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          114,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          114,
+          1,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          110,
+          111,
+          112,
+          177
+        ],
+        "original": [
+          110,
+          111,
+          112,
+          177
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 39,
+      "command": "proceed",
+      "mapped_aid": 171,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          114,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          114,
+          1,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          114,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          114,
+          1,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          171
+        ],
+        "original": [
+          171
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 40,
+      "command": "choose 0",
+      "mapped_aid": 110,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          114,
+          1,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          114,
+          1,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          114,
+          2,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          114,
+          2,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          110
+        ],
+        "original": [
+          110,
+          176
+        ],
+        "navigation_only_difference": [
+          176
+        ],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 41,
+      "command": "choose 0",
+      "mapped_aid": 110,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          114,
+          2,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          114,
+          2,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          114,
+          2,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          114,
+          2,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          110,
+          171
+        ],
+        "original": [
+          110,
+          171
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 42,
+      "command": "choose 5",
+      "mapped_aid": 115,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          114,
+          2,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          114,
+          2,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          28,
+          2,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          28,
+          2,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          178
+        ],
+        "original": [
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          178
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [
+          117,
+          118,
+          119
+        ],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 43,
+      "command": "choose 0",
+      "mapped_aid": 110,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          28,
+          2,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          28,
+          2,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          2,
+          2,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          2,
+          2,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          110,
+          178
+        ],
+        "original": [
+          110,
+          178
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 44,
+      "command": "leave",
+      "mapped_aid": 178,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          2,
+          2,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          2,
+          2,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          2,
+          2,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          2,
+          2,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          178
+        ],
+        "original": [
+          178
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 45,
+      "command": "choose 0",
+      "mapped_aid": 110,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          2,
+          2,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          2,
+          2,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          2,
+          2,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          2,
+          2,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          110,
+          171
+        ],
+        "original": [
+          110,
+          171
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 46,
+      "command": "leave",
+      "mapped_aid": 178,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          2,
+          2,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          2,
+          2,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          2,
+          2,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          2,
+          2,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          178
+        ],
+        "original": [
+          178
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 47,
+      "command": "proceed",
+      "mapped_aid": 171,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          2,
+          2,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          2,
+          2,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          2,
+          2,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          2,
+          2,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          110,
+          171
+        ],
+        "original": [
+          110,
+          171
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 48,
+      "command": "choose 0",
+      "mapped_aid": 110,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          2,
+          2,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          2,
+          2,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          2,
+          3,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          2,
+          3,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          110,
+          111
+        ],
+        "original": [
+          110,
+          111,
+          176
+        ],
+        "navigation_only_difference": [
+          176
+        ],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 49,
+      "command": "choose 1",
+      "mapped_aid": 111,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          2,
+          3,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          2,
+          3,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {
+          "page": {
+            "model": 5,
+            "original": 1
+          }
+        },
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          2,
+          3,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          2,
+          3,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          110,
+          111
+        ],
+        "original": [
+          110,
+          111
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 50,
+      "command": "choose 0",
+      "mapped_aid": null,
+      "status": "native_only_acknowledgement",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {
+          "page": {
+            "model": 5,
+            "original": 1
+          }
+        },
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          2,
+          3,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          2,
+          3,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          2,
+          3,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          2,
+          3,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          110,
+          111
+        ],
+        "original": [
+          110
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [
+          111
+        ],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 51,
+      "command": "choose 1",
+      "mapped_aid": 111,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          2,
+          3,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          2,
+          3,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          2,
+          4,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          2,
+          4,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          110,
+          111
+        ],
+        "original": [
+          110,
+          111,
+          176
+        ],
+        "navigation_only_difference": [
+          176
+        ],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 52,
+      "command": "choose 0",
+      "mapped_aid": 110,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          2,
+          4,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          2,
+          4,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {
+          "resources": {
+            "model": [
+              56,
+              66,
+              152,
+              4,
+              1,
+              20
+            ],
+            "original": [
+              56,
+              66,
+              2,
+              4,
+              1,
+              20
+            ]
+          },
+          "page": {
+            "model": 5,
+            "original": 1
+          },
+          "deck": {
+            "model": [
+              [
+                "AscendersBane",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Survivor",
+                0
+              ],
+              [
+                "Neutralize",
+                0
+              ],
+              [
+                "Predator",
+                0
+              ],
+              [
+                "Footwork",
+                0
+              ],
+              [
+                "Blade Dance",
+                0
+              ],
+              [
+                "Doubt",
+                0
+              ]
+            ],
+            "original": [
+              [
+                "AscendersBane",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Survivor",
+                0
+              ],
+              [
+                "Neutralize",
+                0
+              ],
+              [
+                "Predator",
+                0
+              ],
+              [
+                "Footwork",
+                0
+              ],
+              [
+                "Blade Dance",
+                0
+              ]
+            ]
+          }
+        },
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          2,
+          4,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          4,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          110,
+          111
+        ],
+        "original": [
+          110,
+          111
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 53,
+      "command": "choose 0",
+      "mapped_aid": null,
+      "status": "native_only_acknowledgement",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {
+          "resources": {
+            "model": [
+              56,
+              66,
+              152,
+              4,
+              1,
+              20
+            ],
+            "original": [
+              56,
+              66,
+              2,
+              4,
+              1,
+              20
+            ]
+          },
+          "page": {
+            "model": 5,
+            "original": 1
+          },
+          "deck": {
+            "model": [
+              [
+                "AscendersBane",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Survivor",
+                0
+              ],
+              [
+                "Neutralize",
+                0
+              ],
+              [
+                "Predator",
+                0
+              ],
+              [
+                "Footwork",
+                0
+              ],
+              [
+                "Blade Dance",
+                0
+              ],
+              [
+                "Doubt",
+                0
+              ]
+            ],
+            "original": [
+              [
+                "AscendersBane",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Survivor",
+                0
+              ],
+              [
+                "Neutralize",
+                0
+              ],
+              [
+                "Predator",
+                0
+              ],
+              [
+                "Footwork",
+                0
+              ],
+              [
+                "Blade Dance",
+                0
+              ]
+            ]
+          }
+        },
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          2,
+          4,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          4,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {
+          "page": {
+            "model": 5,
+            "original": 1
+          }
+        },
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          4,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          4,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          110
+        ],
+        "original": [
+          110
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 54,
+      "command": "choose 0",
+      "mapped_aid": null,
+      "status": "native_only_acknowledgement",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {
+          "page": {
+            "model": 5,
+            "original": 1
+          }
+        },
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          4,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          4,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          4,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          4,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          110
+        ],
+        "original": [
+          110
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 55,
+      "command": "choose 0",
+      "mapped_aid": 110,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          4,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          4,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          5,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          5,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          110
+        ],
+        "original": [
+          110,
+          176
+        ],
+        "navigation_only_difference": [
+          176
+        ],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 56,
+      "command": "choose 1",
+      "mapped_aid": 111,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          5,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          5,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          5,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          5,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          110,
+          111
+        ],
+        "original": [
+          110,
+          111
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 57,
+      "command": "choose 0",
+      "mapped_aid": 110,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          5,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          5,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          5,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          5,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          110
+        ],
+        "original": [
+          110
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 58,
+      "command": "choose 0",
+      "mapped_aid": 110,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          5,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          5,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          6,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          6,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          110,
+          111
+        ],
+        "original": [
+          110,
+          111,
+          176
+        ],
+        "navigation_only_difference": [
+          176
+        ],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 59,
+      "command": "choose 1",
+      "mapped_aid": 111,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          6,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          6,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          6,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          6,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          110,
+          111,
+          112
+        ],
+        "original": [
+          110,
+          111,
+          112
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 60,
+      "command": "choose 10",
+      "mapped_aid": 120,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          6,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          6,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          6,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          6,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123
+        ],
+        "original": [
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          173
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [
+          173
+        ],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 61,
+      "command": "confirm",
+      "mapped_aid": 172,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          6,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          6,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          6,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          6,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          172
+        ],
+        "original": [
+          172,
+          173
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [
+          173
+        ],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 62,
+      "command": "proceed",
+      "mapped_aid": 171,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          6,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          6,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          6,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          6,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          171
+        ],
+        "original": [
+          171
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 63,
+      "command": "choose 0",
+      "mapped_aid": 110,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          6,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          6,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          110,
+          111
+        ],
+        "original": [
+          110,
+          111,
+          176
+        ],
+        "navigation_only_difference": [
+          176
+        ],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 64,
+      "command": "play 1",
+      "mapped_aid": 0,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          0,
+          1,
+          2,
+          4,
+          13,
+          16,
+          170
+        ],
+        "original": [
+          0,
+          1,
+          2,
+          4,
+          13,
+          16,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 65,
+      "command": "play 3 0",
+      "mapped_aid": 12,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          0,
+          1,
+          3,
+          12,
+          15,
+          170
+        ],
+        "original": [
+          0,
+          1,
+          3,
+          12,
+          15,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 66,
+      "command": "play 5 0",
+      "mapped_aid": 14,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          0,
+          1,
+          2,
+          14,
+          170
+        ],
+        "original": [
+          0,
+          1,
+          2,
+          14,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 67,
+      "command": "end",
+      "mapped_aid": 170,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          170
+        ],
+        "original": [
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 68,
+      "command": "play 5 0",
+      "mapped_aid": 14,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          0,
+          1,
+          2,
+          14,
+          170
+        ],
+        "original": [
+          0,
+          1,
+          2,
+          14,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 69,
+      "command": "play 2",
+      "mapped_aid": 1,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          0,
+          1,
+          2,
+          170
+        ],
+        "original": [
+          0,
+          1,
+          2,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 70,
+      "command": "play 2",
+      "mapped_aid": 1,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          0,
+          1,
+          170
+        ],
+        "original": [
+          0,
+          1,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 71,
+      "command": "play 1",
+      "mapped_aid": 0,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          0,
+          170
+        ],
+        "original": [
+          0,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 72,
+      "command": "play 2 0",
+      "mapped_aid": 11,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          11,
+          12,
+          13,
+          170
+        ],
+        "original": [
+          11,
+          12,
+          13,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 73,
+      "command": "play 2 0",
+      "mapped_aid": 11,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          11,
+          12,
+          170
+        ],
+        "original": [
+          11,
+          12,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 74,
+      "command": "play 2 0",
+      "mapped_aid": 11,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          11,
+          170
+        ],
+        "original": [
+          11,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 75,
+      "command": "end",
+      "mapped_aid": 170,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          170
+        ],
+        "original": [
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 76,
+      "command": "play 4",
+      "mapped_aid": 3,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          3,
+          4,
+          10,
+          11,
+          12,
+          170
+        ],
+        "original": [
+          3,
+          4,
+          10,
+          11,
+          12,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 77,
+      "command": "play 4",
+      "mapped_aid": 3,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          3,
+          10,
+          11,
+          12,
+          170
+        ],
+        "original": [
+          3,
+          10,
+          11,
+          12,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 78,
+      "command": "play 1 0",
+      "mapped_aid": 10,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          10,
+          12,
+          170
+        ],
+        "original": [
+          10,
+          12,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 79,
+      "command": "end",
+      "mapped_aid": 170,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          56,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          36,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          36,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          170
+        ],
+        "original": [
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 80,
+      "command": "play 1 0",
+      "mapped_aid": 10,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          36,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          36,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          36,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          36,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          1,
+          2,
+          4,
+          10,
+          13,
+          170
+        ],
+        "original": [
+          1,
+          2,
+          4,
+          10,
+          13,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 81,
+      "command": "play 4",
+      "mapped_aid": 3,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          36,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          36,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          36,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          36,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          0,
+          1,
+          3,
+          12,
+          170
+        ],
+        "original": [
+          0,
+          1,
+          3,
+          12,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 82,
+      "command": "play 1",
+      "mapped_aid": 0,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          36,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          36,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          36,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          36,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          0,
+          1,
+          12,
+          170
+        ],
+        "original": [
+          0,
+          1,
+          12,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 83,
+      "command": "choose 0",
+      "mapped_aid": 110,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          36,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          36,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          36,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          36,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          110,
+          111
+        ],
+        "original": [
+          110,
+          111
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "inventory_only_not_executed_semantics"
+      }
+    },
+    {
+      "index": 84,
+      "command": "confirm",
+      "mapped_aid": 172,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          36,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          36,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          36,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          36,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          172,
+          179
+        ],
+        "original": [
+          110,
+          172
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [
+          110
+        ],
+        "extra_in_model": [
+          179
+        ],
+        "evidence_status": "inventory_only_not_executed_semantics"
+      }
+    },
+    {
+      "index": 85,
+      "command": "play 1 0",
+      "mapped_aid": 10,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          36,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          36,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          36,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          36,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          10,
+          170
+        ],
+        "original": [
+          10,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 86,
+      "command": "end",
+      "mapped_aid": 170,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          36,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          36,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          12,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          12,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          170
+        ],
+        "original": [
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 87,
+      "command": "play 2",
+      "mapped_aid": 1,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          12,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          12,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          12,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          12,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          1,
+          2,
+          4,
+          13,
+          170
+        ],
+        "original": [
+          1,
+          2,
+          4,
+          13,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 88,
+      "command": "play 2",
+      "mapped_aid": 1,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          12,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          12,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          12,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          12,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          1,
+          3,
+          12,
+          170
+        ],
+        "original": [
+          1,
+          3,
+          12,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 89,
+      "command": "play 3",
+      "mapped_aid": 2,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          12,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          12,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          12,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          12,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          2,
+          11,
+          170
+        ],
+        "original": [
+          2,
+          11,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 90,
+      "command": "end",
+      "mapped_aid": 170,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          12,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          12,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          5,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          5,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          170
+        ],
+        "original": [
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 91,
+      "command": "play 5",
+      "mapped_aid": 4,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          5,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          5,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          5,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          5,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          1,
+          4,
+          10,
+          12,
+          13,
+          170
+        ],
+        "original": [
+          1,
+          4,
+          10,
+          12,
+          13,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 92,
+      "command": "play 1 0",
+      "mapped_aid": 10,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          5,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          5,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          5,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          5,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          1,
+          10,
+          12,
+          13,
+          170
+        ],
+        "original": [
+          1,
+          10,
+          12,
+          13,
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    },
+    {
+      "index": 93,
+      "command": "end",
+      "mapped_aid": 170,
+      "status": "physical_action_replayed",
+      "model_layer": "experiments.sa_calibration_round3.release",
+      "before": {
+        "differences": {},
+        "representation_differences": {},
+        "original_resources": [
+          5,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          5,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "after": {
+        "differences": {},
+        "representation_differences": {
+          "terminal_screen_encoding": {
+            "model": 9,
+            "model_done": true,
+            "original": "GAME_OVER",
+            "original_victory": false
+          }
+        },
+        "original_resources": [
+          0,
+          66,
+          152,
+          7,
+          1,
+          20
+        ],
+        "model_resources": [
+          0,
+          66,
+          152,
+          7,
+          1,
+          20
+        ]
+      },
+      "action_set_comparison": {
+        "model": [
+          170
+        ],
+        "original": [
+          170
+        ],
+        "navigation_only_difference": [],
+        "missing_in_model": [],
+        "extra_in_model": [],
+        "evidence_status": "reported_masks_not_all_actions_exercised"
+      }
+    }
+  ],
+  "model_endpoint": {
+    "resources": [
+      0,
+      66,
+      152,
+      7,
+      1,
+      20
+    ],
+    "page": 9,
+    "map_xy": [
+      1,
+      6
+    ],
+    "keys": [
+      false,
+      false,
+      false
+    ],
+    "deck": [
+      [
+        "AscendersBane",
+        0
+      ],
+      [
+        "Strike_G",
+        0
+      ],
+      [
+        "Strike_G",
+        0
+      ],
+      [
+        "Strike_G",
+        0
+      ],
+      [
+        "Strike_G",
+        0
+      ],
+      [
+        "Defend_G",
+        0
+      ],
+      [
+        "Defend_G",
+        0
+      ],
+      [
+        "Defend_G",
+        0
+      ],
+      [
+        "Defend_G",
+        0
+      ],
+      [
+        "Defend_G",
+        0
+      ],
+      [
+        "Survivor",
+        0
+      ],
+      [
+        "Neutralize",
+        1
+      ],
+      [
+        "Predator",
+        0
+      ],
+      [
+        "Footwork",
+        0
+      ],
+      [
+        "Blade Dance",
+        0
+      ],
+      [
+        "Doubt",
+        0
+      ]
+    ],
+    "relics": [
+      [
+        "ringofthesnake",
+        -1
+      ]
+    ],
+    "potions": [
+      null,
+      null
+    ],
+    "done": true,
+    "won": false,
+    "lost": true,
+    "engine_steps": 79,
+    "supported": [],
+    "gaps": [],
+    "facade_page": "DELEGATED",
+    "turn_energy_block": [
+      6,
+      0,
+      0
+    ],
+    "hand": [],
+    "selected_hand": [],
+    "hand_cost_playable_target": [],
+    "pile_counts": [
+      4,
+      10,
+      4
+    ],
+    "enemies": [
+      [
+        "gremlinnob",
+        37,
+        88,
+        0
+      ]
+    ],
+    "enemy_intents": [
+      [
+        "gremlinnob",
+        1
+      ]
+    ]
+  },
+  "original_endpoint": {
+    "resources": [
+      0,
+      66,
+      152,
+      7,
+      1,
+      20
+    ],
+    "page": 0,
+    "keys": [
+      false,
+      false,
+      false
+    ],
+    "deck": [
+      [
+        "AscendersBane",
+        0
+      ],
+      [
+        "Strike_G",
+        0
+      ],
+      [
+        "Strike_G",
+        0
+      ],
+      [
+        "Strike_G",
+        0
+      ],
+      [
+        "Strike_G",
+        0
+      ],
+      [
+        "Defend_G",
+        0
+      ],
+      [
+        "Defend_G",
+        0
+      ],
+      [
+        "Defend_G",
+        0
+      ],
+      [
+        "Defend_G",
+        0
+      ],
+      [
+        "Defend_G",
+        0
+      ],
+      [
+        "Survivor",
+        0
+      ],
+      [
+        "Neutralize",
+        1
+      ],
+      [
+        "Predator",
+        0
+      ],
+      [
+        "Footwork",
+        0
+      ],
+      [
+        "Blade Dance",
+        0
+      ],
+      [
+        "Doubt",
+        0
+      ]
+    ],
+    "relics": [
+      [
+        "ringofthesnake",
+        -1
+      ]
+    ],
+    "potions": [
+      null,
+      null
+    ],
+    "turn_energy_block": [
+      6,
+      0,
+      0
+    ],
+    "hand": [],
+    "selected_hand": [],
+    "hand_cost_playable_target": [],
+    "pile_counts": [
+      4,
+      10,
+      4
+    ],
+    "enemies": [
+      [
+        "gremlinnob",
+        37,
+        88,
+        0
+      ]
+    ],
+    "enemy_intents": [
+      [
+        "gremlinnob",
+        1
+      ]
+    ]
+  }
+}

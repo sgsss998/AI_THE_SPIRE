@@ -1,0 +1,190 @@
+{
+  "created_at": "2026-11-21T17:13:26.645101+00:00",
+  "valid": true,
+  "interface": {
+    "state_version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1",
+    "state_sha256": "9758f1f97deae6a003a7b31c95db0055b3f4e6251747742cace46c28bc2b5cad",
+    "card_registry_sha256": "cc7dd2446135675ad273bbdc09914909f8ab1c0aca854a8c00dd3d8b6f91a26a",
+    "action_version": "silent-canonical-row-a193-v1",
+    "action_adapter_version": "canonical-row-choice64-v1+frontier-settled+compact-decisions-v2+public-transitions-v1+ordinary-events-rewards-v1+shop-reward-discard-gold-and-death-settlement-v1+ending-route-paid-neow-permanent-upgrade-cancel-and-complete-card-masks-v2+ordinary-targets-and-victory-loot-v1+match-poison-and-idol-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+settled-neow-and-linked-chest-rewards-v1+round1-flex-chest-v1+round2-v1+round3-calibration-v1",
+    "action_contract_sha256": "0ae8ba53dfdde48ad0f4a4ae03cfd045fc2677ac50df3cae9a6ed7558962b78e",
+    "action_coordinates": "observation_monster_row",
+    "action_source_sha256": "991002a8a794556f29024c607c17f075d57c4f547711ef54c94a0aaed61d3451",
+    "state_decoder_sha256": "3b6f91649a61f34224af83a0564f3b4ec68b63e5ec9e60ad6afce305b8bfd0a3",
+    "backend_build_sha256": "5f81347346994e460ceaa8e500ff3f08637a33f2eb4a220cff467fc8f6105fa5",
+    "backend_commit": "482b3ef29c93746ada7d6fd0fd16885d7cc30b1f",
+    "backend_observation_version": 4,
+    "backend_observation_dimension": 1761,
+    "backend_actions": 146,
+    "observation_dimension": 3122,
+    "actions": 193
+  },
+  "original_terminal": {
+    "path": "TERMINAL.json",
+    "sha256": "a451b0b7dbb2281bf7da58f80832aabbe345c315cc3080542e3346810db1cb9e"
+  },
+  "replay": {
+    "path": "runs/20261122_005504_700638_R3_confirmed_segments/RESULT.json",
+    "sha256": "c91d2f09e727375282ab520be46672976ce65a5230adb09437eb3603e936c479"
+  },
+  "details": {
+    "path": "details/20261122_010717_897436/RESULT.json",
+    "sha256": "04cf7585206bf2182ca37cf21845acc38f7ab57de06a8808ca9c6ef770d9794c"
+  },
+  "audit": {
+    "path": "AUDIT.json",
+    "sha256": "59fb317afa1bf0a9e5aeb2133b6c36f439d20853c6d605003f53b88488cdbcf1"
+  },
+  "report": {
+    "path": "REPORT.md",
+    "sha256": "c7a9884ed789df95f31ed8d09ef3150dd0600b11aac969d26eae2f3ec47e4bdf"
+  },
+  "seed": {
+    "signed": "-7767587261589664980",
+    "unsigned": "10679156812119886636",
+    "display": "35LAE5197HT9L",
+    "java_roundtrip": "-7767587261589664980=35LAE5197HT9L=-7767587261589664980",
+    "seed_argument": null,
+    "seed_set": false,
+    "before_inventory_size": 721,
+    "in_previous_inventory": false,
+    "r3_repair_named_seeds": [
+      2000014,
+      9000028,
+      54072726,
+      54073952,
+      9000020,
+      17000028
+    ],
+    "named_repair_seeds_in_before_inventory": true,
+    "actual_start_dispatches": 1,
+    "original_terminal_before_first_model": true,
+    "game_display_version": "2022-12-18",
+    "game_target_sha256": "059b60c0d924ac1c3d7d7c7ab49ed676de5b472507d58fb1a97d62ce502c7e6d",
+    "loaded_game_jar_sha256": "880ca5646d02065a061bbbdf7cc106dc1443d5afc6b9560f512486b098fd627b",
+    "original_game_jar_sha256": "dd60a613a6178e08f1a57bcb8d5747e33c21fd49e743b88d76e9d74042803b2a",
+    "no_fixture_no_copied_save": true
+  },
+  "summary": {
+    "original_raw_inputs": 93,
+    "original_inputs_excluding_redundant_shop": 91,
+    "model_public_actions": 90,
+    "model_public_actions_excluding_redundant_shop": 88,
+    "original_only_actions": [
+      50,
+      53,
+      54
+    ],
+    "original_only_action_53": "reward settlement with content, offset against model action 52; not a no-content click",
+    "native_physical_hand_actions": [
+      83,
+      84
+    ],
+    "native_bridge_actions": 91,
+    "kernel_bypass_actions": 0,
+    "unique_frames": 94,
+    "strict_equal_public_frames": 91,
+    "strict_equal_field_groups": 1182,
+    "compared_field_groups": 1187,
+    "first_state_difference": {
+      "index": 49,
+      "phase": "after",
+      "differences": {
+        "page": {
+          "model": 5,
+          "original": 1
+        }
+      }
+    },
+    "first_content_snapshot_difference": {
+      "index": 52,
+      "fields": [
+        "gold",
+        "deck"
+      ],
+      "classification": "early reward settlement in model; original receives +150 gold and Doubt at unique action 53; page aligns after unique action 54"
+    },
+    "first_action_set_difference": {
+      "index": 2,
+      "missing_action": 112,
+      "native_choice": "obtain a curse transform 2 cards",
+      "choice_number": 3,
+      "executed_action": 110,
+      "executed_choice_number": 1,
+      "executed_native_choice": "remove a card from your deck",
+      "missing_action_executed": false
+    },
+    "first_missing_executed_public_action": null,
+    "model_terminal": "loss",
+    "original_terminal": "loss",
+    "floor": 7,
+    "turn": 6,
+    "hp": 0,
+    "max_hp": 66,
+    "gold": 152,
+    "enemy": "GremlinNob",
+    "enemy_hp": 37,
+    "enemy_max_hp": 88,
+    "public_endpoint_equal": true,
+    "unreconciled_content_difference_in_compared_scope": null
+  },
+  "limitations": [
+    "No all-3122 native equivalence claim. Full model vectors retained in details.",
+    "Original hidden draw order is not captured; top-card order native equivalence remains unverified.",
+    "Action-mask inventory mismatches include unexecuted actions and differing row coordinates; only executed physical bindings were exercised.",
+    "First raw snapshot content difference at action52 remains recorded despite later alignment.",
+    "No repair was made from this holdout seed; no training; no win."
+  ],
+  "superseded_replay_runs": [
+    {
+      "path": "runs/20261122_004817_327885_R3_final",
+      "reason": "checker plumbing development or incomplete confirmation handling; not final evidence"
+    },
+    {
+      "path": "runs/20261122_005008_817691_R3_shop_binding",
+      "reason": "checker plumbing development or incomplete confirmation handling; not final evidence"
+    },
+    {
+      "path": "runs/20261122_005116_501877_R3_shop_exact",
+      "reason": "checker plumbing development or incomplete confirmation handling; not final evidence"
+    },
+    {
+      "path": "runs/20261122_005215_845211_R3_physical_rows",
+      "reason": "checker plumbing development or incomplete confirmation handling; not final evidence"
+    }
+  ],
+  "files": {
+    "ACTIONS.jsonl": {
+      "path": "ACTIONS.jsonl",
+      "sha256": "12134a0d0f0447d1f6b81ea6fb30ecf108de5ed238d5af2e34c06ec1a5ac19fb"
+    },
+    "PHYSICAL.jsonl": {
+      "path": "PHYSICAL.jsonl",
+      "sha256": "d9c1a1771a711024e5a6423adb0b46ed79c4cdaf08aeebda7f21a16406177bc6"
+    },
+    "policy.py": {
+      "path": "policy.py",
+      "sha256": "686d9b191f0dfb8af51af017b33f8230ad2f7f878721e920664f1a85c034ec57"
+    },
+    "drive.py": {
+      "path": "drive.py",
+      "sha256": "1adb84132c76cf606d21734e5ba428aefeb847d2357b904ba94b2c62154b499b"
+    },
+    "DRIVER_REVISIONS.jsonl": {
+      "path": "DRIVER_REVISIONS.jsonl",
+      "sha256": "a9e2f13fd9273750d746034237f8001be5caefc3754e813e9a8d07404b0f3c84"
+    },
+    "replay.py": {
+      "path": "replay.py",
+      "sha256": "f9dc8046e65e1d78ed61c8b7e71c519eba5c7813c8ef350b384bd31e101b2e56"
+    },
+    "detail.py": {
+      "path": "detail.py",
+      "sha256": "6b0f34ea502779f1eab35c3fcf0b3224744b8f06842efb81f1be8eeb3a2836b3"
+    },
+    "seal.py": {
+      "path": "seal.py",
+      "sha256": "1cb63522f7717ce3829ead518e53a766c0c28651d5d62315cf797c09e24287b6"
+    }
+  }
+}

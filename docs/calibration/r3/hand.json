@@ -1,0 +1,788 @@
+{
+  "cases": {
+    "upgraded_play": {
+      "source": "AI_THE_SPIRE_静默紧凑环境_v1/native_runtime/compact_fixture_ordinary_reward_seed35/bridge/sessions/2419befa-08f9-4c37-b8b3-7f96c376a87c/raw.jsonl",
+      "source_sha": "9829cc726582685a15366a0f7ae44de9a1c9cf72e9c857aa8906b4776e6ea415",
+      "source_kind": "archived original read-only 99-gold assertion; regular formal reset(seed=35), normal gameplay entire prefix",
+      "raw": [
+        8,
+        9
+      ],
+      "request": "47fb073a-0f2b-4f84-a9d9-af1e4b1fd0a0",
+      "request_sha": "f25603cbeeafe0bfa5474595d12da65d646a87fa2e6b77ddb85b317d8e016422",
+      "command": "play 1 0",
+      "aid": 10,
+      "slot": 0,
+      "target_slot": 0,
+      "selected_uuid": "5fa17363-86c3-4662-928d-132444a8eef9",
+      "energy_spent": 1,
+      "independent_oracle_status": "partial",
+      "before": {
+        "seq": 8,
+        "sha": "ac2974b3581c2e724c47ec998b7740b4769afcf1f38c30dadf08243b59c70ddc",
+        "rows": [
+          {
+            "slot": 0,
+            "id": "Strike_G",
+            "uuid": "5fa17363-86c3-4662-928d-132444a8eef9",
+            "upgrades": 1,
+            "cm_cost": 1,
+            "cm_turn_cost": null,
+            "playable": true,
+            "target": true,
+            "raw_hand_start": 1253,
+            "dynamic_start": 1775,
+            "model_hand_fields": [
+              320.0,
+              1.0,
+              1,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "attributes": [
+              0,
+              1,
+              0,
+              10
+            ],
+            "actions": [
+              10
+            ],
+            "original_icon": "1",
+            "original_internal_turn_cost": 1
+          },
+          {
+            "slot": 2,
+            "id": "Strike_G",
+            "uuid": "874c8d32-acc7-4003-b8cd-909304ca31b3",
+            "upgrades": 0,
+            "cm_cost": 1,
+            "cm_turn_cost": null,
+            "playable": true,
+            "target": true,
+            "raw_hand_start": 1265,
+            "dynamic_start": 1783,
+            "model_hand_fields": [
+              320.0,
+              0.0,
+              1,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "attributes": [
+              0,
+              1,
+              0,
+              10
+            ],
+            "actions": [
+              12
+            ],
+            "original_icon": "1",
+            "original_internal_turn_cost": 1
+          },
+          {
+            "slot": 4,
+            "id": "Strike_G",
+            "uuid": "50fd445a-a4c6-4198-90dd-37513e0822a7",
+            "upgrades": 0,
+            "cm_cost": 1,
+            "cm_turn_cost": null,
+            "playable": true,
+            "target": true,
+            "raw_hand_start": 1277,
+            "dynamic_start": 1791,
+            "model_hand_fields": [
+              320.0,
+              0.0,
+              1,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "attributes": [
+              0,
+              1,
+              0,
+              10
+            ],
+            "actions": [
+              14
+            ],
+            "original_icon": "1",
+            "original_internal_turn_cost": 1
+          }
+        ],
+        "hand": [
+          [
+            "Strike_G",
+            1
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "AscendersBane",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ]
+        ],
+        "player_enemy_piles": {
+          "energy": 3,
+          "block": 0,
+          "player_hp": 59,
+          "monster_hp": [
+            48
+          ],
+          "piles": [
+            6,
+            1,
+            0
+          ]
+        }
+      },
+      "after": {
+        "seq": 9,
+        "sha": "9e10bf6ce71115dbcbbcd9b008de23c21cbb57d5b5b96dd35cf7d4b2e35661ad",
+        "rows": [
+          {
+            "slot": 1,
+            "id": "Strike_G",
+            "uuid": "874c8d32-acc7-4003-b8cd-909304ca31b3",
+            "upgrades": 0,
+            "cm_cost": 1,
+            "cm_turn_cost": null,
+            "playable": true,
+            "target": true,
+            "raw_hand_start": 1259,
+            "dynamic_start": 1779,
+            "model_hand_fields": [
+              320.0,
+              0.0,
+              1,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "attributes": [
+              0,
+              1,
+              0,
+              10
+            ],
+            "actions": [
+              11
+            ]
+          },
+          {
+            "slot": 3,
+            "id": "Strike_G",
+            "uuid": "50fd445a-a4c6-4198-90dd-37513e0822a7",
+            "upgrades": 0,
+            "cm_cost": 1,
+            "cm_turn_cost": null,
+            "playable": true,
+            "target": true,
+            "raw_hand_start": 1271,
+            "dynamic_start": 1787,
+            "model_hand_fields": [
+              320.0,
+              0.0,
+              1,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "attributes": [
+              0,
+              1,
+              0,
+              10
+            ],
+            "actions": [
+              13
+            ]
+          }
+        ],
+        "hand": [
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "AscendersBane",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ]
+        ],
+        "player_enemy_piles": {
+          "energy": 2,
+          "block": 0,
+          "player_hp": 59,
+          "monster_hp": [
+            39
+          ],
+          "piles": [
+            6,
+            2,
+            0
+          ]
+        }
+      }
+    },
+    "ordinary_play": {
+      "source": "AI_THE_SPIRE_实机验证/20261115_SA验收/bridge/sessions/526ddf2a-7a2a-430d-9065-9d94dcadc041/raw.jsonl",
+      "source_sha": "ec5082d2695f785e3dc42db77778674769341b5859200c3663ade772d600641a",
+      "source_kind": "historical natural seed 54072726; regular formal reset, original actions with explicit UI acknowledgements",
+      "raw": [
+        286,
+        287
+      ],
+      "request": "fce23cca-a57b-4648-8ff3-718085669886",
+      "request_sha": "82612d197db30f350ee6ce2b3c924c3bc9a8d5dbb64e68e8b1ec993d2648fe6c",
+      "command": "play 1 0",
+      "aid": 10,
+      "slot": 0,
+      "target_slot": 0,
+      "selected_uuid": "639e7b67-cbb5-465c-bf2b-bf5325abc6b8",
+      "energy_spent": 1,
+      "independent_oracle_status": "historical CommunicationMod only",
+      "before": {
+        "seq": 286,
+        "sha": "76c0baffea2df6075cfa16cec0f5fd2e2e3c748b1e72dfc3b434b2fcd4c55dc1",
+        "rows": [
+          {
+            "slot": 0,
+            "id": "Strike_G",
+            "uuid": "639e7b67-cbb5-465c-bf2b-bf5325abc6b8",
+            "upgrades": 0,
+            "cm_cost": 1,
+            "cm_turn_cost": 1,
+            "playable": true,
+            "target": true,
+            "raw_hand_start": 1253,
+            "dynamic_start": 1775,
+            "model_hand_fields": [
+              320.0,
+              0.0,
+              1,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "attributes": [
+              0,
+              1,
+              0,
+              10
+            ],
+            "actions": [
+              10,
+              20
+            ]
+          },
+          {
+            "slot": 1,
+            "id": "Strike_G",
+            "uuid": "c5873a4c-ee2a-4918-90fb-9c20aa591d41",
+            "upgrades": 0,
+            "cm_cost": 1,
+            "cm_turn_cost": 1,
+            "playable": true,
+            "target": true,
+            "raw_hand_start": 1259,
+            "dynamic_start": 1779,
+            "model_hand_fields": [
+              320.0,
+              0.0,
+              1,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "attributes": [
+              0,
+              1,
+              0,
+              10
+            ],
+            "actions": [
+              11,
+              21
+            ]
+          },
+          {
+            "slot": 2,
+            "id": "Strike_G",
+            "uuid": "6c65036f-5759-484d-8800-d1ee4d9edd7a",
+            "upgrades": 1,
+            "cm_cost": 1,
+            "cm_turn_cost": 1,
+            "playable": true,
+            "target": true,
+            "raw_hand_start": 1265,
+            "dynamic_start": 1783,
+            "model_hand_fields": [
+              320.0,
+              1.0,
+              1,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "attributes": [
+              0,
+              1,
+              0,
+              10
+            ],
+            "actions": [
+              12,
+              22
+            ]
+          },
+          {
+            "slot": 5,
+            "id": "Strike_G",
+            "uuid": "a0b0768b-4d48-4f64-abd4-b468fd67c359",
+            "upgrades": 0,
+            "cm_cost": 1,
+            "cm_turn_cost": 1,
+            "playable": true,
+            "target": true,
+            "raw_hand_start": 1283,
+            "dynamic_start": 1795,
+            "model_hand_fields": [
+              320.0,
+              0.0,
+              1,
+              1.0,
+              1.0,
+              0.0
+            ],
+            "attributes": [
+              0,
+              1,
+              0,
+              10
+            ],
+            "actions": [
+              15,
+              25
+            ]
+          }
+        ],
+        "hand": [
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Strike_G",
+            1
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Survivor",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ]
+        ],
+        "player_enemy_piles": {
+          "energy": 1,
+          "block": 10,
+          "player_hp": 55,
+          "monster_hp": [
+            10,
+            29
+          ],
+          "piles": [
+            7,
+            3,
+            0
+          ]
+        }
+      },
+      "after": {
+        "seq": 287,
+        "sha": "b16db3ab081dd91eac6cfab695ab8fc270c0e0bdc3131e0a534e977485f32ce7",
+        "rows": [
+          {
+            "slot": 0,
+            "id": "Strike_G",
+            "uuid": "c5873a4c-ee2a-4918-90fb-9c20aa591d41",
+            "upgrades": 0,
+            "cm_cost": 1,
+            "cm_turn_cost": 1,
+            "playable": false,
+            "target": true,
+            "raw_hand_start": 1253,
+            "dynamic_start": 1775,
+            "model_hand_fields": [
+              320.0,
+              0.0,
+              1,
+              0.0,
+              1.0,
+              0.0
+            ],
+            "attributes": [
+              0,
+              1,
+              0,
+              10
+            ],
+            "actions": []
+          },
+          {
+            "slot": 1,
+            "id": "Strike_G",
+            "uuid": "6c65036f-5759-484d-8800-d1ee4d9edd7a",
+            "upgrades": 1,
+            "cm_cost": 1,
+            "cm_turn_cost": 1,
+            "playable": false,
+            "target": true,
+            "raw_hand_start": 1259,
+            "dynamic_start": 1779,
+            "model_hand_fields": [
+              320.0,
+              1.0,
+              1,
+              0.0,
+              1.0,
+              0.0
+            ],
+            "attributes": [
+              0,
+              1,
+              0,
+              10
+            ],
+            "actions": []
+          },
+          {
+            "slot": 4,
+            "id": "Strike_G",
+            "uuid": "a0b0768b-4d48-4f64-abd4-b468fd67c359",
+            "upgrades": 0,
+            "cm_cost": 1,
+            "cm_turn_cost": 1,
+            "playable": false,
+            "target": true,
+            "raw_hand_start": 1277,
+            "dynamic_start": 1791,
+            "model_hand_fields": [
+              320.0,
+              0.0,
+              1,
+              0.0,
+              1.0,
+              0.0
+            ],
+            "attributes": [
+              0,
+              1,
+              0,
+              10
+            ],
+            "actions": []
+          }
+        ],
+        "hand": [
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Strike_G",
+            1
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Survivor",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ]
+        ],
+        "player_enemy_piles": {
+          "energy": 0,
+          "block": 10,
+          "player_hp": 55,
+          "monster_hp": [
+            4,
+            29
+          ],
+          "piles": [
+            7,
+            4,
+            0
+          ]
+        }
+      },
+      "normal_actions_through_observed_output": 94
+    },
+    "temporary_cost": {
+      "source": "AI_THE_SPIRE_静默紧凑环境_v1/native_runtime/compact_fixture_skill_001/bridge/sessions/01970a8c-5946-4644-9215-b11ccc7bc3a9/raw.jsonl",
+      "source_sha": "91d17edaef3217820db1b4a573d34179fc837963c0d2bfc0548d2d2e7db2b95e",
+      "source_kind": "archived original controlled combat; internal fixture initialization; formal public step and S3122 projections",
+      "raw": [
+        5,
+        6
+      ],
+      "request": "8016be9b-c9e7-47a7-995d-9ee390940198",
+      "request_sha": "f3de145f0467e11af1fe12d1495a6778221027ee6ff5f75f951be6c4e3d3674f",
+      "command": "play 6",
+      "aid": 5,
+      "slot": 5,
+      "target_slot": null,
+      "selected_uuid": "d281840f-5b0d-4fc0-8dc7-fe636d6efe2c",
+      "energy_spent": 0,
+      "independent_oracle_status": "complete",
+      "before": {
+        "seq": 5,
+        "sha": "2019b4755b16b00b11015b00e2d6b5a0b3a0392b76d36f2458e9a57ad4ea92f1",
+        "rows": [
+          {
+            "slot": 3,
+            "id": "Backflip",
+            "uuid": "f98bf4c8-64a8-4639-a2fa-5c784edcf452",
+            "upgrades": 0,
+            "cm_cost": 1,
+            "cm_turn_cost": null,
+            "playable": true,
+            "target": false,
+            "raw_hand_start": 1271,
+            "dynamic_start": 1787,
+            "model_hand_fields": [
+              19.0,
+              0.0,
+              1,
+              1.0,
+              0.0,
+              0.0
+            ],
+            "attributes": [
+              0,
+              1,
+              0,
+              10
+            ],
+            "actions": [
+              3
+            ],
+            "original_icon": "1",
+            "original_internal_turn_cost": 1,
+            "independent_original_actions": [
+              3
+            ]
+          },
+          {
+            "slot": 5,
+            "id": "Backflip",
+            "uuid": "d281840f-5b0d-4fc0-8dc7-fe636d6efe2c",
+            "upgrades": 0,
+            "cm_cost": 0,
+            "cm_turn_cost": null,
+            "playable": true,
+            "target": false,
+            "raw_hand_start": 1283,
+            "dynamic_start": 1795,
+            "model_hand_fields": [
+              19.0,
+              0.0,
+              0,
+              1.0,
+              0.0,
+              0.0
+            ],
+            "attributes": [
+              0,
+              0,
+              0,
+              2
+            ],
+            "actions": [
+              5
+            ],
+            "original_icon": "0",
+            "original_internal_turn_cost": 0,
+            "independent_original_actions": [
+              5
+            ]
+          }
+        ],
+        "hand": [
+          [
+            "Deflect",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Backflip",
+            0
+          ],
+          [
+            "Prepared",
+            0
+          ],
+          [
+            "Backflip",
+            0
+          ]
+        ],
+        "player_enemy_piles": {
+          "energy": 3,
+          "block": 0,
+          "player_hp": 60,
+          "monster_hp": [
+            53
+          ],
+          "piles": [
+            3,
+            0,
+            0
+          ]
+        }
+      },
+      "after": {
+        "seq": 6,
+        "sha": "0175866278cfb11ecaa63c5c98d9a4360a04f8cfdd2e989a781214de9fa7f154",
+        "rows": [
+          {
+            "slot": 3,
+            "id": "Backflip",
+            "uuid": "f98bf4c8-64a8-4639-a2fa-5c784edcf452",
+            "upgrades": 0,
+            "cm_cost": 1,
+            "cm_turn_cost": null,
+            "playable": true,
+            "target": false,
+            "raw_hand_start": 1271,
+            "dynamic_start": 1787,
+            "model_hand_fields": [
+              19.0,
+              0.0,
+              1,
+              1.0,
+              0.0,
+              0.0
+            ],
+            "attributes": [
+              0,
+              1,
+              0,
+              10
+            ],
+            "actions": [
+              3
+            ]
+          }
+        ],
+        "hand": [
+          [
+            "Deflect",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Backflip",
+            0
+          ],
+          [
+            "Prepared",
+            0
+          ],
+          [
+            "Deflect",
+            0
+          ],
+          [
+            "Deflect",
+            0
+          ]
+        ],
+        "player_enemy_piles": {
+          "energy": 3,
+          "block": 5,
+          "player_hp": 60,
+          "monster_hp": [
+            53
+          ],
+          "piles": [
+            1,
+            1,
+            0
+          ]
+        }
+      },
+      "same_original_uuid_next_turn": {
+        "seq": 7,
+        "uuid": "d281840f-5b0d-4fc0-8dc7-fe636d6efe2c",
+        "slot": 3,
+        "original_icon": "1",
+        "model_cost": 1,
+        "receipt_sha": "0062dd456d36a4d7153513c44593a2a81c8420ef2fbe7d284c4502c57dd29633"
+      }
+    }
+  },
+  "formal_source_sha": "098e1c7e9eb477929c5c2ed767c4e9196f81035eff47a2cbef8751b2fb27c76b",
+  "search_sha": "5a2572f291d81dc45146742f46206b462bae78d8f026ea9de71f6286da95eae3",
+  "new_games": 0,
+  "training_updates": 0
+}

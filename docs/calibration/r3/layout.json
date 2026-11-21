@@ -1,0 +1,1950 @@
+{
+  "coordinates": "Zero-based inclusive; i-th row begins at first_row_start + i*row_width. The candidate schema defines slot geometry; current producers and ABI define value interpretation.",
+  "width": 3122,
+  "action_count": 193,
+  "signature": {
+    "state_version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1",
+    "state_sha256": "9758f1f97deae6a003a7b31c95db0055b3f4e6251747742cace46c28bc2b5cad",
+    "card_registry_sha256": "cc7dd2446135675ad273bbdc09914909f8ab1c0aca854a8c00dd3d8b6f91a26a",
+    "action_version": "silent-canonical-row-a193-v1",
+    "action_adapter_version": "canonical-row-choice64-v1+frontier-settled+compact-decisions-v2+public-transitions-v1+ordinary-events-rewards-v1+shop-reward-discard-gold-and-death-settlement-v1+ending-route-paid-neow-permanent-upgrade-cancel-and-complete-card-masks-v2+ordinary-targets-and-victory-loot-v1+match-poison-and-idol-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+settled-neow-and-linked-chest-rewards-v1+round1-flex-chest-v1+round2-v1+round3-calibration-v1",
+    "action_contract_sha256": "0ae8ba53dfdde48ad0f4a4ae03cfd045fc2677ac50df3cae9a6ed7558962b78e",
+    "action_coordinates": "observation_monster_row",
+    "action_source_sha256": "991002a8a794556f29024c607c17f075d57c4f547711ef54c94a0aaed61d3451",
+    "state_decoder_sha256": "3b6f91649a61f34224af83a0564f3b4ec68b63e5ec9e60ad6afce305b8bfd0a3",
+    "backend_build_sha256": "5f81347346994e460ceaa8e500ff3f08637a33f2eb4a220cff467fc8f6105fa5",
+    "backend_commit": "482b3ef29c93746ada7d6fd0fd16885d7cc30b1f",
+    "backend_observation_version": 4,
+    "backend_observation_dimension": 1761,
+    "backend_actions": 146,
+    "observation_dimension": 3122,
+    "actions": 193
+  },
+  "source_hashes": {
+    "contracts/state_schema.json": "d7913ccff6e4ff92d382e4d552a30a134bfcf873d6866ef4b73c661b46af1fe9",
+    "contracts/actions.json": "c7d4f6be948eb57d979a64743f630d9c2a29493224c0397c7fe3f49def94ed05",
+    "contracts/policy_actions.json": "9656a4a29d070e070a7f7d4a9c05976455261229a9e15b1ab8997bba132c445a",
+    "contracts/policy_actions_193.json": "0ae8ba53dfdde48ad0f4a4ae03cfd045fc2677ac50df3cae9a6ed7558962b78e",
+    "experiments/sa_calibration_round1/privileged/schema.json": "03c15151723ded52dac94806adc7fe70d593e9ec78a9c0a1832617244aa20471",
+    "src/silent_env/action193.py": "53bca56df2df368bc5d1d7696dc771e714604ff93d926be7340b523beaf40136",
+    "src/silent_env/policy_actions.py": "ad5d0539bb5e8b1be07f899b85c6abb7502ed2b9defe7861fa93c366987a462a",
+    "experiments/public_hand_fees/session.py": "717774845dff088fa4ca8f792654dd2bf8cb65d7e7e0d0b5657ec485dbe177a4",
+    "experiments/public_card_attributes_v3/attributes.py": "eb034c165bb5b387a9a2c27ce42335d85ba3d6a9e26d11cc5c973c94026dcec5",
+    "experiments/sa_calibration_round2/events/quotes.py": "2ce4c88edbabdda35076c5d2b755d5a60e770655046e44d671b162d8943bffad",
+    "experiments/sa_calibration_round2/tea_state/session.py": "f552ed7f9fa4ca797e49cd99486c17bd0e9f1be801c9fd1a34618693e5245c50",
+    "experiments/sa_calibration_round2/tea_state/pending.cpp": "d3836242fa58ec5bbaff91d368a0b1492bdc598a02ac48235628ebac061bc0b4",
+    "experiments/sa_calibration_round3/release.py": "098e1c7e9eb477929c5c2ed767c4e9196f81035eff47a2cbef8751b2fb27c76b",
+    "experiments/sa_calibration_round3/death/session.py": "6937e021202a6013bf63cdd901f13651fe35651a135329c866c3d40acd154b63",
+    "experiments/sa_calibration_round3/death/split.py": "965c26ddfa274a5a071923c5018957f855f115ef205d47eac168e73c0aca48d7",
+    "experiments/sa_calibration_round3/INTERFACE.json": "40688dc0b745768d87c84e94c3fe6f86f1eeb655da1a59fc2f38d968f7f5de37"
+  },
+  "observation": [
+    {
+      "source": "contracts/state_schema.json",
+      "family": "base_blocks",
+      "start": 0,
+      "end": 31,
+      "size": 32,
+      "name": "global",
+      "rows": 1,
+      "row_width": 32,
+      "availability_prefix": 0,
+      "first_row_start": 0,
+      "layout_template": [
+        {
+          "name": "hp",
+          "kind": "int"
+        },
+        {
+          "name": "max_hp",
+          "kind": "int"
+        },
+        {
+          "name": "gold",
+          "kind": "int"
+        },
+        {
+          "name": "floor",
+          "kind": "int"
+        },
+        {
+          "name": "act",
+          "kind": "int"
+        },
+        {
+          "name": "ascension",
+          "kind": "int"
+        },
+        {
+          "name": "screen",
+          "kind": "enum",
+          "domain": "ScreenState"
+        },
+        {
+          "name": "in_battle",
+          "kind": "bool"
+        },
+        {
+          "name": "room",
+          "kind": "id_plus_one",
+          "domain": "Room"
+        },
+        {
+          "name": "event",
+          "kind": "id_plus_one",
+          "domain": "Event"
+        },
+        {
+          "name": "map_x",
+          "kind": "int"
+        },
+        {
+          "name": "map_y",
+          "kind": "int"
+        },
+        {
+          "name": "red_key",
+          "kind": "bool"
+        },
+        {
+          "name": "green_key",
+          "kind": "bool"
+        },
+        {
+          "name": "blue_key",
+          "kind": "bool"
+        },
+        {
+          "name": "boss",
+          "kind": "id_plus_one",
+          "domain": "MonsterEncounter"
+        },
+        {
+          "name": "potion_capacity",
+          "kind": "int"
+        },
+        {
+          "name": "potion_0",
+          "kind": "id_plus_one",
+          "domain": "Potion"
+        },
+        {
+          "name": "potion_1",
+          "kind": "id_plus_one",
+          "domain": "Potion"
+        },
+        {
+          "name": "potion_2",
+          "kind": "id_plus_one",
+          "domain": "Potion"
+        },
+        {
+          "name": "potion_3",
+          "kind": "id_plus_one",
+          "domain": "Potion"
+        },
+        {
+          "name": "potion_4",
+          "kind": "id_plus_one",
+          "domain": "Potion"
+        },
+        {
+          "name": "deck_count",
+          "kind": "int"
+        },
+        {
+          "name": "relic_count",
+          "kind": "int"
+        },
+        {
+          "name": "burning_elite_x",
+          "kind": "int"
+        },
+        {
+          "name": "burning_elite_y",
+          "kind": "int"
+        },
+        {
+          "name": "selection_task",
+          "kind": "int"
+        },
+        {
+          "name": "selection_required",
+          "kind": "int"
+        },
+        {
+          "name": "selection_count",
+          "kind": "int"
+        },
+        {
+          "name": "match_first",
+          "kind": "int"
+        },
+        {
+          "name": "chest_size_plus_one",
+          "kind": "int"
+        },
+        {
+          "name": "outcome",
+          "kind": "enum",
+          "domain": "GameOutcome"
+        }
+      ]
+    },
+    {
+      "source": "contracts/state_schema.json",
+      "family": "base_blocks",
+      "start": 32,
+      "end": 111,
+      "size": 80,
+      "name": "relics",
+      "rows": 40,
+      "row_width": 2,
+      "availability_prefix": 0,
+      "first_row_start": 32,
+      "layout_template": [
+        {
+          "name": "id",
+          "kind": "id_plus_one",
+          "domain": "RelicId"
+        },
+        {
+          "name": "counter",
+          "kind": "counter_plus_one"
+        }
+      ]
+    },
+    {
+      "source": "contracts/state_schema.json",
+      "family": "base_blocks",
+      "start": 112,
+      "end": 321,
+      "size": 210,
+      "name": "map",
+      "rows": 105,
+      "row_width": 2,
+      "availability_prefix": 0,
+      "first_row_start": 112,
+      "layout_template": [
+        {
+          "name": "room",
+          "kind": "id_plus_one",
+          "domain": "Room"
+        },
+        {
+          "name": "edges",
+          "kind": "int",
+          "minimum": 0,
+          "maximum": 7
+        }
+      ]
+    },
+    {
+      "source": "contracts/state_schema.json",
+      "family": "base_blocks",
+      "start": 322,
+      "end": 705,
+      "size": 384,
+      "name": "choices",
+      "rows": 64,
+      "row_width": 6,
+      "availability_prefix": 0,
+      "first_row_start": 322,
+      "layout_template": [
+        {
+          "name": "kind",
+          "kind": "enum",
+          "domain": "ChoiceKind"
+        },
+        {
+          "name": "arg0",
+          "kind": "tagged"
+        },
+        {
+          "name": "arg1",
+          "kind": "tagged"
+        },
+        {
+          "name": "arg2",
+          "kind": "tagged"
+        },
+        {
+          "name": "arg3",
+          "kind": "tagged"
+        },
+        {
+          "name": "valid",
+          "kind": "bool"
+        }
+      ]
+    },
+    {
+      "source": "contracts/state_schema.json",
+      "family": "base_blocks",
+      "start": 706,
+      "end": 897,
+      "size": 192,
+      "name": "deck",
+      "rows": 96,
+      "row_width": 2,
+      "availability_prefix": 0,
+      "first_row_start": 706,
+      "layout_template": [
+        {
+          "name": "id",
+          "kind": "id_plus_one",
+          "domain": "CardId"
+        },
+        {
+          "name": "upgraded",
+          "kind": "bool"
+        }
+      ]
+    },
+    {
+      "source": "contracts/state_schema.json",
+      "family": "base_blocks",
+      "start": 898,
+      "end": 992,
+      "size": 95,
+      "name": "player",
+      "rows": 1,
+      "row_width": 95,
+      "availability_prefix": 0,
+      "first_row_start": 898,
+      "layout_template": [
+        {
+          "name": "hp",
+          "kind": "int"
+        },
+        {
+          "name": "max_hp",
+          "kind": "int"
+        },
+        {
+          "name": "block",
+          "kind": "int"
+        },
+        {
+          "name": "energy",
+          "kind": "int"
+        },
+        {
+          "name": "turn",
+          "kind": "int"
+        },
+        {
+          "name": "hand_count",
+          "kind": "int"
+        },
+        {
+          "name": "draw_count",
+          "kind": "int"
+        },
+        {
+          "name": "input_state",
+          "kind": "int"
+        },
+        {
+          "name": "status_invalid",
+          "kind": "int"
+        },
+        {
+          "name": "status_double_damage",
+          "kind": "int"
+        },
+        {
+          "name": "status_draw_reduction",
+          "kind": "int"
+        },
+        {
+          "name": "status_frail",
+          "kind": "int"
+        },
+        {
+          "name": "status_intangible",
+          "kind": "int"
+        },
+        {
+          "name": "status_vulnerable",
+          "kind": "int"
+        },
+        {
+          "name": "status_weak",
+          "kind": "int"
+        },
+        {
+          "name": "status_bias",
+          "kind": "int"
+        },
+        {
+          "name": "status_confused",
+          "kind": "int"
+        },
+        {
+          "name": "status_constricted",
+          "kind": "int"
+        },
+        {
+          "name": "status_entangled",
+          "kind": "int"
+        },
+        {
+          "name": "status_fasting",
+          "kind": "int"
+        },
+        {
+          "name": "status_hex",
+          "kind": "int"
+        },
+        {
+          "name": "status_lose_dexterity",
+          "kind": "int"
+        },
+        {
+          "name": "status_lose_strength",
+          "kind": "int"
+        },
+        {
+          "name": "status_no_block",
+          "kind": "int"
+        },
+        {
+          "name": "status_no_draw",
+          "kind": "int"
+        },
+        {
+          "name": "status_wraith_form",
+          "kind": "int"
+        },
+        {
+          "name": "status_barricade",
+          "kind": "int"
+        },
+        {
+          "name": "status_blasphemer",
+          "kind": "int"
+        },
+        {
+          "name": "status_corruption",
+          "kind": "int"
+        },
+        {
+          "name": "status_electro",
+          "kind": "int"
+        },
+        {
+          "name": "status_surrounded",
+          "kind": "int"
+        },
+        {
+          "name": "status_master_reality",
+          "kind": "int"
+        },
+        {
+          "name": "status_pen_nib",
+          "kind": "int"
+        },
+        {
+          "name": "status_wrath_next_turn",
+          "kind": "int"
+        },
+        {
+          "name": "status_amplify",
+          "kind": "int"
+        },
+        {
+          "name": "status_blur",
+          "kind": "int"
+        },
+        {
+          "name": "status_buffer",
+          "kind": "int"
+        },
+        {
+          "name": "status_collect",
+          "kind": "int"
+        },
+        {
+          "name": "status_double_tap",
+          "kind": "int"
+        },
+        {
+          "name": "status_duplication",
+          "kind": "int"
+        },
+        {
+          "name": "status_echo_form",
+          "kind": "int"
+        },
+        {
+          "name": "status_free_attack_power",
+          "kind": "int"
+        },
+        {
+          "name": "status_rebound",
+          "kind": "int"
+        },
+        {
+          "name": "status_mantra",
+          "kind": "int"
+        },
+        {
+          "name": "status_accuracy",
+          "kind": "int"
+        },
+        {
+          "name": "status_after_image",
+          "kind": "int"
+        },
+        {
+          "name": "status_battle_hymn",
+          "kind": "int"
+        },
+        {
+          "name": "status_brutality",
+          "kind": "int"
+        },
+        {
+          "name": "status_burst",
+          "kind": "int"
+        },
+        {
+          "name": "status_combust",
+          "kind": "int"
+        },
+        {
+          "name": "status_creative_ai",
+          "kind": "int"
+        },
+        {
+          "name": "status_dark_embrace",
+          "kind": "int"
+        },
+        {
+          "name": "status_demon_form",
+          "kind": "int"
+        },
+        {
+          "name": "status_deva",
+          "kind": "int"
+        },
+        {
+          "name": "status_devotion",
+          "kind": "int"
+        },
+        {
+          "name": "status_draw_card_next_turn",
+          "kind": "int"
+        },
+        {
+          "name": "status_energized",
+          "kind": "int"
+        },
+        {
+          "name": "status_envenom",
+          "kind": "int"
+        },
+        {
+          "name": "status_establishment",
+          "kind": "int"
+        },
+        {
+          "name": "status_evolve",
+          "kind": "int"
+        },
+        {
+          "name": "status_feel_no_pain",
+          "kind": "int"
+        },
+        {
+          "name": "status_fire_breathing",
+          "kind": "int"
+        },
+        {
+          "name": "status_flame_barrier",
+          "kind": "int"
+        },
+        {
+          "name": "status_focus",
+          "kind": "int"
+        },
+        {
+          "name": "status_foresight",
+          "kind": "int"
+        },
+        {
+          "name": "status_hello_world",
+          "kind": "int"
+        },
+        {
+          "name": "status_infinite_blades",
+          "kind": "int"
+        },
+        {
+          "name": "status_juggernaut",
+          "kind": "int"
+        },
+        {
+          "name": "status_like_water",
+          "kind": "int"
+        },
+        {
+          "name": "status_loop",
+          "kind": "int"
+        },
+        {
+          "name": "status_magnetism",
+          "kind": "int"
+        },
+        {
+          "name": "status_mayhem",
+          "kind": "int"
+        },
+        {
+          "name": "status_metallicize",
+          "kind": "int"
+        },
+        {
+          "name": "status_next_turn_block",
+          "kind": "int"
+        },
+        {
+          "name": "status_noxious_fumes",
+          "kind": "int"
+        },
+        {
+          "name": "status_omega",
+          "kind": "int"
+        },
+        {
+          "name": "status_panache",
+          "kind": "int"
+        },
+        {
+          "name": "status_phantasmal",
+          "kind": "int"
+        },
+        {
+          "name": "status_plated_armor",
+          "kind": "int"
+        },
+        {
+          "name": "status_rage",
+          "kind": "int"
+        },
+        {
+          "name": "status_regen",
+          "kind": "int"
+        },
+        {
+          "name": "status_ritual",
+          "kind": "int"
+        },
+        {
+          "name": "status_rupture",
+          "kind": "int"
+        },
+        {
+          "name": "status_sadistic",
+          "kind": "int"
+        },
+        {
+          "name": "status_static_discharge",
+          "kind": "int"
+        },
+        {
+          "name": "status_thorns",
+          "kind": "int"
+        },
+        {
+          "name": "status_thousand_cuts",
+          "kind": "int"
+        },
+        {
+          "name": "status_tools_of_the_trade",
+          "kind": "int"
+        },
+        {
+          "name": "status_vigor",
+          "kind": "int"
+        },
+        {
+          "name": "status_wave_of_the_hand",
+          "kind": "int"
+        },
+        {
+          "name": "status_equilibrium",
+          "kind": "int"
+        },
+        {
+          "name": "status_artifact",
+          "kind": "int"
+        },
+        {
+          "name": "status_dexterity",
+          "kind": "int"
+        },
+        {
+          "name": "status_strength",
+          "kind": "int"
+        },
+        {
+          "name": "status_the_bomb",
+          "kind": "int"
+        }
+      ]
+    },
+    {
+      "source": "contracts/state_schema.json",
+      "family": "base_blocks",
+      "start": 993,
+      "end": 1252,
+      "size": 260,
+      "name": "monsters",
+      "rows": 5,
+      "row_width": 52,
+      "availability_prefix": 0,
+      "first_row_start": 993,
+      "layout_template": [
+        {
+          "name": "id",
+          "kind": "id_plus_one",
+          "domain": "MonsterId"
+        },
+        {
+          "name": "hp",
+          "kind": "int"
+        },
+        {
+          "name": "max_hp",
+          "kind": "int"
+        },
+        {
+          "name": "block",
+          "kind": "int"
+        },
+        {
+          "name": "dead_or_escaped",
+          "kind": "bool"
+        },
+        {
+          "name": "half_dead",
+          "kind": "bool"
+        },
+        {
+          "name": "targetable",
+          "kind": "bool"
+        },
+        {
+          "name": "intent",
+          "kind": "id_plus_one",
+          "domain": "Intent"
+        },
+        {
+          "name": "intent_damage",
+          "kind": "int"
+        },
+        {
+          "name": "intent_hits",
+          "kind": "int"
+        },
+        {
+          "name": "status_artifact",
+          "kind": "int"
+        },
+        {
+          "name": "status_block_return",
+          "kind": "int"
+        },
+        {
+          "name": "status_choked",
+          "kind": "int"
+        },
+        {
+          "name": "status_corpse_explosion",
+          "kind": "int"
+        },
+        {
+          "name": "status_lock_on",
+          "kind": "int"
+        },
+        {
+          "name": "status_mark",
+          "kind": "int"
+        },
+        {
+          "name": "status_metallicize",
+          "kind": "int"
+        },
+        {
+          "name": "status_plated_armor",
+          "kind": "int"
+        },
+        {
+          "name": "status_poison",
+          "kind": "int"
+        },
+        {
+          "name": "status_regen",
+          "kind": "int"
+        },
+        {
+          "name": "status_shackled",
+          "kind": "int"
+        },
+        {
+          "name": "status_strength",
+          "kind": "int"
+        },
+        {
+          "name": "status_vulnerable",
+          "kind": "int"
+        },
+        {
+          "name": "status_weak",
+          "kind": "int"
+        },
+        {
+          "name": "status_angry",
+          "kind": "int"
+        },
+        {
+          "name": "status_beat_of_death",
+          "kind": "int"
+        },
+        {
+          "name": "status_curiosity",
+          "kind": "int"
+        },
+        {
+          "name": "status_curl_up",
+          "kind": "int"
+        },
+        {
+          "name": "status_enrage",
+          "kind": "int"
+        },
+        {
+          "name": "status_fading",
+          "kind": "int"
+        },
+        {
+          "name": "status_flight",
+          "kind": "int"
+        },
+        {
+          "name": "status_generic_strength_up",
+          "kind": "int"
+        },
+        {
+          "name": "status_intangible",
+          "kind": "int"
+        },
+        {
+          "name": "status_malleable",
+          "kind": "int"
+        },
+        {
+          "name": "status_mode_shift",
+          "kind": "int"
+        },
+        {
+          "name": "status_ritual",
+          "kind": "int"
+        },
+        {
+          "name": "status_slow",
+          "kind": "int"
+        },
+        {
+          "name": "status_spore_cloud",
+          "kind": "int"
+        },
+        {
+          "name": "status_thievery",
+          "kind": "int"
+        },
+        {
+          "name": "status_thorns",
+          "kind": "int"
+        },
+        {
+          "name": "status_time_warp",
+          "kind": "int"
+        },
+        {
+          "name": "status_invincible",
+          "kind": "int"
+        },
+        {
+          "name": "status_reactive",
+          "kind": "int"
+        },
+        {
+          "name": "status_sharp_hide",
+          "kind": "int"
+        },
+        {
+          "name": "status_asleep",
+          "kind": "int"
+        },
+        {
+          "name": "status_barricade",
+          "kind": "int"
+        },
+        {
+          "name": "status_minion",
+          "kind": "int"
+        },
+        {
+          "name": "status_minion_leader",
+          "kind": "int"
+        },
+        {
+          "name": "status_painful_stabs",
+          "kind": "int"
+        },
+        {
+          "name": "status_regrow",
+          "kind": "int"
+        },
+        {
+          "name": "status_shifting",
+          "kind": "int"
+        },
+        {
+          "name": "status_stasis",
+          "kind": "int"
+        }
+      ]
+    },
+    {
+      "source": "contracts/state_schema.json",
+      "family": "base_blocks",
+      "start": 1253,
+      "end": 1312,
+      "size": 60,
+      "name": "hand",
+      "rows": 10,
+      "row_width": 6,
+      "availability_prefix": 0,
+      "first_row_start": 1253,
+      "layout_template": [
+        {
+          "name": "id",
+          "kind": "id_plus_one",
+          "domain": "CardId"
+        },
+        {
+          "name": "upgraded",
+          "kind": "bool"
+        },
+        {
+          "name": "cost_for_turn",
+          "kind": "int"
+        },
+        {
+          "name": "playable",
+          "kind": "bool"
+        },
+        {
+          "name": "requires_target",
+          "kind": "bool"
+        },
+        {
+          "name": "selected",
+          "kind": "bool"
+        }
+      ]
+    },
+    {
+      "source": "contracts/state_schema.json",
+      "family": "base_blocks",
+      "start": 1313,
+      "end": 1440,
+      "size": 128,
+      "name": "draw",
+      "rows": 64,
+      "row_width": 2,
+      "availability_prefix": 0,
+      "first_row_start": 1313,
+      "layout_template": [
+        {
+          "name": "id",
+          "kind": "id_plus_one",
+          "domain": "CardId"
+        },
+        {
+          "name": "upgraded",
+          "kind": "bool"
+        }
+      ]
+    },
+    {
+      "source": "contracts/state_schema.json",
+      "family": "base_blocks",
+      "start": 1441,
+      "end": 1568,
+      "size": 128,
+      "name": "discard",
+      "rows": 64,
+      "row_width": 2,
+      "availability_prefix": 0,
+      "first_row_start": 1441,
+      "layout_template": [
+        {
+          "name": "id",
+          "kind": "id_plus_one",
+          "domain": "CardId"
+        },
+        {
+          "name": "upgraded",
+          "kind": "bool"
+        }
+      ]
+    },
+    {
+      "source": "contracts/state_schema.json",
+      "family": "base_blocks",
+      "start": 1569,
+      "end": 1696,
+      "size": 128,
+      "name": "exhaust",
+      "rows": 64,
+      "row_width": 2,
+      "availability_prefix": 0,
+      "first_row_start": 1569,
+      "layout_template": [
+        {
+          "name": "id",
+          "kind": "id_plus_one",
+          "domain": "CardId"
+        },
+        {
+          "name": "upgraded",
+          "kind": "bool"
+        }
+      ]
+    },
+    {
+      "source": "contracts/state_schema.json",
+      "family": "base_blocks",
+      "start": 1697,
+      "end": 1760,
+      "size": 64,
+      "name": "class",
+      "rows": 1,
+      "row_width": 64,
+      "availability_prefix": 0,
+      "first_row_start": 1697,
+      "layout_template": [
+        {
+          "name": "character",
+          "kind": "id_plus_one",
+          "domain": "CharacterClass"
+        },
+        {
+          "name": "stance",
+          "kind": "int"
+        },
+        {
+          "name": "orb_slots",
+          "kind": "int"
+        },
+        {
+          "name": "orb_0_type_plus_one",
+          "kind": "int"
+        },
+        {
+          "name": "orb_0_passive",
+          "kind": "int"
+        },
+        {
+          "name": "orb_0_evoke",
+          "kind": "int"
+        },
+        {
+          "name": "orb_1_type_plus_one",
+          "kind": "int"
+        },
+        {
+          "name": "orb_1_passive",
+          "kind": "int"
+        },
+        {
+          "name": "orb_1_evoke",
+          "kind": "int"
+        },
+        {
+          "name": "orb_2_type_plus_one",
+          "kind": "int"
+        },
+        {
+          "name": "orb_2_passive",
+          "kind": "int"
+        },
+        {
+          "name": "orb_2_evoke",
+          "kind": "int"
+        },
+        {
+          "name": "orb_3_type_plus_one",
+          "kind": "int"
+        },
+        {
+          "name": "orb_3_passive",
+          "kind": "int"
+        },
+        {
+          "name": "orb_3_evoke",
+          "kind": "int"
+        },
+        {
+          "name": "orb_4_type_plus_one",
+          "kind": "int"
+        },
+        {
+          "name": "orb_4_passive",
+          "kind": "int"
+        },
+        {
+          "name": "orb_4_evoke",
+          "kind": "int"
+        },
+        {
+          "name": "orb_5_type_plus_one",
+          "kind": "int"
+        },
+        {
+          "name": "orb_5_passive",
+          "kind": "int"
+        },
+        {
+          "name": "orb_5_evoke",
+          "kind": "int"
+        },
+        {
+          "name": "orb_6_type_plus_one",
+          "kind": "int"
+        },
+        {
+          "name": "orb_6_passive",
+          "kind": "int"
+        },
+        {
+          "name": "orb_6_evoke",
+          "kind": "int"
+        },
+        {
+          "name": "orb_7_type_plus_one",
+          "kind": "int"
+        },
+        {
+          "name": "orb_7_passive",
+          "kind": "int"
+        },
+        {
+          "name": "orb_7_evoke",
+          "kind": "int"
+        },
+        {
+          "name": "orb_8_type_plus_one",
+          "kind": "int"
+        },
+        {
+          "name": "orb_8_passive",
+          "kind": "int"
+        },
+        {
+          "name": "orb_8_evoke",
+          "kind": "int"
+        },
+        {
+          "name": "orb_9_type_plus_one",
+          "kind": "int"
+        },
+        {
+          "name": "orb_9_passive",
+          "kind": "int"
+        },
+        {
+          "name": "orb_9_evoke",
+          "kind": "int"
+        },
+        {
+          "name": "hand_0_retain",
+          "kind": "bool"
+        },
+        {
+          "name": "hand_1_retain",
+          "kind": "bool"
+        },
+        {
+          "name": "hand_2_retain",
+          "kind": "bool"
+        },
+        {
+          "name": "hand_3_retain",
+          "kind": "bool"
+        },
+        {
+          "name": "hand_4_retain",
+          "kind": "bool"
+        },
+        {
+          "name": "hand_5_retain",
+          "kind": "bool"
+        },
+        {
+          "name": "hand_6_retain",
+          "kind": "bool"
+        },
+        {
+          "name": "hand_7_retain",
+          "kind": "bool"
+        },
+        {
+          "name": "hand_8_retain",
+          "kind": "bool"
+        },
+        {
+          "name": "hand_9_retain",
+          "kind": "bool"
+        },
+        {
+          "name": "retain_amount",
+          "kind": "int"
+        },
+        {
+          "name": "nightmare_0_id",
+          "kind": "id_plus_one",
+          "domain": "CardId"
+        },
+        {
+          "name": "nightmare_0_upgraded",
+          "kind": "bool"
+        },
+        {
+          "name": "nightmare_0_copies",
+          "kind": "int"
+        },
+        {
+          "name": "nightmare_1_id",
+          "kind": "id_plus_one",
+          "domain": "CardId"
+        },
+        {
+          "name": "nightmare_1_upgraded",
+          "kind": "bool"
+        },
+        {
+          "name": "nightmare_1_copies",
+          "kind": "int"
+        },
+        {
+          "name": "nightmare_2_id",
+          "kind": "id_plus_one",
+          "domain": "CardId"
+        },
+        {
+          "name": "nightmare_2_upgraded",
+          "kind": "bool"
+        },
+        {
+          "name": "nightmare_2_copies",
+          "kind": "int"
+        },
+        {
+          "name": "nightmare_3_id",
+          "kind": "id_plus_one",
+          "domain": "CardId"
+        },
+        {
+          "name": "nightmare_3_upgraded",
+          "kind": "bool"
+        },
+        {
+          "name": "nightmare_3_copies",
+          "kind": "int"
+        },
+        {
+          "name": "storm",
+          "kind": "int"
+        },
+        {
+          "name": "heatsinks",
+          "kind": "int"
+        },
+        {
+          "name": "machine_learning",
+          "kind": "int"
+        },
+        {
+          "name": "self_repair",
+          "kind": "int"
+        },
+        {
+          "name": "lightning_channeled",
+          "kind": "int"
+        },
+        {
+          "name": "frost_channeled",
+          "kind": "int"
+        },
+        {
+          "name": "mental_fortress",
+          "kind": "int"
+        },
+        {
+          "name": "rushdown",
+          "kind": "int"
+        }
+      ]
+    },
+    {
+      "source": "contracts/state_schema.json",
+      "family": "extra_blocks",
+      "start": 1761,
+      "end": 1773,
+      "size": 13,
+      "name": "counts",
+      "rows": 1,
+      "row_width": 12,
+      "availability_prefix": 1,
+      "first_row_start": 1762,
+      "layout_template": [
+        "relics",
+        "deck",
+        "hand",
+        "draw",
+        "discard",
+        "exhaust",
+        "nightmares",
+        "choices",
+        "monsters",
+        "potions",
+        "orbs",
+        "known_positions"
+      ]
+    },
+    {
+      "source": "contracts/state_schema.json",
+      "family": "extra_blocks",
+      "start": 1774,
+      "end": 1814,
+      "size": 41,
+      "name": "hand_dynamics",
+      "rows": 10,
+      "row_width": 4,
+      "availability_prefix": 1,
+      "first_row_start": 1775,
+      "layout_template": [
+        "combat_cost",
+        "cost_for_turn",
+        "special_data",
+        "free_once"
+      ]
+    },
+    {
+      "source": "contracts/state_schema.json",
+      "family": "extra_blocks",
+      "start": 1815,
+      "end": 2071,
+      "size": 257,
+      "name": "draw_dynamics",
+      "rows": 64,
+      "row_width": 4,
+      "availability_prefix": 1,
+      "first_row_start": 1816,
+      "layout_template": [
+        "combat_cost",
+        "cost_for_turn",
+        "special_data",
+        "free_once"
+      ]
+    },
+    {
+      "source": "contracts/state_schema.json",
+      "family": "extra_blocks",
+      "start": 2072,
+      "end": 2328,
+      "size": 257,
+      "name": "discard_dynamics",
+      "rows": 64,
+      "row_width": 4,
+      "availability_prefix": 1,
+      "first_row_start": 2073,
+      "layout_template": [
+        "combat_cost",
+        "cost_for_turn",
+        "special_data",
+        "free_once"
+      ]
+    },
+    {
+      "source": "contracts/state_schema.json",
+      "family": "extra_blocks",
+      "start": 2329,
+      "end": 2585,
+      "size": 257,
+      "name": "exhaust_dynamics",
+      "rows": 64,
+      "row_width": 4,
+      "availability_prefix": 1,
+      "first_row_start": 2330,
+      "layout_template": [
+        "combat_cost",
+        "cost_for_turn",
+        "special_data",
+        "free_once"
+      ]
+    },
+    {
+      "source": "contracts/state_schema.json",
+      "family": "extra_blocks",
+      "start": 2586,
+      "end": 2682,
+      "size": 97,
+      "name": "deck_misc",
+      "rows": 96,
+      "row_width": 1,
+      "availability_prefix": 1,
+      "first_row_start": 2587,
+      "layout_template": [
+        "misc"
+      ]
+    },
+    {
+      "source": "contracts/state_schema.json",
+      "family": "extra_blocks",
+      "start": 2683,
+      "end": 2747,
+      "size": 65,
+      "name": "choice_bindings",
+      "rows": 64,
+      "row_width": 1,
+      "availability_prefix": 1,
+      "first_row_start": 2684,
+      "layout_template": [
+        "public_card_reference"
+      ]
+    },
+    {
+      "source": "contracts/state_schema.json",
+      "family": "extra_blocks",
+      "start": 2748,
+      "end": 2764,
+      "size": 17,
+      "name": "nightmare_dynamics",
+      "rows": 4,
+      "row_width": 4,
+      "availability_prefix": 1,
+      "first_row_start": 2749,
+      "layout_template": [
+        "combat_cost",
+        "cost_for_turn",
+        "special_data",
+        "free_once"
+      ]
+    },
+    {
+      "source": "contracts/state_schema.json",
+      "family": "extra_blocks",
+      "start": 2765,
+      "end": 2769,
+      "size": 5,
+      "name": "turn_counters",
+      "rows": 1,
+      "row_width": 4,
+      "availability_prefix": 1,
+      "first_row_start": 2766,
+      "layout_template": [
+        "cards_played",
+        "attacks_played",
+        "skills_played",
+        "cards_discarded"
+      ]
+    },
+    {
+      "source": "contracts/state_schema.json",
+      "family": "extra_blocks",
+      "start": 2770,
+      "end": 2774,
+      "size": 5,
+      "name": "relic_flags",
+      "rows": 1,
+      "row_width": 4,
+      "availability_prefix": 1,
+      "first_row_start": 2771,
+      "layout_template": [
+        "lizard_tail_spent",
+        "maw_bank_active",
+        "necronomicon_used_this_turn",
+        "hovering_kite_triggered"
+      ]
+    },
+    {
+      "source": "contracts/state_schema.json",
+      "family": "extra_blocks",
+      "start": 2775,
+      "end": 2967,
+      "size": 193,
+      "name": "known_positions",
+      "rows": 64,
+      "row_width": 3,
+      "availability_prefix": 1,
+      "first_row_start": 2776,
+      "layout_template": [
+        "public_draw_index_plus_one",
+        "from_top",
+        "from_bottom"
+      ]
+    },
+    {
+      "source": "contracts/state_schema.json",
+      "family": "extra_blocks",
+      "start": 2968,
+      "end": 3113,
+      "size": 146,
+      "name": "event_values",
+      "rows": 1,
+      "row_width": 145,
+      "availability_prefix": 1,
+      "first_row_start": 2969,
+      "layout_template": [
+        "phase",
+        "option_0_known_bits",
+        "option_0_hp_loss",
+        "option_0_gold_cost",
+        "option_0_gold_gain",
+        "option_0_heal",
+        "option_0_max_hp_delta",
+        "option_0_damage_chance_percent",
+        "option_0_relic_chance_percent",
+        "option_0_card_count",
+        "option_1_known_bits",
+        "option_1_hp_loss",
+        "option_1_gold_cost",
+        "option_1_gold_gain",
+        "option_1_heal",
+        "option_1_max_hp_delta",
+        "option_1_damage_chance_percent",
+        "option_1_relic_chance_percent",
+        "option_1_card_count",
+        "option_2_known_bits",
+        "option_2_hp_loss",
+        "option_2_gold_cost",
+        "option_2_gold_gain",
+        "option_2_heal",
+        "option_2_max_hp_delta",
+        "option_2_damage_chance_percent",
+        "option_2_relic_chance_percent",
+        "option_2_card_count",
+        "option_3_known_bits",
+        "option_3_hp_loss",
+        "option_3_gold_cost",
+        "option_3_gold_gain",
+        "option_3_heal",
+        "option_3_max_hp_delta",
+        "option_3_damage_chance_percent",
+        "option_3_relic_chance_percent",
+        "option_3_card_count",
+        "option_4_known_bits",
+        "option_4_hp_loss",
+        "option_4_gold_cost",
+        "option_4_gold_gain",
+        "option_4_heal",
+        "option_4_max_hp_delta",
+        "option_4_damage_chance_percent",
+        "option_4_relic_chance_percent",
+        "option_4_card_count",
+        "option_5_known_bits",
+        "option_5_hp_loss",
+        "option_5_gold_cost",
+        "option_5_gold_gain",
+        "option_5_heal",
+        "option_5_max_hp_delta",
+        "option_5_damage_chance_percent",
+        "option_5_relic_chance_percent",
+        "option_5_card_count",
+        "option_6_known_bits",
+        "option_6_hp_loss",
+        "option_6_gold_cost",
+        "option_6_gold_gain",
+        "option_6_heal",
+        "option_6_max_hp_delta",
+        "option_6_damage_chance_percent",
+        "option_6_relic_chance_percent",
+        "option_6_card_count",
+        "option_7_known_bits",
+        "option_7_hp_loss",
+        "option_7_gold_cost",
+        "option_7_gold_gain",
+        "option_7_heal",
+        "option_7_max_hp_delta",
+        "option_7_damage_chance_percent",
+        "option_7_relic_chance_percent",
+        "option_7_card_count",
+        "option_8_known_bits",
+        "option_8_hp_loss",
+        "option_8_gold_cost",
+        "option_8_gold_gain",
+        "option_8_heal",
+        "option_8_max_hp_delta",
+        "option_8_damage_chance_percent",
+        "option_8_relic_chance_percent",
+        "option_8_card_count",
+        "option_9_known_bits",
+        "option_9_hp_loss",
+        "option_9_gold_cost",
+        "option_9_gold_gain",
+        "option_9_heal",
+        "option_9_max_hp_delta",
+        "option_9_damage_chance_percent",
+        "option_9_relic_chance_percent",
+        "option_9_card_count",
+        "option_10_known_bits",
+        "option_10_hp_loss",
+        "option_10_gold_cost",
+        "option_10_gold_gain",
+        "option_10_heal",
+        "option_10_max_hp_delta",
+        "option_10_damage_chance_percent",
+        "option_10_relic_chance_percent",
+        "option_10_card_count",
+        "option_11_known_bits",
+        "option_11_hp_loss",
+        "option_11_gold_cost",
+        "option_11_gold_gain",
+        "option_11_heal",
+        "option_11_max_hp_delta",
+        "option_11_damage_chance_percent",
+        "option_11_relic_chance_percent",
+        "option_11_card_count",
+        "option_12_known_bits",
+        "option_12_hp_loss",
+        "option_12_gold_cost",
+        "option_12_gold_gain",
+        "option_12_heal",
+        "option_12_max_hp_delta",
+        "option_12_damage_chance_percent",
+        "option_12_relic_chance_percent",
+        "option_12_card_count",
+        "option_13_known_bits",
+        "option_13_hp_loss",
+        "option_13_gold_cost",
+        "option_13_gold_gain",
+        "option_13_heal",
+        "option_13_max_hp_delta",
+        "option_13_damage_chance_percent",
+        "option_13_relic_chance_percent",
+        "option_13_card_count",
+        "option_14_known_bits",
+        "option_14_hp_loss",
+        "option_14_gold_cost",
+        "option_14_gold_gain",
+        "option_14_heal",
+        "option_14_max_hp_delta",
+        "option_14_damage_chance_percent",
+        "option_14_relic_chance_percent",
+        "option_14_card_count",
+        "option_15_known_bits",
+        "option_15_hp_loss",
+        "option_15_gold_cost",
+        "option_15_gold_gain",
+        "option_15_heal",
+        "option_15_max_hp_delta",
+        "option_15_damage_chance_percent",
+        "option_15_relic_chance_percent",
+        "option_15_card_count"
+      ]
+    },
+    {
+      "source": "contracts/state_schema.json",
+      "family": "extra_blocks",
+      "start": 3114,
+      "end": 3117,
+      "size": 4,
+      "name": "bottled_refs",
+      "rows": 1,
+      "row_width": 3,
+      "availability_prefix": 1,
+      "first_row_start": 3115,
+      "layout_template": [
+        "flame_deck_index_plus_one",
+        "lightning_deck_index_plus_one",
+        "tornado_deck_index_plus_one"
+      ]
+    },
+    {
+      "source": "experiments/sa_calibration_round1/privileged/schema.json",
+      "start": 3118,
+      "end": 3118,
+      "size": 1,
+      "name": "draw_top_backend_card_id_plus_one"
+    },
+    {
+      "source": "experiments/sa_calibration_round1/privileged/schema.json",
+      "start": 3119,
+      "end": 3119,
+      "size": 1,
+      "name": "draw_top_upgraded"
+    },
+    {
+      "source": "experiments/sa_calibration_round1/privileged/schema.json",
+      "start": 3120,
+      "end": 3120,
+      "size": 1,
+      "name": "draw_top_availability"
+    },
+    {
+      "source": "experiments/sa_calibration_round2/tea_state/session.py",
+      "start": 3121,
+      "end": 3121,
+      "size": 1,
+      "name": "tea_set_pending"
+    }
+  ],
+  "supplemental_group_availability": {
+    "unknown": 0,
+    "not_applicable": 1,
+    "observed": 2
+  },
+  "draw_top_semantics": {
+    "id": "silent-r1-privileged-draw-top-v1",
+    "base_width": 3118,
+    "width": 3121,
+    "actions": 193,
+    "fields": [
+      "draw_top_backend_card_id_plus_one",
+      "draw_top_upgraded",
+      "draw_top_availability"
+    ],
+    "offsets": [
+      3118,
+      3119,
+      3120
+    ],
+    "availability": {
+      "0": "not_in_combat_or_terminal",
+      "1": "combat_with_empty_draw_pile",
+      "2": "present"
+    },
+    "padding_when_absent": [
+      0,
+      0
+    ],
+    "source": "Simulated combat draw pile, back() at the current decision; no shuffle or future projection. A present card can remain on top when the hand is full or drawing is forbidden."
+  },
+  "tea_semantics": "1 only before combat with charged Ancient Tea Set; 0 during combat after its benefit is applied and at terminal.",
+  "runtime_annotations": [
+    {
+      "blocks": [
+        "hand",
+        "hand_dynamics"
+      ],
+      "rule": "Current public hand uses shown cost icon; dynamic four-slot hand encoding uses combat cost, displayed cost, special data, flags for which are known/free. See current codec; bare zero can be unknown.",
+      "source": [
+        "experiments/public_hand_fees/session.py",
+        "experiments/public_card_attributes_v3/attributes.py"
+      ]
+    },
+    {
+      "blocks": [
+        "counts",
+        "event_values"
+      ],
+      "rule": "Reviewed Scrap Ooze / Serpent choices expose two options and only current available quote bits.",
+      "source": "experiments/sa_calibration_round2/events/quotes.py"
+    },
+    {
+      "blocks": [
+        "monsters"
+      ],
+      "rule": "Spore Cloud is row-relative +37. The two specific historical follow-ups clear only the receipted dead slot. Split is a derived live-slot marker and uses no extra field.",
+      "source": [
+        "experiments/sa_calibration_round3/death/session.py",
+        "experiments/sa_calibration_round3/death/split.py"
+      ]
+    }
+  ],
+  "historical_representation_sources": [
+    "contracts/state_schema.json",
+    "experiments/public_hand_fees/session.py",
+    "experiments/public_hand_fees/icon.h",
+    "experiments/public_hand_fees/probe.cpp",
+    "experiments/public_card_attributes_v3/attributes.py",
+    "experiments/public_action_memory_v1/policy.py",
+    "experiments/policy_setup_confirmation/session.py",
+    "experiments/public_shop/session.py",
+    "experiments/policy_composed/current.py",
+    "experiments/policy_grid_integration/session.py",
+    "experiments/policy_neow_opening/opening_v2.py",
+    "experiments/policy_neow_cards/session.py",
+    "experiments/policy_neow_gold/session.py",
+    "experiments/neow_black_star/session.py",
+    "experiments/reward_relic_scope/session.py"
+  ],
+  "actions": [
+    {
+      "start": 0,
+      "end": 9,
+      "size": 10,
+      "meaning": "无目标出手牌 h",
+      "classification": "context_bound"
+    },
+    {
+      "start": 10,
+      "end": 59,
+      "size": 50,
+      "meaning": "出手牌 h，目标为行 t；10*(t+1)+h",
+      "classification": "context_bound"
+    },
+    {
+      "start": 60,
+      "end": 69,
+      "size": 10,
+      "meaning": "指向第六目标行的手牌动作",
+      "classification": "reserved"
+    },
+    {
+      "start": 70,
+      "end": 74,
+      "size": 5,
+      "meaning": "使用槽 s 的无目标药水",
+      "classification": "context_bound"
+    },
+    {
+      "start": 75,
+      "end": 99,
+      "size": 25,
+      "meaning": "使用槽 s 的药水指向行 t；75+5*t+s",
+      "classification": "context_bound"
+    },
+    {
+      "start": 100,
+      "end": 104,
+      "size": 5,
+      "meaning": "指向第六目标行的药水动作",
+      "classification": "reserved"
+    },
+    {
+      "start": 105,
+      "end": 109,
+      "size": 5,
+      "meaning": "丢弃药水槽 s",
+      "classification": "context_bound"
+    },
+    {
+      "start": 110,
+      "end": 169,
+      "size": 60,
+      "meaning": "当前界面显示的第0至59个选项",
+      "classification": "context_bound"
+    },
+    {
+      "start": 170,
+      "end": 170,
+      "size": 1,
+      "meaning": "end",
+      "classification": "context_bound"
+    },
+    {
+      "start": 171,
+      "end": 171,
+      "size": 1,
+      "meaning": "proceed",
+      "classification": "context_bound"
+    },
+    {
+      "start": 172,
+      "end": 172,
+      "size": 1,
+      "meaning": "confirm",
+      "classification": "context_bound"
+    },
+    {
+      "start": 173,
+      "end": 173,
+      "size": 1,
+      "meaning": "cancel",
+      "classification": "context_bound"
+    },
+    {
+      "start": 174,
+      "end": 174,
+      "size": 1,
+      "meaning": "key_reserved",
+      "classification": "reserved"
+    },
+    {
+      "start": 175,
+      "end": 175,
+      "size": 1,
+      "meaning": "click_reserved",
+      "classification": "reserved"
+    },
+    {
+      "start": 176,
+      "end": 176,
+      "size": 1,
+      "meaning": "return",
+      "classification": "context_bound"
+    },
+    {
+      "start": 177,
+      "end": 177,
+      "size": 1,
+      "meaning": "skip",
+      "classification": "context_bound"
+    },
+    {
+      "start": 178,
+      "end": 178,
+      "size": 1,
+      "meaning": "leave",
+      "classification": "context_bound"
+    },
+    {
+      "start": 179,
+      "end": 188,
+      "size": 10,
+      "meaning": "取消已选手牌槽0至9",
+      "classification": "context_bound"
+    },
+    {
+      "start": 189,
+      "end": 192,
+      "size": 4,
+      "meaning": "当前界面显示的第60至63个选项",
+      "classification": "context_bound"
+    }
+  ],
+  "reserved_coordinates": [
+    60,
+    61,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    100,
+    101,
+    102,
+    103,
+    104,
+    174,
+    175
+  ],
+  "action_verification": {
+    "identity_binding_only": 176,
+    "reserved_rejected": 17,
+    "choices_roundtrip": 64,
+    "choice_65_rejected": true
+  },
+  "limits": "Location and coordinate-conversion verification only. No per-field native-fidelity certificate; empty slots, unknown observations and unsupported page-specific actions remain separately identified in actual paired cases."
+}
