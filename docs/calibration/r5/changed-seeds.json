@@ -1,0 +1,292 @@
+{
+  "signature": {
+    "state_version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1+silent-a20-round5-v1",
+    "state_sha256": "1cd84cf37542189169f2c834eac5e37e8f0741ecba21a4a2c96e90f580556481",
+    "card_registry_sha256": "cc7dd2446135675ad273bbdc09914909f8ab1c0aca854a8c00dd3d8b6f91a26a",
+    "action_version": "silent-canonical-row-a193-v1",
+    "action_adapter_version": "canonical-row-choice64-v1+frontier-settled+compact-decisions-v2+public-transitions-v1+ordinary-events-rewards-v1+shop-reward-discard-gold-and-death-settlement-v1+ending-route-paid-neow-permanent-upgrade-cancel-and-complete-card-masks-v2+ordinary-targets-and-victory-loot-v1+match-poison-and-idol-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+settled-neow-and-linked-chest-rewards-v1+round1-flex-chest-v1+round2-v1+round3-calibration-v1+silent-a20-round4-v1+silent-a20-round5-v1",
+    "action_contract_sha256": "0ae8ba53dfdde48ad0f4a4ae03cfd045fc2677ac50df3cae9a6ed7558962b78e",
+    "action_coordinates": "observation_monster_row",
+    "action_source_sha256": "e2632657b5abaa1daf80d0a2f40c32f6fa094423dbd8efc964915fbd9de8beef",
+    "state_decoder_sha256": "49d15deb37ced9f3e1add4eaa771f15435ed311f61c91d785105490a1884f27e",
+    "backend_build_sha256": "5f81347346994e460ceaa8e500ff3f08637a33f2eb4a220cff467fc8f6105fa5",
+    "backend_commit": "482b3ef29c93746ada7d6fd0fd16885d7cc30b1f",
+    "backend_observation_version": 4,
+    "backend_observation_dimension": 1761,
+    "backend_actions": 146,
+    "observation_dimension": 3122,
+    "actions": 193
+  },
+  "changes": [
+    {
+      "seed": 4000025,
+      "decision": 33,
+      "first_different_menu": {
+        "decision": 32,
+        "r4": [
+          "SHOP_SCREEN",
+          [
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            178
+          ]
+        ],
+        "r5": [
+          "SHOP_SCREEN",
+          [
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            119,
+            178
+          ]
+        ]
+      },
+      "r4": {
+        "page": "SHOP_SCREEN",
+        "resources": [
+          35.0,
+          66.0,
+          158.0,
+          2.0,
+          1.0,
+          20.0
+        ],
+        "offered": [
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          178
+        ],
+        "chosen": 111,
+        "selected_row": [
+          1.0,
+          92.0,
+          0.0,
+          58.0,
+          0.0,
+          1
+        ],
+        "endpoint": "loss",
+        "endpoint_floor": 7,
+        "endpoint_page": "DELEGATED"
+      },
+      "r5": {
+        "page": "SHOP_SCREEN",
+        "resources": [
+          35.0,
+          66.0,
+          158.0,
+          2.0,
+          1.0,
+          20.0
+        ],
+        "offered": [
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          178
+        ],
+        "chosen": 113,
+        "selected_row": [
+          1.0,
+          254.0,
+          0.0,
+          24.0,
+          0.0,
+          1
+        ],
+        "endpoint": "unsupported",
+        "endpoint_floor": 5,
+        "endpoint_page": "DELEGATED"
+      }
+    },
+    {
+      "seed": 5000026,
+      "decision": 98,
+      "first_different_menu": {
+        "decision": 91,
+        "r4": [
+          "SHOP_SCREEN",
+          [
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            178
+          ]
+        ],
+        "r5": [
+          "SHOP_SCREEN",
+          [
+            105,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            178
+          ]
+        ]
+      },
+      "r4": {
+        "page": "SHOP_ROOM",
+        "resources": [
+          39.0,
+          66.0,
+          2.0,
+          4.0,
+          1.0,
+          20.0
+        ],
+        "offered": [
+          110,
+          171
+        ],
+        "chosen": 171,
+        "selected_row": null,
+        "endpoint": "loss",
+        "endpoint_floor": 7,
+        "endpoint_page": "DELEGATED"
+      },
+      "r5": {
+        "page": "SHOP_ROOM",
+        "resources": [
+          39.0,
+          66.0,
+          2.0,
+          4.0,
+          1.0,
+          20.0
+        ],
+        "offered": [
+          110,
+          171
+        ],
+        "chosen": 110,
+        "selected_row": [
+          15,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "endpoint": "unsupported",
+        "endpoint_floor": 6,
+        "endpoint_page": "GRID_UNVERIFIED"
+      }
+    },
+    {
+      "seed": 7000041,
+      "decision": 41,
+      "first_different_menu": {
+        "decision": 41,
+        "r4": [
+          "SHOP_SCREEN",
+          [
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            178
+          ]
+        ],
+        "r5": [
+          "SHOP_SCREEN",
+          [
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            118,
+            178
+          ]
+        ]
+      },
+      "r4": {
+        "page": "SHOP_SCREEN",
+        "resources": [
+          52.0,
+          66.0,
+          99.0,
+          2.0,
+          1.0,
+          20.0
+        ],
+        "offered": [
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          178
+        ],
+        "chosen": 113,
+        "selected_row": [
+          1.0,
+          248.0,
+          0.0,
+          52.0,
+          0.0,
+          1
+        ],
+        "endpoint": "unsupported",
+        "endpoint_floor": 3,
+        "endpoint_page": "DELEGATED"
+      },
+      "r5": {
+        "page": "SHOP_SCREEN",
+        "resources": [
+          52.0,
+          66.0,
+          99.0,
+          2.0,
+          1.0,
+          20.0
+        ],
+        "offered": [
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          118,
+          178
+        ],
+        "chosen": 178,
+        "selected_row": null,
+        "endpoint": "loss",
+        "endpoint_floor": 5,
+        "endpoint_page": "DELEGATED"
+      }
+    }
+  ]
+}

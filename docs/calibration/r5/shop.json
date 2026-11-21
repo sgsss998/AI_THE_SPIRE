@@ -1,0 +1,699 @@
+{
+  "parent": "R4 c165cd0",
+  "formal_interface": {
+    "state_version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1+silent-a20-round5-v1",
+    "state_sha256": "1cd84cf37542189169f2c834eac5e37e8f0741ecba21a4a2c96e90f580556481",
+    "card_registry_sha256": "cc7dd2446135675ad273bbdc09914909f8ab1c0aca854a8c00dd3d8b6f91a26a",
+    "action_version": "silent-canonical-row-a193-v1",
+    "action_adapter_version": "canonical-row-choice64-v1+frontier-settled+compact-decisions-v2+public-transitions-v1+ordinary-events-rewards-v1+shop-reward-discard-gold-and-death-settlement-v1+ending-route-paid-neow-permanent-upgrade-cancel-and-complete-card-masks-v2+ordinary-targets-and-victory-loot-v1+match-poison-and-idol-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+settled-neow-and-linked-chest-rewards-v1+round1-flex-chest-v1+round2-v1+round3-calibration-v1+silent-a20-round4-v1+silent-a20-round5-v1",
+    "action_contract_sha256": "0ae8ba53dfdde48ad0f4a4ae03cfd045fc2677ac50df3cae9a6ed7558962b78e",
+    "action_coordinates": "observation_monster_row",
+    "action_source_sha256": "e2632657b5abaa1daf80d0a2f40c32f6fa094423dbd8efc964915fbd9de8beef",
+    "state_decoder_sha256": "49d15deb37ced9f3e1add4eaa771f15435ed311f61c91d785105490a1884f27e",
+    "backend_build_sha256": "5f81347346994e460ceaa8e500ff3f08637a33f2eb4a220cff467fc8f6105fa5",
+    "backend_commit": "482b3ef29c93746ada7d6fd0fd16885d7cc30b1f",
+    "backend_observation_version": 4,
+    "backend_observation_dimension": 1761,
+    "backend_actions": 146,
+    "observation_dimension": 3122,
+    "actions": 193
+  },
+  "real_seed": "2W47ZBJ8TBFMD",
+  "raw_root_pattern": "native_runtime/compact_native_r5_shop_{branch}_001/shop_check",
+  "branches": {
+    "mirror": {
+      "items": [
+        {
+          "action": 118,
+          "command": "choose 8",
+          "label": "buy_mirror",
+          "before": {
+            "gold": 229,
+            "hp": 66,
+            "deck_count": 15,
+            "relics": [
+              "ringofthesnake"
+            ],
+            "potions": [
+              null,
+              null
+            ],
+            "page": "SHOP_SCREEN",
+            "original_page": "SHOP_SCREEN",
+            "original_raw_sha256": "c9ec244d143fc4017d204162d0f97ba41a6b3bd5285aae429069e3939cf0b5ee",
+            "S_sha256": "8bced612ad836db8c76405d72d7131af0be1dae6b4474d7e2aeb0d32a0c1389d",
+            "actions": [
+              110,
+              111,
+              112,
+              113,
+              114,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              178
+            ],
+            "shop_rows_match": true,
+            "original_affordable": 12,
+            "model_affordable": 12,
+            "model_supported_shop_choices": 12
+          },
+          "after": {
+            "gold": 57,
+            "hp": 66,
+            "deck_count": 15,
+            "relics": [
+              "ringofthesnake",
+              "dollysmirror"
+            ],
+            "potions": [
+              null,
+              null
+            ],
+            "page": "SHOP_MIRROR_SELECT",
+            "original_page": "GRID",
+            "original_raw_sha256": "6bdc8554a6ddf75a6d92f2afa0f07e3ba5d88ce75be7945957efdc8de0a99f4d",
+            "S_sha256": "546972207a9be7c0d1cf648cf5c5853d6ad6fc4c995237529754418f47f05305",
+            "actions": [
+              110,
+              111,
+              112,
+              113,
+              114,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124
+            ],
+            "mirror_grid_size": 15
+          },
+          "stale_rejected": true,
+          "model_missing_listed_actions": [],
+          "model_extra_actions": []
+        },
+        {
+          "action": 112,
+          "command": "choose 2",
+          "label": "copy_second_strike",
+          "before": {
+            "gold": 57,
+            "hp": 66,
+            "deck_count": 15,
+            "relics": [
+              "ringofthesnake",
+              "dollysmirror"
+            ],
+            "potions": [
+              null,
+              null
+            ],
+            "page": "SHOP_MIRROR_SELECT",
+            "original_page": "GRID",
+            "original_raw_sha256": "6bdc8554a6ddf75a6d92f2afa0f07e3ba5d88ce75be7945957efdc8de0a99f4d",
+            "S_sha256": "546972207a9be7c0d1cf648cf5c5853d6ad6fc4c995237529754418f47f05305",
+            "actions": [
+              110,
+              111,
+              112,
+              113,
+              114,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              122,
+              123,
+              124
+            ],
+            "mirror_grid_size": 15
+          },
+          "after": {
+            "gold": 57,
+            "hp": 66,
+            "deck_count": 16,
+            "relics": [
+              "ringofthesnake",
+              "dollysmirror"
+            ],
+            "potions": [
+              null,
+              null
+            ],
+            "page": "SHOP_SCREEN",
+            "original_page": "SHOP_SCREEN",
+            "original_raw_sha256": "a5035320bba23bf26d42dde30d8e3c74d74cbd3c3aa9e83bb7716744041d372e",
+            "S_sha256": "766799ddac26497ca3aa3eb9c723e6d9c9eb8c87f062b4ea0169ee4d2836dbbe",
+            "actions": [
+              110,
+              111,
+              112,
+              113,
+              114,
+              115,
+              178
+            ],
+            "shop_rows_match": true,
+            "original_affordable": 6,
+            "model_affordable": 6,
+            "model_supported_shop_choices": 6
+          },
+          "stale_rejected": true,
+          "model_missing_listed_actions": [],
+          "model_extra_actions": []
+        },
+        {
+          "action": 113,
+          "command": "choose 3",
+          "label": "57_less_56_leaves_one",
+          "before": {
+            "gold": 57,
+            "hp": 66,
+            "deck_count": 16,
+            "relics": [
+              "ringofthesnake",
+              "dollysmirror"
+            ],
+            "potions": [
+              null,
+              null
+            ],
+            "page": "SHOP_SCREEN",
+            "original_page": "SHOP_SCREEN",
+            "original_raw_sha256": "a5035320bba23bf26d42dde30d8e3c74d74cbd3c3aa9e83bb7716744041d372e",
+            "S_sha256": "766799ddac26497ca3aa3eb9c723e6d9c9eb8c87f062b4ea0169ee4d2836dbbe",
+            "actions": [
+              110,
+              111,
+              112,
+              113,
+              114,
+              115,
+              178
+            ],
+            "shop_rows_match": true,
+            "original_affordable": 6,
+            "model_affordable": 6,
+            "model_supported_shop_choices": 6
+          },
+          "after": {
+            "gold": 1,
+            "hp": 66,
+            "deck_count": 16,
+            "relics": [
+              "ringofthesnake",
+              "dollysmirror"
+            ],
+            "potions": [
+              "flexpotion",
+              null
+            ],
+            "page": "SHOP_SCREEN",
+            "original_page": "SHOP_SCREEN",
+            "original_raw_sha256": "235305ffe9456d02d5e526699f10acbe609375be42b78cdc366b1c1a83886099",
+            "S_sha256": "925028ec00c0b3619257d48bfd863699b2ee995f3c52e9e666e12f273580c1f8",
+            "actions": [
+              105,
+              178
+            ],
+            "shop_rows_match": true,
+            "original_affordable": 0,
+            "model_affordable": 0,
+            "model_supported_shop_choices": 0
+          },
+          "stale_rejected": true,
+          "model_missing_listed_actions": [],
+          "model_extra_actions": []
+        }
+      ],
+      "initial_offer": "dolly's mirror",
+      "initial_cost": 172,
+      "same_original_save": "3397a493287cd1d416f47b10f560f1ff5175fb8f0b6ace67d1c748a48bd4f123",
+      "copied": {
+        "original_uuid": "7242aaa6-1619-4b5d-b5da-06709009a4e7",
+        "new_uuid": "5cb70ec4-987a-42a9-bb30-8345df3cac30",
+        "originals_preserved": 15,
+        "aid": 112
+      },
+      "raw": {
+        "CONTINUE.jsonl": "5f46b74554e1c5e083e96a24bb13ec11264e667a0f5fea57784c7540de6000fa",
+        "RESTORE_INPUT.json": "982bb663d910bee1c76c169a56a60c65060529bdfeceeab1502bfe89c06feb4e",
+        "choices.jsonl": "aef04f6bd2e3d2622e2b879441981bf064d9c94c2c8d2444b34e3ef5665a4bf5",
+        "end.json": "9d5527decb3feb61362a0f0f1682f64d41e26613591cdf6f1440742bec7992fc",
+        "one_gold.json": "993728c617ef371095975a7e89ce9589652edc4159181722ee313c61071670a6",
+        "shelf.json": "a75e50a80baac6fe7d6bcf8e00fec25366c524af840159e0105f61fa7ad9faaa"
+      }
+    },
+    "flex": {
+      "items": [
+        {
+          "action": 119,
+          "command": "choose 9",
+          "label": "buy_flex",
+          "before": {
+            "gold": 229,
+            "hp": 66,
+            "deck_count": 15,
+            "relics": [
+              "ringofthesnake"
+            ],
+            "potions": [
+              null,
+              null
+            ],
+            "page": "SHOP_SCREEN",
+            "original_page": "SHOP_SCREEN",
+            "original_raw_sha256": "e38fb99af35a32cf14f84e7f5675f424c46e7d04e6dea70abe83216bb8c24a1f",
+            "S_sha256": "8bced612ad836db8c76405d72d7131af0be1dae6b4474d7e2aeb0d32a0c1389d",
+            "actions": [
+              110,
+              111,
+              112,
+              113,
+              114,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              178
+            ],
+            "shop_rows_match": true,
+            "original_affordable": 12,
+            "model_affordable": 12,
+            "model_supported_shop_choices": 12
+          },
+          "after": {
+            "gold": 173,
+            "hp": 66,
+            "deck_count": 15,
+            "relics": [
+              "ringofthesnake"
+            ],
+            "potions": [
+              "flexpotion",
+              null
+            ],
+            "page": "SHOP_SCREEN",
+            "original_page": "SHOP_SCREEN",
+            "original_raw_sha256": "25cb18d4a2d6c240c4165f7e421777cfa315dc79612844314d062a0b4f8cd643",
+            "S_sha256": "0a80b6bff1e89a3813020b5a55d6a7db8425fc014c80302d1998d655437290db",
+            "actions": [
+              105,
+              110,
+              111,
+              112,
+              113,
+              114,
+              115,
+              116,
+              117,
+              118,
+              119,
+              178
+            ],
+            "shop_rows_match": true,
+            "original_affordable": 10,
+            "model_affordable": 10,
+            "model_supported_shop_choices": 10
+          },
+          "stale_rejected": true,
+          "model_missing_listed_actions": [],
+          "model_extra_actions": []
+        },
+        {
+          "action": 118,
+          "command": "choose 8",
+          "label": "fill_second_slot",
+          "before": {
+            "gold": 173,
+            "hp": 66,
+            "deck_count": 15,
+            "relics": [
+              "ringofthesnake"
+            ],
+            "potions": [
+              "flexpotion",
+              null
+            ],
+            "page": "SHOP_SCREEN",
+            "original_page": "SHOP_SCREEN",
+            "original_raw_sha256": "25cb18d4a2d6c240c4165f7e421777cfa315dc79612844314d062a0b4f8cd643",
+            "S_sha256": "0a80b6bff1e89a3813020b5a55d6a7db8425fc014c80302d1998d655437290db",
+            "actions": [
+              105,
+              110,
+              111,
+              112,
+              113,
+              114,
+              115,
+              116,
+              117,
+              118,
+              119,
+              178
+            ],
+            "shop_rows_match": true,
+            "original_affordable": 10,
+            "model_affordable": 10,
+            "model_supported_shop_choices": 10
+          },
+          "after": {
+            "gold": 118,
+            "hp": 66,
+            "deck_count": 15,
+            "relics": [
+              "ringofthesnake"
+            ],
+            "potions": [
+              "flexpotion",
+              "fearpotion"
+            ],
+            "page": "SHOP_SCREEN",
+            "original_page": "SHOP_SCREEN",
+            "original_raw_sha256": "8f21c7975916b8007fefce6e83aee01f6f3c3ec32e232cefca88e9179a269b1c",
+            "S_sha256": "5ff5685c904f257b645c760751b0180b06d4d2a142f11938aa695d42c5d7be4a",
+            "actions": [
+              105,
+              106,
+              110,
+              111,
+              112,
+              113,
+              114,
+              115,
+              116,
+              178
+            ],
+            "shop_rows_match": true,
+            "original_affordable": 8,
+            "model_affordable": 8,
+            "model_supported_shop_choices": 7
+          },
+          "stale_rejected": true,
+          "model_missing_listed_actions": [],
+          "model_extra_actions": []
+        }
+      ],
+      "initial_offer": "flex potion",
+      "initial_cost": 56,
+      "same_original_save": "3397a493287cd1d416f47b10f560f1ff5175fb8f0b6ace67d1c748a48bd4f123",
+      "full_slots": {
+        "native_control": 117,
+        "model_sale_supported": false,
+        "original_game_message": "NOT ENOUGH POTION SLOTS",
+        "after_original_gold": 118,
+        "after_original_potions": [
+          "SteroidPotion",
+          "FearPotion"
+        ],
+        "original_before_sha256": "8f21c7975916b8007fefce6e83aee01f6f3c3ec32e232cefca88e9179a269b1c",
+        "original_later_sha256": "131ac3391cb15a27830fc8e51c69d4a1c05a51a8148ee7ed18c6456080e45aa5"
+      },
+      "raw": {
+        "CONTINUE.jsonl": "4ac37f762c04d46bc0ee4a3bf82f3de0cdea9d441c0fbf6b62eab15f84437fe1",
+        "RESTORE_INPUT.json": "e782169507978851e839fd3689a72d8ce5b72961c17e7237b89b3e8a0aa55eed",
+        "choices.jsonl": "26f92e33f80a395ec53c9f2452eabd09d76da9db305f97a6b19d4ba68ef55e9e",
+        "end.json": "70befdc7e6fa496886989345d85d5989c13b1b93f03e8b53155c23f82b8d3cde",
+        "full_attempt.json": "38079a4f0ff8c4470d33e03ff305a44036d924d09c462195881e8eac5fd24e1e",
+        "full_escape.json": "20a71ed66b933899ec0b8b388750246642d941d3bcfdfdcd5970756dc7a4224e",
+        "full_query.json": "71646ac416cb19e4d42b05f91a65398cb9927fc0bac2b8a7e9bc1674c730ace7",
+        "full_witness.json": "28d1e2836821cf5fefb41a1b8186a44e7280f065e847746c16dc899b246e788a",
+        "shelf.json": "4ddededcdbf1468c82daca5d77e1348dd20070eae28ddfe001212f54bb2411e2"
+      }
+    },
+    "fear": {
+      "items": [
+        {
+          "action": 120,
+          "command": "choose 10",
+          "label": "buy_fear",
+          "before": {
+            "gold": 229,
+            "hp": 66,
+            "deck_count": 15,
+            "relics": [
+              "ringofthesnake"
+            ],
+            "potions": [
+              null,
+              null
+            ],
+            "page": "SHOP_SCREEN",
+            "original_page": "SHOP_SCREEN",
+            "original_raw_sha256": "31fd344f013d44aea50f92459926326828b807ed93c515e7341b8faa50a29042",
+            "S_sha256": "8bced612ad836db8c76405d72d7131af0be1dae6b4474d7e2aeb0d32a0c1389d",
+            "actions": [
+              110,
+              111,
+              112,
+              113,
+              114,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              178
+            ],
+            "shop_rows_match": true,
+            "original_affordable": 12,
+            "model_affordable": 12,
+            "model_supported_shop_choices": 12
+          },
+          "after": {
+            "gold": 174,
+            "hp": 66,
+            "deck_count": 15,
+            "relics": [
+              "ringofthesnake"
+            ],
+            "potions": [
+              "fearpotion",
+              null
+            ],
+            "page": "SHOP_SCREEN",
+            "original_page": "SHOP_SCREEN",
+            "original_raw_sha256": "58e023aa6a1e8ca619dcc079d83a48576545e1f600aa3764a80b878188861193",
+            "S_sha256": "ba81e7ec5843f7bbbf34bc090877b506dff6e2133a129ef9d39d8c96a7e70cf9",
+            "actions": [
+              105,
+              110,
+              111,
+              112,
+              113,
+              114,
+              115,
+              116,
+              117,
+              118,
+              119,
+              178
+            ],
+            "shop_rows_match": true,
+            "original_affordable": 10,
+            "model_affordable": 10,
+            "model_supported_shop_choices": 10
+          },
+          "stale_rejected": true,
+          "model_missing_listed_actions": [],
+          "model_extra_actions": []
+        }
+      ],
+      "initial_offer": "fear potion",
+      "initial_cost": 55,
+      "same_original_save": "3397a493287cd1d416f47b10f560f1ff5175fb8f0b6ace67d1c748a48bd4f123",
+      "raw": {
+        "CONTINUE.jsonl": "dcc3a37523ea0a54b4559f86e68aacb09f21caa17c460e6eaeec23c5206cdcda",
+        "RESTORE_INPUT.json": "0a3319b9045df51a0e1c925f66cf21b37ad6e758cf7663b8613344e7c4f9675d",
+        "choices.jsonl": "f74bc60721ae0019df16bcb07c2633711027d1f5817193d469e3aa9718f937c9",
+        "end.json": "136858f70884626f33acf38343fa3a54042fa764f42f755ed570ef5180f879ae",
+        "shelf.json": "cf0589453250dd29610c378affe92dd813dfb4bad68a057a8399f71511030f2f"
+      }
+    },
+    "weak": {
+      "items": [
+        {
+          "action": 121,
+          "command": "choose 11",
+          "label": "buy_weak",
+          "before": {
+            "gold": 229,
+            "hp": 66,
+            "deck_count": 15,
+            "relics": [
+              "ringofthesnake"
+            ],
+            "potions": [
+              null,
+              null
+            ],
+            "page": "SHOP_SCREEN",
+            "original_page": "SHOP_SCREEN",
+            "original_raw_sha256": "fc99dc339c7462185c130fc29763c5367bf2266973569d5843b207cf41e6b7b8",
+            "S_sha256": "8bced612ad836db8c76405d72d7131af0be1dae6b4474d7e2aeb0d32a0c1389d",
+            "actions": [
+              110,
+              111,
+              112,
+              113,
+              114,
+              115,
+              116,
+              117,
+              118,
+              119,
+              120,
+              121,
+              178
+            ],
+            "shop_rows_match": true,
+            "original_affordable": 12,
+            "model_affordable": 12,
+            "model_supported_shop_choices": 12
+          },
+          "after": {
+            "gold": 172,
+            "hp": 66,
+            "deck_count": 15,
+            "relics": [
+              "ringofthesnake"
+            ],
+            "potions": [
+              "weakpotion",
+              null
+            ],
+            "page": "SHOP_SCREEN",
+            "original_page": "SHOP_SCREEN",
+            "original_raw_sha256": "f6f115d3977b658c8d2b8701ce48829de51e1363252c62af12dbd4ad78f9b334",
+            "S_sha256": "87315e810ee56460162ee9907be396c5dc6d93534f0c375562a8844a1d182e9b",
+            "actions": [
+              105,
+              110,
+              111,
+              112,
+              113,
+              114,
+              115,
+              116,
+              117,
+              118,
+              119,
+              178
+            ],
+            "shop_rows_match": true,
+            "original_affordable": 10,
+            "model_affordable": 10,
+            "model_supported_shop_choices": 10
+          },
+          "stale_rejected": true,
+          "model_missing_listed_actions": [],
+          "model_extra_actions": []
+        },
+        {
+          "action": 105,
+          "command": "potion discard 0",
+          "label": "discard_purchased_weak",
+          "before": {
+            "gold": 172,
+            "hp": 66,
+            "deck_count": 15,
+            "relics": [
+              "ringofthesnake"
+            ],
+            "potions": [
+              "weakpotion",
+              null
+            ],
+            "page": "SHOP_SCREEN",
+            "original_page": "SHOP_SCREEN",
+            "original_raw_sha256": "f6f115d3977b658c8d2b8701ce48829de51e1363252c62af12dbd4ad78f9b334",
+            "S_sha256": "87315e810ee56460162ee9907be396c5dc6d93534f0c375562a8844a1d182e9b",
+            "actions": [
+              105,
+              110,
+              111,
+              112,
+              113,
+              114,
+              115,
+              116,
+              117,
+              118,
+              119,
+              178
+            ],
+            "shop_rows_match": true,
+            "original_affordable": 10,
+            "model_affordable": 10,
+            "model_supported_shop_choices": 10
+          },
+          "after": {
+            "gold": 172,
+            "hp": 66,
+            "deck_count": 15,
+            "relics": [
+              "ringofthesnake"
+            ],
+            "potions": [
+              null,
+              null
+            ],
+            "page": "SHOP_SCREEN",
+            "original_page": "SHOP_SCREEN",
+            "original_raw_sha256": "8a8d0f20822a11c7e39108da681e9efaf2ef1d9e1c3b348df2a0f5ea6ab8d49d",
+            "S_sha256": "a84b3950e407c8db33a92f915251e312bef12ff51b9eca6bef5f1a5ee42dc758",
+            "actions": [
+              110,
+              111,
+              112,
+              113,
+              114,
+              115,
+              116,
+              117,
+              118,
+              119,
+              178
+            ],
+            "shop_rows_match": true,
+            "original_affordable": 10,
+            "model_affordable": 10,
+            "model_supported_shop_choices": 10
+          },
+          "stale_rejected": true,
+          "model_missing_listed_actions": [],
+          "model_extra_actions": []
+        }
+      ],
+      "initial_offer": "weak potion",
+      "initial_cost": 57,
+      "same_original_save": "3397a493287cd1d416f47b10f560f1ff5175fb8f0b6ace67d1c748a48bd4f123",
+      "raw": {
+        "CONTINUE.jsonl": "cde1d59c545342ef0f9b06a46932f6ab18cd9aa9522d3d8e7d123a9b5f6c7a17",
+        "RESTORE_INPUT.json": "d66199233fc2f878e417a1faec838a6b107105e1c8d41f70166159d074abb557",
+        "choices.jsonl": "b20a29133a279c3f0f1068365a5f9d2eb8f27c71713d8b7bcf35fdc991699685",
+        "discard.json": "08a23932df1f8192f7c468bc0d90be85fb223f904a71b54897af518b3fc0e9ea",
+        "end.json": "34c527c93cac5012df083f7dcd6cfb21c39276d93a1147097320231f058aec9f",
+        "shelf.json": "f194c75c21ca0412856988e7d0d3763462eeaecda2897c4c2a579dd96c3746b0"
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+id	场景	分支	S	A	接口及范围	原版动作证据	核对内容与未核范围	证据路径（相对experiments）
+opening	涅奥开局	普通祝福与开局资源	样本已核	样本已核	历史 R1	实按	三种开局合计16帧；种子1的谈话与四选一枚举。三个开局仍有550个坐标缺独立读数。	sa_calibration_round1/state/OPENINGS.json;sa_calibration_round1/actions/RESULT.json
+curse2	涅奥开局	诅咒双变牌与撤销同名牌	样本已核	样本已核	R4 正式	实按	种子46、48，13/14张牌的两个时点；核对12个原始候选。实按所录实例；264种有序组合来自模型重放。	sa_calibration_round4/neow/RESULT.json;sa_calibration_round4/coverage/STATE.json
+map1	地图与跨幕	第一幕地图格、可达边和选路	样本已核	样本已核	历史定向及 R4 正式前缀	实按	15张第一幕原版图和模型格/线一致；真机自然局多次选路，只验所走边。	retail_map_layout193/RESULT.json;sa_calibration_round4/fresh/REPORT.md
+map23	地图与跨幕	第二、三幕地图及可达入口	样本已核	待验	历史定向	仅列出	第二幕1张及定向第三幕1张图；第三幕4个可选入口在模拟中分别进入。缺从第一幕正式自然抵达并逐路实按的同种子记录。	retail_map_layout193/RESULT.json;retail_map_layout193/LATER_ACTS.json
+damage	手牌和回合	同名普通打击、升级打击的目标与消耗	样本已核	样本已核	R3 正式	实按	两局分别实际打出普通/升级张，伤害6/9，耗能1，其他手牌和目标槽对照。	sa_calibration_round3/coverage/hand_terms/RESULTS.json
+cost	手牌和回合	牌临时0费以及恢复1费	样本已核	样本已核	R3 定向初态后正式	实按	同手两张后空翻，只实打0费张。下回合重抽费用恢复；其他X费、动态改费组合待验。	sa_calibration_round3/coverage/hand_terms/RESULTS.json
+shuffle	手牌和回合	隐藏堆顶、回合首抽与重洗	样本已核	样本已核	R2及R3正式；R4分层	实按	R2一局18次首抽，8次有实例重洗证据；R4新局15次洗牌中4次正式、11次底层，仅核后手及堆数。	sa_calibration_round2/DRAW_CHECK.json;sa_calibration_round3/compat/RESULT.json;sa_calibration_round4/fresh/MECHANISMS.json
+multi	手牌和回合	多个活敌中选定单个目标	样本已核	样本已核	R4 正式及诊断	实按	R4 14次单目标攻击，8次正式、6次底层；原版手牌与受击物理槽逐次核查。	sa_calibration_round4/fresh/MECHANISMS.json
+aoe	手牌和回合	三活怪群体伤害与易伤结算	样本已核	样本已核	历史 R2 冻结专项	实按	种子54072726，爆炸药对3只各10伤、匕首雨击杀1只。R4随机局未出现群攻伤害；后续孢子另列。	sa_calibration_round2/frontiers/FROZEN.json;sa_calibration_round2/frontiers/REPORT.md
+handconfirm	手中选牌	确认弃牌同时触发一次打击	样本已核	样本已核	R4 正式语义重放	实按	第10/66次，需按真机回调分别执行确认和额外打击；单按单动作的字面转换会漏伤害。	sa_calibration_round4/fresh/REPORT.md;sa_calibration_round4/fresh/RESULT.json
+handreplace	手中选牌	弃牌已选时改选其他手牌	待验	待验	R4	仅列出	第10次真机还列4张打击，实际选确认；一键能否直接改选、需否先撤销未实按。	sa_calibration_round4/fresh/REPORT.md
+grid	永久牌组选牌	同名实例的变化/雕像删牌	样本已核	样本已核	R3 正式	实按	两局分别实选第二张打击；25候选在相应帧可见，其他407个选择为模拟分支。	sa_calibration_round3/grid/RESULT.json
+grid_other	永久牌组选牌	活墙、星盘等来源限定的候选、预览、确认	待验	待验	R4 复现R3停点	仅模拟	本组每种来源、目标和有序候选须对应真机；包括活墙三类与星盘三选，不能由单次同名删牌类推。	sa_calibration_round4/coverage/GROUPS.csv
+fungus	普通敌人死亡	死一只菌兽后打活怪或结束回合	样本已核	样本已核	R4 正式	实按	种子59打右怪22→16；种子19在4血5格挡主动结束回合，死亡后活怪15血。	sa_calibration_round4/death/RESULT.json
+corpse	普通敌人死亡	死后尸体孢子/力量何时清除	有差异	不适用	R4 底层诊断	只观察	第143次真机清除，底层仍有2孢子5力量；种子59也有先残留、后清理的真机读数。	sa_calibration_round4/fresh/MECHANISMS.json;sa_calibration_round4/death/RESULT.json
+fungus_opts	普通敌人死亡	死怪之后仍能丢药和结束回合	样本已核	有差异	R4 正式	仅列出	种子59真机列A105、A170，正式入口缺两项；该帧实打的是A23；打击后果见上一分支。	sa_calibration_round4/coverage/STATE.json
+elite	精英与钥匙	不同幕强化精英的强化、掉落及绿钥匙	待验	待验	历史专题及R4	仅模拟	已有第二幕钥匙节点截图，三哨卫战有底层配对；完整强化、击杀、领取链仍缺正式对照。	retail_map_layout193/RESULT.json;sa_calibration_round2/frontiers/LOWER_DIAGNOSTIC.json;sa_calibration_round3/coverage/QUESTIONS.csv
+pdiscard	药水	宝箱和卡奖界面丢第一格药水	样本已核	样本已核	历史 R1 与奖励专项	实按	样本9000026和7000047；当前奖励/卡位保持，丢弃后药槽空。同一药水在其他界面需另验。	sa_calibration_round1/actions/RESULT.json;boss_loot_retail193/WRIST_DROP.json
+powerpot	药水	能力药水三选一与跳过	待验	待验	R4 底层诊断	实按	第16层真机确实使用并跳过，诊断复现选项；本条未通过正式模型入口走到。	sa_calibration_round4/fresh/REPORT.md;sa_calibration_round4/fresh/RESULT.json
+tea	遗物	古老茶具充能及下一战能量	样本已核	不适用	R2 扩展与R3正式前缀、开战诊断	只观察	已充能/未充能可由单独状态位分开；入战5能量的实物比对是诊断段。	sa_calibration_round2/tea_state/RESULT.json;sa_calibration_round3/compat/RESULT.json
+inkcount	遗物	墨水瓶打第十张牌后的抽牌	待验	不适用	R4 底层诊断	只观察	真机触发14次，回绕9→0并抽牌。正式R4没有取得墨水瓶，未核正式入口的长期触发链。	sa_calibration_round4/fresh/MECHANISMS.json
+snake	随机事件	蛇的接受、拒绝和继续入账	样本已核	样本已核	R4 正式	实按	分别实按接受/拒绝路径；150金与疑虑在继续后入账。拒绝离开页丢药另计。	sa_calibration_round4/events/RESULT.json;sa_calibration_round4/events/REPORT.md
+snakedrop	随机事件	蛇拒绝后的离开页丢药	样本已核	有差异	R4 正式	仅列出	真机帧263携爆炸药、允许丢弃，正式缺A105，原版此次实际离开。	sa_calibration_round4/events/REPORT.md
+wheel	随机事件	转盘回血报价、停止、实际到账的时点	有差异	样本已核	R4 正式	实按	第46次转盘停下真机65血，正式已66；第47次领取后对齐。该条只核实按的转盘/领取。	sa_calibration_round4/fresh/REPORT.md
+scrap	随机事件	废料泥怪的首次探查及递增报价	样本已核	样本已核	R2 正式	实按	原版5血25%→6血35%，实际扣5；超100%时字段仍有上限。	sa_calibration_round2/events/RESULT.json
+match	随机事件	翻牌配对的选位与结果	样本已核	样本已核	历史定向	实按	同种子两条实机路径所按翻牌，查看12个位置的证据；待其它牌面与多次配对。	match_retail193/REPORT.md;match_retail193/ACCEPTANCE.json
+shopcard	商店	购买实际选中的卡、实际扣款	样本已核	样本已核	R3、R4 正式	实按	R3步法86、刀刃之舞26；R4第51次实际买斗篷与匕首29，其他陈列不由此获证。	sa_calibration_round3/fresh/RESULT.json;sa_calibration_round4/fresh/RESULT.json
+shopmirror	商店	多莉之镜报价、购买、复制的目标牌	待验	有差异	R4 正式	仅列出	第51次229金，真机列172金镜子，正式缺购买动作；同帧未点镜，没有所复制实例的结果。	sa_calibration_round4/fresh/REPORT.md
+shoppot	商店	三种在售药水的价格、购买与库存槽	待验	有差异	R4 正式	仅列出	第51次真机列报价56/55/57，正式漏购买；未在该局购买三瓶，满槽、拒绝与遗物组合单列待证。	sa_calibration_round4/fresh/REPORT.md;shop_progress193/REPORT.md
+restsmith	营火	升级某张永久牌	样本已核	样本已核	R2 正式及旧定向	实按	第6层15个原版候选，实选第一张打击并确认；当前定位的14个历史停点仍须按来源配对。	sa_calibration_round2/frontiers/GRID.json;sa_calibration_round4/coverage/GROUPS.csv
+restextra	营火	拿红钥匙、咖啡滤杯禁休息、附加遗物动作	待验	待验	历史目录	缺真机配对	已知按钮资格规则；尚缺本组每种条件的同场S和完整操作及下一决策。	sa_calibration_round3/coverage/QUESTIONS.csv
+loot	普通战利品	领取金币、选一张牌、跳过卡包	样本已核	样本已核	历史专项与R2正式	实按	种子35、36取钱回图；R2自然局第1层取卡、第2层跳过。含遗物改变结算情况见下项。	ordinary_reward_live193/RESULT.json;sa_calibration_round2/JOURNEY.json
+loot_relics	普通战利品	破碎金冠、添水、灵体外质、袖剑的战后奖励	样本已核	样本已核	历史定向奖励专项	实按	四种遗物各有真实首战结算。外质可点金币而不入账、添水可点药水而不入栏。	boss_loot_retail193/REPORT.md;boss_loot_retail193/SOZU.json;boss_loot_retail193/ECTO.json
+treasure	宝箱	开信刀或蓝钥匙与对应遗物互斥	样本已核	样本已核	历史定向	实按	9000026选蓝钥匙、2000011拿开信刀；原版蓝钥匙持有位有过渡帧。未据此推断任意遗物。	treasure_reward_640/ORIGINAL.json
+ink	宝箱	宝箱领取墨水瓶并撤销蓝钥匙	样本已核	有差异	R4 正式	实按	第97次两端都有81金/墨水瓶/蓝钥匙；取钱后第98次墨水瓶移到首行。真机拿到计数0且钥匙同时消失，R4只给钥匙和继续。	sa_calibration_round4/fresh/RESULT.json;sa_calibration_round4/fresh/REPORT.md
+boss	首领战	第一幕三首领阶段、敌人和回合	待验	待验	R2、R4 底层诊断	实按	真机守护者59次、史莱姆老大36次、六火亡魂87次；模型诊断到同一败北。R3另从正式入口核过活怪分裂阳性，三整场正式轨迹仍缺。	sa_calibration_round2/boss/OPENINGS.json;sa_calibration_round3/README.md;sa_calibration_round4/fresh/MECHANISMS.json
+bossreward	首领奖励	击败首领后选遗物或跳过、遗物后续选牌	待验	待验	历史目录	缺真机配对	须经过首领战后正式选择；涅奥换首领遗物与该入口分别计数。	sa_calibration_round3/coverage/QUESTIONS.csv
+act4	第四幕与心脏	第四幕路线、解锁心脏入口	待验	待验	历史定向	仅列出	定向原版有第四幕三节点及心脏终点图标；历史正式S的选项数7与唯一入口不符，候选改为1；仅模拟后续三条路，待R5逐路核实。	retail_map_layout193/LATER_ACTS.json;retail_map_layout193/REPORT.md
+heart	第四幕与心脏	盾矛、心脏战逐回合与胜败	待验	待验	历史存档及定向模拟	缺真机配对	两份真机碎心历史有最终结果，缺可逐步重建的完整实机决策、手牌和敌人效果。	terminal_metrics/RESULT.json;terminal_metrics/REPORT.md
+loss	终局	自然败北、末轮敌血与金币	样本已核	样本已核	R2、R3及R4定向正式	实按	R2第3层、R3第7层的自然局，另有R4种子19主动结束回合后死亡；R4盲测首领终局是底层对照。	sa_calibration_round2/JOURNEY.json;sa_calibration_round3/fresh/RESULT.json;sa_calibration_round4/death/RESULT.json
+win	终局	第三幕双首领、进第四幕与碎心的终局区分	待验	待验	历史存档及定向模拟	仅模拟	模拟可区分第三幕通关与碎心；两次历史碎心仅证楼层结算。缺逐步原版→正式入口的胜利/跨幕配对。	terminal_metrics/RESULT.json;terminal_metrics/REPORT.md
