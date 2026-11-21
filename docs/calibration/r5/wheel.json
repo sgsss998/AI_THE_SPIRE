@@ -1,0 +1,64 @@
+{
+  "source": "R4 real development game 2W47ZBJ8TBFMD",
+  "original_sha256": "a1d663d675d444dbe32d2e304430dbdfb71eb4d05d7261adbad6e2562c189b33",
+  "verified_outcome": "heal",
+  "other_outcomes_verified": 0,
+  "receipts": [
+    {
+      "input": 45,
+      "original_command": "choose 0",
+      "label": [
+        "play"
+      ],
+      "before_hp": 65,
+      "after_hp": 65,
+      "gold": 229,
+      "page": "DELEGATED",
+      "core_steps": 39,
+      "original_before": "be19c97f2bca34d2fe300e8a1d846c82fc5133f3038bf49e5b338576513bffab",
+      "original_after": "4e6b3db7e9832a995fd5579e6aea8f2cb57360278c34c2a1248c688ca244adf4"
+    },
+    {
+      "input": 46,
+      "original_command": "choose 0",
+      "label": [
+        "spin"
+      ],
+      "before_hp": 65,
+      "after_hp": 65,
+      "gold": 229,
+      "page": "WHEEL_HEAL_PRIZE",
+      "core_steps": 39,
+      "original_before": "4e6b3db7e9832a995fd5579e6aea8f2cb57360278c34c2a1248c688ca244adf4",
+      "original_after": "198b4944438fb3dea805ccd49de2ea9bb2f8d2b94976697a7f0108d6b7c7b57a"
+    },
+    {
+      "input": 47,
+      "original_command": "choose 0",
+      "label": [
+        "prize!"
+      ],
+      "before_hp": 65,
+      "after_hp": 66,
+      "gold": 229,
+      "page": "WHEEL_HEAL_LEAVE",
+      "core_steps": 40,
+      "original_before": "198b4944438fb3dea805ccd49de2ea9bb2f8d2b94976697a7f0108d6b7c7b57a",
+      "original_after": "6df99cef9c7537f9265fde22c426d7d477fbcc088d03ae770d21b6f7fcc14b3a"
+    },
+    {
+      "input": 48,
+      "original_command": "choose 0",
+      "label": [
+        "leave"
+      ],
+      "before_hp": 66,
+      "after_hp": 66,
+      "gold": 229,
+      "page": "DELEGATED",
+      "core_steps": 40,
+      "original_before": "6df99cef9c7537f9265fde22c426d7d477fbcc088d03ae770d21b6f7fcc14b3a",
+      "original_after": "3f5f5f3ea665dbf4f34a90b20c011a19d2ae2e9e3a5facb1e9b200e8d8e4dcf8"
+    }
+  ]
+}

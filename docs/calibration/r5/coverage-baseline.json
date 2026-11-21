@@ -1,0 +1,748 @@
+{
+  "edition": "R4 baseline for round 5, Silent Ascension 20",
+  "unit": "一行是写明范围的决策分支。部分分支含多个相近操作，历史已核只属于该行的历史版本与样本。",
+  "scene_count": 18,
+  "branches": [
+    {
+      "id": "opening",
+      "场景": "涅奥开局",
+      "分支": "普通祝福与开局资源",
+      "S": "已核",
+      "A": "已核",
+      "接口及范围": "历史 R1",
+      "原版动作证据": "实按",
+      "核对内容与未核范围": "三种开局合计16帧；种子1的谈话与四选一枚举。三个开局仍有550个坐标缺独立读数。",
+      "证据路径（相对experiments）": "sa_calibration_round1/state/OPENINGS.json;sa_calibration_round1/actions/RESULT.json"
+    },
+    {
+      "id": "curse2",
+      "场景": "涅奥开局",
+      "分支": "诅咒双变牌与撤销同名牌",
+      "S": "已核",
+      "A": "已核",
+      "接口及范围": "R4 正式",
+      "原版动作证据": "实按",
+      "核对内容与未核范围": "种子46、48，13/14张牌的两个时点；核对12个原始候选。实按所录实例；264种有序组合来自模型重放。",
+      "证据路径（相对experiments）": "sa_calibration_round4/neow/RESULT.json;sa_calibration_round4/coverage/STATE.json"
+    },
+    {
+      "id": "map1",
+      "场景": "地图与跨幕",
+      "分支": "第一幕地图格、可达边和选路",
+      "S": "已核",
+      "A": "已核",
+      "接口及范围": "历史定向及 R4 正式前缀",
+      "原版动作证据": "实按",
+      "核对内容与未核范围": "15张第一幕原版图和模型格/线一致；真机自然局多次选路，只验所走边。",
+      "证据路径（相对experiments）": "retail_map_layout193/RESULT.json;sa_calibration_round4/fresh/REPORT.md"
+    },
+    {
+      "id": "map23",
+      "场景": "地图与跨幕",
+      "分支": "第二、三幕地图及可达入口",
+      "S": "已核",
+      "A": "待验",
+      "接口及范围": "历史定向",
+      "原版动作证据": "仅列出",
+      "核对内容与未核范围": "第二幕1张及定向第三幕1张图；第三幕4个可选入口在模拟中分别进入。缺从第一幕正式自然抵达并逐路实按的同种子记录。",
+      "证据路径（相对experiments）": "retail_map_layout193/RESULT.json;retail_map_layout193/LATER_ACTS.json"
+    },
+    {
+      "id": "damage",
+      "场景": "手牌和回合",
+      "分支": "同名普通打击、升级打击的目标与消耗",
+      "S": "已核",
+      "A": "已核",
+      "接口及范围": "R3 正式",
+      "原版动作证据": "实按",
+      "核对内容与未核范围": "两局分别实际打出普通/升级张，伤害6/9，耗能1，其他手牌和目标槽对照。",
+      "证据路径（相对experiments）": "sa_calibration_round3/coverage/hand_terms/RESULTS.json"
+    },
+    {
+      "id": "cost",
+      "场景": "手牌和回合",
+      "分支": "牌临时0费以及恢复1费",
+      "S": "已核",
+      "A": "已核",
+      "接口及范围": "R3 定向初态后正式",
+      "原版动作证据": "实按",
+      "核对内容与未核范围": "同手两张后空翻，只实打0费张。下回合重抽费用恢复；其他X费、动态改费组合待验。",
+      "证据路径（相对experiments）": "sa_calibration_round3/coverage/hand_terms/RESULTS.json"
+    },
+    {
+      "id": "shuffle",
+      "场景": "手牌和回合",
+      "分支": "隐藏堆顶、回合首抽与重洗",
+      "S": "已核",
+      "A": "已核",
+      "接口及范围": "R2及R3正式；R4分层",
+      "原版动作证据": "实按",
+      "核对内容与未核范围": "R2一局18次首抽，8次有实例重洗证据；R4新局15次洗牌中4次正式、11次底层，仅核后手及堆数。",
+      "证据路径（相对experiments）": "sa_calibration_round2/DRAW_CHECK.json;sa_calibration_round3/compat/RESULT.json;sa_calibration_round4/fresh/MECHANISMS.json"
+    },
+    {
+      "id": "multi",
+      "场景": "手牌和回合",
+      "分支": "多个活敌中选定单个目标",
+      "S": "已核",
+      "A": "已核",
+      "接口及范围": "R4 正式及诊断",
+      "原版动作证据": "实按",
+      "核对内容与未核范围": "R4 14次单目标攻击，8次正式、6次底层；原版手牌与受击物理槽逐次核查。",
+      "证据路径（相对experiments）": "sa_calibration_round4/fresh/MECHANISMS.json"
+    },
+    {
+      "id": "aoe",
+      "场景": "手牌和回合",
+      "分支": "三活怪群体伤害、毒与易伤结算",
+      "S": "已核",
+      "A": "已核",
+      "接口及范围": "历史 R2 冻结专项",
+      "原版动作证据": "实按",
+      "核对内容与未核范围": "种子54072726，爆炸药对3只各10伤、匕首雨击杀1只。R4随机局未出现群攻伤害；后续孢子另列。",
+      "证据路径（相对experiments）": "sa_calibration_round2/frontiers/FROZEN.json;sa_calibration_round2/frontiers/REPORT.md"
+    },
+    {
+      "id": "handconfirm",
+      "场景": "手中选牌",
+      "分支": "确认弃牌同时触发一次打击",
+      "S": "已核",
+      "A": "已核",
+      "接口及范围": "R4 正式语义重放",
+      "原版动作证据": "实按",
+      "核对内容与未核范围": "第10/66次，需按真机回调分别执行确认和额外打击；单按单动作的字面转换会漏伤害。",
+      "证据路径（相对experiments）": "sa_calibration_round4/fresh/REPORT.md;sa_calibration_round4/fresh/RESULT.json"
+    },
+    {
+      "id": "handreplace",
+      "场景": "手中选牌",
+      "分支": "弃牌已选时改选其他手牌",
+      "S": "待验",
+      "A": "待验",
+      "接口及范围": "R4",
+      "原版动作证据": "仅列出",
+      "核对内容与未核范围": "第10次真机还列4张打击，实际选确认；一键能否直接改选、需否先撤销未实按。",
+      "证据路径（相对experiments）": "sa_calibration_round4/fresh/REPORT.md"
+    },
+    {
+      "id": "grid",
+      "场景": "永久牌组选牌",
+      "分支": "同名实例的变化/雕像删牌",
+      "S": "已核",
+      "A": "已核",
+      "接口及范围": "R3 正式",
+      "原版动作证据": "实按",
+      "核对内容与未核范围": "两局分别实选第二张打击；25候选在相应帧可见，其他407个选择为模拟分支。",
+      "证据路径（相对experiments）": "sa_calibration_round3/grid/RESULT.json"
+    },
+    {
+      "id": "grid_other",
+      "场景": "永久牌组选牌",
+      "分支": "活墙、星盘等来源限定的候选、预览、确认",
+      "S": "待验",
+      "A": "待验",
+      "接口及范围": "R4 复现R3停点",
+      "原版动作证据": "仅模拟",
+      "核对内容与未核范围": "本组每种来源、目标和有序候选须对应真机；包括活墙三类与星盘三选，不能由单次同名删牌类推。",
+      "证据路径（相对experiments）": "sa_calibration_round4/coverage/GROUPS.csv"
+    },
+    {
+      "id": "fungus",
+      "场景": "普通敌人死亡",
+      "分支": "死一只菌兽后打活怪或结束回合",
+      "S": "已核",
+      "A": "已核",
+      "接口及范围": "R4 正式",
+      "原版动作证据": "实按",
+      "核对内容与未核范围": "种子59打右怪22→16；种子19在4血5格挡主动结束回合，死亡后活怪15血。",
+      "证据路径（相对experiments）": "sa_calibration_round4/death/RESULT.json"
+    },
+    {
+      "id": "corpse",
+      "场景": "普通敌人死亡",
+      "分支": "死后尸体孢子/力量何时清除",
+      "S": "有差异",
+      "A": "不适用",
+      "接口及范围": "R4 底层诊断",
+      "原版动作证据": "只观察",
+      "核对内容与未核范围": "第143次真机清除，底层仍有2孢子5力量；种子59也有先残留、后清理的真机读数。",
+      "证据路径（相对experiments）": "sa_calibration_round4/fresh/MECHANISMS.json;sa_calibration_round4/death/RESULT.json"
+    },
+    {
+      "id": "fungus_opts",
+      "场景": "普通敌人死亡",
+      "分支": "死怪之后仍能丢药和结束回合",
+      "S": "已核",
+      "A": "有差异",
+      "接口及范围": "R4 正式",
+      "原版动作证据": "仅列出",
+      "核对内容与未核范围": "种子59真机列A105、A170，正式入口缺两项；该帧实打的是A23；打击后果见上一分支。",
+      "证据路径（相对experiments）": "sa_calibration_round4/coverage/STATE.json"
+    },
+    {
+      "id": "elite",
+      "场景": "精英与钥匙",
+      "分支": "不同幕强化精英的强化、掉落及绿钥匙",
+      "S": "待验",
+      "A": "待验",
+      "接口及范围": "历史专题及R4",
+      "原版动作证据": "仅模拟",
+      "核对内容与未核范围": "已有第二幕钥匙节点截图，三哨卫战有底层配对；完整强化、击杀、领取链仍缺正式对照。",
+      "证据路径（相对experiments）": "retail_map_layout193/RESULT.json;sa_calibration_round2/frontiers/LOWER_DIAGNOSTIC.json;sa_calibration_round3/coverage/QUESTIONS.csv"
+    },
+    {
+      "id": "pdiscard",
+      "场景": "药水",
+      "分支": "宝箱和卡奖界面丢第一格药水",
+      "S": "已核",
+      "A": "已核",
+      "接口及范围": "历史 R1 与奖励专项",
+      "原版动作证据": "实按",
+      "核对内容与未核范围": "样本9000026和7000047；当前奖励/卡位保持，丢弃后药槽空。同一药水在其他界面需另验。",
+      "证据路径（相对experiments）": "sa_calibration_round1/actions/RESULT.json;boss_loot_retail193/WRIST_DROP.json"
+    },
+    {
+      "id": "powerpot",
+      "场景": "药水",
+      "分支": "能力药水三选一与跳过",
+      "S": "待验",
+      "A": "待验",
+      "接口及范围": "R4 底层诊断",
+      "原版动作证据": "实按",
+      "核对内容与未核范围": "第16层真机确实使用并跳过，诊断复现选项；本条未通过正式模型入口走到。",
+      "证据路径（相对experiments）": "sa_calibration_round4/fresh/REPORT.md;sa_calibration_round4/fresh/RESULT.json"
+    },
+    {
+      "id": "tea",
+      "场景": "遗物",
+      "分支": "古老茶具充能及下一战能量",
+      "S": "已核",
+      "A": "不适用",
+      "接口及范围": "R2 扩展与R3正式前缀、开战诊断",
+      "原版动作证据": "只观察",
+      "核对内容与未核范围": "已充能/未充能可由单独状态位分开；入战5能量的实物比对是诊断段。",
+      "证据路径（相对experiments）": "sa_calibration_round2/tea_state/RESULT.json;sa_calibration_round3/compat/RESULT.json"
+    },
+    {
+      "id": "inkcount",
+      "场景": "遗物",
+      "分支": "墨水瓶打第十张牌后的抽牌",
+      "S": "待验",
+      "A": "不适用",
+      "接口及范围": "R4 底层诊断",
+      "原版动作证据": "只观察",
+      "核对内容与未核范围": "真机触发14次，回绕9→0并抽牌。正式R4没有取得墨水瓶，未核正式入口的长期触发链。",
+      "证据路径（相对experiments）": "sa_calibration_round4/fresh/MECHANISMS.json"
+    },
+    {
+      "id": "snake",
+      "场景": "随机事件",
+      "分支": "蛇的接受、拒绝和继续入账",
+      "S": "已核",
+      "A": "已核",
+      "接口及范围": "R4 正式",
+      "原版动作证据": "实按",
+      "核对内容与未核范围": "分别实按接受/拒绝路径；150金与疑虑在继续后入账。拒绝离开页丢药另计。",
+      "证据路径（相对experiments）": "sa_calibration_round4/events/RESULT.json;sa_calibration_round4/events/REPORT.md"
+    },
+    {
+      "id": "snakedrop",
+      "场景": "随机事件",
+      "分支": "蛇拒绝后的离开页丢药",
+      "S": "已核",
+      "A": "有差异",
+      "接口及范围": "R4 正式",
+      "原版动作证据": "仅列出",
+      "核对内容与未核范围": "真机帧263携爆炸药、允许丢弃，正式缺A105，原版此次实际离开。",
+      "证据路径（相对experiments）": "sa_calibration_round4/events/REPORT.md"
+    },
+    {
+      "id": "wheel",
+      "场景": "随机事件",
+      "分支": "转盘回血报价、停止、实际到账的时点",
+      "S": "有差异",
+      "A": "已核",
+      "接口及范围": "R4 正式",
+      "原版动作证据": "实按",
+      "核对内容与未核范围": "第46次转盘停下真机65血，正式已66；第47次领取后对齐。该条只核实按的转盘/领取。",
+      "证据路径（相对experiments）": "sa_calibration_round4/fresh/REPORT.md"
+    },
+    {
+      "id": "scrap",
+      "场景": "随机事件",
+      "分支": "废料泥怪的首次探查及递增报价",
+      "S": "已核",
+      "A": "已核",
+      "接口及范围": "R2 正式",
+      "原版动作证据": "实按",
+      "核对内容与未核范围": "原版5血25%→6血35%，实际扣5；超100%时字段仍有上限。",
+      "证据路径（相对experiments）": "sa_calibration_round2/events/RESULT.json"
+    },
+    {
+      "id": "match",
+      "场景": "随机事件",
+      "分支": "翻牌配对的选位与结果",
+      "S": "已核",
+      "A": "已核",
+      "接口及范围": "历史定向",
+      "原版动作证据": "实按",
+      "核对内容与未核范围": "同种子两条实机路径所按翻牌，查看12个位置的证据；待其它牌面与多次配对。",
+      "证据路径（相对experiments）": "match_retail193/REPORT.md;match_retail193/ACCEPTANCE.json"
+    },
+    {
+      "id": "shopcard",
+      "场景": "商店",
+      "分支": "购买实际选中的卡、实际扣款",
+      "S": "已核",
+      "A": "已核",
+      "接口及范围": "R3、R4 正式",
+      "原版动作证据": "实按",
+      "核对内容与未核范围": "R3步法86、刀刃之舞26；R4第51次实际买斗篷与匕首29，其他陈列不由此获证。",
+      "证据路径（相对experiments）": "sa_calibration_round3/fresh/RESULT.json;sa_calibration_round4/fresh/RESULT.json"
+    },
+    {
+      "id": "shopmirror",
+      "场景": "商店",
+      "分支": "多莉之镜报价、购买、复制的目标牌",
+      "S": "待验",
+      "A": "有差异",
+      "接口及范围": "R4 正式",
+      "原版动作证据": "仅列出",
+      "核对内容与未核范围": "第51次229金，真机列172金镜子，正式缺购买动作；同帧未点镜，没有所复制实例的结果。",
+      "证据路径（相对experiments）": "sa_calibration_round4/fresh/REPORT.md"
+    },
+    {
+      "id": "shoppot",
+      "场景": "商店",
+      "分支": "三种在售药水的价格、购买与库存槽",
+      "S": "待验",
+      "A": "有差异",
+      "接口及范围": "R4 正式",
+      "原版动作证据": "仅列出",
+      "核对内容与未核范围": "第51次真机列报价56/55/57，正式漏购买；未在该局购买三瓶，满槽、拒绝与遗物组合单列待证。",
+      "证据路径（相对experiments）": "sa_calibration_round4/fresh/REPORT.md;shop_progress193/REPORT.md"
+    },
+    {
+      "id": "restsmith",
+      "场景": "营火",
+      "分支": "升级某张永久牌",
+      "S": "已核",
+      "A": "已核",
+      "接口及范围": "R2 正式及旧定向",
+      "原版动作证据": "实按",
+      "核对内容与未核范围": "第6层15个原版候选，实选第一张打击并确认；当前定位的14个历史停点仍须按来源配对。",
+      "证据路径（相对experiments）": "sa_calibration_round2/frontiers/GRID.json;sa_calibration_round4/coverage/GROUPS.csv"
+    },
+    {
+      "id": "restextra",
+      "场景": "营火",
+      "分支": "拿红钥匙、咖啡滤杯禁休息、附加遗物动作",
+      "S": "待验",
+      "A": "待验",
+      "接口及范围": "历史目录",
+      "原版动作证据": "缺真机配对",
+      "核对内容与未核范围": "已知按钮资格规则；尚缺本组每种条件的同场S和完整操作及下一决策。",
+      "证据路径（相对experiments）": "sa_calibration_round3/coverage/QUESTIONS.csv"
+    },
+    {
+      "id": "loot",
+      "场景": "普通战利品",
+      "分支": "领取金币、选一张牌、跳过卡包",
+      "S": "已核",
+      "A": "已核",
+      "接口及范围": "历史专项与R2正式",
+      "原版动作证据": "实按",
+      "核对内容与未核范围": "种子35、36取钱回图；R2自然局第1层取卡、第2层跳过。含遗物改变结算情况见下项。",
+      "证据路径（相对experiments）": "ordinary_reward_live193/RESULT.json;sa_calibration_round2/JOURNEY.json"
+    },
+    {
+      "id": "loot_relics",
+      "场景": "普通战利品",
+      "分支": "破碎金冠、添水、灵体外质、袖剑的战后奖励",
+      "S": "已核",
+      "A": "已核",
+      "接口及范围": "历史定向奖励专项",
+      "原版动作证据": "实按",
+      "核对内容与未核范围": "四种遗物各有真实首战结算。外质可点金币而不入账、添水可点药水而不入栏。",
+      "证据路径（相对experiments）": "boss_loot_retail193/REPORT.md;boss_loot_retail193/SOZU.json;boss_loot_retail193/ECTO.json"
+    },
+    {
+      "id": "treasure",
+      "场景": "宝箱",
+      "分支": "开信刀或蓝钥匙与对应遗物互斥",
+      "S": "已核",
+      "A": "已核",
+      "接口及范围": "历史定向",
+      "原版动作证据": "实按",
+      "核对内容与未核范围": "9000026选蓝钥匙、2000011拿开信刀；原版蓝钥匙持有位有过渡帧。未据此推断任意遗物。",
+      "证据路径（相对experiments）": "treasure_reward_640/ORIGINAL.json"
+    },
+    {
+      "id": "ink",
+      "场景": "宝箱",
+      "分支": "宝箱领取墨水瓶并撤销蓝钥匙",
+      "S": "已核",
+      "A": "有差异",
+      "接口及范围": "R4 正式",
+      "原版动作证据": "实按",
+      "核对内容与未核范围": "第97次两端都有81金/墨水瓶/蓝钥匙；取钱后第98次墨水瓶移到首行。真机拿到计数0且钥匙同时消失，R4只给钥匙和继续。",
+      "证据路径（相对experiments）": "sa_calibration_round4/fresh/RESULT.json;sa_calibration_round4/fresh/REPORT.md"
+    },
+    {
+      "id": "boss",
+      "场景": "首领战",
+      "分支": "第一幕三首领阶段、敌人和回合",
+      "S": "待验",
+      "A": "待验",
+      "接口及范围": "R2、R4 底层诊断",
+      "原版动作证据": "实按",
+      "核对内容与未核范围": "真机守护者59次、史莱姆老大36次、六火亡魂87次；模型诊断到同一败北。R3另从正式入口核过活怪分裂阳性，三整场正式轨迹仍缺。",
+      "证据路径（相对experiments）": "sa_calibration_round2/boss/OPENINGS.json;sa_calibration_round3/README.md;sa_calibration_round4/fresh/MECHANISMS.json"
+    },
+    {
+      "id": "bossreward",
+      "场景": "首领奖励",
+      "分支": "击败首领后选遗物或跳过、遗物后续选牌",
+      "S": "待验",
+      "A": "待验",
+      "接口及范围": "历史目录",
+      "原版动作证据": "缺真机配对",
+      "核对内容与未核范围": "须经过首领战后正式选择；涅奥换首领遗物与该入口分别计数。",
+      "证据路径（相对experiments）": "sa_calibration_round3/coverage/QUESTIONS.csv"
+    },
+    {
+      "id": "act4",
+      "场景": "第四幕与心脏",
+      "分支": "第四幕路线、解锁心脏入口",
+      "S": "待验",
+      "A": "待验",
+      "接口及范围": "历史定向",
+      "原版动作证据": "仅列出",
+      "核对内容与未核范围": "定向原版有第四幕三节点及心脏终点图标；历史正式S的选项数7与唯一入口不符，候选改为1；仅模拟后续三条路，待R5逐路核实。",
+      "证据路径（相对experiments）": "retail_map_layout193/LATER_ACTS.json;retail_map_layout193/REPORT.md"
+    },
+    {
+      "id": "heart",
+      "场景": "第四幕与心脏",
+      "分支": "盾矛、心脏战逐回合与胜败",
+      "S": "待验",
+      "A": "待验",
+      "接口及范围": "历史存档及定向模拟",
+      "原版动作证据": "缺真机配对",
+      "核对内容与未核范围": "两份真机碎心历史有最终结果，缺可逐步重建的完整实机决策、手牌和敌人效果。",
+      "证据路径（相对experiments）": "terminal_metrics/RESULT.json;terminal_metrics/REPORT.md"
+    },
+    {
+      "id": "loss",
+      "场景": "终局",
+      "分支": "自然败北、末轮敌血与金币",
+      "S": "已核",
+      "A": "已核",
+      "接口及范围": "R2、R3及R4定向正式",
+      "原版动作证据": "实按",
+      "核对内容与未核范围": "R2第3层、R3第7层的自然局，另有R4种子19主动结束回合后死亡；R4盲测首领终局是底层对照。",
+      "证据路径（相对experiments）": "sa_calibration_round2/JOURNEY.json;sa_calibration_round3/fresh/RESULT.json;sa_calibration_round4/death/RESULT.json"
+    },
+    {
+      "id": "win",
+      "场景": "终局",
+      "分支": "第三幕双首领、进第四幕与碎心的终局区分",
+      "S": "待验",
+      "A": "待验",
+      "接口及范围": "历史存档及定向模拟",
+      "原版动作证据": "仅模拟",
+      "核对内容与未核范围": "模拟可区分第三幕通关与碎心；两次历史碎心仅证楼层结算。缺逐步原版→正式入口的胜利/跨幕配对。",
+      "证据路径（相对experiments）": "terminal_metrics/RESULT.json;terminal_metrics/REPORT.md"
+    }
+  ],
+  "branch_count": 41,
+  "state": {
+    "applicable": 41,
+    "counts": {
+      "已核": 26,
+      "待验": 13,
+      "有差异": 2
+    }
+  },
+  "action": {
+    "applicable": 38,
+    "counts": {
+      "不适用": 3,
+      "已核": 22,
+      "待验": 11,
+      "有差异": 5
+    }
+  },
+  "historical_question_ids": [
+    "R1-01",
+    "R1-02",
+    "R1-03",
+    "R1-04",
+    "R1-05",
+    "R1-06",
+    "R1-07",
+    "R1-08",
+    "R1-09",
+    "R1-10",
+    "R1-11",
+    "R1-12",
+    "R1-13",
+    "R1-14",
+    "R1-15",
+    "R1-16",
+    "R1-17",
+    "R1-18",
+    "R1-19",
+    "R1-20",
+    "R1-21",
+    "R1-22",
+    "R1-23",
+    "R1-24",
+    "R1-25",
+    "R1-26",
+    "R1-27",
+    "R1-28",
+    "R1-29",
+    "R1-30",
+    "R1-31",
+    "R1-32",
+    "R1-33",
+    "R1-34",
+    "R1-35",
+    "R1-36",
+    "R1-37",
+    "R1-38",
+    "R1-39",
+    "R1-40",
+    "R1-41",
+    "R1-42",
+    "R1-43",
+    "R1-44",
+    "R1-45",
+    "R1-46",
+    "R1-47",
+    "R1-48",
+    "R1-49",
+    "R1-50",
+    "R1-51",
+    "R1-52",
+    "R1-53",
+    "R1-54",
+    "R1-55",
+    "R1-56",
+    "R1-57",
+    "R1-58",
+    "R1-59",
+    "R1-60",
+    "R1-61",
+    "R1-62",
+    "R1-63",
+    "R1-64",
+    "R1-65",
+    "R1-66",
+    "R1-67",
+    "R1-68",
+    "R1-69",
+    "R1-70",
+    "R1-71",
+    "R2-01",
+    "R2-02",
+    "R2-03",
+    "R2-04",
+    "R2-05",
+    "R2-06",
+    "R3-01",
+    "R3-02",
+    "R3-03",
+    "R3-04",
+    "R3-05",
+    "R3-06",
+    "R3-07",
+    "R3-08",
+    "G-01",
+    "G-02",
+    "G-03",
+    "G-04",
+    "G-05",
+    "R3-09",
+    "R3-10",
+    "R3-11",
+    "R3-12",
+    "R3-13",
+    "R3-14",
+    "R3-15",
+    "R3-16"
+  ],
+  "historical_references": "98条历史问题包含多版本、重叠证据与旧判定。保留溯源，不与本表的分支相加。",
+  "per_scene": {
+    "商店": [
+      "shopcard",
+      "shopmirror",
+      "shoppot"
+    ],
+    "地图与跨幕": [
+      "map1",
+      "map23"
+    ],
+    "宝箱": [
+      "treasure",
+      "ink"
+    ],
+    "手中选牌": [
+      "handconfirm",
+      "handreplace"
+    ],
+    "手牌和回合": [
+      "damage",
+      "cost",
+      "shuffle",
+      "multi",
+      "aoe"
+    ],
+    "普通战利品": [
+      "loot",
+      "loot_relics"
+    ],
+    "普通敌人死亡": [
+      "fungus",
+      "corpse",
+      "fungus_opts"
+    ],
+    "永久牌组选牌": [
+      "grid",
+      "grid_other"
+    ],
+    "涅奥开局": [
+      "opening",
+      "curse2"
+    ],
+    "第四幕与心脏": [
+      "act4",
+      "heart"
+    ],
+    "精英与钥匙": [
+      "elite"
+    ],
+    "终局": [
+      "loss",
+      "win"
+    ],
+    "药水": [
+      "pdiscard",
+      "powerpot"
+    ],
+    "营火": [
+      "restsmith",
+      "restextra"
+    ],
+    "遗物": [
+      "tea",
+      "inkcount"
+    ],
+    "随机事件": [
+      "snake",
+      "snakedrop",
+      "wheel",
+      "scrap",
+      "match"
+    ],
+    "首领奖励": [
+      "bossreward"
+    ],
+    "首领战": [
+      "boss"
+    ]
+  },
+  "r4_free_policy": {
+    "fixed": {
+      "seeds": 640,
+      "outcomes": {
+        "loss": 349,
+        "unsupported": 291
+      },
+      "max_floor": 11,
+      "losses_with_partial_action_sets": 326,
+      "stop_pages": {
+        "NEOW_RESULT_UNVERIFIED": 44,
+        "GRID_UNVERIFIED": 77,
+        "REWARD_UNVERIFIED": 53,
+        "DELEGATED": 87,
+        "EVENT_RESULT_UNVERIFIED": 30
+      }
+    },
+    "additional": {
+      "seeds": 64,
+      "outcomes": {
+        "loss": 24,
+        "unsupported": 40
+      },
+      "max_floor": 8,
+      "losses_with_partial_action_sets": 24,
+      "stop_pages": {
+        "NEOW_RESULT_UNVERIFIED": 7,
+        "EVENT_RESULT_UNVERIFIED": 4,
+        "DELEGATED": 11,
+        "GRID_UNVERIFIED": 13,
+        "REWARD_UNVERIFIED": 5
+      }
+    }
+  },
+  "r3_fixed_640_stops_replayed_in_r4": {
+    "seeds": 129,
+    "groups": 23,
+    "counts": {
+      "选牌": 76,
+      "奖励": 53
+    },
+    "scope": "R3固定组的两类旧停点，由R4复现分类；不是R4全部331个停点的归因。"
+  },
+  "r4_retail_capture_seconds_for_one_339_input_run": 597.2,
+  "sources_sha256": {
+    "boss_loot_retail193/ECTO.json": "f69e653b5b9d00dff5fa2f3eed5b93bc8c1cbaa17ba8bf43e83f9e2dc65d1405",
+    "boss_loot_retail193/REPORT.md": "746dda09cdec55e38b02347eeb4ee7e73183d2dd3ec20391830204d3708e2a15",
+    "boss_loot_retail193/SOZU.json": "6cfec12a79d1d1237b7c764f3a1465f366695c30f44ac1d27492682567a0649a",
+    "boss_loot_retail193/WRIST_DROP.json": "7dd93337da771f3a707c3813ef0981bafc1993b68133ff9d827bf7c831b62796",
+    "match_retail193/ACCEPTANCE.json": "f0621b8304d8ece79603c09e2030bb381a2714df08bcf736d20c72a8ec686f71",
+    "match_retail193/REPORT.md": "ca03712cf479c0bb4433b122e7c0f7618e3ce63326faa141695f44eb829a294c",
+    "ordinary_reward_live193/RESULT.json": "37f3404a0e959329585c6ae7d23916acd309b7613c1494b1d5259cd34ad7979b",
+    "retail_map_layout193/LATER_ACTS.json": "d00908e5743cddf071d6fd8d5d5f37357a21565c8cf3e472737e2944c41cb186",
+    "retail_map_layout193/REPORT.md": "80cfd3358b8f49e7462b5d8aa739a72ac68935192a584de3e62938fd1c9fdc26",
+    "retail_map_layout193/RESULT.json": "9f550862fe61a11cfc73658526286b7e4b1464c764d1ffbeaf4853f0fa47ace1",
+    "sa_calibration_round1/actions/RESULT.json": "02e8dcec08d8ee1205d76edd390d5eedf1d59f82253052ce78ad30e69887d2eb",
+    "sa_calibration_round1/state/OPENINGS.json": "f4c9dbd9b29add32b6b523e340f7ffabca21cda02cd1b2c2ec777666ebf5dfcb",
+    "sa_calibration_round2/DRAW_CHECK.json": "f1f0dc9514e851f8d6297bd169d9d4c565ab305a3fe62732fcba0232d0349a79",
+    "sa_calibration_round2/JOURNEY.json": "29a2f1799bc85a8f97d83dc06fdc2ae3a0ef43a15b0175d49496cc329a786e9d",
+    "sa_calibration_round2/boss/OPENINGS.json": "94f8e1ab21b8b27ea820891170911b85b905f655f64e7a096d394772ecf18174",
+    "sa_calibration_round2/events/RESULT.json": "043f11f151a8e0bcffb60c453fa9497132ed7a37d20b3ad28cfeb350e81dc2a4",
+    "sa_calibration_round2/frontiers/FROZEN.json": "a7a8c0f01dd63fed9d3d4b24b54e509a088a9115951b6f9a3e5bb5db00a1c006",
+    "sa_calibration_round2/frontiers/GRID.json": "98600723df640c5eee6135da8df4872a108fa62500953b681c98aa89d4e55592",
+    "sa_calibration_round2/frontiers/LOWER_DIAGNOSTIC.json": "d5a19af4f8a1d3acbc68d4b47c64e63f495fae3e2d7ce9256e633046f2f6c40d",
+    "sa_calibration_round2/frontiers/REPORT.md": "ad547523fb9bdaa27916349e1bc137d1d30b3f8f44917df234c143d4f3a0d7e4",
+    "sa_calibration_round2/tea_state/RESULT.json": "242261be0f232d63a63077e8ea4ae791ca11b8fa80489227d686514b7bb1a443",
+    "sa_calibration_round3/README.md": "512b89134b5f36dd7906a13bb169dac4f6333876d37907f67084180842bf5e16",
+    "sa_calibration_round3/compat/RESULT.json": "48aea677679ee8e6a7f9ad6b74219585ecf46407bf7bfbe3f2c595da311c5bda",
+    "sa_calibration_round3/coverage/QUESTIONS.csv": "451e636daf92b4c451d2f7ea94d80a09e55e8ad84fde7b8af6c42a06c64e5168",
+    "sa_calibration_round3/coverage/SCENES.csv": "1495946150e097e2584d5a0738f6c76e2ba3dd74bfc3a60a55eccf2414d0b4ea",
+    "sa_calibration_round3/coverage/hand_terms/RESULTS.json": "366badc0774e2ae5b687ea47caaba6e2dd9573054b00ef4256b53c746eacd0a4",
+    "sa_calibration_round3/fresh/RESULT.json": "44db92906bc3a6ed39ab8d9a6f66442a95129eb05ee01aa9032e9968feb5ae04",
+    "sa_calibration_round3/grid/RESULT.json": "4941c293c812ac3be18df62324c6f425d412cb17c559dfb6f14848d3fea496c6",
+    "sa_calibration_round4/coverage/GROUPS.csv": "e767899a4eefc46c1e09f8f2a7606821171905c3eafdc19b8799d9447d24d75b",
+    "sa_calibration_round4/coverage/STATE.json": "696391fe94cab70aa7a3eb6563920742255f9902c589dc02d61d49b54178e929",
+    "sa_calibration_round4/death/RESULT.json": "fa47959f838b5319b29fd9d4f68ea133373336ab2ace628d58b4345af79bee8b",
+    "sa_calibration_round4/events/REPORT.md": "eee0f8726a1b3e482cc363e9a9d02507aa99bf318d941020e80b1d00d83e8d4b",
+    "sa_calibration_round4/events/RESULT.json": "215114c4f472f3726e67ffd411f970b4ac5617e985f8f356a2d9b439b6e8f3fd",
+    "sa_calibration_round4/fresh/MECHANISMS.json": "314b377daac580cc9ba5f9ea5ece1aeb968944215766e29a868106b98ddb4da6",
+    "sa_calibration_round4/fresh/REPORT.md": "541056da16fd157ce1a317628c50c0dc1a3a17df345314a69d08ac163ab9a76e",
+    "sa_calibration_round4/fresh/RESULT.json": "df4890397176a4f8678d29ce3b640dc4bb07b395de2b57755f23001b8a2b55e7",
+    "sa_calibration_round4/fresh/START_INPUT.json": "4ac17439b6d33944a7ccc5f2ab70d0397c6d267101549343dbea03f3ac660604",
+    "sa_calibration_round4/fresh/TERMINAL.json": "b8aa9397911a2f83b7ed09162a9b95c8ce516413c5a6c50cca5a9929f913ab26",
+    "sa_calibration_round4/neow/RESULT.json": "07dee277d2da30568f93a03f694ffeec0fc0d523e355836ba89ed70aa8530ce3",
+    "sa_calibration_round4/regression/RESULT.json": "2347451675dc1e3a37ec48af0e080d49d8c5fc298eebc0cff36bf5e8e4b0f495",
+    "sa_calibration_round4/regression/runs/20261122_021451_739159_full/RESULT.json": "6da3f12f7a7c1aeaf9286dd37592e5c5ad52226bbce0a1c2e3855d48101d36cc",
+    "sa_calibration_round5/coverage/branches.tsv": "d706684be691b323912076de3e44454a540a86e85637344a2e3a4c4bb3af0a59",
+    "shop_progress193/REPORT.md": "58a88a763f6ae0f318923fe137a8452cf57bd94da71194be43873a5f1af0f40f",
+    "terminal_metrics/REPORT.md": "8f01e1453a6b879c4c849421358376fda6c2a9f5c852154d6fbcf2c2b4d658fc",
+    "terminal_metrics/RESULT.json": "02dfc5f22fb97b138d9201573db5f348010f1aa465113d6cbeab270d97a53305",
+    "treasure_reward_640/ORIGINAL.json": "c046dcb421a66ac6293e97e41e4549a5ae5c2c23c8c82fa3a07f0e0fcaf5aa49"
+  }
+}
