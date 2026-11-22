@@ -1,0 +1,96 @@
+{
+  "parent_commit": "c7f34b38fa7d4003bb7c2726b5b5286dbc5904ec",
+  "parent_manifest": "96b2e043c2fe1f75b7fe75adf45ba58dcd0bce5b4c6fffa5430b311f47af4b4e",
+  "interface": "bfcaad95caef65ed1e78f7e26c7d7980daea02835bd1c4a6c566e3139f787987",
+  "original_journal": "a1d663d675d444dbe32d2e304430dbdfb71eb4d05d7261adbad6e2562c189b33",
+  "seed": "2W47ZBJ8TBFMD",
+  "version": "2022-12-18",
+  "first_content": {
+    "index": 128,
+    "phase": "after",
+    "fields": {
+      "rewards": {
+        "model": [],
+        "original": [
+          [
+            "GOLD",
+            20
+          ],
+          [
+            "POTION",
+            "regenpotion"
+          ],
+          [
+            "CARD",
+            null
+          ]
+        ]
+      }
+    }
+  },
+  "stop": {
+    "index": 129,
+    "reason": "original_choice_not_mapped",
+    "floor": 10,
+    "page": "REWARD_UNVERIFIED",
+    "requested": {
+      "reward": [
+        "GOLD",
+        20
+      ],
+      "candidates": []
+    },
+    "offered": [],
+    "gaps": [
+      "reward_page_semantics_unverified"
+    ]
+  },
+  "regression": {
+    "seeds": 704,
+    "outcomes": {
+      "loss": 372,
+      "unsupported": 332
+    },
+    "transitions": {
+      "loss->loss": 371,
+      "unsupported->unsupported": 330,
+      "loss->unsupported": 2,
+      "unsupported->loss": 1
+    },
+    "max_floor": 11,
+    "decisions": 62352,
+    "deaths_with_partial_action_sets": 349,
+    "stop_pages": {
+      "NEOW_RESULT_UNVERIFIED": 51,
+      "GRID_UNVERIFIED": 91,
+      "REWARD_UNVERIFIED": 58,
+      "DELEGATED": 98,
+      "EVENT_RESULT_UNVERIFIED": 34
+    }
+  },
+  "coverage": {
+    "branch_count": 43,
+    "state": {
+      "applicable": 43,
+      "counts": {
+        "待验": 11,
+        "有差异": 3,
+        "样本已核": 29
+      }
+    },
+    "action": {
+      "applicable": 40,
+      "counts": {
+        "不适用": 3,
+        "待验": 11,
+        "有差异": 3,
+        "样本已核": 26
+      }
+    },
+    "r5_open": 17
+  },
+  "reproduced_identical": true,
+  "inputs": 128,
+  "actions": 129,
+  "original_r5_replay_sha256": "5bb2fbb760773d5d998bdeac38d7a4f7eddf0c46268b3e37b520c9e8a50de8bc"
+}

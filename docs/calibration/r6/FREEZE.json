@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-11-22T03:40:01.151594+00:00",
+  "parent_commit": "c7f34b38fa7d4003bb7c2726b5b5286dbc5904ec",
+  "parent_manifest": "96b2e043c2fe1f75b7fe75adf45ba58dcd0bce5b4c6fffa5430b311f47af4b4e",
+  "runtime": {
+    "release.py": "9de14d2d9f8987562601c85e0e3faf690347b33302f51baa7d0c956071b70ead",
+    "rewards/session.py": "2426fbe027723549d6f2144d4992cb908bdb9f7b244e0dd8abec44774d17ab1a"
+  },
+  "interface_sha256": "5caf92b5d7088465a75fb26b0dba4644dd582618d8bed555986415ea6d67c552",
+  "state_space": 3122,
+  "action_space": 193,
+  "training_updates": 0
+}
