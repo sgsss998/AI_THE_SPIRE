@@ -1,0 +1,57 @@
+{
+  "instance": "compact_native_r6_control_9000033_001",
+  "seed_intended": 9000033,
+  "seed_sent": false,
+  "retail_starts": 0,
+  "retail_player_inputs": 0,
+  "commands": [
+    "ready",
+    "state"
+  ],
+  "last_menu": {
+    "available_commands": [
+      "start",
+      "state"
+    ],
+    "capture_alignment": {
+      "capture_id": "native_1795318722902_181615152182625:capture:2",
+      "capture_sequence": 2,
+      "native_record_sequence": 6,
+      "native_session": "native_1795318722902_181615152182625",
+      "schema": "native-capture-alignment-v1",
+      "status": "recorded_equal"
+    },
+    "in_game": false,
+    "ready_for_command": true
+  },
+  "pid": 29497,
+  "capture_time": "2026-11-22 11:40:43.2931 +0800",
+  "exception": {
+    "codes": "0x0000000000000002, 0x000000010101d000",
+    "rawCodes": [
+      2,
+      4311863296
+    ],
+    "type": "EXC_BAD_ACCESS",
+    "signal": "SIGABRT",
+    "subtype": "KERN_PROTECTION_FAILURE at 0x000000010101d000"
+  },
+  "signal": "Abort trap: 6",
+  "window_log": "CocoaInputManager::_parseConfigSettings >> Unable to find a window or event target",
+  "crash_symbols": [
+    "OIS::InputManager::createInputSystem(std::multimap<std::string, std::string, std::less<std::string>, std::allocator<std::pair<std::string const, std::string>>>&)",
+    "Java_com_badlogic_gdx_controllers_desktop_ois_Ois_createInputManager"
+  ],
+  "source_hashes": {
+    "native_runtime/compact_native_r6_control_9000033_001/process.json": "c0c19130f596aadb8811cbe007559363ef074c9b614ea1167a67ec7b51b5fb7e",
+    "native_runtime/compact_native_r6_control_9000033_001/process_exit.json": "eceea77020c06513d44dc6691631db58fa8d2a0843001cc7c29ebf38f2a22b28",
+    "native_runtime/compact_native_r6_control_9000033_001/launch.log": "e7bbff40fefa4534b35931a238134ad9659fa81a43464c44a3b405ce2436be25",
+    "native_runtime/compact_native_r6_control_9000033_001/bridge/active_session.json": "1754c9f26afbdf82c45143e699132f1dfb45f99f2982ee86b179f18be1cf1b57",
+    "native_runtime/compact_native_r6_control_9000033_001/bridge/sessions/77080c74-fe3d-446f-8322-f22d5a66931d/attempts.jsonl": "58a40f7b5af6bb1dd99a85fc11971fb3fd5b48fbfb4496fa4cf0467109f8d4ca",
+    "native_runtime/compact_native_r6_control_9000033_001/bridge/sessions/77080c74-fe3d-446f-8322-f22d5a66931d/current.json": "8ffb75e5ea340d16228ed571eab26196d55efd3d601c7b402987a27b5f9bb547",
+    "native_runtime/compact_native_r6_control_9000033_001/bridge/sessions/77080c74-fe3d-446f-8322-f22d5a66931d/raw.jsonl": "fe135b0f819cd07e03bd2c6710b7f1b6288f714aef2391d8be800673a4ba794c"
+  },
+  "mac_report_name": "java-2026-11-22-114114.ips",
+  "mac_report_sha256": "58ffb813dfefa901cfad68bbe684841caa3050b4fe729305de1b7a52543422cb",
+  "trigger": "Controller input initialization on resume; initiating external focus change unproved."
+}

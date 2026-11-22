@@ -1,0 +1,142 @@
+{
+  "seed": "2W47ZBJ8TBFMD",
+  "first_content": null,
+  "stop": {
+    "reason": "missing_public_action",
+    "requested": {
+      "card": [
+        "Dodge and Roll",
+        1
+      ],
+      "native_slot": 3,
+      "model_slot": 3,
+      "occurrence": 0
+    },
+    "action": 3,
+    "index": 143,
+    "floor": 11,
+    "page": "DELEGATED",
+    "offered": [],
+    "gaps": [
+      "death_boundary_unknown"
+    ]
+  },
+  "completed_inputs": 142,
+  "official_actions": 143,
+  "original_inputs": 339,
+  "used_kernel_fallback": false,
+  "reward_steps": [
+    {
+      "index": 128,
+      "command": "play 1 0",
+      "offered": [
+        2,
+        3,
+        10,
+        11,
+        14,
+        170
+      ],
+      "actual_reported": [
+        2,
+        3,
+        10,
+        11,
+        14,
+        170
+      ],
+      "original_before": "584edd998570ccb0a4d935e6e9d3f793463739821f75c7981968121a3cd09d1a",
+      "original_after": "41c4666913e46919c16efb8b74533d348493bcb846de81c351a3e1c2983732d9",
+      "status": "public_action"
+    },
+    {
+      "index": 129,
+      "command": "choose 0",
+      "offered": [
+        110,
+        111,
+        112,
+        171
+      ],
+      "actual_reported": [
+        110,
+        111,
+        112,
+        171
+      ],
+      "original_before": "41c4666913e46919c16efb8b74533d348493bcb846de81c351a3e1c2983732d9",
+      "original_after": "c4988d5212e06ed4be28724b9ffab5aa45be85b479fb4d9981239c1a6c7ddd97",
+      "status": "public_action"
+    },
+    {
+      "index": 130,
+      "command": "choose 0",
+      "offered": [
+        110,
+        111,
+        171
+      ],
+      "actual_reported": [
+        110,
+        111,
+        171
+      ],
+      "original_before": "c4988d5212e06ed4be28724b9ffab5aa45be85b479fb4d9981239c1a6c7ddd97",
+      "original_after": "a25a829d1b5473745d8a3b02d8305f20f2e4bbe2bbf29e950f30b2e101a53197",
+      "status": "public_action"
+    },
+    {
+      "index": 131,
+      "command": "choose 0",
+      "offered": [
+        105,
+        110,
+        171
+      ],
+      "actual_reported": [
+        105,
+        110,
+        171
+      ],
+      "original_before": "a25a829d1b5473745d8a3b02d8305f20f2e4bbe2bbf29e950f30b2e101a53197",
+      "original_after": "774391a47e8b8bf2ed01a79954fc0fbb5fe27a610d00f443058198ac9d277141",
+      "status": "public_action"
+    },
+    {
+      "index": 132,
+      "command": "choose 2",
+      "offered": [
+        105,
+        110,
+        111,
+        112,
+        177
+      ],
+      "actual_reported": [
+        105,
+        110,
+        111,
+        112,
+        177
+      ],
+      "original_before": "774391a47e8b8bf2ed01a79954fc0fbb5fe27a610d00f443058198ac9d277141",
+      "original_after": "5e8ab1051d49b410b77727febed9d149c81fccdc5832f23c8a38fa8f2cc7f5d5",
+      "status": "public_action"
+    },
+    {
+      "index": 133,
+      "command": "proceed",
+      "offered": [
+        105,
+        171
+      ],
+      "actual_reported": [
+        105,
+        171
+      ],
+      "original_before": "5e8ab1051d49b410b77727febed9d149c81fccdc5832f23c8a38fa8f2cc7f5d5",
+      "original_after": "44c0e51bac28264a5c149ae43f80c5f97b865ee86651787cab40edf87d36fa60",
+      "status": "public_action"
+    }
+  ]
+}

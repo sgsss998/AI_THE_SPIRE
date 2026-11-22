@@ -1,0 +1,808 @@
+{
+  "interface": "5caf92b5d7088465a75fb26b0dba4644dd582618d8bed555986415ea6d67c552",
+  "runtime": {
+    "release.py": "9de14d2d9f8987562601c85e0e3faf690347b33302f51baa7d0c956071b70ead",
+    "rewards/session.py": "2426fbe027723549d6f2144d4992cb908bdb9f7b244e0dd8abec44774d17ab1a"
+  },
+  "parent_replay": "5bb2fbb760773d5d998bdeac38d7a4f7eddf0c46268b3e37b520c9e8a50de8bc",
+  "original_journal": "a1d663d675d444dbe32d2e304430dbdfb71eb4d05d7261adbad6e2562c189b33",
+  "retail": {
+    "retail_sha256": "dd60a613a6178e08f1a57bcb8d5747e33c21fd49e743b88d76e9d74042803b2a",
+    "inspected_archive_sha256": "880ca5646d02065a061bbbdf7cc106dc1443d5afc6b9560f512486b098fd627b",
+    "compiled_relic_classes": {
+      "INK_BOTTLE": {
+        "name": "InkBottle",
+        "native_id": "InkBottle",
+        "hooks": [
+          "atBattleStart",
+          "onUseCard"
+        ],
+        "external_id_references": [],
+        "class_sha256": "74cb668a34071a41c6dcb84d733cc556eab1c3b80235953e2322422e96c56dff"
+      },
+      "CENTENNIAL_PUZZLE": {
+        "name": "CentennialPuzzle",
+        "native_id": "Centennial Puzzle",
+        "hooks": [
+          "atPreBattle",
+          "justEnteredRoom",
+          "onVictory",
+          "wasHPLost"
+        ],
+        "external_id_references": [],
+        "class_sha256": "da21ea56a435b8da1487322f05312594a990b23de0ced7d4fddd7ae4c5ea0b0f"
+      }
+    },
+    "observation_ids": {
+      "INK_BOTTLE": 32,
+      "CENTENNIAL_PUZZLE": 9
+    },
+    "puzzle_victory_code": [
+      "0: ALOAD_0",
+      "1: ICONST_0",
+      "2: PUTFIELD com.megacrit.cardcrawl.relics.CentennialPuzzle.pulse:Z",
+      "5: RETURN"
+    ],
+    "puzzle_hurt_draw_code": [
+      "10: GETSTATIC com.megacrit.cardcrawl.rooms.AbstractRoom$RoomPhase.COMBAT:Lcom/megacrit/cardcrawl/rooms/AbstractRoom$RoomPhase;",
+      "16: GETSTATIC com.megacrit.cardcrawl.relics.CentennialPuzzle.usedThisCombat:Z",
+      "32: NEW com.megacrit.cardcrawl.actions.common.DrawCardAction",
+      "39: ICONST_3",
+      "40: INVOKESPECIAL com.megacrit.cardcrawl.actions.common.DrawCardAction.<init>(Lcom/megacrit/cardcrawl/core/AbstractCreature;I)V",
+      "62: PUTSTATIC com.megacrit.cardcrawl.relics.CentennialPuzzle.usedThisCombat:Z"
+    ]
+  },
+  "primary": {
+    "seed": "9763128100447777033",
+    "from_public_reset": true,
+    "reused_original": true,
+    "r5_root_cause": {
+      "r5_page": "REWARD_UNVERIFIED",
+      "r5_supported": [],
+      "r5_read_rows": "unreviewed reward-modifying relic",
+      "r5_victory": false,
+      "actual_last_attack_relics": [
+        [
+          126.0,
+          0.0,
+          32.0,
+          1.0
+        ],
+        [
+          126.0,
+          0.0,
+          32.0,
+          2.0
+        ]
+      ],
+      "native_rows": [
+        {
+          "kind": "GOLD",
+          "backing": 81,
+          "parameters": [
+            20.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "card": null,
+          "legal": true
+        },
+        {
+          "kind": "CARD",
+          "backing": 82,
+          "parameters": [
+            277.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "card": "Riddle With Holes",
+          "legal": true
+        },
+        {
+          "kind": "CARD",
+          "backing": 83,
+          "parameters": [
+            160.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "card": "Flying Knee",
+          "legal": true
+        },
+        {
+          "kind": "CARD",
+          "backing": 84,
+          "parameters": [
+            19.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "card": "Backflip",
+          "legal": true
+        },
+        {
+          "kind": "POTION",
+          "backing": 85,
+          "parameters": [
+            36.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "card": null,
+          "legal": true
+        },
+        {
+          "kind": "SKIP",
+          "backing": 86,
+          "parameters": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "card": null,
+          "legal": true
+        }
+      ],
+      "identical_backing_packet_sha256": "b44605c1241e8c25c74d80cd03127852efced65ff4453cd110080278a124c08b"
+    },
+    "gate_negatives": [
+      "unknown_relic",
+      "ink_counter_out_of_range",
+      "impossible_counter_jump",
+      "puzzle_cannot_gain_counter",
+      "extra_relic",
+      "elite",
+      "event",
+      "nonconsecutive_physical_transition"
+    ],
+    "steps": [
+      {
+        "index": 129,
+        "aid": 110,
+        "binding": {
+          "reward": [
+            "GOLD",
+            20
+          ],
+          "candidates": [
+            0
+          ]
+        },
+        "source_hashes": [
+          "41c4666913e46919c16efb8b74533d348493bcb846de81c351a3e1c2983732d9",
+          "c4988d5212e06ed4be28724b9ffab5aa45be85b479fb4d9981239c1a6c7ddd97"
+        ],
+        "checked_native_fields": [
+          "deck",
+          "keys",
+          "page",
+          "potions",
+          "relics",
+          "resources",
+          "rewards"
+        ],
+        "before": {
+          "page": "COMBAT_REWARD",
+          "full_state_sha256": "c34010bf1c56b5ed2c802ca3d4858d8450d1f8ec34b23f7f748e348b2cec8005",
+          "extended_fields": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "visible_rows": 3,
+          "resources": [
+            56,
+            66,
+            237,
+            10,
+            1,
+            20
+          ],
+          "potion_slots": [
+            null,
+            null
+          ],
+          "deck_size": 18,
+          "relics": [
+            [
+              "ringofthesnake",
+              -1
+            ],
+            [
+              "inkbottle",
+              1
+            ]
+          ],
+          "rewards": [
+            [
+              "GOLD",
+              20
+            ],
+            [
+              "POTION",
+              "regenpotion"
+            ],
+            [
+              "CARD",
+              null
+            ]
+          ],
+          "offered_cards": null,
+          "supported": [
+            110,
+            111,
+            112,
+            171
+          ],
+          "legal_mask_complete": false
+        },
+        "after": {
+          "page": "COMBAT_REWARD",
+          "full_state_sha256": "136b60f67a1050c442d1f3bca8cdc4ca0f395d4ef3a1a663550966183e0bc0a4",
+          "extended_fields": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "visible_rows": 2,
+          "resources": [
+            56,
+            66,
+            257,
+            10,
+            1,
+            20
+          ],
+          "potion_slots": [
+            null,
+            null
+          ],
+          "deck_size": 18,
+          "relics": [
+            [
+              "ringofthesnake",
+              -1
+            ],
+            [
+              "inkbottle",
+              1
+            ]
+          ],
+          "rewards": [
+            [
+              "POTION",
+              "regenpotion"
+            ],
+            [
+              "CARD",
+              null
+            ]
+          ],
+          "offered_cards": null,
+          "supported": [
+            110,
+            111,
+            171
+          ],
+          "legal_mask_complete": false
+        },
+        "rejected_duplicate_request": true
+      },
+      {
+        "index": 130,
+        "aid": 110,
+        "binding": {
+          "reward": [
+            "POTION",
+            "regenpotion"
+          ],
+          "candidates": [
+            0
+          ]
+        },
+        "source_hashes": [
+          "c4988d5212e06ed4be28724b9ffab5aa45be85b479fb4d9981239c1a6c7ddd97",
+          "a25a829d1b5473745d8a3b02d8305f20f2e4bbe2bbf29e950f30b2e101a53197"
+        ],
+        "checked_native_fields": [
+          "deck",
+          "keys",
+          "page",
+          "potions",
+          "relics",
+          "resources",
+          "rewards"
+        ],
+        "before": {
+          "page": "COMBAT_REWARD",
+          "full_state_sha256": "136b60f67a1050c442d1f3bca8cdc4ca0f395d4ef3a1a663550966183e0bc0a4",
+          "extended_fields": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "visible_rows": 2,
+          "resources": [
+            56,
+            66,
+            257,
+            10,
+            1,
+            20
+          ],
+          "potion_slots": [
+            null,
+            null
+          ],
+          "deck_size": 18,
+          "relics": [
+            [
+              "ringofthesnake",
+              -1
+            ],
+            [
+              "inkbottle",
+              1
+            ]
+          ],
+          "rewards": [
+            [
+              "POTION",
+              "regenpotion"
+            ],
+            [
+              "CARD",
+              null
+            ]
+          ],
+          "offered_cards": null,
+          "supported": [
+            110,
+            111,
+            171
+          ],
+          "legal_mask_complete": false
+        },
+        "after": {
+          "page": "COMBAT_REWARD",
+          "full_state_sha256": "c9cef63aaad95817912744e543d17caa6fe416f9b71e2bed002e75e22543c259",
+          "extended_fields": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "visible_rows": 1,
+          "resources": [
+            56,
+            66,
+            257,
+            10,
+            1,
+            20
+          ],
+          "potion_slots": [
+            "regenpotion",
+            null
+          ],
+          "deck_size": 18,
+          "relics": [
+            [
+              "ringofthesnake",
+              -1
+            ],
+            [
+              "inkbottle",
+              1
+            ]
+          ],
+          "rewards": [
+            [
+              "CARD",
+              null
+            ]
+          ],
+          "offered_cards": null,
+          "supported": [
+            105,
+            110,
+            171
+          ],
+          "legal_mask_complete": false
+        },
+        "rejected_duplicate_request": true
+      },
+      {
+        "index": 131,
+        "aid": 110,
+        "binding": {
+          "reward": [
+            "CARD",
+            null
+          ],
+          "candidates": [
+            0
+          ]
+        },
+        "source_hashes": [
+          "a25a829d1b5473745d8a3b02d8305f20f2e4bbe2bbf29e950f30b2e101a53197",
+          "774391a47e8b8bf2ed01a79954fc0fbb5fe27a610d00f443058198ac9d277141"
+        ],
+        "checked_native_fields": [
+          "deck",
+          "keys",
+          "page",
+          "potions",
+          "relics",
+          "resources",
+          "rewards"
+        ],
+        "before": {
+          "page": "COMBAT_REWARD",
+          "full_state_sha256": "c9cef63aaad95817912744e543d17caa6fe416f9b71e2bed002e75e22543c259",
+          "extended_fields": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "visible_rows": 1,
+          "resources": [
+            56,
+            66,
+            257,
+            10,
+            1,
+            20
+          ],
+          "potion_slots": [
+            "regenpotion",
+            null
+          ],
+          "deck_size": 18,
+          "relics": [
+            [
+              "ringofthesnake",
+              -1
+            ],
+            [
+              "inkbottle",
+              1
+            ]
+          ],
+          "rewards": [
+            [
+              "CARD",
+              null
+            ]
+          ],
+          "offered_cards": null,
+          "supported": [
+            105,
+            110,
+            171
+          ],
+          "legal_mask_complete": false
+        },
+        "after": {
+          "page": "CARD_REWARD",
+          "full_state_sha256": "19c6a86fb6264345246446636597530e986edc7d78afff5f2f67f830d3f46aee",
+          "extended_fields": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "visible_rows": 3,
+          "resources": [
+            56,
+            66,
+            257,
+            10,
+            1,
+            20
+          ],
+          "potion_slots": [
+            "regenpotion",
+            null
+          ],
+          "deck_size": 18,
+          "relics": [
+            [
+              "ringofthesnake",
+              -1
+            ],
+            [
+              "inkbottle",
+              1
+            ]
+          ],
+          "rewards": null,
+          "offered_cards": [
+            [
+              "Riddle With Holes",
+              0
+            ],
+            [
+              "Flying Knee",
+              0
+            ],
+            [
+              "Backflip",
+              0
+            ]
+          ],
+          "supported": [
+            105,
+            110,
+            111,
+            112,
+            177
+          ],
+          "legal_mask_complete": false
+        },
+        "rejected_duplicate_request": true
+      },
+      {
+        "index": 132,
+        "aid": 112,
+        "binding": {
+          "face": [
+            "Backflip",
+            0
+          ],
+          "occurrence": 0,
+          "choices": [
+            [
+              0,
+              [
+                "Riddle With Holes",
+                0
+              ]
+            ],
+            [
+              1,
+              [
+                "Flying Knee",
+                0
+              ]
+            ],
+            [
+              2,
+              [
+                "Backflip",
+                0
+              ]
+            ]
+          ]
+        },
+        "source_hashes": [
+          "774391a47e8b8bf2ed01a79954fc0fbb5fe27a610d00f443058198ac9d277141",
+          "5e8ab1051d49b410b77727febed9d149c81fccdc5832f23c8a38fa8f2cc7f5d5"
+        ],
+        "checked_native_fields": [
+          "deck",
+          "keys",
+          "offered_cards",
+          "page",
+          "potions",
+          "relics",
+          "resources"
+        ],
+        "before": {
+          "page": "CARD_REWARD",
+          "full_state_sha256": "19c6a86fb6264345246446636597530e986edc7d78afff5f2f67f830d3f46aee",
+          "extended_fields": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "visible_rows": 3,
+          "resources": [
+            56,
+            66,
+            257,
+            10,
+            1,
+            20
+          ],
+          "potion_slots": [
+            "regenpotion",
+            null
+          ],
+          "deck_size": 18,
+          "relics": [
+            [
+              "ringofthesnake",
+              -1
+            ],
+            [
+              "inkbottle",
+              1
+            ]
+          ],
+          "rewards": null,
+          "offered_cards": [
+            [
+              "Riddle With Holes",
+              0
+            ],
+            [
+              "Flying Knee",
+              0
+            ],
+            [
+              "Backflip",
+              0
+            ]
+          ],
+          "supported": [
+            105,
+            110,
+            111,
+            112,
+            177
+          ],
+          "legal_mask_complete": false
+        },
+        "after": {
+          "page": "COMBAT_REWARD",
+          "full_state_sha256": "723be2059123b6e4d8073fdc21b61560b48fd56b245b0a36fe0fafc76150fce9",
+          "extended_fields": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "visible_rows": 0,
+          "resources": [
+            56,
+            66,
+            257,
+            10,
+            1,
+            20
+          ],
+          "potion_slots": [
+            "regenpotion",
+            null
+          ],
+          "deck_size": 19,
+          "relics": [
+            [
+              "ringofthesnake",
+              -1
+            ],
+            [
+              "inkbottle",
+              1
+            ]
+          ],
+          "rewards": [],
+          "offered_cards": null,
+          "supported": [
+            105,
+            171
+          ],
+          "legal_mask_complete": false
+        },
+        "rejected_duplicate_request": true
+      },
+      {
+        "index": 133,
+        "aid": 171,
+        "binding": {
+          "binding": "same explicit control/potion slot",
+          "control": 171
+        },
+        "source_hashes": [
+          "5e8ab1051d49b410b77727febed9d149c81fccdc5832f23c8a38fa8f2cc7f5d5",
+          "44c0e51bac28264a5c149ae43f80c5f97b865ee86651787cab40edf87d36fa60"
+        ],
+        "checked_native_fields": [
+          "deck",
+          "keys",
+          "page",
+          "potions",
+          "relics",
+          "resources",
+          "rewards"
+        ],
+        "before": {
+          "page": "COMBAT_REWARD",
+          "full_state_sha256": "723be2059123b6e4d8073fdc21b61560b48fd56b245b0a36fe0fafc76150fce9",
+          "extended_fields": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "visible_rows": 0,
+          "resources": [
+            56,
+            66,
+            257,
+            10,
+            1,
+            20
+          ],
+          "potion_slots": [
+            "regenpotion",
+            null
+          ],
+          "deck_size": 19,
+          "relics": [
+            [
+              "ringofthesnake",
+              -1
+            ],
+            [
+              "inkbottle",
+              1
+            ]
+          ],
+          "rewards": [],
+          "offered_cards": null,
+          "supported": [
+            105,
+            171
+          ],
+          "legal_mask_complete": false
+        },
+        "after": {
+          "page": "DELEGATED",
+          "full_state_sha256": "10b2caf044b5be26e0efa6ef99bc046ab08556f142142ad0f60d32df331f7eb6",
+          "extended_fields": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "visible_rows": 2,
+          "resources": [
+            56,
+            66,
+            257,
+            10,
+            1,
+            20
+          ],
+          "potion_slots": [
+            "regenpotion",
+            null
+          ],
+          "deck_size": 19,
+          "relics": [
+            [
+              "ringofthesnake",
+              -1
+            ],
+            [
+              "inkbottle",
+              1
+            ]
+          ],
+          "rewards": null,
+          "offered_cards": null,
+          "supported": [
+            105,
+            110,
+            111
+          ],
+          "legal_mask_complete": true
+        },
+        "rejected_duplicate_request": true
+      }
+    ]
+  }
+}
