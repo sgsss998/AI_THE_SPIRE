@@ -1,5 +1,7 @@
 # Silent A20 compact-environment calibration sources
 
+The R6 ordinary reward adapter and its retail checks are in `experiments/sa_calibration_round6`. See the [R6 report](../docs/calibration/r6/README.md) for the fixed regression and the independent original game.
+
 Round five composes independent chest, shop and Wheel of Change adapters on the pinned R4 engine. Use `python3 docs/calibration/r5/verify.py` in the repository checkout to verify the published samples, outcome counts and public replay. The full local replay also uses the private retail captures and separately built game backend. [Round five results](../docs/calibration/r5/README.md)
 
 `experiments/sa_calibration_round4` adds separate Neow, monster-death and event adapters on the pinned R3 entry. The public checks need only standard Python. Run `python3 docs/calibration/r4/verify.py` from the repository root to validate the released receipts, 704 seed results and the 339-input retail holdout. The [R4 report](../docs/calibration/r4/README.md) links the frozen interface and three distinct replay results.

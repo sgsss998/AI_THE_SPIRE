@@ -1,0 +1,56 @@
+{
+  "signature": {
+    "state_version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1+silent-a20-round5-v1+silent-a20-round6-v1",
+    "state_sha256": "3264c38555b9f720e6b44b3255d92889a28686158b87d796e7b74c2071895b51",
+    "card_registry_sha256": "cc7dd2446135675ad273bbdc09914909f8ab1c0aca854a8c00dd3d8b6f91a26a",
+    "action_version": "silent-canonical-row-a193-v1",
+    "action_adapter_version": "canonical-row-choice64-v1+frontier-settled+compact-decisions-v2+public-transitions-v1+ordinary-events-rewards-v1+shop-reward-discard-gold-and-death-settlement-v1+ending-route-paid-neow-permanent-upgrade-cancel-and-complete-card-masks-v2+ordinary-targets-and-victory-loot-v1+match-poison-and-idol-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+settled-neow-and-linked-chest-rewards-v1+round1-flex-chest-v1+round2-v1+round3-calibration-v1+silent-a20-round4-v1+silent-a20-round5-v1+silent-a20-round6-v1",
+    "action_contract_sha256": "0ae8ba53dfdde48ad0f4a4ae03cfd045fc2677ac50df3cae9a6ed7558962b78e",
+    "action_coordinates": "observation_monster_row",
+    "action_source_sha256": "d9150f0e213481bb89f60a2c51cba07f2b93c9a7066b0aff7aee6d0138fae7f3",
+    "state_decoder_sha256": "ff68bf7538b928bf623587625f6772a5d4cb1e52f018b571b8190b3b6e9ac027",
+    "backend_build_sha256": "5f81347346994e460ceaa8e500ff3f08637a33f2eb4a220cff467fc8f6105fa5",
+    "backend_commit": "482b3ef29c93746ada7d6fd0fd16885d7cc30b1f",
+    "backend_observation_version": 4,
+    "backend_observation_dimension": 1761,
+    "backend_actions": 146,
+    "observation_dimension": 3122,
+    "actions": 193
+  },
+  "changes": [
+    {
+      "seed": 9000033,
+      "first_different_menu": {
+        "decision": 32,
+        "r5": {
+          "page": "REWARD_UNVERIFIED",
+          "offered": [],
+          "floor": 1
+        },
+        "r6": {
+          "page": "COMBAT_REWARD",
+          "offered": [
+            110,
+            111,
+            112,
+            171
+          ],
+          "floor": 1
+        }
+      },
+      "first_different_action": 32,
+      "old_action": [],
+      "new_action": [
+        110
+      ],
+      "previous_endpoint": "REWARD_UNVERIFIED",
+      "new_endpoint": "GRID_UNVERIFIED",
+      "previous_reason": "unsupported",
+      "new_reason": "unsupported",
+      "previous_floor": 1,
+      "new_floor": 5
+    }
+  ],
+  "changed_action_sequences": 1,
+  "changed_outcome_categories": 0
+}

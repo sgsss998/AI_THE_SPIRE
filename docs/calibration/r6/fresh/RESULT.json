@@ -1,0 +1,358 @@
+{
+  "seed": "20WSEQKXI76GH",
+  "version": "2022-12-18",
+  "original_game_sha256": "dd60a613a6178e08f1a57bcb8d5747e33c21fd49e743b88d76e9d74042803b2a",
+  "seed_signed": "6846117179527628677",
+  "blank_start": true,
+  "original_completed_before_model": true,
+  "original_ended_at": "2026-11-22T05:21:04.249027+00:00",
+  "first_simulator_start": "2026-11-22T05:22:10.513012+00:00",
+  "original_inputs": 120,
+  "original_final": {
+    "floor": 6,
+    "hp": 0,
+    "max_hp": 66,
+    "gold": 164,
+    "victory": false
+  },
+  "original_screens": {
+    "EVENT": 5,
+    "CARD_REWARD": 4,
+    "MAP": 6,
+    "NONE": 86,
+    "COMBAT_REWARD": 14,
+    "GRID": 2,
+    "CHEST": 1,
+    "HAND_SELECT": 2
+  },
+  "mechanics": {
+    "shuffle": {
+      "original_indices": [
+        14,
+        23,
+        43,
+        69,
+        77,
+        85,
+        105,
+        115
+      ],
+      "officially_replayed_indices": [
+        14,
+        23
+      ]
+    },
+    "targeted_in_multi_enemy_fight": {
+      "original_indices": [
+        6,
+        9,
+        13,
+        15
+      ],
+      "officially_replayed_indices": [
+        6,
+        9,
+        13,
+        15
+      ]
+    },
+    "simultaneous_multi_enemy_damage": {
+      "original_indices": [],
+      "officially_replayed_indices": []
+    },
+    "boss": {
+      "original_indices": [],
+      "officially_replayed_indices": []
+    },
+    "relic_counter": {
+      "original_indices": [],
+      "officially_replayed_indices": []
+    },
+    "random_event": {
+      "original_indices": [
+        1,
+        2,
+        4,
+        31,
+        34
+      ],
+      "officially_replayed_indices": [
+        1,
+        2,
+        4,
+        31
+      ]
+    },
+    "reward": {
+      "original_indices": [
+        3,
+        25,
+        26,
+        27,
+        28,
+        29,
+        52,
+        53,
+        54,
+        55,
+        58,
+        59,
+        60,
+        92,
+        93,
+        94,
+        95,
+        96
+      ],
+      "officially_replayed_indices": [
+        3,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    "potion": {
+      "original_indices": [
+        48,
+        110
+      ],
+      "officially_replayed_indices": []
+    }
+  },
+  "replay_sha256": "5ba83857d02dba800ace9e1059043e63996eaa75d3d5155efe1501db39de48a0",
+  "replay": {
+    "completed_inputs": 31,
+    "official_actions": 31,
+    "checked_frames": 32,
+    "equal_frames": 32,
+    "substance_equal_frames": 32,
+    "first_content": null,
+    "stop": {
+      "reason": "missing_public_action",
+      "requested": {
+        "face": [
+          "Strike_G",
+          0
+        ],
+        "occurrence": 0,
+        "choices": [
+          [
+            0,
+            [
+              "Strike_G",
+              0
+            ]
+          ],
+          [
+            1,
+            [
+              "Strike_G",
+              0
+            ]
+          ],
+          [
+            2,
+            [
+              "Strike_G",
+              0
+            ]
+          ],
+          [
+            3,
+            [
+              "Strike_G",
+              0
+            ]
+          ],
+          [
+            4,
+            [
+              "Strike_G",
+              0
+            ]
+          ],
+          [
+            5,
+            [
+              "Defend_G",
+              0
+            ]
+          ],
+          [
+            6,
+            [
+              "Defend_G",
+              0
+            ]
+          ],
+          [
+            7,
+            [
+              "Defend_G",
+              0
+            ]
+          ],
+          [
+            8,
+            [
+              "Defend_G",
+              0
+            ]
+          ],
+          [
+            9,
+            [
+              "Defend_G",
+              0
+            ]
+          ],
+          [
+            10,
+            [
+              "Survivor",
+              0
+            ]
+          ],
+          [
+            11,
+            [
+              "Neutralize",
+              0
+            ]
+          ],
+          [
+            12,
+            [
+              "Backflip",
+              0
+            ]
+          ],
+          [
+            13,
+            [
+              "Leg Sweep",
+              0
+            ]
+          ]
+        ]
+      },
+      "action": 110,
+      "index": 32,
+      "floor": 2,
+      "page": "GRID_UNVERIFIED",
+      "offered": [],
+      "gaps": [
+        "permanent_grid_task_origin_or_occurrence_binding_unverified"
+      ]
+    },
+    "final": {
+      "resources": [
+        59,
+        66,
+        109,
+        2,
+        1,
+        20
+      ],
+      "page": 4,
+      "map_xy": [
+        6,
+        1
+      ],
+      "keys": [
+        false,
+        false,
+        false
+      ],
+      "deck": [
+        [
+          "AscendersBane",
+          0
+        ],
+        [
+          "Strike_G",
+          0
+        ],
+        [
+          "Strike_G",
+          0
+        ],
+        [
+          "Strike_G",
+          0
+        ],
+        [
+          "Strike_G",
+          0
+        ],
+        [
+          "Strike_G",
+          0
+        ],
+        [
+          "Defend_G",
+          0
+        ],
+        [
+          "Defend_G",
+          0
+        ],
+        [
+          "Defend_G",
+          0
+        ],
+        [
+          "Defend_G",
+          0
+        ],
+        [
+          "Defend_G",
+          0
+        ],
+        [
+          "Survivor",
+          0
+        ],
+        [
+          "Neutralize",
+          0
+        ],
+        [
+          "Backflip",
+          0
+        ],
+        [
+          "Leg Sweep",
+          0
+        ]
+      ],
+      "relics": [
+        [
+          "ringofthesnake",
+          -1
+        ]
+      ],
+      "potions": [
+        "explosivepotion",
+        null
+      ],
+      "done": false,
+      "won": false,
+      "lost": false,
+      "engine_steps": 29,
+      "supported": [],
+      "gaps": [
+        "permanent_grid_task_origin_or_occurrence_binding_unverified"
+      ],
+      "facade_page": "GRID_UNVERIFIED"
+    }
+  },
+  "source_sha256": {
+    "experiments/sa_calibration_round6/fresh/PHYSICAL.jsonl": "75f923573ebdadb95c8f38f1a5c4421f94e11f362ab2e5d641433e23d82292f2",
+    "native_runtime/compact_native_sa_round6_unseeded_001/bridge/sessions/2667149a-8f59-4562-b603-d53808d83275/attempts.jsonl": "d1862f8e4af19e5e647d57bdb650cdb4ad1c3d3b54bb3e1c7f16834316f7146c",
+    "native_runtime/compact_native_sa_round6_unseeded_001/bridge/sessions/2667149a-8f59-4562-b603-d53808d83275/raw.jsonl": "26d44062c2bf51b50da40f911c14142bb427289a6137b91b222d1e25a4161122",
+    "native_runtime/compact_native_sa_round6_unseeded_001/native_oracle/native_1795324661111_187553603102125/native_oracle.jsonl": "53b19684429c0429493189fc82104e22bae3e8440b8ac456e233b7a7fcd9e200"
+  }
+}

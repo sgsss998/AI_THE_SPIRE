@@ -1,0 +1,179 @@
+{
+  "scope": "Three distinct naturally generated retail seeds from rounds 3, 4 and 6. R4 seed reused for R5 and R6 development. Earlier edition checks stay edition-specific.",
+  "original_seeds": [
+    {
+      "seed": "35LAE5197HT9L",
+      "version": "R3",
+      "status": "holdout",
+      "original_inputs": 93,
+      "original_floor": 7,
+      "reached_same_terminal": true,
+      "first_content": {
+        "index": 52,
+        "fields": [
+          "gold",
+          "deck"
+        ],
+        "classification": "early reward settlement in model; original receives +150 gold and Doubt at unique action 53; page aligns after unique action 54"
+      }
+    },
+    {
+      "seed": "2W47ZBJ8TBFMD",
+      "version": "R6",
+      "status": "development; original R4 holdout",
+      "original_inputs": 339,
+      "original_floor": 16,
+      "reached_same_terminal": false,
+      "completed_inputs": 142,
+      "first_content": null,
+      "stop": {
+        "reason": "missing_public_action",
+        "requested": {
+          "card": [
+            "Dodge and Roll",
+            1
+          ],
+          "native_slot": 3,
+          "model_slot": 3,
+          "occurrence": 0
+        },
+        "action": 3,
+        "index": 143,
+        "floor": 11,
+        "page": "DELEGATED",
+        "offered": [],
+        "gaps": [
+          "death_boundary_unknown"
+        ]
+      }
+    },
+    {
+      "seed": "20WSEQKXI76GH",
+      "version": "R6",
+      "status": "new holdout",
+      "original_inputs": 120,
+      "original_floor": 6,
+      "reached_same_terminal": false,
+      "completed_inputs": 31,
+      "first_content": null,
+      "stop": {
+        "reason": "missing_public_action",
+        "requested": {
+          "face": [
+            "Strike_G",
+            0
+          ],
+          "occurrence": 0,
+          "choices": [
+            [
+              0,
+              [
+                "Strike_G",
+                0
+              ]
+            ],
+            [
+              1,
+              [
+                "Strike_G",
+                0
+              ]
+            ],
+            [
+              2,
+              [
+                "Strike_G",
+                0
+              ]
+            ],
+            [
+              3,
+              [
+                "Strike_G",
+                0
+              ]
+            ],
+            [
+              4,
+              [
+                "Strike_G",
+                0
+              ]
+            ],
+            [
+              5,
+              [
+                "Defend_G",
+                0
+              ]
+            ],
+            [
+              6,
+              [
+                "Defend_G",
+                0
+              ]
+            ],
+            [
+              7,
+              [
+                "Defend_G",
+                0
+              ]
+            ],
+            [
+              8,
+              [
+                "Defend_G",
+                0
+              ]
+            ],
+            [
+              9,
+              [
+                "Defend_G",
+                0
+              ]
+            ],
+            [
+              10,
+              [
+                "Survivor",
+                0
+              ]
+            ],
+            [
+              11,
+              [
+                "Neutralize",
+                0
+              ]
+            ],
+            [
+              12,
+              [
+                "Backflip",
+                0
+              ]
+            ],
+            [
+              13,
+              [
+                "Leg Sweep",
+                0
+              ]
+            ]
+          ]
+        },
+        "action": 110,
+        "index": 32,
+        "floor": 2,
+        "page": "GRID_UNVERIFIED",
+        "offered": [],
+        "gaps": [
+          "permanent_grid_task_origin_or_occurrence_binding_unverified"
+        ]
+      }
+    }
+  ]
+}

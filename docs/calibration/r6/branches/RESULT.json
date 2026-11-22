@@ -1,0 +1,2683 @@
+{
+  "seed": "2W47ZBJ8TBFMD",
+  "floor": 10,
+  "shared_development_save": true,
+  "heldout": false,
+  "freeze_sha256": "487f5602df47639793c6a629a006bf577694e5613f1c5a7d8f28aef8572650d9",
+  "source_bundle_sha256": "bda62634f25f8eef4f362b893044e518745a27cbcf1a5cd75034219f3b8141d1",
+  "source_save_sha256": "149a06300ac9675d52fcc23027590e721f26b31bdf97749125a5e8f9473152bc",
+  "branches": {
+    "potion": {
+      "steps": [
+        {
+          "label": "potion",
+          "aid": 111,
+          "command": "choose 1",
+          "request": "13d7ad42-6b7b-427b-ab8b-440f34ba2c81",
+          "at": "2026-11-22T03:43:33.720381+00:00",
+          "before": "ea80d2c8d61d16b41bec6b4ca133fd3fc490e4af77df1f768d8b516f1ea4db7b",
+          "after": "6ce166833a0d6ded9323a65ac5304e2888817af757d15cfec19e2c1b7d468b0e",
+          "model_action": 111,
+          "binding": {
+            "reward": [
+              "POTION",
+              "regenpotion"
+            ],
+            "candidates": [
+              1
+            ]
+          },
+          "stale_rejected": true
+        },
+        {
+          "label": "card",
+          "aid": 111,
+          "command": "choose 1",
+          "request": "6319436e-f961-4ee0-8ff3-96ec64b677a7",
+          "at": "2026-11-22T03:43:34.249757+00:00",
+          "before": "6ce166833a0d6ded9323a65ac5304e2888817af757d15cfec19e2c1b7d468b0e",
+          "after": "59fef51f15b19de139478c59b92588326e5d2b2dfce9ed958a057462d01e1ba2",
+          "model_action": 111,
+          "binding": {
+            "reward": [
+              "CARD",
+              null
+            ],
+            "candidates": [
+              1
+            ]
+          },
+          "stale_rejected": true
+        },
+        {
+          "label": "discard",
+          "aid": 105,
+          "command": "potion discard 0",
+          "request": "cfc52484-5168-4ec6-9ff1-cac121632872",
+          "at": "2026-11-22T03:43:34.556180+00:00",
+          "before": "59fef51f15b19de139478c59b92588326e5d2b2dfce9ed958a057462d01e1ba2",
+          "after": "139db527ced28f5ac3b51503d03df559907693712673312a424947039093b164",
+          "model_action": 105,
+          "binding": {
+            "binding": "same explicit control/potion slot",
+            "control": 105
+          },
+          "stale_rejected": true
+        },
+        {
+          "label": "flying knee",
+          "aid": 111,
+          "command": "choose 1",
+          "request": "d0e25cff-d9b8-4817-a611-2f2a1ddaaf6d",
+          "at": "2026-11-22T03:43:34.893633+00:00",
+          "before": "139db527ced28f5ac3b51503d03df559907693712673312a424947039093b164",
+          "after": "ae8ea1a38ace16d2f4c598a4c0591e8cd03dc1aeea93a8789c451f0363481e13",
+          "model_action": 111,
+          "binding": {
+            "face": [
+              "Flying Knee",
+              0
+            ],
+            "occurrence": 0,
+            "choices": [
+              [
+                0,
+                [
+                  "Riddle With Holes",
+                  0
+                ]
+              ],
+              [
+                1,
+                [
+                  "Flying Knee",
+                  0
+                ]
+              ],
+              [
+                2,
+                [
+                  "Backflip",
+                  0
+                ]
+              ]
+            ]
+          },
+          "stale_rejected": true
+        },
+        {
+          "label": "gold",
+          "aid": 110,
+          "command": "choose 0",
+          "request": "504f7ce1-1729-425e-b457-b692a012e5f9",
+          "at": "2026-11-22T03:43:35.161836+00:00",
+          "before": "ae8ea1a38ace16d2f4c598a4c0591e8cd03dc1aeea93a8789c451f0363481e13",
+          "after": "b48dd4fa5d84379813537339292a7e8d9d07b638bcda4e2acfa5db2fdfcb0d8a",
+          "model_action": 110,
+          "binding": {
+            "reward": [
+              "GOLD",
+              20
+            ],
+            "candidates": [
+              0
+            ]
+          },
+          "stale_rejected": true
+        },
+        {
+          "label": "leave",
+          "aid": 171,
+          "command": "proceed",
+          "request": "2ab40131-2044-4071-9c13-1cfc22760b63",
+          "at": "2026-11-22T03:43:35.505200+00:00",
+          "before": "b48dd4fa5d84379813537339292a7e8d9d07b638bcda4e2acfa5db2fdfcb0d8a",
+          "after": "b8c30a79d97e7280a76541a434215bd9a0f4d535350090b76a234d726cb541d8",
+          "model_action": 171,
+          "binding": {
+            "binding": "same explicit control/potion slot",
+            "control": 171
+          },
+          "stale_rejected": true
+        }
+      ],
+      "frames": {
+        "ea80d2c8d61d16b41bec6b4ca133fd3fc490e4af77df1f768d8b516f1ea4db7b": {
+          "capture": "ea80d2c8d61d16b41bec6b4ca133fd3fc490e4af77df1f768d8b516f1ea4db7b",
+          "state_sha256": "802ccc15d90de38a807718f1d49e9ccaf0c94678569cd8668e8374fed81ae1f1",
+          "values": {
+            "resources": [
+              56,
+              66,
+              237,
+              10,
+              1,
+              20
+            ],
+            "page": 2,
+            "keys": [
+              false,
+              false,
+              false
+            ],
+            "deck": [
+              [
+                "AscendersBane",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Survivor",
+                1
+              ],
+              [
+                "Dodge and Roll",
+                1
+              ],
+              [
+                "Blade Dance",
+                0
+              ],
+              [
+                "Doubt",
+                0
+              ],
+              [
+                "Cloak And Dagger",
+                0
+              ],
+              [
+                "Dagger Throw",
+                0
+              ],
+              [
+                "After Image",
+                0
+              ]
+            ],
+            "relics": [
+              [
+                "ringofthesnake",
+                -1
+              ],
+              [
+                "inkbottle",
+                1
+              ]
+            ],
+            "potions": [
+              null,
+              null
+            ],
+            "rewards": [
+              [
+                "GOLD",
+                20
+              ],
+              [
+                "POTION",
+                "regenpotion"
+              ],
+              [
+                "CARD",
+                null
+              ]
+            ]
+          },
+          "original_actions": [
+            110,
+            111,
+            112,
+            171
+          ],
+          "model_actions": [
+            110,
+            111,
+            112,
+            171
+          ]
+        },
+        "6ce166833a0d6ded9323a65ac5304e2888817af757d15cfec19e2c1b7d468b0e": {
+          "capture": "6ce166833a0d6ded9323a65ac5304e2888817af757d15cfec19e2c1b7d468b0e",
+          "state_sha256": "b070363fee4d83f0772a11895fa146ce506d34f9f555f76da1576dec614072b7",
+          "values": {
+            "resources": [
+              56,
+              66,
+              237,
+              10,
+              1,
+              20
+            ],
+            "page": 2,
+            "keys": [
+              false,
+              false,
+              false
+            ],
+            "deck": [
+              [
+                "AscendersBane",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Survivor",
+                1
+              ],
+              [
+                "Dodge and Roll",
+                1
+              ],
+              [
+                "Blade Dance",
+                0
+              ],
+              [
+                "Doubt",
+                0
+              ],
+              [
+                "Cloak And Dagger",
+                0
+              ],
+              [
+                "Dagger Throw",
+                0
+              ],
+              [
+                "After Image",
+                0
+              ]
+            ],
+            "relics": [
+              [
+                "ringofthesnake",
+                -1
+              ],
+              [
+                "inkbottle",
+                1
+              ]
+            ],
+            "potions": [
+              "regenpotion",
+              null
+            ],
+            "rewards": [
+              [
+                "GOLD",
+                20
+              ],
+              [
+                "CARD",
+                null
+              ]
+            ]
+          },
+          "original_actions": [
+            105,
+            110,
+            111,
+            171
+          ],
+          "model_actions": [
+            105,
+            110,
+            111,
+            171
+          ]
+        },
+        "59fef51f15b19de139478c59b92588326e5d2b2dfce9ed958a057462d01e1ba2": {
+          "capture": "59fef51f15b19de139478c59b92588326e5d2b2dfce9ed958a057462d01e1ba2",
+          "state_sha256": "a2e487cb946bdddfbc058891922ea5476e396464b1187ceacfa5373b3ab377d7",
+          "values": {
+            "resources": [
+              56,
+              66,
+              237,
+              10,
+              1,
+              20
+            ],
+            "page": 10,
+            "keys": [
+              false,
+              false,
+              false
+            ],
+            "deck": [
+              [
+                "AscendersBane",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Survivor",
+                1
+              ],
+              [
+                "Dodge and Roll",
+                1
+              ],
+              [
+                "Blade Dance",
+                0
+              ],
+              [
+                "Doubt",
+                0
+              ],
+              [
+                "Cloak And Dagger",
+                0
+              ],
+              [
+                "Dagger Throw",
+                0
+              ],
+              [
+                "After Image",
+                0
+              ]
+            ],
+            "relics": [
+              [
+                "ringofthesnake",
+                -1
+              ],
+              [
+                "inkbottle",
+                1
+              ]
+            ],
+            "potions": [
+              "regenpotion",
+              null
+            ],
+            "offered_cards": [
+              [
+                "Riddle With Holes",
+                0
+              ],
+              [
+                "Flying Knee",
+                0
+              ],
+              [
+                "Backflip",
+                0
+              ]
+            ]
+          },
+          "original_actions": [
+            105,
+            110,
+            111,
+            112,
+            177
+          ],
+          "model_actions": [
+            105,
+            110,
+            111,
+            112,
+            177
+          ]
+        },
+        "139db527ced28f5ac3b51503d03df559907693712673312a424947039093b164": {
+          "capture": "139db527ced28f5ac3b51503d03df559907693712673312a424947039093b164",
+          "state_sha256": "7480c37d52a205e83255b56c78d92ea640a939e2b6dcfb975f2818515a50f0d2",
+          "values": {
+            "resources": [
+              56,
+              66,
+              237,
+              10,
+              1,
+              20
+            ],
+            "page": 10,
+            "keys": [
+              false,
+              false,
+              false
+            ],
+            "deck": [
+              [
+                "AscendersBane",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Survivor",
+                1
+              ],
+              [
+                "Dodge and Roll",
+                1
+              ],
+              [
+                "Blade Dance",
+                0
+              ],
+              [
+                "Doubt",
+                0
+              ],
+              [
+                "Cloak And Dagger",
+                0
+              ],
+              [
+                "Dagger Throw",
+                0
+              ],
+              [
+                "After Image",
+                0
+              ]
+            ],
+            "relics": [
+              [
+                "ringofthesnake",
+                -1
+              ],
+              [
+                "inkbottle",
+                1
+              ]
+            ],
+            "potions": [
+              null,
+              null
+            ],
+            "offered_cards": [
+              [
+                "Riddle With Holes",
+                0
+              ],
+              [
+                "Flying Knee",
+                0
+              ],
+              [
+                "Backflip",
+                0
+              ]
+            ]
+          },
+          "original_actions": [
+            110,
+            111,
+            112,
+            177
+          ],
+          "model_actions": [
+            110,
+            111,
+            112,
+            177
+          ]
+        },
+        "ae8ea1a38ace16d2f4c598a4c0591e8cd03dc1aeea93a8789c451f0363481e13": {
+          "capture": "ae8ea1a38ace16d2f4c598a4c0591e8cd03dc1aeea93a8789c451f0363481e13",
+          "state_sha256": "ffdafa820fb23df7d19130305da4dfc3aa3ed69ff931dfd13908d2bf0d09dbb3",
+          "values": {
+            "resources": [
+              56,
+              66,
+              237,
+              10,
+              1,
+              20
+            ],
+            "page": 2,
+            "keys": [
+              false,
+              false,
+              false
+            ],
+            "deck": [
+              [
+                "AscendersBane",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Survivor",
+                1
+              ],
+              [
+                "Dodge and Roll",
+                1
+              ],
+              [
+                "Blade Dance",
+                0
+              ],
+              [
+                "Doubt",
+                0
+              ],
+              [
+                "Cloak And Dagger",
+                0
+              ],
+              [
+                "Dagger Throw",
+                0
+              ],
+              [
+                "After Image",
+                0
+              ],
+              [
+                "Flying Knee",
+                0
+              ]
+            ],
+            "relics": [
+              [
+                "ringofthesnake",
+                -1
+              ],
+              [
+                "inkbottle",
+                1
+              ]
+            ],
+            "potions": [
+              null,
+              null
+            ],
+            "rewards": [
+              [
+                "GOLD",
+                20
+              ]
+            ]
+          },
+          "original_actions": [
+            110,
+            171
+          ],
+          "model_actions": [
+            110,
+            171
+          ]
+        },
+        "b48dd4fa5d84379813537339292a7e8d9d07b638bcda4e2acfa5db2fdfcb0d8a": {
+          "capture": "b48dd4fa5d84379813537339292a7e8d9d07b638bcda4e2acfa5db2fdfcb0d8a",
+          "state_sha256": "41283bebb561af76c42149204d2bb7ebfa85c0144236c0ddda53f52cb228bcd5",
+          "values": {
+            "resources": [
+              56,
+              66,
+              257,
+              10,
+              1,
+              20
+            ],
+            "page": 2,
+            "keys": [
+              false,
+              false,
+              false
+            ],
+            "deck": [
+              [
+                "AscendersBane",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Survivor",
+                1
+              ],
+              [
+                "Dodge and Roll",
+                1
+              ],
+              [
+                "Blade Dance",
+                0
+              ],
+              [
+                "Doubt",
+                0
+              ],
+              [
+                "Cloak And Dagger",
+                0
+              ],
+              [
+                "Dagger Throw",
+                0
+              ],
+              [
+                "After Image",
+                0
+              ],
+              [
+                "Flying Knee",
+                0
+              ]
+            ],
+            "relics": [
+              [
+                "ringofthesnake",
+                -1
+              ],
+              [
+                "inkbottle",
+                1
+              ]
+            ],
+            "potions": [
+              null,
+              null
+            ],
+            "rewards": []
+          },
+          "original_actions": [
+            171
+          ],
+          "model_actions": [
+            171
+          ]
+        },
+        "b8c30a79d97e7280a76541a434215bd9a0f4d535350090b76a234d726cb541d8": {
+          "capture": "b8c30a79d97e7280a76541a434215bd9a0f4d535350090b76a234d726cb541d8",
+          "state_sha256": "f0096e9c5ff6891ea58e1cc993efba29a7e4545588d3e43cfa850de1d186a643",
+          "values": {
+            "resources": [
+              56,
+              66,
+              257,
+              10,
+              1,
+              20
+            ],
+            "page": 5,
+            "keys": [
+              false,
+              false,
+              false
+            ],
+            "deck": [
+              [
+                "AscendersBane",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Survivor",
+                1
+              ],
+              [
+                "Dodge and Roll",
+                1
+              ],
+              [
+                "Blade Dance",
+                0
+              ],
+              [
+                "Doubt",
+                0
+              ],
+              [
+                "Cloak And Dagger",
+                0
+              ],
+              [
+                "Dagger Throw",
+                0
+              ],
+              [
+                "After Image",
+                0
+              ],
+              [
+                "Flying Knee",
+                0
+              ]
+            ],
+            "relics": [
+              [
+                "ringofthesnake",
+                -1
+              ],
+              [
+                "inkbottle",
+                1
+              ]
+            ],
+            "potions": [
+              null,
+              null
+            ],
+            "next_x": [
+              1,
+              3
+            ],
+            "map_xy": [
+              2,
+              9
+            ]
+          },
+          "original_actions": [
+            110,
+            111,
+            176
+          ],
+          "model_actions": [
+            110,
+            111
+          ]
+        }
+      },
+      "hand": [
+        {
+          "index": 115,
+          "aid": 110,
+          "card_uuids": [
+            "b3037629-51d8-4a32-8e91-8b7f76c7c9c0"
+          ],
+          "use_card": []
+        },
+        {
+          "index": 116,
+          "aid": 172,
+          "card_uuids": [
+            "b3037629-51d8-4a32-8e91-8b7f76c7c9c0"
+          ],
+          "use_card": []
+        }
+      ],
+      "checked_prefix": 33,
+      "closed": {
+        "at": "2026-11-22T05:23:40.942093+00:00",
+        "game_exit": {
+          "pid": 28747,
+          "returncode": 143,
+          "finished_utc": "2026-11-22T05:23:40.827726+00:00"
+        },
+        "verified_absent": [
+          28717,
+          28747,
+          28846
+        ],
+        "unchanged_evidence": {
+          "END.json": "c431b98394791fc37d64cf889f3ac14d57585bc4b73d3970ff7124c0fb43a476",
+          "choices.jsonl": "3ac046761d6000cdcea8d0f545bd3632913c0e1431e5e8d50eb6d129689146ae",
+          "prefix.jsonl": "b0232766b8014d68ffd4723254fc11c0b2fe6f555d4f038e6f35f27bfb64b9ae",
+          "PHYSICAL.jsonl": "7e28c73c0da0330a009ddf3da0044feaeb49a1f0428907ecdaa68fb10e166c34"
+        },
+        "input_dispatched": false
+      },
+      "final": {
+        "resources": [
+          56,
+          66,
+          257,
+          10,
+          1,
+          20
+        ],
+        "page": 5,
+        "keys": [
+          false,
+          false,
+          false
+        ],
+        "deck": [
+          [
+            "AscendersBane",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Survivor",
+            1
+          ],
+          [
+            "Dodge and Roll",
+            1
+          ],
+          [
+            "Blade Dance",
+            0
+          ],
+          [
+            "Doubt",
+            0
+          ],
+          [
+            "Cloak And Dagger",
+            0
+          ],
+          [
+            "Dagger Throw",
+            0
+          ],
+          [
+            "After Image",
+            0
+          ],
+          [
+            "Flying Knee",
+            0
+          ]
+        ],
+        "relics": [
+          [
+            "ringofthesnake",
+            -1
+          ],
+          [
+            "inkbottle",
+            1
+          ]
+        ],
+        "potions": [
+          null,
+          null
+        ],
+        "next_x": [
+          1,
+          3
+        ],
+        "map_xy": [
+          2,
+          9
+        ]
+      }
+    },
+    "skip": {
+      "steps": [
+        {
+          "label": "card",
+          "aid": 112,
+          "command": "choose 2",
+          "request": "58900557-9c47-46a6-9d9c-fa6943ec49ab",
+          "at": "2026-11-22T03:43:46.674764+00:00",
+          "before": "6c4afc04b9b6ff92027ec02413a7b4b3d7bbc575f5a2e40204cb2b31c143504c",
+          "after": "f19f2250ba5b4296e7282d19bce64977cd6ef3a6dcdd0c26a9e0ac210facaf3a",
+          "model_action": 112,
+          "binding": {
+            "reward": [
+              "CARD",
+              null
+            ],
+            "candidates": [
+              2
+            ]
+          },
+          "stale_rejected": true
+        },
+        {
+          "label": "skip",
+          "aid": 177,
+          "command": "skip",
+          "request": "a2bbf660-9486-44bb-85ab-14cf3654aecc",
+          "at": "2026-11-22T03:43:46.973088+00:00",
+          "before": "f19f2250ba5b4296e7282d19bce64977cd6ef3a6dcdd0c26a9e0ac210facaf3a",
+          "after": "a4cc9318e845af21eb6fc55d9c6b4c67920a16d3326d8104774ea9d90b036e0a",
+          "model_action": 177,
+          "binding": {
+            "binding": "same explicit control/potion slot",
+            "control": 177
+          },
+          "stale_rejected": true
+        },
+        {
+          "label": "card",
+          "aid": 112,
+          "command": "choose 2",
+          "request": "3b7b6e52-da7f-4672-93db-3b3fc9c69ce8",
+          "at": "2026-11-22T03:43:47.314368+00:00",
+          "before": "a4cc9318e845af21eb6fc55d9c6b4c67920a16d3326d8104774ea9d90b036e0a",
+          "after": "b6bfdeb7735bcd987a5f1ab4d56192d5520be0a42583a6af622c0e1a985e74b4",
+          "model_action": 112,
+          "binding": {
+            "reward": [
+              "CARD",
+              null
+            ],
+            "candidates": [
+              2
+            ]
+          },
+          "stale_rejected": true
+        },
+        {
+          "label": "skip",
+          "aid": 177,
+          "command": "skip",
+          "request": "f395d2d6-2664-4204-860e-cfdafdcb09a9",
+          "at": "2026-11-22T03:43:47.627149+00:00",
+          "before": "b6bfdeb7735bcd987a5f1ab4d56192d5520be0a42583a6af622c0e1a985e74b4",
+          "after": "a1cae75884496089a26bbafa826a6d7b0300591929239e862f265f2f947bc901",
+          "model_action": 177,
+          "binding": {
+            "binding": "same explicit control/potion slot",
+            "control": 177
+          },
+          "stale_rejected": true
+        },
+        {
+          "label": "leave",
+          "aid": 171,
+          "command": "proceed",
+          "request": "c1de0991-9f1a-44e2-88c8-a8c42810964f",
+          "at": "2026-11-22T03:43:48.067230+00:00",
+          "before": "a1cae75884496089a26bbafa826a6d7b0300591929239e862f265f2f947bc901",
+          "after": "72e241258d5982fc198f3a50e126a20fbaca14a000e6abb35491a68452551ac3",
+          "model_action": 171,
+          "binding": {
+            "binding": "same explicit control/potion slot",
+            "control": 171
+          },
+          "stale_rejected": true
+        }
+      ],
+      "frames": {
+        "6c4afc04b9b6ff92027ec02413a7b4b3d7bbc575f5a2e40204cb2b31c143504c": {
+          "capture": "6c4afc04b9b6ff92027ec02413a7b4b3d7bbc575f5a2e40204cb2b31c143504c",
+          "state_sha256": "802ccc15d90de38a807718f1d49e9ccaf0c94678569cd8668e8374fed81ae1f1",
+          "values": {
+            "resources": [
+              56,
+              66,
+              237,
+              10,
+              1,
+              20
+            ],
+            "page": 2,
+            "keys": [
+              false,
+              false,
+              false
+            ],
+            "deck": [
+              [
+                "AscendersBane",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Survivor",
+                1
+              ],
+              [
+                "Dodge and Roll",
+                1
+              ],
+              [
+                "Blade Dance",
+                0
+              ],
+              [
+                "Doubt",
+                0
+              ],
+              [
+                "Cloak And Dagger",
+                0
+              ],
+              [
+                "Dagger Throw",
+                0
+              ],
+              [
+                "After Image",
+                0
+              ]
+            ],
+            "relics": [
+              [
+                "ringofthesnake",
+                -1
+              ],
+              [
+                "inkbottle",
+                1
+              ]
+            ],
+            "potions": [
+              null,
+              null
+            ],
+            "rewards": [
+              [
+                "GOLD",
+                20
+              ],
+              [
+                "POTION",
+                "regenpotion"
+              ],
+              [
+                "CARD",
+                null
+              ]
+            ]
+          },
+          "original_actions": [
+            110,
+            111,
+            112,
+            171
+          ],
+          "model_actions": [
+            110,
+            111,
+            112,
+            171
+          ]
+        },
+        "f19f2250ba5b4296e7282d19bce64977cd6ef3a6dcdd0c26a9e0ac210facaf3a": {
+          "capture": "f19f2250ba5b4296e7282d19bce64977cd6ef3a6dcdd0c26a9e0ac210facaf3a",
+          "state_sha256": "7480c37d52a205e83255b56c78d92ea640a939e2b6dcfb975f2818515a50f0d2",
+          "values": {
+            "resources": [
+              56,
+              66,
+              237,
+              10,
+              1,
+              20
+            ],
+            "page": 10,
+            "keys": [
+              false,
+              false,
+              false
+            ],
+            "deck": [
+              [
+                "AscendersBane",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Survivor",
+                1
+              ],
+              [
+                "Dodge and Roll",
+                1
+              ],
+              [
+                "Blade Dance",
+                0
+              ],
+              [
+                "Doubt",
+                0
+              ],
+              [
+                "Cloak And Dagger",
+                0
+              ],
+              [
+                "Dagger Throw",
+                0
+              ],
+              [
+                "After Image",
+                0
+              ]
+            ],
+            "relics": [
+              [
+                "ringofthesnake",
+                -1
+              ],
+              [
+                "inkbottle",
+                1
+              ]
+            ],
+            "potions": [
+              null,
+              null
+            ],
+            "offered_cards": [
+              [
+                "Riddle With Holes",
+                0
+              ],
+              [
+                "Flying Knee",
+                0
+              ],
+              [
+                "Backflip",
+                0
+              ]
+            ]
+          },
+          "original_actions": [
+            110,
+            111,
+            112,
+            177
+          ],
+          "model_actions": [
+            110,
+            111,
+            112,
+            177
+          ]
+        },
+        "a4cc9318e845af21eb6fc55d9c6b4c67920a16d3326d8104774ea9d90b036e0a": {
+          "capture": "a4cc9318e845af21eb6fc55d9c6b4c67920a16d3326d8104774ea9d90b036e0a",
+          "state_sha256": "0ab2a16c35cc953889e7ad956a218f430b4f85059aa26837dc799aaaf09dd428",
+          "values": {
+            "resources": [
+              56,
+              66,
+              237,
+              10,
+              1,
+              20
+            ],
+            "page": 2,
+            "keys": [
+              false,
+              false,
+              false
+            ],
+            "deck": [
+              [
+                "AscendersBane",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Survivor",
+                1
+              ],
+              [
+                "Dodge and Roll",
+                1
+              ],
+              [
+                "Blade Dance",
+                0
+              ],
+              [
+                "Doubt",
+                0
+              ],
+              [
+                "Cloak And Dagger",
+                0
+              ],
+              [
+                "Dagger Throw",
+                0
+              ],
+              [
+                "After Image",
+                0
+              ]
+            ],
+            "relics": [
+              [
+                "ringofthesnake",
+                -1
+              ],
+              [
+                "inkbottle",
+                1
+              ]
+            ],
+            "potions": [
+              null,
+              null
+            ],
+            "rewards": [
+              [
+                "GOLD",
+                20
+              ],
+              [
+                "POTION",
+                "regenpotion"
+              ],
+              [
+                "CARD",
+                null
+              ]
+            ]
+          },
+          "original_actions": [
+            110,
+            111,
+            112,
+            171
+          ],
+          "model_actions": [
+            110,
+            111,
+            112,
+            171
+          ]
+        },
+        "b6bfdeb7735bcd987a5f1ab4d56192d5520be0a42583a6af622c0e1a985e74b4": {
+          "capture": "b6bfdeb7735bcd987a5f1ab4d56192d5520be0a42583a6af622c0e1a985e74b4",
+          "state_sha256": "7480c37d52a205e83255b56c78d92ea640a939e2b6dcfb975f2818515a50f0d2",
+          "values": {
+            "resources": [
+              56,
+              66,
+              237,
+              10,
+              1,
+              20
+            ],
+            "page": 10,
+            "keys": [
+              false,
+              false,
+              false
+            ],
+            "deck": [
+              [
+                "AscendersBane",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Survivor",
+                1
+              ],
+              [
+                "Dodge and Roll",
+                1
+              ],
+              [
+                "Blade Dance",
+                0
+              ],
+              [
+                "Doubt",
+                0
+              ],
+              [
+                "Cloak And Dagger",
+                0
+              ],
+              [
+                "Dagger Throw",
+                0
+              ],
+              [
+                "After Image",
+                0
+              ]
+            ],
+            "relics": [
+              [
+                "ringofthesnake",
+                -1
+              ],
+              [
+                "inkbottle",
+                1
+              ]
+            ],
+            "potions": [
+              null,
+              null
+            ],
+            "offered_cards": [
+              [
+                "Riddle With Holes",
+                0
+              ],
+              [
+                "Flying Knee",
+                0
+              ],
+              [
+                "Backflip",
+                0
+              ]
+            ]
+          },
+          "original_actions": [
+            110,
+            111,
+            112,
+            177
+          ],
+          "model_actions": [
+            110,
+            111,
+            112,
+            177
+          ]
+        },
+        "a1cae75884496089a26bbafa826a6d7b0300591929239e862f265f2f947bc901": {
+          "capture": "a1cae75884496089a26bbafa826a6d7b0300591929239e862f265f2f947bc901",
+          "state_sha256": "0ab2a16c35cc953889e7ad956a218f430b4f85059aa26837dc799aaaf09dd428",
+          "values": {
+            "resources": [
+              56,
+              66,
+              237,
+              10,
+              1,
+              20
+            ],
+            "page": 2,
+            "keys": [
+              false,
+              false,
+              false
+            ],
+            "deck": [
+              [
+                "AscendersBane",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Survivor",
+                1
+              ],
+              [
+                "Dodge and Roll",
+                1
+              ],
+              [
+                "Blade Dance",
+                0
+              ],
+              [
+                "Doubt",
+                0
+              ],
+              [
+                "Cloak And Dagger",
+                0
+              ],
+              [
+                "Dagger Throw",
+                0
+              ],
+              [
+                "After Image",
+                0
+              ]
+            ],
+            "relics": [
+              [
+                "ringofthesnake",
+                -1
+              ],
+              [
+                "inkbottle",
+                1
+              ]
+            ],
+            "potions": [
+              null,
+              null
+            ],
+            "rewards": [
+              [
+                "GOLD",
+                20
+              ],
+              [
+                "POTION",
+                "regenpotion"
+              ],
+              [
+                "CARD",
+                null
+              ]
+            ]
+          },
+          "original_actions": [
+            110,
+            111,
+            112,
+            171
+          ],
+          "model_actions": [
+            110,
+            111,
+            112,
+            171
+          ]
+        },
+        "72e241258d5982fc198f3a50e126a20fbaca14a000e6abb35491a68452551ac3": {
+          "capture": "72e241258d5982fc198f3a50e126a20fbaca14a000e6abb35491a68452551ac3",
+          "state_sha256": "89a18afc89ab74158a403e09477a2c6295e61c5413cc71ac8bec098833e8a952",
+          "values": {
+            "resources": [
+              56,
+              66,
+              237,
+              10,
+              1,
+              20
+            ],
+            "page": 5,
+            "keys": [
+              false,
+              false,
+              false
+            ],
+            "deck": [
+              [
+                "AscendersBane",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Survivor",
+                1
+              ],
+              [
+                "Dodge and Roll",
+                1
+              ],
+              [
+                "Blade Dance",
+                0
+              ],
+              [
+                "Doubt",
+                0
+              ],
+              [
+                "Cloak And Dagger",
+                0
+              ],
+              [
+                "Dagger Throw",
+                0
+              ],
+              [
+                "After Image",
+                0
+              ]
+            ],
+            "relics": [
+              [
+                "ringofthesnake",
+                -1
+              ],
+              [
+                "inkbottle",
+                1
+              ]
+            ],
+            "potions": [
+              null,
+              null
+            ],
+            "next_x": [
+              1,
+              3
+            ],
+            "map_xy": [
+              2,
+              9
+            ]
+          },
+          "original_actions": [
+            110,
+            111,
+            176
+          ],
+          "model_actions": [
+            110,
+            111
+          ]
+        }
+      },
+      "hand": [
+        {
+          "index": 115,
+          "aid": 110,
+          "card_uuids": [
+            "efda746f-cc35-414c-aaa6-35ea4bd5c06e"
+          ],
+          "use_card": []
+        },
+        {
+          "index": 116,
+          "aid": 172,
+          "card_uuids": [
+            "efda746f-cc35-414c-aaa6-35ea4bd5c06e"
+          ],
+          "use_card": []
+        }
+      ],
+      "checked_prefix": 33,
+      "closed": {
+        "at": "2026-11-22T05:23:41.599146+00:00",
+        "game_exit": {
+          "pid": 28749,
+          "returncode": 143,
+          "finished_utc": "2026-11-22T05:23:41.507409+00:00"
+        },
+        "verified_absent": [
+          28737,
+          28749,
+          28847
+        ],
+        "unchanged_evidence": {
+          "END.json": "68dea9ed390db755b960bb21396971aa63e5136aca5db0908c0f2484501c5e72",
+          "choices.jsonl": "ee016b27c5a7377d96b3a480136d6525e312f754dced3e193f29f1eaf09aa92a",
+          "prefix.jsonl": "601bf84bf815e365e9bb5348694d34d6f7c01cda4b073aba94ecc102099a5267",
+          "PHYSICAL.jsonl": "7efce372a259874113ce279c48be749d4f1a6a59d707c18f34989e846e216f0d"
+        },
+        "input_dispatched": false
+      },
+      "final": {
+        "resources": [
+          56,
+          66,
+          237,
+          10,
+          1,
+          20
+        ],
+        "page": 5,
+        "keys": [
+          false,
+          false,
+          false
+        ],
+        "deck": [
+          [
+            "AscendersBane",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Survivor",
+            1
+          ],
+          [
+            "Dodge and Roll",
+            1
+          ],
+          [
+            "Blade Dance",
+            0
+          ],
+          [
+            "Doubt",
+            0
+          ],
+          [
+            "Cloak And Dagger",
+            0
+          ],
+          [
+            "Dagger Throw",
+            0
+          ],
+          [
+            "After Image",
+            0
+          ]
+        ],
+        "relics": [
+          [
+            "ringofthesnake",
+            -1
+          ],
+          [
+            "inkbottle",
+            1
+          ]
+        ],
+        "potions": [
+          null,
+          null
+        ],
+        "next_x": [
+          1,
+          3
+        ],
+        "map_xy": [
+          2,
+          9
+        ]
+      }
+    },
+    "leave": {
+      "steps": [
+        {
+          "label": "leave",
+          "aid": 171,
+          "command": "proceed",
+          "request": "5c4705f1-44e5-4009-a3b9-d41ca904b2b1",
+          "at": "2026-11-22T03:43:54.682419+00:00",
+          "before": "04b871e1c29343ca9eb44bb9ca82d0f51bb998f70eb2dad5288b04ff98108a95",
+          "after": "2bc4a0ab71dc1642316e3ff4ef423ed1e094ec961a98808087bf3ecfe070874e",
+          "model_action": 171,
+          "binding": {
+            "binding": "same explicit control/potion slot",
+            "control": 171
+          },
+          "stale_rejected": true
+        }
+      ],
+      "frames": {
+        "04b871e1c29343ca9eb44bb9ca82d0f51bb998f70eb2dad5288b04ff98108a95": {
+          "capture": "04b871e1c29343ca9eb44bb9ca82d0f51bb998f70eb2dad5288b04ff98108a95",
+          "state_sha256": "802ccc15d90de38a807718f1d49e9ccaf0c94678569cd8668e8374fed81ae1f1",
+          "values": {
+            "resources": [
+              56,
+              66,
+              237,
+              10,
+              1,
+              20
+            ],
+            "page": 2,
+            "keys": [
+              false,
+              false,
+              false
+            ],
+            "deck": [
+              [
+                "AscendersBane",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Survivor",
+                1
+              ],
+              [
+                "Dodge and Roll",
+                1
+              ],
+              [
+                "Blade Dance",
+                0
+              ],
+              [
+                "Doubt",
+                0
+              ],
+              [
+                "Cloak And Dagger",
+                0
+              ],
+              [
+                "Dagger Throw",
+                0
+              ],
+              [
+                "After Image",
+                0
+              ]
+            ],
+            "relics": [
+              [
+                "ringofthesnake",
+                -1
+              ],
+              [
+                "inkbottle",
+                1
+              ]
+            ],
+            "potions": [
+              null,
+              null
+            ],
+            "rewards": [
+              [
+                "GOLD",
+                20
+              ],
+              [
+                "POTION",
+                "regenpotion"
+              ],
+              [
+                "CARD",
+                null
+              ]
+            ]
+          },
+          "original_actions": [
+            110,
+            111,
+            112,
+            171
+          ],
+          "model_actions": [
+            110,
+            111,
+            112,
+            171
+          ]
+        },
+        "2bc4a0ab71dc1642316e3ff4ef423ed1e094ec961a98808087bf3ecfe070874e": {
+          "capture": "2bc4a0ab71dc1642316e3ff4ef423ed1e094ec961a98808087bf3ecfe070874e",
+          "state_sha256": "89a18afc89ab74158a403e09477a2c6295e61c5413cc71ac8bec098833e8a952",
+          "values": {
+            "resources": [
+              56,
+              66,
+              237,
+              10,
+              1,
+              20
+            ],
+            "page": 5,
+            "keys": [
+              false,
+              false,
+              false
+            ],
+            "deck": [
+              [
+                "AscendersBane",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Strike_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Defend_G",
+                0
+              ],
+              [
+                "Survivor",
+                1
+              ],
+              [
+                "Dodge and Roll",
+                1
+              ],
+              [
+                "Blade Dance",
+                0
+              ],
+              [
+                "Doubt",
+                0
+              ],
+              [
+                "Cloak And Dagger",
+                0
+              ],
+              [
+                "Dagger Throw",
+                0
+              ],
+              [
+                "After Image",
+                0
+              ]
+            ],
+            "relics": [
+              [
+                "ringofthesnake",
+                -1
+              ],
+              [
+                "inkbottle",
+                1
+              ]
+            ],
+            "potions": [
+              null,
+              null
+            ],
+            "next_x": [
+              1,
+              3
+            ],
+            "map_xy": [
+              2,
+              9
+            ]
+          },
+          "original_actions": [
+            110,
+            111,
+            176
+          ],
+          "model_actions": [
+            110,
+            111
+          ]
+        }
+      },
+      "hand": [
+        {
+          "index": 115,
+          "aid": 110,
+          "card_uuids": [
+            "1d6258d1-576f-4275-8315-f5fb0e73cfab"
+          ],
+          "use_card": []
+        },
+        {
+          "index": 116,
+          "aid": 172,
+          "card_uuids": [
+            "1d6258d1-576f-4275-8315-f5fb0e73cfab"
+          ],
+          "use_card": []
+        }
+      ],
+      "checked_prefix": 33,
+      "closed": {
+        "at": "2026-11-22T05:23:42.259434+00:00",
+        "game_exit": {
+          "pid": 28748,
+          "returncode": 143,
+          "finished_utc": "2026-11-22T05:23:42.160737+00:00"
+        },
+        "verified_absent": [
+          28727,
+          28748,
+          28845
+        ],
+        "unchanged_evidence": {
+          "END.json": "d0b1c117d5553815cff7855e9a8cbf02b7067a6bf847cf18ea7c90ce65b82a52",
+          "choices.jsonl": "4c15a09c965d2d893e07de1f5ba037e9512ed6a3ac1bba60f2097f9bbfac2d7a",
+          "prefix.jsonl": "7c5372e4fc6bdd62bc23ec06c928f4373d1a8116d12d8fb8a400105267fdc4f4",
+          "PHYSICAL.jsonl": "3b400655a93ba3ba4fc33b7ffc5eddf0e40c27bd0bc100e5da77a8398bd78768"
+        },
+        "input_dispatched": false
+      },
+      "final": {
+        "resources": [
+          56,
+          66,
+          237,
+          10,
+          1,
+          20
+        ],
+        "page": 5,
+        "keys": [
+          false,
+          false,
+          false
+        ],
+        "deck": [
+          [
+            "AscendersBane",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Strike_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Defend_G",
+            0
+          ],
+          [
+            "Survivor",
+            1
+          ],
+          [
+            "Dodge and Roll",
+            1
+          ],
+          [
+            "Blade Dance",
+            0
+          ],
+          [
+            "Doubt",
+            0
+          ],
+          [
+            "Cloak And Dagger",
+            0
+          ],
+          [
+            "Dagger Throw",
+            0
+          ],
+          [
+            "After Image",
+            0
+          ]
+        ],
+        "relics": [
+          [
+            "ringofthesnake",
+            -1
+          ],
+          [
+            "inkbottle",
+            1
+          ]
+        ],
+        "potions": [
+          null,
+          null
+        ],
+        "next_x": [
+          1,
+          3
+        ],
+        "map_xy": [
+          2,
+          9
+        ]
+      }
+    }
+  },
+  "original_actions": 12,
+  "stale_rejected": 12,
+  "matched_reward_masks": 12,
+  "map_control_gap": 176
+}
