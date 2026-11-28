@@ -1,0 +1,327 @@
+{
+  "candidate": "experiments.sa_calibration_round7.combined",
+  "references": "fixed development witnesses",
+  "tea": {
+    "seed": 54072728,
+    "original_after": "d2bea1d524e445679ba199c8402530987bd3e74b4feebf3f69c278cacf777538",
+    "native_counter": -2,
+    "first_combat_energy": 5,
+    "control": "one simulator copy clears the pending charge; no second retail run",
+    "historical": {
+      "state_sha256": [
+        "de792e038a9e1775a33266cdb2c930e7fceb12eddc99524ac35fdd25d9c3f62b",
+        "de792e038a9e1775a33266cdb2c930e7fceb12eddc99524ac35fdd25d9c3f62b"
+      ],
+      "state_width": 3121,
+      "actions_equal": true,
+      "differing_positions": []
+    },
+    "historical_detections": [
+      {
+        "kind": "tea_states_collide",
+        "expected": [
+          1,
+          0
+        ],
+        "actual": "identical_public_state"
+      }
+    ],
+    "candidate": {
+      "state_sha256": [
+        "b7a16ab8fec1d4c1b715c9f7bb103be901d006e52697a2401c1c19ec0f71fd92",
+        "c84961e432596b5761e26936178f13045f0807b1f45dfddbd204345507989db3"
+      ],
+      "state_width": 3122,
+      "actions_equal": true,
+      "differing_positions": [
+        3121
+      ]
+    },
+    "candidate_issues": []
+  },
+  "rewards": {
+    "seed": "9763128100447777033",
+    "original_reward_rows": [
+      [
+        "GOLD",
+        20
+      ],
+      [
+        "POTION",
+        "regenpotion"
+      ],
+      [
+        "CARD",
+        null
+      ]
+    ],
+    "historical_detections": [
+      {
+        "kind": "missing_reward_actions",
+        "expected": [
+          110,
+          111,
+          112,
+          171
+        ],
+        "actual": []
+      }
+    ],
+    "candidate_steps": [
+      {
+        "index": 129,
+        "action": 110,
+        "expected_actions": [
+          110,
+          111,
+          112,
+          171
+        ],
+        "gold": 257,
+        "belt": [
+          null,
+          null
+        ],
+        "deck_size": 18,
+        "original_before": "41c4666913e46919c16efb8b74533d348493bcb846de81c351a3e1c2983732d9",
+        "original_after": "c4988d5212e06ed4be28724b9ffab5aa45be85b479fb4d9981239c1a6c7ddd97"
+      },
+      {
+        "index": 130,
+        "action": 110,
+        "expected_actions": [
+          110,
+          111,
+          171
+        ],
+        "gold": 257,
+        "belt": [
+          "regenpotion",
+          null
+        ],
+        "deck_size": 18,
+        "original_before": "c4988d5212e06ed4be28724b9ffab5aa45be85b479fb4d9981239c1a6c7ddd97",
+        "original_after": "a25a829d1b5473745d8a3b02d8305f20f2e4bbe2bbf29e950f30b2e101a53197"
+      },
+      {
+        "index": 131,
+        "action": 110,
+        "expected_actions": [
+          105,
+          110,
+          171
+        ],
+        "gold": 257,
+        "belt": [
+          "regenpotion",
+          null
+        ],
+        "deck_size": 18,
+        "original_before": "a25a829d1b5473745d8a3b02d8305f20f2e4bbe2bbf29e950f30b2e101a53197",
+        "original_after": "774391a47e8b8bf2ed01a79954fc0fbb5fe27a610d00f443058198ac9d277141"
+      },
+      {
+        "index": 132,
+        "action": 112,
+        "expected_actions": [
+          105,
+          110,
+          111,
+          112,
+          177
+        ],
+        "gold": 257,
+        "belt": [
+          "regenpotion",
+          null
+        ],
+        "deck_size": 19,
+        "original_before": "774391a47e8b8bf2ed01a79954fc0fbb5fe27a610d00f443058198ac9d277141",
+        "original_after": "5e8ab1051d49b410b77727febed9d149c81fccdc5832f23c8a38fa8f2cc7f5d5"
+      },
+      {
+        "index": 133,
+        "action": 171,
+        "expected_actions": [
+          105,
+          171
+        ],
+        "gold": 257,
+        "belt": [
+          "regenpotion",
+          null
+        ],
+        "deck_size": 19,
+        "original_before": "5e8ab1051d49b410b77727febed9d149c81fccdc5832f23c8a38fa8f2cc7f5d5",
+        "original_after": "44c0e51bac28264a5c149ae43f80c5f97b865ee86651787cab40edf87d36fa60"
+      }
+    ],
+    "candidate_issues": [],
+    "injected_tests": {
+      "129": [
+        "ordinary_gold_payout"
+      ],
+      "130": [
+        "ordinary_potion_payout"
+      ],
+      "132": [
+        "chosen_card_in_permanent_deck"
+      ]
+    }
+  },
+  "living_wall": {
+    "seed": "6846117179527628677",
+    "raw_sha256": "a4a99f5da2bbdd11e007d2018ff8ee2a608c69264daf6df3c8460a117cd988fc",
+    "native_grid_inputs": [
+      32,
+      33
+    ],
+    "native_uuids_removed": [
+      "5f47850f-9f8e-48d4-8f41-4e899af3b7a9"
+    ],
+    "remaining_native_deck": 14,
+    "native_deck_positions": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "historical_detections": [
+      {
+        "kind": "living_wall_actions",
+        "expected": [
+          105,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123
+        ],
+        "actual": []
+      }
+    ],
+    "candidate": {
+      "page": "WALL_REMOVE_GRID",
+      "offered": [
+        105,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123
+      ],
+      "positions": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "selected_rows": [
+        0
+      ],
+      "final_deck": [
+        [
+          "AscendersBane",
+          0
+        ],
+        [
+          "Strike_G",
+          0
+        ],
+        [
+          "Strike_G",
+          0
+        ],
+        [
+          "Strike_G",
+          0
+        ],
+        [
+          "Strike_G",
+          0
+        ],
+        [
+          "Defend_G",
+          0
+        ],
+        [
+          "Defend_G",
+          0
+        ],
+        [
+          "Defend_G",
+          0
+        ],
+        [
+          "Defend_G",
+          0
+        ],
+        [
+          "Defend_G",
+          0
+        ],
+        [
+          "Survivor",
+          0
+        ],
+        [
+          "Neutralize",
+          0
+        ],
+        [
+          "Backflip",
+          0
+        ],
+        [
+          "Leg Sweep",
+          0
+        ]
+      ],
+      "final_page": "WALL_REMOVE_LEAVE"
+    },
+    "candidate_issues": [],
+    "injected_tests": [
+      "living_wall_swapped_same_face_slots"
+    ]
+  },
+  "historical_bugs_caught": 3,
+  "candidate_issues": 0
+}

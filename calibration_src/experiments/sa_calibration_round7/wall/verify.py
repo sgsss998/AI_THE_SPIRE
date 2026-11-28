@@ -42,28 +42,31 @@ def legal(frame):
     return [i for i, enabled in enumerate(frame.supported_actions) if enabled]
 
 
-def retail_replay(journal, calls):
-    engine = release.make_engine()
-    session = release.make_session(engine)
-    frame = session.reset(SEED)
+def retail_replay(journal, calls, *, seed=SEED, session_factory=release.make_session, compare_frame=compare,
+                  engine_factory=release.make_engine, inspect_before=None, map_input=archive.view.map_action, watch=range(30,35)):
+    engine = engine_factory()
+    session = session_factory(engine)
+    frame = session.reset(seed)
     frames, rows, first_diff, stop = {}, [], None, None
     for pos, row in enumerate(journal):
         i = row["index"]
-        before = compare(engine, frame, row["before"])
-        aid, binding = archive.view.map_action(row, frame, engine)
+        before = compare_frame(engine, frame, row["before"])
+        aid, binding = map_input(row, frame, engine)
         entry = dict(index=i, command=row["command"], floor=int(frame.state.vector[3]), page=frame.page,
                      offered=legal(frame), retail_legal=row["legal"], public_action=aid, before=before,
                      original_before_hash=row["before"]["raw_hash"], original_after_hash=row["after"]["raw_hash"])
         rows.append(entry)
+        if inspect_before is not None:
+            entry["action_review"] = inspect_before(frame, engine, row)
         if before and not first_diff and set(before)-{"page"}:
             first_diff = dict(index=i, phase="before", fields=before)
         if aid is None:
-            later = compare(engine, frame, row["after"])
+            later = compare_frame(engine, frame, row["after"])
             ack = unique_ack(row) and not later
             if (not ack and unique_ack(row) and set(later)=={"page"} and pos+1 < len(journal)):
                 following = journal[pos+1]
                 ack = (unique_ack(following) and row["after"]["raw_hash"]==following["before"]["raw_hash"]
-                       and not compare(engine, frame, following["after"]))
+                       and not compare_frame(engine, frame, following["after"]))
             if not ack:
                 stop = dict(index=i, reason="unmapped_retail_input", binding=binding)
             else:
@@ -84,11 +87,11 @@ def retail_replay(journal, calls):
             stop.update(floor=entry["floor"], page=frame.page, offered=legal(frame), gaps=list(frame.action_gaps))
             entry["status"] = "stopped"
             break
-        after = compare(engine, frame, row["after"])
+        after = compare_frame(engine, frame, row["after"])
         entry["after"] = after
         if after and not first_diff and set(after)-{"page"}:
             first_diff = dict(index=i, phase="after", fields=after)
-        if 30 <= i <= 34:
+        if i in watch:
             frames[i] = frame
     return dict(rows=rows, completed_inputs=sum(q["status"]!="stopped" for q in rows),
                 total_original_inputs=len(journal), first_substantive_difference=first_diff, stop=stop), frames

@@ -37,4 +37,19 @@ assert wall["wall"]["deck_counts"] == [15,15,14]
 for version, count in [("R6",1),("R7",0)]:
     checks = read(f"oracles/{version}.json")
     assert checks["historical_bugs_caught"] == 3 and checks["candidate_issues"] == count
-print("Verified 200 pilot seeds, 200 repeat traces, 120 retail inputs and three regression oracles.")
+fixed = read("wall-regression/RESULT.json")
+archive = (root/"wall-regression/games.jsonl.gz").read_bytes()
+assert sha256(archive).hexdigest() == fixed["archive_sha256"]
+games = [json.loads(line) for line in gzip.decompress(archive).splitlines()]
+assert len(games) == len({r["seed"] for r in games}) == 704
+assert Counter(r["reason"] for r in games) == {"loss":376,"unsupported":328}
+assert sum(r["reason"]=="loss" and r["previous"]=="unsupported" for r in games) == 4
+assert all(r["reason"]=="loss" for r in games if r["previous"]=="loss")
+for name,n,m in [("r4-natural",339,310),("r6-natural",120,119)]:
+    record = json.loads(gzip.decompress((root/"menus"/(name+".json.gz")).read_bytes()))
+    assert record["total_original_inputs"] == record["completed_inputs"] == n and record["stop"] is None
+    assert record["menu_counts"]["all_choices_bound_and_equal"] == m
+deep = read("deep/REWARD_CANDIDATE.json")["act2_same_fight"]
+assert len(deep["simulated_commands"]) == deep["real_commands"] == 30
+assert deep["first_difference"] is None
+print("Verified 200 pilot seeds, 704 fixed games, both retail runs (120 and 339 inputs), 30 Act II inputs and three regression oracles.")

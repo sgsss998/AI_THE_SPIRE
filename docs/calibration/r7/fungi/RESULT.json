@@ -1,0 +1,7498 @@
+{
+  "runtime": {
+    "candidate.py": "9d971e1dad4c9e95f8cfb36be33959a3f386a064fb372e3552c217d842202220",
+    "session.py": "86d95be45015da96efdaf091dcb6dfa46e87aaea7d5c58b57763cb2ae3657b35"
+  },
+  "natural": {
+    "seed": 9763128100447777033,
+    "original_journal_sha256": "a1d663d675d444dbe32d2e304430dbdfb71eb4d05d7261adbad6e2562c189b33",
+    "fungal_steps": [
+      {
+        "index": 143,
+        "floor": 11,
+        "action": 3,
+        "command": "play 4",
+        "offered": [
+          0,
+          1,
+          2,
+          3,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          2,
+          3,
+          70,
+          105,
+          170
+        ],
+        "observed_actions_match": true
+      },
+      {
+        "index": 144,
+        "floor": 11,
+        "action": 0,
+        "command": "play 1",
+        "offered": [
+          0,
+          1,
+          2,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          2,
+          70,
+          105,
+          170
+        ],
+        "observed_actions_match": true
+      },
+      {
+        "index": 145,
+        "floor": 11,
+        "action": 170,
+        "command": "end",
+        "offered": [
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          70,
+          105,
+          170
+        ],
+        "observed_actions_match": true
+      },
+      {
+        "index": 146,
+        "floor": 11,
+        "action": 70,
+        "command": "potion use 0",
+        "offered": [
+          0,
+          2,
+          11,
+          13,
+          14,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          0,
+          2,
+          11,
+          13,
+          14,
+          70,
+          105,
+          170
+        ],
+        "observed_actions_match": true
+      },
+      {
+        "index": 147,
+        "floor": 11,
+        "action": 2,
+        "command": "play 3",
+        "offered": [
+          0,
+          2,
+          11,
+          13,
+          14,
+          170
+        ],
+        "retail_legal": [
+          0,
+          2,
+          11,
+          13,
+          14,
+          170
+        ],
+        "observed_actions_match": true
+      },
+      {
+        "index": 148,
+        "floor": 11,
+        "action": 0,
+        "command": "play 1",
+        "offered": [
+          0,
+          11,
+          12,
+          13,
+          14,
+          170
+        ],
+        "retail_legal": [
+          0,
+          11,
+          12,
+          13,
+          14,
+          170
+        ],
+        "observed_actions_match": true
+      },
+      {
+        "index": 149,
+        "floor": 11,
+        "action": 13,
+        "command": "play 4 0",
+        "offered": [
+          10,
+          11,
+          12,
+          13,
+          170
+        ],
+        "retail_legal": [
+          10,
+          11,
+          12,
+          13,
+          170
+        ],
+        "observed_actions_match": true
+      },
+      {
+        "index": 150,
+        "floor": 11,
+        "action": 11,
+        "command": "play 2 0",
+        "offered": [
+          10,
+          11,
+          12,
+          170
+        ],
+        "retail_legal": [
+          10,
+          11,
+          12,
+          170
+        ],
+        "observed_actions_match": true
+      },
+      {
+        "index": 151,
+        "floor": 11,
+        "action": 112,
+        "command": "choose 2",
+        "offered": [
+          110,
+          111,
+          112
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112
+        ],
+        "observed_actions_match": true
+      },
+      {
+        "index": 152,
+        "floor": 11,
+        "action": 172,
+        "command": "confirm",
+        "offered": [
+          172,
+          179
+        ],
+        "retail_legal": [
+          110,
+          111,
+          172
+        ],
+        "observed_actions_match": false
+      },
+      {
+        "index": 153,
+        "floor": 11,
+        "action": 170,
+        "command": "end",
+        "offered": [
+          170
+        ],
+        "retail_legal": [
+          170
+        ],
+        "observed_actions_match": true
+      },
+      {
+        "index": 154,
+        "floor": 11,
+        "action": 12,
+        "command": "play 3 0",
+        "offered": [
+          0,
+          1,
+          4,
+          12,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          4,
+          12,
+          170
+        ],
+        "observed_actions_match": true
+      },
+      {
+        "index": 155,
+        "floor": 11,
+        "action": 0,
+        "command": "play 1",
+        "offered": [
+          0,
+          1,
+          3,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          3,
+          170
+        ],
+        "observed_actions_match": true
+      },
+      {
+        "index": 156,
+        "floor": 11,
+        "action": 4,
+        "command": "play 5",
+        "offered": [
+          0,
+          2,
+          4,
+          13,
+          170
+        ],
+        "retail_legal": [
+          0,
+          2,
+          4,
+          13,
+          170
+        ],
+        "observed_actions_match": true
+      },
+      {
+        "index": 157,
+        "floor": 11,
+        "action": 170,
+        "command": "end",
+        "offered": [
+          170
+        ],
+        "retail_legal": [
+          170
+        ],
+        "observed_actions_match": true
+      },
+      {
+        "index": 158,
+        "floor": 11,
+        "action": 12,
+        "command": "play 3 0",
+        "offered": [
+          0,
+          1,
+          3,
+          12,
+          14,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          3,
+          12,
+          14,
+          170
+        ],
+        "observed_actions_match": true
+      },
+      {
+        "index": 159,
+        "floor": 11,
+        "action": 111,
+        "command": "choose 1",
+        "offered": [
+          110,
+          111,
+          112,
+          113,
+          114
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112,
+          113,
+          114
+        ],
+        "observed_actions_match": true
+      },
+      {
+        "index": 160,
+        "floor": 11,
+        "action": 172,
+        "command": "confirm",
+        "offered": [
+          172,
+          179
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112,
+          113,
+          172
+        ],
+        "observed_actions_match": false
+      },
+      {
+        "index": 161,
+        "floor": 11,
+        "action": 12,
+        "command": "play 3 0",
+        "offered": [
+          0,
+          1,
+          3,
+          12,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          3,
+          12,
+          170
+        ],
+        "observed_actions_match": true
+      }
+    ],
+    "rows": [
+      {
+        "index": 1,
+        "command": "choose 0",
+        "floor": 0,
+        "page": "NEOW_TALK",
+        "offered": [
+          110
+        ],
+        "retail_legal": [
+          110
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "fda64a975ae703120ca629723207d170a7e5243a134779f70cf52c5c3f990fc9",
+        "original_after_hash": "e9882ec8a244983a848077168f688184268cd1e0d9a99724055830b000c8e853",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 2,
+        "command": "choose 0",
+        "floor": 0,
+        "page": "NEOW_OFFERS",
+        "offered": [
+          110,
+          111,
+          112,
+          113
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112,
+          113
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "e9882ec8a244983a848077168f688184268cd1e0d9a99724055830b000c8e853",
+        "original_after_hash": "91dca5f5165d651bdb1e4a6b18fbca80e844c7a9c32540c732557018600a50a5",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 3,
+        "command": "choose 11",
+        "floor": 0,
+        "page": "SINGLE_TRANSFORM_GRID",
+        "offered": [
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121
+        ],
+        "public_action": 121,
+        "before": {},
+        "original_before_hash": "91dca5f5165d651bdb1e4a6b18fbca80e844c7a9c32540c732557018600a50a5",
+        "original_after_hash": "0a7e9abd79e0af01ee473d66731a76659f52903ae98ffd5ea6d3626a60c925fd",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 4,
+        "command": "confirm",
+        "floor": 0,
+        "page": "SINGLE_TRANSFORM_PREVIEW",
+        "offered": [
+          172,
+          173
+        ],
+        "retail_legal": [
+          172,
+          173
+        ],
+        "public_action": 172,
+        "before": {},
+        "original_before_hash": "0a7e9abd79e0af01ee473d66731a76659f52903ae98ffd5ea6d3626a60c925fd",
+        "original_after_hash": "2974132c2f423d2e1b86d2d9da159376341123a28e41e23dd2c6c650a81714cb",
+        "status": "executed",
+        "after": {
+          "page": {
+            "model": 5,
+            "original": 1
+          }
+        }
+      },
+      {
+        "index": 5,
+        "command": "choose 0",
+        "floor": 0,
+        "page": "DELEGATED",
+        "offered": [
+          110,
+          111,
+          112,
+          113
+        ],
+        "retail_legal": [
+          110
+        ],
+        "public_action": null,
+        "before": {
+          "page": {
+            "model": 5,
+            "original": 1
+          }
+        },
+        "original_before_hash": "2974132c2f423d2e1b86d2d9da159376341123a28e41e23dd2c6c650a81714cb",
+        "original_after_hash": "0290ebbd7ca12ba4afbec64b71af10ac2be29131c8ac29064aac0716643c7556",
+        "status": "presentation_ack",
+        "after": {}
+      },
+      {
+        "index": 6,
+        "command": "choose 2",
+        "floor": 0,
+        "page": "DELEGATED",
+        "offered": [
+          110,
+          111,
+          112,
+          113
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112,
+          113,
+          176
+        ],
+        "public_action": 112,
+        "before": {},
+        "original_before_hash": "0290ebbd7ca12ba4afbec64b71af10ac2be29131c8ac29064aac0716643c7556",
+        "original_after_hash": "1fcc3ee413a00f176a19b5bf3f85b42f04674e55cf40d0c4bc39e3ef09c3d7f0",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 7,
+        "command": "play 7",
+        "floor": 1,
+        "page": "DELEGATED",
+        "offered": [
+          3,
+          6,
+          10,
+          12,
+          14,
+          15,
+          20,
+          22,
+          24,
+          25,
+          170
+        ],
+        "retail_legal": [
+          3,
+          6,
+          10,
+          12,
+          14,
+          15,
+          20,
+          22,
+          24,
+          25,
+          170
+        ],
+        "public_action": 6,
+        "before": {},
+        "original_before_hash": "1fcc3ee413a00f176a19b5bf3f85b42f04674e55cf40d0c4bc39e3ef09c3d7f0",
+        "original_after_hash": "354697fa9b1d42ae39cffe4c127b9a45e0cab45bf374a13f650cdbf875921b5d",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 8,
+        "command": "play 4",
+        "floor": 1,
+        "page": "DELEGATED",
+        "offered": [
+          3,
+          10,
+          12,
+          14,
+          15,
+          20,
+          22,
+          24,
+          25,
+          170
+        ],
+        "retail_legal": [
+          3,
+          10,
+          12,
+          14,
+          15,
+          20,
+          22,
+          24,
+          25,
+          170
+        ],
+        "public_action": 3,
+        "before": {},
+        "original_before_hash": "354697fa9b1d42ae39cffe4c127b9a45e0cab45bf374a13f650cdbf875921b5d",
+        "original_after_hash": "66401449a363a11185a72070c626a65e2b380de564f060fce61d87293e45778c",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 9,
+        "command": "choose 1",
+        "floor": 1,
+        "page": "DELEGATED",
+        "offered": [
+          110,
+          111,
+          112,
+          113,
+          114
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112,
+          113,
+          114
+        ],
+        "public_action": 111,
+        "before": {},
+        "original_before_hash": "979762435be05c4a041b698498c7e91ab913947bcedf256a993249ebc05f8ec7",
+        "original_after_hash": "051fbc2e86dcb0f4ec232392b5c46f8e92b3573ebf6b99334e154fa8214e0bd3",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 10,
+        "command": "confirm",
+        "floor": 1,
+        "page": "DELEGATED",
+        "offered": [
+          172,
+          179
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112,
+          113,
+          172
+        ],
+        "public_action": 172,
+        "before": {},
+        "original_before_hash": "051fbc2e86dcb0f4ec232392b5c46f8e92b3573ebf6b99334e154fa8214e0bd3",
+        "original_after_hash": "fb52ae2e46f04071ad84d2596c1a3c3ce6824f97240d013ba4167c5b4b728eec",
+        "status": "executed",
+        "incidental_actions": [
+          [
+            57,
+            13
+          ]
+        ],
+        "after": {}
+      },
+      {
+        "index": 11,
+        "command": "end",
+        "floor": 1,
+        "page": "DELEGATED",
+        "offered": [
+          170
+        ],
+        "retail_legal": [
+          170
+        ],
+        "public_action": 170,
+        "before": {},
+        "original_before_hash": "fb52ae2e46f04071ad84d2596c1a3c3ce6824f97240d013ba4167c5b4b728eec",
+        "original_after_hash": "2ff128defa18fd93a1cf6f5a91f7e645bc7b6e33bbe13955198088bde2c3f4ae",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 12,
+        "command": "play 1",
+        "floor": 1,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          170
+        ],
+        "public_action": 0,
+        "before": {},
+        "original_before_hash": "2ff128defa18fd93a1cf6f5a91f7e645bc7b6e33bbe13955198088bde2c3f4ae",
+        "original_after_hash": "b38923bf40f7df2c6abd496d984b2fb38df05b2016a31f24a86fa842f85e959d",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 13,
+        "command": "play 1",
+        "floor": 1,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          2,
+          3,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          2,
+          3,
+          170
+        ],
+        "public_action": 0,
+        "before": {},
+        "original_before_hash": "b38923bf40f7df2c6abd496d984b2fb38df05b2016a31f24a86fa842f85e959d",
+        "original_after_hash": "713e4ee628b4d9bbbe865fcdfc31448dcf4aba49d4f5c22a66dc92395a47c4ab",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 14,
+        "command": "play 1",
+        "floor": 1,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          2,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          2,
+          170
+        ],
+        "public_action": 0,
+        "before": {},
+        "original_before_hash": "713e4ee628b4d9bbbe865fcdfc31448dcf4aba49d4f5c22a66dc92395a47c4ab",
+        "original_after_hash": "baea944e9d22e895887a6a731ad69e7a4ffe65ac79085905a3f4405fcaec5bf7",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 15,
+        "command": "end",
+        "floor": 1,
+        "page": "DELEGATED",
+        "offered": [
+          170
+        ],
+        "retail_legal": [
+          170
+        ],
+        "public_action": 170,
+        "before": {},
+        "original_before_hash": "baea944e9d22e895887a6a731ad69e7a4ffe65ac79085905a3f4405fcaec5bf7",
+        "original_after_hash": "2beae38d08049bae381e1e9ce11aa8c005fb82e4b6bfa74b586de3fff5255849",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 16,
+        "command": "play 2",
+        "floor": 1,
+        "page": "DELEGATED",
+        "offered": [
+          1,
+          3,
+          10,
+          12,
+          14,
+          20,
+          22,
+          24,
+          170
+        ],
+        "retail_legal": [
+          1,
+          3,
+          10,
+          12,
+          14,
+          20,
+          22,
+          24,
+          170
+        ],
+        "public_action": 1,
+        "before": {},
+        "original_before_hash": "2beae38d08049bae381e1e9ce11aa8c005fb82e4b6bfa74b586de3fff5255849",
+        "original_after_hash": "c262125341af691a1c96d51bf952762b9e4027f929134dffea6bebd886da5191",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 17,
+        "command": "play 1 1",
+        "floor": 1,
+        "page": "DELEGATED",
+        "offered": [
+          2,
+          10,
+          11,
+          13,
+          20,
+          21,
+          23,
+          170
+        ],
+        "retail_legal": [
+          2,
+          10,
+          11,
+          13,
+          20,
+          21,
+          23,
+          170
+        ],
+        "public_action": 20,
+        "before": {},
+        "original_before_hash": "c262125341af691a1c96d51bf952762b9e4027f929134dffea6bebd886da5191",
+        "original_after_hash": "9e133b84b37d0dfac96cc010a67c867727d714e5761db6626ca6b8aa44720ece",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 18,
+        "command": "play 1 1",
+        "floor": 1,
+        "page": "DELEGATED",
+        "offered": [
+          1,
+          10,
+          12,
+          20,
+          22,
+          170
+        ],
+        "retail_legal": [
+          1,
+          10,
+          12,
+          20,
+          22,
+          170
+        ],
+        "public_action": 20,
+        "before": {},
+        "original_before_hash": "9e133b84b37d0dfac96cc010a67c867727d714e5761db6626ca6b8aa44720ece",
+        "original_after_hash": "6b4d79f179cd1f1838c5014296597540e14bd332b8bfc3d28a9e4f5cf9128354",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 19,
+        "command": "end",
+        "floor": 1,
+        "page": "DELEGATED",
+        "offered": [
+          170
+        ],
+        "retail_legal": [
+          170
+        ],
+        "public_action": 170,
+        "before": {},
+        "original_before_hash": "6b4d79f179cd1f1838c5014296597540e14bd332b8bfc3d28a9e4f5cf9128354",
+        "original_after_hash": "6e5d43833b94bc03ed19db9062993e055dd9fe290ce74d16de18ba66157ad685",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 20,
+        "command": "play 1",
+        "floor": 1,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          170
+        ],
+        "public_action": 0,
+        "before": {},
+        "original_before_hash": "6e5d43833b94bc03ed19db9062993e055dd9fe290ce74d16de18ba66157ad685",
+        "original_after_hash": "eb7670d100f979308961bef13fa3ac4d633d2265a9c552c68d70207541005911",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 21,
+        "command": "play 1",
+        "floor": 1,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          2,
+          3,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          2,
+          3,
+          170
+        ],
+        "public_action": 0,
+        "before": {},
+        "original_before_hash": "eb7670d100f979308961bef13fa3ac4d633d2265a9c552c68d70207541005911",
+        "original_after_hash": "d013f5123d068d5ec0038cfa43721c13d3c68679a1e1cc821c303c41d129ec9e",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 22,
+        "command": "play 1",
+        "floor": 1,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          2,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          2,
+          170
+        ],
+        "public_action": 0,
+        "before": {},
+        "original_before_hash": "d013f5123d068d5ec0038cfa43721c13d3c68679a1e1cc821c303c41d129ec9e",
+        "original_after_hash": "e13bc56fc6d05189ff0be9b25b2befd6d73e67ba0c7d7a60b1ccb6e8969bb09d",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 23,
+        "command": "end",
+        "floor": 1,
+        "page": "DELEGATED",
+        "offered": [
+          170
+        ],
+        "retail_legal": [
+          170
+        ],
+        "public_action": 170,
+        "before": {},
+        "original_before_hash": "e13bc56fc6d05189ff0be9b25b2befd6d73e67ba0c7d7a60b1ccb6e8969bb09d",
+        "original_after_hash": "6a657779ce1857b7954d6d76b3f89cef9b9bf5cf70fe0b0d53559eb3b73edf98",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 24,
+        "command": "play 4",
+        "floor": 1,
+        "page": "DELEGATED",
+        "offered": [
+          3,
+          4,
+          11,
+          12,
+          21,
+          22,
+          170
+        ],
+        "retail_legal": [
+          3,
+          4,
+          11,
+          12,
+          21,
+          22,
+          170
+        ],
+        "public_action": 3,
+        "before": {},
+        "original_before_hash": "6a657779ce1857b7954d6d76b3f89cef9b9bf5cf70fe0b0d53559eb3b73edf98",
+        "original_after_hash": "9e5f1129e71318b7e9fee0f279a95be8c39d9bcf0bafd92a973a222929fde330",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 25,
+        "command": "play 4",
+        "floor": 1,
+        "page": "DELEGATED",
+        "offered": [
+          3,
+          11,
+          12,
+          21,
+          22,
+          170
+        ],
+        "retail_legal": [
+          3,
+          11,
+          12,
+          21,
+          22,
+          170
+        ],
+        "public_action": 3,
+        "before": {},
+        "original_before_hash": "9e5f1129e71318b7e9fee0f279a95be8c39d9bcf0bafd92a973a222929fde330",
+        "original_after_hash": "2cf22624e38d2bd852412fab955087417beba306ada507070e38b650a5adf70e",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 26,
+        "command": "play 2 0",
+        "floor": 1,
+        "page": "DELEGATED",
+        "offered": [
+          11,
+          12,
+          21,
+          22,
+          170
+        ],
+        "retail_legal": [
+          11,
+          12,
+          21,
+          22,
+          170
+        ],
+        "public_action": 11,
+        "before": {},
+        "original_before_hash": "2cf22624e38d2bd852412fab955087417beba306ada507070e38b650a5adf70e",
+        "original_after_hash": "e91a44483676e7c7b1c34c0ba39f2d82f6981ddbbefbf2dd6d43853412d925f8",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 27,
+        "command": "end",
+        "floor": 1,
+        "page": "DELEGATED",
+        "offered": [
+          170
+        ],
+        "retail_legal": [
+          170
+        ],
+        "public_action": 170,
+        "before": {},
+        "original_before_hash": "e91a44483676e7c7b1c34c0ba39f2d82f6981ddbbefbf2dd6d43853412d925f8",
+        "original_after_hash": "53f4159f79761406991ef1304623ea64652b4b08735288de78d37ceb38238501",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 28,
+        "command": "play 2 0",
+        "floor": 1,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          4,
+          11,
+          12,
+          13,
+          21,
+          22,
+          23,
+          170
+        ],
+        "retail_legal": [
+          0,
+          4,
+          11,
+          12,
+          13,
+          21,
+          22,
+          23,
+          170
+        ],
+        "public_action": 11,
+        "before": {},
+        "original_before_hash": "53f4159f79761406991ef1304623ea64652b4b08735288de78d37ceb38238501",
+        "original_after_hash": "e367693a68bb8ceeda0d5c71b6f9b6b1d22895ee6c808234284404ad9c16f081",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 29,
+        "command": "play 1",
+        "floor": 1,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          3,
+          21,
+          22,
+          170
+        ],
+        "retail_legal": [
+          0,
+          3,
+          21,
+          22,
+          170
+        ],
+        "public_action": 0,
+        "before": {},
+        "original_before_hash": "e367693a68bb8ceeda0d5c71b6f9b6b1d22895ee6c808234284404ad9c16f081",
+        "original_after_hash": "f9aca476b618efb18abd20c041d216cc68c8eb0a3bc5c2e3e5e5551303dce148",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 30,
+        "command": "play 1 1",
+        "floor": 1,
+        "page": "DELEGATED",
+        "offered": [
+          2,
+          20,
+          21,
+          170
+        ],
+        "retail_legal": [
+          2,
+          20,
+          21,
+          170
+        ],
+        "public_action": 20,
+        "before": {},
+        "original_before_hash": "f9aca476b618efb18abd20c041d216cc68c8eb0a3bc5c2e3e5e5551303dce148",
+        "original_after_hash": "5339b36fcddbb92ecbf78f5bc79ef1054c6856e95b29aa5dbf08d7ef942ae5ae",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 31,
+        "command": "end",
+        "floor": 1,
+        "page": "DELEGATED",
+        "offered": [
+          170
+        ],
+        "retail_legal": [
+          170
+        ],
+        "public_action": 170,
+        "before": {},
+        "original_before_hash": "5339b36fcddbb92ecbf78f5bc79ef1054c6856e95b29aa5dbf08d7ef942ae5ae",
+        "original_after_hash": "c044abb546ad151c9efbf6f5032df7edfdfc22a0136e7f2b566b302c9b98d234",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 32,
+        "command": "play 5 1",
+        "floor": 1,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          2,
+          3,
+          24,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          2,
+          3,
+          24,
+          170
+        ],
+        "public_action": 24,
+        "before": {},
+        "original_before_hash": "c044abb546ad151c9efbf6f5032df7edfdfc22a0136e7f2b566b302c9b98d234",
+        "original_after_hash": "c205bf63c1354b0f5d05dd85109d3f93de654207140c98b34baefd4642171aac",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 33,
+        "command": "choose 0",
+        "floor": 1,
+        "page": "COMBAT_REWARD",
+        "offered": [
+          110,
+          111,
+          171
+        ],
+        "retail_legal": [
+          110,
+          111,
+          171
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "c205bf63c1354b0f5d05dd85109d3f93de654207140c98b34baefd4642171aac",
+        "original_after_hash": "cdca71479f6144a96a7eb135d6a4030c2698f11ec80899707efc908766493a9f",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 34,
+        "command": "choose 0",
+        "floor": 1,
+        "page": "COMBAT_REWARD",
+        "offered": [
+          110,
+          171
+        ],
+        "retail_legal": [
+          110,
+          171
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "cdca71479f6144a96a7eb135d6a4030c2698f11ec80899707efc908766493a9f",
+        "original_after_hash": "f6a4313f658da13e85c28b4b9e207f7b8a491caac3679bba43cd614f36fabdcc",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 35,
+        "command": "choose 0",
+        "floor": 1,
+        "page": "CARD_REWARD",
+        "offered": [
+          110,
+          111,
+          112,
+          177
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112,
+          177
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "f6a4313f658da13e85c28b4b9e207f7b8a491caac3679bba43cd614f36fabdcc",
+        "original_after_hash": "1d9ea07d6b909f40b3ab837ef011fdd274be3ac55a32954e237702d3c45c7c98",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 36,
+        "command": "proceed",
+        "floor": 1,
+        "page": "COMBAT_REWARD",
+        "offered": [
+          171
+        ],
+        "retail_legal": [
+          171
+        ],
+        "public_action": 171,
+        "before": {},
+        "original_before_hash": "1d9ea07d6b909f40b3ab837ef011fdd274be3ac55a32954e237702d3c45c7c98",
+        "original_after_hash": "4425745d90a9875624241af04aabaa3fa6cd8760c7c5c12a0f44a02b7465f1fa",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 37,
+        "command": "choose 0",
+        "floor": 1,
+        "page": "DELEGATED",
+        "offered": [
+          110
+        ],
+        "retail_legal": [
+          110,
+          176
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "4425745d90a9875624241af04aabaa3fa6cd8760c7c5c12a0f44a02b7465f1fa",
+        "original_after_hash": "0f98ad50bfa6e32faddd4f76a841cbc367370ffea8edf862390f47e8cdef42d9",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 38,
+        "command": "choose 0",
+        "floor": 2,
+        "page": "DELEGATED",
+        "offered": [
+          110,
+          111
+        ],
+        "retail_legal": [
+          110,
+          111
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "0f98ad50bfa6e32faddd4f76a841cbc367370ffea8edf862390f47e8cdef42d9",
+        "original_after_hash": "2ea2289cdac438676351cc83e61273fab8dfe129367172ca4563dabe25c8e27b",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 39,
+        "command": "choose 0",
+        "floor": 2,
+        "page": "SERPENT_ACCEPTED_CONTINUE",
+        "offered": [
+          110
+        ],
+        "retail_legal": [
+          110
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "2ea2289cdac438676351cc83e61273fab8dfe129367172ca4563dabe25c8e27b",
+        "original_after_hash": "c6d67f473334d2914454e141da321935301d9fe4628e7f5888383aa16d2008bd",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 40,
+        "command": "choose 0",
+        "floor": 2,
+        "page": "SERPENT_LEAVE",
+        "offered": [
+          110
+        ],
+        "retail_legal": [
+          110
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "c6d67f473334d2914454e141da321935301d9fe4628e7f5888383aa16d2008bd",
+        "original_after_hash": "1acffd5bdcdcb2042ed6330c425b1d686a61c75ad2e775bf8d52a106b114a149",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 41,
+        "command": "choose 0",
+        "floor": 2,
+        "page": "DELEGATED",
+        "offered": [
+          110
+        ],
+        "retail_legal": [
+          110,
+          176
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "1acffd5bdcdcb2042ed6330c425b1d686a61c75ad2e775bf8d52a106b114a149",
+        "original_after_hash": "e3d0ba89f5b578d772971d4d549d36afb3382e248a9a9d3e5d1946529dabba9d",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 42,
+        "command": "choose 0",
+        "floor": 3,
+        "page": "DELEGATED",
+        "offered": [
+          110,
+          111,
+          112
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "e3d0ba89f5b578d772971d4d549d36afb3382e248a9a9d3e5d1946529dabba9d",
+        "original_after_hash": "1b20c3745afa4bb2a139058f33f52b6bbed6c762d4204e37ff03af164c1c7c85",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 43,
+        "command": "choose 0",
+        "floor": 3,
+        "page": "EVENT_RESULT",
+        "offered": [
+          110
+        ],
+        "retail_legal": [
+          110
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "1b20c3745afa4bb2a139058f33f52b6bbed6c762d4204e37ff03af164c1c7c85",
+        "original_after_hash": "379058a97a6aa59af74fad21ab5460568b09ededca0b6f702ca978422ac913d8",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 44,
+        "command": "choose 1",
+        "floor": 3,
+        "page": "DELEGATED",
+        "offered": [
+          110,
+          111,
+          112
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112,
+          176
+        ],
+        "public_action": 111,
+        "before": {},
+        "original_before_hash": "379058a97a6aa59af74fad21ab5460568b09ededca0b6f702ca978422ac913d8",
+        "original_after_hash": "be19c97f2bca34d2fe300e8a1d846c82fc5133f3038bf49e5b338576513bffab",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 45,
+        "command": "choose 0",
+        "floor": 4,
+        "page": "DELEGATED",
+        "offered": [
+          110
+        ],
+        "retail_legal": [
+          110
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "be19c97f2bca34d2fe300e8a1d846c82fc5133f3038bf49e5b338576513bffab",
+        "original_after_hash": "4e6b3db7e9832a995fd5579e6aea8f2cb57360278c34c2a1248c688ca244adf4",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 46,
+        "command": "choose 0",
+        "floor": 4,
+        "page": "DELEGATED",
+        "offered": [
+          110
+        ],
+        "retail_legal": [
+          110
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "4e6b3db7e9832a995fd5579e6aea8f2cb57360278c34c2a1248c688ca244adf4",
+        "original_after_hash": "198b4944438fb3dea805ccd49de2ea9bb2f8d2b94976697a7f0108d6b7c7b57a",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 47,
+        "command": "choose 0",
+        "floor": 4,
+        "page": "WHEEL_HEAL_PRIZE",
+        "offered": [
+          110
+        ],
+        "retail_legal": [
+          110
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "198b4944438fb3dea805ccd49de2ea9bb2f8d2b94976697a7f0108d6b7c7b57a",
+        "original_after_hash": "6df99cef9c7537f9265fde22c426d7d477fbcc088d03ae770d21b6f7fcc14b3a",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 48,
+        "command": "choose 0",
+        "floor": 4,
+        "page": "WHEEL_HEAL_LEAVE",
+        "offered": [
+          110
+        ],
+        "retail_legal": [
+          110
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "6df99cef9c7537f9265fde22c426d7d477fbcc088d03ae770d21b6f7fcc14b3a",
+        "original_after_hash": "3f5f5f3ea665dbf4f34a90b20c011a19d2ae2e9e3a5facb1e9b200e8d8e4dcf8",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 49,
+        "command": "choose 0",
+        "floor": 4,
+        "page": "DELEGATED",
+        "offered": [
+          110
+        ],
+        "retail_legal": [
+          110,
+          176
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "3f5f5f3ea665dbf4f34a90b20c011a19d2ae2e9e3a5facb1e9b200e8d8e4dcf8",
+        "original_after_hash": "d88936a41adbf87c65287abb7cd9a1b6c3b6d282bf9bb3f64071528d09273bb8",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 50,
+        "command": "choose 0",
+        "floor": 5,
+        "page": "SHOP_ROOM",
+        "offered": [
+          110,
+          171
+        ],
+        "retail_legal": [
+          110,
+          171
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "d88936a41adbf87c65287abb7cd9a1b6c3b6d282bf9bb3f64071528d09273bb8",
+        "original_after_hash": "6996622ce34f4e9b0840bfa93f159985af5189fd5d392e179654f919687c8b0a",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 51,
+        "command": "choose 3",
+        "floor": 5,
+        "page": "SHOP_SCREEN",
+        "offered": [
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          178
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          178
+        ],
+        "public_action": 113,
+        "before": {},
+        "original_before_hash": "6996622ce34f4e9b0840bfa93f159985af5189fd5d392e179654f919687c8b0a",
+        "original_after_hash": "82ba306de7cad29854fdde93377b3fbfbbbb288b3270e78aba56915f6951a476",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 52,
+        "command": "choose 1",
+        "floor": 5,
+        "page": "SHOP_SCREEN",
+        "offered": [
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          178
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          178
+        ],
+        "public_action": 111,
+        "before": {},
+        "original_before_hash": "82ba306de7cad29854fdde93377b3fbfbbbb288b3270e78aba56915f6951a476",
+        "original_after_hash": "0eca071ae4f3f3dd48a862aef60bae4ced957c34872d5bf7bff8074625a99fd5",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 53,
+        "command": "leave",
+        "floor": 5,
+        "page": "SHOP_SCREEN",
+        "offered": [
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          178
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          178
+        ],
+        "public_action": 178,
+        "before": {},
+        "original_before_hash": "0eca071ae4f3f3dd48a862aef60bae4ced957c34872d5bf7bff8074625a99fd5",
+        "original_after_hash": "b72a9ec368030d1440442a242ccbd17c6d44f28a662f68d730cbf18377081cfb",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 54,
+        "command": "proceed",
+        "floor": 5,
+        "page": "SHOP_ROOM",
+        "offered": [
+          110,
+          171
+        ],
+        "retail_legal": [
+          110,
+          171
+        ],
+        "public_action": 171,
+        "before": {},
+        "original_before_hash": "b72a9ec368030d1440442a242ccbd17c6d44f28a662f68d730cbf18377081cfb",
+        "original_after_hash": "47fd7a9063475341ff765b5c23231bc8ac28801f9667ad3fd6bea3c3ec40898f",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 55,
+        "command": "choose 1",
+        "floor": 5,
+        "page": "DELEGATED",
+        "offered": [
+          110,
+          111
+        ],
+        "retail_legal": [
+          110,
+          111,
+          176
+        ],
+        "public_action": 111,
+        "before": {},
+        "original_before_hash": "47fd7a9063475341ff765b5c23231bc8ac28801f9667ad3fd6bea3c3ec40898f",
+        "original_after_hash": "d8398b3333f8255855fb5bd6c19b4d8be649d956102cdbd4af0cf66eb55c36ea",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 56,
+        "command": "choose 1",
+        "floor": 6,
+        "page": "DELEGATED",
+        "offered": [
+          110,
+          111,
+          112
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112
+        ],
+        "public_action": 111,
+        "before": {},
+        "original_before_hash": "d8398b3333f8255855fb5bd6c19b4d8be649d956102cdbd4af0cf66eb55c36ea",
+        "original_after_hash": "78300ea9c580b4546af2c6301405f146ca1c8c297fd74e74a688baa311407bb4",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 57,
+        "command": "choose 11",
+        "floor": 6,
+        "page": "GRID",
+        "offered": [
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          173
+        ],
+        "public_action": 121,
+        "before": {},
+        "original_before_hash": "78300ea9c580b4546af2c6301405f146ca1c8c297fd74e74a688baa311407bb4",
+        "original_after_hash": "446d75bc554ecea4cf7f792d5a983bd06539f9bb514b0e1d7453962bb7cf2f67",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 58,
+        "command": "confirm",
+        "floor": 6,
+        "page": "GRID_CONFIRM",
+        "offered": [
+          172
+        ],
+        "retail_legal": [
+          172,
+          173
+        ],
+        "public_action": 172,
+        "before": {},
+        "original_before_hash": "446d75bc554ecea4cf7f792d5a983bd06539f9bb514b0e1d7453962bb7cf2f67",
+        "original_after_hash": "decae70d5d0602cb1592c5765e51b959b74455a9f544ef761edc4221b3c151d1",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 59,
+        "command": "proceed",
+        "floor": 6,
+        "page": "GRID_RESULT",
+        "offered": [
+          171
+        ],
+        "retail_legal": [
+          171
+        ],
+        "public_action": 171,
+        "before": {},
+        "original_before_hash": "decae70d5d0602cb1592c5765e51b959b74455a9f544ef761edc4221b3c151d1",
+        "original_after_hash": "c041e23d0b0e1ff07f8cadbc270a84ea26e090917afe0a5e22a20610721ce1f1",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 60,
+        "command": "choose 0",
+        "floor": 6,
+        "page": "DELEGATED",
+        "offered": [
+          110
+        ],
+        "retail_legal": [
+          110,
+          176
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "c041e23d0b0e1ff07f8cadbc270a84ea26e090917afe0a5e22a20610721ce1f1",
+        "original_after_hash": "c7a296bf8093cfc01d08e81adfbfa6ee14c49a755639cda5c53c3e547cfad676",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 61,
+        "command": "play 3",
+        "floor": 7,
+        "page": "DELEGATED",
+        "offered": [
+          2,
+          5,
+          11,
+          13,
+          14,
+          16,
+          21,
+          23,
+          24,
+          26,
+          170
+        ],
+        "retail_legal": [
+          2,
+          5,
+          11,
+          13,
+          14,
+          16,
+          21,
+          23,
+          24,
+          26,
+          170
+        ],
+        "public_action": 2,
+        "before": {},
+        "original_before_hash": "c7a296bf8093cfc01d08e81adfbfa6ee14c49a755639cda5c53c3e547cfad676",
+        "original_after_hash": "595da949b3c52870454753e5e4dbed4512c52fb0eb336aa712a0171e9a324bea",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 62,
+        "command": "choose 0",
+        "floor": 7,
+        "page": "DELEGATED",
+        "offered": [
+          110,
+          111,
+          112,
+          113,
+          114,
+          115
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112,
+          113,
+          114,
+          115
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "595da949b3c52870454753e5e4dbed4512c52fb0eb336aa712a0171e9a324bea",
+        "original_after_hash": "bc80a3dc3513053c01877c0a1dc19c8dbd6993eea9209bfb70ff31797d095f1e",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 63,
+        "command": "confirm",
+        "floor": 7,
+        "page": "DELEGATED",
+        "offered": [
+          172,
+          179
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112,
+          113,
+          114,
+          172
+        ],
+        "public_action": 172,
+        "before": {},
+        "original_before_hash": "bc80a3dc3513053c01877c0a1dc19c8dbd6993eea9209bfb70ff31797d095f1e",
+        "original_after_hash": "1da5079caf1555530559036a3625fd5cfaf32f68b59cc0af8917ac0bf032cc87",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 64,
+        "command": "play 3 0",
+        "floor": 7,
+        "page": "DELEGATED",
+        "offered": [
+          3,
+          10,
+          11,
+          12,
+          14,
+          20,
+          21,
+          22,
+          24,
+          170
+        ],
+        "retail_legal": [
+          3,
+          10,
+          11,
+          12,
+          14,
+          20,
+          21,
+          22,
+          24,
+          170
+        ],
+        "public_action": 12,
+        "before": {},
+        "original_before_hash": "1da5079caf1555530559036a3625fd5cfaf32f68b59cc0af8917ac0bf032cc87",
+        "original_after_hash": "b03647c3f8a603f530b1bfb709fcc7fd0016803f8ee5bdc3494f57b414139977",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 65,
+        "command": "choose 4",
+        "floor": 7,
+        "page": "DELEGATED",
+        "offered": [
+          110,
+          111,
+          112,
+          113,
+          114
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112,
+          113,
+          114
+        ],
+        "public_action": 114,
+        "before": {},
+        "original_before_hash": "b03647c3f8a603f530b1bfb709fcc7fd0016803f8ee5bdc3494f57b414139977",
+        "original_after_hash": "f75732e2e12c83043cd18e68cb1fb505659691e3a78e5278d7afc54234ef0673",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 66,
+        "command": "confirm",
+        "floor": 7,
+        "page": "DELEGATED",
+        "offered": [
+          172,
+          179
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112,
+          113,
+          172
+        ],
+        "public_action": 172,
+        "before": {},
+        "original_before_hash": "f75732e2e12c83043cd18e68cb1fb505659691e3a78e5278d7afc54234ef0673",
+        "original_after_hash": "623a73c70948be31a07435404b13db9f71b5913d487e2d9f3c94243e9ed1e5bd",
+        "status": "executed",
+        "incidental_actions": [
+          [
+            318,
+            20
+          ]
+        ],
+        "after": {}
+      },
+      {
+        "index": 67,
+        "command": "end",
+        "floor": 7,
+        "page": "DELEGATED",
+        "offered": [
+          170
+        ],
+        "retail_legal": [
+          170
+        ],
+        "public_action": 170,
+        "before": {},
+        "original_before_hash": "623a73c70948be31a07435404b13db9f71b5913d487e2d9f3c94243e9ed1e5bd",
+        "original_after_hash": "056706c5a5a5be86b7d1e0d331b1e40f0ee94b7e2be91994b4f57a831a88a489",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 68,
+        "command": "play 3 0",
+        "floor": 7,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          3,
+          4,
+          12,
+          22,
+          170
+        ],
+        "retail_legal": [
+          0,
+          3,
+          4,
+          12,
+          22,
+          170
+        ],
+        "public_action": 12,
+        "before": {},
+        "original_before_hash": "056706c5a5a5be86b7d1e0d331b1e40f0ee94b7e2be91994b4f57a831a88a489",
+        "original_after_hash": "3a65a7a6b829a211c2c010fd0e16d5fe4aa8f97335eaaba53defc9febae93a25",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 69,
+        "command": "play 1",
+        "floor": 7,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          2,
+          3,
+          170
+        ],
+        "retail_legal": [
+          0,
+          2,
+          3,
+          170
+        ],
+        "public_action": 0,
+        "before": {},
+        "original_before_hash": "3a65a7a6b829a211c2c010fd0e16d5fe4aa8f97335eaaba53defc9febae93a25",
+        "original_after_hash": "a5eb9a7700564345cc853ea3ee25a77eec65b4ba28aadc9e0945b989d3c055f6",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 70,
+        "command": "play 3",
+        "floor": 7,
+        "page": "DELEGATED",
+        "offered": [
+          1,
+          2,
+          23,
+          170
+        ],
+        "retail_legal": [
+          1,
+          2,
+          23,
+          170
+        ],
+        "public_action": 2,
+        "before": {},
+        "original_before_hash": "a5eb9a7700564345cc853ea3ee25a77eec65b4ba28aadc9e0945b989d3c055f6",
+        "original_after_hash": "3ea5f1d75622b7981a8e96cbfa4b20021c9dcc2ed790290be6326acd84afa895",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 71,
+        "command": "play 3 1",
+        "floor": 7,
+        "page": "DELEGATED",
+        "offered": [
+          22,
+          170
+        ],
+        "retail_legal": [
+          22,
+          170
+        ],
+        "public_action": 22,
+        "before": {},
+        "original_before_hash": "3ea5f1d75622b7981a8e96cbfa4b20021c9dcc2ed790290be6326acd84afa895",
+        "original_after_hash": "be235cc3d40b74f449985bc586a69c30fb8a7eb081e0a73357bcb6075e3f241c",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 72,
+        "command": "end",
+        "floor": 7,
+        "page": "DELEGATED",
+        "offered": [
+          170
+        ],
+        "retail_legal": [
+          170
+        ],
+        "public_action": 170,
+        "before": {},
+        "original_before_hash": "be235cc3d40b74f449985bc586a69c30fb8a7eb081e0a73357bcb6075e3f241c",
+        "original_after_hash": "8d68fc2ab4612193bc7936b0a789d55e1eb8a22b9418837a04cfa75a26f430d1",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 73,
+        "command": "play 1 1",
+        "floor": 7,
+        "page": "DELEGATED",
+        "offered": [
+          1,
+          2,
+          3,
+          20,
+          170
+        ],
+        "retail_legal": [
+          1,
+          2,
+          3,
+          20,
+          170
+        ],
+        "public_action": 20,
+        "before": {},
+        "original_before_hash": "8d68fc2ab4612193bc7936b0a789d55e1eb8a22b9418837a04cfa75a26f430d1",
+        "original_after_hash": "29ac460c281ce9305251a9a73c42fc316b1fe8aab1752b6315e31b2220e845f4",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 74,
+        "command": "play 1",
+        "floor": 7,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          2,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          2,
+          170
+        ],
+        "public_action": 0,
+        "before": {},
+        "original_before_hash": "29ac460c281ce9305251a9a73c42fc316b1fe8aab1752b6315e31b2220e845f4",
+        "original_after_hash": "e7c4da106a6d9c419e03a17bc8513040e362985d91577d3e2046c6ad800405bc",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 75,
+        "command": "play 1",
+        "floor": 7,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          170
+        ],
+        "public_action": 0,
+        "before": {},
+        "original_before_hash": "e7c4da106a6d9c419e03a17bc8513040e362985d91577d3e2046c6ad800405bc",
+        "original_after_hash": "a96d3fda0043dd90a5e0ac1b9e307ff38ee5c9c35033c58ecc6df43ed600ae33",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 76,
+        "command": "end",
+        "floor": 7,
+        "page": "DELEGATED",
+        "offered": [
+          170
+        ],
+        "retail_legal": [
+          170
+        ],
+        "public_action": 170,
+        "before": {},
+        "original_before_hash": "a96d3fda0043dd90a5e0ac1b9e307ff38ee5c9c35033c58ecc6df43ed600ae33",
+        "original_after_hash": "ccf81c6e7645d8f8d802c9563b101b9d8e18daeeafca1a81c8b70ec797e0392f",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 77,
+        "command": "play 4",
+        "floor": 7,
+        "page": "DELEGATED",
+        "offered": [
+          1,
+          3,
+          4,
+          22,
+          170
+        ],
+        "retail_legal": [
+          1,
+          3,
+          4,
+          22,
+          170
+        ],
+        "public_action": 3,
+        "before": {},
+        "original_before_hash": "ccf81c6e7645d8f8d802c9563b101b9d8e18daeeafca1a81c8b70ec797e0392f",
+        "original_after_hash": "22de25c62978b34f94381b1f42d6a55d7631868cadf855c8e9dc58f8c2448168",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 78,
+        "command": "play 4",
+        "floor": 7,
+        "page": "DELEGATED",
+        "offered": [
+          1,
+          3,
+          22,
+          24,
+          170
+        ],
+        "retail_legal": [
+          1,
+          3,
+          22,
+          24,
+          170
+        ],
+        "public_action": 3,
+        "before": {},
+        "original_before_hash": "22de25c62978b34f94381b1f42d6a55d7631868cadf855c8e9dc58f8c2448168",
+        "original_after_hash": "4346033da59bd7decdd9cefb61ad53260f1b903dcc927caf7d3646397904c3c0",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 79,
+        "command": "play 4 1",
+        "floor": 7,
+        "page": "DELEGATED",
+        "offered": [
+          1,
+          22,
+          23,
+          170
+        ],
+        "retail_legal": [
+          1,
+          22,
+          23,
+          170
+        ],
+        "public_action": 23,
+        "before": {},
+        "original_before_hash": "4346033da59bd7decdd9cefb61ad53260f1b903dcc927caf7d3646397904c3c0",
+        "original_after_hash": "c45e2327a079dea71b7d10f62a83bc3ad8ee52cd5289fc1a32bfda2e682644dc",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 80,
+        "command": "play 3 1",
+        "floor": 7,
+        "page": "DELEGATED",
+        "offered": [
+          1,
+          22,
+          170
+        ],
+        "retail_legal": [
+          1,
+          22,
+          170
+        ],
+        "public_action": 22,
+        "before": {},
+        "original_before_hash": "c45e2327a079dea71b7d10f62a83bc3ad8ee52cd5289fc1a32bfda2e682644dc",
+        "original_after_hash": "fbd35d5da201568e7c506b37b7fc7ccbdfbdb48eb7362748d3bc942061d32239",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 81,
+        "command": "end",
+        "floor": 7,
+        "page": "DELEGATED",
+        "offered": [
+          170
+        ],
+        "retail_legal": [
+          170
+        ],
+        "public_action": 170,
+        "before": {},
+        "original_before_hash": "fbd35d5da201568e7c506b37b7fc7ccbdfbdb48eb7362748d3bc942061d32239",
+        "original_after_hash": "bafedb3cb7e8999e9462f5e425fea4449c2ba51f31941fa4f5a48bba04ba480f",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 82,
+        "command": "play 5 1",
+        "floor": 7,
+        "page": "DELEGATED",
+        "offered": [
+          1,
+          3,
+          20,
+          22,
+          24,
+          170
+        ],
+        "retail_legal": [
+          1,
+          3,
+          20,
+          22,
+          24,
+          170
+        ],
+        "public_action": 24,
+        "before": {},
+        "original_before_hash": "bafedb3cb7e8999e9462f5e425fea4449c2ba51f31941fa4f5a48bba04ba480f",
+        "original_after_hash": "9700a4a6f396208ab9d8ee9405514b0305e70ec1d8af1bd56d1be4d0c5d3f8e5",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 83,
+        "command": "choose 1",
+        "floor": 7,
+        "page": "DELEGATED",
+        "offered": [
+          110,
+          111,
+          112,
+          113,
+          114
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112,
+          113,
+          114
+        ],
+        "public_action": 111,
+        "before": {},
+        "original_before_hash": "9700a4a6f396208ab9d8ee9405514b0305e70ec1d8af1bd56d1be4d0c5d3f8e5",
+        "original_after_hash": "e418699014d3c9b9f8cdf15a73f7bd65d702beb21ff933e06583300cbfb34ca7",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 84,
+        "command": "confirm",
+        "floor": 7,
+        "page": "DELEGATED",
+        "offered": [
+          172,
+          179
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112,
+          113,
+          172
+        ],
+        "public_action": 172,
+        "before": {},
+        "original_before_hash": "e418699014d3c9b9f8cdf15a73f7bd65d702beb21ff933e06583300cbfb34ca7",
+        "original_after_hash": "274a35eec258c273c0eb82047a842f7ec529a8eca3e7a854de630ebfb5ef4e12",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 85,
+        "command": "play 1 1",
+        "floor": 7,
+        "page": "DELEGATED",
+        "offered": [
+          2,
+          20,
+          21,
+          23,
+          170
+        ],
+        "retail_legal": [
+          2,
+          20,
+          21,
+          23,
+          170
+        ],
+        "public_action": 20,
+        "before": {},
+        "original_before_hash": "274a35eec258c273c0eb82047a842f7ec529a8eca3e7a854de630ebfb5ef4e12",
+        "original_after_hash": "d80745c296cd559f8388759b4435daa0e16cb448f29b820230c2d2ed7d40287d",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 86,
+        "command": "choose 0",
+        "floor": 7,
+        "page": "COMBAT_REWARD",
+        "offered": [
+          110,
+          111,
+          171
+        ],
+        "retail_legal": [
+          110,
+          111,
+          171
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "d80745c296cd559f8388759b4435daa0e16cb448f29b820230c2d2ed7d40287d",
+        "original_after_hash": "8c29e04c83ce6eb4583766d1a52ed430c538f1db96bf8593bfe7e2cc117a3ee5",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 87,
+        "command": "choose 0",
+        "floor": 7,
+        "page": "COMBAT_REWARD",
+        "offered": [
+          110,
+          171
+        ],
+        "retail_legal": [
+          110,
+          171
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "8c29e04c83ce6eb4583766d1a52ed430c538f1db96bf8593bfe7e2cc117a3ee5",
+        "original_after_hash": "7032a8d34dbb09782d4147e870e59dd0fab1f45d13c4dfb2da65b924d5b92fd1",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 88,
+        "command": "choose 0",
+        "floor": 7,
+        "page": "CARD_REWARD",
+        "offered": [
+          110,
+          111,
+          112,
+          177
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112,
+          177
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "7032a8d34dbb09782d4147e870e59dd0fab1f45d13c4dfb2da65b924d5b92fd1",
+        "original_after_hash": "131bd5645ca069694e9a774a2a27d97b6aeac4867c5715bf83099047e163cc98",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 89,
+        "command": "proceed",
+        "floor": 7,
+        "page": "COMBAT_REWARD",
+        "offered": [
+          171
+        ],
+        "retail_legal": [
+          171
+        ],
+        "public_action": 171,
+        "before": {},
+        "original_before_hash": "131bd5645ca069694e9a774a2a27d97b6aeac4867c5715bf83099047e163cc98",
+        "original_after_hash": "142a81c0f6aedec051797a8f52e7d64d5a9adc3a7c780a1dc056128af7bbf19a",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 90,
+        "command": "choose 0",
+        "floor": 7,
+        "page": "DELEGATED",
+        "offered": [
+          110,
+          111
+        ],
+        "retail_legal": [
+          110,
+          111,
+          176
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "142a81c0f6aedec051797a8f52e7d64d5a9adc3a7c780a1dc056128af7bbf19a",
+        "original_after_hash": "512c5eaf6a072999d79c81e1c156e2fdea718e6eb47901fadb43b4adb1e2aa06",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 91,
+        "command": "choose 1",
+        "floor": 8,
+        "page": "DELEGATED",
+        "offered": [
+          110,
+          111,
+          112
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112
+        ],
+        "public_action": 111,
+        "before": {},
+        "original_before_hash": "512c5eaf6a072999d79c81e1c156e2fdea718e6eb47901fadb43b4adb1e2aa06",
+        "original_after_hash": "f35de2929138803857c06fd4c88d635f7aafd8bd56e882764c742fcc12d13689",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 92,
+        "command": "choose 10",
+        "floor": 8,
+        "page": "GRID",
+        "offered": [
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          124,
+          173
+        ],
+        "public_action": 120,
+        "before": {},
+        "original_before_hash": "f35de2929138803857c06fd4c88d635f7aafd8bd56e882764c742fcc12d13689",
+        "original_after_hash": "445fd1b591f31adccfa39700abeea99c2968faddb2af83c597aeb987bbf22d0e",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 93,
+        "command": "confirm",
+        "floor": 8,
+        "page": "GRID_CONFIRM",
+        "offered": [
+          172
+        ],
+        "retail_legal": [
+          172,
+          173
+        ],
+        "public_action": 172,
+        "before": {},
+        "original_before_hash": "445fd1b591f31adccfa39700abeea99c2968faddb2af83c597aeb987bbf22d0e",
+        "original_after_hash": "57f4b60cef7d0143e6e96aa416c9f2325d4bfd06c52dd6928bda4f1da55fbfe4",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 94,
+        "command": "proceed",
+        "floor": 8,
+        "page": "GRID_RESULT",
+        "offered": [
+          171
+        ],
+        "retail_legal": [
+          171
+        ],
+        "public_action": 171,
+        "before": {},
+        "original_before_hash": "57f4b60cef7d0143e6e96aa416c9f2325d4bfd06c52dd6928bda4f1da55fbfe4",
+        "original_after_hash": "4ef7ef4408a2ddbf0cb4b70380eed2a31d0f127e3a3c211a996aa3defd60aa57",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 95,
+        "command": "choose 0",
+        "floor": 8,
+        "page": "DELEGATED",
+        "offered": [
+          110
+        ],
+        "retail_legal": [
+          110,
+          176
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "4ef7ef4408a2ddbf0cb4b70380eed2a31d0f127e3a3c211a996aa3defd60aa57",
+        "original_after_hash": "fafd9b5ee3a7a4b4597cc780e4d7de744698550630a46d6993f81ef2347b3d29",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 96,
+        "command": "choose 0",
+        "floor": 9,
+        "page": "DELEGATED",
+        "offered": [
+          110,
+          171
+        ],
+        "retail_legal": [
+          110,
+          171
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "fafd9b5ee3a7a4b4597cc780e4d7de744698550630a46d6993f81ef2347b3d29",
+        "original_after_hash": "0fd38b5d8d757c5db51d73d3d9ef786672d0b7496d57b585c6ca575140468a2d",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 97,
+        "command": "choose 0",
+        "floor": 9,
+        "page": "COMBAT_REWARD",
+        "offered": [
+          110,
+          111,
+          112,
+          171
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112,
+          171
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "0fd38b5d8d757c5db51d73d3d9ef786672d0b7496d57b585c6ca575140468a2d",
+        "original_after_hash": "56b7a7cbb3ce368195da519cafbe59092e06eaac7b1ff3efc4bb00f9ca216b4a",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 98,
+        "command": "choose 0",
+        "floor": 9,
+        "page": "COMBAT_REWARD",
+        "offered": [
+          110,
+          111,
+          171
+        ],
+        "retail_legal": [
+          110,
+          111,
+          171
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "56b7a7cbb3ce368195da519cafbe59092e06eaac7b1ff3efc4bb00f9ca216b4a",
+        "original_after_hash": "4934e9007ed87cb910d28d5923c05563018af66bb0083bc4b2b5a378299a5252",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 99,
+        "command": "proceed",
+        "floor": 9,
+        "page": "COMBAT_REWARD",
+        "offered": [
+          171
+        ],
+        "retail_legal": [
+          171
+        ],
+        "public_action": 171,
+        "before": {},
+        "original_before_hash": "4934e9007ed87cb910d28d5923c05563018af66bb0083bc4b2b5a378299a5252",
+        "original_after_hash": "d54e08f3f359462b29c2c74e24797fbb7317b266cb79525d0ebbd47fbe0edc02",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 100,
+        "command": "choose 0",
+        "floor": 9,
+        "page": "DELEGATED",
+        "offered": [
+          110
+        ],
+        "retail_legal": [
+          110,
+          176
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "d54e08f3f359462b29c2c74e24797fbb7317b266cb79525d0ebbd47fbe0edc02",
+        "original_after_hash": "65c3f7a6d0281ab14eb48765bc172a8c6e3d345af6491556ddbe95204d99b68b",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 101,
+        "command": "play 6",
+        "floor": 10,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          4,
+          5,
+          6,
+          12,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          4,
+          5,
+          6,
+          12,
+          170
+        ],
+        "public_action": 5,
+        "before": {},
+        "original_before_hash": "65c3f7a6d0281ab14eb48765bc172a8c6e3d345af6491556ddbe95204d99b68b",
+        "original_after_hash": "5e99ce0eba8e95a21a897d3f6e99b760a4095220acb4235e225648d2efe67213",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 102,
+        "command": "play 2",
+        "floor": 10,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          4,
+          5,
+          12,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          4,
+          5,
+          12,
+          170
+        ],
+        "public_action": 1,
+        "before": {},
+        "original_before_hash": "5e99ce0eba8e95a21a897d3f6e99b760a4095220acb4235e225648d2efe67213",
+        "original_after_hash": "dbd5bb6706c2f380cf9aa65ea5b135ed077919404f85dbcc915541798ec79673",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 103,
+        "command": "play 6 0",
+        "floor": 10,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          3,
+          4,
+          11,
+          15,
+          16,
+          17,
+          170
+        ],
+        "retail_legal": [
+          0,
+          3,
+          4,
+          11,
+          15,
+          16,
+          17,
+          170
+        ],
+        "public_action": 15,
+        "before": {},
+        "original_before_hash": "dbd5bb6706c2f380cf9aa65ea5b135ed077919404f85dbcc915541798ec79673",
+        "original_after_hash": "9891096f15f4b178f78286a52c194a9066d7ac8d46874b024211d52425033736",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 104,
+        "command": "play 6 0",
+        "floor": 10,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          3,
+          4,
+          11,
+          15,
+          16,
+          170
+        ],
+        "retail_legal": [
+          0,
+          3,
+          4,
+          11,
+          15,
+          16,
+          170
+        ],
+        "public_action": 15,
+        "before": {},
+        "original_before_hash": "9891096f15f4b178f78286a52c194a9066d7ac8d46874b024211d52425033736",
+        "original_after_hash": "e2a33886238b2beb8d8039cd03b90561d8bf6183a33c098da20a89c46ed26e0e",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 105,
+        "command": "play 6 0",
+        "floor": 10,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          3,
+          4,
+          11,
+          15,
+          170
+        ],
+        "retail_legal": [
+          0,
+          3,
+          4,
+          11,
+          15,
+          170
+        ],
+        "public_action": 15,
+        "before": {},
+        "original_before_hash": "e2a33886238b2beb8d8039cd03b90561d8bf6183a33c098da20a89c46ed26e0e",
+        "original_after_hash": "291aa366496d76b339849906056cefd112ad0a3958115382a8668746133269ff",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 106,
+        "command": "play 2 0",
+        "floor": 10,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          3,
+          4,
+          11,
+          170
+        ],
+        "retail_legal": [
+          0,
+          3,
+          4,
+          11,
+          170
+        ],
+        "public_action": 11,
+        "before": {},
+        "original_before_hash": "291aa366496d76b339849906056cefd112ad0a3958115382a8668746133269ff",
+        "original_after_hash": "6e634eece629c302dae5f761f9ce2be45b737d1c03296a57df1ff1e59aad0fac",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 107,
+        "command": "end",
+        "floor": 10,
+        "page": "DELEGATED",
+        "offered": [
+          170
+        ],
+        "retail_legal": [
+          170
+        ],
+        "public_action": 170,
+        "before": {},
+        "original_before_hash": "6e634eece629c302dae5f761f9ce2be45b737d1c03296a57df1ff1e59aad0fac",
+        "original_after_hash": "b3af3caae910d7d5042848d8b86a0702917c1c27e8be8c3d1357d0a3b6d39dc5",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 108,
+        "command": "play 2",
+        "floor": 10,
+        "page": "DELEGATED",
+        "offered": [
+          1,
+          3,
+          4,
+          12,
+          170
+        ],
+        "retail_legal": [
+          1,
+          3,
+          4,
+          12,
+          170
+        ],
+        "public_action": 1,
+        "before": {},
+        "original_before_hash": "b3af3caae910d7d5042848d8b86a0702917c1c27e8be8c3d1357d0a3b6d39dc5",
+        "original_after_hash": "96b1b6633fa82656010b3617a8cfb77e687e46d244aa5b76551c5ed0d71656e6",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 109,
+        "command": "play 5 0",
+        "floor": 10,
+        "page": "DELEGATED",
+        "offered": [
+          2,
+          3,
+          11,
+          14,
+          170
+        ],
+        "retail_legal": [
+          2,
+          3,
+          11,
+          14,
+          170
+        ],
+        "public_action": 14,
+        "before": {},
+        "original_before_hash": "96b1b6633fa82656010b3617a8cfb77e687e46d244aa5b76551c5ed0d71656e6",
+        "original_after_hash": "fa43caf33a6fac92a16ee8bb6a60daae60bd483bd15158b6474ee4ef80cf2092",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 110,
+        "command": "play 2 0",
+        "floor": 10,
+        "page": "DELEGATED",
+        "offered": [
+          2,
+          3,
+          11,
+          170
+        ],
+        "retail_legal": [
+          2,
+          3,
+          11,
+          170
+        ],
+        "public_action": 11,
+        "before": {},
+        "original_before_hash": "fa43caf33a6fac92a16ee8bb6a60daae60bd483bd15158b6474ee4ef80cf2092",
+        "original_after_hash": "3f794a634975c92dd117daca846de88e17696c159c8f5855c927d40a8b145c9d",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 111,
+        "command": "play 3",
+        "floor": 10,
+        "page": "DELEGATED",
+        "offered": [
+          1,
+          2,
+          170
+        ],
+        "retail_legal": [
+          1,
+          2,
+          170
+        ],
+        "public_action": 2,
+        "before": {},
+        "original_before_hash": "3f794a634975c92dd117daca846de88e17696c159c8f5855c927d40a8b145c9d",
+        "original_after_hash": "cef992bd08e3b9b44a37f50e31e4b0113c21e45ad8c483f95ac63a5fa624f342",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 112,
+        "command": "end",
+        "floor": 10,
+        "page": "DELEGATED",
+        "offered": [
+          170
+        ],
+        "retail_legal": [
+          170
+        ],
+        "public_action": 170,
+        "before": {},
+        "original_before_hash": "cef992bd08e3b9b44a37f50e31e4b0113c21e45ad8c483f95ac63a5fa624f342",
+        "original_after_hash": "b887769b863f2eaa452c5e89ca1cf8077dee8d306f4a966c236f88be628e08d4",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 113,
+        "command": "play 4",
+        "floor": 10,
+        "page": "DELEGATED",
+        "offered": [
+          2,
+          3,
+          10,
+          11,
+          14,
+          170
+        ],
+        "retail_legal": [
+          2,
+          3,
+          10,
+          11,
+          14,
+          170
+        ],
+        "public_action": 3,
+        "before": {},
+        "original_before_hash": "b887769b863f2eaa452c5e89ca1cf8077dee8d306f4a966c236f88be628e08d4",
+        "original_after_hash": "53ddb3217c4a94994bba7b5f2f4cad7bdf54900a5cbc1244e650224b55da5dea",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 114,
+        "command": "play 4 0",
+        "floor": 10,
+        "page": "DELEGATED",
+        "offered": [
+          2,
+          10,
+          11,
+          13,
+          170
+        ],
+        "retail_legal": [
+          2,
+          10,
+          11,
+          13,
+          170
+        ],
+        "public_action": 13,
+        "before": {},
+        "original_before_hash": "53ddb3217c4a94994bba7b5f2f4cad7bdf54900a5cbc1244e650224b55da5dea",
+        "original_after_hash": "5a4154123d1b7a59af2310adadce1127d17b9d3b1bcc24519ae662d3d144988a",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 115,
+        "command": "choose 0",
+        "floor": 10,
+        "page": "DELEGATED",
+        "offered": [
+          110,
+          111,
+          112,
+          113
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112,
+          113
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "5a4154123d1b7a59af2310adadce1127d17b9d3b1bcc24519ae662d3d144988a",
+        "original_after_hash": "8b435c38f6e5e4923da15f5e941c69e0490075b64a7c2228bdf39de69885e027",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 116,
+        "command": "confirm",
+        "floor": 10,
+        "page": "DELEGATED",
+        "offered": [
+          172,
+          179
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112,
+          172
+        ],
+        "public_action": 172,
+        "before": {},
+        "original_before_hash": "8b435c38f6e5e4923da15f5e941c69e0490075b64a7c2228bdf39de69885e027",
+        "original_after_hash": "a54560561f730f3fbb4ec63bd5a1cf9bc2ac1c9d56561fc3d885b66b199ab0e2",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 117,
+        "command": "play 1 0",
+        "floor": 10,
+        "page": "DELEGATED",
+        "offered": [
+          1,
+          10,
+          12,
+          170
+        ],
+        "retail_legal": [
+          1,
+          10,
+          12,
+          170
+        ],
+        "public_action": 10,
+        "before": {},
+        "original_before_hash": "a54560561f730f3fbb4ec63bd5a1cf9bc2ac1c9d56561fc3d885b66b199ab0e2",
+        "original_after_hash": "c742fcf9b84cb50dc0b355dbd8866d58bc8d57aa9257a2002d16173240a6d1e9",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 118,
+        "command": "end",
+        "floor": 10,
+        "page": "DELEGATED",
+        "offered": [
+          170
+        ],
+        "retail_legal": [
+          170
+        ],
+        "public_action": 170,
+        "before": {},
+        "original_before_hash": "c742fcf9b84cb50dc0b355dbd8866d58bc8d57aa9257a2002d16173240a6d1e9",
+        "original_after_hash": "231403ac6dd3d9ad68211b8d29f3036e9f0dc9c4d7d1e59feb3cd8f532ea913c",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 119,
+        "command": "play 4",
+        "floor": 10,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          170
+        ],
+        "public_action": 3,
+        "before": {},
+        "original_before_hash": "231403ac6dd3d9ad68211b8d29f3036e9f0dc9c4d7d1e59feb3cd8f532ea913c",
+        "original_after_hash": "495210fcaff1357b6a778931b9ddc361ed8f945ade6afbf1cec8719c14c8f899",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 120,
+        "command": "play 1",
+        "floor": 10,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          2,
+          3,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          2,
+          3,
+          170
+        ],
+        "public_action": 0,
+        "before": {},
+        "original_before_hash": "495210fcaff1357b6a778931b9ddc361ed8f945ade6afbf1cec8719c14c8f899",
+        "original_after_hash": "bc1924013c11c2d481d1c265074955a286f984772b53845ad7eb7853abecf0aa",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 121,
+        "command": "play 1",
+        "floor": 10,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          2,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          2,
+          170
+        ],
+        "public_action": 0,
+        "before": {},
+        "original_before_hash": "bc1924013c11c2d481d1c265074955a286f984772b53845ad7eb7853abecf0aa",
+        "original_after_hash": "8a830557eb07eec8d3fbc64324ffe61e12199ebf67cf0904717a701e9b765922",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 122,
+        "command": "end",
+        "floor": 10,
+        "page": "DELEGATED",
+        "offered": [
+          170
+        ],
+        "retail_legal": [
+          170
+        ],
+        "public_action": 170,
+        "before": {},
+        "original_before_hash": "8a830557eb07eec8d3fbc64324ffe61e12199ebf67cf0904717a701e9b765922",
+        "original_after_hash": "8bb36ac8a41c17482adf750ec86fc7e6510e277bc31c0d2024a252d8cb95d30b",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 123,
+        "command": "play 2",
+        "floor": 10,
+        "page": "DELEGATED",
+        "offered": [
+          1,
+          2,
+          13,
+          14,
+          170
+        ],
+        "retail_legal": [
+          1,
+          2,
+          13,
+          14,
+          170
+        ],
+        "public_action": 1,
+        "before": {},
+        "original_before_hash": "8bb36ac8a41c17482adf750ec86fc7e6510e277bc31c0d2024a252d8cb95d30b",
+        "original_after_hash": "7b1ad29726eb5accfb511d1dd8a4dd874dbb5ee9ff6c44c1c19f278fdc54edf3",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 124,
+        "command": "play 2",
+        "floor": 10,
+        "page": "DELEGATED",
+        "offered": [
+          1,
+          12,
+          13,
+          14,
+          170
+        ],
+        "retail_legal": [
+          1,
+          12,
+          13,
+          14,
+          170
+        ],
+        "public_action": 1,
+        "before": {},
+        "original_before_hash": "7b1ad29726eb5accfb511d1dd8a4dd874dbb5ee9ff6c44c1c19f278fdc54edf3",
+        "original_after_hash": "8fb9a75a0316d02a19ddc18d85d94bd84a8ac5367ab901ea2935c2142719930a",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 125,
+        "command": "play 4 0",
+        "floor": 10,
+        "page": "DELEGATED",
+        "offered": [
+          11,
+          12,
+          13,
+          170
+        ],
+        "retail_legal": [
+          11,
+          12,
+          13,
+          170
+        ],
+        "public_action": 13,
+        "before": {},
+        "original_before_hash": "8fb9a75a0316d02a19ddc18d85d94bd84a8ac5367ab901ea2935c2142719930a",
+        "original_after_hash": "4eb041f29cf0b36cb1513c8a3ed5a7845ff4d98e280fec6d22e688bf44fe18ca",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 126,
+        "command": "play 2 0",
+        "floor": 10,
+        "page": "DELEGATED",
+        "offered": [
+          11,
+          12,
+          170
+        ],
+        "retail_legal": [
+          11,
+          12,
+          170
+        ],
+        "public_action": 11,
+        "before": {},
+        "original_before_hash": "4eb041f29cf0b36cb1513c8a3ed5a7845ff4d98e280fec6d22e688bf44fe18ca",
+        "original_after_hash": "870000f09858616ca94d73a45e2f11235c17eb656f16de9fac69b70fcfe9d3f7",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 127,
+        "command": "end",
+        "floor": 10,
+        "page": "DELEGATED",
+        "offered": [
+          170
+        ],
+        "retail_legal": [
+          170
+        ],
+        "public_action": 170,
+        "before": {},
+        "original_before_hash": "870000f09858616ca94d73a45e2f11235c17eb656f16de9fac69b70fcfe9d3f7",
+        "original_after_hash": "584edd998570ccb0a4d935e6e9d3f793463739821f75c7981968121a3cd09d1a",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 128,
+        "command": "play 1 0",
+        "floor": 10,
+        "page": "DELEGATED",
+        "offered": [
+          2,
+          3,
+          10,
+          11,
+          14,
+          170
+        ],
+        "retail_legal": [
+          2,
+          3,
+          10,
+          11,
+          14,
+          170
+        ],
+        "public_action": 10,
+        "before": {},
+        "original_before_hash": "584edd998570ccb0a4d935e6e9d3f793463739821f75c7981968121a3cd09d1a",
+        "original_after_hash": "41c4666913e46919c16efb8b74533d348493bcb846de81c351a3e1c2983732d9",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 129,
+        "command": "choose 0",
+        "floor": 10,
+        "page": "COMBAT_REWARD",
+        "offered": [
+          110,
+          111,
+          112,
+          171
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112,
+          171
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "41c4666913e46919c16efb8b74533d348493bcb846de81c351a3e1c2983732d9",
+        "original_after_hash": "c4988d5212e06ed4be28724b9ffab5aa45be85b479fb4d9981239c1a6c7ddd97",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 130,
+        "command": "choose 0",
+        "floor": 10,
+        "page": "COMBAT_REWARD",
+        "offered": [
+          110,
+          111,
+          171
+        ],
+        "retail_legal": [
+          110,
+          111,
+          171
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "c4988d5212e06ed4be28724b9ffab5aa45be85b479fb4d9981239c1a6c7ddd97",
+        "original_after_hash": "a25a829d1b5473745d8a3b02d8305f20f2e4bbe2bbf29e950f30b2e101a53197",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 131,
+        "command": "choose 0",
+        "floor": 10,
+        "page": "COMBAT_REWARD",
+        "offered": [
+          105,
+          110,
+          171
+        ],
+        "retail_legal": [
+          105,
+          110,
+          171
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "a25a829d1b5473745d8a3b02d8305f20f2e4bbe2bbf29e950f30b2e101a53197",
+        "original_after_hash": "774391a47e8b8bf2ed01a79954fc0fbb5fe27a610d00f443058198ac9d277141",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 132,
+        "command": "choose 2",
+        "floor": 10,
+        "page": "CARD_REWARD",
+        "offered": [
+          105,
+          110,
+          111,
+          112,
+          177
+        ],
+        "retail_legal": [
+          105,
+          110,
+          111,
+          112,
+          177
+        ],
+        "public_action": 112,
+        "before": {},
+        "original_before_hash": "774391a47e8b8bf2ed01a79954fc0fbb5fe27a610d00f443058198ac9d277141",
+        "original_after_hash": "5e8ab1051d49b410b77727febed9d149c81fccdc5832f23c8a38fa8f2cc7f5d5",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 133,
+        "command": "proceed",
+        "floor": 10,
+        "page": "COMBAT_REWARD",
+        "offered": [
+          105,
+          171
+        ],
+        "retail_legal": [
+          105,
+          171
+        ],
+        "public_action": 171,
+        "before": {},
+        "original_before_hash": "5e8ab1051d49b410b77727febed9d149c81fccdc5832f23c8a38fa8f2cc7f5d5",
+        "original_after_hash": "44c0e51bac28264a5c149ae43f80c5f97b865ee86651787cab40edf87d36fa60",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 134,
+        "command": "choose 0",
+        "floor": 10,
+        "page": "DELEGATED",
+        "offered": [
+          105,
+          110,
+          111
+        ],
+        "retail_legal": [
+          105,
+          110,
+          111,
+          176
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "44c0e51bac28264a5c149ae43f80c5f97b865ee86651787cab40edf87d36fa60",
+        "original_after_hash": "c9f6a654857550a392ee79d5ec0813a5b00888564ba19e9fa39e717a30daddb2",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 135,
+        "command": "play 6",
+        "floor": 11,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          5,
+          6,
+          13,
+          14,
+          23,
+          24,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          5,
+          6,
+          13,
+          14,
+          23,
+          24,
+          70,
+          105,
+          170
+        ],
+        "public_action": 5,
+        "before": {},
+        "original_before_hash": "c9f6a654857550a392ee79d5ec0813a5b00888564ba19e9fa39e717a30daddb2",
+        "original_after_hash": "7e39a72cfe092568ccaf0b3a96a81d1952a2e8ca35dc5072cf561364450dcbc6",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 136,
+        "command": "play 7 1",
+        "floor": 11,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          5,
+          13,
+          14,
+          16,
+          17,
+          18,
+          23,
+          24,
+          26,
+          27,
+          28,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          5,
+          13,
+          14,
+          16,
+          17,
+          18,
+          23,
+          24,
+          26,
+          27,
+          28,
+          70,
+          105,
+          170
+        ],
+        "public_action": 26,
+        "before": {},
+        "original_before_hash": "7e39a72cfe092568ccaf0b3a96a81d1952a2e8ca35dc5072cf561364450dcbc6",
+        "original_after_hash": "bea641b55cf4c99cfbea1af92210ffebe393e23a3eaed553ba3dfbd55518dcd1",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 137,
+        "command": "play 7 1",
+        "floor": 11,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          5,
+          13,
+          14,
+          16,
+          17,
+          23,
+          24,
+          26,
+          27,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          5,
+          13,
+          14,
+          16,
+          17,
+          23,
+          24,
+          26,
+          27,
+          70,
+          105,
+          170
+        ],
+        "public_action": 26,
+        "before": {},
+        "original_before_hash": "bea641b55cf4c99cfbea1af92210ffebe393e23a3eaed553ba3dfbd55518dcd1",
+        "original_after_hash": "edd8d9b33b8b015d795a7bf3f8540ded9170f92d54a03f9ef38210b89a593058",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 138,
+        "command": "play 7 1",
+        "floor": 11,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          5,
+          13,
+          14,
+          16,
+          23,
+          24,
+          26,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          5,
+          13,
+          14,
+          16,
+          23,
+          24,
+          26,
+          70,
+          105,
+          170
+        ],
+        "public_action": 26,
+        "before": {},
+        "original_before_hash": "edd8d9b33b8b015d795a7bf3f8540ded9170f92d54a03f9ef38210b89a593058",
+        "original_after_hash": "13f18e4bcf6d624df29e2365febb5fc8d0cc123b2cbcbf0b8ba48e58535fbce6",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 139,
+        "command": "play 4 1",
+        "floor": 11,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          5,
+          13,
+          14,
+          23,
+          24,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          5,
+          13,
+          14,
+          23,
+          24,
+          70,
+          105,
+          170
+        ],
+        "public_action": 23,
+        "before": {},
+        "original_before_hash": "13f18e4bcf6d624df29e2365febb5fc8d0cc123b2cbcbf0b8ba48e58535fbce6",
+        "original_after_hash": "de1533c3dad19375996504ff5eef434f831021b733a8b789ffe7649c54e3afe6",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 140,
+        "command": "play 4 1",
+        "floor": 11,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          4,
+          13,
+          23,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          4,
+          13,
+          23,
+          70,
+          105,
+          170
+        ],
+        "public_action": 23,
+        "before": {},
+        "original_before_hash": "de1533c3dad19375996504ff5eef434f831021b733a8b789ffe7649c54e3afe6",
+        "original_after_hash": "6157f98b6249dae1f5687238a466d69912ec63db93103729995ba26ce9dff763",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 141,
+        "command": "end",
+        "floor": 11,
+        "page": "DELEGATED",
+        "offered": [
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          70,
+          105,
+          170
+        ],
+        "public_action": 170,
+        "before": {},
+        "original_before_hash": "6157f98b6249dae1f5687238a466d69912ec63db93103729995ba26ce9dff763",
+        "original_after_hash": "9a8b8c1fef16cf9e6f83f5f5608b5f1b9767bc618d77eba7094732600f7270d4",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 142,
+        "command": "play 4 1",
+        "floor": 11,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          2,
+          4,
+          13,
+          23,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          2,
+          4,
+          13,
+          23,
+          70,
+          105,
+          170
+        ],
+        "public_action": 23,
+        "before": {},
+        "original_before_hash": "9a8b8c1fef16cf9e6f83f5f5608b5f1b9767bc618d77eba7094732600f7270d4",
+        "original_after_hash": "345e9d13c073af5967d06c9c57906f17d16dae595058b894395f66facd2fc711",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 143,
+        "command": "play 4",
+        "floor": 11,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          2,
+          3,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          2,
+          3,
+          70,
+          105,
+          170
+        ],
+        "public_action": 3,
+        "before": {},
+        "original_before_hash": "345e9d13c073af5967d06c9c57906f17d16dae595058b894395f66facd2fc711",
+        "original_after_hash": "06ada48bca9f40b1d50349ef71fbf9806247bc0ea74e6480b5722deb8c469e66",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 144,
+        "command": "play 1",
+        "floor": 11,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          2,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          2,
+          70,
+          105,
+          170
+        ],
+        "public_action": 0,
+        "before": {},
+        "original_before_hash": "06ada48bca9f40b1d50349ef71fbf9806247bc0ea74e6480b5722deb8c469e66",
+        "original_after_hash": "28dfb553ef252389bc58a0728e53094edd6e9d0b21ce4d9c7f5ead2d0fa8e024",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 145,
+        "command": "end",
+        "floor": 11,
+        "page": "DELEGATED",
+        "offered": [
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          70,
+          105,
+          170
+        ],
+        "public_action": 170,
+        "before": {},
+        "original_before_hash": "28dfb553ef252389bc58a0728e53094edd6e9d0b21ce4d9c7f5ead2d0fa8e024",
+        "original_after_hash": "7f4237596aadf160b4059cedf83c24915c3828a5a8242eccd67ba83fceeef0aa",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 146,
+        "command": "potion use 0",
+        "floor": 11,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          2,
+          11,
+          13,
+          14,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          0,
+          2,
+          11,
+          13,
+          14,
+          70,
+          105,
+          170
+        ],
+        "public_action": 70,
+        "before": {},
+        "original_before_hash": "7f4237596aadf160b4059cedf83c24915c3828a5a8242eccd67ba83fceeef0aa",
+        "original_after_hash": "655692f60326beca2292dd7da26445f10fd7da946691f748fe3fb16823cc5eaf",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 147,
+        "command": "play 3",
+        "floor": 11,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          2,
+          11,
+          13,
+          14,
+          170
+        ],
+        "retail_legal": [
+          0,
+          2,
+          11,
+          13,
+          14,
+          170
+        ],
+        "public_action": 2,
+        "before": {},
+        "original_before_hash": "655692f60326beca2292dd7da26445f10fd7da946691f748fe3fb16823cc5eaf",
+        "original_after_hash": "1a98e5aab3c6077f208bc9526e88c2f604ae1b07f5dab59286dc13fa7dcbf100",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 148,
+        "command": "play 1",
+        "floor": 11,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          11,
+          12,
+          13,
+          14,
+          170
+        ],
+        "retail_legal": [
+          0,
+          11,
+          12,
+          13,
+          14,
+          170
+        ],
+        "public_action": 0,
+        "before": {},
+        "original_before_hash": "1a98e5aab3c6077f208bc9526e88c2f604ae1b07f5dab59286dc13fa7dcbf100",
+        "original_after_hash": "2840249336915979e2bb7a9461d0098abb0a5e2c27e05db988b35662da0506be",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 149,
+        "command": "play 4 0",
+        "floor": 11,
+        "page": "DELEGATED",
+        "offered": [
+          10,
+          11,
+          12,
+          13,
+          170
+        ],
+        "retail_legal": [
+          10,
+          11,
+          12,
+          13,
+          170
+        ],
+        "public_action": 13,
+        "before": {},
+        "original_before_hash": "2840249336915979e2bb7a9461d0098abb0a5e2c27e05db988b35662da0506be",
+        "original_after_hash": "492efcb4c65b5a1d635815b31c092f43370c58cb266ea61f67d7717bb413947a",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 150,
+        "command": "play 2 0",
+        "floor": 11,
+        "page": "DELEGATED",
+        "offered": [
+          10,
+          11,
+          12,
+          170
+        ],
+        "retail_legal": [
+          10,
+          11,
+          12,
+          170
+        ],
+        "public_action": 11,
+        "before": {},
+        "original_before_hash": "492efcb4c65b5a1d635815b31c092f43370c58cb266ea61f67d7717bb413947a",
+        "original_after_hash": "05020ffac07a7f9e7c4c86cad2ad7a1f59e4028a003dbd01a2891317c79838bd",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 151,
+        "command": "choose 2",
+        "floor": 11,
+        "page": "DELEGATED",
+        "offered": [
+          110,
+          111,
+          112
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112
+        ],
+        "public_action": 112,
+        "before": {},
+        "original_before_hash": "05020ffac07a7f9e7c4c86cad2ad7a1f59e4028a003dbd01a2891317c79838bd",
+        "original_after_hash": "fe20a6d0e810e2d1c31a0e8dbac53137b945ccd36c5246455441addb77abaada",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 152,
+        "command": "confirm",
+        "floor": 11,
+        "page": "DELEGATED",
+        "offered": [
+          172,
+          179
+        ],
+        "retail_legal": [
+          110,
+          111,
+          172
+        ],
+        "public_action": 172,
+        "before": {},
+        "original_before_hash": "fe20a6d0e810e2d1c31a0e8dbac53137b945ccd36c5246455441addb77abaada",
+        "original_after_hash": "3189b2bb5a652e443d6cbe97e4b1f04cefada3e220024c8a8647accf6a5e2914",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 153,
+        "command": "end",
+        "floor": 11,
+        "page": "DELEGATED",
+        "offered": [
+          170
+        ],
+        "retail_legal": [
+          170
+        ],
+        "public_action": 170,
+        "before": {},
+        "original_before_hash": "3189b2bb5a652e443d6cbe97e4b1f04cefada3e220024c8a8647accf6a5e2914",
+        "original_after_hash": "bcfa560d7f50bddb9ead3936517863f062af258bc1ad3f375c789be6efa396c1",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 154,
+        "command": "play 3 0",
+        "floor": 11,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          4,
+          12,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          4,
+          12,
+          170
+        ],
+        "public_action": 12,
+        "before": {},
+        "original_before_hash": "bcfa560d7f50bddb9ead3936517863f062af258bc1ad3f375c789be6efa396c1",
+        "original_after_hash": "2d443ad76f9e1af0f2c9bfd527536c349cc54f023f5aadaef2e754fc781685a5",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 155,
+        "command": "play 1",
+        "floor": 11,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          3,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          3,
+          170
+        ],
+        "public_action": 0,
+        "before": {},
+        "original_before_hash": "2d443ad76f9e1af0f2c9bfd527536c349cc54f023f5aadaef2e754fc781685a5",
+        "original_after_hash": "5e506a2738b87274c7dc079f68e9233f60ab9034674004031dded6997752eb66",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 156,
+        "command": "play 5",
+        "floor": 11,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          2,
+          4,
+          13,
+          170
+        ],
+        "retail_legal": [
+          0,
+          2,
+          4,
+          13,
+          170
+        ],
+        "public_action": 4,
+        "before": {},
+        "original_before_hash": "5e506a2738b87274c7dc079f68e9233f60ab9034674004031dded6997752eb66",
+        "original_after_hash": "9d012dfd1e71c3870da4c7653395b1adffa0a6c991e9fb374dc205206fe0b980",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 157,
+        "command": "end",
+        "floor": 11,
+        "page": "DELEGATED",
+        "offered": [
+          170
+        ],
+        "retail_legal": [
+          170
+        ],
+        "public_action": 170,
+        "before": {},
+        "original_before_hash": "9d012dfd1e71c3870da4c7653395b1adffa0a6c991e9fb374dc205206fe0b980",
+        "original_after_hash": "35f9ee305c882e649de4c3a6aa14c4af2485919520e01b0009d8eeb90d449f49",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 158,
+        "command": "play 3 0",
+        "floor": 11,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          3,
+          12,
+          14,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          3,
+          12,
+          14,
+          170
+        ],
+        "public_action": 12,
+        "before": {},
+        "original_before_hash": "35f9ee305c882e649de4c3a6aa14c4af2485919520e01b0009d8eeb90d449f49",
+        "original_after_hash": "f92649414a69d75f97b33f834410ad776f8c2160439339858b49c2c4759ba786",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 159,
+        "command": "choose 1",
+        "floor": 11,
+        "page": "DELEGATED",
+        "offered": [
+          110,
+          111,
+          112,
+          113,
+          114
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112,
+          113,
+          114
+        ],
+        "public_action": 111,
+        "before": {},
+        "original_before_hash": "f92649414a69d75f97b33f834410ad776f8c2160439339858b49c2c4759ba786",
+        "original_after_hash": "28325da542cc22bbded2a85c3ab389ca8deeef0fad89a4030541e473b45265e3",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 160,
+        "command": "confirm",
+        "floor": 11,
+        "page": "DELEGATED",
+        "offered": [
+          172,
+          179
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112,
+          113,
+          172
+        ],
+        "public_action": 172,
+        "before": {},
+        "original_before_hash": "28325da542cc22bbded2a85c3ab389ca8deeef0fad89a4030541e473b45265e3",
+        "original_after_hash": "7d0a1aaf95c2b057211ac1019e6ddde73aa22192ca06cb44eac4bb808518e9c5",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 161,
+        "command": "play 3 0",
+        "floor": 11,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          3,
+          12,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          3,
+          12,
+          170
+        ],
+        "public_action": 12,
+        "before": {},
+        "original_before_hash": "7d0a1aaf95c2b057211ac1019e6ddde73aa22192ca06cb44eac4bb808518e9c5",
+        "original_after_hash": "9e2aed23cd30b5b93a560dc885e0ba619a8efcf614472241a965c890b1a2dc85",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 162,
+        "command": "choose 0",
+        "floor": 11,
+        "page": "COMBAT_REWARD",
+        "offered": [
+          110,
+          111,
+          112,
+          171
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112,
+          171
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "9e2aed23cd30b5b93a560dc885e0ba619a8efcf614472241a965c890b1a2dc85",
+        "original_after_hash": "6ad4caa96e23025ccc24b5d97b88401b4eb51755779f200dc83aa5a625320394",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 163,
+        "command": "choose 0",
+        "floor": 11,
+        "page": "COMBAT_REWARD",
+        "offered": [
+          110,
+          111,
+          171
+        ],
+        "retail_legal": [
+          110,
+          111,
+          171
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "6ad4caa96e23025ccc24b5d97b88401b4eb51755779f200dc83aa5a625320394",
+        "original_after_hash": "e203a672d276019ad0dfae1652e895d2418feef4bbbd8a2258922f219117d2df",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 164,
+        "command": "choose 0",
+        "floor": 11,
+        "page": "COMBAT_REWARD",
+        "offered": [
+          105,
+          110,
+          171
+        ],
+        "retail_legal": [
+          105,
+          110,
+          171
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "e203a672d276019ad0dfae1652e895d2418feef4bbbd8a2258922f219117d2df",
+        "original_after_hash": "70cb6ee91c71bef4818aa0520ed37c4d212f5752c86acd6265fb74fdf58585be",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 165,
+        "command": "choose 1",
+        "floor": 11,
+        "page": "CARD_REWARD",
+        "offered": [
+          105,
+          110,
+          111,
+          112,
+          177
+        ],
+        "retail_legal": [
+          105,
+          110,
+          111,
+          112,
+          177
+        ],
+        "public_action": 111,
+        "before": {},
+        "original_before_hash": "70cb6ee91c71bef4818aa0520ed37c4d212f5752c86acd6265fb74fdf58585be",
+        "original_after_hash": "d1f3d9085ca9a9e331c06d8a03cc55559d8725b389c942b5cb09d5123e1d7585",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 166,
+        "command": "proceed",
+        "floor": 11,
+        "page": "COMBAT_REWARD",
+        "offered": [
+          105,
+          171
+        ],
+        "retail_legal": [
+          105,
+          171
+        ],
+        "public_action": 171,
+        "before": {},
+        "original_before_hash": "d1f3d9085ca9a9e331c06d8a03cc55559d8725b389c942b5cb09d5123e1d7585",
+        "original_after_hash": "44dd9bde4ae253de3dc512c8d7cc523b7c54cbcf2e15a1f7b6106b14b939d4da",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 167,
+        "command": "choose 0",
+        "floor": 11,
+        "page": "DELEGATED",
+        "offered": [
+          105,
+          110,
+          111
+        ],
+        "retail_legal": [
+          105,
+          110,
+          111,
+          176
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "44dd9bde4ae253de3dc512c8d7cc523b7c54cbcf2e15a1f7b6106b14b939d4da",
+        "original_after_hash": "03b3d9b99d1c21d80911027ebc2824ccc1ee18889e95106c2395550db9cbe72a",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 168,
+        "command": "play 4",
+        "floor": 12,
+        "page": "DELEGATED",
+        "offered": [
+          1,
+          3,
+          4,
+          5,
+          10,
+          12,
+          16,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          1,
+          3,
+          4,
+          5,
+          10,
+          12,
+          16,
+          70,
+          105,
+          170
+        ],
+        "public_action": 3,
+        "before": {},
+        "original_before_hash": "03b3d9b99d1c21d80911027ebc2824ccc1ee18889e95106c2395550db9cbe72a",
+        "original_after_hash": "bf5962fa1c5cf525e2cb3a39adc2c9b0766ad3d09f1b0093375b5d0b68f8a46c",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 169,
+        "command": "play 8",
+        "floor": 12,
+        "page": "DELEGATED",
+        "offered": [
+          1,
+          3,
+          4,
+          6,
+          7,
+          10,
+          12,
+          15,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          1,
+          3,
+          4,
+          6,
+          7,
+          10,
+          12,
+          15,
+          70,
+          105,
+          170
+        ],
+        "public_action": 7,
+        "before": {},
+        "original_before_hash": "bf5962fa1c5cf525e2cb3a39adc2c9b0766ad3d09f1b0093375b5d0b68f8a46c",
+        "original_after_hash": "895ab4aca57039c1a747d555a7d8c0af72af2d282d379b7699c9b83cb44e2131",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 170,
+        "command": "play 2",
+        "floor": 12,
+        "page": "DELEGATED",
+        "offered": [
+          1,
+          3,
+          4,
+          6,
+          10,
+          12,
+          15,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          1,
+          3,
+          4,
+          6,
+          10,
+          12,
+          15,
+          70,
+          105,
+          170
+        ],
+        "public_action": 1,
+        "before": {},
+        "original_before_hash": "895ab4aca57039c1a747d555a7d8c0af72af2d282d379b7699c9b83cb44e2131",
+        "original_after_hash": "b0fa8f78d369ddffe9537fa300ed25df64802fadc5a32e50f0612ab45452fa66",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 171,
+        "command": "end",
+        "floor": 12,
+        "page": "DELEGATED",
+        "offered": [
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          70,
+          105,
+          170
+        ],
+        "public_action": 170,
+        "before": {},
+        "original_before_hash": "b0fa8f78d369ddffe9537fa300ed25df64802fadc5a32e50f0612ab45452fa66",
+        "original_after_hash": "675ab389b92ba482f23eaa5ec9b1d183f05fdb2b91f991792271059d815bd816",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 172,
+        "command": "play 2",
+        "floor": 12,
+        "page": "DELEGATED",
+        "offered": [
+          1,
+          2,
+          3,
+          10,
+          14,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          1,
+          2,
+          3,
+          10,
+          14,
+          70,
+          105,
+          170
+        ],
+        "public_action": 1,
+        "before": {},
+        "original_before_hash": "675ab389b92ba482f23eaa5ec9b1d183f05fdb2b91f991792271059d815bd816",
+        "original_after_hash": "b0623b482865dfbb1d3d8b32c7b11a8d70da44b3fabc3f660d40a8005e17162d",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 173,
+        "command": "play 3",
+        "floor": 12,
+        "page": "DELEGATED",
+        "offered": [
+          1,
+          2,
+          10,
+          13,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          1,
+          2,
+          10,
+          13,
+          70,
+          105,
+          170
+        ],
+        "public_action": 2,
+        "before": {},
+        "original_before_hash": "b0623b482865dfbb1d3d8b32c7b11a8d70da44b3fabc3f660d40a8005e17162d",
+        "original_after_hash": "d69fb5c05067acd8564003d52a30821e2cb35867948c17fb225bad8a0c0d1cfd",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 174,
+        "command": "play 4 0",
+        "floor": 12,
+        "page": "DELEGATED",
+        "offered": [
+          1,
+          10,
+          12,
+          13,
+          14,
+          15,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          1,
+          10,
+          12,
+          13,
+          14,
+          15,
+          70,
+          105,
+          170
+        ],
+        "public_action": 13,
+        "before": {},
+        "original_before_hash": "d69fb5c05067acd8564003d52a30821e2cb35867948c17fb225bad8a0c0d1cfd",
+        "original_after_hash": "88b9b01586b8fe2168fe3b3bf1f45c4d5f6201f008759fc725ff3f12be940c7e",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 175,
+        "command": "play 4 0",
+        "floor": 12,
+        "page": "DELEGATED",
+        "offered": [
+          1,
+          10,
+          12,
+          13,
+          14,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          1,
+          10,
+          12,
+          13,
+          14,
+          70,
+          105,
+          170
+        ],
+        "public_action": 13,
+        "before": {},
+        "original_before_hash": "88b9b01586b8fe2168fe3b3bf1f45c4d5f6201f008759fc725ff3f12be940c7e",
+        "original_after_hash": "f488282d15ae5206cffb10d23698d0cb5c9d789f4abe2c06f5ed410161deb1f6",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 176,
+        "command": "play 4 0",
+        "floor": 12,
+        "page": "DELEGATED",
+        "offered": [
+          1,
+          10,
+          12,
+          13,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          1,
+          10,
+          12,
+          13,
+          70,
+          105,
+          170
+        ],
+        "public_action": 13,
+        "before": {},
+        "original_before_hash": "f488282d15ae5206cffb10d23698d0cb5c9d789f4abe2c06f5ed410161deb1f6",
+        "original_after_hash": "19bb900bc802a736a169dec30a5e539cfe7b3adfc73a1d7ce370a12105570950",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 177,
+        "command": "play 1 0",
+        "floor": 12,
+        "page": "DELEGATED",
+        "offered": [
+          1,
+          10,
+          12,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          1,
+          10,
+          12,
+          70,
+          105,
+          170
+        ],
+        "public_action": 10,
+        "before": {},
+        "original_before_hash": "19bb900bc802a736a169dec30a5e539cfe7b3adfc73a1d7ce370a12105570950",
+        "original_after_hash": "865f052e404cc41d46f798fdd34bc4dbf6e6fd57afc4b7afc66daa39bd787b38",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 178,
+        "command": "end",
+        "floor": 12,
+        "page": "DELEGATED",
+        "offered": [
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          70,
+          105,
+          170
+        ],
+        "public_action": 170,
+        "before": {},
+        "original_before_hash": "865f052e404cc41d46f798fdd34bc4dbf6e6fd57afc4b7afc66daa39bd787b38",
+        "original_after_hash": "6aa86ea5354062d2c9ebc8535dee48d98eddfa5a98028eca5dce8f0ba00fc4e6",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 179,
+        "command": "play 5",
+        "floor": 12,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          4,
+          12,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          4,
+          12,
+          70,
+          105,
+          170
+        ],
+        "public_action": 4,
+        "before": {},
+        "original_before_hash": "6aa86ea5354062d2c9ebc8535dee48d98eddfa5a98028eca5dce8f0ba00fc4e6",
+        "original_after_hash": "e0dde6a2ce3029ef1f01c71ab862c6e0febbf3bc007ed59e53f30b73c572d768",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 180,
+        "command": "play 1",
+        "floor": 12,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          12,
+          14,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          12,
+          14,
+          70,
+          105,
+          170
+        ],
+        "public_action": 0,
+        "before": {},
+        "original_before_hash": "e0dde6a2ce3029ef1f01c71ab862c6e0febbf3bc007ed59e53f30b73c572d768",
+        "original_after_hash": "47e0a6a70d74f39b9e9d9651e7db39855d8345fef075f832d3aa8e096f0da25e",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 181,
+        "command": "play 5",
+        "floor": 12,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          4,
+          11,
+          13,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          0,
+          4,
+          11,
+          13,
+          70,
+          105,
+          170
+        ],
+        "public_action": 4,
+        "before": {},
+        "original_before_hash": "47e0a6a70d74f39b9e9d9651e7db39855d8345fef075f832d3aa8e096f0da25e",
+        "original_after_hash": "333bff0ecaf0c21f9071f04e732353f7649b7c3b375bfb15cccd79a738f563e7",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 182,
+        "command": "play 4 0",
+        "floor": 12,
+        "page": "DELEGATED",
+        "offered": [
+          13,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          13,
+          70,
+          105,
+          170
+        ],
+        "public_action": 13,
+        "before": {},
+        "original_before_hash": "333bff0ecaf0c21f9071f04e732353f7649b7c3b375bfb15cccd79a738f563e7",
+        "original_after_hash": "7541b9f8775d353e57e0fb282b26676ce6f86434ca53d55e458e03232099b9b6",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 183,
+        "command": "end",
+        "floor": 12,
+        "page": "DELEGATED",
+        "offered": [
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          70,
+          105,
+          170
+        ],
+        "public_action": 170,
+        "before": {},
+        "original_before_hash": "7541b9f8775d353e57e0fb282b26676ce6f86434ca53d55e458e03232099b9b6",
+        "original_after_hash": "79935b9e884e324ffa470cdfb209af5f8854586b1e5d029b34f71dd9de13d282",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 184,
+        "command": "play 3",
+        "floor": 12,
+        "page": "DELEGATED",
+        "offered": [
+          2,
+          3,
+          10,
+          11,
+          14,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          2,
+          3,
+          10,
+          11,
+          14,
+          70,
+          105,
+          170
+        ],
+        "public_action": 2,
+        "before": {},
+        "original_before_hash": "79935b9e884e324ffa470cdfb209af5f8854586b1e5d029b34f71dd9de13d282",
+        "original_after_hash": "4eb6c59f5bb085ce8002885d6dc7bbcca66e0be79885eaa86fbef243c0d39acf",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 185,
+        "command": "play 1 0",
+        "floor": 12,
+        "page": "DELEGATED",
+        "offered": [
+          2,
+          10,
+          11,
+          13,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          2,
+          10,
+          11,
+          13,
+          70,
+          105,
+          170
+        ],
+        "public_action": 10,
+        "before": {},
+        "original_before_hash": "4eb6c59f5bb085ce8002885d6dc7bbcca66e0be79885eaa86fbef243c0d39acf",
+        "original_after_hash": "9b81b5cb1e17f604e77597e6b187139389e584b10106b1671fe39ddc2196c7f0",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 186,
+        "command": "play 1 0",
+        "floor": 12,
+        "page": "DELEGATED",
+        "offered": [
+          1,
+          10,
+          12,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          1,
+          10,
+          12,
+          70,
+          105,
+          170
+        ],
+        "public_action": 10,
+        "before": {},
+        "original_before_hash": "9b81b5cb1e17f604e77597e6b187139389e584b10106b1671fe39ddc2196c7f0",
+        "original_after_hash": "6009dbb1a31b3710d2a059dfa2391fa0e397e1c1af1c7042ce3d7e87fe5f88af",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 187,
+        "command": "end",
+        "floor": 12,
+        "page": "DELEGATED",
+        "offered": [
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          70,
+          105,
+          170
+        ],
+        "public_action": 170,
+        "before": {},
+        "original_before_hash": "6009dbb1a31b3710d2a059dfa2391fa0e397e1c1af1c7042ce3d7e87fe5f88af",
+        "original_after_hash": "28dae0c8e4ac3fb7efce5c5e0cb63f1c88d6bfdb47c48468ea77c7a22dcddc8a",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 188,
+        "command": "play 5",
+        "floor": 12,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          2,
+          3,
+          4,
+          11,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          0,
+          2,
+          3,
+          4,
+          11,
+          70,
+          105,
+          170
+        ],
+        "public_action": 4,
+        "before": {},
+        "original_before_hash": "28dae0c8e4ac3fb7efce5c5e0cb63f1c88d6bfdb47c48468ea77c7a22dcddc8a",
+        "original_after_hash": "2b0203e9e5abda993db289a8ad641578f932c845082582efc8e51d42cbb00142",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 189,
+        "command": "play 6",
+        "floor": 12,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          11,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          0,
+          2,
+          3,
+          4,
+          5,
+          11,
+          70,
+          105,
+          170
+        ],
+        "public_action": 5,
+        "before": {},
+        "original_before_hash": "2b0203e9e5abda993db289a8ad641578f932c845082582efc8e51d42cbb00142",
+        "original_after_hash": "05152797dbceaf948d70476c6cf33ccaaa31c3586a0e6ddebf4b9f9429fb738a",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 190,
+        "command": "play 1",
+        "floor": 12,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          2,
+          3,
+          4,
+          11,
+          15,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          0,
+          2,
+          3,
+          4,
+          11,
+          15,
+          70,
+          105,
+          170
+        ],
+        "public_action": 0,
+        "before": {},
+        "original_before_hash": "05152797dbceaf948d70476c6cf33ccaaa31c3586a0e6ddebf4b9f9429fb738a",
+        "original_after_hash": "2668665d490564a01034c277513110405135620d7991ebef633ca37a9e0b7149",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 191,
+        "command": "play 5 0",
+        "floor": 12,
+        "page": "DELEGATED",
+        "offered": [
+          14,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          14,
+          70,
+          105,
+          170
+        ],
+        "public_action": 14,
+        "before": {},
+        "original_before_hash": "2668665d490564a01034c277513110405135620d7991ebef633ca37a9e0b7149",
+        "original_after_hash": "5511f946b4387ebd2f1142f09c49ac28170390ace2eb94d8018f9bd0b3924147",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 192,
+        "command": "end",
+        "floor": 12,
+        "page": "DELEGATED",
+        "offered": [
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          70,
+          105,
+          170
+        ],
+        "public_action": 170,
+        "before": {},
+        "original_before_hash": "5511f946b4387ebd2f1142f09c49ac28170390ace2eb94d8018f9bd0b3924147",
+        "original_after_hash": "3c5263776defa2d6704821eb6d26b1e61dcc455bb44556435073f84231f63919",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 193,
+        "command": "play 4",
+        "floor": 12,
+        "page": "DELEGATED",
+        "offered": [
+          1,
+          2,
+          3,
+          4,
+          10,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          1,
+          2,
+          3,
+          4,
+          10,
+          70,
+          105,
+          170
+        ],
+        "public_action": 3,
+        "before": {},
+        "original_before_hash": "3c5263776defa2d6704821eb6d26b1e61dcc455bb44556435073f84231f63919",
+        "original_after_hash": "19f8eb506c86d35debc1cc630ef031d619b1c7c55cb6e02de9b6c1484cabf4cc",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 194,
+        "command": "play 2",
+        "floor": 12,
+        "page": "DELEGATED",
+        "offered": [
+          1,
+          2,
+          3,
+          5,
+          10,
+          14,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          1,
+          2,
+          3,
+          5,
+          10,
+          14,
+          70,
+          105,
+          170
+        ],
+        "public_action": 1,
+        "before": {},
+        "original_before_hash": "19f8eb506c86d35debc1cc630ef031d619b1c7c55cb6e02de9b6c1484cabf4cc",
+        "original_after_hash": "f849a849836ad10daa9c10387e01c17c9cfb2ad320f9879bc8c2c7472f1b40e7",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 195,
+        "command": "play 4 0",
+        "floor": 12,
+        "page": "DELEGATED",
+        "offered": [
+          1,
+          2,
+          4,
+          10,
+          13,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          1,
+          2,
+          4,
+          10,
+          13,
+          70,
+          105,
+          170
+        ],
+        "public_action": 13,
+        "before": {},
+        "original_before_hash": "f849a849836ad10daa9c10387e01c17c9cfb2ad320f9879bc8c2c7472f1b40e7",
+        "original_after_hash": "0d7dc8497fad556468fc5f1e530ccedb4177a23a5adddc1fc658106c554e47ce",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 196,
+        "command": "play 1 0",
+        "floor": 12,
+        "page": "DELEGATED",
+        "offered": [
+          1,
+          2,
+          3,
+          10,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          1,
+          2,
+          3,
+          10,
+          70,
+          105,
+          170
+        ],
+        "public_action": 10,
+        "before": {},
+        "original_before_hash": "0d7dc8497fad556468fc5f1e530ccedb4177a23a5adddc1fc658106c554e47ce",
+        "original_after_hash": "2ee1693925831ce75430f65fadbc5d3807d938a32604b85ebad1ba5d530f4651",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 197,
+        "command": "end",
+        "floor": 12,
+        "page": "DELEGATED",
+        "offered": [
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          70,
+          105,
+          170
+        ],
+        "public_action": 170,
+        "before": {},
+        "original_before_hash": "2ee1693925831ce75430f65fadbc5d3807d938a32604b85ebad1ba5d530f4651",
+        "original_after_hash": "6cd636ad0715758d496b38c2d206384afe7ff9bd16812d52ad4937739e0031fd",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 198,
+        "command": "play 3 0",
+        "floor": 12,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          12,
+          13,
+          14,
+          70,
+          105,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          12,
+          13,
+          14,
+          70,
+          105,
+          170
+        ],
+        "public_action": 12,
+        "before": {},
+        "original_before_hash": "6cd636ad0715758d496b38c2d206384afe7ff9bd16812d52ad4937739e0031fd",
+        "original_after_hash": "1d6cff3abc06383565608d0270a22157c967ca76ebb1e22e025e50872fd4f863",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 199,
+        "command": "choose 0",
+        "floor": 12,
+        "page": "COMBAT_REWARD",
+        "offered": [
+          105,
+          110,
+          111,
+          112,
+          171
+        ],
+        "retail_legal": [
+          105,
+          110,
+          111,
+          112,
+          171
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "1d6cff3abc06383565608d0270a22157c967ca76ebb1e22e025e50872fd4f863",
+        "original_after_hash": "459683de4f26de4ae6ec7ae1cec87d1f0caef487ae9c46c600a15939bf16e396",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 200,
+        "command": "choose 0",
+        "floor": 12,
+        "page": "COMBAT_REWARD",
+        "offered": [
+          105,
+          110,
+          111,
+          171
+        ],
+        "retail_legal": [
+          105,
+          110,
+          111,
+          171
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "459683de4f26de4ae6ec7ae1cec87d1f0caef487ae9c46c600a15939bf16e396",
+        "original_after_hash": "f3fe574e19a2d0bf03394cbbad3af44366d139cf97f5ad5903e70897d6a15a78",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 201,
+        "command": "choose 0",
+        "floor": 12,
+        "page": "COMBAT_REWARD",
+        "offered": [
+          105,
+          106,
+          110,
+          171
+        ],
+        "retail_legal": [
+          105,
+          106,
+          110,
+          171
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "f3fe574e19a2d0bf03394cbbad3af44366d139cf97f5ad5903e70897d6a15a78",
+        "original_after_hash": "abc1d2239519e2bb8021024b30fc8fc733e77c8a421a19d056193a5d08eb7d49",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 202,
+        "command": "choose 1",
+        "floor": 12,
+        "page": "CARD_REWARD",
+        "offered": [
+          105,
+          106,
+          110,
+          111,
+          112,
+          177
+        ],
+        "retail_legal": [
+          105,
+          106,
+          110,
+          111,
+          112,
+          177
+        ],
+        "public_action": 111,
+        "before": {},
+        "original_before_hash": "abc1d2239519e2bb8021024b30fc8fc733e77c8a421a19d056193a5d08eb7d49",
+        "original_after_hash": "ac6eb001b3fc5b09e3c233a4d4d06d8c7326bdf568546c1af6ca619020b4d8bb",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 203,
+        "command": "proceed",
+        "floor": 12,
+        "page": "COMBAT_REWARD",
+        "offered": [
+          105,
+          106,
+          171
+        ],
+        "retail_legal": [
+          105,
+          106,
+          171
+        ],
+        "public_action": 171,
+        "before": {},
+        "original_before_hash": "ac6eb001b3fc5b09e3c233a4d4d06d8c7326bdf568546c1af6ca619020b4d8bb",
+        "original_after_hash": "974fc7fc8bdd03f2614d60dfa4bc8d32cab19141e64179f584354556827f8427",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 204,
+        "command": "choose 0",
+        "floor": 12,
+        "page": "DELEGATED",
+        "offered": [
+          105,
+          106,
+          110
+        ],
+        "retail_legal": [
+          105,
+          106,
+          110,
+          176
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "974fc7fc8bdd03f2614d60dfa4bc8d32cab19141e64179f584354556827f8427",
+        "original_after_hash": "693c172af89aa706de2816d57400608ae9c47306b4c83b96b211c15833840577",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 205,
+        "command": "play 5",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          1,
+          4,
+          5,
+          12,
+          13,
+          16,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "retail_legal": [
+          1,
+          4,
+          5,
+          12,
+          13,
+          16,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "public_action": 4,
+        "before": {},
+        "original_before_hash": "693c172af89aa706de2816d57400608ae9c47306b4c83b96b211c15833840577",
+        "original_after_hash": "d5ae55b0a5ad31344979ddcccf7a60ff98f0840cb2a7396846b78b5f1d8fa725",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 206,
+        "command": "play 5",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          1,
+          4,
+          12,
+          13,
+          15,
+          16,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "retail_legal": [
+          1,
+          4,
+          12,
+          13,
+          15,
+          16,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "public_action": 4,
+        "before": {},
+        "original_before_hash": "d5ae55b0a5ad31344979ddcccf7a60ff98f0840cb2a7396846b78b5f1d8fa725",
+        "original_after_hash": "e1d0055c7704edbb0b9a7958ce35a627c9e955b8d6b301ff153c55ab3c4115b1",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 207,
+        "command": "play 6 0",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          1,
+          12,
+          13,
+          14,
+          15,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "retail_legal": [
+          1,
+          12,
+          13,
+          14,
+          15,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "public_action": 15,
+        "before": {},
+        "original_before_hash": "e1d0055c7704edbb0b9a7958ce35a627c9e955b8d6b301ff153c55ab3c4115b1",
+        "original_after_hash": "89f5b6111bff29a2f08c30993730f40fb0d9562028d61837282f9d6c15b01508",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 208,
+        "command": "play 3 0",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          1,
+          12,
+          13,
+          14,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "retail_legal": [
+          1,
+          12,
+          13,
+          14,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "public_action": 12,
+        "before": {},
+        "original_before_hash": "89f5b6111bff29a2f08c30993730f40fb0d9562028d61837282f9d6c15b01508",
+        "original_after_hash": "3bd4838202559072738004f7a9c3fca21acc64ed3dda2efc1e36e6c9feb148ed",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 209,
+        "command": "end",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "retail_legal": [
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "public_action": 170,
+        "before": {},
+        "original_before_hash": "3bd4838202559072738004f7a9c3fca21acc64ed3dda2efc1e36e6c9feb148ed",
+        "original_after_hash": "031a111a93f85920df0b6bb6e4eef61432904dbbf5b8c052a5f99b36ab45740a",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 210,
+        "command": "play 2",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          2,
+          3,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          2,
+          3,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "public_action": 1,
+        "before": {},
+        "original_before_hash": "031a111a93f85920df0b6bb6e4eef61432904dbbf5b8c052a5f99b36ab45740a",
+        "original_after_hash": "86dad1e55a6da62a5cf96d683355e1a1b6c94079f2765bdb2e0bc723bc2d3fdb",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 211,
+        "command": "play 1",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          2,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          2,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "public_action": 0,
+        "before": {},
+        "original_before_hash": "86dad1e55a6da62a5cf96d683355e1a1b6c94079f2765bdb2e0bc723bc2d3fdb",
+        "original_after_hash": "b7e3489628b07f553535d6c5a2c4c9d308c20bdacd16cafe1fd9a20e3ee0ec57",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 212,
+        "command": "play 2",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          3,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          3,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "public_action": 1,
+        "before": {},
+        "original_before_hash": "b7e3489628b07f553535d6c5a2c4c9d308c20bdacd16cafe1fd9a20e3ee0ec57",
+        "original_after_hash": "8325e2206b2f15daeeef03a0ae45aeeed06181ce908b2691cefaeb93b05c20da",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 213,
+        "command": "play 4 0",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          13,
+          14,
+          15,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "retail_legal": [
+          13,
+          14,
+          15,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "public_action": 13,
+        "before": {},
+        "original_before_hash": "8325e2206b2f15daeeef03a0ae45aeeed06181ce908b2691cefaeb93b05c20da",
+        "original_after_hash": "16066e26c04e894cb4e6ab067f5c2fa96a1ab4f284e05f3747135303c29b138f",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 214,
+        "command": "play 4 0",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          13,
+          14,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "retail_legal": [
+          13,
+          14,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "public_action": 13,
+        "before": {},
+        "original_before_hash": "16066e26c04e894cb4e6ab067f5c2fa96a1ab4f284e05f3747135303c29b138f",
+        "original_after_hash": "3b93b6eeb50561cc8032edfbbfb36c46517df310bccfd5a7789e67ca708cd4e4",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 215,
+        "command": "play 4 0",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          13,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "retail_legal": [
+          13,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "public_action": 13,
+        "before": {},
+        "original_before_hash": "3b93b6eeb50561cc8032edfbbfb36c46517df310bccfd5a7789e67ca708cd4e4",
+        "original_after_hash": "c9b6c73e3551a91283611d9a4683face2f444f8d059d2a8651866ed4afa568af",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 216,
+        "command": "end",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "retail_legal": [
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "public_action": 170,
+        "before": {},
+        "original_before_hash": "c9b6c73e3551a91283611d9a4683face2f444f8d059d2a8651866ed4afa568af",
+        "original_after_hash": "6be266cd1533149a7b2fdd6f02dccbe128d04d0b8e67b2bffb5485b8b5caa095",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 217,
+        "command": "play 2 0",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          3,
+          11,
+          12,
+          14,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "retail_legal": [
+          0,
+          3,
+          11,
+          12,
+          14,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "public_action": 11,
+        "before": {},
+        "original_before_hash": "6be266cd1533149a7b2fdd6f02dccbe128d04d0b8e67b2bffb5485b8b5caa095",
+        "original_after_hash": "81d09b10d7924c022354d70b340114090b0dac176370ec3127e8f9259589fb2c",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 218,
+        "command": "choose 0",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          110,
+          111,
+          112,
+          113,
+          114
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112,
+          113,
+          114
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "81d09b10d7924c022354d70b340114090b0dac176370ec3127e8f9259589fb2c",
+        "original_after_hash": "fb95fdfeed66db83f9a76879685e7393c7b7ccc1fb6d66841ac0cec48cd7f9b0",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 219,
+        "command": "confirm",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          172,
+          179
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112,
+          113,
+          172
+        ],
+        "public_action": 172,
+        "before": {},
+        "original_before_hash": "fb95fdfeed66db83f9a76879685e7393c7b7ccc1fb6d66841ac0cec48cd7f9b0",
+        "original_after_hash": "b4e409b2ecfdcff0e87c2724b7b36c35b53ffbc729dfe125ce5ad4ab4ec08c63",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 220,
+        "command": "play 4",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          1,
+          3,
+          10,
+          12,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "retail_legal": [
+          1,
+          3,
+          10,
+          12,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "public_action": 3,
+        "before": {},
+        "original_before_hash": "b4e409b2ecfdcff0e87c2724b7b36c35b53ffbc729dfe125ce5ad4ab4ec08c63",
+        "original_after_hash": "b25ac3755be61930f9295d371df5da11040c7d97d72cdf4378958c6fa1264dbd",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 221,
+        "command": "play 4",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          1,
+          3,
+          4,
+          10,
+          12,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "retail_legal": [
+          1,
+          3,
+          4,
+          10,
+          12,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "public_action": 3,
+        "before": {},
+        "original_before_hash": "b25ac3755be61930f9295d371df5da11040c7d97d72cdf4378958c6fa1264dbd",
+        "original_after_hash": "323faafaccc549aed0433bd24697bcdc16a8ce8b1c55f2b9666e9d7c67339425",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 222,
+        "command": "end",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "retail_legal": [
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "public_action": 170,
+        "before": {},
+        "original_before_hash": "323faafaccc549aed0433bd24697bcdc16a8ce8b1c55f2b9666e9d7c67339425",
+        "original_after_hash": "c912be4ae86e7ede82251d0d00b757e936675639cb5d01308dcc7cb961d595f7",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 223,
+        "command": "play 4",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          3,
+          12,
+          14,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          3,
+          12,
+          14,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "public_action": 3,
+        "before": {},
+        "original_before_hash": "c912be4ae86e7ede82251d0d00b757e936675639cb5d01308dcc7cb961d595f7",
+        "original_after_hash": "9dfd6c2096c144ea99d1913d247f55be1da9e5f17c376d323711ed7b0f70e66c",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 224,
+        "command": "play 1",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          5,
+          12,
+          13,
+          14,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          5,
+          12,
+          13,
+          14,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "public_action": 0,
+        "before": {},
+        "original_before_hash": "9dfd6c2096c144ea99d1913d247f55be1da9e5f17c376d323711ed7b0f70e66c",
+        "original_after_hash": "e2cbcd4d1cc817aa11d03b7afe851ebf32cbae2d86759e7d718112b7d85f6f47",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 225,
+        "command": "play 2 0",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          4,
+          11,
+          12,
+          13,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "retail_legal": [
+          0,
+          4,
+          11,
+          12,
+          13,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "public_action": 11,
+        "before": {},
+        "original_before_hash": "e2cbcd4d1cc817aa11d03b7afe851ebf32cbae2d86759e7d718112b7d85f6f47",
+        "original_after_hash": "3608dfbccf4b86662ed276048100f6fd6c0001c2ae28a8411b2806f23a1de7d6",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 226,
+        "command": "end",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "retail_legal": [
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "public_action": 170,
+        "before": {},
+        "original_before_hash": "3608dfbccf4b86662ed276048100f6fd6c0001c2ae28a8411b2806f23a1de7d6",
+        "original_after_hash": "7ac660be41b2a13e3db24219f1e7c28c89786f99c9779c88a857328bf54ebf41",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 227,
+        "command": "play 1",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          12,
+          13,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          12,
+          13,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "public_action": 0,
+        "before": {},
+        "original_before_hash": "7ac660be41b2a13e3db24219f1e7c28c89786f99c9779c88a857328bf54ebf41",
+        "original_after_hash": "d32f500559b391c17d71d6825c56658aaf48dcba84bc9b21380785a651fafedc",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 228,
+        "command": "play 5 0",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          11,
+          12,
+          14,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "retail_legal": [
+          0,
+          11,
+          12,
+          14,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "public_action": 14,
+        "before": {},
+        "original_before_hash": "d32f500559b391c17d71d6825c56658aaf48dcba84bc9b21380785a651fafedc",
+        "original_after_hash": "3f8826be9e07029257e1381baa2f2db2c2d702ceb660f060d83f0c2810293a34",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 229,
+        "command": "play 2 0",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          11,
+          12,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "retail_legal": [
+          0,
+          11,
+          12,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "public_action": 11,
+        "before": {},
+        "original_before_hash": "3f8826be9e07029257e1381baa2f2db2c2d702ceb660f060d83f0c2810293a34",
+        "original_after_hash": "0434763caa5217c64da5ade59206ece89c63a16b9aa71afdffc91298fee6ff99",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 230,
+        "command": "choose 0",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          110,
+          111,
+          112,
+          113
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112,
+          113
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "0434763caa5217c64da5ade59206ece89c63a16b9aa71afdffc91298fee6ff99",
+        "original_after_hash": "0c447c4cfcf6455b6b5ca9d3a32326b330b097852b8840e783ecd1d93866774b",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 231,
+        "command": "confirm",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          172,
+          179
+        ],
+        "retail_legal": [
+          110,
+          111,
+          112,
+          172
+        ],
+        "public_action": 172,
+        "before": {},
+        "original_before_hash": "0c447c4cfcf6455b6b5ca9d3a32326b330b097852b8840e783ecd1d93866774b",
+        "original_after_hash": "3c6d712b00f8912315f6a1bd40a8d9b356be7e6f925ae64c64ce1c55031db937",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 232,
+        "command": "play 1 0",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          2,
+          10,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "retail_legal": [
+          2,
+          10,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "public_action": 10,
+        "before": {},
+        "original_before_hash": "3c6d712b00f8912315f6a1bd40a8d9b356be7e6f925ae64c64ce1c55031db937",
+        "original_after_hash": "aa92d60ccec6467dacb9331e5b78c18aadc96982cece6eed1d38ba10f2695c3e",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 233,
+        "command": "end",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "retail_legal": [
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "public_action": 170,
+        "before": {},
+        "original_before_hash": "aa92d60ccec6467dacb9331e5b78c18aadc96982cece6eed1d38ba10f2695c3e",
+        "original_after_hash": "5118156b7022f68c80143dc67c2b528b6acbb479d98476a6822101c261b157dd",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 234,
+        "command": "play 1",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          2,
+          4,
+          13,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          2,
+          4,
+          13,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "public_action": 0,
+        "before": {},
+        "original_before_hash": "5118156b7022f68c80143dc67c2b528b6acbb479d98476a6822101c261b157dd",
+        "original_after_hash": "5fb1fe87798976e338d9673f007f65e7dab8f66dfbb28563b1fccc2f91a202be",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 235,
+        "command": "play 4",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          3,
+          12,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          3,
+          12,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "public_action": 3,
+        "before": {},
+        "original_before_hash": "5fb1fe87798976e338d9673f007f65e7dab8f66dfbb28563b1fccc2f91a202be",
+        "original_after_hash": "9430ca5b4ded4079ac5d2e9e6b210150cab602bf267df551d447ce126613fa7a",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 236,
+        "command": "play 3 0",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          12,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          12,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "public_action": 12,
+        "before": {},
+        "original_before_hash": "9430ca5b4ded4079ac5d2e9e6b210150cab602bf267df551d447ce126613fa7a",
+        "original_after_hash": "aca8b098932730c28e338302541740e2fac6cde93b8c40e219f6f3890e2020f3",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 237,
+        "command": "end",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "retail_legal": [
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "public_action": 170,
+        "before": {},
+        "original_before_hash": "aca8b098932730c28e338302541740e2fac6cde93b8c40e219f6f3890e2020f3",
+        "original_after_hash": "3226b7c04d0881325f020b8cfb025d6a2d0b79eca70a31de4e9438eeb6cbc6bf",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 238,
+        "command": "play 3",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "public_action": 2,
+        "before": {},
+        "original_before_hash": "3226b7c04d0881325f020b8cfb025d6a2d0b79eca70a31de4e9438eeb6cbc6bf",
+        "original_after_hash": "56a651573a49fde9f71783da88050326b3562c8ca77537a2994e0677047aa0a6",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 239,
+        "command": "play 6 0",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          0,
+          1,
+          2,
+          3,
+          14,
+          15,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "retail_legal": [
+          0,
+          1,
+          2,
+          3,
+          14,
+          15,
+          70,
+          71,
+          105,
+          106,
+          170
+        ],
+        "public_action": 15,
+        "before": {},
+        "original_before_hash": "56a651573a49fde9f71783da88050326b3562c8ca77537a2994e0677047aa0a6",
+        "original_after_hash": "a5f26b114110207d2153075b08a768fcd3b774d24c60b1d80114c18f38caacd3",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 240,
+        "command": "choose 0",
+        "floor": 13,
+        "page": "COMBAT_REWARD",
+        "offered": [
+          105,
+          106,
+          110,
+          111,
+          171
+        ],
+        "retail_legal": [
+          105,
+          106,
+          110,
+          111,
+          171
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "a5f26b114110207d2153075b08a768fcd3b774d24c60b1d80114c18f38caacd3",
+        "original_after_hash": "11d58b07068faa60c84b257bcf6b0632c95f4a55c90bb1ef17ceda0301d45126",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 241,
+        "command": "choose 0",
+        "floor": 13,
+        "page": "COMBAT_REWARD",
+        "offered": [
+          105,
+          106,
+          110,
+          171
+        ],
+        "retail_legal": [
+          105,
+          106,
+          110,
+          171
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "11d58b07068faa60c84b257bcf6b0632c95f4a55c90bb1ef17ceda0301d45126",
+        "original_after_hash": "3fd33c2a64aaf550cbc01082e3166fe6f13d767883d5743eeb1ce3358e10a03a",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 242,
+        "command": "choose 1",
+        "floor": 13,
+        "page": "CARD_REWARD",
+        "offered": [
+          105,
+          106,
+          110,
+          111,
+          112,
+          177
+        ],
+        "retail_legal": [
+          105,
+          106,
+          110,
+          111,
+          112,
+          177
+        ],
+        "public_action": 111,
+        "before": {},
+        "original_before_hash": "3fd33c2a64aaf550cbc01082e3166fe6f13d767883d5743eeb1ce3358e10a03a",
+        "original_after_hash": "fa535323faf1f613ef84518543a44fb05e664b1ffa1ae4fc0f309eda48337934",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 243,
+        "command": "proceed",
+        "floor": 13,
+        "page": "COMBAT_REWARD",
+        "offered": [
+          105,
+          106,
+          171
+        ],
+        "retail_legal": [
+          105,
+          106,
+          171
+        ],
+        "public_action": 171,
+        "before": {},
+        "original_before_hash": "fa535323faf1f613ef84518543a44fb05e664b1ffa1ae4fc0f309eda48337934",
+        "original_after_hash": "c1f9264da25af5f5cb5c4f1fe46caed97c661ec4066f591fce2d55aa038599ef",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 244,
+        "command": "choose 1",
+        "floor": 13,
+        "page": "DELEGATED",
+        "offered": [
+          105,
+          106,
+          110,
+          111
+        ],
+        "retail_legal": [
+          105,
+          106,
+          110,
+          111,
+          176
+        ],
+        "public_action": 111,
+        "before": {},
+        "original_before_hash": "c1f9264da25af5f5cb5c4f1fe46caed97c661ec4066f591fce2d55aa038599ef",
+        "original_after_hash": "e134d1eb0a40839d39af1a7aaf8f8867e04d47172e68f2f731c32428488cb1bf",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 245,
+        "command": "choose 0",
+        "floor": 14,
+        "page": "SHOP_ROOM",
+        "offered": [
+          110,
+          171
+        ],
+        "retail_legal": [
+          105,
+          106,
+          110,
+          171
+        ],
+        "public_action": 110,
+        "before": {},
+        "original_before_hash": "e134d1eb0a40839d39af1a7aaf8f8867e04d47172e68f2f731c32428488cb1bf",
+        "original_after_hash": "30aca58e803fb3dca2eddc711b691fa62d3ee5a4605622d1dd0cf2adce96bf36",
+        "status": "executed",
+        "after": {}
+      },
+      {
+        "index": 246,
+        "command": "choose 1",
+        "floor": 14,
+        "page": "SHOP_SCREEN",
+        "offered": [
+          178
+        ],
+        "retail_legal": [
+          105,
+          106,
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          119,
+          120,
+          121,
+          122,
+          123,
+          178
+        ],
+        "public_action": 111,
+        "before": {},
+        "original_before_hash": "30aca58e803fb3dca2eddc711b691fa62d3ee5a4605622d1dd0cf2adce96bf36",
+        "original_after_hash": "d70e624ce4f23ee2fb36a038ebc6942ab3b13fd04da118a3a88f8013efaf9ce0",
+        "status": "stopped"
+      }
+    ],
+    "completed_inputs": 245,
+    "total_original_inputs": 339,
+    "first_substantive_difference": null,
+    "stop": {
+      "index": 246,
+      "reason": "action_missing",
+      "action": 111,
+      "binding": {
+        "shop_card": {
+          "id": "Dagger Throw",
+          "upgrades": 0,
+          "price": 52,
+          "uuid": "006dd21e-9214-4d69-837a-eb2705d8241a"
+        },
+        "candidate": {
+          "slot": 0,
+          "kind": "CARD",
+          "parameters": [
+            92.0,
+            0.0,
+            52.0,
+            0.0
+          ],
+          "eid": 81,
+          "identity": {
+            "enum_id": 91,
+            "observation_id": 92,
+            "native_id": "Dagger Throw"
+          }
+        },
+        "source_canonical_action": 110,
+        "published_choice_row": 1
+      },
+      "floor": 14,
+      "page": "SHOP_SCREEN",
+      "offered": [
+        178
+      ],
+      "gaps": [
+        "shop_potions_relics_cancel_and_full_native_mask_unverified"
+      ]
+    }
+  },
+  "original_cases": [
+    {
+      "seed": 59,
+      "before": {
+        "hp": 38,
+        "block": 0,
+        "energy": 3,
+        "turn": 2,
+        "vulnerable": 2,
+        "enemies": [
+          [
+            0,
+            24,
+            0,
+            2
+          ],
+          [
+            22,
+            28,
+            0,
+            2
+          ]
+        ]
+      },
+      "menu": [
+        0,
+        1,
+        2,
+        4,
+        23,
+        70,
+        105,
+        170
+      ],
+      "action": 23,
+      "next_menu": [
+        0,
+        1,
+        2,
+        3,
+        70,
+        105,
+        170
+      ],
+      "immediate_native": {
+        "hp": 38,
+        "block": 0,
+        "energy": 2,
+        "turn": 2,
+        "vulnerable": 2,
+        "enemies": [
+          [
+            0,
+            24,
+            0,
+            2
+          ],
+          [
+            16,
+            28,
+            0,
+            2
+          ]
+        ]
+      },
+      "settled_native": {
+        "hp": 38,
+        "block": 0,
+        "energy": 2,
+        "turn": 2,
+        "vulnerable": 2,
+        "enemies": [
+          [
+            0,
+            24,
+            0,
+            0
+          ],
+          [
+            16,
+            28,
+            0,
+            2
+          ]
+        ]
+      },
+      "model_after": {
+        "hp": 38,
+        "block": 0,
+        "energy": 2,
+        "turn": 2,
+        "vulnerable": 2,
+        "enemies": [
+          [
+            0,
+            24,
+            0,
+            0
+          ],
+          [
+            16,
+            28,
+            0,
+            2
+          ]
+        ]
+      },
+      "native_gone_flags_and_powers": [
+        [
+          {
+            "block": 0,
+            "class": "com.megacrit.cardcrawl.monsters.exordium.FungiBeast",
+            "escaped": false,
+            "half_dead": false,
+            "hp": 0,
+            "id": "FungiBeast",
+            "intent_visible": false,
+            "is_dead": false,
+            "is_dying": true,
+            "is_escaping": false,
+            "max_hp": 24,
+            "powers": [
+              {
+                "amount": 2,
+                "class": "com.megacrit.cardcrawl.powers.SporeCloudPower",
+                "id": "Spore Cloud",
+                "type": "BUFF"
+              },
+              {
+                "amount": 5,
+                "class": "com.megacrit.cardcrawl.powers.StrengthPower",
+                "id": "Strength",
+                "type": "BUFF"
+              }
+            ]
+          },
+          {
+            "block": 0,
+            "class": "com.megacrit.cardcrawl.monsters.exordium.FungiBeast",
+            "escaped": false,
+            "half_dead": false,
+            "hp": 16,
+            "id": "FungiBeast",
+            "intent": "BUFF",
+            "intent_display_damage": 6,
+            "intent_display_hits": -1,
+            "intent_is_multi": false,
+            "intent_visible": true,
+            "is_dead": false,
+            "is_dying": false,
+            "is_escaping": false,
+            "max_hp": 28,
+            "powers": [
+              {
+                "amount": 2,
+                "class": "com.megacrit.cardcrawl.powers.SporeCloudPower",
+                "id": "Spore Cloud",
+                "type": "BUFF"
+              }
+            ]
+          }
+        ],
+        [
+          {
+            "block": 0,
+            "class": "com.megacrit.cardcrawl.monsters.exordium.FungiBeast",
+            "escaped": false,
+            "half_dead": false,
+            "hp": 0,
+            "id": "FungiBeast",
+            "intent_visible": false,
+            "is_dead": true,
+            "is_dying": true,
+            "is_escaping": false,
+            "max_hp": 24,
+            "powers": []
+          },
+          {
+            "block": 0,
+            "class": "com.megacrit.cardcrawl.monsters.exordium.FungiBeast",
+            "escaped": false,
+            "half_dead": false,
+            "hp": 16,
+            "id": "FungiBeast",
+            "intent": "BUFF",
+            "intent_display_damage": 6,
+            "intent_display_hits": -1,
+            "intent_is_multi": false,
+            "intent_visible": true,
+            "is_dead": false,
+            "is_dying": false,
+            "is_escaping": false,
+            "max_hp": 28,
+            "powers": [
+              {
+                "amount": 2,
+                "class": "com.megacrit.cardcrawl.powers.SporeCloudPower",
+                "id": "Spore Cloud",
+                "type": "BUFF"
+              }
+            ]
+          }
+        ]
+      ],
+      "original_hashes": {
+        "native_runtime/compact_fixture_r4_fungi_59/r4_death/RESULT.json": "49e61157e0a67a03eddd25a633df6930c665743af3c254b61eaf1836cd5ec375",
+        "native_runtime/compact_fixture_r4_fungi_59/r4_death/SETTLED.json": "4d638f0be0b27c8a2b8c94f105424ff7ce34a1aadb57c74ace829616015366e0",
+        "native_runtime/compact_fixture_r4_fungi_59/r4_death/actions.jsonl": "452c55ce7561b260c3ffc2dab65e5ef2db106c11488fc94ed664e5280589a86d",
+        "native_runtime/compact_fixture_r4_fungi_59/bridge/sessions/e58f0aad-2311-476e-b2ed-7a5d57001f4d/raw.jsonl": "e18d83f069598a1f7ba517c7f7c2cb8fe9130d0cb9f1f530b45425521cac533d",
+        "native_runtime/compact_fixture_r4_fungi_59/bridge/sessions/e58f0aad-2311-476e-b2ed-7a5d57001f4d/attempts.jsonl": "7f03dfaf89775bffe2d86084b77213b61f541d2568e4202fdbc75d8abf6a2c48",
+        "native_runtime/compact_fixture_r4_fungi_59/target.json": "0758684a80d251009d2651364f9ecd1e8f3092fceeb8f13659193f2106e815ea",
+        "native_runtime/compact_fixture_r4_fungi_59/fixture_receipt.json": "1aea1c618b0817b677785fea2bd4a6c2b8ff30780b9f39a9b572be09863a3472",
+        "native_runtime/compact_fixture_r4_fungi_59/process_exit.json": "c6b1bbcf8d68259a2d4ac604edff676513d975a0d8cd27f507ee2f3808f21a98"
+      }
+    },
+    {
+      "seed": 19,
+      "before": {
+        "hp": 4,
+        "block": 5,
+        "energy": 0,
+        "turn": 3,
+        "vulnerable": 2,
+        "enemies": [
+          [
+            15,
+            27,
+            0,
+            2
+          ],
+          [
+            0,
+            27,
+            0,
+            2
+          ]
+        ]
+      },
+      "menu": [
+        170
+      ],
+      "action": 170,
+      "next_menu": [],
+      "immediate_native": {
+        "hp": 0,
+        "block": 0,
+        "energy": 0,
+        "turn": 3,
+        "vulnerable": 2,
+        "enemies": [
+          [
+            15,
+            27,
+            0,
+            2
+          ],
+          [
+            0,
+            27,
+            0,
+            0
+          ]
+        ]
+      },
+      "settled_native": {
+        "hp": 0,
+        "block": 0,
+        "energy": 0,
+        "turn": 3,
+        "vulnerable": 2,
+        "enemies": [
+          [
+            15,
+            27,
+            0,
+            2
+          ],
+          [
+            0,
+            27,
+            0,
+            0
+          ]
+        ]
+      },
+      "model_after": {
+        "hp": 0,
+        "block": 0,
+        "energy": 0,
+        "turn": 3,
+        "vulnerable": 2,
+        "enemies": [
+          [
+            15,
+            27,
+            0,
+            2
+          ],
+          [
+            0,
+            27,
+            0,
+            0
+          ]
+        ]
+      },
+      "native_gone_flags_and_powers": [
+        [
+          {
+            "block": 0,
+            "class": "com.megacrit.cardcrawl.monsters.exordium.FungiBeast",
+            "escaped": false,
+            "half_dead": false,
+            "hp": 15,
+            "id": "FungiBeast",
+            "intent_visible": false,
+            "is_dead": false,
+            "is_dying": false,
+            "is_escaping": false,
+            "max_hp": 27,
+            "powers": [
+              {
+                "amount": 2,
+                "class": "com.megacrit.cardcrawl.powers.SporeCloudPower",
+                "id": "Spore Cloud",
+                "type": "BUFF"
+              },
+              {
+                "amount": 5,
+                "class": "com.megacrit.cardcrawl.powers.StrengthPower",
+                "id": "Strength",
+                "type": "BUFF"
+              }
+            ]
+          },
+          {
+            "block": 0,
+            "class": "com.megacrit.cardcrawl.monsters.exordium.FungiBeast",
+            "escaped": false,
+            "half_dead": false,
+            "hp": 0,
+            "id": "FungiBeast",
+            "intent_visible": false,
+            "is_dead": true,
+            "is_dying": true,
+            "is_escaping": false,
+            "max_hp": 27,
+            "powers": []
+          }
+        ],
+        [
+          {
+            "block": 0,
+            "class": "com.megacrit.cardcrawl.monsters.exordium.FungiBeast",
+            "escaped": false,
+            "half_dead": false,
+            "hp": 15,
+            "id": "FungiBeast",
+            "intent_visible": false,
+            "is_dead": false,
+            "is_dying": false,
+            "is_escaping": false,
+            "max_hp": 27,
+            "powers": [
+              {
+                "amount": 2,
+                "class": "com.megacrit.cardcrawl.powers.SporeCloudPower",
+                "id": "Spore Cloud",
+                "type": "BUFF"
+              },
+              {
+                "amount": 5,
+                "class": "com.megacrit.cardcrawl.powers.StrengthPower",
+                "id": "Strength",
+                "type": "BUFF"
+              }
+            ]
+          },
+          {
+            "block": 0,
+            "class": "com.megacrit.cardcrawl.monsters.exordium.FungiBeast",
+            "escaped": false,
+            "half_dead": false,
+            "hp": 0,
+            "id": "FungiBeast",
+            "intent_visible": false,
+            "is_dead": true,
+            "is_dying": true,
+            "is_escaping": false,
+            "max_hp": 27,
+            "powers": []
+          }
+        ]
+      ],
+      "original_hashes": {
+        "native_runtime/compact_fixture_r4_fungi_19/r4_death/RESULT.json": "c6432fddadc7cef8b049b65afdf552aafaf320c7bf0a2930b011da001b9c374f",
+        "native_runtime/compact_fixture_r4_fungi_19/r4_death/SETTLED.json": "33806f00f81b9f2a48ee40e9d0732c67036792b3c233fd30026905ddad12c81e",
+        "native_runtime/compact_fixture_r4_fungi_19/r4_death/actions.jsonl": "63c3bbcb9599b6279f024baa9e694386e52571eeb7e2ce6f2dbc9745221d0ccf",
+        "native_runtime/compact_fixture_r4_fungi_19/bridge/sessions/a3228cab-02a1-42b6-a5cb-324b8da823a4/raw.jsonl": "049c7292206a8f111fd5d3264ffb9890a6c62f292e10c6108c80d762079e8c9f",
+        "native_runtime/compact_fixture_r4_fungi_19/bridge/sessions/a3228cab-02a1-42b6-a5cb-324b8da823a4/attempts.jsonl": "99bc54aaf3f053d4daa57261cf301dcde4555d1313692d04daf2201a765f5c64",
+        "native_runtime/compact_fixture_r4_fungi_19/target.json": "a05064354c75a6278dfc4ff54b78c2d3fc3d6c6acb087710580163fb19f574bb",
+        "native_runtime/compact_fixture_r4_fungi_19/fixture_receipt.json": "04bb60c984e6990da564a84c5f53d5919edcb7a5909860508cd1cad6b5a7bbff",
+        "native_runtime/compact_fixture_r4_fungi_19/process_exit.json": "0e3685db15ba1a566a38cb1a5eb06037c58fb030de649221070fe7e9cbe26780"
+      }
+    }
+  ],
+  "discovery_samples": [
+    {
+      "seed": 3954898568915420294,
+      "strategy": "explore",
+      "dead_slot": 1,
+      "shard": "shard-0003.jsonl.gz",
+      "shard_sha256": "21ee0f557aa0cac2fbc84bed5d36eb3431ce1089e8e4db59669d3c945d2fde6f",
+      "old_inputs": 74,
+      "old_floor": 6,
+      "old_gaps": [
+        "death_boundary_unknown"
+      ],
+      "actions_on_exact_old_stop": [
+        1,
+        2,
+        3,
+        170
+      ],
+      "current_gaps": [],
+      "new_inputs": 89,
+      "new_outcome": "unsupported",
+      "new_floor": 7,
+      "new_page": "DELEGATED",
+      "new_gaps": [
+        "death_boundary_unknown"
+      ],
+      "repeat": {
+        "checked": true,
+        "matched": true,
+        "first_different_frame": null,
+        "first_different_action": null,
+        "repeat_reason": "unsupported",
+        "repeat_trace_sha256": "0cd77f863a673bef970d8300cc23339f9e83c0ea02d0392a1df9f7f462e06a58"
+      },
+      "free_trace_sha256": "0cd77f863a673bef970d8300cc23339f9e83c0ea02d0392a1df9f7f462e06a58"
+    },
+    {
+      "seed": 4716676514715652453,
+      "strategy": "fixed",
+      "dead_slot": 0,
+      "shard": "shard-0000.jsonl.gz",
+      "shard_sha256": "0f4e6d2d248aee5d3c331b8803270624c026b3fb68d51bfcc7edbe6eceecb75b",
+      "old_inputs": 116,
+      "old_floor": 8,
+      "old_gaps": [
+        "death_boundary_unknown"
+      ],
+      "actions_on_exact_old_stop": [
+        0,
+        2,
+        21,
+        23,
+        170
+      ],
+      "current_gaps": [],
+      "new_inputs": 134,
+      "new_outcome": "unsupported",
+      "new_floor": 9,
+      "new_page": "REWARD_UNVERIFIED",
+      "new_gaps": [
+        "reward_page_semantics_unverified"
+      ],
+      "repeat": {
+        "checked": true,
+        "matched": true,
+        "first_different_frame": null,
+        "first_different_action": null,
+        "repeat_reason": "unsupported",
+        "repeat_trace_sha256": "cf5dc77101c1441b73a2222307a966cc1b9aabba99a55aa6f3e2f4cc703603fb"
+      },
+      "free_trace_sha256": "cf5dc77101c1441b73a2222307a966cc1b9aabba99a55aa6f3e2f4cc703603fb"
+    },
+    {
+      "seed": 7190095831125284028,
+      "strategy": "survival",
+      "dead_slot": 0,
+      "shard": "shard-0000.jsonl.gz",
+      "shard_sha256": "0f4e6d2d248aee5d3c331b8803270624c026b3fb68d51bfcc7edbe6eceecb75b",
+      "old_inputs": 107,
+      "old_floor": 4,
+      "old_gaps": [
+        "death_boundary_unknown"
+      ],
+      "actions_on_exact_old_stop": [
+        0,
+        2,
+        3,
+        21,
+        170
+      ],
+      "current_gaps": [],
+      "new_inputs": 188,
+      "new_outcome": "unsupported",
+      "new_floor": 7,
+      "new_page": "DELEGATED",
+      "new_gaps": [
+        "death_boundary_unknown"
+      ],
+      "repeat": {
+        "checked": true,
+        "matched": true,
+        "first_different_frame": null,
+        "first_different_action": null,
+        "repeat_reason": "unsupported",
+        "repeat_trace_sha256": "56f3ab97bf36c433be935e6a752248250c3a52a0f2097945f2d907a97c13f272"
+      },
+      "free_trace_sha256": "56f3ab97bf36c433be935e6a752248250c3a52a0f2097945f2d907a97c13f272"
+    },
+    {
+      "seed": 64039012000851148,
+      "strategy": "survival",
+      "dead_slot": 1,
+      "shard": "shard-0000.jsonl.gz",
+      "shard_sha256": "0f4e6d2d248aee5d3c331b8803270624c026b3fb68d51bfcc7edbe6eceecb75b",
+      "old_inputs": 33,
+      "old_floor": 4,
+      "old_gaps": [
+        "death_boundary_unknown"
+      ],
+      "actions_on_exact_old_stop": [
+        170
+      ],
+      "current_gaps": [],
+      "new_inputs": 73,
+      "new_outcome": "unsupported",
+      "new_floor": 5,
+      "new_page": "DELEGATED",
+      "new_gaps": [
+        "death_boundary_unknown"
+      ],
+      "repeat": {
+        "checked": true,
+        "matched": true,
+        "first_different_frame": null,
+        "first_different_action": null,
+        "repeat_reason": "unsupported",
+        "repeat_trace_sha256": "554aa5607505c947fa5545ac29b2992138196db44907b4da511afbba7d14b0f1"
+      },
+      "free_trace_sha256": "554aa5607505c947fa5545ac29b2992138196db44907b4da511afbba7d14b0f1"
+    }
+  ]
+}

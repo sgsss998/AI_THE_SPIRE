@@ -1,0 +1,2353 @@
+{
+  "runtime": "experiments.sa_calibration_round7.reward_family.candidate",
+  "sources": {
+    "session.py": "431cf6f11d91bc3262c2e82671321311e53cfaf2d0fbad4b944aa088222416fa",
+    "candidate.py": "78b166b95966cd7b0947c314cb0765869564376659eb5b64f2486dd19d85625c",
+    "verify.py": "9d76058e7d51e3ee459f9b775ae04dc42aab7040ce626d6e3962ad17c0960b70",
+    "evidence.py": "8a67f428b6a4b116f819c633b94b1091066d9a4f40e67ef5754d057dc0a5bf20"
+  },
+  "rules": {
+    "retail_game_sha256": "dd60a613a6178e08f1a57bcb8d5747e33c21fd49e743b88d76e9d74042803b2a",
+    "classes": {
+      "ANCHOR": {
+        "name": "Anchor",
+        "native_id": "Anchor",
+        "hooks": [
+          "atBattleStart",
+          "justEnteredRoom"
+        ],
+        "external_id_references": [],
+        "class_sha256": "d940703753d36e2f14391471f5fdae2e236995574581a3458abc6f71fa4144a2"
+      },
+      "BLUE_CANDLE": {
+        "name": "BlueCandle",
+        "native_id": "Blue Candle",
+        "hooks": [
+          "onUseCard"
+        ],
+        "external_id_references": [
+          "cards/AbstractCard",
+          "unlock/relics/ironclad/BlueCandleUnlock",
+          "unlock/UnlockTracker"
+        ],
+        "class_sha256": "c88cca07728aa6bd8a41000cbc0562d8050e9a5422df2a6087f31879bc97392e"
+      },
+      "CULTIST_HEADPIECE": {
+        "name": "CultistMask",
+        "native_id": "CultistMask",
+        "hooks": [
+          "atBattleStart"
+        ],
+        "external_id_references": [
+          "events/shrines/FaceTrader"
+        ],
+        "class_sha256": "5ce5f26b466b3d6a2074e875f8c79907334a35f706492f10cda9d51186cb0e22"
+      },
+      "CURSED_KEY": {
+        "name": "CursedKey",
+        "native_id": "Cursed Key",
+        "hooks": [
+          "justEnteredRoom",
+          "onChestOpen",
+          "onEquip",
+          "onUnequip"
+        ],
+        "external_id_references": [
+          "characters/AbstractPlayer"
+        ],
+        "class_sha256": "990ab75e8aa77b82713f163bfcea9c0fb84dfe9a1293bdc2cb773fb4d733a460"
+      },
+      "DREAM_CATCHER": {
+        "name": "DreamCatcher",
+        "native_id": "Dream Catcher",
+        "hooks": [
+          "canSpawn"
+        ],
+        "external_id_references": [
+          "vfx/campfire/CampfireSleepEffect"
+        ],
+        "class_sha256": "95d49c533a74919f1058c97825404a1958207aa396662f54e58a6ca6c9d72da6"
+      },
+      "HOVERING_KITE": {
+        "name": "HoveringKite",
+        "native_id": "HoveringKite",
+        "hooks": [
+          "atTurnStart",
+          "onManualDiscard"
+        ],
+        "external_id_references": [],
+        "class_sha256": "c410ea5b17831452e5113e26886feeda1c144013ed5b3b4356d2f6a7776f0953"
+      },
+      "NLOTHS_HUNGRY_FACE": {
+        "name": "NlothsMask",
+        "native_id": "NlothsMask",
+        "hooks": [
+          "onChestOpenAfter",
+          "setCounter"
+        ],
+        "external_id_references": [
+          "events/shrines/FaceTrader"
+        ],
+        "class_sha256": "b4156a5f8b96ee96f79888ea37d8d25e45d1bb86290ce87e9ad123281fd010d1"
+      },
+      "ODDLY_SMOOTH_STONE": {
+        "name": "OddlySmoothStone",
+        "native_id": "Oddly Smooth Stone",
+        "hooks": [
+          "atBattleStart"
+        ],
+        "external_id_references": [],
+        "class_sha256": "a78841404c62235c3adc929a5c609ac5c478d330252f727bcff3d09a6656bbfc"
+      },
+      "TINY_HOUSE": {
+        "name": "TinyHouse",
+        "native_id": "Tiny House",
+        "hooks": [
+          "onEquip"
+        ],
+        "external_id_references": [],
+        "class_sha256": "2df43e52c5aae6177f36db34f773a4c480054fefae586d17695b2c0c323b1f09"
+      },
+      "MERCURY_HOURGLASS": {
+        "name": "MercuryHourglass",
+        "native_id": "Mercury Hourglass",
+        "hooks": [
+          "atTurnStart"
+        ],
+        "external_id_references": [],
+        "class_sha256": "e6e80fbe70eca13d6fa6592b570a66a540909029e22d54f9a5b87d4c8cdf6dc7"
+      },
+      "KUNAI": {
+        "name": "Kunai",
+        "native_id": "Kunai",
+        "hooks": [
+          "atTurnStart",
+          "onUseCard",
+          "onVictory"
+        ],
+        "external_id_references": [],
+        "class_sha256": "c5c86910acce270dfebf25e47d0b6693b2716a3bc20b041822d3b8ce0fdd5b8e"
+      },
+      "MEAL_TICKET": {
+        "name": "MealTicket",
+        "native_id": "MealTicket",
+        "hooks": [
+          "canSpawn",
+          "justEnteredRoom"
+        ],
+        "external_id_references": [],
+        "class_sha256": "de91c254e1599a99a867fca06b254c7c00b320f9b277592a9c36284a4da303c7"
+      },
+      "RUNIC_PYRAMID": {
+        "name": "RunicPyramid",
+        "native_id": "Runic Pyramid",
+        "hooks": [],
+        "external_id_references": [
+          "powers/RetainCardPower",
+          "actions/common/DiscardAtEndOfTurnAction"
+        ],
+        "class_sha256": "2b71cf457244ed88966a0cdbbbd0ebe19f6f89a21a910203137bb67b2cd3b8ef"
+      },
+      "ORICHALCUM": {
+        "name": "Orichalcum",
+        "native_id": "Orichalcum",
+        "hooks": [
+          "atTurnStart",
+          "onPlayerEndTurn",
+          "onPlayerGainedBlock",
+          "onVictory"
+        ],
+        "external_id_references": [],
+        "class_sha256": "f9308f9f77dc916567f737b7ff6dd5bb32fec6024ca9a4c524eca14754de6c9b"
+      },
+      "PRESERVED_INSECT": {
+        "name": "PreservedInsect",
+        "native_id": "PreservedInsect",
+        "hooks": [
+          "atBattleStart",
+          "canSpawn"
+        ],
+        "external_id_references": [
+          "core/AbstractCreature"
+        ],
+        "class_sha256": "d0981b59f3414de555c9ad0a790cb495a98f041eea6eb4ad9075f2290b810227"
+      },
+      "RING_OF_THE_SNAKE": {
+        "name": "SnakeRing",
+        "native_id": "Ring of the Snake",
+        "hooks": [
+          "atBattleStart"
+        ],
+        "external_id_references": [
+          "relics/RingOfTheSerpent",
+          "characters/TheSilent"
+        ],
+        "class_sha256": "e4eeb983a57aa5cf6c06795c2ac10f668cf80772c4ceb5b51af2eab3d3307d50"
+      },
+      "WARPED_TONGS": {
+        "name": "WarpedTongs",
+        "native_id": "WarpedTongs",
+        "hooks": [
+          "atTurnStartPostDraw"
+        ],
+        "external_id_references": [],
+        "class_sha256": "6769cfc1fb392498be21133e765c104e99f95ed797e8c16d4171ef764ca9d3dc"
+      },
+      "WRIST_BLADE": {
+        "name": "WristBlade",
+        "native_id": "WristBlade",
+        "hooks": [
+          "atDamageModify"
+        ],
+        "external_id_references": [],
+        "class_sha256": "9b4188089e02b70669c1667b7d1d3a9b11fa60a8aa4e5d627024a0d74dace14b"
+      }
+    },
+    "orichalcum_victory": [
+      "0: ALOAD_0",
+      "1: INVOKEVIRTUAL com.megacrit.cardcrawl.relics.Orichalcum.stopPulse()V",
+      "4: RETURN"
+    ],
+    "kunai_victory": [
+      "0: ALOAD_0",
+      "1: ICONST_M1",
+      "2: PUTFIELD com.megacrit.cardcrawl.relics.Kunai.counter:I",
+      "5: RETURN"
+    ]
+  },
+  "cohort": {
+    "previous_stops": 57,
+    "newly_opened": 9,
+    "seeds": [
+      2000041,
+      4000012,
+      5000047,
+      6000018,
+      6000044,
+      7000025,
+      8000003,
+      8000056,
+      9000003
+    ],
+    "closed": 48,
+    "records": [
+      {
+        "seed": 6,
+        "source": "THE_WOMAN_IN_BLUE",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "BLACK_STAR",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 28,
+        "source": "LAB",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "RING_OF_THE_SNAKE",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 31,
+        "source": "NEOW_SWAP_CALLING_BELL",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "CALLING_BELL",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 56,
+        "source": "NEOW_SWAP_CALLING_BELL",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "CALLING_BELL",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 1000003,
+        "source": "LAB",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "RING_OF_THE_SNAKE",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 1000025,
+        "source": "MONSTER",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "RING_OF_THE_SNAKE",
+            -1
+          ],
+          [
+            "GOLDEN_IDOL",
+            -1
+          ],
+          [
+            "MEAT_ON_THE_BONE",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 1000039,
+        "source": "THE_WOMAN_IN_BLUE",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "RING_OF_THE_SNAKE",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 2000014,
+        "source": "LAB",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "RING_OF_THE_SNAKE",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 2000016,
+        "source": "ELITE",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "RING_OF_THE_SNAKE",
+            -1
+          ],
+          [
+            "NEOWS_LAMENT",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 2000017,
+        "source": "MONSTER",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "RUNIC_DOME",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 2000027,
+        "source": "MONSTER",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "SOZU",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 2000030,
+        "source": "LAB",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "RING_OF_THE_SNAKE",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 2000034,
+        "source": "THE_WOMAN_IN_BLUE",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "PHILOSOPHERS_STONE",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 2000037,
+        "source": "MONSTER",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "SOZU",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 2000041,
+        "source": "MONSTER",
+        "previous_actions": [],
+        "actions": [
+          110,
+          111,
+          171
+        ],
+        "page": "COMBAT_REWARD",
+        "held_relics": [
+          [
+            "WRIST_BLADE",
+            -1
+          ]
+        ],
+        "claimed": {
+          "actions": [
+            110,
+            110,
+            177,
+            110,
+            111,
+            171
+          ],
+          "old_frame_rejections": 6,
+          "gold": 126,
+          "potions": [
+            null,
+            null
+          ],
+          "deck_size": 15,
+          "chosen": [
+            "Slice",
+            0
+          ],
+          "next_x": [
+            3
+          ]
+        },
+        "left_all": {
+          "actions": [
+            171
+          ],
+          "old_frame_rejections": 1,
+          "gold": 111,
+          "potions": [
+            null,
+            null
+          ],
+          "deck_size": 14,
+          "chosen": null,
+          "next_x": [
+            3
+          ]
+        }
+      },
+      {
+        "seed": 2000050,
+        "source": "NEOW_SWAP_TINY_HOUSE",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "TINY_HOUSE",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 2000056,
+        "source": "LAB",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "RING_OF_THE_SNAKE",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 3000020,
+        "source": "THE_WOMAN_IN_BLUE",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "RING_OF_THE_SNAKE",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 3000026,
+        "source": "NEOW_SWAP_CALLING_BELL",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "CALLING_BELL",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 3000058,
+        "source": "LAB",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "RING_OF_THE_SNAKE",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 3000066,
+        "source": "LAB",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "COFFEE_DRIPPER",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 4000012,
+        "source": "MONSTER",
+        "previous_actions": [],
+        "actions": [
+          110,
+          111,
+          171
+        ],
+        "page": "COMBAT_REWARD",
+        "held_relics": [
+          [
+            "HOVERING_KITE",
+            -1
+          ],
+          [
+            "ANCHOR",
+            -1
+          ],
+          [
+            "WARPED_TONGS",
+            -1
+          ]
+        ],
+        "claimed": {
+          "actions": [
+            110,
+            110,
+            177,
+            110,
+            111,
+            171
+          ],
+          "old_frame_rejections": 6,
+          "gold": 111,
+          "potions": [
+            null,
+            null
+          ],
+          "deck_size": 16,
+          "chosen": [
+            "Riddle With Holes",
+            0
+          ],
+          "next_x": [
+            1
+          ]
+        },
+        "left_all": {
+          "actions": [
+            171
+          ],
+          "old_frame_rejections": 1,
+          "gold": 99,
+          "potions": [
+            null,
+            null
+          ],
+          "deck_size": 15,
+          "chosen": null,
+          "next_x": [
+            1
+          ]
+        }
+      },
+      {
+        "seed": 4000016,
+        "source": "LAB",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "SOZU",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 4000053,
+        "source": "MONSTER",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "RING_OF_THE_SNAKE",
+            -1
+          ],
+          [
+            "OMAMORI",
+            2
+          ]
+        ]
+      },
+      {
+        "seed": 4000054,
+        "source": "THE_WOMAN_IN_BLUE",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "RING_OF_THE_SNAKE",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 4000058,
+        "source": "THE_WOMAN_IN_BLUE",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "RING_OF_THE_SNAKE",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 5000016,
+        "source": "LAB",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "ECTOPLASM",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 5000023,
+        "source": "MONSTER",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "VELVET_CHOKER",
+            -1
+          ],
+          [
+            "GOLDEN_IDOL",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 5000043,
+        "source": "MONSTER",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "BUSTED_CROWN",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 5000047,
+        "source": "MONSTER",
+        "previous_actions": [],
+        "actions": [
+          110,
+          111,
+          171
+        ],
+        "page": "COMBAT_REWARD",
+        "held_relics": [
+          [
+            "CURSED_KEY",
+            -1
+          ]
+        ],
+        "claimed": {
+          "actions": [
+            110,
+            110,
+            177,
+            110,
+            111,
+            171
+          ],
+          "old_frame_rejections": 6,
+          "gold": 131,
+          "potions": [
+            null,
+            null
+          ],
+          "deck_size": 15,
+          "chosen": [
+            "Cloak And Dagger",
+            0
+          ],
+          "next_x": [
+            0
+          ]
+        },
+        "left_all": {
+          "actions": [
+            171
+          ],
+          "old_frame_rejections": 1,
+          "gold": 115,
+          "potions": [
+            null,
+            null
+          ],
+          "deck_size": 14,
+          "chosen": null,
+          "next_x": [
+            0
+          ]
+        }
+      },
+      {
+        "seed": 5000049,
+        "source": "NEOW_SWAP_TINY_HOUSE",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "TINY_HOUSE",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 5000066,
+        "source": "NEOW_SWAP_CALLING_BELL",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "CALLING_BELL",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 6000004,
+        "source": "THE_WOMAN_IN_BLUE",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "RING_OF_THE_SNAKE",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 6000018,
+        "source": "MONSTER",
+        "previous_actions": [],
+        "actions": [
+          110,
+          111,
+          171
+        ],
+        "page": "COMBAT_REWARD",
+        "held_relics": [
+          [
+            "RING_OF_THE_SNAKE",
+            -1
+          ],
+          [
+            "BLUE_CANDLE",
+            -1
+          ]
+        ],
+        "claimed": {
+          "actions": [
+            110,
+            110,
+            177,
+            110,
+            110,
+            171
+          ],
+          "old_frame_rejections": 6,
+          "gold": 145,
+          "potions": [
+            null,
+            null
+          ],
+          "deck_size": 17,
+          "chosen": [
+            "Predator",
+            0
+          ],
+          "next_x": [
+            1,
+            2
+          ]
+        },
+        "left_all": {
+          "actions": [
+            171
+          ],
+          "old_frame_rejections": 1,
+          "gold": 135,
+          "potions": [
+            null,
+            null
+          ],
+          "deck_size": 16,
+          "chosen": null,
+          "next_x": [
+            1,
+            2
+          ]
+        }
+      },
+      {
+        "seed": 6000043,
+        "source": "NEOW_SWAP_CALLING_BELL",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "CALLING_BELL",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 6000044,
+        "source": "MONSTER",
+        "previous_actions": [],
+        "actions": [
+          110,
+          111,
+          171
+        ],
+        "page": "COMBAT_REWARD",
+        "held_relics": [
+          [
+            "RING_OF_THE_SNAKE",
+            -1
+          ],
+          [
+            "PRESERVED_INSECT",
+            -1
+          ],
+          [
+            "NLOTHS_HUNGRY_FACE",
+            -1
+          ]
+        ],
+        "claimed": {
+          "actions": [
+            110,
+            110,
+            177,
+            110,
+            112,
+            171
+          ],
+          "old_frame_rejections": 6,
+          "gold": 127,
+          "potions": [
+            null,
+            null
+          ],
+          "deck_size": 14,
+          "chosen": [
+            "Dash",
+            0
+          ],
+          "next_x": [
+            3
+          ]
+        },
+        "left_all": {
+          "actions": [
+            171
+          ],
+          "old_frame_rejections": 1,
+          "gold": 112,
+          "potions": [
+            null,
+            null
+          ],
+          "deck_size": 13,
+          "chosen": null,
+          "next_x": [
+            3
+          ]
+        }
+      },
+      {
+        "seed": 6000054,
+        "source": "TREASURE",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "SOZU",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 6000064,
+        "source": "MONSTER",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "PHILOSOPHERS_STONE",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 7000016,
+        "source": "THE_WOMAN_IN_BLUE",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "RING_OF_THE_SNAKE",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 7000025,
+        "source": "MONSTER",
+        "previous_actions": [],
+        "actions": [
+          110,
+          111,
+          112,
+          171
+        ],
+        "page": "COMBAT_REWARD",
+        "held_relics": [
+          [
+            "HOVERING_KITE",
+            -1
+          ],
+          [
+            "ORICHALCUM",
+            -1
+          ]
+        ],
+        "claimed": {
+          "actions": [
+            110,
+            110,
+            110,
+            177,
+            110,
+            112,
+            171
+          ],
+          "old_frame_rejections": 7,
+          "gold": 134,
+          "potions": [
+            "skillpotion",
+            null
+          ],
+          "deck_size": 14,
+          "chosen": [
+            "Dodge and Roll",
+            0
+          ],
+          "next_x": [
+            1
+          ]
+        },
+        "left_all": {
+          "actions": [
+            171
+          ],
+          "old_frame_rejections": 1,
+          "gold": 123,
+          "potions": [
+            null,
+            null
+          ],
+          "deck_size": 13,
+          "chosen": null,
+          "next_x": [
+            1
+          ]
+        }
+      },
+      {
+        "seed": 7000064,
+        "source": "NEOW_SWAP_TINY_HOUSE",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "TINY_HOUSE",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 8000003,
+        "source": "MONSTER",
+        "previous_actions": [],
+        "actions": [
+          110,
+          111,
+          171
+        ],
+        "page": "COMBAT_REWARD",
+        "held_relics": [
+          [
+            "RING_OF_THE_SNAKE",
+            -1
+          ],
+          [
+            "CULTIST_HEADPIECE",
+            -1
+          ]
+        ],
+        "claimed": {
+          "actions": [
+            110,
+            110,
+            177,
+            110,
+            112,
+            171
+          ],
+          "old_frame_rejections": 6,
+          "gold": 110,
+          "potions": [
+            null,
+            null
+          ],
+          "deck_size": 15,
+          "chosen": [
+            "Calculated Gamble",
+            0
+          ],
+          "next_x": [
+            5,
+            6
+          ]
+        },
+        "left_all": {
+          "actions": [
+            171
+          ],
+          "old_frame_rejections": 1,
+          "gold": 99,
+          "potions": [
+            null,
+            null
+          ],
+          "deck_size": 14,
+          "chosen": null,
+          "next_x": [
+            5,
+            6
+          ]
+        }
+      },
+      {
+        "seed": 8000004,
+        "source": "NEOW_SWAP_TINY_HOUSE",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "TINY_HOUSE",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 8000031,
+        "source": "TREASURE",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "RING_OF_THE_SNAKE",
+            -1
+          ],
+          [
+            "AKABEKO",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 8000033,
+        "source": "MONSTER",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "RUNIC_PYRAMID",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 8000038,
+        "source": "NEOW_SWAP_CALLING_BELL",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "CALLING_BELL",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 8000050,
+        "source": "NEOW_SWAP_TINY_HOUSE",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "TINY_HOUSE",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 8000056,
+        "source": "MONSTER",
+        "previous_actions": [],
+        "actions": [
+          110,
+          111,
+          171
+        ],
+        "page": "COMBAT_REWARD",
+        "held_relics": [
+          [
+            "RING_OF_THE_SNAKE",
+            -1
+          ],
+          [
+            "DREAM_CATCHER",
+            -1
+          ]
+        ],
+        "claimed": {
+          "actions": [
+            110,
+            110,
+            177,
+            110,
+            111,
+            171
+          ],
+          "old_frame_rejections": 6,
+          "gold": 109,
+          "potions": [
+            null,
+            null
+          ],
+          "deck_size": 14,
+          "chosen": [
+            "Escape Plan",
+            0
+          ],
+          "next_x": [
+            2
+          ]
+        },
+        "left_all": {
+          "actions": [
+            171
+          ],
+          "old_frame_rejections": 1,
+          "gold": 99,
+          "potions": [
+            null,
+            null
+          ],
+          "deck_size": 13,
+          "chosen": null,
+          "next_x": [
+            2
+          ]
+        }
+      },
+      {
+        "seed": 9000003,
+        "source": "MONSTER",
+        "previous_actions": [],
+        "actions": [
+          110,
+          111,
+          112,
+          171
+        ],
+        "page": "COMBAT_REWARD",
+        "held_relics": [
+          [
+            "RING_OF_THE_SNAKE",
+            -1
+          ],
+          [
+            "ODDLY_SMOOTH_STONE",
+            -1
+          ]
+        ],
+        "claimed": {
+          "actions": [
+            110,
+            110,
+            110,
+            177,
+            110,
+            110,
+            171
+          ],
+          "old_frame_rejections": 7,
+          "gold": 112,
+          "potions": [
+            "essenceofsteel",
+            null
+          ],
+          "deck_size": 14,
+          "chosen": [
+            "Leg Sweep",
+            0
+          ],
+          "next_x": [
+            2
+          ]
+        },
+        "left_all": {
+          "actions": [
+            171
+          ],
+          "old_frame_rejections": 1,
+          "gold": 99,
+          "potions": [
+            null,
+            null
+          ],
+          "deck_size": 13,
+          "chosen": null,
+          "next_x": [
+            2
+          ]
+        }
+      },
+      {
+        "seed": 9000005,
+        "source": "LAB",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "BLACK_STAR",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 9000033,
+        "source": "MONSTER",
+        "previous_actions": [
+          110,
+          111,
+          112,
+          171
+        ],
+        "actions": [
+          110,
+          111,
+          112,
+          171
+        ],
+        "page": "COMBAT_REWARD",
+        "held_relics": [
+          [
+            "RING_OF_THE_SNAKE",
+            -1
+          ],
+          [
+            "CENTENNIAL_PUZZLE",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 9000048,
+        "source": "NEOW_SWAP_CALLING_BELL",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "CALLING_BELL",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 9000060,
+        "source": "MONSTER",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "ECTOPLASM",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 17000022,
+        "source": "THE_WOMAN_IN_BLUE",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "RING_OF_THE_SNAKE",
+            -1
+          ],
+          [
+            "NEOWS_LAMENT",
+            2
+          ]
+        ]
+      },
+      {
+        "seed": 17000027,
+        "source": "LAB",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "RING_OF_THE_SNAKE",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 17000033,
+        "source": "NEOW_SWAP_CALLING_BELL",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "CALLING_BELL",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 17000036,
+        "source": "NEOW_SWAP_TINY_HOUSE",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "TINY_HOUSE",
+            -1
+          ]
+        ]
+      },
+      {
+        "seed": 17000039,
+        "source": "MONSTER",
+        "previous_actions": [],
+        "actions": [],
+        "page": "REWARD_UNVERIFIED",
+        "held_relics": [
+          [
+            "RUNIC_DOME",
+            -1
+          ]
+        ]
+      }
+    ]
+  },
+  "wrist": {
+    "seed": 7000047,
+    "archive": "compact_fixture_boss_loot_wrist_7000047_recheck",
+    "original_inputs": 17,
+    "matched_public_reward_and_map_frames": 6,
+    "states": [
+      {
+        "original_sequence": 16,
+        "original_sha256": "d56244d0257b5cdae97c628459b8f39dce0f37832071b57ca136d271083a4cdc",
+        "available": [
+          110,
+          111,
+          112,
+          171
+        ],
+        "gold": 99,
+        "deck_size": 13,
+        "potions": [
+          "Potion Slot",
+          "Potion Slot"
+        ],
+        "original_action": 110
+      },
+      {
+        "original_sequence": 17,
+        "original_sha256": "9b5c0fb31e798c07132d86cf66899b64463cec2c73e7eed7f2ddd8bb40584185",
+        "available": [
+          110,
+          111,
+          171
+        ],
+        "gold": 114,
+        "deck_size": 13,
+        "potions": [
+          "Potion Slot",
+          "Potion Slot"
+        ],
+        "original_action": 110
+      },
+      {
+        "original_sequence": 18,
+        "original_sha256": "08c1d09e976973a0411836aee24bca3838da5b80ac067ba6b0885361b521b5f7",
+        "available": [
+          105,
+          110,
+          171
+        ],
+        "gold": 114,
+        "deck_size": 13,
+        "potions": [
+          "FairyPotion",
+          "Potion Slot"
+        ],
+        "original_action": 110
+      },
+      {
+        "original_sequence": 19,
+        "original_sha256": "51ef804bf50b07345640c9a1c319d6f5100cb7162cb3f37cff186b3431072c5b",
+        "available": [
+          105,
+          110,
+          111,
+          112,
+          177
+        ],
+        "gold": 114,
+        "deck_size": 13,
+        "potions": [
+          "FairyPotion",
+          "Potion Slot"
+        ],
+        "original_action": 111
+      },
+      {
+        "original_sequence": 20,
+        "original_sha256": "32471c8a5377723256e337f934779b7aebfbec0776b02665e8b4c462465c12d4",
+        "available": [
+          105,
+          171
+        ],
+        "gold": 114,
+        "deck_size": 14,
+        "potions": [
+          "FairyPotion",
+          "Potion Slot"
+        ],
+        "original_action": 171
+      },
+      {
+        "original_sequence": 21,
+        "original_sha256": "ddfd7acf93425d486132d360285ded28cab48fea670d01d223e3db9b3319d101",
+        "available": null,
+        "gold": 114,
+        "deck_size": 14,
+        "potions": [
+          "FairyPotion",
+          "Potion Slot"
+        ],
+        "original_action": null
+      }
+    ]
+  },
+  "wrist_drop": {
+    "seed": 7000047,
+    "archive": "compact_fixture_boss_loot_wrist_discard_7000047",
+    "original_inputs": 18,
+    "matched_public_reward_and_map_frames": 7,
+    "states": [
+      {
+        "original_sequence": 16,
+        "original_sha256": "8abc6a0079ef2d80c224c673288f305c0b826e61ed837e729b9074f7e0406c06",
+        "available": [
+          110,
+          111,
+          112,
+          171
+        ],
+        "gold": 99,
+        "deck_size": 13,
+        "potions": [
+          "Potion Slot",
+          "Potion Slot"
+        ],
+        "original_action": 110
+      },
+      {
+        "original_sequence": 17,
+        "original_sha256": "93c1aff3dd000e954b1a9f807e310cd5538ef979f36f23d7920282fe947eb895",
+        "available": [
+          110,
+          111,
+          171
+        ],
+        "gold": 114,
+        "deck_size": 13,
+        "potions": [
+          "Potion Slot",
+          "Potion Slot"
+        ],
+        "original_action": 110
+      },
+      {
+        "original_sequence": 18,
+        "original_sha256": "7254c45fd4696cd1e32cb8054f6b06a9a089a6c2c54024ca18738ebfca098cda",
+        "available": [
+          105,
+          110,
+          171
+        ],
+        "gold": 114,
+        "deck_size": 13,
+        "potions": [
+          "FairyPotion",
+          "Potion Slot"
+        ],
+        "original_action": 110
+      },
+      {
+        "original_sequence": 19,
+        "original_sha256": "f94247b4a6db2c03f6f2e2d10057d01e9cf0dcda233e2ab8820000d61046262e",
+        "available": [
+          105,
+          110,
+          111,
+          112,
+          177
+        ],
+        "gold": 114,
+        "deck_size": 13,
+        "potions": [
+          "FairyPotion",
+          "Potion Slot"
+        ],
+        "original_action": 105
+      },
+      {
+        "original_sequence": 20,
+        "original_sha256": "f8f9dfe9f544c14baf8fec60d06a258525b7fb128d88ff7c045cf2db46591e52",
+        "available": [
+          110,
+          111,
+          112,
+          177
+        ],
+        "gold": 114,
+        "deck_size": 13,
+        "potions": [
+          "Potion Slot",
+          "Potion Slot"
+        ],
+        "original_action": 111
+      },
+      {
+        "original_sequence": 21,
+        "original_sha256": "a2b48f03c4e5c0be91a6b520b73ecbbc6057a37a7f95f01d168d3e983f72ce18",
+        "available": [
+          171
+        ],
+        "gold": 114,
+        "deck_size": 14,
+        "potions": [
+          "Potion Slot",
+          "Potion Slot"
+        ],
+        "original_action": 171
+      },
+      {
+        "original_sequence": 22,
+        "original_sha256": "5fcf6f80d63e5f6e3e0344334e9fa6c540f8a5be4c36d4665b83749f5ea11288",
+        "available": null,
+        "gold": 114,
+        "deck_size": 14,
+        "potions": [
+          "Potion Slot",
+          "Potion Slot"
+        ],
+        "original_action": null
+      }
+    ]
+  },
+  "stone_retail": {
+    "seed": 54072729,
+    "source_sha256": "ec5082d2695f785e3dc42db77778674769341b5859200c3663ade772d600641a",
+    "evidence": "recorded original transactions",
+    "ordinary_room_steps": [
+      [
+        {
+          "sequence": 1068,
+          "screen": "COMBAT_REWARD",
+          "command": "choose 0",
+          "wallet": 220,
+          "potions": [
+            "Dexterity Potion",
+            "Potion Slot"
+          ],
+          "deck": 17,
+          "receipt_sha256": "9a18198e92e96bea04ba85cf647da0a1b210606f6e0d16e65191f3e769afaa72"
+        },
+        {
+          "sequence": 1069,
+          "screen": "COMBAT_REWARD",
+          "command": "choose 0",
+          "wallet": 231,
+          "potions": [
+            "Dexterity Potion",
+            "Potion Slot"
+          ],
+          "deck": 17,
+          "receipt_sha256": "f769b76b7f85fb3b33bed2aeaeff7231c47cdd4b27f50dcc17ba281aa8a902f6"
+        },
+        {
+          "sequence": 1070,
+          "screen": "COMBAT_REWARD",
+          "command": "choose 0",
+          "wallet": 231,
+          "potions": [
+            "Dexterity Potion",
+            "CultistPotion"
+          ],
+          "deck": 17,
+          "receipt_sha256": "f1211df2595ca261adeb5e8c9e2c54748ba457b5336252078e5360c460fe0885"
+        },
+        {
+          "sequence": 1071,
+          "screen": "CARD_REWARD",
+          "command": "choose 0",
+          "wallet": 231,
+          "potions": [
+            "Dexterity Potion",
+            "CultistPotion"
+          ],
+          "deck": 17,
+          "receipt_sha256": "729aacbdc78e4bd3db9ea17f5417e470fc7cef1f508076110795baadc5b32e00"
+        },
+        {
+          "sequence": 1072,
+          "screen": "COMBAT_REWARD",
+          "command": "state",
+          "wallet": 231,
+          "potions": [
+            "Dexterity Potion",
+            "CultistPotion"
+          ],
+          "deck": 17,
+          "receipt_sha256": "a5abcd90e6bd6e8aa6e5806b6c35f94767821f7579ff5a4a446694ca0e90b510"
+        },
+        {
+          "sequence": 1073,
+          "screen": "COMBAT_REWARD",
+          "command": "proceed",
+          "wallet": 231,
+          "potions": [
+            "Dexterity Potion",
+            "CultistPotion"
+          ],
+          "deck": 18,
+          "receipt_sha256": "da6601aa02af81a2d3cf930cf3be13b310435ecb264baac29c668536de281cb1"
+        }
+      ],
+      [
+        {
+          "sequence": 1098,
+          "screen": "COMBAT_REWARD",
+          "command": "choose 0",
+          "wallet": 231,
+          "potions": [
+            "Dexterity Potion",
+            "CultistPotion"
+          ],
+          "deck": 18,
+          "receipt_sha256": "dcb148d1c9e94f42e0c0283e244988d5849220d152ee2ee220b178be580e3e4e"
+        },
+        {
+          "sequence": 1099,
+          "screen": "COMBAT_REWARD",
+          "command": "choose 1",
+          "wallet": 250,
+          "potions": [
+            "Dexterity Potion",
+            "CultistPotion"
+          ],
+          "deck": 18,
+          "receipt_sha256": "4e4e5bb01acea2385c848e7ceee0443afacdd26096da51ebad41e4db2d4b2d44"
+        },
+        {
+          "sequence": 1100,
+          "screen": "CARD_REWARD",
+          "command": "choose 0",
+          "wallet": 250,
+          "potions": [
+            "Dexterity Potion",
+            "CultistPotion"
+          ],
+          "deck": 18,
+          "receipt_sha256": "c4dd15b6e35f4d30d39e68ed268992b2349a545ba46fd9ecc66cc3dcf2d2f1c6"
+        },
+        {
+          "sequence": 1101,
+          "screen": "COMBAT_REWARD",
+          "command": "state",
+          "wallet": 250,
+          "potions": [
+            "Dexterity Potion",
+            "CultistPotion"
+          ],
+          "deck": 18,
+          "receipt_sha256": "aa76693e811663ab7ddd269d119f736510a017aab73a62a99caaeba5d21851e6"
+        },
+        {
+          "sequence": 1102,
+          "screen": "COMBAT_REWARD",
+          "command": "proceed",
+          "wallet": 250,
+          "potions": [
+            "Dexterity Potion",
+            "CultistPotion"
+          ],
+          "deck": 19,
+          "receipt_sha256": "5f637d408bcda9fe83f2595e00b617d3d18c7bba700030d36f6ca08050141f37"
+        }
+      ]
+    ]
+  },
+  "stone_prefix": {
+    "seed": 54072729,
+    "public_inputs": 84,
+    "selected_reward_frames_reached": [],
+    "stop": {
+      "sequence": 980,
+      "action": 110,
+      "reason": "unavailable_input",
+      "model_page": "COMBAT_REWARD",
+      "offered": [
+        110,
+        111,
+        171
+      ]
+    },
+    "representation_bridges": [
+      {
+        "sequence": 894,
+        "command": "choose 0",
+        "receipt": "7bae9c0220796e5725e6a1f922eea002504f48dc89cb9bed56745d3cf0500921"
+      }
+    ]
+  },
+  "deep_act2": {
+    "seed": 13655749040571095217,
+    "opening": "retail precombat save, Act II floor 18",
+    "precombat_save_sha256": "455fdd0a959e18fea8fbd6dab2ad172387f7ba0b0f84938f9726e6aa2ca6f69d",
+    "sources": {
+      "actions.jsonl": "a8ca63ec183a9c1d834205163fdb6f45ca1c78c952c9bc784e2b15e178cb72f6",
+      "raw.jsonl": "63a19837f88517d9abac9128bf33aa7c2abd2443dd1369a5e201606248aaf720"
+    },
+    "matched_actions": 30,
+    "compared_frames": 31,
+    "first_difference": null,
+    "final_frames": [
+      {
+        "sequence": 33,
+        "checked": [
+          "resources",
+          "page",
+          "deck",
+          "relics",
+          "potions",
+          "rewards"
+        ],
+        "diff": {},
+        "native_state_hash": "caaf9aea6ce8177f2b1660bb2adc6520cda8e5ecf3a28e87cb10ad4f4cdb57dc",
+        "native_fields": {
+          "resources": [
+            40,
+            71,
+            288,
+            18,
+            2,
+            20
+          ],
+          "page": 2,
+          "deck": [
+            [
+              "AscendersBane",
+              0
+            ],
+            [
+              "Strike_G",
+              0
+            ],
+            [
+              "Strike_G",
+              0
+            ],
+            [
+              "Strike_G",
+              0
+            ],
+            [
+              "Strike_G",
+              0
+            ],
+            [
+              "Defend_G",
+              0
+            ],
+            [
+              "Defend_G",
+              0
+            ],
+            [
+              "Defend_G",
+              0
+            ],
+            [
+              "Defend_G",
+              0
+            ],
+            [
+              "Survivor",
+              0
+            ],
+            [
+              "Neutralize",
+              1
+            ],
+            [
+              "Finisher",
+              0
+            ],
+            [
+              "Dash",
+              0
+            ],
+            [
+              "Acrobatics",
+              0
+            ],
+            [
+              "Noxious Fumes",
+              1
+            ],
+            [
+              "Backflip",
+              0
+            ],
+            [
+              "Masterful Stab",
+              0
+            ],
+            [
+              "Calculated Gamble",
+              0
+            ],
+            [
+              "Slice",
+              0
+            ],
+            [
+              "Envenom",
+              0
+            ]
+          ],
+          "relics": [
+            [
+              "tinyhouse",
+              -1
+            ],
+            [
+              "mercuryhourglass",
+              -1
+            ],
+            [
+              "kunai",
+              -1
+            ],
+            [
+              "mealticket",
+              -1
+            ],
+            [
+              "runicpyramid",
+              -1
+            ]
+          ],
+          "potions": [
+            null,
+            null
+          ],
+          "rewards": [
+            [
+              "GOLD",
+              11
+            ],
+            [
+              "CARD",
+              null
+            ]
+          ]
+        },
+        "native_fields_sha256": "2bf5a50f40d774556e962a5994d168d304c32a51e4dfecb5a782857edce646a0",
+        "model_fields_sha256": "2bf5a50f40d774556e962a5994d168d304c32a51e4dfecb5a782857edce646a0",
+        "simulator": {
+          "page": "COMBAT_REWARD",
+          "scene": "act2/MONSTER/REWARDS/COMBAT_REWARD",
+          "engine_steps": 29,
+          "hp": 40,
+          "max_hp": 71,
+          "gold": 288,
+          "floor": 18,
+          "act": 2,
+          "event": null,
+          "legal": [
+            110,
+            111,
+            171
+          ],
+          "gaps": [],
+          "complete": true,
+          "done": false,
+          "sha256": "29fb16add681e2c7aff67b9878c9b148624c43d938cc99c1b235fb6014867a55"
+        },
+        "kernel_choices": [
+          [
+            4,
+            11,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            106,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            91,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            19,
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "kernel_legal": [
+          81,
+          82,
+          83,
+          84,
+          85
+        ],
+        "original_options": [
+          [
+            "GOLD",
+            11
+          ],
+          [
+            "CARD",
+            null
+          ]
+        ]
+      },
+      {
+        "sequence": 34,
+        "checked": [
+          "resources",
+          "page",
+          "deck",
+          "relics",
+          "potions",
+          "offered_cards"
+        ],
+        "diff": {},
+        "native_state_hash": "b186ffa34e2ab115aa79c8e1cfc10972d9138320a625028125b53aef36eeb901",
+        "native_fields": {
+          "resources": [
+            40,
+            71,
+            288,
+            18,
+            2,
+            20
+          ],
+          "page": 10,
+          "deck": [
+            [
+              "AscendersBane",
+              0
+            ],
+            [
+              "Strike_G",
+              0
+            ],
+            [
+              "Strike_G",
+              0
+            ],
+            [
+              "Strike_G",
+              0
+            ],
+            [
+              "Strike_G",
+              0
+            ],
+            [
+              "Defend_G",
+              0
+            ],
+            [
+              "Defend_G",
+              0
+            ],
+            [
+              "Defend_G",
+              0
+            ],
+            [
+              "Defend_G",
+              0
+            ],
+            [
+              "Survivor",
+              0
+            ],
+            [
+              "Neutralize",
+              1
+            ],
+            [
+              "Finisher",
+              0
+            ],
+            [
+              "Dash",
+              0
+            ],
+            [
+              "Acrobatics",
+              0
+            ],
+            [
+              "Noxious Fumes",
+              1
+            ],
+            [
+              "Backflip",
+              0
+            ],
+            [
+              "Masterful Stab",
+              0
+            ],
+            [
+              "Calculated Gamble",
+              0
+            ],
+            [
+              "Slice",
+              0
+            ],
+            [
+              "Envenom",
+              0
+            ]
+          ],
+          "relics": [
+            [
+              "tinyhouse",
+              -1
+            ],
+            [
+              "mercuryhourglass",
+              -1
+            ],
+            [
+              "kunai",
+              -1
+            ],
+            [
+              "mealticket",
+              -1
+            ],
+            [
+              "runicpyramid",
+              -1
+            ]
+          ],
+          "potions": [
+            null,
+            null
+          ],
+          "offered_cards": [
+            [
+              "Deflect",
+              0
+            ],
+            [
+              "Dagger Spray",
+              0
+            ],
+            [
+              "Backflip",
+              1
+            ]
+          ]
+        },
+        "native_fields_sha256": "dcad98625138faa2e0d83db57e7ad9e9c71032a014a14795125959fdb06bab45",
+        "model_fields_sha256": "dcad98625138faa2e0d83db57e7ad9e9c71032a014a14795125959fdb06bab45",
+        "simulator": {
+          "page": "CARD_REWARD",
+          "scene": "act2/MONSTER/NATIVE_CARD_REWARD_OVERLAY/CARD_REWARD",
+          "engine_steps": 29,
+          "hp": 40,
+          "max_hp": 71,
+          "gold": 288,
+          "floor": 18,
+          "act": 2,
+          "event": null,
+          "legal": [
+            110,
+            111,
+            112,
+            177
+          ],
+          "gaps": [],
+          "complete": true,
+          "done": false,
+          "sha256": "06efb995bdd3f8e0b6e3cf1eeaf17318d71adac1e1abe50e2b8cafdc17ef3039"
+        },
+        "kernel_choices": [
+          [
+            4,
+            11,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            106,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            91,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            19,
+            1,
+            0,
+            0,
+            1
+          ],
+          [
+            6,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "kernel_legal": [
+          81,
+          82,
+          83,
+          84,
+          85
+        ],
+        "original_options": [
+          [
+            "Deflect",
+            0
+          ],
+          [
+            "Dagger Spray",
+            0
+          ],
+          [
+            "Backflip",
+            1
+          ]
+        ]
+      }
+    ]
+  },
+  "rejected": {
+    "event_reward": [
+      8
+    ],
+    "second_act_wrong_inventory": [
+      4
+    ],
+    "sozu": [
+      34
+    ],
+    "golden_idol": [
+      34
+    ],
+    "ectoplasm": [
+      34
+    ],
+    "counter_changed": [
+      35
+    ],
+    "wallet_changed_before_claim": [
+      2
+    ],
+    "invalid_potion_gain_in_transition": [
+      17
+    ]
+  }
+}

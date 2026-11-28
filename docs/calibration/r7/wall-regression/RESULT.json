@@ -1,0 +1,240 @@
+{
+  "interface": {
+    "state_version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1+silent-a20-round5-v1+silent-a20-round6-v1+silent-a20-round7-v1",
+    "state_sha256": "3c87892598e6f72ff6f099c90c0e1318c0b3ac80309af325466f7d76c4db7ddc",
+    "card_registry_sha256": "cc7dd2446135675ad273bbdc09914909f8ab1c0aca854a8c00dd3d8b6f91a26a",
+    "action_version": "silent-canonical-row-a193-v1",
+    "action_adapter_version": "canonical-row-choice64-v1+frontier-settled+compact-decisions-v2+public-transitions-v1+ordinary-events-rewards-v1+shop-reward-discard-gold-and-death-settlement-v1+ending-route-paid-neow-permanent-upgrade-cancel-and-complete-card-masks-v2+ordinary-targets-and-victory-loot-v1+match-poison-and-idol-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+settled-neow-and-linked-chest-rewards-v1+round1-flex-chest-v1+round2-v1+round3-calibration-v1+silent-a20-round4-v1+silent-a20-round5-v1+silent-a20-round6-v1+silent-a20-round7-v1",
+    "action_contract_sha256": "0ae8ba53dfdde48ad0f4a4ae03cfd045fc2677ac50df3cae9a6ed7558962b78e",
+    "action_coordinates": "observation_monster_row",
+    "action_source_sha256": "92db5a3e82e432ac5e56b94fa2f24e04acc607b2dbc7df1dd5a6712c0270a788",
+    "state_decoder_sha256": "afec66fe87db2dbcc0370e86536e5b07a3558349144accbade364622a40212ed",
+    "backend_build_sha256": "5f81347346994e460ceaa8e500ff3f08637a33f2eb4a220cff467fc8f6105fa5",
+    "backend_commit": "482b3ef29c93746ada7d6fd0fd16885d7cc30b1f",
+    "backend_observation_version": 4,
+    "backend_observation_dimension": 1761,
+    "backend_actions": 146,
+    "observation_dimension": 3122,
+    "actions": 193
+  },
+  "edition": "experiments.sa_calibration_round7.release",
+  "reference_sha256": "4c9fb48f45c3e837ce4eedfcfe64b88dfb9104c685eb3040b1edcd034d49f03e",
+  "archive_sha256": "55949d0a9337ef4747560f68599e6bf58f4b5e20c2a33f7c2ae2807811cc647e",
+  "summary": {
+    "seeds": 704,
+    "outcomes": {
+      "loss": 376,
+      "unsupported": 328
+    },
+    "transitions": {
+      "loss->loss": 372,
+      "unsupported->unsupported": 328,
+      "unsupported->loss": 4
+    },
+    "max_floor": 11,
+    "decisions": 62940,
+    "deaths_with_partial_action_sets": 353,
+    "stop_pages": {
+      "NEOW_RESULT_UNVERIFIED": 51,
+      "GRID_UNVERIFIED": 87,
+      "REWARD_UNVERIFIED": 57,
+      "DELEGATED": 99,
+      "EVENT_RESULT_UNVERIFIED": 34
+    }
+  },
+  "changed": [
+    {
+      "seed": 1000008,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 5,
+      "engine_steps": 86,
+      "ui_only_actions": 11,
+      "incomplete_action_sets": 9,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 5,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "GRID_UNVERIFIED",
+      "previous_floor": 2,
+      "cap": 300,
+      "action_sha256": "28d6ad0ccbecfae3178af5d331e9946c34d5f684445600c485e0feabc3229e0f",
+      "previous_action_sha256": "39be4056687076da51bc4f04acc556558e1a60a4e4fd1d2da590875b0bd239e7",
+      "first_different_decision": 41,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        114
+      ]
+    },
+    {
+      "seed": 1000017,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 7,
+      "engine_steps": 123,
+      "ui_only_actions": 10,
+      "incomplete_action_sets": 4,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 7,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "GRID_UNVERIFIED",
+      "previous_floor": 2,
+      "cap": 300,
+      "action_sha256": "309f53c5c758eedee3a8d64c96db0e6ecb9db742b412bf31bd8edcfd5783491a",
+      "previous_action_sha256": "28f338705263be35c7da0ae22a5ec7b66a8771ccde9600c6ce7bead56f3a3657",
+      "first_different_decision": 44,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        120
+      ]
+    },
+    {
+      "seed": 2000049,
+      "reason": "unsupported",
+      "page": "DELEGATED",
+      "engine_floor": 7,
+      "engine_steps": 199,
+      "ui_only_actions": 6,
+      "incomplete_action_sets": 3,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "death_boundary_unknown"
+      ],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "GRID_UNVERIFIED",
+      "previous_floor": 2,
+      "cap": 300,
+      "action_sha256": "50e979bcc509cff41b90a9558838d46f6ae361de6edc1d8adb2e4872dcb434f7",
+      "previous_action_sha256": "e897dc3d1b1375004547c132f84998d18d61a665799c3e726fb7b5fff4d61866",
+      "first_different_decision": 28,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        114
+      ]
+    },
+    {
+      "seed": 9000033,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 6,
+      "engine_steps": 107,
+      "ui_only_actions": 8,
+      "incomplete_action_sets": 8,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 6,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "GRID_UNVERIFIED",
+      "previous_floor": 5,
+      "cap": 300,
+      "action_sha256": "a530a49cd6f68a98adfef743888c09b16fd1c58e99b525b70092c711cb61559d",
+      "previous_action_sha256": "6a929a8ede704048c87fd5af959e6a5afa69288b579928101c3d7d40d1e00ffe",
+      "first_different_decision": 93,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        118
+      ]
+    },
+    {
+      "seed": 9000065,
+      "reason": "unsupported",
+      "page": "GRID_UNVERIFIED",
+      "engine_floor": 7,
+      "engine_steps": 119,
+      "ui_only_actions": 8,
+      "incomplete_action_sets": 1,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "permanent_grid_task_origin_or_occurrence_binding_unverified"
+      ],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "GRID_UNVERIFIED",
+      "previous_floor": 5,
+      "cap": 300,
+      "action_sha256": "ba4da135803cba5d8996c0d3f51ac38e1e544416d3e0ce86938fed60860127eb",
+      "previous_action_sha256": "01efd0155875294c97f78280a5e3109562e20c71fc77ef9951543b75a383132e",
+      "first_different_decision": 121,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        121
+      ]
+    },
+    {
+      "seed": 17000042,
+      "reason": "unsupported",
+      "page": "GRID_UNVERIFIED",
+      "engine_floor": 6,
+      "engine_steps": 124,
+      "ui_only_actions": 10,
+      "incomplete_action_sets": 2,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "permanent_grid_task_origin_or_occurrence_binding_unverified"
+      ],
+      "cohort": "additional",
+      "previous": "unsupported",
+      "previous_page": "GRID_UNVERIFIED",
+      "previous_floor": 2,
+      "cap": 300,
+      "action_sha256": "ec371ce12dc411d639a9e1da1b1475b38c80964e8aecdf4e45a7e4bde46edb85",
+      "previous_action_sha256": "b2de0bae30d3e26d84d1648aeb0a2f9ef340fb63f1564215f0a334a2bbdbb7d7",
+      "first_different_decision": 29,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        113
+      ]
+    },
+    {
+      "seed": 17000046,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 5,
+      "engine_steps": 97,
+      "ui_only_actions": 13,
+      "incomplete_action_sets": 1,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 5,
+      "cause": [],
+      "cohort": "additional",
+      "previous": "unsupported",
+      "previous_page": "GRID_UNVERIFIED",
+      "previous_floor": 2,
+      "cap": 300,
+      "action_sha256": "cd9508f5c49b953315b90c133765bf60f329dd85621bbb6eb610999f040a00d2",
+      "previous_action_sha256": "1e4f5bc08aa7d25dad1ab0ae26c3e6d7a61fdb80c294c2f2bf69a58a93f3acfb",
+      "first_different_decision": 44,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        112
+      ]
+    }
+  ],
+  "lost_natural_end": [],
+  "newly_natural_end": [
+    1000008,
+    1000017,
+    9000033,
+    17000046
+  ],
+  "transitions": {
+    "GRID_UNVERIFIED -> DELEGATED": 5,
+    "GRID_UNVERIFIED -> GRID_UNVERIFIED": 2
+  },
+  "elapsed_seconds": 797.76
+}
