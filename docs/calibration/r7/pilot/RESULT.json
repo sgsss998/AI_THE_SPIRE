@@ -1,0 +1,35 @@
+{
+  "requested": 200,
+  "completed": 200,
+  "outcomes": {
+    "unsupported": 129,
+    "loss": 70,
+    "endpoint_error": 1
+  },
+  "strategies": {
+    "survival": 80,
+    "fixed": 80,
+    "explore": 40
+  },
+  "stop_pages": {
+    "GRID_UNVERIFIED": 26,
+    "DELEGATED": 49,
+    "NEOW_RESULT_UNVERIFIED": 21,
+    "REWARD_UNVERIFIED": 24,
+    "EVENT_RESULT_UNVERIFIED": 10
+  },
+  "first_issues": {
+    "flagged": 193
+  },
+  "max_floor": 8,
+  "actions": 16755,
+  "max_worker_rss_bytes": 73760768,
+  "shard_bytes": 191341,
+  "elapsed_active_seconds": 136.39,
+  "manifest_sha256": "01c7c3bb933f6562e5b12255c1716cdffc660e1d16df2b8cc57eea11853ea349",
+  "workers": 4,
+  "shards": {
+    "shard-0000.jsonl.gz": "13e913bd938c1565d12fed16686aa08ae004953c8a91640d7d1cc33739ded93a",
+    "shard-0001.jsonl.gz": "a792d00516fe4effc4f452a479d61a154639eb98df1a9316005d44f26103454d"
+  }
+}

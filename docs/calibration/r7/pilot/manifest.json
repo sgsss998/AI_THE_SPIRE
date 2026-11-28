@@ -1,0 +1,1035 @@
+{
+  "created": "2026-11-28T16:47:50.441379+00:00",
+  "salt": "77038f4ad3bbde1ded011ae9f732ebd5",
+  "cap": 2000,
+  "environment": {
+    "entry": "experiments.sa_calibration_round6.release",
+    "interface": {
+      "state_version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1+silent-a20-round5-v1+silent-a20-round6-v1",
+      "state_sha256": "3264c38555b9f720e6b44b3255d92889a28686158b87d796e7b74c2071895b51",
+      "card_registry_sha256": "cc7dd2446135675ad273bbdc09914909f8ab1c0aca854a8c00dd3d8b6f91a26a",
+      "action_version": "silent-canonical-row-a193-v1",
+      "action_adapter_version": "canonical-row-choice64-v1+frontier-settled+compact-decisions-v2+public-transitions-v1+ordinary-events-rewards-v1+shop-reward-discard-gold-and-death-settlement-v1+ending-route-paid-neow-permanent-upgrade-cancel-and-complete-card-masks-v2+ordinary-targets-and-victory-loot-v1+match-poison-and-idol-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+settled-neow-and-linked-chest-rewards-v1+round1-flex-chest-v1+round2-v1+round3-calibration-v1+silent-a20-round4-v1+silent-a20-round5-v1+silent-a20-round6-v1",
+      "action_contract_sha256": "0ae8ba53dfdde48ad0f4a4ae03cfd045fc2677ac50df3cae9a6ed7558962b78e",
+      "action_coordinates": "observation_monster_row",
+      "action_source_sha256": "d9150f0e213481bb89f60a2c51cba07f2b93c9a7066b0aff7aee6d0138fae7f3",
+      "state_decoder_sha256": "ff68bf7538b928bf623587625f6772a5d4cb1e52f018b571b8190b3b6e9ac027",
+      "backend_build_sha256": "5f81347346994e460ceaa8e500ff3f08637a33f2eb4a220cff467fc8f6105fa5",
+      "backend_commit": "482b3ef29c93746ada7d6fd0fd16885d7cc30b1f",
+      "backend_observation_version": 4,
+      "backend_observation_dimension": 1761,
+      "backend_actions": 146,
+      "observation_dimension": 3122,
+      "actions": 193
+    },
+    "parent": "4c2708709a58febd64072a7159309a193d89dbd8",
+    "runner_sources": {
+      "campaign.py": "1e5b83684f99ad501c03f79a0f6b20c4991fb89c6e012f42c0262753111bd9ce",
+      "episode.py": "403f79d242e46f0024894849eab33aab15f3b9a6084ae9693dc47d1fd7f4992f",
+      "oracles/step_checks.py": "38ca51fce77773bb308a3301ba8fe57e993cf7f98e0a9e9bdfb36591b17cad04"
+    }
+  },
+  "jobs": [
+    {
+      "index": 0,
+      "seed": 4063539693187344151,
+      "strategy": "survival"
+    },
+    {
+      "index": 1,
+      "seed": 977236618060683854,
+      "strategy": "fixed"
+    },
+    {
+      "index": 2,
+      "seed": 6948920060661531692,
+      "strategy": "survival"
+    },
+    {
+      "index": 3,
+      "seed": 5679880641639511556,
+      "strategy": "fixed"
+    },
+    {
+      "index": 4,
+      "seed": 231775603469939184,
+      "strategy": "fixed"
+    },
+    {
+      "index": 5,
+      "seed": 2384653206688043430,
+      "strategy": "fixed"
+    },
+    {
+      "index": 6,
+      "seed": 8437791666375124068,
+      "strategy": "fixed"
+    },
+    {
+      "index": 7,
+      "seed": 2895685479221259731,
+      "strategy": "explore"
+    },
+    {
+      "index": 8,
+      "seed": 1381125841940394740,
+      "strategy": "survival"
+    },
+    {
+      "index": 9,
+      "seed": 2687664089047292845,
+      "strategy": "explore"
+    },
+    {
+      "index": 10,
+      "seed": 9063128132269471998,
+      "strategy": "fixed"
+    },
+    {
+      "index": 11,
+      "seed": 7072076649884802944,
+      "strategy": "fixed"
+    },
+    {
+      "index": 12,
+      "seed": 7034622997254472689,
+      "strategy": "explore"
+    },
+    {
+      "index": 13,
+      "seed": 326753028483881971,
+      "strategy": "survival"
+    },
+    {
+      "index": 14,
+      "seed": 665227123737194848,
+      "strategy": "survival"
+    },
+    {
+      "index": 15,
+      "seed": 2389523786124080836,
+      "strategy": "fixed"
+    },
+    {
+      "index": 16,
+      "seed": 2528081647956539710,
+      "strategy": "survival"
+    },
+    {
+      "index": 17,
+      "seed": 6578230100570562700,
+      "strategy": "fixed"
+    },
+    {
+      "index": 18,
+      "seed": 2131842881822750234,
+      "strategy": "survival"
+    },
+    {
+      "index": 19,
+      "seed": 423478737296755402,
+      "strategy": "fixed"
+    },
+    {
+      "index": 20,
+      "seed": 635738719842245469,
+      "strategy": "fixed"
+    },
+    {
+      "index": 21,
+      "seed": 8713343013559972533,
+      "strategy": "fixed"
+    },
+    {
+      "index": 22,
+      "seed": 4756743121883586539,
+      "strategy": "fixed"
+    },
+    {
+      "index": 23,
+      "seed": 4633075302746734391,
+      "strategy": "survival"
+    },
+    {
+      "index": 24,
+      "seed": 2469871295897915337,
+      "strategy": "survival"
+    },
+    {
+      "index": 25,
+      "seed": 5917636301860979095,
+      "strategy": "fixed"
+    },
+    {
+      "index": 26,
+      "seed": 6275702340938894269,
+      "strategy": "explore"
+    },
+    {
+      "index": 27,
+      "seed": 3866092603575532751,
+      "strategy": "survival"
+    },
+    {
+      "index": 28,
+      "seed": 7559247257074213334,
+      "strategy": "survival"
+    },
+    {
+      "index": 29,
+      "seed": 5750273991281629833,
+      "strategy": "survival"
+    },
+    {
+      "index": 30,
+      "seed": 2447424401368126389,
+      "strategy": "fixed"
+    },
+    {
+      "index": 31,
+      "seed": 8675018316320161585,
+      "strategy": "fixed"
+    },
+    {
+      "index": 32,
+      "seed": 6567827956576531273,
+      "strategy": "survival"
+    },
+    {
+      "index": 33,
+      "seed": 7378058332459697489,
+      "strategy": "survival"
+    },
+    {
+      "index": 34,
+      "seed": 952206018218793428,
+      "strategy": "survival"
+    },
+    {
+      "index": 35,
+      "seed": 489144267891004876,
+      "strategy": "fixed"
+    },
+    {
+      "index": 36,
+      "seed": 1348004007853578959,
+      "strategy": "fixed"
+    },
+    {
+      "index": 37,
+      "seed": 488429948415711270,
+      "strategy": "fixed"
+    },
+    {
+      "index": 38,
+      "seed": 1204505918239721274,
+      "strategy": "explore"
+    },
+    {
+      "index": 39,
+      "seed": 5142243887515364518,
+      "strategy": "fixed"
+    },
+    {
+      "index": 40,
+      "seed": 6565026735824920578,
+      "strategy": "survival"
+    },
+    {
+      "index": 41,
+      "seed": 6601909394012788144,
+      "strategy": "survival"
+    },
+    {
+      "index": 42,
+      "seed": 6597257755388936130,
+      "strategy": "explore"
+    },
+    {
+      "index": 43,
+      "seed": 7382799223148400897,
+      "strategy": "fixed"
+    },
+    {
+      "index": 44,
+      "seed": 7189111929741094444,
+      "strategy": "survival"
+    },
+    {
+      "index": 45,
+      "seed": 2819489354186954249,
+      "strategy": "fixed"
+    },
+    {
+      "index": 46,
+      "seed": 3605710284215868314,
+      "strategy": "survival"
+    },
+    {
+      "index": 47,
+      "seed": 6401095302785645069,
+      "strategy": "fixed"
+    },
+    {
+      "index": 48,
+      "seed": 5318180239469363911,
+      "strategy": "explore"
+    },
+    {
+      "index": 49,
+      "seed": 5597968227357210351,
+      "strategy": "survival"
+    },
+    {
+      "index": 50,
+      "seed": 6146807660497077223,
+      "strategy": "survival"
+    },
+    {
+      "index": 51,
+      "seed": 4034989138556133823,
+      "strategy": "fixed"
+    },
+    {
+      "index": 52,
+      "seed": 1348303369806337307,
+      "strategy": "fixed"
+    },
+    {
+      "index": 53,
+      "seed": 1491581680078885376,
+      "strategy": "survival"
+    },
+    {
+      "index": 54,
+      "seed": 7042185212359921175,
+      "strategy": "fixed"
+    },
+    {
+      "index": 55,
+      "seed": 6892793308325624526,
+      "strategy": "explore"
+    },
+    {
+      "index": 56,
+      "seed": 2109987845269975965,
+      "strategy": "survival"
+    },
+    {
+      "index": 57,
+      "seed": 5155124100221661034,
+      "strategy": "explore"
+    },
+    {
+      "index": 58,
+      "seed": 8796090214858107300,
+      "strategy": "survival"
+    },
+    {
+      "index": 59,
+      "seed": 832280575428993988,
+      "strategy": "survival"
+    },
+    {
+      "index": 60,
+      "seed": 8320747363401849334,
+      "strategy": "survival"
+    },
+    {
+      "index": 61,
+      "seed": 1865761807392351140,
+      "strategy": "survival"
+    },
+    {
+      "index": 62,
+      "seed": 7267436884950952930,
+      "strategy": "survival"
+    },
+    {
+      "index": 63,
+      "seed": 5884544742754425831,
+      "strategy": "explore"
+    },
+    {
+      "index": 64,
+      "seed": 499537525058124090,
+      "strategy": "fixed"
+    },
+    {
+      "index": 65,
+      "seed": 4530843923071018419,
+      "strategy": "explore"
+    },
+    {
+      "index": 66,
+      "seed": 5301052124541122981,
+      "strategy": "explore"
+    },
+    {
+      "index": 67,
+      "seed": 3381938317752115225,
+      "strategy": "fixed"
+    },
+    {
+      "index": 68,
+      "seed": 5554356520483936947,
+      "strategy": "fixed"
+    },
+    {
+      "index": 69,
+      "seed": 8844937086976550570,
+      "strategy": "fixed"
+    },
+    {
+      "index": 70,
+      "seed": 143966993771613083,
+      "strategy": "fixed"
+    },
+    {
+      "index": 71,
+      "seed": 3802663569270345953,
+      "strategy": "survival"
+    },
+    {
+      "index": 72,
+      "seed": 8899723212740367940,
+      "strategy": "explore"
+    },
+    {
+      "index": 73,
+      "seed": 5618509694870954702,
+      "strategy": "fixed"
+    },
+    {
+      "index": 74,
+      "seed": 7114811930125716084,
+      "strategy": "survival"
+    },
+    {
+      "index": 75,
+      "seed": 316455741761734842,
+      "strategy": "explore"
+    },
+    {
+      "index": 76,
+      "seed": 2021565507363595996,
+      "strategy": "survival"
+    },
+    {
+      "index": 77,
+      "seed": 2232604170352079238,
+      "strategy": "explore"
+    },
+    {
+      "index": 78,
+      "seed": 7789467743023812151,
+      "strategy": "fixed"
+    },
+    {
+      "index": 79,
+      "seed": 8893213506561082646,
+      "strategy": "survival"
+    },
+    {
+      "index": 80,
+      "seed": 4170459954063261423,
+      "strategy": "fixed"
+    },
+    {
+      "index": 81,
+      "seed": 3649002886953598406,
+      "strategy": "explore"
+    },
+    {
+      "index": 82,
+      "seed": 8336808890777598451,
+      "strategy": "fixed"
+    },
+    {
+      "index": 83,
+      "seed": 1114886297669176388,
+      "strategy": "survival"
+    },
+    {
+      "index": 84,
+      "seed": 4785395543660598166,
+      "strategy": "survival"
+    },
+    {
+      "index": 85,
+      "seed": 2252033029934027285,
+      "strategy": "survival"
+    },
+    {
+      "index": 86,
+      "seed": 4835596344828244465,
+      "strategy": "fixed"
+    },
+    {
+      "index": 87,
+      "seed": 1822874704478489857,
+      "strategy": "survival"
+    },
+    {
+      "index": 88,
+      "seed": 6989021038864847651,
+      "strategy": "fixed"
+    },
+    {
+      "index": 89,
+      "seed": 4304600389879503106,
+      "strategy": "survival"
+    },
+    {
+      "index": 90,
+      "seed": 4447576048071019863,
+      "strategy": "explore"
+    },
+    {
+      "index": 91,
+      "seed": 4808438555275899170,
+      "strategy": "survival"
+    },
+    {
+      "index": 92,
+      "seed": 1979757102320171503,
+      "strategy": "survival"
+    },
+    {
+      "index": 93,
+      "seed": 2772514800623370279,
+      "strategy": "survival"
+    },
+    {
+      "index": 94,
+      "seed": 2860047957500717009,
+      "strategy": "fixed"
+    },
+    {
+      "index": 95,
+      "seed": 7535497201137043026,
+      "strategy": "explore"
+    },
+    {
+      "index": 96,
+      "seed": 3740190406209501968,
+      "strategy": "survival"
+    },
+    {
+      "index": 97,
+      "seed": 1011222450181585817,
+      "strategy": "fixed"
+    },
+    {
+      "index": 98,
+      "seed": 782266063343431058,
+      "strategy": "explore"
+    },
+    {
+      "index": 99,
+      "seed": 591051335991697983,
+      "strategy": "survival"
+    },
+    {
+      "index": 100,
+      "seed": 2453142895516895431,
+      "strategy": "survival"
+    },
+    {
+      "index": 101,
+      "seed": 2276525645314603598,
+      "strategy": "fixed"
+    },
+    {
+      "index": 102,
+      "seed": 4450369712461345723,
+      "strategy": "explore"
+    },
+    {
+      "index": 103,
+      "seed": 8822592387349816403,
+      "strategy": "survival"
+    },
+    {
+      "index": 104,
+      "seed": 5294567958442726708,
+      "strategy": "survival"
+    },
+    {
+      "index": 105,
+      "seed": 6903251451884007100,
+      "strategy": "explore"
+    },
+    {
+      "index": 106,
+      "seed": 8342624812685842858,
+      "strategy": "fixed"
+    },
+    {
+      "index": 107,
+      "seed": 7005153230962577735,
+      "strategy": "survival"
+    },
+    {
+      "index": 108,
+      "seed": 4332884271862235130,
+      "strategy": "survival"
+    },
+    {
+      "index": 109,
+      "seed": 2031940982213067432,
+      "strategy": "fixed"
+    },
+    {
+      "index": 110,
+      "seed": 4528693932995842953,
+      "strategy": "fixed"
+    },
+    {
+      "index": 111,
+      "seed": 3982217742993989187,
+      "strategy": "fixed"
+    },
+    {
+      "index": 112,
+      "seed": 1624818971102636990,
+      "strategy": "survival"
+    },
+    {
+      "index": 113,
+      "seed": 3144886349783267185,
+      "strategy": "explore"
+    },
+    {
+      "index": 114,
+      "seed": 5722521827812384978,
+      "strategy": "fixed"
+    },
+    {
+      "index": 115,
+      "seed": 603428533623569784,
+      "strategy": "fixed"
+    },
+    {
+      "index": 116,
+      "seed": 5667711590646113366,
+      "strategy": "survival"
+    },
+    {
+      "index": 117,
+      "seed": 4668295118721675949,
+      "strategy": "fixed"
+    },
+    {
+      "index": 118,
+      "seed": 904438160425326002,
+      "strategy": "explore"
+    },
+    {
+      "index": 119,
+      "seed": 8790907750165746207,
+      "strategy": "survival"
+    },
+    {
+      "index": 120,
+      "seed": 7605029362454491643,
+      "strategy": "fixed"
+    },
+    {
+      "index": 121,
+      "seed": 1877264296430171675,
+      "strategy": "fixed"
+    },
+    {
+      "index": 122,
+      "seed": 1226190727399347626,
+      "strategy": "survival"
+    },
+    {
+      "index": 123,
+      "seed": 1677786152412760492,
+      "strategy": "survival"
+    },
+    {
+      "index": 124,
+      "seed": 8243773471113187748,
+      "strategy": "explore"
+    },
+    {
+      "index": 125,
+      "seed": 4648636254795340794,
+      "strategy": "fixed"
+    },
+    {
+      "index": 126,
+      "seed": 4273728310309186154,
+      "strategy": "explore"
+    },
+    {
+      "index": 127,
+      "seed": 4352024826161468537,
+      "strategy": "survival"
+    },
+    {
+      "index": 128,
+      "seed": 1661120556620733818,
+      "strategy": "survival"
+    },
+    {
+      "index": 129,
+      "seed": 6431841645985951964,
+      "strategy": "explore"
+    },
+    {
+      "index": 130,
+      "seed": 2929047757905363987,
+      "strategy": "fixed"
+    },
+    {
+      "index": 131,
+      "seed": 3998024552478030057,
+      "strategy": "fixed"
+    },
+    {
+      "index": 132,
+      "seed": 1639693137062130324,
+      "strategy": "explore"
+    },
+    {
+      "index": 133,
+      "seed": 6688754303592032489,
+      "strategy": "survival"
+    },
+    {
+      "index": 134,
+      "seed": 7605700905900241625,
+      "strategy": "survival"
+    },
+    {
+      "index": 135,
+      "seed": 1303111247660013372,
+      "strategy": "survival"
+    },
+    {
+      "index": 136,
+      "seed": 1360162758963287630,
+      "strategy": "survival"
+    },
+    {
+      "index": 137,
+      "seed": 2025769092637066669,
+      "strategy": "explore"
+    },
+    {
+      "index": 138,
+      "seed": 3518296309794862879,
+      "strategy": "fixed"
+    },
+    {
+      "index": 139,
+      "seed": 7619405883598108241,
+      "strategy": "fixed"
+    },
+    {
+      "index": 140,
+      "seed": 7130250826862826342,
+      "strategy": "survival"
+    },
+    {
+      "index": 141,
+      "seed": 7705697202509591860,
+      "strategy": "fixed"
+    },
+    {
+      "index": 142,
+      "seed": 7045323221548706014,
+      "strategy": "explore"
+    },
+    {
+      "index": 143,
+      "seed": 223778781802354066,
+      "strategy": "fixed"
+    },
+    {
+      "index": 144,
+      "seed": 3952917490904506511,
+      "strategy": "explore"
+    },
+    {
+      "index": 145,
+      "seed": 3824484185123788384,
+      "strategy": "survival"
+    },
+    {
+      "index": 146,
+      "seed": 8189772511701307761,
+      "strategy": "explore"
+    },
+    {
+      "index": 147,
+      "seed": 4476938057666624916,
+      "strategy": "fixed"
+    },
+    {
+      "index": 148,
+      "seed": 4788982545526363735,
+      "strategy": "survival"
+    },
+    {
+      "index": 149,
+      "seed": 5908399735767376646,
+      "strategy": "fixed"
+    },
+    {
+      "index": 150,
+      "seed": 3627773292927592887,
+      "strategy": "explore"
+    },
+    {
+      "index": 151,
+      "seed": 7211772283354115114,
+      "strategy": "explore"
+    },
+    {
+      "index": 152,
+      "seed": 8521535768747886774,
+      "strategy": "survival"
+    },
+    {
+      "index": 153,
+      "seed": 8224165976962596201,
+      "strategy": "fixed"
+    },
+    {
+      "index": 154,
+      "seed": 1250187996028226661,
+      "strategy": "fixed"
+    },
+    {
+      "index": 155,
+      "seed": 5328303355980450044,
+      "strategy": "fixed"
+    },
+    {
+      "index": 156,
+      "seed": 4565481097326346611,
+      "strategy": "fixed"
+    },
+    {
+      "index": 157,
+      "seed": 6928397839588509165,
+      "strategy": "explore"
+    },
+    {
+      "index": 158,
+      "seed": 1854144530339610900,
+      "strategy": "explore"
+    },
+    {
+      "index": 159,
+      "seed": 760936060637893109,
+      "strategy": "fixed"
+    },
+    {
+      "index": 160,
+      "seed": 7641885071196786801,
+      "strategy": "fixed"
+    },
+    {
+      "index": 161,
+      "seed": 2059662957154081332,
+      "strategy": "fixed"
+    },
+    {
+      "index": 162,
+      "seed": 5951602337940730998,
+      "strategy": "fixed"
+    },
+    {
+      "index": 163,
+      "seed": 4735797797894141000,
+      "strategy": "survival"
+    },
+    {
+      "index": 164,
+      "seed": 6064672490789289642,
+      "strategy": "fixed"
+    },
+    {
+      "index": 165,
+      "seed": 3598902688778843544,
+      "strategy": "survival"
+    },
+    {
+      "index": 166,
+      "seed": 7977397252744298182,
+      "strategy": "fixed"
+    },
+    {
+      "index": 167,
+      "seed": 5200167752285348888,
+      "strategy": "survival"
+    },
+    {
+      "index": 168,
+      "seed": 3476756337591855372,
+      "strategy": "survival"
+    },
+    {
+      "index": 169,
+      "seed": 3926838395201135889,
+      "strategy": "fixed"
+    },
+    {
+      "index": 170,
+      "seed": 5308091911276903665,
+      "strategy": "survival"
+    },
+    {
+      "index": 171,
+      "seed": 6339957970794808149,
+      "strategy": "fixed"
+    },
+    {
+      "index": 172,
+      "seed": 5730512693753432103,
+      "strategy": "fixed"
+    },
+    {
+      "index": 173,
+      "seed": 1673490958915838125,
+      "strategy": "explore"
+    },
+    {
+      "index": 174,
+      "seed": 7026683649751301656,
+      "strategy": "explore"
+    },
+    {
+      "index": 175,
+      "seed": 1428367185010934740,
+      "strategy": "survival"
+    },
+    {
+      "index": 176,
+      "seed": 7693369033186701652,
+      "strategy": "explore"
+    },
+    {
+      "index": 177,
+      "seed": 2868562236289833605,
+      "strategy": "fixed"
+    },
+    {
+      "index": 178,
+      "seed": 7092386581178961648,
+      "strategy": "fixed"
+    },
+    {
+      "index": 179,
+      "seed": 5747655559136517093,
+      "strategy": "fixed"
+    },
+    {
+      "index": 180,
+      "seed": 6733584406557368952,
+      "strategy": "survival"
+    },
+    {
+      "index": 181,
+      "seed": 4542627514710340078,
+      "strategy": "survival"
+    },
+    {
+      "index": 182,
+      "seed": 2396666173491798132,
+      "strategy": "explore"
+    },
+    {
+      "index": 183,
+      "seed": 7476612179701889738,
+      "strategy": "fixed"
+    },
+    {
+      "index": 184,
+      "seed": 1214415712885071920,
+      "strategy": "survival"
+    },
+    {
+      "index": 185,
+      "seed": 1013997697482403,
+      "strategy": "fixed"
+    },
+    {
+      "index": 186,
+      "seed": 2213374479340162937,
+      "strategy": "survival"
+    },
+    {
+      "index": 187,
+      "seed": 3887478196195034627,
+      "strategy": "survival"
+    },
+    {
+      "index": 188,
+      "seed": 4270589810062672691,
+      "strategy": "fixed"
+    },
+    {
+      "index": 189,
+      "seed": 5637061429135195215,
+      "strategy": "survival"
+    },
+    {
+      "index": 190,
+      "seed": 1429805870922508331,
+      "strategy": "survival"
+    },
+    {
+      "index": 191,
+      "seed": 2160818456069101832,
+      "strategy": "survival"
+    },
+    {
+      "index": 192,
+      "seed": 7212345924894247669,
+      "strategy": "survival"
+    },
+    {
+      "index": 193,
+      "seed": 3966483227531555582,
+      "strategy": "survival"
+    },
+    {
+      "index": 194,
+      "seed": 6556292865929143307,
+      "strategy": "fixed"
+    },
+    {
+      "index": 195,
+      "seed": 7259056512279734136,
+      "strategy": "fixed"
+    },
+    {
+      "index": 196,
+      "seed": 3308645150367754359,
+      "strategy": "fixed"
+    },
+    {
+      "index": 197,
+      "seed": 8788975272576165097,
+      "strategy": "explore"
+    },
+    {
+      "index": 198,
+      "seed": 4552788316013726203,
+      "strategy": "survival"
+    },
+    {
+      "index": 199,
+      "seed": 5194760933211265210,
+      "strategy": "survival"
+    }
+  ],
+  "verification": "same seed, same actions, deterministic trace"
+}
