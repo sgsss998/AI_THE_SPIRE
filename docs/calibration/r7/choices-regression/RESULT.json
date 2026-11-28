@@ -1,0 +1,2332 @@
+{
+  "interface": {
+    "state_version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1+silent-a20-round5-v1+silent-a20-round6-v1+silent-a20-round7-v1+r7-combat-events-rewards-v2+r7-opening-shop-potions-v3",
+    "state_sha256": "bed0b8683324a3472bc1328c695e54c87ed518ebd90af53a3cc16c0a46dfc4cf",
+    "card_registry_sha256": "cc7dd2446135675ad273bbdc09914909f8ab1c0aca854a8c00dd3d8b6f91a26a",
+    "action_version": "silent-canonical-row-a193-v1",
+    "action_adapter_version": "canonical-row-choice64-v1+frontier-settled+compact-decisions-v2+public-transitions-v1+ordinary-events-rewards-v1+shop-reward-discard-gold-and-death-settlement-v1+ending-route-paid-neow-permanent-upgrade-cancel-and-complete-card-masks-v2+ordinary-targets-and-victory-loot-v1+match-poison-and-idol-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+settled-neow-and-linked-chest-rewards-v1+round1-flex-chest-v1+round2-v1+round3-calibration-v1+silent-a20-round4-v1+silent-a20-round5-v1+silent-a20-round6-v1+silent-a20-round7-v1+r7-combat-events-rewards-v2+r7-opening-shop-potions-v3",
+    "action_contract_sha256": "0ae8ba53dfdde48ad0f4a4ae03cfd045fc2677ac50df3cae9a6ed7558962b78e",
+    "action_coordinates": "observation_monster_row",
+    "action_source_sha256": "80fb7a53e3dd83db1575fb96b519bb815182a52bfd845aa3a04563d3d596f463",
+    "state_decoder_sha256": "072d610a8160ee91fead8eb5583e0ddff9c333f9aec29cac05e6014a3c8c6111",
+    "backend_build_sha256": "5f81347346994e460ceaa8e500ff3f08637a33f2eb4a220cff467fc8f6105fa5",
+    "backend_commit": "482b3ef29c93746ada7d6fd0fd16885d7cc30b1f",
+    "backend_observation_version": 4,
+    "backend_observation_dimension": 1761,
+    "backend_actions": 146,
+    "observation_dimension": 3122,
+    "actions": 193
+  },
+  "edition": "experiments.sa_calibration_round7.choices",
+  "reference_sha256": "4c9fb48f45c3e837ce4eedfcfe64b88dfb9104c685eb3040b1edcd034d49f03e",
+  "archive_sha256": "348e7ccbb357bd5999a0bd3ae0667fcb27fbc375705ac4d2f02e1d25b08d6865",
+  "summary": {
+    "seeds": 704,
+    "outcomes": {
+      "loss": 405,
+      "unsupported": 299
+    },
+    "transitions": {
+      "loss->loss": 367,
+      "unsupported->loss": 38,
+      "unsupported->unsupported": 294,
+      "loss->unsupported": 5
+    },
+    "max_floor": 12,
+    "decisions": 65779,
+    "deaths_with_partial_action_sets": 377,
+    "stop_pages": {
+      "GRID_UNVERIFIED": 88,
+      "REWARD_UNVERIFIED": 65,
+      "DELEGATED": 84,
+      "NEOW_RESULT_UNVERIFIED": 30,
+      "EVENT_RESULT_UNVERIFIED": 32
+    }
+  },
+  "changed": [
+    {
+      "seed": 2,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 5,
+      "engine_steps": 171,
+      "ui_only_actions": 6,
+      "incomplete_action_sets": 0,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 5,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "NEOW_RESULT_UNVERIFIED",
+      "previous_floor": 0,
+      "cap": 300,
+      "action_sha256": "36abc5df45a95cd6a980f5ddc3c72f49e1b6bebc653a06f1b80826de298a0d46",
+      "previous_action_sha256": "185dc8242270f680fb2c5743cb2c9ca92f1f99987bf0fe4cbd0595ab33db83a8",
+      "first_different_decision": 3,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        110
+      ]
+    },
+    {
+      "seed": 7,
+      "reason": "unsupported",
+      "page": "DELEGATED",
+      "engine_floor": 5,
+      "engine_steps": 100,
+      "ui_only_actions": 13,
+      "incomplete_action_sets": 8,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "death_boundary_unknown"
+      ],
+      "cohort": "fixed",
+      "previous": "loss",
+      "previous_page": "DELEGATED",
+      "previous_floor": 5,
+      "cap": 300,
+      "action_sha256": "273fbe560587e8026f86b872ff543864de4c8e1c7556af6fa42d6a1ec1fd0d7f",
+      "previous_action_sha256": "8a23a63d8abf55b847401eccf9307cd96e6601488a21f494eb392061a063264c",
+      "first_different_decision": 104,
+      "previous_at_difference": [
+        178
+      ],
+      "candidate_at_difference": [
+        111
+      ]
+    },
+    {
+      "seed": 59,
+      "reason": "unsupported",
+      "page": "GRID_UNVERIFIED",
+      "engine_floor": 6,
+      "engine_steps": 92,
+      "ui_only_actions": 6,
+      "incomplete_action_sets": 1,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "permanent_grid_task_origin_or_occurrence_binding_unverified"
+      ],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "DELEGATED",
+      "previous_floor": 4,
+      "cap": 300,
+      "action_sha256": "31bbf30252af1459a028dcf11c6bf2e3b36d07ab60bb563a52141714f67fec37",
+      "previous_action_sha256": "228f820ed9333d52b9ec2dd6f62475c7d6048b644b734b52cb5d091d2e443a9f",
+      "first_different_decision": 85,
+      "previous_at_difference": [
+        23
+      ],
+      "candidate_at_difference": [
+        0
+      ]
+    },
+    {
+      "seed": 1000008,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 5,
+      "engine_steps": 86,
+      "ui_only_actions": 11,
+      "incomplete_action_sets": 9,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 5,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "GRID_UNVERIFIED",
+      "previous_floor": 2,
+      "cap": 300,
+      "action_sha256": "28d6ad0ccbecfae3178af5d331e9946c34d5f684445600c485e0feabc3229e0f",
+      "previous_action_sha256": "39be4056687076da51bc4f04acc556558e1a60a4e4fd1d2da590875b0bd239e7",
+      "first_different_decision": 41,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        114
+      ]
+    },
+    {
+      "seed": 1000014,
+      "reason": "unsupported",
+      "page": "REWARD_UNVERIFIED",
+      "engine_floor": 1,
+      "engine_steps": 21,
+      "ui_only_actions": 2,
+      "incomplete_action_sets": 0,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "reward_page_semantics_unverified"
+      ],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "NEOW_RESULT_UNVERIFIED",
+      "previous_floor": 0,
+      "cap": 300,
+      "action_sha256": "576dc055c72f2778d1f74a9ebea56ab67360cc0228742e7681f8be5f990a4aed",
+      "previous_action_sha256": "185dc8242270f680fb2c5743cb2c9ca92f1f99987bf0fe4cbd0595ab33db83a8",
+      "first_different_decision": 3,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        110
+      ]
+    },
+    {
+      "seed": 1000017,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 7,
+      "engine_steps": 123,
+      "ui_only_actions": 10,
+      "incomplete_action_sets": 4,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 7,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "GRID_UNVERIFIED",
+      "previous_floor": 2,
+      "cap": 300,
+      "action_sha256": "309f53c5c758eedee3a8d64c96db0e6ecb9db742b412bf31bd8edcfd5783491a",
+      "previous_action_sha256": "28f338705263be35c7da0ae22a5ec7b66a8771ccde9600c6ce7bead56f3a3657",
+      "first_different_decision": 44,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        120
+      ]
+    },
+    {
+      "seed": 1000027,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 6,
+      "engine_steps": 173,
+      "ui_only_actions": 6,
+      "incomplete_action_sets": 6,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 6,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "DELEGATED",
+      "previous_floor": 4,
+      "cap": 300,
+      "action_sha256": "7b494a260c4cec9a7e851a6423c1bc483f6e4efaf496c6df190bfa8a076b8c35",
+      "previous_action_sha256": "8d163b83da4b4e0417292a83828918ed53d056aa1ab6bfc611d1dd31db200b39",
+      "first_different_decision": 117,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        170
+      ]
+    },
+    {
+      "seed": 1000031,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 1,
+      "engine_steps": 73,
+      "ui_only_actions": 2,
+      "incomplete_action_sets": 0,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 1,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "NEOW_RESULT_UNVERIFIED",
+      "previous_floor": 0,
+      "cap": 300,
+      "action_sha256": "d3fa378bd7fc9957d56a45114e7b2c0ea48ebf6cebd4f6474c08284a5029b109",
+      "previous_action_sha256": "185dc8242270f680fb2c5743cb2c9ca92f1f99987bf0fe4cbd0595ab33db83a8",
+      "first_different_decision": 3,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        110
+      ]
+    },
+    {
+      "seed": 1000041,
+      "reason": "unsupported",
+      "page": "REWARD_UNVERIFIED",
+      "engine_floor": 1,
+      "engine_steps": 27,
+      "ui_only_actions": 2,
+      "incomplete_action_sets": 0,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "reward_page_semantics_unverified"
+      ],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "NEOW_RESULT_UNVERIFIED",
+      "previous_floor": 0,
+      "cap": 300,
+      "action_sha256": "bb4b3ff77e6b17cc5da6596e9fb6349ba8261b46e794ffd6707910c3d0688fe5",
+      "previous_action_sha256": "185dc8242270f680fb2c5743cb2c9ca92f1f99987bf0fe4cbd0595ab33db83a8",
+      "first_different_decision": 3,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        110
+      ]
+    },
+    {
+      "seed": 1000061,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 8,
+      "engine_steps": 146,
+      "ui_only_actions": 18,
+      "incomplete_action_sets": 16,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 8,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "DELEGATED",
+      "previous_floor": 7,
+      "cap": 300,
+      "action_sha256": "74c9cdb7040260b39c414618cd61768dff876b37f6a254a8ed323d992ae892a3",
+      "previous_action_sha256": "1d49d7885bf3b3a5921d2c0b1240f1b0d1dc3d24f57d061fddac294ffb81e0ae",
+      "first_different_decision": 139,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        10
+      ]
+    },
+    {
+      "seed": 2000016,
+      "reason": "unsupported",
+      "page": "REWARD_UNVERIFIED",
+      "engine_floor": 6,
+      "engine_steps": 26,
+      "ui_only_actions": 14,
+      "incomplete_action_sets": 14,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "reward_page_semantics_unverified"
+      ],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "REWARD_UNVERIFIED",
+      "previous_floor": 6,
+      "cap": 300,
+      "action_sha256": "a5c878959c50816a1c3a8a8d146f124cafc35cbd68412fc545b7f6c0f788098c",
+      "previous_action_sha256": "41ac2087f9209f87a2c794188c17e7af2ccc9af509244b3124fc7c21fb2a9969",
+      "first_different_decision": 19,
+      "previous_at_difference": [
+        178
+      ],
+      "candidate_at_difference": [
+        114
+      ]
+    },
+    {
+      "seed": 2000035,
+      "reason": "unsupported",
+      "page": "REWARD_UNVERIFIED",
+      "engine_floor": 1,
+      "engine_steps": 74,
+      "ui_only_actions": 2,
+      "incomplete_action_sets": 0,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "reward_page_semantics_unverified"
+      ],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "NEOW_RESULT_UNVERIFIED",
+      "previous_floor": 0,
+      "cap": 300,
+      "action_sha256": "e9ba7717f1b6124db25ad93d500d1857e9fe3994366d93ccf84ce1aa2d0523bf",
+      "previous_action_sha256": "185dc8242270f680fb2c5743cb2c9ca92f1f99987bf0fe4cbd0595ab33db83a8",
+      "first_different_decision": 3,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        110
+      ]
+    },
+    {
+      "seed": 2000036,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 5,
+      "engine_steps": 86,
+      "ui_only_actions": 3,
+      "incomplete_action_sets": 1,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 5,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "NEOW_RESULT_UNVERIFIED",
+      "previous_floor": 0,
+      "cap": 300,
+      "action_sha256": "c9611cc12b5bc0270155a4f82638314f3a4a4b8a38c873384798b8d345882dfa",
+      "previous_action_sha256": "185dc8242270f680fb2c5743cb2c9ca92f1f99987bf0fe4cbd0595ab33db83a8",
+      "first_different_decision": 3,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        110
+      ]
+    },
+    {
+      "seed": 2000037,
+      "reason": "unsupported",
+      "page": "REWARD_UNVERIFIED",
+      "engine_floor": 8,
+      "engine_steps": 142,
+      "ui_only_actions": 9,
+      "incomplete_action_sets": 6,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "reward_page_semantics_unverified"
+      ],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "REWARD_UNVERIFIED",
+      "previous_floor": 8,
+      "cap": 300,
+      "action_sha256": "1cfedd0964ecee50079d05b20aa2299cf1970b5f1ba19420c32c130b7bc3f894",
+      "previous_action_sha256": "3a7d3b806948b74ce5cf4d336194211f34ffae56c8c914ed235e0a50e49cedea",
+      "first_different_decision": 109,
+      "previous_at_difference": [
+        178
+      ],
+      "candidate_at_difference": [
+        111
+      ]
+    },
+    {
+      "seed": 2000040,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 4,
+      "engine_steps": 98,
+      "ui_only_actions": 5,
+      "incomplete_action_sets": 5,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 4,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "DELEGATED",
+      "previous_floor": 4,
+      "cap": 300,
+      "action_sha256": "79f94288be6e8ba7693c33dc185d229ace0fa88a67d50a89541f5006f6b684cb",
+      "previous_action_sha256": "cd0a272e9e62884f189869aada51e70632fbf977777063fa52392f44871a2a8d",
+      "first_different_decision": 101,
+      "previous_at_difference": [
+        21
+      ],
+      "candidate_at_difference": [
+        22
+      ]
+    },
+    {
+      "seed": 2000041,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 5,
+      "engine_steps": 126,
+      "ui_only_actions": 4,
+      "incomplete_action_sets": 1,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 5,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "REWARD_UNVERIFIED",
+      "previous_floor": 4,
+      "cap": 300,
+      "action_sha256": "6c20f5a187ce3f54d97118e0569fd95503b3e29e54c0c8e5b6db5096115be86e",
+      "previous_action_sha256": "791f3481eeb76777aa5cfebe557e3191367e84e45d84069a7ad938ff722b819b",
+      "first_different_decision": 96,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        111
+      ]
+    },
+    {
+      "seed": 2000049,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 7,
+      "engine_steps": 200,
+      "ui_only_actions": 6,
+      "incomplete_action_sets": 3,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 7,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "GRID_UNVERIFIED",
+      "previous_floor": 2,
+      "cap": 300,
+      "action_sha256": "2e8ab7c2e8ab03d01be11f615ab617e190e161069752457eee444d60ed948c8d",
+      "previous_action_sha256": "e897dc3d1b1375004547c132f84998d18d61a665799c3e726fb7b5fff4d61866",
+      "first_different_decision": 28,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        114
+      ]
+    },
+    {
+      "seed": 2000054,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 6,
+      "engine_steps": 174,
+      "ui_only_actions": 4,
+      "incomplete_action_sets": 2,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 6,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "DELEGATED",
+      "previous_floor": 4,
+      "cap": 300,
+      "action_sha256": "88c055a6a4ab41f655c84f468c16fd6a049be5ee27ef57432bb7e98ec483dbac",
+      "previous_action_sha256": "d551481d4bef76c133a48e9047ece69864deb9a7afdba7871e1b14605c43afc8",
+      "first_different_decision": 125,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        2
+      ]
+    },
+    {
+      "seed": 2000066,
+      "reason": "unsupported",
+      "page": "DELEGATED",
+      "engine_floor": 8,
+      "engine_steps": 196,
+      "ui_only_actions": 3,
+      "incomplete_action_sets": 1,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "death_boundary_unknown"
+      ],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "DELEGATED",
+      "previous_floor": 7,
+      "cap": 300,
+      "action_sha256": "0c9c13cb8ad2ad561b3ca239a52eb0f9ae422625919472349536f7a49a5e6eca",
+      "previous_action_sha256": "a4cd85668eb559531ded4fd397d1dcc090de4f8be49f13cb3c3a14a4122f1bdb",
+      "first_different_decision": 142,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        1
+      ]
+    },
+    {
+      "seed": 3000016,
+      "reason": "unsupported",
+      "page": "REWARD_UNVERIFIED",
+      "engine_floor": 4,
+      "engine_steps": 68,
+      "ui_only_actions": 4,
+      "incomplete_action_sets": 0,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "reward_page_semantics_unverified"
+      ],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "NEOW_RESULT_UNVERIFIED",
+      "previous_floor": 0,
+      "cap": 300,
+      "action_sha256": "9033394efa05886309a10221575898e8bf5393da60280632ad68cd22c91f3d5b",
+      "previous_action_sha256": "185dc8242270f680fb2c5743cb2c9ca92f1f99987bf0fe4cbd0595ab33db83a8",
+      "first_different_decision": 3,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        110
+      ]
+    },
+    {
+      "seed": 3000017,
+      "reason": "unsupported",
+      "page": "REWARD_UNVERIFIED",
+      "engine_floor": 5,
+      "engine_steps": 149,
+      "ui_only_actions": 3,
+      "incomplete_action_sets": 9,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "reward_page_semantics_unverified"
+      ],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "DELEGATED",
+      "previous_floor": 4,
+      "cap": 300,
+      "action_sha256": "e091135a2d3283fec26d760eb85a6d130476078b4ba71f0bf284ab8b5232c986",
+      "previous_action_sha256": "50bf87f2b122db99392713842acab18b610cc0440fc17005cfcdec623177f7c5",
+      "first_different_decision": 120,
+      "previous_at_difference": [
+        21
+      ],
+      "candidate_at_difference": [
+        2
+      ]
+    },
+    {
+      "seed": 3000040,
+      "reason": "unsupported",
+      "page": "REWARD_UNVERIFIED",
+      "engine_floor": 8,
+      "engine_steps": 129,
+      "ui_only_actions": 5,
+      "incomplete_action_sets": 5,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "reward_page_semantics_unverified"
+      ],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "DELEGATED",
+      "previous_floor": 7,
+      "cap": 300,
+      "action_sha256": "e5b2222484f7559b7cc2558fefe6f4cf6b6c6dc604eac3e4e3d04bc923549273",
+      "previous_action_sha256": "73dcce6139a040df55519676b719868ada5639c64b627632d783c2c20009420a",
+      "first_different_decision": 98,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        21
+      ]
+    },
+    {
+      "seed": 3000060,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 6,
+      "engine_steps": 83,
+      "ui_only_actions": 10,
+      "incomplete_action_sets": 8,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 6,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "loss",
+      "previous_page": "DELEGATED",
+      "previous_floor": 6,
+      "cap": 300,
+      "action_sha256": "92963cb1562ec19d4e0efe18f604783ed5ca06f1de0ca6c076e311eafc41189d",
+      "previous_action_sha256": "4993aa1ca6268c00be3093640691f44a659800d34407f31719544d4fccc1e970",
+      "first_different_decision": 53,
+      "previous_at_difference": [
+        178
+      ],
+      "candidate_at_difference": [
+        114
+      ]
+    },
+    {
+      "seed": 4000007,
+      "reason": "unsupported",
+      "page": "REWARD_UNVERIFIED",
+      "engine_floor": 1,
+      "engine_steps": 34,
+      "ui_only_actions": 2,
+      "incomplete_action_sets": 0,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "reward_page_semantics_unverified"
+      ],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "NEOW_RESULT_UNVERIFIED",
+      "previous_floor": 0,
+      "cap": 300,
+      "action_sha256": "03f3f5cf0ecfd8d74c58e600041b54f95b25df1d9b32d6c187658446f3ffb5a3",
+      "previous_action_sha256": "185dc8242270f680fb2c5743cb2c9ca92f1f99987bf0fe4cbd0595ab33db83a8",
+      "first_different_decision": 3,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        110
+      ]
+    },
+    {
+      "seed": 4000012,
+      "reason": "unsupported",
+      "page": "DELEGATED",
+      "engine_floor": 7,
+      "engine_steps": 98,
+      "ui_only_actions": 5,
+      "incomplete_action_sets": 3,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "death_boundary_unknown"
+      ],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "REWARD_UNVERIFIED",
+      "previous_floor": 5,
+      "cap": 300,
+      "action_sha256": "4440d53362201c254835b4a347f96bd6ec183f2e687e3cf6ce52cd0bcc96c978",
+      "previous_action_sha256": "65db2141a0de847a1cd0863eba66a8bc0b586d66815f272abf6dc80b8a7e1791",
+      "first_different_decision": 85,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        111
+      ]
+    },
+    {
+      "seed": 4000034,
+      "reason": "unsupported",
+      "page": "GRID_UNVERIFIED",
+      "engine_floor": 8,
+      "engine_steps": 91,
+      "ui_only_actions": 12,
+      "incomplete_action_sets": 11,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "permanent_grid_task_origin_or_occurrence_binding_unverified"
+      ],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "GRID_UNVERIFIED",
+      "previous_floor": 6,
+      "cap": 300,
+      "action_sha256": "eaf9c0dccf1d2a4f344017569b78fb9a0ce5818b6803c489be5479e74b641e8c",
+      "previous_action_sha256": "aa0fb61e113d38ff4cc1b5354b964dd5d4d7993d55a15ce8a7aba58635f40abb",
+      "first_different_decision": 32,
+      "previous_at_difference": [
+        178
+      ],
+      "candidate_at_difference": [
+        113
+      ]
+    },
+    {
+      "seed": 4000037,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 7,
+      "engine_steps": 142,
+      "ui_only_actions": 4,
+      "incomplete_action_sets": 1,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 7,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "DELEGATED",
+      "previous_floor": 5,
+      "cap": 300,
+      "action_sha256": "ed03b63f8b9cbb8d8b129291edd33a4074e202d1324a6227114941bc5ccfb915",
+      "previous_action_sha256": "92a9900ea4e75596a7ff9732835df11f5671ab5590bcaf47f5706b5703928edf",
+      "first_different_decision": 114,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        170
+      ]
+    },
+    {
+      "seed": 4000039,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 6,
+      "engine_steps": 122,
+      "ui_only_actions": 6,
+      "incomplete_action_sets": 1,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 6,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "NEOW_RESULT_UNVERIFIED",
+      "previous_floor": 0,
+      "cap": 300,
+      "action_sha256": "b20d944dfa4594688fd98c2b3045cb5d9fa329fa7687d9b9c1a37eb31bac0010",
+      "previous_action_sha256": "185dc8242270f680fb2c5743cb2c9ca92f1f99987bf0fe4cbd0595ab33db83a8",
+      "first_different_decision": 3,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        110
+      ]
+    },
+    {
+      "seed": 4000057,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 5,
+      "engine_steps": 122,
+      "ui_only_actions": 7,
+      "incomplete_action_sets": 4,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 5,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "DELEGATED",
+      "previous_floor": 4,
+      "cap": 300,
+      "action_sha256": "7c327b9913d17a2af18d9dfab52afbc128e968e98ca0d86a0469d3e11b46e20a",
+      "previous_action_sha256": "f2abf2d943384820bfc1144026b3b7bf016cdd7c2a0fb42b62e4d7baadf24222",
+      "first_different_decision": 118,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        170
+      ]
+    },
+    {
+      "seed": 4000065,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 6,
+      "engine_steps": 95,
+      "ui_only_actions": 6,
+      "incomplete_action_sets": 2,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 6,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "NEOW_RESULT_UNVERIFIED",
+      "previous_floor": 0,
+      "cap": 300,
+      "action_sha256": "f1863737c6455a1fa34d20004de572500f5ce01be128c963567084f51a54ad60",
+      "previous_action_sha256": "185dc8242270f680fb2c5743cb2c9ca92f1f99987bf0fe4cbd0595ab33db83a8",
+      "first_different_decision": 3,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        110
+      ]
+    },
+    {
+      "seed": 4000066,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 5,
+      "engine_steps": 99,
+      "ui_only_actions": 3,
+      "incomplete_action_sets": 0,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 5,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "NEOW_RESULT_UNVERIFIED",
+      "previous_floor": 0,
+      "cap": 300,
+      "action_sha256": "1b18676268fb009674fc06c3b949be547dc031b811d09ea9983474ca989be55e",
+      "previous_action_sha256": "185dc8242270f680fb2c5743cb2c9ca92f1f99987bf0fe4cbd0595ab33db83a8",
+      "first_different_decision": 3,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        110
+      ]
+    },
+    {
+      "seed": 5000003,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 4,
+      "engine_steps": 83,
+      "ui_only_actions": 4,
+      "incomplete_action_sets": 2,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 4,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "EVENT_RESULT_UNVERIFIED",
+      "previous_floor": 2,
+      "cap": 300,
+      "action_sha256": "9a6bcf0603db0e7c65af1e0a5297b246d7d4f85e10e26fe34d138a0a9f9dba0f",
+      "previous_action_sha256": "0801f7257edf2a5887c1913cd7e82b438c63ff513202a05c16443e33b12d1c97",
+      "first_different_decision": 20,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        110
+      ]
+    },
+    {
+      "seed": 5000006,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 7,
+      "engine_steps": 130,
+      "ui_only_actions": 4,
+      "incomplete_action_sets": 2,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 7,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "DELEGATED",
+      "previous_floor": 5,
+      "cap": 300,
+      "action_sha256": "0184896bd01ce03bc94986a9b237f94107bbd11dbb70981b0b62bb9fcbe3e796",
+      "previous_action_sha256": "46286a33898aff7ebfc4c1adc4d2e43024084d644ce2eda01a031b2347835eaa",
+      "first_different_decision": 107,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        12
+      ]
+    },
+    {
+      "seed": 5000015,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 6,
+      "engine_steps": 151,
+      "ui_only_actions": 7,
+      "incomplete_action_sets": 4,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 6,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "DELEGATED",
+      "previous_floor": 5,
+      "cap": 300,
+      "action_sha256": "0547d525cb08d470ae0c213bd72dc56b6f4f6ae7b3a6d0b0147ea9e1ba5e56eb",
+      "previous_action_sha256": "33b6f955168e2c646fc246eda5d61b391741d18e50c51e7dc9cadd7030c626fa",
+      "first_different_decision": 129,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        0
+      ]
+    },
+    {
+      "seed": 5000039,
+      "reason": "unsupported",
+      "page": "REWARD_UNVERIFIED",
+      "engine_floor": 5,
+      "engine_steps": 64,
+      "ui_only_actions": 8,
+      "incomplete_action_sets": 7,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "reward_page_semantics_unverified"
+      ],
+      "cohort": "fixed",
+      "previous": "loss",
+      "previous_page": "DELEGATED",
+      "previous_floor": 6,
+      "cap": 300,
+      "action_sha256": "235669ee6deefb4da4155fde4a77734987cf15ef4a1f23e85d4afd38ce07b130",
+      "previous_action_sha256": "49874af9c6017354a74c53756862b9e911caecdaa6b9feacbfd9030c11bf2d65",
+      "first_different_decision": 40,
+      "previous_at_difference": [
+        178
+      ],
+      "candidate_at_difference": [
+        114
+      ]
+    },
+    {
+      "seed": 5000047,
+      "reason": "unsupported",
+      "page": "DELEGATED",
+      "engine_floor": 5,
+      "engine_steps": 113,
+      "ui_only_actions": 6,
+      "incomplete_action_sets": 8,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "death_boundary_unknown"
+      ],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "REWARD_UNVERIFIED",
+      "previous_floor": 4,
+      "cap": 300,
+      "action_sha256": "7cdd7ff9c7811a125ff1a4d44246145f917cd1281a03b630360bcb3d7805e079",
+      "previous_action_sha256": "e57cfa8a521a263864ea08e61d61a292e5d9e6f144b925c43f1afd4fce7373e1",
+      "first_different_decision": 100,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        111
+      ]
+    },
+    {
+      "seed": 6000018,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 12,
+      "engine_steps": 134,
+      "ui_only_actions": 9,
+      "incomplete_action_sets": 9,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 12,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "REWARD_UNVERIFIED",
+      "previous_floor": 11,
+      "cap": 300,
+      "action_sha256": "2141d0c7d66e298737b8f0c5dcc0d3c999c7889414420e4b618f5d5b2fd69196",
+      "previous_action_sha256": "c038b1dd9f2160c9016908551ee230c4040db889a58b17ce2ebfad1a1a55fe41",
+      "first_different_decision": 115,
+      "previous_at_difference": [
+        20
+      ],
+      "candidate_at_difference": [
+        23
+      ]
+    },
+    {
+      "seed": 6000020,
+      "reason": "unsupported",
+      "page": "GRID_UNVERIFIED",
+      "engine_floor": 6,
+      "engine_steps": 74,
+      "ui_only_actions": 5,
+      "incomplete_action_sets": 6,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "permanent_grid_task_origin_or_occurrence_binding_unverified"
+      ],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "EVENT_RESULT_UNVERIFIED",
+      "previous_floor": 4,
+      "cap": 300,
+      "action_sha256": "41c820769134d9530439608dbd9ffb27ab6e2aa5896205edc13d79f3ee9694f0",
+      "previous_action_sha256": "66dbe9a26a19c846aeba5b70ed8089db611b64cc246eb42a14fd5291de2bfde4",
+      "first_different_decision": 75,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        110
+      ]
+    },
+    {
+      "seed": 6000027,
+      "reason": "unsupported",
+      "page": "DELEGATED",
+      "engine_floor": 4,
+      "engine_steps": 41,
+      "ui_only_actions": 7,
+      "incomplete_action_sets": 7,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "death_boundary_unknown"
+      ],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "GRID_UNVERIFIED",
+      "previous_floor": 4,
+      "cap": 300,
+      "action_sha256": "4508df227c088105e758caa8a79dfd23d1323cc03dc4f5299e4998a792cd8012",
+      "previous_action_sha256": "454c012b701a4b62c4cab53248defc3818f7e48ad302705892a41932b4f9cdce",
+      "first_different_decision": 38,
+      "previous_at_difference": [
+        178
+      ],
+      "candidate_at_difference": [
+        113
+      ]
+    },
+    {
+      "seed": 6000031,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 7,
+      "engine_steps": 155,
+      "ui_only_actions": 8,
+      "incomplete_action_sets": 10,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 7,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "DELEGATED",
+      "previous_floor": 5,
+      "cap": 300,
+      "action_sha256": "3f68b305d3e4ddf06759b97a9d8bfcb233cd0bb23f69eb21f7095f2dad74abb7",
+      "previous_action_sha256": "b4efcda02da026039f2ec87093b59ba3eabd065cbde9d11714fcaa944053ca74",
+      "first_different_decision": 120,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        1
+      ]
+    },
+    {
+      "seed": 6000037,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 7,
+      "engine_steps": 140,
+      "ui_only_actions": 6,
+      "incomplete_action_sets": 6,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 7,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "loss",
+      "previous_page": "DELEGATED",
+      "previous_floor": 6,
+      "cap": 300,
+      "action_sha256": "b421412f7b47693cd640f7b209c602d1a5794ff82d956d61697293791daf2747",
+      "previous_action_sha256": "b5bd893b1fae884ecd939dfd5b4b9896441b9f5ba6fd7d574b8dac7286132451",
+      "first_different_decision": 34,
+      "previous_at_difference": [
+        178
+      ],
+      "candidate_at_difference": [
+        114
+      ]
+    },
+    {
+      "seed": 6000044,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 6,
+      "engine_steps": 119,
+      "ui_only_actions": 5,
+      "incomplete_action_sets": 1,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 6,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "REWARD_UNVERIFIED",
+      "previous_floor": 3,
+      "cap": 300,
+      "action_sha256": "036fd687c7088f8689d70dd9d92145b4fa43c41f1774e73d858f56a8a2e4ac3f",
+      "previous_action_sha256": "7f71f1bdaea6a910f660a91edb2cca39dd0a4450bcf50f768c4ee96e1e809e49",
+      "first_different_decision": 51,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        110
+      ]
+    },
+    {
+      "seed": 6000050,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 6,
+      "engine_steps": 159,
+      "ui_only_actions": 14,
+      "incomplete_action_sets": 15,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 6,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "loss",
+      "previous_page": "DELEGATED",
+      "previous_floor": 6,
+      "cap": 300,
+      "action_sha256": "59fac399a949ce25ea3100fb78c126d60a68127c44adf86630ef9eeb919be54d",
+      "previous_action_sha256": "47b48ca0192285c79c9831568fe29cbf3c2b5a693304b8431d371a2044fcae9e",
+      "first_different_decision": 92,
+      "previous_at_difference": [
+        178
+      ],
+      "candidate_at_difference": [
+        113
+      ]
+    },
+    {
+      "seed": 6000052,
+      "reason": "unsupported",
+      "page": "REWARD_UNVERIFIED",
+      "engine_floor": 1,
+      "engine_steps": 31,
+      "ui_only_actions": 2,
+      "incomplete_action_sets": 0,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "reward_page_semantics_unverified"
+      ],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "NEOW_RESULT_UNVERIFIED",
+      "previous_floor": 0,
+      "cap": 300,
+      "action_sha256": "1f6a58886f62fe1ed6c3c051037445e5b9ddc1dc88e8aedb23c7042018b90253",
+      "previous_action_sha256": "185dc8242270f680fb2c5743cb2c9ca92f1f99987bf0fe4cbd0595ab33db83a8",
+      "first_different_decision": 3,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        110
+      ]
+    },
+    {
+      "seed": 6000058,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 7,
+      "engine_steps": 113,
+      "ui_only_actions": 8,
+      "incomplete_action_sets": 7,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 7,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "loss",
+      "previous_page": "DELEGATED",
+      "previous_floor": 7,
+      "cap": 300,
+      "action_sha256": "7dace2fb879efba7b630b499cf9ae7809d5cd3c49e832c7f755e9982c6b54968",
+      "previous_action_sha256": "93630c9c6de2f2e4dd5ef6d37032b20e175d7a08e02d0c203b0964c20f58c928",
+      "first_different_decision": 57,
+      "previous_at_difference": [
+        178
+      ],
+      "candidate_at_difference": [
+        115
+      ]
+    },
+    {
+      "seed": 6000065,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 6,
+      "engine_steps": 136,
+      "ui_only_actions": 7,
+      "incomplete_action_sets": 5,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 6,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "DELEGATED",
+      "previous_floor": 5,
+      "cap": 300,
+      "action_sha256": "f737217d95e861f84c1f68690d4b4d6c2637d818095ba94a7e95377d92b8dc09",
+      "previous_action_sha256": "d8ff89ec6f43a8191f2849249e930d9859ae669da1669b3d50d096fdd45c98f1",
+      "first_different_decision": 75,
+      "previous_at_difference": [
+        178
+      ],
+      "candidate_at_difference": [
+        116
+      ]
+    },
+    {
+      "seed": 7000009,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 7,
+      "engine_steps": 119,
+      "ui_only_actions": 26,
+      "incomplete_action_sets": 21,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 7,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "GRID_UNVERIFIED",
+      "previous_floor": 6,
+      "cap": 300,
+      "action_sha256": "d7efc8526bea8ec680da7e054615e4dcec7d0c9db0a4d29856eb6caf48b753de",
+      "previous_action_sha256": "3e9ee35932b95070c9df41528e70d37a089e1b0e1902ad8e7db946076b3678ee",
+      "first_different_decision": 27,
+      "previous_at_difference": [
+        178
+      ],
+      "candidate_at_difference": [
+        115
+      ]
+    },
+    {
+      "seed": 7000021,
+      "reason": "unsupported",
+      "page": "REWARD_UNVERIFIED",
+      "engine_floor": 1,
+      "engine_steps": 20,
+      "ui_only_actions": 2,
+      "incomplete_action_sets": 0,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "reward_page_semantics_unverified"
+      ],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "NEOW_RESULT_UNVERIFIED",
+      "previous_floor": 0,
+      "cap": 300,
+      "action_sha256": "c9b7068607f4a3694a5e2b69d627eb70ac4170ad50e369e832bd5abce89fe928",
+      "previous_action_sha256": "185dc8242270f680fb2c5743cb2c9ca92f1f99987bf0fe4cbd0595ab33db83a8",
+      "first_different_decision": 3,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        110
+      ]
+    },
+    {
+      "seed": 7000025,
+      "reason": "unsupported",
+      "page": "GRID_UNVERIFIED",
+      "engine_floor": 6,
+      "engine_steps": 138,
+      "ui_only_actions": 5,
+      "incomplete_action_sets": 1,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "permanent_grid_task_origin_or_occurrence_binding_unverified"
+      ],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "REWARD_UNVERIFIED",
+      "previous_floor": 5,
+      "cap": 300,
+      "action_sha256": "54dedc66d113e3271c27fcc24f191944caee4392af502064e60e60eaa952c4f3",
+      "previous_action_sha256": "36ff2c9c1fa70248e8b107e3533a2577f1036065299f9c4e64a6892d002d23bb",
+      "first_different_decision": 137,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        112
+      ]
+    },
+    {
+      "seed": 7000032,
+      "reason": "unsupported",
+      "page": "EVENT_RESULT_UNVERIFIED",
+      "engine_floor": 11,
+      "engine_steps": 183,
+      "ui_only_actions": 8,
+      "incomplete_action_sets": 5,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "event_outcome_page_unverified"
+      ],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "DELEGATED",
+      "previous_floor": 10,
+      "cap": 300,
+      "action_sha256": "313cf8698e4a40b7453ce1257bcdcf6357b895b76e460354cccecfe6740dd1ed",
+      "previous_action_sha256": "37336e1b4b62bda6208ebeab55880dc880bd6d3a808c0b49d67cff80c85ad787",
+      "first_different_decision": 186,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        13
+      ]
+    },
+    {
+      "seed": 7000033,
+      "reason": "unsupported",
+      "page": "REWARD_UNVERIFIED",
+      "engine_floor": 1,
+      "engine_steps": 29,
+      "ui_only_actions": 2,
+      "incomplete_action_sets": 0,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "reward_page_semantics_unverified"
+      ],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "NEOW_RESULT_UNVERIFIED",
+      "previous_floor": 0,
+      "cap": 300,
+      "action_sha256": "875edec7ba1a5358b9eb932238cbfc6a4455922abc500086e66c9d64cd725631",
+      "previous_action_sha256": "185dc8242270f680fb2c5743cb2c9ca92f1f99987bf0fe4cbd0595ab33db83a8",
+      "first_different_decision": 3,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        110
+      ]
+    },
+    {
+      "seed": 7000035,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 5,
+      "engine_steps": 105,
+      "ui_only_actions": 2,
+      "incomplete_action_sets": 1,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 5,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "DELEGATED",
+      "previous_floor": 4,
+      "cap": 300,
+      "action_sha256": "9981c53814c68f0fb15af2dd32046e7150d67804eb21b627a8a8e5a3b0aafb82",
+      "previous_action_sha256": "52cb198a99c70cfa12dfb994b70c576bd81c29e516463ed4127e80ab393918f7",
+      "first_different_decision": 97,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        25
+      ]
+    },
+    {
+      "seed": 7000044,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 5,
+      "engine_steps": 138,
+      "ui_only_actions": 9,
+      "incomplete_action_sets": 6,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 5,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "DELEGATED",
+      "previous_floor": 4,
+      "cap": 300,
+      "action_sha256": "9e6569a5449d1def7bfad3bf1e8b012b5bab8e022c00d5df07a0626120e8fdef",
+      "previous_action_sha256": "df279e83bd8bf5963851bb9fc1b912af7af5d969e38f4575d3735ff5f201d4f7",
+      "first_different_decision": 114,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        12
+      ]
+    },
+    {
+      "seed": 7000048,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 1,
+      "engine_steps": 70,
+      "ui_only_actions": 2,
+      "incomplete_action_sets": 0,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 1,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "NEOW_RESULT_UNVERIFIED",
+      "previous_floor": 0,
+      "cap": 300,
+      "action_sha256": "f3d6bce41158469154eace3eb8c23303bcdd19a99e33c2f370aa1ac8d50f1ab0",
+      "previous_action_sha256": "185dc8242270f680fb2c5743cb2c9ca92f1f99987bf0fe4cbd0595ab33db83a8",
+      "first_different_decision": 3,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        110
+      ]
+    },
+    {
+      "seed": 7000055,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 3,
+      "engine_steps": 86,
+      "ui_only_actions": 3,
+      "incomplete_action_sets": 0,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 3,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "NEOW_RESULT_UNVERIFIED",
+      "previous_floor": 0,
+      "cap": 300,
+      "action_sha256": "419eb678b55627a326f4f0920d379003d5dac21637de620ff341570ee0e375f6",
+      "previous_action_sha256": "185dc8242270f680fb2c5743cb2c9ca92f1f99987bf0fe4cbd0595ab33db83a8",
+      "first_different_decision": 3,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        110
+      ]
+    },
+    {
+      "seed": 8000003,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 6,
+      "engine_steps": 115,
+      "ui_only_actions": 7,
+      "incomplete_action_sets": 6,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 6,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "REWARD_UNVERIFIED",
+      "previous_floor": 4,
+      "cap": 300,
+      "action_sha256": "8ce1d8214bb1eb265359b9107ae2b7322a4ee365cfeae7421e58752ef504115a",
+      "previous_action_sha256": "75805c3092b91a747c5b5ab970ea5359690f763f2840800368050c177f4fcc02",
+      "first_different_decision": 39,
+      "previous_at_difference": [
+        178
+      ],
+      "candidate_at_difference": [
+        113
+      ]
+    },
+    {
+      "seed": 8000006,
+      "reason": "unsupported",
+      "page": "DELEGATED",
+      "engine_floor": 4,
+      "engine_steps": 99,
+      "ui_only_actions": 7,
+      "incomplete_action_sets": 5,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "death_boundary_unknown"
+      ],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "DELEGATED",
+      "previous_floor": 5,
+      "cap": 300,
+      "action_sha256": "f76d9d467b30f5c6ce63094c57789195fecc473ad67ef22323bd1e7c689227db",
+      "previous_action_sha256": "67f90c73e52967016f98cf62d493fae945df8b5bdf6b31154df512fbfe0d267f",
+      "first_different_decision": 91,
+      "previous_at_difference": [
+        178
+      ],
+      "candidate_at_difference": [
+        111
+      ]
+    },
+    {
+      "seed": 8000008,
+      "reason": "unsupported",
+      "page": "DELEGATED",
+      "engine_floor": 7,
+      "engine_steps": 116,
+      "ui_only_actions": 5,
+      "incomplete_action_sets": 5,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "death_boundary_unknown"
+      ],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "GRID_UNVERIFIED",
+      "previous_floor": 6,
+      "cap": 300,
+      "action_sha256": "3dee17869dec7493c6b0f37560011bce8cbb39152f0e7a7b6340c668473406e2",
+      "previous_action_sha256": "19e554878ff6bb0b541cb22a3151f0edc428ceefe20ce99d909348f6ed446926",
+      "first_different_decision": 97,
+      "previous_at_difference": [
+        178
+      ],
+      "candidate_at_difference": [
+        111
+      ]
+    },
+    {
+      "seed": 8000009,
+      "reason": "unsupported",
+      "page": "GRID_UNVERIFIED",
+      "engine_floor": 4,
+      "engine_steps": 58,
+      "ui_only_actions": 2,
+      "incomplete_action_sets": 0,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "permanent_grid_task_origin_or_occurrence_binding_unverified"
+      ],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "NEOW_RESULT_UNVERIFIED",
+      "previous_floor": 0,
+      "cap": 300,
+      "action_sha256": "cbf58b35fda5730634aafe8f1189c6ea896de9288642fd34e1ee95d14ec92974",
+      "previous_action_sha256": "185dc8242270f680fb2c5743cb2c9ca92f1f99987bf0fe4cbd0595ab33db83a8",
+      "first_different_decision": 3,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        110
+      ]
+    },
+    {
+      "seed": 8000018,
+      "reason": "unsupported",
+      "page": "GRID_UNVERIFIED",
+      "engine_floor": 5,
+      "engine_steps": 119,
+      "ui_only_actions": 4,
+      "incomplete_action_sets": 1,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "permanent_grid_task_origin_or_occurrence_binding_unverified"
+      ],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "NEOW_RESULT_UNVERIFIED",
+      "previous_floor": 0,
+      "cap": 300,
+      "action_sha256": "6fc71df530ccb9eee4db27740ab629327e8b699308c0bdad35942e31ac1735fc",
+      "previous_action_sha256": "185dc8242270f680fb2c5743cb2c9ca92f1f99987bf0fe4cbd0595ab33db83a8",
+      "first_different_decision": 3,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        110
+      ]
+    },
+    {
+      "seed": 8000045,
+      "reason": "unsupported",
+      "page": "REWARD_UNVERIFIED",
+      "engine_floor": 5,
+      "engine_steps": 120,
+      "ui_only_actions": 6,
+      "incomplete_action_sets": 6,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "reward_page_semantics_unverified"
+      ],
+      "cohort": "fixed",
+      "previous": "loss",
+      "previous_page": "DELEGATED",
+      "previous_floor": 4,
+      "cap": 300,
+      "action_sha256": "c610de7c346233fc17f89519d29db62c55f0ff6ee427c74d1e8f6e1001021c9e",
+      "previous_action_sha256": "3da142ddd94c0dd8343756d1288243f94254540aa93cbd2c87d1305a0dd9c1c5",
+      "first_different_decision": 28,
+      "previous_at_difference": [
+        178
+      ],
+      "candidate_at_difference": [
+        114
+      ]
+    },
+    {
+      "seed": 8000056,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 4,
+      "engine_steps": 81,
+      "ui_only_actions": 3,
+      "incomplete_action_sets": 5,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 4,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "REWARD_UNVERIFIED",
+      "previous_floor": 1,
+      "cap": 300,
+      "action_sha256": "a9887c5b9216e3295954ef10d0ec8bb77702ef36ca83e554e6327ed6034b7d04",
+      "previous_action_sha256": "5c4acd4d216380cfd1f9f5cc3bd2eb5e4948d14806432c1312bf9e65caaae883",
+      "first_different_decision": 24,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        110
+      ]
+    },
+    {
+      "seed": 9000003,
+      "reason": "unsupported",
+      "page": "DELEGATED",
+      "engine_floor": 4,
+      "engine_steps": 71,
+      "ui_only_actions": 5,
+      "incomplete_action_sets": 1,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "unresolved_choice_boundary:Env.matchSeen.public_grid",
+        "unmapped_simulator_ids:81,82,83,84,85,86,87,88,89,90,91,92"
+      ],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "REWARD_UNVERIFIED",
+      "previous_floor": 1,
+      "cap": 300,
+      "action_sha256": "a455a06a0c84af6c44e7e5eca13f2e6f17ca0ec6345d884c642e62c8cbf12891",
+      "previous_action_sha256": "c983f901f396788551fbe88b49622473bfc94e8f8a1678b3c8f67f3c506b2ee9",
+      "first_different_decision": 23,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        112
+      ]
+    },
+    {
+      "seed": 9000004,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 4,
+      "engine_steps": 115,
+      "ui_only_actions": 7,
+      "incomplete_action_sets": 2,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 4,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "NEOW_RESULT_UNVERIFIED",
+      "previous_floor": 0,
+      "cap": 300,
+      "action_sha256": "546946be9bb39f68cc13f8db41e3f96c04f78c057b9989f91cf35c2259b0735c",
+      "previous_action_sha256": "185dc8242270f680fb2c5743cb2c9ca92f1f99987bf0fe4cbd0595ab33db83a8",
+      "first_different_decision": 3,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        110
+      ]
+    },
+    {
+      "seed": 9000007,
+      "reason": "unsupported",
+      "page": "GRID_UNVERIFIED",
+      "engine_floor": 6,
+      "engine_steps": 80,
+      "ui_only_actions": 7,
+      "incomplete_action_sets": 4,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "permanent_grid_task_origin_or_occurrence_binding_unverified"
+      ],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "GRID_UNVERIFIED",
+      "previous_floor": 6,
+      "cap": 300,
+      "action_sha256": "5fb407fc2ec0a142f617d2b0b201f82009672dc82e63c3a173e470b5949af9d7",
+      "previous_action_sha256": "ef073f7c13d60597dba2ff04aa4e81031157bb01fe9109beb80f8ac0f86141e4",
+      "first_different_decision": 83,
+      "previous_at_difference": [
+        178
+      ],
+      "candidate_at_difference": [
+        115
+      ]
+    },
+    {
+      "seed": 9000008,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 6,
+      "engine_steps": 181,
+      "ui_only_actions": 4,
+      "incomplete_action_sets": 1,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 6,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "DELEGATED",
+      "previous_floor": 5,
+      "cap": 300,
+      "action_sha256": "7bc97f631ae9530659751ed062cd61d2669cfe70a54fa01a85291e7e0a68ea6e",
+      "previous_action_sha256": "991e3ea25752f7ce93ab97d5b8b17d39e5b81c6bcd7a822efa9eb49a73c78829",
+      "first_different_decision": 166,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        10
+      ]
+    },
+    {
+      "seed": 9000010,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 8,
+      "engine_steps": 51,
+      "ui_only_actions": 8,
+      "incomplete_action_sets": 16,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 8,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "DELEGATED",
+      "previous_floor": 7,
+      "cap": 300,
+      "action_sha256": "d8267bf9c4c20ae8752633b7b3dad389916e602494cd0ba1d14f8936d30a6be4",
+      "previous_action_sha256": "6acf374970bb466b4580f0c1696212ffec70ee3ce5d623c865dc039761dc5397",
+      "first_different_decision": 28,
+      "previous_at_difference": [
+        178
+      ],
+      "candidate_at_difference": [
+        114
+      ]
+    },
+    {
+      "seed": 9000020,
+      "reason": "unsupported",
+      "page": "DELEGATED",
+      "engine_floor": 5,
+      "engine_steps": 116,
+      "ui_only_actions": 7,
+      "incomplete_action_sets": 3,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "death_boundary_unknown"
+      ],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "DELEGATED",
+      "previous_floor": 4,
+      "cap": 300,
+      "action_sha256": "7e124e8967a6abc37baaf47743d49f5653752db529245c78805fd4e785150c30",
+      "previous_action_sha256": "7c38d973f28361ee6def4d14975ccd48c1ffd8748f47e5896d098410f0bc2067",
+      "first_different_decision": 103,
+      "previous_at_difference": [
+        10
+      ],
+      "candidate_at_difference": [
+        3
+      ]
+    },
+    {
+      "seed": 9000033,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 6,
+      "engine_steps": 107,
+      "ui_only_actions": 8,
+      "incomplete_action_sets": 8,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 6,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "GRID_UNVERIFIED",
+      "previous_floor": 5,
+      "cap": 300,
+      "action_sha256": "a530a49cd6f68a98adfef743888c09b16fd1c58e99b525b70092c711cb61559d",
+      "previous_action_sha256": "6a929a8ede704048c87fd5af959e6a5afa69288b579928101c3d7d40d1e00ffe",
+      "first_different_decision": 93,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        118
+      ]
+    },
+    {
+      "seed": 9000055,
+      "reason": "unsupported",
+      "page": "GRID_UNVERIFIED",
+      "engine_floor": 6,
+      "engine_steps": 89,
+      "ui_only_actions": 7,
+      "incomplete_action_sets": 5,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "permanent_grid_task_origin_or_occurrence_binding_unverified"
+      ],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "GRID_UNVERIFIED",
+      "previous_floor": 6,
+      "cap": 300,
+      "action_sha256": "9f865ea478fbe9c110e6bc5734c6a193ba02d28c7772c0a70fedad3fa70064af",
+      "previous_action_sha256": "81f830f4dda77e448b00ef45c8f0df1ef95bf1d8fb517ffbcd2366f6b85faf0c",
+      "first_different_decision": 63,
+      "previous_at_difference": [
+        178
+      ],
+      "candidate_at_difference": [
+        114
+      ]
+    },
+    {
+      "seed": 9000058,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 6,
+      "engine_steps": 95,
+      "ui_only_actions": 14,
+      "incomplete_action_sets": 14,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 6,
+      "cause": [],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "EVENT_RESULT_UNVERIFIED",
+      "previous_floor": 5,
+      "cap": 300,
+      "action_sha256": "a717894549ccdf6739fac7a94cde5ffd30b4fc4c7e1a1db88f4032c2d41b1b81",
+      "previous_action_sha256": "87318e80d25ba26003effba039ce1f32d7432f1ab4a0505e6075a72b789e2901",
+      "first_different_decision": 44,
+      "previous_at_difference": [
+        178
+      ],
+      "candidate_at_difference": [
+        112
+      ]
+    },
+    {
+      "seed": 9000065,
+      "reason": "unsupported",
+      "page": "GRID_UNVERIFIED",
+      "engine_floor": 7,
+      "engine_steps": 119,
+      "ui_only_actions": 8,
+      "incomplete_action_sets": 1,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "permanent_grid_task_origin_or_occurrence_binding_unverified"
+      ],
+      "cohort": "fixed",
+      "previous": "unsupported",
+      "previous_page": "GRID_UNVERIFIED",
+      "previous_floor": 5,
+      "cap": 300,
+      "action_sha256": "ba4da135803cba5d8996c0d3f51ac38e1e544416d3e0ce86938fed60860127eb",
+      "previous_action_sha256": "01efd0155875294c97f78280a5e3109562e20c71fc77ef9951543b75a383132e",
+      "first_different_decision": 121,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        121
+      ]
+    },
+    {
+      "seed": 17000011,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 7,
+      "engine_steps": 131,
+      "ui_only_actions": 8,
+      "incomplete_action_sets": 10,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 7,
+      "cause": [],
+      "cohort": "additional",
+      "previous": "unsupported",
+      "previous_page": "GRID_UNVERIFIED",
+      "previous_floor": 4,
+      "cap": 300,
+      "action_sha256": "5a8298effcdf3f6d7cefb958d64a0a88fc1734e73f68b6926b6ef797c175cbec",
+      "previous_action_sha256": "c4f1403c173c9f8aac98ea24bccabe1f9481a4f258e0a40a37b1de7e1c3b4fc2",
+      "first_different_decision": 36,
+      "previous_at_difference": [
+        178
+      ],
+      "candidate_at_difference": [
+        115
+      ]
+    },
+    {
+      "seed": 17000023,
+      "reason": "unsupported",
+      "page": "REWARD_UNVERIFIED",
+      "engine_floor": 6,
+      "engine_steps": 21,
+      "ui_only_actions": 16,
+      "incomplete_action_sets": 18,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "reward_page_semantics_unverified"
+      ],
+      "cohort": "additional",
+      "previous": "unsupported",
+      "previous_page": "DELEGATED",
+      "previous_floor": 8,
+      "cap": 300,
+      "action_sha256": "04dd42066714314615d392b94fb09428a314a3c7351a2e51a3dd946270c7b57c",
+      "previous_action_sha256": "979116a3e49e8589461f4eb947da2f9a6465e938a5e9039280679ff8bbd8dd2b",
+      "first_different_decision": 22,
+      "previous_at_difference": [
+        178
+      ],
+      "candidate_at_difference": [
+        111
+      ]
+    },
+    {
+      "seed": 17000028,
+      "reason": "unsupported",
+      "page": "REWARD_UNVERIFIED",
+      "engine_floor": 10,
+      "engine_steps": 54,
+      "ui_only_actions": 5,
+      "incomplete_action_sets": 7,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "reward_page_semantics_unverified"
+      ],
+      "cohort": "additional",
+      "previous": "unsupported",
+      "previous_page": "DELEGATED",
+      "previous_floor": 4,
+      "cap": 300,
+      "action_sha256": "0ead8903fe8fe00d40e9f406954ebb4d031e6ae881e7e03adf7b57b4afb36e47",
+      "previous_action_sha256": "720844cffa04bb4faa51b923a2d9697c567ed904fe2bb990a7a23669c35593c5",
+      "first_different_decision": 29,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        170
+      ]
+    },
+    {
+      "seed": 17000031,
+      "reason": "unsupported",
+      "page": "REWARD_UNVERIFIED",
+      "engine_floor": 7,
+      "engine_steps": 139,
+      "ui_only_actions": 6,
+      "incomplete_action_sets": 6,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "reward_page_semantics_unverified"
+      ],
+      "cohort": "additional",
+      "previous": "loss",
+      "previous_page": "DELEGATED",
+      "previous_floor": 7,
+      "cap": 300,
+      "action_sha256": "3cc886a2e62a47bdd3325c9c042baca0e3269cee758976b48faa0821f9eccbc3",
+      "previous_action_sha256": "d1842d7c6c910924d775377925f3b7860b01e37e513d09d250e5a25814303ac3",
+      "first_different_decision": 38,
+      "previous_at_difference": [
+        178
+      ],
+      "candidate_at_difference": [
+        113
+      ]
+    },
+    {
+      "seed": 17000039,
+      "reason": "unsupported",
+      "page": "REWARD_UNVERIFIED",
+      "engine_floor": 5,
+      "engine_steps": 82,
+      "ui_only_actions": 6,
+      "incomplete_action_sets": 6,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "reward_page_semantics_unverified"
+      ],
+      "cohort": "additional",
+      "previous": "unsupported",
+      "previous_page": "REWARD_UNVERIFIED",
+      "previous_floor": 5,
+      "cap": 300,
+      "action_sha256": "952b739f1a059ee5b2f9b22eff465aa9e718cbe7659eb4ab643b4f8808601c4e",
+      "previous_action_sha256": "66a6fd318a10fa331f39bc81da173ad67e92885bcb2f4ac585f750f33d7d80a5",
+      "first_different_decision": 54,
+      "previous_at_difference": [
+        178
+      ],
+      "candidate_at_difference": [
+        112
+      ]
+    },
+    {
+      "seed": 17000042,
+      "reason": "unsupported",
+      "page": "GRID_UNVERIFIED",
+      "engine_floor": 6,
+      "engine_steps": 124,
+      "ui_only_actions": 10,
+      "incomplete_action_sets": 2,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "permanent_grid_task_origin_or_occurrence_binding_unverified"
+      ],
+      "cohort": "additional",
+      "previous": "unsupported",
+      "previous_page": "GRID_UNVERIFIED",
+      "previous_floor": 2,
+      "cap": 300,
+      "action_sha256": "ec371ce12dc411d639a9e1da1b1475b38c80964e8aecdf4e45a7e4bde46edb85",
+      "previous_action_sha256": "b2de0bae30d3e26d84d1648aeb0a2f9ef340fb63f1564215f0a334a2bbdbb7d7",
+      "first_different_decision": 29,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        113
+      ]
+    },
+    {
+      "seed": 17000045,
+      "reason": "unsupported",
+      "page": "REWARD_UNVERIFIED",
+      "engine_floor": 1,
+      "engine_steps": 25,
+      "ui_only_actions": 2,
+      "incomplete_action_sets": 0,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "reward_page_semantics_unverified"
+      ],
+      "cohort": "additional",
+      "previous": "unsupported",
+      "previous_page": "NEOW_RESULT_UNVERIFIED",
+      "previous_floor": 0,
+      "cap": 300,
+      "action_sha256": "c3b179f6793937759c74b600ff31380570cbd92cd1f8e05911def5e046737048",
+      "previous_action_sha256": "185dc8242270f680fb2c5743cb2c9ca92f1f99987bf0fe4cbd0595ab33db83a8",
+      "first_different_decision": 3,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        110
+      ]
+    },
+    {
+      "seed": 17000046,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 5,
+      "engine_steps": 97,
+      "ui_only_actions": 13,
+      "incomplete_action_sets": 1,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 5,
+      "cause": [],
+      "cohort": "additional",
+      "previous": "unsupported",
+      "previous_page": "GRID_UNVERIFIED",
+      "previous_floor": 2,
+      "cap": 300,
+      "action_sha256": "cd9508f5c49b953315b90c133765bf60f329dd85621bbb6eb610999f040a00d2",
+      "previous_action_sha256": "1e4f5bc08aa7d25dad1ab0ae26c3e6d7a61fdb80c294c2f2bf69a58a93f3acfb",
+      "first_different_decision": 44,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        112
+      ]
+    },
+    {
+      "seed": 17000051,
+      "reason": "loss",
+      "page": "DELEGATED",
+      "engine_floor": 6,
+      "engine_steps": 150,
+      "ui_only_actions": 4,
+      "incomplete_action_sets": 6,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": 6,
+      "cause": [],
+      "cohort": "additional",
+      "previous": "unsupported",
+      "previous_page": "GRID_UNVERIFIED",
+      "previous_floor": 3,
+      "cap": 300,
+      "action_sha256": "16df3d0d181cc81236736b3112757174405c24f4e43c18389acb7b56f1bf4732",
+      "previous_action_sha256": "debe4b4c1c874d71c027125051ab641dac9ce4b4420388aed11ee3b00be6fcae",
+      "first_different_decision": 33,
+      "previous_at_difference": [
+        178
+      ],
+      "candidate_at_difference": [
+        114
+      ]
+    },
+    {
+      "seed": 17000060,
+      "reason": "unsupported",
+      "page": "GRID_UNVERIFIED",
+      "engine_floor": 6,
+      "engine_steps": 121,
+      "ui_only_actions": 11,
+      "incomplete_action_sets": 11,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "permanent_grid_task_origin_or_occurrence_binding_unverified"
+      ],
+      "cohort": "additional",
+      "previous": "loss",
+      "previous_page": "DELEGATED",
+      "previous_floor": 7,
+      "cap": 300,
+      "action_sha256": "cce4a4a3cc7df0c57fe8d7549a4cd9505b23d6afb669b3f3cfad1c87444ddb4d",
+      "previous_action_sha256": "9effeefb76fb3a8799ac582e1c63b5dd6912a2cf8a8e2aeca4198955b2988e14",
+      "first_different_decision": 87,
+      "previous_at_difference": [
+        178
+      ],
+      "candidate_at_difference": [
+        111
+      ]
+    },
+    {
+      "seed": 17000065,
+      "reason": "unsupported",
+      "page": "REWARD_UNVERIFIED",
+      "engine_floor": 1,
+      "engine_steps": 49,
+      "ui_only_actions": 2,
+      "incomplete_action_sets": 0,
+      "act3_cleared": false,
+      "heart_killed": false,
+      "summary_floor": null,
+      "cause": [
+        "reward_page_semantics_unverified"
+      ],
+      "cohort": "additional",
+      "previous": "unsupported",
+      "previous_page": "NEOW_RESULT_UNVERIFIED",
+      "previous_floor": 0,
+      "cap": 300,
+      "action_sha256": "3a7d0775fab1a7b674b9255d8331f1d60e0e92008aa5c97847e84286153db466",
+      "previous_action_sha256": "185dc8242270f680fb2c5743cb2c9ca92f1f99987bf0fe4cbd0595ab33db83a8",
+      "first_different_decision": 3,
+      "previous_at_difference": [],
+      "candidate_at_difference": [
+        110
+      ]
+    }
+  ],
+  "lost_natural_end": [
+    7,
+    5000039,
+    8000045,
+    17000031,
+    17000060
+  ],
+  "newly_natural_end": [
+    2,
+    1000008,
+    1000017,
+    1000027,
+    1000031,
+    1000061,
+    2000036,
+    2000040,
+    2000041,
+    2000049,
+    2000054,
+    4000037,
+    4000039,
+    4000057,
+    4000065,
+    4000066,
+    5000003,
+    5000006,
+    5000015,
+    6000018,
+    6000031,
+    6000044,
+    6000065,
+    7000009,
+    7000035,
+    7000044,
+    7000048,
+    7000055,
+    8000003,
+    8000056,
+    9000004,
+    9000008,
+    9000010,
+    9000033,
+    9000058,
+    17000011,
+    17000046,
+    17000051
+  ],
+  "transitions": {
+    "NEOW_RESULT_UNVERIFIED -> DELEGATED": 9,
+    "DELEGATED -> DELEGATED": 22,
+    "DELEGATED -> GRID_UNVERIFIED": 2,
+    "GRID_UNVERIFIED -> DELEGATED": 10,
+    "NEOW_RESULT_UNVERIFIED -> REWARD_UNVERIFIED": 10,
+    "REWARD_UNVERIFIED -> REWARD_UNVERIFIED": 3,
+    "REWARD_UNVERIFIED -> DELEGATED": 8,
+    "DELEGATED -> REWARD_UNVERIFIED": 7,
+    "GRID_UNVERIFIED -> GRID_UNVERIFIED": 5,
+    "EVENT_RESULT_UNVERIFIED -> DELEGATED": 2,
+    "EVENT_RESULT_UNVERIFIED -> GRID_UNVERIFIED": 1,
+    "REWARD_UNVERIFIED -> GRID_UNVERIFIED": 1,
+    "DELEGATED -> EVENT_RESULT_UNVERIFIED": 1,
+    "NEOW_RESULT_UNVERIFIED -> GRID_UNVERIFIED": 2
+  },
+  "elapsed_seconds": 321.79
+}

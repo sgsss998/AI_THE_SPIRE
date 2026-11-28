@@ -11,8 +11,13 @@ from experiments.sa_calibration_round6 import replay as comparator
 from experiments.sa_calibration_round6.reference import R4, read, sha, write
 from .wall import verify as wall
 from .shop import verify as shop
+from .hand.ledger import bind as bind_hand
+from .shop_extra.ledger import bind as bind_merchandise
 
 HERE = Path(__file__).resolve().parent
+
+def original_action(row,frame,engine):
+    return bind_hand(row,frame,engine) or bind_merchandise(row,frame,engine) or shop.map_input(row,frame,engine)
 
 
 def inspect(frame, engine, row):
@@ -21,7 +26,7 @@ def inspect(frame, engine, row):
     map_return = row["before"]["raw"]["game_state"]["screen_type"] == "MAP"
     for native in sorted(set(row["legal"])):
         try:
-            aid, detail = shop.map_input(dict(row, aid=native),frame,engine)
+            aid, detail = original_action(dict(row, aid=native),frame,engine)
         except (ValueError, KeyError, IndexError) as error:
             aid, detail = None, dict(reason=repr(error))
         if aid is None:
@@ -30,12 +35,21 @@ def inspect(frame, engine, row):
             mapped.add(aid)
             if aid not in public:
                 missing.append(dict(retail_action=native, model_action=aid, evidence=detail))
+    # The bridge cannot enumerate a click on the selected card. The original input
+    # trace in retail_deselect_order193 verifies this operation on the same UI.
+    selected_clicks = []
+    game = row["before"]["raw"]["game_state"]
+    if game["screen_type"] == "HAND_SELECT":
+        for aid in sorted(public-mapped):
+            if 179 <= aid < 189 and (bound := bind_hand(dict(row,aid=aid),frame,engine)):
+                selected_clicks.append(bound[1])
+                mapped.add(aid)
     unmatched = sorted(public-mapped)
     omitted_return = bool(map_return and any(x["retail_action"]==176 for x in missing))
     if omitted_return:
         missing = [x for x in missing if x["retail_action"] != 176]
     return dict(missing=missing, unbound=unbound, unmatched_model_actions=unmatched, map_return_only_control=omitted_return,
-                declared_complete=frame.policy_mask is not None)
+                declared_complete=frame.policy_mask is not None, selected_card_native_clicks=selected_clicks)
 
 
 def run(edition, cohort):
@@ -51,8 +65,15 @@ def run(edition, cohort):
     inherited = read(wall.R6/"INTERFACE.json")["state_version"]
     def compare(engine, frame, snap):
         assert frame.state.state_version == sig["state_version"]
-        projected = replace(frame, state=replace(frame.state,state_version=inherited))
+        assert len(frame.state.vector) == sig["observation_dimension"]
+        projected = replace(frame, state=replace(frame.state,state_version=inherited,vector=frame.state.vector[:3122]))
         diffs = comparator.compare(projected,engine,snap)["differences"]
+        if sig["observation_dimension"] == 3127:
+            game = snap["raw"]["game_state"]
+            monsters = (game.get("combat_state") or {}).get("monsters",[])
+            for i,value in enumerate(frame.state.vector[3122:]):
+                if value and (i >= len(monsters) or monsters[i]["id"] not in ("Mugger","Looter")):
+                    diffs[f"purse_in_non_thief_slot_{i}"] = dict(model=value,original=0)
         if diffs.get("next_x")=={"model":[0],"original":[]} and shop.boss_entry(frame,engine,snap):
             del diffs["next_x"]
         cards = shop.combat_card_offer(frame,engine,snap)
@@ -62,7 +83,7 @@ def run(edition, cohort):
                 del diffs["page"]
         return diffs
     result, _ = wall.retail_replay(journal, calls, seed=seed, session_factory=module.make_session,
-        engine_factory=module.make_engine, compare_frame=compare, inspect_before=inspect,map_input=shop.map_input)
+        engine_factory=module.make_engine, compare_frame=compare, inspect_before=inspect,map_input=original_action)
     counts = Counter()
     first = {}
     for row in result["rows"]:
@@ -72,6 +93,7 @@ def run(edition, cohort):
                 counts[key]+=1
                 first.setdefault(key,dict(input=row["index"],floor=row["floor"],page=row["page"],evidence=check[key]))
         counts["map_return_display_difference"] += int(check["map_return_only_control"])
+        counts["selected_card_click_supplemented_from_original"] += int(bool(check["selected_card_native_clicks"]))
         counts["compared"]+=1
         counts["all_choices_bound_and_equal"]+=int(not any(check[k] for k in ("missing","unbound","unmatched_model_actions")))
     result.update(edition=edition,interface=sig,seed=seed,development_replay=True,

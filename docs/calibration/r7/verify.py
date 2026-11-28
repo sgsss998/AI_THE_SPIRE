@@ -53,3 +53,29 @@ deep = read("deep/REWARD_CANDIDATE.json")["act2_same_fight"]
 assert len(deep["simulated_commands"]) == deep["real_commands"] == 30
 assert deep["first_difference"] is None
 print("Verified 200 pilot seeds, 704 fixed games, both retail runs (120 and 339 inputs), 30 Act II inputs and three regression oracles.")
+
+for subset, losses in (("combined-regression",397),("choices-regression",405),("battle-regression",416)):
+    fixed = read(subset+"/RESULT.json")
+    payload = (root/subset/"games.jsonl.gz").read_bytes()
+    assert sha256(payload).hexdigest()==fixed["archive_sha256"]
+    games = [json.loads(line) for line in gzip.decompress(payload).splitlines()]
+    assert len(games)==len({g["seed"] for g in games})==704
+    assert Counter(g["reason"] for g in games)==fixed["summary"]["outcomes"]
+    assert sum(g["reason"]=="loss" for g in games)==losses
+assert fixed["summary"]["outcomes"]=={"loss":416,"unsupported":283,"endpoint_error":3,"cap":2}
+assert len(fixed["newly_natural_end"])==119 and len(fixed["lost_natural_end"])==75
+for name,count,matches in (("r4-natural",339,331),("r6-natural",120,120)):
+    evidence=json.loads(gzip.decompress((root/"decisions-menus"/(name+".json.gz")).read_bytes()))
+    assert evidence["interface"]["observation_dimension"]==3127
+    assert evidence["stop"] is evidence["first_substantive_difference"] is None
+    assert evidence["completed_inputs"]==evidence["total_original_inputs"]==count
+    assert evidence["menu_counts"]["all_choices_bound_and_equal"]==matches
+purses=read("death_family/thief_rewards/RESULT.json")
+pair=purses["same_state_collision"]
+assert pair["original_rewards"]==[60,15] and pair["swapped_rewards"]==[40,15]
+assert len(purses["single_thief_original_game"]["records"])==21
+continuation=read("death_family/thief_rewards/CONTINUATION.json")
+assert continuation["real_inputs"]==30 and continuation["first_real_difference"] is None
+forward=continuation["simulator_only_continuation"]
+assert len(forward["actions"])==62 and forward["kernel_end_floor"]==20 and forward["reason"]=="loss"
+print("Verified the S3127 counterexample, both original-game action comparisons, continued Act II and three 704-game releases.")

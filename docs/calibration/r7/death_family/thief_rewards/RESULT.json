@@ -1,0 +1,1001 @@
+{
+  "original_game": {
+    "sha256": "880ca5646d02065a061bbbdf7cc106dc1443d5afc6b9560f512486b098fd627b",
+    "fixture_sha256": "a5d2ef5efc4d709a5ff43ecadb6b4cf84172a7dd605daff78e5b6487f284697c",
+    "seed": 15,
+    "wallet_and_options": [
+      {
+        "sequence": 100,
+        "capture": "native_1795112729165_45105131830709:capture:100",
+        "wallet": 68,
+        "page": "COMBAT_REWARD",
+        "floor": 4,
+        "hp": 19,
+        "rows": [
+          [
+            "STOLEN_GOLD",
+            60
+          ],
+          [
+            "GOLD",
+            16
+          ],
+          [
+            "CARD",
+            null
+          ]
+        ]
+      },
+      {
+        "sequence": 101,
+        "capture": "native_1795112729165_45105131830709:capture:101",
+        "wallet": 84,
+        "page": "COMBAT_REWARD",
+        "floor": 4,
+        "hp": 19,
+        "rows": [
+          [
+            "STOLEN_GOLD",
+            60
+          ],
+          [
+            "CARD",
+            null
+          ]
+        ]
+      },
+      {
+        "sequence": 102,
+        "capture": "native_1795112729165_45105131830709:capture:102",
+        "wallet": 144,
+        "page": "COMBAT_REWARD",
+        "floor": 4,
+        "hp": 19,
+        "rows": [
+          [
+            "CARD",
+            null
+          ]
+        ]
+      },
+      {
+        "sequence": 103,
+        "capture": "native_1795112729165_45105131830709:capture:103",
+        "wallet": 144,
+        "page": "MAP",
+        "floor": 4,
+        "hp": 19
+      }
+    ],
+    "credit_rule": {
+      "monsters.city.Mugger": {
+        "native_field": [
+          "20: GETFIELD com.megacrit.cardcrawl.monsters.city.Mugger.stolenGold:I",
+          "30: GETFIELD com.megacrit.cardcrawl.monsters.city.Mugger.stolenGold:I"
+        ],
+        "death_sha256": "a07a95f81155515eb6b6507834bb809d79ee08819a1683f295b491eccdff0944"
+      },
+      "monsters.exordium.Looter": {
+        "native_field": [
+          "88: GETFIELD com.megacrit.cardcrawl.monsters.exordium.Looter.stolenGold:I",
+          "98: GETFIELD com.megacrit.cardcrawl.monsters.exordium.Looter.stolenGold:I"
+        ],
+        "death_sha256": "bceec70360c1669022fdced1b1af35d650ca2dddefc9146a71fbe4f9490b5763"
+      }
+    }
+  },
+  "single_thief_original_game": {
+    "records": [
+      {
+        "sequence": 79,
+        "sha256": "f80122bcb02d8378494bd67436d84a3539e4543000482603df1b96ca75c27ad4",
+        "wallet": 128,
+        "model_purse": 0
+      },
+      {
+        "sequence": 80,
+        "sha256": "6b001343ee14e34dbb41537f748594434dd556a611250f60dc3431eb82736630",
+        "wallet": 128,
+        "model_purse": 0
+      },
+      {
+        "sequence": 81,
+        "sha256": "29fbbfe6b288f178451c3865a3c6cd2b4c49eef08e54e190aaa4893a83f09e5e",
+        "wallet": 128,
+        "model_purse": 0
+      },
+      {
+        "sequence": 82,
+        "sha256": "092c4838b7ebb91e3e8202880aaffd8017e907f966aa9b3fb1c95d7bc0204581",
+        "wallet": 128,
+        "model_purse": 0
+      },
+      {
+        "sequence": 83,
+        "sha256": "9fe4b2c20a3fe89eece6811efa704b8c7e182f8014479f648c614372c3479ca6",
+        "wallet": 128,
+        "model_purse": 0
+      },
+      {
+        "sequence": 84,
+        "sha256": "03e57e1f417c05a462353b794aabf5d689f8e20d421a8dcf14ed09db9c136d69",
+        "wallet": 128,
+        "model_purse": 0
+      },
+      {
+        "sequence": 85,
+        "sha256": "619089d79854cfde2f55101ed2201a4ee2da4d742d60a47ce8d5809d4d796188",
+        "wallet": 128,
+        "model_purse": 0
+      },
+      {
+        "sequence": 86,
+        "sha256": "4800fda26a4e8bdce305c6122a68bb0f657a0a4b3630497dc9b68c4557de6726",
+        "wallet": 128,
+        "model_purse": 0
+      },
+      {
+        "sequence": 87,
+        "sha256": "6d4e6467888cb35b00dc8a600151ed110669e8c1074053596b41c0db97c65f39",
+        "wallet": 128,
+        "model_purse": 0
+      },
+      {
+        "sequence": 88,
+        "sha256": "7b81f9f626bca72844ee2c464dcd5a5ad2e80e3d4a7e0adde92cd766bf200d65",
+        "wallet": 108,
+        "model_purse": 20
+      },
+      {
+        "sequence": 89,
+        "sha256": "87e497b533bbc027b433c2c417ef40dec0b993686b59f54cd5496dfe2a5c64a9",
+        "wallet": 108,
+        "model_purse": 20
+      },
+      {
+        "sequence": 90,
+        "sha256": "29895055b7428d0e4e2c2463ed470afb868fcf9c152dbd57340df4648e5764cf",
+        "wallet": 108,
+        "model_purse": 20
+      },
+      {
+        "sequence": 91,
+        "sha256": "6a9aadf6826c0dcd7e94c713e9d3b2dd9563d09f2b9fd081cd02a5c7d90533f1",
+        "wallet": 108,
+        "model_purse": 20
+      },
+      {
+        "sequence": 92,
+        "sha256": "06bb28cd2388ddcf2973741c10c9a9fc43403e3cdc19b3f28daf7dae9c014b13",
+        "wallet": 88,
+        "model_purse": 40
+      },
+      {
+        "sequence": 93,
+        "sha256": "4f6aec25623e78ac39191ca23ea567813d63406c8bc09893e513162929f42f7d",
+        "wallet": 88,
+        "model_purse": 40
+      },
+      {
+        "sequence": 94,
+        "sha256": "c71d7022163c9b28b2f43b482b5959643ffc8e0c16dbc0b356fdb5483ed64bcc",
+        "wallet": 88,
+        "model_purse": 40
+      },
+      {
+        "sequence": 95,
+        "sha256": "d9d749a05456e0809a528232752ef00dfe85bb5f748aa6ded385a6162d04ac6a",
+        "wallet": 88,
+        "model_purse": 40
+      },
+      {
+        "sequence": 96,
+        "sha256": "1c9dfb0f4caee4a7aa3ef866b9247bbcba4c03252a7575968cf94ed4324089d5",
+        "wallet": 88,
+        "model_purse": 40
+      },
+      {
+        "sequence": 97,
+        "sha256": "423ea96d0bc592a44fafd0a3e497c549f614eff50e0430ab1c5ac58dd21c07e2",
+        "wallet": 68,
+        "model_purse": 60
+      },
+      {
+        "sequence": 98,
+        "sha256": "4959d943b94e67f79287a9b2718f52d1f12426f54e15c30ed5737b9af46519e6",
+        "wallet": 68,
+        "model_purse": 60
+      },
+      {
+        "sequence": 99,
+        "sha256": "17569b4634f09b158372141ba5d84612da9ff7116784693aa452510dd9e2f7df",
+        "wallet": 68,
+        "model_purse": 60
+      }
+    ],
+    "seed": 15,
+    "floor": 4,
+    "starting_wallet": 128,
+    "method": "Wallet change with a single original-game thief; no other observed transfers."
+  },
+  "directed_branches": [
+    {
+      "branch": "native-order",
+      "initial": {
+        "page": "COMBAT_REWARD",
+        "scene": "act2/MONSTER/REWARDS/COMBAT_REWARD",
+        "engine_steps": 50,
+        "hp": 20,
+        "max_hp": 71,
+        "gold": 199,
+        "floor": 19,
+        "act": 2,
+        "event": null,
+        "legal": [
+          110,
+          111,
+          112,
+          171
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "2fa2250d60a00e907e50155801d1429a65ae92d678367cf87636d51359bf1b32"
+      },
+      "steps": [
+        {
+          "aid": 111,
+          "previous_steps": 50,
+          "after": {
+            "page": "COMBAT_REWARD",
+            "scene": "act2/MONSTER/REWARDS/COMBAT_REWARD",
+            "engine_steps": 51,
+            "hp": 20,
+            "max_hp": 71,
+            "gold": 214,
+            "floor": 19,
+            "act": 2,
+            "event": null,
+            "legal": [
+              110,
+              111,
+              171
+            ],
+            "gaps": [],
+            "complete": true,
+            "done": false,
+            "sha256": "cf0b9d8c246123881c4f776105f8dadfc173f6bbb1f2dcff3e477c29b59928ac"
+          },
+          "rows": [
+            [
+              4,
+              60,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              15,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "aid": 110,
+          "previous_steps": 51,
+          "after": {
+            "page": "COMBAT_REWARD",
+            "scene": "act2/MONSTER/REWARDS/COMBAT_REWARD",
+            "engine_steps": 52,
+            "hp": 20,
+            "max_hp": 71,
+            "gold": 274,
+            "floor": 19,
+            "act": 2,
+            "event": null,
+            "legal": [
+              110,
+              171
+            ],
+            "gaps": [],
+            "complete": true,
+            "done": false,
+            "sha256": "5abb071b8ca20d1a01e9e127d61da09cfd8d890b3f1797d92f36d86f9980a643"
+          },
+          "rows": [
+            [
+              15,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "aid": 110,
+          "previous_steps": 52,
+          "after": {
+            "page": "CARD_REWARD",
+            "scene": "act2/MONSTER/NATIVE_CARD_REWARD_OVERLAY/CARD_REWARD",
+            "engine_steps": 52,
+            "hp": 20,
+            "max_hp": 71,
+            "gold": 274,
+            "floor": 19,
+            "act": 2,
+            "event": null,
+            "legal": [
+              110,
+              111,
+              112,
+              177
+            ],
+            "gaps": [],
+            "complete": true,
+            "done": false,
+            "sha256": "af75b583c1875dacdfbbdd8d57fbaf9dd2af921cfcf586b1a3eb70878995986c"
+          },
+          "rows": [
+            [
+              1,
+              19,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              273,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              248,
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "aid": 177,
+          "previous_steps": 52,
+          "after": {
+            "page": "COMBAT_REWARD",
+            "scene": "act2/MONSTER/REWARDS/COMBAT_REWARD",
+            "engine_steps": 52,
+            "hp": 20,
+            "max_hp": 71,
+            "gold": 274,
+            "floor": 19,
+            "act": 2,
+            "event": null,
+            "legal": [
+              110,
+              171
+            ],
+            "gaps": [],
+            "complete": true,
+            "done": false,
+            "sha256": "d906b89cfce92fcc29af57acfb37bca7fd83cf1ab7d7400a0cba81b11c54d9e7"
+          },
+          "rows": [
+            [
+              15,
+              0,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              19,
+              0,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              273,
+              1,
+              0,
+              1,
+              0
+            ],
+            [
+              1,
+              248,
+              0,
+              0,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "aid": 171,
+          "previous_steps": 52,
+          "after": {
+            "page": "DELEGATED",
+            "scene": "act2/MONSTER/MAP_SCREEN/DELEGATED",
+            "engine_steps": 53,
+            "hp": 20,
+            "max_hp": 71,
+            "gold": 274,
+            "floor": 19,
+            "act": 2,
+            "event": null,
+            "legal": [
+              110
+            ],
+            "gaps": [],
+            "complete": true,
+            "done": false,
+            "sha256": "0bb257f82aa78d8afb4e1272e4c73a58679e69b29148b9873b347053c117184b"
+          },
+          "rows": [
+            [
+              7,
+              0,
+              5,
+              0,
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "branch": "stolen-first",
+      "initial": {
+        "page": "COMBAT_REWARD",
+        "scene": "act2/MONSTER/REWARDS/COMBAT_REWARD",
+        "engine_steps": 50,
+        "hp": 20,
+        "max_hp": 71,
+        "gold": 199,
+        "floor": 19,
+        "act": 2,
+        "event": null,
+        "legal": [
+          110,
+          111,
+          112,
+          171
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "2fa2250d60a00e907e50155801d1429a65ae92d678367cf87636d51359bf1b32"
+      },
+      "steps": [
+        {
+          "aid": 110,
+          "previous_steps": 50,
+          "after": {
+            "page": "COMBAT_REWARD",
+            "scene": "act2/MONSTER/REWARDS/COMBAT_REWARD",
+            "engine_steps": 51,
+            "hp": 20,
+            "max_hp": 71,
+            "gold": 259,
+            "floor": 19,
+            "act": 2,
+            "event": null,
+            "legal": [
+              110,
+              111,
+              171
+            ],
+            "gaps": [],
+            "complete": true,
+            "done": false,
+            "sha256": "f22c50e87c8c0412c6d2c87cb7118b5c30cc0a9bebb8f0bbe8e6f88f6970e067"
+          },
+          "rows": [
+            [
+              4,
+              15,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              15,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "aid": 110,
+          "previous_steps": 51,
+          "after": {
+            "page": "COMBAT_REWARD",
+            "scene": "act2/MONSTER/REWARDS/COMBAT_REWARD",
+            "engine_steps": 52,
+            "hp": 20,
+            "max_hp": 71,
+            "gold": 274,
+            "floor": 19,
+            "act": 2,
+            "event": null,
+            "legal": [
+              110,
+              171
+            ],
+            "gaps": [],
+            "complete": true,
+            "done": false,
+            "sha256": "5abb071b8ca20d1a01e9e127d61da09cfd8d890b3f1797d92f36d86f9980a643"
+          },
+          "rows": [
+            [
+              15,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "aid": 110,
+          "previous_steps": 52,
+          "after": {
+            "page": "CARD_REWARD",
+            "scene": "act2/MONSTER/NATIVE_CARD_REWARD_OVERLAY/CARD_REWARD",
+            "engine_steps": 52,
+            "hp": 20,
+            "max_hp": 71,
+            "gold": 274,
+            "floor": 19,
+            "act": 2,
+            "event": null,
+            "legal": [
+              110,
+              111,
+              112,
+              177
+            ],
+            "gaps": [],
+            "complete": true,
+            "done": false,
+            "sha256": "af75b583c1875dacdfbbdd8d57fbaf9dd2af921cfcf586b1a3eb70878995986c"
+          },
+          "rows": [
+            [
+              1,
+              19,
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              273,
+              1,
+              0,
+              0,
+              1
+            ],
+            [
+              1,
+              248,
+              0,
+              0,
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "aid": 111,
+          "previous_steps": 52,
+          "after": {
+            "page": "COMBAT_REWARD",
+            "scene": "act2/MONSTER/REWARDS/COMBAT_REWARD",
+            "engine_steps": 53,
+            "hp": 20,
+            "max_hp": 71,
+            "gold": 274,
+            "floor": 19,
+            "act": 2,
+            "event": null,
+            "legal": [
+              171
+            ],
+            "gaps": [],
+            "complete": true,
+            "done": false,
+            "sha256": "ec78285f90040bd403f9c9a0c9333df21cc983e0cd173db7aa4945d8835728f2"
+          },
+          "rows": []
+        },
+        {
+          "aid": 171,
+          "previous_steps": 53,
+          "after": {
+            "page": "DELEGATED",
+            "scene": "act2/MONSTER/MAP_SCREEN/DELEGATED",
+            "engine_steps": 54,
+            "hp": 20,
+            "max_hp": 71,
+            "gold": 274,
+            "floor": 19,
+            "act": 2,
+            "event": null,
+            "legal": [
+              110
+            ],
+            "gaps": [],
+            "complete": true,
+            "done": false,
+            "sha256": "d6990e36c8d5f4f14358ef8bd70bd824746cafe41025186565c652ed46ad21eb"
+          },
+          "rows": [
+            [
+              7,
+              0,
+              5,
+              0,
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "branch": "exit",
+      "initial": {
+        "page": "COMBAT_REWARD",
+        "scene": "act2/MONSTER/REWARDS/COMBAT_REWARD",
+        "engine_steps": 50,
+        "hp": 20,
+        "max_hp": 71,
+        "gold": 199,
+        "floor": 19,
+        "act": 2,
+        "event": null,
+        "legal": [
+          110,
+          111,
+          112,
+          171
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "2fa2250d60a00e907e50155801d1429a65ae92d678367cf87636d51359bf1b32"
+      },
+      "steps": [
+        {
+          "aid": 171,
+          "previous_steps": 50,
+          "after": {
+            "page": "DELEGATED",
+            "scene": "act2/MONSTER/MAP_SCREEN/DELEGATED",
+            "engine_steps": 51,
+            "hp": 20,
+            "max_hp": 71,
+            "gold": 199,
+            "floor": 19,
+            "act": 2,
+            "event": null,
+            "legal": [
+              110
+            ],
+            "gaps": [],
+            "complete": true,
+            "done": false,
+            "sha256": "006ba237e704d897b190ec031fd528ce83b49ca0adf2adf274cdb63c4b9b0834"
+          },
+          "rows": [
+            [
+              7,
+              0,
+              5,
+              0,
+              0,
+              1
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "same_state_collision": {
+    "seed": 13655749040571095217,
+    "floor": 19,
+    "wallet": 199,
+    "step": 48,
+    "stored_gold": [
+      60,
+      40,
+      0,
+      0,
+      0
+    ],
+    "counterfactual": [
+      40,
+      60,
+      0,
+      0,
+      0
+    ],
+    "original_and_counterfactual_S3122_sha256": "e1c17226a0e35afd099df51c1636ed1460d58b92e88152454225ec9ddd68e5b9",
+    "original_and_counterfactual_A193_sha256": "00542e5e34e516cc153ece323b6a27101375ba8f717f07331bf8d4bd1c9dca93",
+    "actions": [
+      10,
+      170
+    ],
+    "original_rewards": [
+      60,
+      15
+    ],
+    "swapped_rewards": [
+      40,
+      15
+    ],
+    "native_act2_turns": false,
+    "natural_purse_readings": [
+      {
+        "step": 33,
+        "pooled_wallet": 299.0,
+        "purses": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "step": 34,
+        "pooled_wallet": 299.0,
+        "purses": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "step": 35,
+        "pooled_wallet": 299.0,
+        "purses": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "step": 36,
+        "pooled_wallet": 299.0,
+        "purses": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "step": 37,
+        "pooled_wallet": 299.0,
+        "purses": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "step": 38,
+        "pooled_wallet": 299.0,
+        "purses": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "step": 39,
+        "pooled_wallet": 259.0,
+        "purses": [
+          20,
+          20,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "step": 40,
+        "pooled_wallet": 259.0,
+        "purses": [
+          20,
+          20,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "step": 41,
+        "pooled_wallet": 259.0,
+        "purses": [
+          20,
+          20,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "step": 42,
+        "pooled_wallet": 259.0,
+        "purses": [
+          20,
+          20,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "step": 43,
+        "pooled_wallet": 259.0,
+        "purses": [
+          20,
+          20,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "step": 44,
+        "pooled_wallet": 219.0,
+        "purses": [
+          40,
+          40,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "step": 45,
+        "pooled_wallet": 219.0,
+        "purses": [
+          40,
+          40,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "step": 46,
+        "pooled_wallet": 219.0,
+        "purses": [
+          40,
+          40,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "step": 47,
+        "pooled_wallet": 219.0,
+        "purses": [
+          40,
+          40,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "step": 48,
+        "pooled_wallet": 199.0,
+        "purses": [
+          60,
+          40,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "step": 49,
+        "pooled_wallet": 199.0,
+        "purses": [
+          60,
+          40,
+          0,
+          0,
+          0
+        ]
+      }
+    ]
+  },
+  "schema": {
+    "base_dimension": 3122,
+    "dimension": 3127,
+    "start_index": 3122,
+    "width": 5,
+    "name": "monster_stolen_gold",
+    "slots": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "dtype": "nonnegative_integer",
+    "unit": "gold",
+    "source": "Each physical LOOTER or MUGGER slot's accumulated stolen gold (Monster::miscInfo) during a combat frame. Every other slot and noncombat frame carries zero. The original 3122 fields preserve their order."
+  },
+  "sample_interface": {
+    "state_version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1+silent-a20-round5-v1+silent-a20-round6-v1+silent-a20-round7-v1+r7-combat-events-rewards-v2+r7-opening-shop-potions-v3+r7-casualties-hand-pandora-v4+privileged-thief-purses-v1",
+    "state_sha256": "da482b7a042321a7dbfff995942fd3c9b9baf63036ae9a3590b9a922de5b5ff3",
+    "card_registry_sha256": "cc7dd2446135675ad273bbdc09914909f8ab1c0aca854a8c00dd3d8b6f91a26a",
+    "action_version": "silent-canonical-row-a193-v1",
+    "action_adapter_version": "canonical-row-choice64-v1+frontier-settled+compact-decisions-v2+public-transitions-v1+ordinary-events-rewards-v1+shop-reward-discard-gold-and-death-settlement-v1+ending-route-paid-neow-permanent-upgrade-cancel-and-complete-card-masks-v2+ordinary-targets-and-victory-loot-v1+match-poison-and-idol-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+settled-neow-and-linked-chest-rewards-v1+round1-flex-chest-v1+round2-v1+round3-calibration-v1+silent-a20-round4-v1+silent-a20-round5-v1+silent-a20-round6-v1+silent-a20-round7-v1+r7-combat-events-rewards-v2+r7-opening-shop-potions-v3+r7-casualties-hand-pandora-v4",
+    "action_contract_sha256": "0ae8ba53dfdde48ad0f4a4ae03cfd045fc2677ac50df3cae9a6ed7558962b78e",
+    "action_coordinates": "observation_monster_row",
+    "action_source_sha256": "508484868171100b6d95bce9b8c1c12db4e05f03db556b1df9b501ca45c91490",
+    "state_decoder_sha256": "84324d6ace533b746e4b6118b5b42f7fd849c45a2cf1959d05674d4167adbcdb",
+    "backend_build_sha256": "5f81347346994e460ceaa8e500ff3f08637a33f2eb4a220cff467fc8f6105fa5",
+    "backend_commit": "482b3ef29c93746ada7d6fd0fd16885d7cc30b1f",
+    "backend_observation_version": 4,
+    "backend_observation_dimension": 1761,
+    "backend_actions": 146,
+    "observation_dimension": 3127,
+    "actions": 193
+  },
+  "sources": {
+    "candidate.py": "777b95dc5214fb762c41996ffb7e9aacf22dafdfd3e1b6bb289927aa6b98ed42",
+    "observation/build.py": "0ff6e3adcf2fab1f5b2208161e69f45c9b019d61277949bd09b3e5a584a0db53",
+    "observation/diagnostic.cpp": "412fc6c772d0d6825e383395e355f32464a5911e04de7dfa7a6052c17a70af87",
+    "observation/purses.cpp": "a00284dcfd1f23fcdf44e7965e89874845f7ac6d2cec338203d9e78d5d9fcd94",
+    "observation/release.py": "d1a3bfce10a3d34384e7fc757eb0273e2a4b774935df278b62b2d24cb362ba70",
+    "observation/schema.json": "bfc81776a140398f82677f7ba7957848cb10d58f9978e8d975b1e4ee66ddd71f",
+    "observation/session.py": "e9f37cc165afb3a79825d2570f29e4dc09b94b3c0a5b99981dd9d1436f111b80",
+    "probe.py": "0f53877442c7ce944659b9037f85a3494f8b2b00cb6fcbfaa76cb59a6eb1e6a9",
+    "session.py": "c37b23eeb84002643c373703bdda7adebaae820a568ffc3b9c7d2cd9d38bb498",
+    "test_thieves.py": "274ada84baeeda7171920e8c94bdfe94277f9a5a49498d78340a5e2206e72fb3",
+    "verify.py": "28efb9556421f14ba14e84cca63052c255a49e2cce7b2b946605b35d7e29a61e"
+  }
+}

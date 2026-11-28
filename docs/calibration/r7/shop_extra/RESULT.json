@@ -1,0 +1,1037 @@
+{
+  "seed": -8683615973261774583,
+  "floor": 14,
+  "original_hash": "30aca58e803fb3dca2eddc711b691fa62d3ee5a4605622d1dd0cf2adce96bf36",
+  "verified_shop_actions": [
+    105,
+    106,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    178
+  ],
+  "actual_input": "choose 1",
+  "model_branches": [
+    {
+      "actions": [
+        105
+      ],
+      "states": [
+        {
+          "action": 105,
+          "page": "SHOP_SCREEN",
+          "old_gold": 306,
+          "gold": 306,
+          "belt": [
+            0.0,
+            15.0
+          ],
+          "deck": 22,
+          "engine_steps": 227,
+          "step_delta": 1,
+          "old_refs": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "refs": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "offered": [
+            106,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            178
+          ]
+        }
+      ]
+    },
+    {
+      "actions": [
+        106
+      ],
+      "states": [
+        {
+          "action": 106,
+          "page": "SHOP_SCREEN",
+          "old_gold": 306,
+          "gold": 306,
+          "belt": [
+            35.0,
+            0.0
+          ],
+          "deck": 22,
+          "engine_steps": 227,
+          "step_delta": 1,
+          "old_refs": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "refs": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "offered": [
+            105,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            178
+          ]
+        }
+      ]
+    },
+    {
+      "actions": [
+        121
+      ],
+      "states": [
+        {
+          "action": 121,
+          "page": "SHOP_SCREEN",
+          "old_gold": 306,
+          "gold": 306,
+          "belt": [
+            35.0,
+            15.0
+          ],
+          "deck": 22,
+          "engine_steps": 226,
+          "step_delta": 0,
+          "old_refs": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "refs": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "offered": [
+            105,
+            106,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            178
+          ]
+        }
+      ]
+    },
+    {
+      "actions": [
+        122
+      ],
+      "states": [
+        {
+          "action": 122,
+          "page": "SHOP_SCREEN",
+          "old_gold": 306,
+          "gold": 306,
+          "belt": [
+            35.0,
+            15.0
+          ],
+          "deck": 22,
+          "engine_steps": 226,
+          "step_delta": 0,
+          "old_refs": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "refs": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "offered": [
+            105,
+            106,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            178
+          ]
+        }
+      ]
+    },
+    {
+      "actions": [
+        123
+      ],
+      "states": [
+        {
+          "action": 123,
+          "page": "SHOP_SCREEN",
+          "old_gold": 306,
+          "gold": 306,
+          "belt": [
+            35.0,
+            15.0
+          ],
+          "deck": 22,
+          "engine_steps": 226,
+          "step_delta": 0,
+          "old_refs": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "refs": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "offered": [
+            105,
+            106,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            178
+          ]
+        }
+      ]
+    },
+    {
+      "actions": [
+        105,
+        121
+      ],
+      "states": [
+        {
+          "action": 105,
+          "page": "SHOP_SCREEN",
+          "old_gold": 306,
+          "gold": 306,
+          "belt": [
+            0.0,
+            15.0
+          ],
+          "deck": 22,
+          "engine_steps": 227,
+          "step_delta": 1,
+          "old_refs": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "refs": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "offered": [
+            106,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            178
+          ]
+        },
+        {
+          "action": 121,
+          "page": "SHOP_SCREEN",
+          "old_gold": 306,
+          "gold": 252,
+          "belt": [
+            5.0,
+            15.0
+          ],
+          "deck": 22,
+          "engine_steps": 228,
+          "step_delta": 1,
+          "old_refs": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "refs": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "offered": [
+            105,
+            106,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            178
+          ]
+        }
+      ]
+    },
+    {
+      "actions": [
+        105,
+        122
+      ],
+      "states": [
+        {
+          "action": 105,
+          "page": "SHOP_SCREEN",
+          "old_gold": 306,
+          "gold": 306,
+          "belt": [
+            0.0,
+            15.0
+          ],
+          "deck": 22,
+          "engine_steps": 227,
+          "step_delta": 1,
+          "old_refs": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "refs": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "offered": [
+            106,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            178
+          ]
+        },
+        {
+          "action": 122,
+          "page": "SHOP_SCREEN",
+          "old_gold": 306,
+          "gold": 194,
+          "belt": [
+            11.0,
+            15.0
+          ],
+          "deck": 22,
+          "engine_steps": 228,
+          "step_delta": 1,
+          "old_refs": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "refs": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "offered": [
+            105,
+            106,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            178
+          ]
+        }
+      ]
+    },
+    {
+      "actions": [
+        106,
+        123
+      ],
+      "states": [
+        {
+          "action": 106,
+          "page": "SHOP_SCREEN",
+          "old_gold": 306,
+          "gold": 306,
+          "belt": [
+            35.0,
+            0.0
+          ],
+          "deck": 22,
+          "engine_steps": 227,
+          "step_delta": 1,
+          "old_refs": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "refs": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "offered": [
+            105,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            178
+          ]
+        },
+        {
+          "action": 123,
+          "page": "SHOP_SCREEN",
+          "old_gold": 306,
+          "gold": 249,
+          "belt": [
+            35.0,
+            10.0
+          ],
+          "deck": 22,
+          "engine_steps": 228,
+          "step_delta": 1,
+          "old_refs": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "refs": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "offered": [
+            105,
+            106,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            178
+          ]
+        }
+      ]
+    },
+    {
+      "actions": [
+        119
+      ],
+      "states": [
+        {
+          "action": 119,
+          "page": "SHOP_SCREEN",
+          "old_gold": 306,
+          "gold": 139,
+          "belt": [
+            35.0,
+            15.0
+          ],
+          "deck": 22,
+          "engine_steps": 227,
+          "step_delta": 1,
+          "old_refs": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "refs": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "offered": [
+            105,
+            106,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            178
+          ]
+        }
+      ]
+    },
+    {
+      "actions": [
+        120
+      ],
+      "states": [
+        {
+          "action": 120,
+          "page": "SHOP_SCREEN",
+          "old_gold": 306,
+          "gold": 148,
+          "belt": [
+            35.0,
+            15.0
+          ],
+          "deck": 22,
+          "engine_steps": 227,
+          "step_delta": 1,
+          "old_refs": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "refs": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "offered": [
+            105,
+            106,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            178
+          ]
+        }
+      ]
+    },
+    {
+      "actions": [
+        118,
+        111,
+        178
+      ],
+      "states": [
+        {
+          "action": 118,
+          "page": "SHOP_BOTTLE_SKILL",
+          "old_gold": 306,
+          "gold": 34,
+          "belt": [
+            35.0,
+            15.0
+          ],
+          "deck": 22,
+          "engine_steps": 227,
+          "step_delta": 1,
+          "old_refs": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "refs": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "offered": [
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121
+          ]
+        },
+        {
+          "action": 111,
+          "page": "SHOP_SCREEN",
+          "old_gold": 34,
+          "gold": 34,
+          "belt": [
+            35.0,
+            15.0
+          ],
+          "deck": 22,
+          "engine_steps": 228,
+          "step_delta": 1,
+          "old_refs": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "refs": [
+            2,
+            0,
+            20,
+            0
+          ],
+          "offered": [
+            105,
+            106,
+            110,
+            178
+          ]
+        },
+        {
+          "action": 178,
+          "page": "SHOP_ROOM",
+          "old_gold": 34,
+          "gold": 34,
+          "belt": [
+            35.0,
+            15.0
+          ],
+          "deck": 22,
+          "engine_steps": 228,
+          "step_delta": 0,
+          "old_refs": [
+            2,
+            0,
+            20,
+            0
+          ],
+          "refs": [
+            2,
+            0,
+            20,
+            0
+          ],
+          "offered": [
+            110,
+            171
+          ]
+        }
+      ]
+    },
+    {
+      "actions": [
+        110,
+        111,
+        172
+      ],
+      "states": [
+        {
+          "action": 110,
+          "page": "SHOP_GRID",
+          "old_gold": 306,
+          "gold": 306,
+          "belt": [
+            35.0,
+            15.0
+          ],
+          "deck": 22,
+          "engine_steps": 227,
+          "step_delta": 1,
+          "old_refs": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "refs": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "offered": [
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            122,
+            123,
+            124,
+            125,
+            126,
+            127,
+            128,
+            129,
+            130
+          ]
+        },
+        {
+          "action": 111,
+          "page": "SHOP_GRID_CONFIRM",
+          "old_gold": 306,
+          "gold": 306,
+          "belt": [
+            35.0,
+            15.0
+          ],
+          "deck": 22,
+          "engine_steps": 227,
+          "step_delta": 0,
+          "old_refs": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "refs": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "offered": [
+            172
+          ]
+        },
+        {
+          "action": 172,
+          "page": "SHOP_SCREEN",
+          "old_gold": 306,
+          "gold": 231,
+          "belt": [
+            35.0,
+            15.0
+          ],
+          "deck": 21,
+          "engine_steps": 228,
+          "step_delta": 1,
+          "old_refs": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "refs": [
+            2.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "offered": [
+            105,
+            106,
+            110,
+            111,
+            112,
+            113,
+            114,
+            115,
+            116,
+            117,
+            118,
+            119,
+            120,
+            121,
+            178
+          ]
+        }
+      ]
+    }
+  ],
+  "full_replays": [
+    {
+      "original": "r6",
+      "seed": 6846117179527628677,
+      "inputs": 120,
+      "complete": true,
+      "final_floor": 6,
+      "terminal_raw_hash": "e5a1a99fcd1fd55122a9280903a7384faaed9851ca6055b92ef50c229ef61972",
+      "final_attack": [
+        3,
+        24,
+        1
+      ],
+      "matching_reported_action_sets": 110,
+      "first_substantive_difference": null
+    },
+    {
+      "original": "r4",
+      "seed": 9763128100447777033,
+      "inputs": 339,
+      "complete": true,
+      "final_floor": 16,
+      "terminal_raw_hash": "ad33efc6ae824fce44bda3b99abf079e10fb1edb22e8f50a94bfe2ca275b2ee9",
+      "final_attack": [
+        1,
+        12,
+        2
+      ],
+      "matching_reported_action_sets": 299,
+      "first_substantive_difference": null
+    }
+  ],
+  "other_original_purge": {
+    "input_ledger": "2e230aead7a9de229484f8a77d7c47432dac807ec961833f95618f5f64a7e1d1",
+    "action_count": 26,
+    "selected_card": "Strike_G",
+    "selected_uuid": "a6fb8757-b2c9-4bd7-aa69-c0ba5b51e001",
+    "original_gold": [
+      403,
+      403,
+      403,
+      328
+    ],
+    "deck_sizes": [
+      9,
+      8
+    ]
+  },
+  "runtime": {
+    "session.py": "3ce6e16b7ac49e04390db0d07df5ce35e0614bbff2b8449d19ef202e7aec2ce7",
+    "candidate.py": "8c09906cdd71589aa8bf991aa44da518efb0a75f194bf94228fad636ac3e2a23"
+  },
+  "retail_rules": {
+    "jar_sha256": "880ca5646d02065a061bbbdf7cc106dc1443d5afc6b9560f512486b098fd627b",
+    "methods": {
+      "shop.StorePotion": {
+        "purchasePotion(": "548c5c53a2a990bd7c245c615d9f16b18a668bb742b5a1207d5198225a56d469"
+      },
+      "shop.StoreRelic": {
+        "purchaseRelic(": "d19602ec00176ea0aee72be938851f4c65c4feb0e83fe79126e41ad4f9d65fa3"
+      },
+      "shop.ShopScreen": {
+        "purchasePurge(": "2b75562d3c7a4d0026323ae9bb0b30a5d6f82687a396af49d3df38f11eebb216",
+        "updatePurgeCard(": "1f378df8c57a7c99a1c2a490943996b104441ac317702fa8492647ba65ea5b5d"
+      },
+      "relics.BottledLightning": {
+        "onEquip(": "590b1cdcccb8d413aa3d9802b4bfed2d19604b75920aa087ecebff528688bacb",
+        "update(": "a2e6a9346ed14d6cbbf4e3ba3fd2bd4e1aafdfc6aa3b981ed2f52b64a27e9d17"
+      },
+      "relics.Omamori": {
+        "<init>(": "1548976975b4d5ca6ba8cfc844eda2ddde84c45ef04ba09631bc9d243bf10b58"
+      },
+      "relics.TwistedFunnel": {
+        "atBattleStart(": "f72cf5a59efba345fa788766c5a9c38a673661e9295fe85da88e2b2463841557"
+      },
+      "cards.CardGroup": {
+        "getPurgeableCards(": "8c4f9ebf6bbf774cd565e85a452c5608a05f380597c296c6932877376ad806be",
+        "getCardsOfType(": "5cc0821fc7747c3701a3ee97f90d4c4e4df620bf0548c1c117aac52b0eaca286",
+        "addToBottom(": "0956175bc1f107c3110bfdfa51e7d77d6377dcc503aa3c9904b0f77f6e9339b7"
+      }
+    }
+  },
+  "historical_potion_branches": {
+    "mirror": [
+      {
+        "action": "choose 8",
+        "before": "c9ec244d143fc4017d204162d0f97ba41a6b3bd5285aae429069e3939cf0b5ee",
+        "after": "6bdc8554a6ddf75a6d92f2afa0f07e3ba5d88ce75be7945957efdc8de0a99f4d",
+        "paid": 172
+      },
+      {
+        "action": "choose 2",
+        "before": "6bdc8554a6ddf75a6d92f2afa0f07e3ba5d88ce75be7945957efdc8de0a99f4d",
+        "after": "a5035320bba23bf26d42dde30d8e3c74d74cbd3c3aa9e83bb7716744041d372e",
+        "paid": 0
+      },
+      {
+        "action": "choose 3",
+        "before": "a5035320bba23bf26d42dde30d8e3c74d74cbd3c3aa9e83bb7716744041d372e",
+        "after": "235305ffe9456d02d5e526699f10acbe609375be42b78cdc366b1c1a83886099",
+        "paid": 56
+      }
+    ],
+    "flex": [
+      {
+        "action": "choose 9",
+        "before": "e38fb99af35a32cf14f84e7f5675f424c46e7d04e6dea70abe83216bb8c24a1f",
+        "after": "25cb18d4a2d6c240c4165f7e421777cfa315dc79612844314d062a0b4f8cd643",
+        "paid": 56
+      },
+      {
+        "action": "choose 8",
+        "before": "25cb18d4a2d6c240c4165f7e421777cfa315dc79612844314d062a0b4f8cd643",
+        "after": "8f21c7975916b8007fefce6e83aee01f6f3c3ec32e232cefca88e9179a269b1c",
+        "paid": 55
+      }
+    ],
+    "fear": [
+      {
+        "action": "choose 10",
+        "before": "31fd344f013d44aea50f92459926326828b807ed93c515e7341b8faa50a29042",
+        "after": "58e023aa6a1e8ca619dcc079d83a48576545e1f600aa3764a80b878188861193",
+        "paid": 55
+      }
+    ],
+    "weak": [
+      {
+        "action": "choose 11",
+        "before": "fc99dc339c7462185c130fc29763c5367bf2266973569d5843b207cf41e6b7b8",
+        "after": "f6f115d3977b658c8d2b8701ce48829de51e1363252c62af12dbd4ad78f9b334",
+        "paid": 57
+      },
+      {
+        "action": "potion discard 0",
+        "before": "f6f115d3977b658c8d2b8701ce48829de51e1363252c62af12dbd4ad78f9b334",
+        "after": "8a8d0f20822a11c7e39108da681e9efaf2ef1d9e1c3b348df2a0f5ea6ab8d49d",
+        "paid": 0
+      }
+    ]
+  },
+  "original_full_belt_rejection": {
+    "native_control": 117,
+    "model_sale_supported": false,
+    "original_game_message": "NOT ENOUGH POTION SLOTS",
+    "after_original_gold": 118,
+    "after_original_potions": [
+      "SteroidPotion",
+      "FearPotion"
+    ],
+    "original_before_sha256": "8f21c7975916b8007fefce6e83aee01f6f3c3ec32e232cefca88e9179a269b1c",
+    "original_later_sha256": "131ac3391cb15a27830fc8e51c69d4a1c05a51a8148ee7ed18c6456080e45aa5"
+  }
+}

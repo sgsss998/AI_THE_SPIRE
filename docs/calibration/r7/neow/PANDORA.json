@@ -1,0 +1,1040 @@
+{
+  "runtime": "experiments.sa_calibration_round7.neow.box_candidate",
+  "historical_blocked": 3,
+  "extra_boss_swaps": 24,
+  "discovery_range": [
+    0,
+    511
+  ],
+  "matched_ordered_positions": 270,
+  "same_seed_graphical_runs": 0,
+  "validation": "retail onEquip, RNG, deck removals and ordered UI content run on original Java; confirmation and engine continuation checked against original method logic",
+  "inputs": {
+    "pandora.py": "17f8d46c2d3e5c60d766b465ebbc1975d0fa7c3f4aeacd5a8f393e06c0782a8a",
+    "box_candidate.py": "341f2d2a4c615dc349cca68e438683a92a44462fed89f2861879e36543872b67",
+    "RetailBox.java": "713977bfe9f175c8e5d6a33ed39641b9aa9b8e96aee943734c537b92af269ae9",
+    "retail_box.py": "24aacf72a308c7133a957e81ac773034fe4707ff22f2a93db885465d2e2b9069",
+    "box_verify.py": "cff91823e6797be5dc2081d57d8b4dbf785d51deaec64fca22396ffc2e748862",
+    "desktop-1.0.jar": "880ca5646d02065a061bbbdf7cc106dc1443d5afc6b9560f512486b098fd627b",
+    "HeadlessBoot.java": "2d5e9b31743eae435bd14e7acdf11bddfcaea1b8b3e6de5c67fd636cc40ef6c6",
+    "communication_terminal.bytecode.txt": "b14775223c0af78706e0b68ee8add8d15fd5e6ab89699b9ca6c098c243b5c560"
+  },
+  "card_pool_capture_with_mixed_live_common_and_original_uncommon_rare": {
+    "gold": "5a68a00524b696cd62ace5db1965a7d7c4f046263fce0ea07386160e197614f7",
+    "curse": "d64f372ed1d1beb9cfcf21eb6ccbaa18c15c799d8219ce272c6f0827bf2889e8"
+  },
+  "retail_code": {
+    "dungeons.AbstractDungeon.initializeCardPools": "35f9798563157dab3c3896b25742d11c1cbe2cb97f07d2d18ce6ff96e29ab30f",
+    "cards.CardGroup.addToBottom": "0956175bc1f107c3110bfdfa51e7d77d6377dcc503aa3c9904b0f77f6e9339b7",
+    "dungeons.AbstractDungeon.returnTrulyRandomCard": "b9deae76f6105b78650ff1c8b6f5eb22d9c8e792b348c4088b111a9a7c87a8d2",
+    "relics.PandorasBox.onEquip": "2db7ff7d532fce41d4ef80c6872d1dc46e819068b8fc7e9f76712cc6d74d29a6",
+    "screens.select.GridCardSelectScreen.openConfirmationGrid": "f33c71d72a820446fdc3a2f0ff5b1a528a00aad0be095ace854ca9a330631183",
+    "screens.select.GridCardSelectScreen.update": "85374ce3ff9fdc36bac9fac617d9c5e2402ca62b913bea260db8d5b9792cd34a",
+    "vfx.FastCardObtainEffect.update": "c47d8879e5d6888623c99073a26ebb036761b621fd2298d62dc8d69c378f0450",
+    "cards.Soul.obtain": "bad37e8b4570302ebaa1d6751df8f392ed8a35a462ce0a5f93fa9a567c28fde5",
+    "cards.CardGroup.addToTop": "30e1b38996a9336ac2a7494437e6544e261bdd883d665d647a26834f374b84e1"
+  },
+  "boss_pool_sources": [
+    {
+      "instance": "compact_fixture_neow_maxhp_seed25",
+      "sha256": "3f68e5e33fa31a150ac5f7b01d6d48c57bee9dd4831bda3b614618b7caf3bdb8",
+      "seed": 25
+    },
+    {
+      "instance": "compact_fixture_neow_potions_001",
+      "sha256": "dd5ea6ce7afe4bb14618d53826ce2ab0f9f6a67f5b72513d07d50c5554c34ad3",
+      "seed": 1
+    },
+    {
+      "instance": "compact_fixture_grid193_upgrade_003",
+      "sha256": "56794ef0e6615439b7da00f45858c68077173dcaecd94ba55bc8e2a2070a5be5",
+      "seed": 4
+    },
+    {
+      "instance": "compact_fixture_grid193_remove_002",
+      "sha256": "7691bf682b16755f198120879f838fb760042ceb4820733ee3ee1b5ee5d1c7c3",
+      "seed": 17
+    },
+    {
+      "instance": "compact_fixture_neow_gold_001",
+      "sha256": "363280e500754498785297746b7d945dfc45727f52da3942203648d926f5ccf1",
+      "seed": 10
+    },
+    {
+      "instance": "compact_fixture_neow_transform_seed16",
+      "sha256": "cd796549e5ea95d7b891ec5cd62668badbbd1d7879c52b0893a2033656884e0d",
+      "seed": 16
+    },
+    {
+      "instance": "compact_fixture_neow_transform_seed46",
+      "sha256": "df0e4b667d83b644ba8e24c842527e60d9f6d5490dbc7aa2452069cd55ddb05e",
+      "seed": 46
+    },
+    {
+      "instance": "compact_fixture_neow_lament_002",
+      "sha256": "2dcd8fa68e4dc0004b65b197d691187b1f369b49fa2fbf76701bc5a3e30c3e98",
+      "seed": 23
+    }
+  ],
+  "cases": [
+    {
+      "seed": 2895685479221259731,
+      "surviving_cards": [
+        "AscendersBane",
+        "Survivor",
+        "Neutralize"
+      ],
+      "replacement_order": [
+        "Venomology",
+        "Endless Agony",
+        "Well Laid Plans",
+        "Storm of Steel",
+        "Dash",
+        "Dagger Spray",
+        "Sucker Punch",
+        "Bane",
+        "Slice",
+        "Prepared"
+      ],
+      "controls": {
+        "grid": [
+          172
+        ],
+        "settlement": [
+          110
+        ],
+        "map": [
+          110,
+          111,
+          112
+        ]
+      },
+      "rejected_individual_choice_cancel_and_duplicate": true,
+      "final_cards": 13
+    },
+    {
+      "seed": 2276525645314603598,
+      "surviving_cards": [
+        "AscendersBane",
+        "Survivor",
+        "Neutralize"
+      ],
+      "replacement_order": [
+        "Calculated Gamble",
+        "Adrenaline",
+        "Slice",
+        "Blade Dance",
+        "Tactician",
+        "Skewer",
+        "Masterful Stab",
+        "Distraction",
+        "Phantasmal Killer",
+        "Footwork"
+      ],
+      "controls": {
+        "grid": [
+          172
+        ],
+        "settlement": [
+          110
+        ],
+        "map": [
+          110,
+          111,
+          112,
+          113,
+          114
+        ]
+      },
+      "rejected_individual_choice_cancel_and_duplicate": true,
+      "final_cards": 13
+    },
+    {
+      "seed": 1661120556620733818,
+      "surviving_cards": [
+        "AscendersBane",
+        "Survivor",
+        "Neutralize"
+      ],
+      "replacement_order": [
+        "Malaise",
+        "Acrobatics",
+        "Infinite Blades",
+        "Masterful Stab",
+        "PiercingWail",
+        "Concentrate",
+        "Reflex",
+        "Bouncing Flask",
+        "Predator",
+        "Bane"
+      ],
+      "controls": {
+        "grid": [
+          172
+        ],
+        "settlement": [
+          110
+        ],
+        "map": [
+          110,
+          111,
+          112,
+          113,
+          114
+        ]
+      },
+      "rejected_individual_choice_cancel_and_duplicate": true,
+      "final_cards": 13
+    },
+    {
+      "seed": 43,
+      "surviving_cards": [
+        "AscendersBane",
+        "Survivor",
+        "Neutralize"
+      ],
+      "replacement_order": [
+        "Calculated Gamble",
+        "Poisoned Stab",
+        "Outmaneuver",
+        "Doppelganger",
+        "Quick Slash",
+        "Concentrate",
+        "Acrobatics",
+        "Predator",
+        "Die Die Die",
+        "Riddle With Holes"
+      ],
+      "controls": {
+        "grid": [
+          172
+        ],
+        "settlement": [
+          110
+        ],
+        "map": [
+          110,
+          111,
+          112,
+          113
+        ]
+      },
+      "rejected_individual_choice_cancel_and_duplicate": true,
+      "final_cards": 13
+    },
+    {
+      "seed": 60,
+      "surviving_cards": [
+        "AscendersBane",
+        "Survivor",
+        "Neutralize"
+      ],
+      "replacement_order": [
+        "Glass Knife",
+        "Poisoned Stab",
+        "Bouncing Flask",
+        "Skewer",
+        "Well Laid Plans",
+        "Wraith Form v2",
+        "Bullet Time",
+        "Wraith Form v2",
+        "Accuracy",
+        "Setup"
+      ],
+      "controls": {
+        "grid": [
+          172
+        ],
+        "settlement": [
+          110
+        ],
+        "map": [
+          110,
+          111,
+          112
+        ]
+      },
+      "rejected_individual_choice_cancel_and_duplicate": true,
+      "final_cards": 13
+    },
+    {
+      "seed": 95,
+      "surviving_cards": [
+        "AscendersBane",
+        "Survivor",
+        "Neutralize"
+      ],
+      "replacement_order": [
+        "Doppelganger",
+        "Prepared",
+        "Flechettes",
+        "Dagger Throw",
+        "Acrobatics",
+        "Grand Finale",
+        "Backstab",
+        "Expertise",
+        "Heel Hook",
+        "Blade Dance"
+      ],
+      "controls": {
+        "grid": [
+          172
+        ],
+        "settlement": [
+          110
+        ],
+        "map": [
+          110,
+          111,
+          112,
+          113
+        ]
+      },
+      "rejected_individual_choice_cancel_and_duplicate": true,
+      "final_cards": 13
+    },
+    {
+      "seed": 105,
+      "surviving_cards": [
+        "AscendersBane",
+        "Survivor",
+        "Neutralize"
+      ],
+      "replacement_order": [
+        "Glass Knife",
+        "Poisoned Stab",
+        "Dagger Spray",
+        "Cloak And Dagger",
+        "Doppelganger",
+        "Flying Knee",
+        "Concentrate",
+        "Catalyst",
+        "Flechettes",
+        "Acrobatics"
+      ],
+      "controls": {
+        "grid": [
+          172
+        ],
+        "settlement": [
+          110
+        ],
+        "map": [
+          110,
+          111,
+          112
+        ]
+      },
+      "rejected_individual_choice_cancel_and_duplicate": true,
+      "final_cards": 13
+    },
+    {
+      "seed": 117,
+      "surviving_cards": [
+        "AscendersBane",
+        "Survivor",
+        "Neutralize"
+      ],
+      "replacement_order": [
+        "Quick Slash",
+        "Footwork",
+        "Phantasmal Killer",
+        "Glass Knife",
+        "Slice",
+        "Tools of the Trade",
+        "Calculated Gamble",
+        "Underhanded Strike",
+        "Unload",
+        "Footwork"
+      ],
+      "controls": {
+        "grid": [
+          172
+        ],
+        "settlement": [
+          110
+        ],
+        "map": [
+          110,
+          111,
+          112
+        ]
+      },
+      "rejected_individual_choice_cancel_and_duplicate": true,
+      "final_cards": 13
+    },
+    {
+      "seed": 130,
+      "surviving_cards": [
+        "AscendersBane",
+        "Survivor",
+        "Neutralize"
+      ],
+      "replacement_order": [
+        "Venomology",
+        "Distraction",
+        "Storm of Steel",
+        "Burst",
+        "Envenom",
+        "Setup",
+        "Bane",
+        "Infinite Blades",
+        "Terror",
+        "Concentrate"
+      ],
+      "controls": {
+        "grid": [
+          172
+        ],
+        "settlement": [
+          110
+        ],
+        "map": [
+          110,
+          111,
+          112
+        ]
+      },
+      "rejected_individual_choice_cancel_and_duplicate": true,
+      "final_cards": 13
+    },
+    {
+      "seed": 136,
+      "surviving_cards": [
+        "AscendersBane",
+        "Survivor",
+        "Neutralize"
+      ],
+      "replacement_order": [
+        "Flechettes",
+        "Quick Slash",
+        "Distraction",
+        "Quick Slash",
+        "Adrenaline",
+        "Bouncing Flask",
+        "All Out Attack",
+        "Burst",
+        "Finisher",
+        "Bouncing Flask"
+      ],
+      "controls": {
+        "grid": [
+          172
+        ],
+        "settlement": [
+          110
+        ],
+        "map": [
+          110,
+          111,
+          112,
+          113
+        ]
+      },
+      "rejected_individual_choice_cancel_and_duplicate": true,
+      "final_cards": 13
+    },
+    {
+      "seed": 162,
+      "surviving_cards": [
+        "AscendersBane",
+        "Survivor",
+        "Neutralize"
+      ],
+      "replacement_order": [
+        "Endless Agony",
+        "Bane",
+        "Distraction",
+        "Infinite Blades",
+        "All Out Attack",
+        "Dash",
+        "Night Terror",
+        "Blade Dance",
+        "Crippling Poison",
+        "Sucker Punch"
+      ],
+      "controls": {
+        "grid": [
+          172
+        ],
+        "settlement": [
+          110
+        ],
+        "map": [
+          110,
+          111
+        ]
+      },
+      "rejected_individual_choice_cancel_and_duplicate": true,
+      "final_cards": 13
+    },
+    {
+      "seed": 178,
+      "surviving_cards": [
+        "AscendersBane",
+        "Survivor",
+        "Neutralize"
+      ],
+      "replacement_order": [
+        "Noxious Fumes",
+        "Corpse Explosion",
+        "Expertise",
+        "PiercingWail",
+        "Distraction",
+        "PiercingWail",
+        "Choke",
+        "Bullet Time",
+        "Glass Knife",
+        "Quick Slash"
+      ],
+      "controls": {
+        "grid": [
+          172
+        ],
+        "settlement": [
+          110
+        ],
+        "map": [
+          110,
+          111,
+          112
+        ]
+      },
+      "rejected_individual_choice_cancel_and_duplicate": true,
+      "final_cards": 13
+    },
+    {
+      "seed": 185,
+      "surviving_cards": [
+        "AscendersBane",
+        "Survivor",
+        "Neutralize"
+      ],
+      "replacement_order": [
+        "Bullet Time",
+        "Distraction",
+        "Setup",
+        "Accuracy",
+        "Cloak And Dagger",
+        "Phantasmal Killer",
+        "Reflex",
+        "Bullet Time",
+        "Setup",
+        "Masterful Stab"
+      ],
+      "controls": {
+        "grid": [
+          172
+        ],
+        "settlement": [
+          110
+        ],
+        "map": [
+          110,
+          111,
+          112,
+          113
+        ]
+      },
+      "rejected_individual_choice_cancel_and_duplicate": true,
+      "final_cards": 13
+    },
+    {
+      "seed": 210,
+      "surviving_cards": [
+        "AscendersBane",
+        "Survivor",
+        "Neutralize"
+      ],
+      "replacement_order": [
+        "Accuracy",
+        "Acrobatics",
+        "Phantasmal Killer",
+        "Heel Hook",
+        "Bane",
+        "Setup",
+        "Reflex",
+        "After Image",
+        "Acrobatics",
+        "Burst"
+      ],
+      "controls": {
+        "grid": [
+          172
+        ],
+        "settlement": [
+          110
+        ],
+        "map": [
+          110,
+          111,
+          112
+        ]
+      },
+      "rejected_individual_choice_cancel_and_duplicate": true,
+      "final_cards": 13
+    },
+    {
+      "seed": 226,
+      "surviving_cards": [
+        "AscendersBane",
+        "Survivor",
+        "Neutralize"
+      ],
+      "replacement_order": [
+        "Flying Knee",
+        "Heel Hook",
+        "Finisher",
+        "Envenom",
+        "Malaise",
+        "Leg Sweep",
+        "Reflex",
+        "Endless Agony",
+        "Dodge and Roll",
+        "Eviscerate"
+      ],
+      "controls": {
+        "grid": [
+          172
+        ],
+        "settlement": [
+          110
+        ],
+        "map": [
+          110,
+          111,
+          112
+        ]
+      },
+      "rejected_individual_choice_cancel_and_duplicate": true,
+      "final_cards": 13
+    },
+    {
+      "seed": 246,
+      "surviving_cards": [
+        "AscendersBane",
+        "Survivor",
+        "Neutralize"
+      ],
+      "replacement_order": [
+        "Bullet Time",
+        "Setup",
+        "Reflex",
+        "Cloak And Dagger",
+        "Predator",
+        "Accuracy",
+        "Unload",
+        "Endless Agony",
+        "PiercingWail",
+        "Catalyst"
+      ],
+      "controls": {
+        "grid": [
+          172
+        ],
+        "settlement": [
+          110
+        ],
+        "map": [
+          110,
+          111,
+          112,
+          113
+        ]
+      },
+      "rejected_individual_choice_cancel_and_duplicate": true,
+      "final_cards": 13
+    },
+    {
+      "seed": 343,
+      "surviving_cards": [
+        "AscendersBane",
+        "Survivor",
+        "Neutralize"
+      ],
+      "replacement_order": [
+        "Bullet Time",
+        "Calculated Gamble",
+        "Poisoned Stab",
+        "PiercingWail",
+        "Cloak And Dagger",
+        "Venomology",
+        "Deflect",
+        "Dodge and Roll",
+        "Wraith Form v2",
+        "Finisher"
+      ],
+      "controls": {
+        "grid": [
+          172
+        ],
+        "settlement": [
+          110
+        ],
+        "map": [
+          110,
+          111,
+          112
+        ]
+      },
+      "rejected_individual_choice_cancel_and_duplicate": true,
+      "final_cards": 13
+    },
+    {
+      "seed": 372,
+      "surviving_cards": [
+        "AscendersBane",
+        "Survivor",
+        "Neutralize"
+      ],
+      "replacement_order": [
+        "Concentrate",
+        "Tools of the Trade",
+        "Dodge and Roll",
+        "Flechettes",
+        "Bouncing Flask",
+        "Grand Finale",
+        "Noxious Fumes",
+        "Die Die Die",
+        "Quick Slash",
+        "Venomology"
+      ],
+      "controls": {
+        "grid": [
+          172
+        ],
+        "settlement": [
+          110
+        ],
+        "map": [
+          110,
+          111,
+          112,
+          113
+        ]
+      },
+      "rejected_individual_choice_cancel_and_duplicate": true,
+      "final_cards": 13
+    },
+    {
+      "seed": 378,
+      "surviving_cards": [
+        "AscendersBane",
+        "Survivor",
+        "Neutralize"
+      ],
+      "replacement_order": [
+        "Prepared",
+        "After Image",
+        "Well Laid Plans",
+        "Venomology",
+        "Burst",
+        "All Out Attack",
+        "Tools of the Trade",
+        "Blur",
+        "After Image",
+        "Unload"
+      ],
+      "controls": {
+        "grid": [
+          172
+        ],
+        "settlement": [
+          110
+        ],
+        "map": [
+          110,
+          111,
+          112,
+          113
+        ]
+      },
+      "rejected_individual_choice_cancel_and_duplicate": true,
+      "final_cards": 13
+    },
+    {
+      "seed": 387,
+      "surviving_cards": [
+        "AscendersBane",
+        "Survivor",
+        "Neutralize"
+      ],
+      "replacement_order": [
+        "Prepared",
+        "Footwork",
+        "Outmaneuver",
+        "Unload",
+        "Phantasmal Killer",
+        "Poisoned Stab",
+        "Leg Sweep",
+        "Well Laid Plans",
+        "Unload",
+        "Dagger Throw"
+      ],
+      "controls": {
+        "grid": [
+          172
+        ],
+        "settlement": [
+          110
+        ],
+        "map": [
+          110,
+          111,
+          112
+        ]
+      },
+      "rejected_individual_choice_cancel_and_duplicate": true,
+      "final_cards": 13
+    },
+    {
+      "seed": 403,
+      "surviving_cards": [
+        "AscendersBane",
+        "Survivor",
+        "Neutralize"
+      ],
+      "replacement_order": [
+        "Slice",
+        "Bouncing Flask",
+        "Dagger Throw",
+        "Burst",
+        "Calculated Gamble",
+        "Acrobatics",
+        "Escape Plan",
+        "Dagger Spray",
+        "Terror",
+        "Outmaneuver"
+      ],
+      "controls": {
+        "grid": [
+          172
+        ],
+        "settlement": [
+          110
+        ],
+        "map": [
+          110,
+          111,
+          112,
+          113
+        ]
+      },
+      "rejected_individual_choice_cancel_and_duplicate": true,
+      "final_cards": 13
+    },
+    {
+      "seed": 427,
+      "surviving_cards": [
+        "AscendersBane",
+        "Survivor",
+        "Neutralize"
+      ],
+      "replacement_order": [
+        "Corpse Explosion",
+        "Dash",
+        "Eviscerate",
+        "Die Die Die",
+        "Glass Knife",
+        "Prepared",
+        "Slice",
+        "Dodge and Roll",
+        "Glass Knife",
+        "Footwork"
+      ],
+      "controls": {
+        "grid": [
+          172
+        ],
+        "settlement": [
+          110
+        ],
+        "map": [
+          110,
+          111,
+          112
+        ]
+      },
+      "rejected_individual_choice_cancel_and_duplicate": true,
+      "final_cards": 13
+    },
+    {
+      "seed": 447,
+      "surviving_cards": [
+        "AscendersBane",
+        "Survivor",
+        "Neutralize"
+      ],
+      "replacement_order": [
+        "Well Laid Plans",
+        "Expertise",
+        "Malaise",
+        "Accuracy",
+        "Dagger Spray",
+        "Tactician",
+        "Reflex",
+        "Eviscerate",
+        "Backstab",
+        "Finisher"
+      ],
+      "controls": {
+        "grid": [
+          172
+        ],
+        "settlement": [
+          110
+        ],
+        "map": [
+          110,
+          111,
+          112
+        ]
+      },
+      "rejected_individual_choice_cancel_and_duplicate": true,
+      "final_cards": 13
+    },
+    {
+      "seed": 475,
+      "surviving_cards": [
+        "AscendersBane",
+        "Survivor",
+        "Neutralize"
+      ],
+      "replacement_order": [
+        "Skewer",
+        "Choke",
+        "Storm of Steel",
+        "Blade Dance",
+        "Glass Knife",
+        "Blade Dance",
+        "Heel Hook",
+        "Concentrate",
+        "Heel Hook",
+        "Prepared"
+      ],
+      "controls": {
+        "grid": [
+          172
+        ],
+        "settlement": [
+          110
+        ],
+        "map": [
+          110,
+          111,
+          112,
+          113
+        ]
+      },
+      "rejected_individual_choice_cancel_and_duplicate": true,
+      "final_cards": 13
+    },
+    {
+      "seed": 477,
+      "surviving_cards": [
+        "AscendersBane",
+        "Survivor",
+        "Neutralize"
+      ],
+      "replacement_order": [
+        "Night Terror",
+        "Venomology",
+        "Setup",
+        "All Out Attack",
+        "Masterful Stab",
+        "Well Laid Plans",
+        "Predator",
+        "Grand Finale",
+        "Caltrops",
+        "Concentrate"
+      ],
+      "controls": {
+        "grid": [
+          172
+        ],
+        "settlement": [
+          110
+        ],
+        "map": [
+          110,
+          111,
+          112
+        ]
+      },
+      "rejected_individual_choice_cancel_and_duplicate": true,
+      "final_cards": 13
+    },
+    {
+      "seed": 488,
+      "surviving_cards": [
+        "AscendersBane",
+        "Survivor",
+        "Neutralize"
+      ],
+      "replacement_order": [
+        "Burst",
+        "Footwork",
+        "Night Terror",
+        "Accuracy",
+        "Reflex",
+        "Malaise",
+        "Blade Dance",
+        "Distraction",
+        "Bullet Time",
+        "Grand Finale"
+      ],
+      "controls": {
+        "grid": [
+          172
+        ],
+        "settlement": [
+          110
+        ],
+        "map": [
+          110,
+          111,
+          112,
+          113
+        ]
+      },
+      "rejected_individual_choice_cancel_and_duplicate": true,
+      "final_cards": 13
+    },
+    {
+      "seed": 494,
+      "surviving_cards": [
+        "AscendersBane",
+        "Survivor",
+        "Neutralize"
+      ],
+      "replacement_order": [
+        "All Out Attack",
+        "Unload",
+        "Storm of Steel",
+        "Expertise",
+        "Reflex",
+        "Accuracy",
+        "Deadly Poison",
+        "Acrobatics",
+        "Doppelganger",
+        "Deadly Poison"
+      ],
+      "controls": {
+        "grid": [
+          172
+        ],
+        "settlement": [
+          110
+        ],
+        "map": [
+          110,
+          111,
+          112,
+          113
+        ]
+      },
+      "rejected_individual_choice_cancel_and_duplicate": true,
+      "final_cards": 13
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "original_rule": {
+    "retail_jar_sha256": "880ca5646d02065a061bbbdf7cc106dc1443d5afc6b9560f512486b098fd627b",
+    "probe_sha256": "68b495a26d134a2faaebe4c19e41c73b738d1d667f6dc05179f96bfcb97d2a35",
+    "physical_occurrence_tests": 45
+  },
+  "original_capture": "bd20d3d97615915f9a5268a1304b1cd4c82707a8d338ae060bb9fe3fc0d54102",
+  "cases": [
+    {
+      "action": 110,
+      "uuid": "b17eb71c-7efe-415f-97c7-bcd1d6c824ee",
+      "face": "Poisoned Stab",
+      "physical_slot": 0,
+      "public_steps": 1,
+      "backing_selection_steps": 2
+    },
+    {
+      "action": 111,
+      "uuid": "c48f1fee-6da0-4684-95b0-64008fa03535",
+      "face": "Strike_G",
+      "physical_slot": 2,
+      "public_steps": 1,
+      "backing_selection_steps": 2
+    }
+  ],
+  "evidence": "Two archived real options; alternate input results tested in the simulator and separately against the retail selection method."
+}

@@ -1,0 +1,150 @@
+{
+  "interface": {
+    "state_version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1+silent-a20-round5-v1+silent-a20-round6-v1+silent-a20-round7-v1+r7-combat-events-rewards-v2+r7-opening-shop-potions-v3",
+    "state_sha256": "bed0b8683324a3472bc1328c695e54c87ed518ebd90af53a3cc16c0a46dfc4cf",
+    "card_registry_sha256": "cc7dd2446135675ad273bbdc09914909f8ab1c0aca854a8c00dd3d8b6f91a26a",
+    "action_version": "silent-canonical-row-a193-v1",
+    "action_adapter_version": "canonical-row-choice64-v1+frontier-settled+compact-decisions-v2+public-transitions-v1+ordinary-events-rewards-v1+shop-reward-discard-gold-and-death-settlement-v1+ending-route-paid-neow-permanent-upgrade-cancel-and-complete-card-masks-v2+ordinary-targets-and-victory-loot-v1+match-poison-and-idol-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+settled-neow-and-linked-chest-rewards-v1+round1-flex-chest-v1+round2-v1+round3-calibration-v1+silent-a20-round4-v1+silent-a20-round5-v1+silent-a20-round6-v1+silent-a20-round7-v1+r7-combat-events-rewards-v2+r7-opening-shop-potions-v3",
+    "action_contract_sha256": "0ae8ba53dfdde48ad0f4a4ae03cfd045fc2677ac50df3cae9a6ed7558962b78e",
+    "action_coordinates": "observation_monster_row",
+    "action_source_sha256": "80fb7a53e3dd83db1575fb96b519bb815182a52bfd845aa3a04563d3d596f463",
+    "state_decoder_sha256": "072d610a8160ee91fead8eb5583e0ddff9c333f9aec29cac05e6014a3c8c6111",
+    "backend_build_sha256": "5f81347346994e460ceaa8e500ff3f08637a33f2eb4a220cff467fc8f6105fa5",
+    "backend_commit": "482b3ef29c93746ada7d6fd0fd16885d7cc30b1f",
+    "backend_observation_version": 4,
+    "backend_observation_dimension": 1761,
+    "backend_actions": 146,
+    "observation_dimension": 3122,
+    "actions": 193
+  },
+  "checked": [
+    {
+      "seed": 7,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 104,
+        "page": "SHOP_SCREEN",
+        "old_action": 178,
+        "new_action": [
+          111
+        ],
+        "old_menu": [
+          178
+        ],
+        "new_menu": [
+          111,
+          112,
+          113,
+          114,
+          115,
+          178
+        ]
+      },
+      "earlier_decisions": 125,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 5000039,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 40,
+        "page": "SHOP_SCREEN",
+        "old_action": 178,
+        "new_action": [
+          114
+        ],
+        "old_menu": [
+          178
+        ],
+        "new_menu": [
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          178
+        ]
+      },
+      "earlier_decisions": 80,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 8000045,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 28,
+        "page": "SHOP_SCREEN",
+        "old_action": 178,
+        "new_action": [
+          114
+        ],
+        "old_menu": [
+          178
+        ],
+        "new_menu": [
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          178
+        ]
+      },
+      "earlier_decisions": 83,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 17000031,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 38,
+        "page": "SHOP_SCREEN",
+        "old_action": 178,
+        "new_action": [
+          113
+        ],
+        "old_menu": [
+          178
+        ],
+        "new_menu": [
+          111,
+          112,
+          113,
+          114,
+          115,
+          178
+        ]
+      },
+      "earlier_decisions": 148,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 17000060,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 87,
+        "page": "SHOP_SCREEN",
+        "old_action": 178,
+        "new_action": [
+          111
+        ],
+        "old_menu": [
+          178
+        ],
+        "new_menu": [
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          178
+        ]
+      },
+      "earlier_decisions": 143,
+      "first_old_path_issue": null
+    }
+  ]
+}
