@@ -1,0 +1,78 @@
+{
+  "original_menus": [
+    {
+      "seed": 1,
+      "raw_sha256": "231d32971672365a71cc4b12cbbc6306a26b90e1a1ef328ecb8e87887f1a321d",
+      "targets": [
+        110,
+        111,
+        112,
+        177
+      ],
+      "native_id": "native_1794933778305_1012289669187208:capture:5",
+      "screen": "CARD_REWARD"
+    },
+    {
+      "seed": 1,
+      "raw_sha256": "afd36435c9a5830b13609ed589bdeb0a9df8689762a40df144bd244fec2f9b80",
+      "targets": [
+        110
+      ],
+      "native_id": "native_1794933778305_1012289669187208:capture:6",
+      "screen": "EVENT"
+    },
+    {
+      "seed": 35,
+      "raw_sha256": "123ca19dac7f1e3e411f5f9ff02298637f3384a87d4adc68aa858ee196d44dc4",
+      "targets": [
+        110
+      ],
+      "native_id": "native_1795032334190_22185982226375:capture:5",
+      "screen": "EVENT",
+      "chosen_gift": 111
+    },
+    {
+      "seed": 25,
+      "raw_sha256": "b47d4df2d8ff2705c0b00404e1f6fd01dd01ac39d67530b5c42dfefef2bc01c7",
+      "targets": [
+        110
+      ],
+      "native_id": "native_1795029663641_20563913513458:capture:5",
+      "screen": "EVENT",
+      "chosen_gift": 111
+    },
+    {
+      "seed": 1000017,
+      "raw_sha256": "ab7b00c49a2b9e6744273fa1c22d7b75060b2aa7554108bddd770411cd04220c",
+      "targets": [
+        110
+      ],
+      "native_id": "native_1795123132164_55508090622084:capture:5",
+      "screen": "EVENT",
+      "chosen_gift": 113
+    }
+  ],
+  "simulated_colorless_results": [
+    {
+      "action": 110,
+      "card": "Panacea",
+      "new_deck_size": 14
+    },
+    {
+      "action": 111,
+      "card": "Dramatic Entrance",
+      "new_deck_size": 14
+    },
+    {
+      "action": 112,
+      "card": "Flash of Steel",
+      "new_deck_size": 14
+    },
+    {
+      "action": 177,
+      "card": null,
+      "new_deck_size": 13
+    }
+  ],
+  "acquisition_scope": "Retail skip on seed 1. Three alternate acquisitions checked against the displayed card and full deck."
+}

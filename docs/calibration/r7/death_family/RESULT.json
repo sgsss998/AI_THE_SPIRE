@@ -1,0 +1,3349 @@
+{
+  "rules": {
+    "original_jar_sha256": "880ca5646d02065a061bbbdf7cc106dc1443d5afc6b9560f512486b098fd627b",
+    "classes": {
+      "ACID_SLIME_S": {
+        "source": "exordium.AcidSlime_S",
+        "bytecode": "9384ff114a8142477740558d2f42d29f0f834e44bf8fb3e113331fc837a9cfe1",
+        "die_method_sha256": null
+      },
+      "ACID_SLIME_M": {
+        "source": "exordium.AcidSlime_M",
+        "bytecode": "6cb44dcf1eeecc5c615d9f58f6add57963c66410d990f1004e1b16c5fae4d8a4",
+        "die_method_sha256": "aa455bf65cf9afe20d586976d6aeef6067c700d8ceddf0ef9218f7ef44b30ba7"
+      },
+      "SPIKE_SLIME_S": {
+        "source": "exordium.SpikeSlime_S",
+        "bytecode": "f1c8dbac76ffac8eb566d010a193d05e64c9cd79f2fe76de66d1e5d20b3424c3",
+        "die_method_sha256": null
+      },
+      "SPIKE_SLIME_M": {
+        "source": "exordium.SpikeSlime_M",
+        "bytecode": "d8580e4fda9ed8e52fb5e6e66105db33b349bb98e62555c8f4a9e557dc3d0f45",
+        "die_method_sha256": "d3977ae390806f80e59421a6f12056f9354a0d99c13a33e1350fe1979820f6e2"
+      },
+      "GREEN_LOUSE": {
+        "source": "exordium.LouseDefensive",
+        "bytecode": "d52fd6c34b3a440def271bd0fb33d5ccc76cd01e670c26a4af2e1abe417f3f7d",
+        "die_method_sha256": null
+      },
+      "RED_LOUSE": {
+        "source": "exordium.LouseNormal",
+        "bytecode": "5b823d508b6fd172c0b192229e95c5d9d94a0e1adb6c75011e530bbe86bdeefa",
+        "die_method_sha256": null
+      },
+      "RED_SLAVER": {
+        "source": "exordium.SlaverRed",
+        "bytecode": "be885de16ae2048c6f401e909d113a5990186e0c9f0252a0a73df419324d347c",
+        "die_method_sha256": "b2bd774c8417f71ad34ee6c770eb6a68c4e1546fe394f7e2f661b52aa28419c7"
+      },
+      "BLUE_SLAVER": {
+        "source": "exordium.SlaverBlue",
+        "bytecode": "bf3fd9bb150b729d67d8c36caa44c8789a396d3f8a9ac9c6887dc0d6d381ceab",
+        "die_method_sha256": "0602648b2f25acc2ed861bf6ffbce6244d94549b8ce2ade9d02ba29bd03cbc7b"
+      },
+      "SENTRY": {
+        "source": "exordium.Sentry",
+        "bytecode": "d6691d6df7deeef87a49fad45e95b161591923ee9a9b26a26992be4991b4fe36",
+        "die_method_sha256": null
+      },
+      "FAT_GREMLIN": {
+        "source": "exordium.GremlinFat",
+        "bytecode": "df3cc7d637049415b1d6778e5d849ce3d60d7a68fce9b3b1bab0244b2e177b25",
+        "die_method_sha256": "2d15149d8979a2fa2105c2b8e4484d59d7d4a14969d7c7c6f0350d64aab39a0b"
+      },
+      "MAD_GREMLIN": {
+        "source": "exordium.GremlinWarrior",
+        "bytecode": "484b4da52b6cd9410104a6050409ed222f5faa242306d2a7a7fd712bfbfaf7c2",
+        "die_method_sha256": "2b67582a68ae7e0dfd812e61df7e9d738f83aa118cf0bbe20c2203f613e613f8"
+      },
+      "SNEAKY_GREMLIN": {
+        "source": "exordium.GremlinThief",
+        "bytecode": "39dd3d0500d9816737734b80a651220b22c2bbbb99754610a5aabee55d863887",
+        "die_method_sha256": "6c269fb8f05153b60895deb5da9e3f95569b2ef8e5aff41d90a80ce5200bc1de"
+      },
+      "SHIELD_GREMLIN": {
+        "source": "exordium.GremlinTsundere",
+        "bytecode": "bb6805b1ded174ea81caa60867e52d1e702aa072f8d8ee92867db959c87b6fc1",
+        "die_method_sha256": "41907bf177fc625347fec25989d906d647f2c8185ebca20489b88576b8935b41"
+      },
+      "GREMLIN_WIZARD": {
+        "source": "exordium.GremlinWizard",
+        "bytecode": "2a90ee2e6bef8492a1db83ab5043683b78cb07b1758a2d81ca5d6b3983e94dc5",
+        "die_method_sha256": "96ebbd2cbecc657a7ced4748db917b9137f59da527e71f63f45b7445ce8e4e32"
+      },
+      "JAW_WORM": {
+        "source": "exordium.JawWorm",
+        "bytecode": "852e41899ff8b44f0eb8dcd0fa61a39a2b812cbc06d712dc448d373f02f448a0",
+        "die_method_sha256": "49e775311342b3274746aea1720c5a8f0400f20ad4ffdbb0013bb3f853df05ff"
+      },
+      "CULTIST": {
+        "source": "exordium.Cultist",
+        "bytecode": "63ab34b02704dfb3d7c7f315807d4743f8be25699379607193a9c9a592c39169",
+        "die_method_sha256": "cbb9b69f5b490ea437bf1f88039b626473f877f999d200c7f562ac52260ae25c"
+      },
+      "REPULSOR": {
+        "source": "beyond.Repulsor",
+        "bytecode": "66568e85ada476d3e98a4c703b28ed71b3cf32446d7cb4c0dffedf9a73d12690",
+        "die_method_sha256": null
+      },
+      "SPIKER": {
+        "source": "beyond.Spiker",
+        "bytecode": "b510e4659ede1805cc4fce7d9e85c388d4f29269622f27c6553435a936f67bd4",
+        "die_method_sha256": null
+      },
+      "LOOTER": {
+        "source": "exordium.Looter",
+        "bytecode": "d52eb2e33225886513620d97eae01935e6b7383cdddce36719adeaafeebbc702",
+        "die_method_sha256": "f617d0d0d1799f579e86c08c713c3a8536926223b211e089456ba20a319abbdc"
+      },
+      "MUGGER": {
+        "source": "city.Mugger",
+        "bytecode": "da89eb55eefff691fde960a74beb3c49df06ebaa9a89262e8a832f53e603617f",
+        "die_method_sha256": "7e82007e9b520ce735f9e9dce33a7e378e215ec4bfe131d59b383eb77e4ac220"
+      }
+    }
+  },
+  "retail_inputs": [
+    {
+      "seed": 10,
+      "victim": 0,
+      "action": 20,
+      "command": "play 1 1",
+      "before": {
+        "sequence": 18,
+        "sha256": "54ae2324213a25dc7f5f2094bf713f7d07972066ff0f05c8373a34b6bdeef2ff",
+        "combatants": [
+          [
+            "fuzzylousedefensive",
+            0,
+            12,
+            0
+          ],
+          [
+            "fuzzylousenormal",
+            4,
+            13,
+            0
+          ]
+        ],
+        "offered": [
+          2,
+          3,
+          20,
+          21,
+          170
+        ],
+        "native_actions": [
+          2,
+          3,
+          20,
+          21,
+          170
+        ],
+        "complete_native_action_set": true,
+        "native_capture_sha256": "a9283001c277e42ac0e1472747a00ffce1ba163188ec8f07e42cf4e1d9e9c612"
+      },
+      "after": {
+        "sequence": 19,
+        "sha256": "805e18181baadaa62fe774487d73da94f46d35753bf89d26305aca017d8fa03e",
+        "page": "COMBAT_REWARD",
+        "player_hp": 50
+      },
+      "source_hashes": {
+        "native_runtime/compact_fixture_ordinary_green_001/native_oracle/native_1795028225890_19126174118708/native_oracle.jsonl": "1d078e7d194f65fddf6756feee27ead1b42ca514545a986bd2f84947becccfea",
+        "native_runtime/compact_fixture_ordinary_green_001/bridge/sessions/044a359a-83ac-4be5-b4a0-1ca6688caaed/attempts.jsonl": "db6fa83adc00b98a0828863b54ddf35c19131fa34f52869b4aa99619d46451fd",
+        "native_runtime/compact_fixture_ordinary_green_001/bridge/sessions/044a359a-83ac-4be5-b4a0-1ca6688caaed/raw.jsonl": "0858ee294ba9c2fa615155627dbf133cf7b22cbd4b63df778b51b8f01d5de0bd",
+        "native_runtime/compact_fixture_ordinary_green_001/fixture_control/header.json": "c812f7f3e2f659374baaa27523c1e54190f365b481479e53fe3b259c38b1bfd1",
+        "native_runtime/compact_fixture_ordinary_green_001/fixture_control/actions.jsonl": "16c1613bfa9b86817f0a5d8a52cdee8846634f17b6fd0817ba08c812cf1712c7",
+        "native_runtime/compact_fixture_ordinary_green_001/fixture_control/outcome.json": "dcd3793e8074b871a859c48513a2d806fab15980c6db607acbfe12bf329af64a",
+        "native_runtime/compact_fixture_ordinary_green_001/fixture_control/initial_death.json": "422954646e5c174963b9ebc56e0fb8831acbed11eee923f70d80d100e30b4b3b",
+        "native_runtime/compact_fixture_ordinary_green_001/fixture_control/follow.json": "03f7a2268164c111967e5fb1d5ba7e9ad48000a6007fb1d55b92c8bc1c437fda",
+        "native_runtime/compact_fixture_ordinary_green_001/process_exit.json": "1ca3cc56198db2352787eb82a99ff7fd92cf35de72fa15569c703b04d1183371",
+        "native_runtime/compact_fixture_ordinary_green_001/fixture_receipt.json": "af3b803fbf36cb0932baf35f1f6030837738f90e89f6582b044ff02681c7e552"
+      }
+    },
+    {
+      "seed": 18,
+      "victim": 0,
+      "action": 21,
+      "command": "play 2 1",
+      "before": {
+        "sequence": 22,
+        "sha256": "82737518bb23f16d0e1f7cf175df486b8bac94f9e4cb4df1b7363d55337e9687",
+        "combatants": [
+          [
+            "spikeslimes",
+            0,
+            15,
+            0
+          ],
+          [
+            "acidslimem",
+            20,
+            32,
+            0
+          ]
+        ],
+        "offered": [
+          0,
+          3,
+          21,
+          22,
+          170
+        ],
+        "native_actions": [
+          0,
+          3,
+          21,
+          22,
+          170
+        ],
+        "complete_native_action_set": true,
+        "native_capture_sha256": "0a4cdb91b3925de75909e252abd8a5d05af87f5572e74f127bf77a50bb7d8533"
+      },
+      "after": {
+        "sequence": 23,
+        "sha256": "773aaac8a73930359fd1b0833dec53fea506e0c7eb6307f36f58fed44c40cb9e",
+        "page": "DELEGATED",
+        "player_hp": 44
+      },
+      "source_hashes": {
+        "native_runtime/compact_fixture_ordinary_spike_002/native_oracle/native_1795028700950_19601230439000/native_oracle.jsonl": "f90caf81b77ef886c534bd61718272844069c67b38ac64dc7c84d859186822f5",
+        "native_runtime/compact_fixture_ordinary_spike_002/bridge/sessions/b4ed4abe-72f0-453a-9f48-b9fc781e75ce/attempts.jsonl": "1f95a30d6037a99b9dfc51b07ca13e3c9394cbbe45c48470de718f7344e4ebea",
+        "native_runtime/compact_fixture_ordinary_spike_002/bridge/sessions/b4ed4abe-72f0-453a-9f48-b9fc781e75ce/raw.jsonl": "208b185bb44d55345e83d4deeb472a84dfc7fc31304f93375809346f70d89872",
+        "native_runtime/compact_fixture_ordinary_spike_002/fixture_control/header.json": "f30c05a48e5e396d287a518905087bedd96729faafaaf7bddd07cf27db0e4951",
+        "native_runtime/compact_fixture_ordinary_spike_002/fixture_control/actions.jsonl": "32ad6365c777afc9488c535c52cc8afa0cf81b24df0341dd591d7f8ea133001f",
+        "native_runtime/compact_fixture_ordinary_spike_002/fixture_control/outcome.json": "8040207f91b8fd3011c6782923271fb37a10bd57ac25d3dec7a47b580057c764",
+        "native_runtime/compact_fixture_ordinary_spike_002/fixture_control/initial_death.json": "c09cb789c11fae148a43f092a4aa37a4d701f61806e38c7d9f9f4d8e1e83ea5a",
+        "native_runtime/compact_fixture_ordinary_spike_002/fixture_control/follow.json": "6c486491dc2d539f14b5c749a92037f3603c0b48e9975408ba890a2c71ac1773",
+        "native_runtime/compact_fixture_ordinary_spike_002/process_exit.json": "c66e892e47c8df7324cc2b778c85710ff40d05a9f1b8da8a26ebb4157d25098f",
+        "native_runtime/compact_fixture_ordinary_spike_002/fixture_receipt.json": "cc4a1f64cafd99b6f7d81eaaa94066774b4e97e67d9b2501f804d536a7870cba"
+      }
+    },
+    {
+      "seed": 19,
+      "victim": 1,
+      "action": 170,
+      "command": "end",
+      "before": {
+        "sequence": 17,
+        "sha256": "7697832a4e748b0c71564e7882ca6c816cd77e7e302386145c44cef1ffc29b04",
+        "combatants": [
+          [
+            "fuzzylousedefensive",
+            10,
+            16,
+            0
+          ],
+          [
+            "fuzzylousenormal",
+            0,
+            13,
+            0
+          ]
+        ],
+        "offered": [
+          11,
+          170
+        ],
+        "native_actions": [
+          11,
+          170
+        ],
+        "complete_native_action_set": true,
+        "native_capture_sha256": "f31266e94c98f8b8619c8aa455140fc505d1733f7d4fc8359f179c628e0263f8"
+      },
+      "after": {
+        "sequence": 18,
+        "sha256": "55a7c760035bdee758d98c6fc7031005ab9401dc2b210ec906a9249c54b677d4",
+        "page": "DELEGATED",
+        "player_hp": 44
+      },
+      "source_hashes": {
+        "native_runtime/compact_fixture_ordinary_spike_001/native_oracle/native_1795028587094_19487375107208/native_oracle.jsonl": "dccb94220bd6cd918a591d14bbee99ab30b8646eb401e26bb252181f6c930359",
+        "native_runtime/compact_fixture_ordinary_spike_001/bridge/sessions/0bc02c46-f635-4777-b6d6-a12e6b04586b/attempts.jsonl": "10b20c706a1b8572c79a355d575128cca209edd209cda6420cc14f257daf345f",
+        "native_runtime/compact_fixture_ordinary_spike_001/bridge/sessions/0bc02c46-f635-4777-b6d6-a12e6b04586b/raw.jsonl": "29c4dddec7287690cdeda1a0fd6cb0af990d9e776c7cc3ed3bf50bc34076f0c0",
+        "native_runtime/compact_fixture_ordinary_spike_001/fixture_control/header.json": "36c4ad759d3c24bf0a726574cd2a4c60a2bb39528d0a266b405e179a1d50c7f2",
+        "native_runtime/compact_fixture_ordinary_spike_001/fixture_control/actions.jsonl": "0aed2da35a88d1100f99737787529a3a972d382ac0ecac231606af6e51a20717",
+        "native_runtime/compact_fixture_ordinary_spike_001/fixture_control/outcome.json": "e279cac308fb28e025620bc43d48ecd4a227763eec9d5d552d575ba841d6badd",
+        "native_runtime/compact_fixture_ordinary_spike_001/fixture_control/initial_death.json": "7fda1a12a47018e2b29ee81b0623c1b13e08400958f9abe499bf6c0eeea5ff7e",
+        "native_runtime/compact_fixture_ordinary_spike_001/fixture_control/follow.json": "34ebb6aab86ab8e7694ed5acd9ab62c42bed76b765fa3c33085314ac03f7e733",
+        "native_runtime/compact_fixture_ordinary_spike_001/process_exit.json": "67e2e81bbf8ba4536602a2ffed0f895a4cace930fff88e7ab2bf49dc0238d3aa",
+        "native_runtime/compact_fixture_ordinary_spike_001/fixture_receipt.json": "86a65a017672405d8d784794a759e034965dfc65b16c4edbed5cd2f87484a3f3"
+      }
+    }
+  ],
+  "discovery": {
+    "shards": {
+      "shard-0000.jsonl.gz": "0f4e6d2d248aee5d3c331b8803270624c026b3fb68d51bfcc7edbe6eceecb75b",
+      "shard-0001.jsonl.gz": "e98110ddd3417b42d44c0243df85d10a6b4b08c341e7b8c4bbf01433bd6a2b4b",
+      "shard-0002.jsonl.gz": "ff081b16fab221edf5565b6246677e29ffa7a9bbf27fbcd01b028a26e4ffaeb6",
+      "shard-0003.jsonl.gz": "21ee0f557aa0cac2fbc84bed5d36eb3431ce1089e8e4db59669d3c945d2fde6f"
+    },
+    "matching_stops": 74,
+    "counts": {
+      "FUNGI_BEAST": 20,
+      "GREEN_LOUSE": 4,
+      "ACID_SLIME_M": 9,
+      "SPIKE_SLIME_S": 3,
+      "SPIKE_SLIME_M": 8,
+      "SENTRY": 6,
+      "RED_LOUSE": 10,
+      "SNEAKY_GREMLIN": 3,
+      "ACID_SLIME_S": 10,
+      "GREEN_LOUSE|RED_LOUSE": 1
+    },
+    "representatives": [
+      {
+        "seed": 6494578533077833401,
+        "strategy": "fixed",
+        "prefix": [
+          110,
+          111,
+          111,
+          110,
+          171,
+          111,
+          15,
+          12,
+          24,
+          2,
+          170,
+          11,
+          20,
+          12,
+          71
+        ],
+        "victims": [
+          "GREEN_LOUSE"
+        ],
+        "before": {
+          "page": "DELEGATED",
+          "scene": "act1/MONSTER/BATTLE/DELEGATED",
+          "engine_steps": 14,
+          "hp": 52,
+          "max_hp": 66,
+          "gold": 99,
+          "floor": 1,
+          "act": 1,
+          "event": null,
+          "legal": [],
+          "gaps": [
+            "death_boundary_unknown"
+          ],
+          "complete": false,
+          "done": false,
+          "sha256": "f44deb871aa177445a2d27d184f7753996378c9ae2ea452bb0531589218fa136"
+        },
+        "after": {
+          "page": "DELEGATED",
+          "scene": "act1/MONSTER/BATTLE/DELEGATED",
+          "engine_steps": 14,
+          "hp": 52,
+          "max_hp": 66,
+          "gold": 99,
+          "floor": 1,
+          "act": 1,
+          "event": null,
+          "legal": [],
+          "gaps": [
+            "death_boundary_unknown"
+          ],
+          "complete": false,
+          "done": false,
+          "sha256": "268478b1493bdff524099057e2a001181b109f8d7035a1145fd6eb8f5d81e48e"
+        },
+        "restored": false,
+        "next_step": null
+      },
+      {
+        "seed": 9052047585755580131,
+        "strategy": "survival",
+        "prefix": [
+          110,
+          112,
+          121,
+          121,
+          117,
+          121,
+          110,
+          110,
+          0,
+          3,
+          113,
+          172,
+          0,
+          170,
+          11,
+          11,
+          11,
+          0,
+          170,
+          3,
+          20,
+          22,
+          170,
+          3,
+          110,
+          172,
+          1,
+          1,
+          170,
+          1,
+          0,
+          20,
+          170,
+          22,
+          21,
+          2,
+          170,
+          23,
+          20,
+          110,
+          110,
+          110,
+          112,
+          171,
+          110,
+          111,
+          110,
+          110,
+          2,
+          1,
+          111,
+          179,
+          114,
+          172,
+          11,
+          2,
+          70,
+          170,
+          11,
+          10,
+          12,
+          170,
+          4,
+          2,
+          11,
+          1,
+          170,
+          4,
+          112,
+          179,
+          113,
+          172,
+          12,
+          10,
+          0,
+          170,
+          13,
+          11,
+          11,
+          110,
+          110,
+          112,
+          171,
+          110,
+          11,
+          14,
+          13,
+          170,
+          14,
+          3,
+          3,
+          110,
+          172,
+          0,
+          170,
+          110,
+          172,
+          1,
+          2,
+          111,
+          179,
+          112,
+          172,
+          11,
+          170,
+          110,
+          179,
+          172,
+          2,
+          3,
+          12,
+          1,
+          170,
+          2,
+          11,
+          12,
+          1,
+          170,
+          111,
+          172,
+          15,
+          110,
+          110,
+          110,
+          111,
+          171,
+          110,
+          12,
+          10,
+          0,
+          70,
+          4,
+          170,
+          4,
+          10,
+          12,
+          12,
+          12,
+          12,
+          1,
+          170,
+          10,
+          2,
+          170,
+          1,
+          2,
+          112,
+          172,
+          10,
+          13,
+          12,
+          11,
+          170,
+          3,
+          2,
+          12,
+          170,
+          12
+        ],
+        "victims": [
+          "ACID_SLIME_M"
+        ],
+        "before": {
+          "page": "DELEGATED",
+          "scene": "act1/MONSTER/BATTLE/DELEGATED",
+          "engine_steps": 150,
+          "hp": 6,
+          "max_hp": 60,
+          "gold": 148,
+          "floor": 5,
+          "act": 1,
+          "event": null,
+          "legal": [],
+          "gaps": [
+            "death_boundary_unknown"
+          ],
+          "complete": false,
+          "done": false,
+          "sha256": "f4674aaf21bfc9d4c81cc5d07208791c428952aa9f1f04267ad6c7aad1d0377f"
+        },
+        "after": {
+          "page": "DELEGATED",
+          "scene": "act1/MONSTER/BATTLE/DELEGATED",
+          "engine_steps": 150,
+          "hp": 6,
+          "max_hp": 60,
+          "gold": 148,
+          "floor": 5,
+          "act": 1,
+          "event": null,
+          "legal": [],
+          "gaps": [
+            "death_boundary_unknown"
+          ],
+          "complete": false,
+          "done": false,
+          "sha256": "4e0e82ee1e3df02f7e1e71ef52a893cb097ed280add1d56407e1a9e224886a1c"
+        },
+        "restored": false,
+        "next_step": null
+      },
+      {
+        "seed": 2301222713626024753,
+        "strategy": "explore",
+        "prefix": [
+          110,
+          111,
+          110,
+          110,
+          1,
+          13,
+          3,
+          170,
+          14,
+          11,
+          0,
+          170,
+          10,
+          12,
+          2,
+          0,
+          170,
+          3,
+          111,
+          172,
+          12,
+          170,
+          2,
+          112,
+          179,
+          111,
+          172,
+          2,
+          11,
+          170,
+          14,
+          10,
+          1,
+          11,
+          170,
+          4,
+          3,
+          10,
+          111,
+          112,
+          171,
+          110,
+          21,
+          15,
+          23,
+          23,
+          170,
+          12,
+          13
+        ],
+        "victims": [
+          "SPIKE_SLIME_S"
+        ],
+        "before": {
+          "page": "DELEGATED",
+          "scene": "act1/MONSTER/BATTLE/DELEGATED",
+          "engine_steps": 46,
+          "hp": 21,
+          "max_hp": 66,
+          "gold": 99,
+          "floor": 2,
+          "act": 1,
+          "event": null,
+          "legal": [],
+          "gaps": [
+            "death_boundary_unknown"
+          ],
+          "complete": false,
+          "done": false,
+          "sha256": "bc24e6173b49a6374571148aa977f1c6894a7ada1673d4700f007379df69c5f5"
+        },
+        "after": {
+          "page": "DELEGATED",
+          "scene": "act1/MONSTER/BATTLE/DELEGATED",
+          "engine_steps": 46,
+          "hp": 21,
+          "max_hp": 66,
+          "gold": 99,
+          "floor": 2,
+          "act": 1,
+          "event": null,
+          "legal": [
+            0,
+            1,
+            2,
+            170
+          ],
+          "gaps": [],
+          "complete": true,
+          "done": false,
+          "sha256": "31c0fd7a53d60808a80969857e40e6d7f0e354c902ad56ad93ab108cb92ee70a"
+        },
+        "restored": true,
+        "next_step": {
+          "action": 0,
+          "after": {
+            "page": "DELEGATED",
+            "scene": "act1/MONSTER/BATTLE/DELEGATED",
+            "engine_steps": 47,
+            "hp": 21,
+            "max_hp": 66,
+            "gold": 99,
+            "floor": 2,
+            "act": 1,
+            "event": null,
+            "legal": [
+              170
+            ],
+            "gaps": [],
+            "complete": true,
+            "done": false,
+            "sha256": "cf77a1f0f9147283088d199c2d64b7077973685ce360eef75b2b597835264fc4"
+          }
+        }
+      },
+      {
+        "seed": 7605277700756039606,
+        "strategy": "survival",
+        "prefix": [
+          110,
+          111,
+          111,
+          110,
+          171,
+          111,
+          10,
+          5,
+          111,
+          172,
+          2,
+          21,
+          76,
+          70,
+          170,
+          3,
+          2,
+          2,
+          170,
+          22,
+          20,
+          0,
+          0,
+          170,
+          20,
+          1,
+          1,
+          170,
+          14,
+          12,
+          12,
+          11,
+          110,
+          110,
+          110,
+          171,
+          110,
+          10,
+          12,
+          23,
+          22,
+          170,
+          0,
+          1,
+          0,
+          170,
+          20,
+          20,
+          2,
+          170,
+          20,
+          2,
+          2,
+          21,
+          170,
+          24,
+          110,
+          110,
+          110,
+          110,
+          171,
+          110,
+          111,
+          110,
+          13,
+          5,
+          1,
+          112,
+          172,
+          12,
+          70,
+          1,
+          170,
+          11,
+          11,
+          10,
+          170,
+          3,
+          1,
+          12,
+          170,
+          12,
+          1,
+          2,
+          11,
+          170,
+          0,
+          3,
+          111,
+          179,
+          111,
+          179,
+          112,
+          172,
+          11,
+          111,
+          179,
+          110,
+          179,
+          111,
+          172,
+          170,
+          14,
+          110,
+          110,
+          110,
+          110,
+          171,
+          110,
+          24,
+          4,
+          4,
+          110,
+          172,
+          20,
+          70,
+          170,
+          4,
+          21,
+          112,
+          172,
+          20,
+          170,
+          4,
+          2,
+          22
+        ],
+        "victims": [
+          "SPIKE_SLIME_M"
+        ],
+        "before": {
+          "page": "DELEGATED",
+          "scene": "act1/MONSTER/BATTLE/DELEGATED",
+          "engine_steps": 122,
+          "hp": 37,
+          "max_hp": 71,
+          "gold": 137,
+          "floor": 5,
+          "act": 1,
+          "event": null,
+          "legal": [],
+          "gaps": [
+            "death_boundary_unknown"
+          ],
+          "complete": false,
+          "done": false,
+          "sha256": "446cc0b826cab1c52936f14931158fd342c9a8b2ded1445c3ecef59768873767"
+        },
+        "after": {
+          "page": "DELEGATED",
+          "scene": "act1/MONSTER/BATTLE/DELEGATED",
+          "engine_steps": 122,
+          "hp": 37,
+          "max_hp": 71,
+          "gold": 137,
+          "floor": 5,
+          "act": 1,
+          "event": null,
+          "legal": [
+            110,
+            111,
+            112
+          ],
+          "gaps": [],
+          "complete": true,
+          "done": false,
+          "sha256": "17229ae737ea3186b856bcdf1248ea8cb9f8915120b2360cfbf0582270f90a55"
+        },
+        "restored": true,
+        "next_step": {
+          "action": 110,
+          "after": {
+            "page": "DELEGATED",
+            "scene": "act1/MONSTER/BATTLE/DELEGATED",
+            "engine_steps": 123,
+            "hp": 37,
+            "max_hp": 71,
+            "gold": 137,
+            "floor": 5,
+            "act": 1,
+            "event": null,
+            "legal": [
+              172,
+              179
+            ],
+            "gaps": [
+              "additional_hand_replacement_unverified"
+            ],
+            "complete": false,
+            "done": false,
+            "sha256": "dc7cf4e7dc7f997b9da218d6804567b5dbcb844617fd2cde639dbd7c7a46e3c4"
+          }
+        }
+      },
+      {
+        "seed": 1779947905639916263,
+        "strategy": "survival",
+        "prefix": [
+          110,
+          113,
+          110,
+          111,
+          0,
+          1,
+          1,
+          10,
+          170,
+          13,
+          0,
+          21,
+          20,
+          170,
+          21,
+          20,
+          110,
+          110,
+          110,
+          112,
+          171,
+          110,
+          13,
+          10,
+          70,
+          0,
+          110,
+          172,
+          0,
+          170,
+          1,
+          13,
+          12,
+          11,
+          170,
+          1,
+          12,
+          10,
+          11,
+          110,
+          110,
+          111,
+          171,
+          110,
+          110,
+          110,
+          116,
+          114,
+          119,
+          118,
+          120,
+          118,
+          114,
+          119,
+          120,
+          114,
+          110,
+          110,
+          110,
+          178,
+          110,
+          178,
+          171,
+          110,
+          0,
+          2,
+          12,
+          11,
+          170,
+          12,
+          11,
+          12,
+          10,
+          0,
+          170,
+          4,
+          3,
+          112,
+          179,
+          110,
+          179,
+          112,
+          172,
+          11,
+          10,
+          110,
+          110,
+          110,
+          171,
+          110,
+          3,
+          2,
+          31,
+          31,
+          170,
+          4,
+          1,
+          35,
+          33,
+          32,
+          32,
+          31,
+          170,
+          33
+        ],
+        "victims": [
+          "SENTRY"
+        ],
+        "before": {
+          "page": "DELEGATED",
+          "scene": "act1/ELITE/BATTLE/DELEGATED",
+          "engine_steps": 92,
+          "hp": 40,
+          "max_hp": 66,
+          "gold": 140,
+          "floor": 6,
+          "act": 1,
+          "event": null,
+          "legal": [],
+          "gaps": [
+            "death_boundary_unknown"
+          ],
+          "complete": false,
+          "done": false,
+          "sha256": "32c296c106f9c6a05bc2f0f48beb76a0d15b0ce3cbba30bbf2d5a3906957820e"
+        },
+        "after": {
+          "page": "DELEGATED",
+          "scene": "act1/ELITE/BATTLE/DELEGATED",
+          "engine_steps": 92,
+          "hp": 40,
+          "max_hp": 66,
+          "gold": 140,
+          "floor": 6,
+          "act": 1,
+          "event": null,
+          "legal": [
+            0,
+            1,
+            12,
+            13,
+            22,
+            23,
+            170
+          ],
+          "gaps": [],
+          "complete": true,
+          "done": false,
+          "sha256": "e65baddebe60fec5493ac3b944f0e1651ce91262b762a994e36714b51ba34842"
+        },
+        "restored": true,
+        "next_step": {
+          "action": 12,
+          "after": {
+            "page": "DELEGATED",
+            "scene": "act1/ELITE/BATTLE/DELEGATED",
+            "engine_steps": 93,
+            "hp": 40,
+            "max_hp": 66,
+            "gold": 140,
+            "floor": 6,
+            "act": 1,
+            "event": null,
+            "legal": [
+              0,
+              1,
+              12,
+              22,
+              170
+            ],
+            "gaps": [],
+            "complete": true,
+            "done": false,
+            "sha256": "6f9cb56baaff826d4da32025ce392ee25c833152df92debc98d7e65e769e966a"
+          }
+        }
+      },
+      {
+        "seed": 8842358317831172478,
+        "strategy": "survival",
+        "prefix": [
+          110,
+          110,
+          121,
+          172,
+          111,
+          1,
+          3,
+          0,
+          170,
+          0,
+          0,
+          111,
+          179,
+          112,
+          172,
+          11,
+          170,
+          4,
+          110,
+          172,
+          11,
+          1,
+          170
+        ],
+        "victims": [
+          "RED_LOUSE"
+        ],
+        "before": {
+          "page": "DELEGATED",
+          "scene": "act1/MONSTER/BATTLE/DELEGATED",
+          "engine_steps": 21,
+          "hp": 59,
+          "max_hp": 66,
+          "gold": 99,
+          "floor": 1,
+          "act": 1,
+          "event": null,
+          "legal": [],
+          "gaps": [
+            "death_boundary_unknown"
+          ],
+          "complete": false,
+          "done": false,
+          "sha256": "2eccf426765b8420420cbb725796a3d89da2ef4fab4a3f4a613e0673a2cbd020"
+        },
+        "after": {
+          "page": "DELEGATED",
+          "scene": "act1/MONSTER/BATTLE/DELEGATED",
+          "engine_steps": 21,
+          "hp": 59,
+          "max_hp": 66,
+          "gold": 99,
+          "floor": 1,
+          "act": 1,
+          "event": null,
+          "legal": [
+            1,
+            4,
+            20,
+            22,
+            23,
+            170
+          ],
+          "gaps": [],
+          "complete": true,
+          "done": false,
+          "sha256": "5df08270ddef34f86a504820aff6c1166e2168e965cfaaeab6dc06a5aca9220a"
+        },
+        "restored": true,
+        "next_step": {
+          "action": 20,
+          "after": {
+            "page": "DELEGATED",
+            "scene": "act1/MONSTER/BATTLE/DELEGATED",
+            "engine_steps": 22,
+            "hp": 59,
+            "max_hp": 66,
+            "gold": 99,
+            "floor": 1,
+            "act": 1,
+            "event": null,
+            "legal": [
+              0,
+              3,
+              21,
+              22,
+              170
+            ],
+            "gaps": [],
+            "complete": true,
+            "done": false,
+            "sha256": "f4ecf53317be150bc2f9eb5a6da22cce7dd974e7080aebc27ea517cb975b855e"
+          }
+        }
+      },
+      {
+        "seed": 4421876317904026638,
+        "strategy": "survival",
+        "prefix": [
+          110,
+          111,
+          110,
+          111,
+          14,
+          12,
+          13,
+          11,
+          170,
+          3,
+          13,
+          12,
+          170,
+          14,
+          0,
+          1,
+          110,
+          172,
+          0,
+          170,
+          3,
+          1,
+          1,
+          170,
+          4,
+          3,
+          2,
+          170,
+          1,
+          3,
+          11,
+          170,
+          11,
+          2,
+          0,
+          111,
+          179,
+          110,
+          179,
+          111,
+          172,
+          10,
+          170,
+          14,
+          110,
+          110,
+          110,
+          171,
+          110,
+          4,
+          115,
+          179,
+          111,
+          179,
+          110,
+          179,
+          114,
+          172,
+          2,
+          11,
+          170,
+          14,
+          0,
+          10,
+          10,
+          170,
+          14,
+          2,
+          1,
+          1,
+          170,
+          11,
+          10,
+          11,
+          170,
+          13,
+          10,
+          2,
+          170,
+          12,
+          0,
+          12,
+          10,
+          110,
+          110,
+          112,
+          171,
+          110,
+          13,
+          12,
+          11,
+          20,
+          1,
+          170,
+          2,
+          113,
+          179,
+          111,
+          172,
+          1,
+          21,
+          170,
+          23,
+          3,
+          2,
+          170,
+          4,
+          111,
+          172,
+          1,
+          20,
+          170,
+          23,
+          110,
+          110,
+          110,
+          110,
+          171,
+          110,
+          33,
+          70,
+          4,
+          34
+        ],
+        "victims": [
+          "SNEAKY_GREMLIN"
+        ],
+        "before": {
+          "page": "DELEGATED",
+          "scene": "act1/MONSTER/BATTLE/DELEGATED",
+          "engine_steps": 118,
+          "hp": 12,
+          "max_hp": 72,
+          "gold": 143,
+          "floor": 4,
+          "act": 1,
+          "event": null,
+          "legal": [],
+          "gaps": [
+            "death_boundary_unknown"
+          ],
+          "complete": false,
+          "done": false,
+          "sha256": "019992f84ea8723658026c29c8df78d8f56d118366791d85a6c3093b2cb15c7b"
+        },
+        "after": {
+          "page": "DELEGATED",
+          "scene": "act1/MONSTER/BATTLE/DELEGATED",
+          "engine_steps": 118,
+          "hp": 12,
+          "max_hp": 72,
+          "gold": 143,
+          "floor": 4,
+          "act": 1,
+          "event": null,
+          "legal": [
+            10,
+            11,
+            13,
+            20,
+            21,
+            23,
+            40,
+            41,
+            43,
+            170
+          ],
+          "gaps": [],
+          "complete": true,
+          "done": false,
+          "sha256": "67b08b35776251b0c7f36451e646be6c2f81001fcd93fe28a9a03e681d09406f"
+        },
+        "restored": true,
+        "next_step": {
+          "action": 10,
+          "after": {
+            "page": "DELEGATED",
+            "scene": "act1/MONSTER/BATTLE/DELEGATED",
+            "engine_steps": 119,
+            "hp": 12,
+            "max_hp": 72,
+            "gold": 143,
+            "floor": 4,
+            "act": 1,
+            "event": null,
+            "legal": [
+              10,
+              12,
+              20,
+              22,
+              40,
+              42,
+              170
+            ],
+            "gaps": [],
+            "complete": true,
+            "done": false,
+            "sha256": "66d0334cc364876ef29cbec0526fbc3b57c36e7ce220641421dceaaaabe85f08"
+          }
+        }
+      },
+      {
+        "seed": 8494422800243342697,
+        "strategy": "survival",
+        "prefix": [
+          110,
+          113,
+          110,
+          113,
+          12,
+          12,
+          10,
+          1,
+          0,
+          170,
+          0,
+          11,
+          10,
+          0,
+          170,
+          1,
+          0,
+          10,
+          10,
+          170,
+          13,
+          2,
+          2,
+          11,
+          0,
+          170,
+          12,
+          110,
+          110,
+          112,
+          171,
+          110,
+          13,
+          3,
+          1,
+          111,
+          172,
+          170,
+          10,
+          11
+        ],
+        "victims": [
+          "ACID_SLIME_S"
+        ],
+        "before": {
+          "page": "DELEGATED",
+          "scene": "act1/MONSTER/BATTLE/DELEGATED",
+          "engine_steps": 37,
+          "hp": 58,
+          "max_hp": 66,
+          "gold": 109,
+          "floor": 2,
+          "act": 1,
+          "event": null,
+          "legal": [],
+          "gaps": [
+            "death_boundary_unknown"
+          ],
+          "complete": false,
+          "done": false,
+          "sha256": "94c51a634a17fb386f1c2e39792fb764e2ae651371fc0b10fb96fe8b2db443a5"
+        },
+        "after": {
+          "page": "DELEGATED",
+          "scene": "act1/MONSTER/BATTLE/DELEGATED",
+          "engine_steps": 37,
+          "hp": 58,
+          "max_hp": 66,
+          "gold": 109,
+          "floor": 2,
+          "act": 1,
+          "event": null,
+          "legal": [
+            2,
+            21,
+            170
+          ],
+          "gaps": [],
+          "complete": true,
+          "done": false,
+          "sha256": "2ecb2d118cad48a59c9d098b9ccc5681bbfedd834f0fedf01865a6fb267eebd8"
+        },
+        "restored": true,
+        "next_step": {
+          "action": 21,
+          "after": {
+            "page": "DELEGATED",
+            "scene": "act1/MONSTER/BATTLE/DELEGATED",
+            "engine_steps": 38,
+            "hp": 58,
+            "max_hp": 66,
+            "gold": 109,
+            "floor": 2,
+            "act": 1,
+            "event": null,
+            "legal": [
+              1,
+              170
+            ],
+            "gaps": [],
+            "complete": true,
+            "done": false,
+            "sha256": "d25b77349eb84e757007fe07708ba6bc8c4ce949186d3891659800dea8252c70"
+          }
+        }
+      },
+      {
+        "seed": 3535945554764495046,
+        "strategy": "survival",
+        "prefix": [
+          110,
+          110,
+          177,
+          110,
+          111,
+          25,
+          5,
+          1,
+          12,
+          170,
+          3,
+          20,
+          0,
+          170,
+          23,
+          12,
+          2,
+          110,
+          179,
+          111,
+          172,
+          0,
+          170,
+          1,
+          2,
+          12,
+          170,
+          10,
+          110,
+          110,
+          112,
+          171,
+          110,
+          15,
+          12,
+          12,
+          0,
+          170,
+          12,
+          2,
+          12,
+          1,
+          170,
+          4,
+          112,
+          172,
+          10,
+          11,
+          170,
+          2,
+          1,
+          11,
+          170,
+          13,
+          110,
+          110,
+          110,
+          110,
+          171,
+          110,
+          5,
+          3,
+          10,
+          0,
+          70,
+          170,
+          14,
+          3,
+          111,
+          179,
+          112,
+          172,
+          1,
+          170,
+          13,
+          1,
+          111,
+          172,
+          0,
+          170,
+          4,
+          3,
+          12,
+          170,
+          10,
+          12,
+          10,
+          1,
+          170,
+          0,
+          113,
+          172,
+          1,
+          10,
+          170,
+          13,
+          0,
+          0,
+          170,
+          3,
+          1,
+          111,
+          172,
+          11,
+          170,
+          12,
+          3,
+          0,
+          1,
+          170,
+          11,
+          12,
+          110,
+          110,
+          110,
+          171,
+          110,
+          5,
+          115,
+          172,
+          0,
+          2,
+          170,
+          3,
+          3,
+          2,
+          170,
+          21,
+          33,
+          12,
+          170,
+          30,
+          30,
+          170,
+          13
+        ],
+        "victims": [
+          "GREEN_LOUSE",
+          "RED_LOUSE"
+        ],
+        "before": {
+          "page": "DELEGATED",
+          "scene": "act1/MONSTER/BATTLE/DELEGATED",
+          "engine_steps": 130,
+          "hp": 8,
+          "max_hp": 66,
+          "gold": 144,
+          "floor": 4,
+          "act": 1,
+          "event": null,
+          "legal": [],
+          "gaps": [
+            "death_boundary_unknown"
+          ],
+          "complete": false,
+          "done": false,
+          "sha256": "a34647b86438344d2f95c75cab1794fe608339f12ac014146538ed99c5f43bff"
+        },
+        "after": {
+          "page": "DELEGATED",
+          "scene": "act1/MONSTER/BATTLE/DELEGATED",
+          "engine_steps": 130,
+          "hp": 8,
+          "max_hp": 66,
+          "gold": 144,
+          "floor": 4,
+          "act": 1,
+          "event": null,
+          "legal": [
+            0,
+            1,
+            2,
+            3,
+            170
+          ],
+          "gaps": [],
+          "complete": true,
+          "done": false,
+          "sha256": "78bdb9afa0e38c522757180470e5eef23ea95b647136791b8281c656f43585f2"
+        },
+        "restored": true,
+        "next_step": {
+          "action": 0,
+          "after": {
+            "page": "DELEGATED",
+            "scene": "act1/MONSTER/BATTLE/DELEGATED",
+            "engine_steps": 131,
+            "hp": 8,
+            "max_hp": 66,
+            "gold": 144,
+            "floor": 4,
+            "act": 1,
+            "event": null,
+            "legal": [
+              0,
+              1,
+              2,
+              170
+            ],
+            "gaps": [],
+            "complete": true,
+            "done": false,
+            "sha256": "90f88a9c1447224c1a871ecb8f46d37a6e904ddc02e04a171c738bc8aaf86195"
+          }
+        }
+      }
+    ]
+  },
+  "act2_native_combat": {
+    "compared_states": 31,
+    "first_difference": null
+  },
+  "act2_simulated_thieves": {
+    "from_native_sequence": 34,
+    "policy": "survival",
+    "actions": [
+      110,
+      110,
+      171,
+      110,
+      1,
+      3,
+      1,
+      10,
+      0,
+      170,
+      1,
+      3,
+      0,
+      10,
+      170,
+      16,
+      10,
+      13,
+      170,
+      10,
+      170
+    ],
+    "checkpoints": [
+      {
+        "page": "CARD_REWARD",
+        "scene": "act2/MONSTER/NATIVE_CARD_REWARD_OVERLAY/CARD_REWARD",
+        "engine_steps": 29,
+        "hp": 40,
+        "max_hp": 71,
+        "gold": 288,
+        "floor": 18,
+        "act": 2,
+        "event": null,
+        "legal": [
+          110,
+          111,
+          112,
+          177
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "41be3055d567c05abdc7d95db5b2f4c69e7f074cec9f8aee831c1de880e805d1"
+      },
+      {
+        "page": "COMBAT_REWARD",
+        "scene": "act2/MONSTER/REWARDS/COMBAT_REWARD",
+        "engine_steps": 30,
+        "hp": 40,
+        "max_hp": 71,
+        "gold": 288,
+        "floor": 18,
+        "act": 2,
+        "event": null,
+        "legal": [
+          110,
+          171
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "75f0a7eeb2a7578af66849a3eec2f14546f63eba0a675623a601432e24d36fdf"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act2/MONSTER/MAP_SCREEN/DELEGATED",
+        "engine_steps": 32,
+        "hp": 40,
+        "max_hp": 71,
+        "gold": 299,
+        "floor": 18,
+        "act": 2,
+        "event": null,
+        "legal": [
+          110
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "b21add6a641bab3c5b87c1ed38a3e48efb2e464020e16aec452a3458de3ac3f5"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act2/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 33,
+        "hp": 40,
+        "max_hp": 71,
+        "gold": 299,
+        "floor": 19,
+        "act": 2,
+        "event": null,
+        "legal": [
+          1,
+          2,
+          3,
+          4,
+          10,
+          20,
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "302a55cef94daf788c091eadf5bc69c0b6013c0d9a0d93d2ced14706f33b25dd"
+      },
+      {
+        "page": "REWARD_UNVERIFIED",
+        "scene": "act2/MONSTER/REWARDS/REWARD_UNVERIFIED",
+        "engine_steps": 50,
+        "hp": 20,
+        "max_hp": 71,
+        "gold": 199,
+        "floor": 19,
+        "act": 2,
+        "event": null,
+        "legal": [],
+        "gaps": [
+          "reward_page_semantics_unverified"
+        ],
+        "complete": false,
+        "done": false,
+        "sha256": "779acc511d6284a15cddd48b8ec7c8ec69348291bcc6514aed50c15f18835bf8"
+      }
+    ],
+    "end": {
+      "page": "REWARD_UNVERIFIED",
+      "scene": "act2/MONSTER/REWARDS/REWARD_UNVERIFIED",
+      "engine_steps": 50,
+      "hp": 20,
+      "max_hp": 71,
+      "gold": 199,
+      "floor": 19,
+      "act": 2,
+      "event": null,
+      "legal": [],
+      "gaps": [
+        "reward_page_semantics_unverified"
+      ],
+      "complete": false,
+      "done": false,
+      "sha256": "779acc511d6284a15cddd48b8ec7c8ec69348291bcc6514aed50c15f18835bf8"
+    },
+    "kernel_end_floor": 19,
+    "reason": "unsupported"
+  },
+  "act3_simulated_repulsor": {
+    "act": 3,
+    "previous_y": -1,
+    "actions": [
+      111,
+      33,
+      4,
+      110,
+      172,
+      32,
+      31,
+      170,
+      2,
+      3,
+      170,
+      34,
+      0,
+      170,
+      3,
+      170,
+      170,
+      34,
+      170,
+      32,
+      1,
+      2,
+      0,
+      170,
+      34,
+      21,
+      21,
+      170,
+      0,
+      111,
+      172,
+      170,
+      4,
+      170,
+      24,
+      23,
+      20,
+      170,
+      24,
+      3,
+      1,
+      170,
+      2,
+      1,
+      111,
+      179,
+      112,
+      172,
+      11,
+      170,
+      10
+    ],
+    "states": [
+      {
+        "page": "DELEGATED",
+        "scene": "act3/INVALID/MAP_SCREEN/DELEGATED",
+        "engine_steps": 0,
+        "hp": 66,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 2,
+        "act": 3,
+        "event": null,
+        "legal": [
+          110,
+          111,
+          112,
+          113
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "ec75b7426db80db626683e374bcf0431772f72125fc678f367a70c2383f1eec3"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 1,
+        "hp": 66,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          0,
+          5,
+          11,
+          12,
+          13,
+          14,
+          16,
+          21,
+          22,
+          23,
+          24,
+          26,
+          31,
+          32,
+          33,
+          34,
+          36,
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "57fecfba2dae8504262d02000dfcc57b322425fd5765b0a4b1393efd2b8b1ef6"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 2,
+        "hp": 66,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          0,
+          4,
+          11,
+          12,
+          13,
+          15,
+          21,
+          22,
+          23,
+          25,
+          31,
+          32,
+          33,
+          35,
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "4795594ff5f26bf80c84f42282dea1a3a6e2477d4f7c89fd1d9825f858bd28d7"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 3,
+        "hp": 66,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          110,
+          111,
+          112,
+          113,
+          114
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "ce4a646c83d9c43e9d89d56cf56bd63cf029e366f405293569b7c5ad3bf632c1"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 4,
+        "hp": 66,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          172,
+          179
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "9e272c84ff342e127b90c049e6727af9d1c006e6f2a509208d788efb83542a18"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 5,
+        "hp": 66,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          10,
+          11,
+          12,
+          13,
+          20,
+          21,
+          22,
+          23,
+          30,
+          31,
+          32,
+          33,
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "9cc61e2b20b3d5a010d7c1740a1beebbd552866863aa28d6638c05c206f62c27"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 6,
+        "hp": 66,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          10,
+          11,
+          12,
+          20,
+          21,
+          22,
+          30,
+          31,
+          32,
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "452441ebe5ef065618b51bc796c2b1af7ce84d93933fb4baed55a985244af32b"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 7,
+        "hp": 66,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "8d1e1204cadaa395ca89f3c18a7f9b76860574f36286c956a553cfae8a31eb7a"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 8,
+        "hp": 65,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          2,
+          4,
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "1a5bce0fb18bcd03ac2e170388fbf48504a7672ed6387eaa1487d879ef2ef2d6"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 9,
+        "hp": 65,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          3,
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "748bf904ef7f9b46772137eb9f4e6398ad4096f1b714ced535b165bc325600cc"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 10,
+        "hp": 65,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "05e210d966c86bc08b9df554cb0663c38147a8723cde228fbdf23d3f2a43c0c2"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 11,
+        "hp": 65,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          0,
+          14,
+          24,
+          34,
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "dfbb1fbfa788b55f07a8b2a15ce1b97d1e408053a18cb9f8b03d69fe15935fcf"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 12,
+        "hp": 65,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          0,
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "92edbdcb8dc79193ed251ec61e0cbb23888f417d87cc5049cce0cb12a17955c4"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 13,
+        "hp": 65,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "9f2c1bd9fe6f158017fc6655d72f7adcc3bb1f457a254edca2bceb83279bd642"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 14,
+        "hp": 65,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          3,
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "06ea1f6ee5e48d9180b0b970d3c66369c48d9dd6ae32286440eb347e5e3640d7"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 15,
+        "hp": 65,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "275c9a3b63f45f070650ef9f8b2e30621b5733a22d6ecf59c29acea5b5db4659"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 16,
+        "hp": 61,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "f00c47df620d38c0ebcbf4b99852be296e472fd37bd2e5a185bf3d47f40dbc0f"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 17,
+        "hp": 48,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          14,
+          24,
+          34,
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "8fdca72a700a477069b6b27b01576c76b50e8edcdbbf0698d710215ee3b1beb4"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 18,
+        "hp": 48,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "63cd113f26356f1bf2ca95e72042c60411fd4016f3b431bcc09c245021412a16"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 19,
+        "hp": 35,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          0,
+          1,
+          4,
+          12,
+          22,
+          32,
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "263baef21806f965673fdc87d3b3dd36e175d461c10c241c30406fb2445851f8"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 20,
+        "hp": 35,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          0,
+          1,
+          3,
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "479355efa097eba5b2f3a37bf3277f769898cc473fcdacd9ef28ccdbc1a8a60e"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 21,
+        "hp": 35,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          0,
+          2,
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "fa55f99c0c2f0e80ee0ea3ebd18cbe308fb863425c58cd1125c5509173e1ba0b"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 22,
+        "hp": 35,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          0,
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "2f2d1d644f15cef22fcb3ea1dae7092cde4157d04d30899a93e99efc50db56ba"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 23,
+        "hp": 35,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "fc50d75ce5c58b481fe2c0989c42fdbba31fd702d8cfd2b37f83cd3373ccce6b"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 24,
+        "hp": 35,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          11,
+          12,
+          14,
+          21,
+          22,
+          24,
+          31,
+          32,
+          34,
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "653d4d3e1b0e2f97446fa19edd8387cd1450ddb020113bc9c09784d46085a2b7"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 25,
+        "hp": 35,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          11,
+          12,
+          21,
+          22,
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "aba9a66a18bcba90a742d82d243122315b4b547d875b40de2cb8918fdbd741ba"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 26,
+        "hp": 35,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          11,
+          21,
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "bb914a865976bf1410b2f489d4ecc69678a363adf4afef0b3d4e4ad0f23d9a44"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 27,
+        "hp": 35,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "fa77e9baa8f9c4f3db8eb3ac069444942d14a5b2e6cec279c81b1f76c0823863"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 28,
+        "hp": 35,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          0,
+          2,
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "a6b89cd0d6a85213a39ae7ddf25b4f922e033190fe3a673dba81d2d447311d59"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 29,
+        "hp": 35,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          110,
+          111,
+          112,
+          113
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "bd02ecb55ae73a04f322d89faa6a224b00866f0621c8d7a39b5ef37fa643f7ed"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 30,
+        "hp": 35,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          172,
+          179
+        ],
+        "gaps": [
+          "additional_hand_replacement_unverified"
+        ],
+        "complete": false,
+        "done": false,
+        "sha256": "b1226c8218472ce3ff001b7d4d41f671b9ae530094d23433f70bf9aebfc99e9a"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 31,
+        "hp": 35,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "d1bfabe292ea2bb2d262cf4c084e4e539575fc5111a37b22cae7e7ccf0a66f0d"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 32,
+        "hp": 34,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          4,
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "387b7cef0ad2f1902fecacad6158ed6529e56b1d9a12699c01128f8de6dca00c"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 33,
+        "hp": 34,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "cdb7817abe732de7d6d11d7085209ccca7480b18f78d0e20440eea98d549edd6"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 34,
+        "hp": 34,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          10,
+          13,
+          14,
+          20,
+          23,
+          24,
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "0340e65775a3a60c9168388154929eac719076916ed9e6f16a6f278c0aff04e5"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 35,
+        "hp": 34,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          10,
+          13,
+          20,
+          23,
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "780ba45263ddd3e391c876d28f28a848fd1ef8409833073bbb3cb1e2c7374c45"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 36,
+        "hp": 34,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          10,
+          20,
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "be773ee56dea7aacd44209af68a340808730ce096d6b860187336511fe06daaa"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 37,
+        "hp": 34,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "c55bc608062047a9f70a05baf43a4b114dd168d7aaa8493101045c8daa3adc85"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 38,
+        "hp": 25,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          0,
+          1,
+          3,
+          14,
+          24,
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "bc6d784522132d77dbba0cde23c2a94aa3cee403bae9a62606cfa4899d976e86"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 39,
+        "hp": 25,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          0,
+          1,
+          3,
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "5dbfb3305e0d8004590b708b7256967728098dc59758de26cb258c15a952af06"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 40,
+        "hp": 25,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          0,
+          1,
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "5da315e40ccaf906b94f9e87edc2205598de1c9e73ba679a83addc8741eab182"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 41,
+        "hp": 25,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "2cf544ebd81efd96cdb1bb432c4d27c45952c7402530da8db6a815bea0e0d99c"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 42,
+        "hp": 25,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          0,
+          1,
+          2,
+          14,
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "0944c53516b6d8be51d6263be8c91ee2b063ba0d714f9213162a32b383ad8e8a"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 43,
+        "hp": 25,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          0,
+          1,
+          13,
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "40d78da4be84a1768b9d3d1db73d24db9d2ee42a3cca97bc6baccb6961e74690"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 44,
+        "hp": 25,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          110,
+          111,
+          112
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "3587ef80174c848ace2afe28bbfc343b4f64f5f387c8011edade53e6405d63ee"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 45,
+        "hp": 25,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          172,
+          179
+        ],
+        "gaps": [
+          "additional_hand_replacement_unverified"
+        ],
+        "complete": false,
+        "done": false,
+        "sha256": "7ed9063b61bb162c4ccceadfbbae6e264d954ab9148cbc1fe1dcca9c8c9786df"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 46,
+        "hp": 25,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          110,
+          111,
+          112
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "d9473473c506d4fef790a7b5c33e9dc9d37c4522e3900bbc4c57f10b4bc46b6c"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 47,
+        "hp": 25,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          172,
+          179
+        ],
+        "gaps": [
+          "additional_hand_replacement_unverified"
+        ],
+        "complete": false,
+        "done": false,
+        "sha256": "a490ffa3728471062a675c0b200ecba58b0bae13bf0fcca4988a3302e86c78a0"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 48,
+        "hp": 25,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          0,
+          11,
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "4c181f5efc7d4c3c50b6fb014d33fb3f2053a194c2ff1549258d0fa07cd52821"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 49,
+        "hp": 19,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "cd6e444bc62b8806235e9930f2acbeb8f5e12bbb334278f10a83ab8bd3634e3c"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 50,
+        "hp": 10,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [
+          2,
+          3,
+          4,
+          10,
+          11,
+          170
+        ],
+        "gaps": [],
+        "complete": true,
+        "done": false,
+        "sha256": "770761ab9d5cfcc4b0f3eb5c76fd39d6e8d6ae74a6a8a9b9c9a9f9313dd34e65"
+      },
+      {
+        "page": "DELEGATED",
+        "scene": "act3/MONSTER/BATTLE/DELEGATED",
+        "engine_steps": 51,
+        "hp": 0,
+        "max_hp": 66,
+        "gold": 99,
+        "floor": 3,
+        "act": 3,
+        "event": null,
+        "legal": [],
+        "gaps": [],
+        "complete": true,
+        "done": true,
+        "sha256": "54910fc7c35c120764eb7090d6dc00955848ca97714accba02a1728902ac2536"
+      }
+    ],
+    "terminal": "loss",
+    "kernel_end_floor": 3,
+    "before_last_action": {
+      "resources": [
+        10,
+        66,
+        99,
+        3,
+        3,
+        20
+      ],
+      "page": 9,
+      "map_xy": [
+        3,
+        0
+      ],
+      "keys": [
+        false,
+        false,
+        false
+      ],
+      "deck": [
+        [
+          "AscendersBane",
+          0
+        ],
+        [
+          "Strike_G",
+          0
+        ],
+        [
+          "Strike_G",
+          0
+        ],
+        [
+          "Strike_G",
+          0
+        ],
+        [
+          "Strike_G",
+          0
+        ],
+        [
+          "Strike_G",
+          0
+        ],
+        [
+          "Defend_G",
+          0
+        ],
+        [
+          "Defend_G",
+          0
+        ],
+        [
+          "Defend_G",
+          0
+        ],
+        [
+          "Defend_G",
+          0
+        ],
+        [
+          "Defend_G",
+          0
+        ],
+        [
+          "Survivor",
+          0
+        ],
+        [
+          "Neutralize",
+          0
+        ]
+      ],
+      "relics": [
+        [
+          "ringofthesnake",
+          -1
+        ]
+      ],
+      "potions": [
+        null,
+        null
+      ],
+      "done": false,
+      "won": false,
+      "lost": false,
+      "engine_steps": 50,
+      "supported": [
+        2,
+        3,
+        4,
+        10,
+        11,
+        170
+      ],
+      "gaps": [],
+      "facade_page": "DELEGATED",
+      "turn_energy_block": [
+        14,
+        3,
+        0
+      ],
+      "hand": [
+        [
+          "Neutralize",
+          0
+        ],
+        [
+          "Strike_G",
+          0
+        ],
+        [
+          "Defend_G",
+          0
+        ],
+        [
+          "Defend_G",
+          0
+        ],
+        [
+          "Defend_G",
+          0
+        ]
+      ],
+      "selected_hand": [],
+      "hand_cost_playable_target": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "pile_counts": [
+        8,
+        0,
+        32
+      ],
+      "enemies": [
+        [
+          "spiker",
+          54,
+          60,
+          0
+        ],
+        [
+          "repulsor",
+          0,
+          36,
+          0
+        ],
+        [
+          "repulsor",
+          0,
+          31,
+          0
+        ]
+      ],
+      "enemy_intents": [
+        [
+          "spiker",
+          1
+        ]
+      ]
+    },
+    "final_public": {
+      "resources": [
+        0,
+        66,
+        99,
+        3,
+        3,
+        20
+      ],
+      "page": 9,
+      "map_xy": [
+        3,
+        0
+      ],
+      "keys": [
+        false,
+        false,
+        false
+      ],
+      "deck": [
+        [
+          "AscendersBane",
+          0
+        ],
+        [
+          "Strike_G",
+          0
+        ],
+        [
+          "Strike_G",
+          0
+        ],
+        [
+          "Strike_G",
+          0
+        ],
+        [
+          "Strike_G",
+          0
+        ],
+        [
+          "Strike_G",
+          0
+        ],
+        [
+          "Defend_G",
+          0
+        ],
+        [
+          "Defend_G",
+          0
+        ],
+        [
+          "Defend_G",
+          0
+        ],
+        [
+          "Defend_G",
+          0
+        ],
+        [
+          "Defend_G",
+          0
+        ],
+        [
+          "Survivor",
+          0
+        ],
+        [
+          "Neutralize",
+          0
+        ]
+      ],
+      "relics": [
+        [
+          "ringofthesnake",
+          -1
+        ]
+      ],
+      "potions": [
+        null,
+        null
+      ],
+      "done": true,
+      "won": false,
+      "lost": true,
+      "engine_steps": 51,
+      "supported": [],
+      "gaps": [],
+      "facade_page": "DELEGATED",
+      "turn_energy_block": [
+        14,
+        3,
+        0
+      ],
+      "hand": [
+        [
+          "Strike_G",
+          0
+        ],
+        [
+          "Defend_G",
+          0
+        ],
+        [
+          "Defend_G",
+          0
+        ],
+        [
+          "Defend_G",
+          0
+        ]
+      ],
+      "selected_hand": [],
+      "hand_cost_playable_target": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "pile_counts": [
+        8,
+        0,
+        32
+      ],
+      "enemies": [
+        [
+          "spiker",
+          51,
+          60,
+          0
+        ],
+        [
+          "repulsor",
+          0,
+          36,
+          0
+        ],
+        [
+          "repulsor",
+          0,
+          31,
+          0
+        ]
+      ],
+      "enemy_intents": [
+        [
+          "spiker",
+          1
+        ]
+      ]
+    },
+    "final_kernel_legal": []
+  },
+  "source_sha256": {
+    "candidate.py": "51fb54bb18099da440d2c2faaddb89522cec3c30689a38742b2410eee81bafeb",
+    "session.py": "ca26c69dc75c45ddfad1c77a863f252b578021b1e6d5abce13bcaeb9dff47a24",
+    "verify.py": "a7438814b179c4d7ad0dd33242ac376746902d5553fc0a4a875b23cbbda435c4"
+  }
+}

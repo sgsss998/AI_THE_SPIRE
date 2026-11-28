@@ -1,0 +1,122 @@
+{
+  "5000003": {
+    "seed": 5000003,
+    "original_steps": 19,
+    "phases": [
+      {
+        "phase": "first_leave",
+        "source": "b93aec42d7ac48175d7dc4527cd9bdc9f7a6d8bdecbbaa4de4055a9dedd77d71",
+        "deck_count": 14,
+        "relics": [
+          [
+            "Ring of the Snake",
+            -1
+          ],
+          [
+            "Snake Skull",
+            -1
+          ]
+        ],
+        "hp": 45,
+        "gold": 99,
+        "mask_complete": true
+      },
+      {
+        "phase": "settled_leave",
+        "source": "bd04c40d9b32f64c08b87d86c640a3212f4d80d6fabff6e5d5e7264b22155cec",
+        "deck_count": 14,
+        "relics": [
+          [
+            "Ring of the Snake",
+            -1
+          ],
+          [
+            "Snake Skull",
+            -1
+          ]
+        ],
+        "hp": 45,
+        "gold": 99,
+        "mask_complete": true
+      },
+      {
+        "phase": "map",
+        "source": "5e6cf4855d566234219b6600de94a194347ce3a78fb905ade93e69b2afd78bf5",
+        "deck_count": 14,
+        "relics": [
+          [
+            "Ring of the Snake",
+            -1
+          ],
+          [
+            "Snake Skull",
+            -1
+          ]
+        ],
+        "hp": 45,
+        "gold": 99,
+        "mask_complete": true
+      }
+    ]
+  },
+  "6000020": {
+    "seed": 6000020,
+    "original_steps": 74,
+    "phases": [
+      {
+        "phase": "first_leave",
+        "source": "32a6756f5d7cda9229adf8f7f083e401747724c1ef90a6fbc99fbf51762f28c6",
+        "deck_count": 15,
+        "relics": [
+          [
+            "Ring of the Snake",
+            -1
+          ],
+          [
+            "Omamori",
+            2
+          ]
+        ],
+        "hp": 32,
+        "gold": 75,
+        "mask_complete": false
+      },
+      {
+        "phase": "settled_leave",
+        "source": "d14ccb87ce171c08dab6a592aca3eb5fcbf930191e5e9ff0ff4e8b0bd3d983b5",
+        "deck_count": 15,
+        "relics": [
+          [
+            "Ring of the Snake",
+            -1
+          ],
+          [
+            "Omamori",
+            2
+          ]
+        ],
+        "hp": 32,
+        "gold": 75,
+        "mask_complete": false
+      },
+      {
+        "phase": "map",
+        "source": "d0e5d0967b6e3633bf7e55e731a8cc6c95b2c4a2d5551e1e6e75db35a80ae00d",
+        "deck_count": 15,
+        "relics": [
+          [
+            "Ring of the Snake",
+            -1
+          ],
+          [
+            "Omamori",
+            2
+          ]
+        ],
+        "hp": 32,
+        "gold": 75,
+        "mask_complete": true
+      }
+    ]
+  }
+}

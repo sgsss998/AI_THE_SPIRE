@@ -1,0 +1,13 @@
+{
+  "parent": "4c2708709a58febd64072a7159309a193d89dbd8",
+  "manifest_sha256": "9722870c172d62e6b477d185ab9786019afdcf213c110a39d97077901ff76e94",
+  "policies": {
+    "fixed": 4000,
+    "survival": 4000,
+    "explore": 2000
+  },
+  "created": "2026-11-28T16:51:11.667236+00:00",
+  "edition": "experiments.sa_calibration_round6.release",
+  "status": "discovery in progress",
+  "frozen_acceptance_started": false
+}

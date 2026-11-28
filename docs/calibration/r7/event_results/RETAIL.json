@@ -1,0 +1,602 @@
+[
+  {
+    "event": "Big Fish",
+    "seed": 1000054,
+    "command_count": 9,
+    "journal_sha256": "1b48ef32d5f6acd1ee18ec534db46c3f4ca4fb4e74576baa2d5d4d3d5e1b273f",
+    "points": [
+      {
+        "stage": "offer",
+        "resources": [
+          59.0,
+          66.0,
+          99.0
+        ],
+        "deck_size": 13.0,
+        "relics": [
+          [
+            "Ring of the Snake",
+            -1
+          ],
+          [
+            "NeowsBlessing",
+            2
+          ]
+        ],
+        "original_potions": [
+          "Potion Slot",
+          "Potion Slot"
+        ],
+        "original_record": 45
+      },
+      {
+        "stage": "settled_leave",
+        "resources": [
+          64.0,
+          71.0,
+          99.0
+        ],
+        "deck_size": 13.0,
+        "relics": [
+          [
+            "Ring of the Snake",
+            -1
+          ],
+          [
+            "NeowsBlessing",
+            2
+          ]
+        ],
+        "original_potions": [
+          "Potion Slot",
+          "Potion Slot"
+        ],
+        "original_record": 48
+      },
+      {
+        "stage": "first_leave",
+        "resources": [
+          64.0,
+          71.0,
+          99.0
+        ],
+        "deck_size": 13.0,
+        "relics": [
+          [
+            "Ring of the Snake",
+            -1
+          ],
+          [
+            "NeowsBlessing",
+            2
+          ]
+        ],
+        "original_potions": [
+          "Potion Slot",
+          "Potion Slot"
+        ],
+        "original_record": 47
+      },
+      {
+        "stage": "map",
+        "resources": [
+          64.0,
+          71.0,
+          99.0
+        ],
+        "deck_size": 13.0,
+        "relics": [
+          [
+            "Ring of the Snake",
+            -1
+          ],
+          [
+            "NeowsBlessing",
+            2
+          ]
+        ],
+        "original_potions": [
+          "Potion Slot",
+          "Potion Slot"
+        ],
+        "original_record": 50
+      }
+    ]
+  },
+  {
+    "event": "The Cleric",
+    "seed": 2000061,
+    "command_count": 14,
+    "journal_sha256": "38b53b8641c8c3940719338fcb0946e3ab91a334c9e9ea8973a71258aca67712",
+    "points": [
+      {
+        "stage": "offer",
+        "resources": [
+          59.0,
+          66.0,
+          116.0
+        ],
+        "deck_size": 14.0,
+        "relics": [
+          [
+            "Ring of the Snake",
+            -1
+          ],
+          [
+            "NeowsBlessing",
+            2
+          ]
+        ],
+        "original_potions": [
+          "Potion Slot",
+          "Potion Slot"
+        ],
+        "original_record": 62
+      },
+      {
+        "stage": "settled_leave",
+        "resources": [
+          66.0,
+          66.0,
+          81.0
+        ],
+        "deck_size": 14.0,
+        "relics": [
+          [
+            "Ring of the Snake",
+            -1
+          ],
+          [
+            "NeowsBlessing",
+            2
+          ]
+        ],
+        "original_potions": [
+          "Potion Slot",
+          "Potion Slot"
+        ],
+        "original_record": 65
+      },
+      {
+        "stage": "first_leave",
+        "resources": [
+          66.0,
+          66.0,
+          81.0
+        ],
+        "deck_size": 14.0,
+        "relics": [
+          [
+            "Ring of the Snake",
+            -1
+          ],
+          [
+            "NeowsBlessing",
+            2
+          ]
+        ],
+        "original_potions": [
+          "Potion Slot",
+          "Potion Slot"
+        ],
+        "original_record": 64
+      },
+      {
+        "stage": "map",
+        "resources": [
+          66.0,
+          66.0,
+          81.0
+        ],
+        "deck_size": 14.0,
+        "relics": [
+          [
+            "Ring of the Snake",
+            -1
+          ],
+          [
+            "NeowsBlessing",
+            2
+          ]
+        ],
+        "original_potions": [
+          "Potion Slot",
+          "Potion Slot"
+        ],
+        "original_record": 67
+      }
+    ]
+  },
+  {
+    "event": "World of Goop",
+    "seed": 7000004,
+    "command_count": 30,
+    "journal_sha256": "ed22b6e382e0d2cb61a69326450f8b9c0441d7db7f7e4fae06bbc2a370e1bc0c",
+    "points": [
+      {
+        "stage": "offer",
+        "resources": [
+          51.0,
+          66.0,
+          110.0
+        ],
+        "deck_size": 13.0,
+        "relics": [
+          [
+            "Philosopher's Stone",
+            -1
+          ]
+        ],
+        "original_potions": [
+          "Potion Slot",
+          "Potion Slot"
+        ],
+        "original_record": 151
+      },
+      {
+        "stage": "settled_leave",
+        "resources": [
+          51.0,
+          66.0,
+          61.0
+        ],
+        "deck_size": 13.0,
+        "relics": [
+          [
+            "Philosopher's Stone",
+            -1
+          ]
+        ],
+        "original_potions": [
+          "Potion Slot",
+          "Potion Slot"
+        ],
+        "original_record": 154
+      },
+      {
+        "stage": "first_leave",
+        "resources": [
+          51.0,
+          66.0,
+          61.0
+        ],
+        "deck_size": 13.0,
+        "relics": [
+          [
+            "Philosopher's Stone",
+            -1
+          ]
+        ],
+        "original_potions": [
+          "Potion Slot",
+          "Potion Slot"
+        ],
+        "original_record": 153
+      },
+      {
+        "stage": "map",
+        "resources": [
+          51.0,
+          66.0,
+          61.0
+        ],
+        "deck_size": 13.0,
+        "relics": [
+          [
+            "Philosopher's Stone",
+            -1
+          ]
+        ],
+        "original_potions": [
+          "Potion Slot",
+          "Potion Slot"
+        ],
+        "original_record": 156
+      }
+    ]
+  },
+  {
+    "event": "Shining Light",
+    "seed": 8000022,
+    "command_count": 24,
+    "journal_sha256": "1fdfbd2632e53cbaf210a840cfdd202da57e25afa97bd1208c25e70270eebad2",
+    "points": [
+      {
+        "stage": "offer",
+        "resources": [
+          59.0,
+          66.0,
+          119.0
+        ],
+        "deck_size": 14.0,
+        "relics": [
+          [
+            "Ring of the Snake",
+            -1
+          ],
+          [
+            "NeowsBlessing",
+            -2
+          ]
+        ],
+        "original_potions": [
+          "GamblersBrew",
+          "Swift Potion"
+        ],
+        "original_record": 128
+      },
+      {
+        "stage": "settled_leave",
+        "resources": [
+          39.0,
+          66.0,
+          119.0
+        ],
+        "deck_size": 14.0,
+        "relics": [
+          [
+            "Ring of the Snake",
+            -1
+          ],
+          [
+            "NeowsBlessing",
+            -2
+          ]
+        ],
+        "original_potions": [
+          "GamblersBrew",
+          "Swift Potion"
+        ],
+        "original_record": 131
+      },
+      {
+        "stage": "first_leave",
+        "resources": [
+          39.0,
+          66.0,
+          119.0
+        ],
+        "deck_size": 14.0,
+        "relics": [
+          [
+            "Ring of the Snake",
+            -1
+          ],
+          [
+            "NeowsBlessing",
+            -2
+          ]
+        ],
+        "original_potions": [
+          "GamblersBrew",
+          "Swift Potion"
+        ],
+        "original_record": 130
+      },
+      {
+        "stage": "map",
+        "resources": [
+          39.0,
+          66.0,
+          119.0
+        ],
+        "deck_size": 14.0,
+        "relics": [
+          [
+            "Ring of the Snake",
+            -1
+          ],
+          [
+            "NeowsBlessing",
+            -2
+          ]
+        ],
+        "original_potions": [
+          "GamblersBrew",
+          "Swift Potion"
+        ],
+        "original_record": 133
+      }
+    ]
+  },
+  {
+    "event": "Big Fish Box Snecko Skull",
+    "seed": 5000003,
+    "command_count": 20,
+    "journal_sha256": "836f7bc6ae005043dd186322dcb7b6f46fb0fbf6f6f47dafa582feda80ff33af",
+    "points": [
+      {
+        "stage": "offer",
+        "resources": [
+          45.0,
+          66.0,
+          99.0
+        ],
+        "deck_size": 13.0,
+        "relics": [
+          [
+            "Ring of the Snake",
+            -1
+          ]
+        ],
+        "original_potions": [
+          "Potion Slot",
+          "Potion Slot"
+        ],
+        "original_record": 107
+      },
+      {
+        "stage": "settled_leave",
+        "resources": [
+          45.0,
+          66.0,
+          99.0
+        ],
+        "deck_size": 14.0,
+        "relics": [
+          [
+            "Ring of the Snake",
+            -1
+          ],
+          [
+            "Snake Skull",
+            -1
+          ]
+        ],
+        "original_potions": [
+          "Potion Slot",
+          "Potion Slot"
+        ],
+        "original_record": 111
+      },
+      {
+        "stage": "first_leave",
+        "resources": [
+          45.0,
+          66.0,
+          99.0
+        ],
+        "deck_size": 14.0,
+        "relics": [
+          [
+            "Ring of the Snake",
+            -1
+          ],
+          [
+            "Snake Skull",
+            -1
+          ]
+        ],
+        "original_potions": [
+          "Potion Slot",
+          "Potion Slot"
+        ],
+        "original_record": 110
+      },
+      {
+        "stage": "map",
+        "resources": [
+          45.0,
+          66.0,
+          99.0
+        ],
+        "deck_size": 14.0,
+        "relics": [
+          [
+            "Ring of the Snake",
+            -1
+          ],
+          [
+            "Snake Skull",
+            -1
+          ]
+        ],
+        "original_potions": [
+          "Potion Slot",
+          "Potion Slot"
+        ],
+        "original_record": 113
+      }
+    ]
+  },
+  {
+    "event": "Big Fish Box Omamori",
+    "seed": 6000020,
+    "command_count": 75,
+    "journal_sha256": "efa237843d063cd7bc85b367bb9b708401870fa9c06aada84a18b008c6e570e5",
+    "points": [
+      {
+        "stage": "offer",
+        "resources": [
+          32.0,
+          66.0,
+          75.0
+        ],
+        "deck_size": 14.0,
+        "relics": [
+          [
+            "Ring of the Snake",
+            -1
+          ]
+        ],
+        "original_potions": [
+          "ColorlessPotion",
+          "Potion Slot"
+        ],
+        "original_record": 414
+      },
+      {
+        "stage": "settled_leave",
+        "resources": [
+          32.0,
+          66.0,
+          75.0
+        ],
+        "deck_size": 15.0,
+        "relics": [
+          [
+            "Ring of the Snake",
+            -1
+          ],
+          [
+            "Omamori",
+            2
+          ]
+        ],
+        "original_potions": [
+          "ColorlessPotion",
+          "Potion Slot"
+        ],
+        "original_record": 418
+      },
+      {
+        "stage": "first_leave",
+        "resources": [
+          32.0,
+          66.0,
+          75.0
+        ],
+        "deck_size": 15.0,
+        "relics": [
+          [
+            "Ring of the Snake",
+            -1
+          ],
+          [
+            "Omamori",
+            2
+          ]
+        ],
+        "original_potions": [
+          "ColorlessPotion",
+          "Potion Slot"
+        ],
+        "original_record": 417
+      },
+      {
+        "stage": "map",
+        "resources": [
+          32.0,
+          66.0,
+          75.0
+        ],
+        "deck_size": 15.0,
+        "relics": [
+          [
+            "Ring of the Snake",
+            -1
+          ],
+          [
+            "Omamori",
+            2
+          ]
+        ],
+        "original_potions": [
+          "ColorlessPotion",
+          "Potion Slot"
+        ],
+        "original_record": 420
+      }
+    ]
+  }
+]

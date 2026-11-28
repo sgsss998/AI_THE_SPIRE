@@ -1,0 +1,61 @@
+{
+  "runtime": {
+    "session.py": "500ea91c9933bdd6fd60fa6b589ca62141f57c0a981d5564062a856dc7e5a1cf",
+    "candidate.py": "18edf6967cab9e8abcf1ad9a6722d7583e6ddb5a7357e337485734b2eb55b4ba"
+  },
+  "replayed": [
+    {
+      "seed": 6846117179527628677,
+      "inputs": 120,
+      "first_substantive_difference": null,
+      "stop": null,
+      "original_before": "a13c66ec9c50ba19df2b36d5f49b380231d6b98415f36efb2d8b3a67111d7fb8",
+      "original_after": "e5a1a99fcd1fd55122a9280903a7384faaed9851ca6055b92ef50c229ef61972",
+      "enemy": "GremlinNob",
+      "original_attack": [
+        3,
+        24,
+        1
+      ],
+      "model_attack": [
+        3,
+        24,
+        1
+      ],
+      "final_floor": 6,
+      "hp": 0
+    },
+    {
+      "seed": 9763128100447777033,
+      "inputs": 339,
+      "first_substantive_difference": null,
+      "stop": null,
+      "original_before": "1717e4b7a69fec9148e73f006bec62e99e9ad6e7ee34c5261cdfb027baf917c9",
+      "original_after": "ad33efc6ae824fce44bda3b99abf079e10fb1edb22e8f50a94bfe2ca275b2ee9",
+      "enemy": "Hexaghost",
+      "original_attack": [
+        1,
+        12,
+        2
+      ],
+      "model_attack": [
+        1,
+        12,
+        2
+      ],
+      "final_floor": 16,
+      "hp": 0
+    }
+  ],
+  "extra_retail_only": {
+    "journal": "12134a0d0f0447d1f6b81ea6fb30ecf108de5ed238d5af2e34c06ec1a5ac19fb",
+    "enemy": "GremlinNob",
+    "before_hash": "f73b27341a4f12c31c5549f48389575f39b75943612d218ccd3b1d20eaa6d693",
+    "after_hash": "5004fb1edef94d277332c2d34197f7b4eea3140895c040bfb70da391623ae325",
+    "attack": [
+      1,
+      73,
+      1
+    ]
+  }
+}

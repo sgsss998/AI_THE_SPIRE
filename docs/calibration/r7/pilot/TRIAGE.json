@@ -1,0 +1,1478 @@
+{
+  "episodes": 200,
+  "counts": {
+    "unfinished": 130,
+    "unfinished_with_issue": 130,
+    "natural": 70,
+    "natural_with_issue": 63,
+    "natural_clean": 7
+  },
+  "decisions": 16755,
+  "deterministic_matches": 200,
+  "by_policy": {
+    "survival": {
+      "unsupported": 63,
+      "loss": 17
+    },
+    "fixed": {
+      "loss": 37,
+      "unsupported": 43
+    },
+    "explore": {
+      "unsupported": 23,
+      "loss": 16,
+      "endpoint_error": 1
+    }
+  },
+  "reached_by_act": {
+    "act1": 200
+  },
+  "episodes_by_scene": {
+    "act0/UNKNOWN/INVALID/EVENT_RESULT_UNVERIFIED": 10,
+    "act0/UNKNOWN/INVALID/NEOW_RESULT_UNVERIFIED": 21,
+    "act1/ELITE/BATTLE/DELEGATED": 33,
+    "act1/ELITE/REWARDS/REWARD_UNVERIFIED": 2,
+    "act1/EVENT/CARD_SELECT/GRID": 3,
+    "act1/EVENT/CARD_SELECT/GRID_CONFIRM": 3,
+    "act1/EVENT/CARD_SELECT/GRID_UNVERIFIED": 22,
+    "act1/EVENT/CARD_SELECT/PERMANENT_UPGRADE_CONFIRM": 1,
+    "act1/EVENT/CARD_SELECT/PERMANENT_UPGRADE_GRID": 1,
+    "act1/EVENT/CARD_SELECT/REMOVE_CONFIRM": 1,
+    "act1/EVENT/CARD_SELECT/REMOVE_GRID": 1,
+    "act1/EVENT/CARD_SELECT/WING_REMOVE_GRID": 6,
+    "act1/EVENT/CARD_SELECT/WING_REMOVE_PREVIEW": 6,
+    "act1/EVENT/EVENT_SCREEN/DELEGATED": 101,
+    "act1/EVENT/EVENT_SCREEN/EVENT_RESULT": 26,
+    "act1/EVENT/EVENT_SCREEN/GRID_RESULT": 3,
+    "act1/EVENT/EVENT_SCREEN/MATCH_BOARD": 1,
+    "act1/EVENT/EVENT_SCREEN/MATCH_COMPLETE": 1,
+    "act1/EVENT/EVENT_SCREEN/MATCH_INTRO": 1,
+    "act1/EVENT/EVENT_SCREEN/MATCH_RULES": 1,
+    "act1/EVENT/EVENT_SCREEN/PERMANENT_UPGRADE_RESULT": 1,
+    "act1/EVENT/EVENT_SCREEN/REMOVE_LEAVE": 1,
+    "act1/EVENT/EVENT_SCREEN/SERPENT_ACCEPTED_CONTINUE": 3,
+    "act1/EVENT/EVENT_SCREEN/SERPENT_LEAVE": 6,
+    "act1/EVENT/MAP_SCREEN/DELEGATED": 80,
+    "act1/EVENT/REWARDS/REWARD_UNVERIFIED": 6,
+    "act1/INVALID/CARD_SELECT/GRID": 14,
+    "act1/INVALID/CARD_SELECT/GRID_CONFIRM": 14,
+    "act1/INVALID/CARD_SELECT/NEOW_TRANSFORM_GRID": 7,
+    "act1/INVALID/CARD_SELECT/REMOVE_GRID": 8,
+    "act1/INVALID/CARD_SELECT/SINGLE_TRANSFORM_GRID": 5,
+    "act1/INVALID/CARD_SELECT/SINGLE_TRANSFORM_PREVIEW": 5,
+    "act1/INVALID/EVENT_SCREEN/GRID_RESULT": 14,
+    "act1/INVALID/EVENT_SCREEN/NEOW_CARD_LEAVE": 25,
+    "act1/INVALID/EVENT_SCREEN/NEOW_OFFERS": 200,
+    "act1/INVALID/EVENT_SCREEN/NEOW_RESULT": 100,
+    "act1/INVALID/EVENT_SCREEN/NEOW_TALK": 200,
+    "act1/INVALID/EVENT_SCREEN/NEOW_TRANSFORM_LEAVE": 7,
+    "act1/INVALID/EVENT_SCREEN/REMOVE_LEAVE": 8,
+    "act1/INVALID/MAP_SCREEN/DELEGATED": 176,
+    "act1/INVALID/NATIVE_CARD_REWARD_OVERLAY/NEOW_CARD_OFFER": 25,
+    "act1/INVALID/REWARDS/NEOW_POTION_REWARD": 17,
+    "act1/INVALID/REWARDS/REWARD_UNVERIFIED": 3,
+    "act1/MONSTER/BATTLE/DELEGATED": 176,
+    "act1/MONSTER/BATTLE/SETUP_HAND": 1,
+    "act1/MONSTER/MAP_SCREEN/DELEGATED": 160,
+    "act1/MONSTER/NATIVE_CARD_REWARD_OVERLAY/CARD_REWARD": 144,
+    "act1/MONSTER/REWARDS/COMBAT_REWARD": 160,
+    "act1/MONSTER/REWARDS/REWARD_UNVERIFIED": 13,
+    "act1/REST/CARD_SELECT/GRID": 5,
+    "act1/REST/CARD_SELECT/GRID_CONFIRM": 5,
+    "act1/REST/CARD_SELECT/GRID_UNVERIFIED": 4,
+    "act1/REST/MAP_SCREEN/DELEGATED": 22,
+    "act1/REST/REST_ROOM/DELEGATED": 26,
+    "act1/REST/REST_ROOM/GRID_RESULT": 5,
+    "act1/SHOP/MAP_SCREEN/DELEGATED": 48,
+    "act1/SHOP/SHOP_ROOM/SHOP_ROOM": 48,
+    "act1/SHOP/SHOP_ROOM/SHOP_SCREEN": 35,
+    "act1/TREASURE/MAP_SCREEN/DELEGATED": 5,
+    "act1/TREASURE/REWARDS/COMBAT_REWARD": 4,
+    "act1/TREASURE/TREASURE_ROOM/DELEGATED": 5
+  },
+  "groups": [
+    {
+      "signature": [
+        "incomplete_or_error",
+        "native_neow_card_optional_inputs_unverified"
+      ],
+      "affected_games": 52,
+      "examples": [
+        {
+          "seed": 1013997697482403,
+          "strategy": "fixed",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 2,
+          "replay_length": 2,
+          "floor": 2
+        },
+        {
+          "seed": 223778781802354066,
+          "strategy": "fixed",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 2,
+          "replay_length": 2,
+          "floor": 6
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "shop_potions_relics_cancel_and_full_native_mask_unverified"
+      ],
+      "affected_games": 48,
+      "examples": [
+        {
+          "seed": 5951602337940730998,
+          "strategy": "fixed",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 33,
+          "replay_length": 33,
+          "floor": 5
+        },
+        {
+          "seed": 5328303355980450044,
+          "strategy": "fixed",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 35,
+          "replay_length": 35,
+          "floor": 6
+        }
+      ]
+    },
+    {
+      "signature": [
+        "stop",
+        "DELEGATED",
+        "",
+        [
+          "death_boundary_unknown"
+        ]
+      ],
+      "affected_games": 44,
+      "examples": [
+        {
+          "seed": 3518296309794862879,
+          "strategy": "fixed",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 8,
+          "replay_length": 8,
+          "floor": 1
+        },
+        {
+          "seed": 5750273991281629833,
+          "strategy": "survival",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": 8,
+          "replay_length": 8,
+          "floor": 1
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "death_boundary_unknown"
+      ],
+      "affected_games": 44,
+      "examples": [
+        {
+          "seed": 7211772283354115114,
+          "strategy": "explore",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 60,
+          "replay_length": 60,
+          "floor": 2
+        },
+        {
+          "seed": 6688754303592032489,
+          "strategy": "survival",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 94,
+          "replay_length": 94,
+          "floor": 3
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "permanent_grid_task_origin_or_occurrence_binding_unverified"
+      ],
+      "affected_games": 26,
+      "examples": [
+        {
+          "seed": 6401095302785645069,
+          "strategy": "fixed",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": 75,
+          "replay_length": 75,
+          "floor": 5
+        },
+        {
+          "seed": 7693369033186701652,
+          "strategy": "explore",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": null,
+          "replay_length": 13,
+          "floor": 2
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "reward_page_semantics_unverified"
+      ],
+      "affected_games": 24,
+      "examples": [
+        {
+          "seed": 603428533623569784,
+          "strategy": "fixed",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 2,
+          "replay_length": 2,
+          "floor": 0
+        },
+        {
+          "seed": 4450369712461345723,
+          "strategy": "explore",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 2,
+          "replay_length": 2,
+          "floor": 0
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "other_neow_result_inputs_unverified"
+      ],
+      "affected_games": 23,
+      "examples": [
+        {
+          "seed": 1360162758963287630,
+          "strategy": "survival",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 2,
+          "replay_length": 2,
+          "floor": 6
+        },
+        {
+          "seed": 1428367185010934740,
+          "strategy": "survival",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 2,
+          "replay_length": 2,
+          "floor": 3
+        }
+      ]
+    },
+    {
+      "signature": [
+        "stop",
+        "NEOW_RESULT_UNVERIFIED",
+        "NEOW",
+        [
+          "native_neow_direct_effect_timing_unverified"
+        ]
+      ],
+      "affected_games": 21,
+      "examples": [
+        {
+          "seed": 489144267891004876,
+          "strategy": "fixed",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": 2,
+          "replay_length": 2,
+          "floor": 0
+        },
+        {
+          "seed": 1661120556620733818,
+          "strategy": "survival",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 2,
+          "replay_length": 2,
+          "floor": 0
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "native_neow_direct_effect_timing_unverified"
+      ],
+      "affected_games": 21,
+      "examples": [
+        {
+          "seed": 489144267891004876,
+          "strategy": "fixed",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": 2,
+          "replay_length": 2,
+          "floor": 0
+        },
+        {
+          "seed": 1661120556620733818,
+          "strategy": "survival",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 2,
+          "replay_length": 2,
+          "floor": 0
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "native_grid_cancel_potions_and_other_optional_controls_unverified"
+      ],
+      "affected_games": 20,
+      "examples": [
+        {
+          "seed": 1214415712885071920,
+          "strategy": "survival",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 2,
+          "replay_length": 2,
+          "floor": 6
+        },
+        {
+          "seed": 1250187996028226661,
+          "strategy": "fixed",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 2,
+          "replay_length": 2,
+          "floor": 6
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "native_grid_result_optional_controls_unverified"
+      ],
+      "affected_games": 20,
+      "examples": [
+        {
+          "seed": 2213374479340162937,
+          "strategy": "survival",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": null,
+          "replay_length": 32,
+          "floor": 2
+        },
+        {
+          "seed": 3740190406209501968,
+          "strategy": "survival",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": null,
+          "replay_length": 40,
+          "floor": 2
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "real_reward_inventory_actions_lack_verified_transitions"
+      ],
+      "affected_games": 19,
+      "examples": [
+        {
+          "seed": 6567827956576531273,
+          "strategy": "survival",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": 21,
+          "replay_length": 21,
+          "floor": 7
+        },
+        {
+          "seed": 3598902688778843544,
+          "strategy": "survival",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 26,
+          "replay_length": 26,
+          "floor": 2
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "native_event_leave_evidence_temporal_only"
+      ],
+      "affected_games": 18,
+      "examples": [
+        {
+          "seed": 832280575428993988,
+          "strategy": "survival",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": 31,
+          "replay_length": 31,
+          "floor": 3
+        },
+        {
+          "seed": 4785395543660598166,
+          "strategy": "survival",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": 36,
+          "replay_length": 36,
+          "floor": 7
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "native_neow_reward_inventory_controls_unverified"
+      ],
+      "affected_games": 17,
+      "examples": [
+        {
+          "seed": 635738719842245469,
+          "strategy": "fixed",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": 2,
+          "replay_length": 2,
+          "floor": 2
+        },
+        {
+          "seed": 977236618060683854,
+          "strategy": "fixed",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": 2,
+          "replay_length": 2,
+          "floor": 6
+        }
+      ]
+    },
+    {
+      "signature": [
+        "stop",
+        "REWARD_UNVERIFIED",
+        "",
+        [
+          "reward_page_semantics_unverified"
+        ]
+      ],
+      "affected_games": 15,
+      "examples": [
+        {
+          "seed": 326753028483881971,
+          "strategy": "survival",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": 14,
+          "replay_length": 14,
+          "floor": 3
+        },
+        {
+          "seed": 665227123737194848,
+          "strategy": "survival",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": 21,
+          "replay_length": 21,
+          "floor": 4
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "full_inventory_reward_click_outcome_unverified"
+      ],
+      "affected_games": 13,
+      "examples": [
+        {
+          "seed": 4542627514710340078,
+          "strategy": "survival",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": null,
+          "replay_length": 22,
+          "floor": 2
+        },
+        {
+          "seed": 7259056512279734136,
+          "strategy": "fixed",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": null,
+          "replay_length": 22,
+          "floor": 2
+        }
+      ]
+    },
+    {
+      "signature": [
+        "stop",
+        "GRID_UNVERIFIED",
+        "LIVING_WALL",
+        [
+          "permanent_grid_task_origin_or_occurrence_binding_unverified"
+        ]
+      ],
+      "affected_games": 10,
+      "examples": [
+        {
+          "seed": 7693369033186701652,
+          "strategy": "explore",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 13,
+          "replay_length": 13,
+          "floor": 2
+        },
+        {
+          "seed": 6733584406557368952,
+          "strategy": "survival",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 21,
+          "replay_length": 21,
+          "floor": 2
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "event_outcome_page_unverified"
+      ],
+      "affected_games": 10,
+      "examples": [
+        {
+          "seed": 7605029362454491643,
+          "strategy": "fixed",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 33,
+          "replay_length": 33,
+          "floor": 2
+        },
+        {
+          "seed": 4332884271862235130,
+          "strategy": "survival",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 80,
+          "replay_length": 80,
+          "floor": 3
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "native_neow_optional_controls_not_certified"
+      ],
+      "affected_games": 9,
+      "examples": [
+        {
+          "seed": 143966993771613083,
+          "strategy": "fixed",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": 2,
+          "replay_length": 2,
+          "floor": 4
+        },
+        {
+          "seed": 231775603469939184,
+          "strategy": "fixed",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": 2,
+          "replay_length": 2,
+          "floor": 3
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "ordinary_death_other_actions_unverified"
+      ],
+      "affected_games": 9,
+      "examples": [
+        {
+          "seed": 6567827956576531273,
+          "strategy": "survival",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": null,
+          "replay_length": 92,
+          "floor": 7
+        },
+        {
+          "seed": 1677786152412760492,
+          "strategy": "survival",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": null,
+          "replay_length": 124,
+          "floor": 5
+        }
+      ]
+    },
+    {
+      "signature": [
+        "stop",
+        "EVENT_RESULT_UNVERIFIED",
+        "BIG_FISH",
+        [
+          "event_outcome_page_unverified"
+        ]
+      ],
+      "affected_games": 9,
+      "examples": [
+        {
+          "seed": 2025769092637066669,
+          "strategy": "explore",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 19,
+          "replay_length": 19,
+          "floor": 3
+        },
+        {
+          "seed": 2213374479340162937,
+          "strategy": "survival",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 32,
+          "replay_length": 32,
+          "floor": 2
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "event_result_full_mask_unverified"
+      ],
+      "affected_games": 8,
+      "examples": [
+        {
+          "seed": 8822592387349816403,
+          "strategy": "survival",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 41,
+          "replay_length": 41,
+          "floor": 6
+        },
+        {
+          "seed": 8713343013559972533,
+          "strategy": "fixed",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": null,
+          "replay_length": 26,
+          "floor": 5
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "neow_transform_optional_inputs_unverified"
+      ],
+      "affected_games": 7,
+      "examples": [
+        {
+          "seed": 2819489354186954249,
+          "strategy": "fixed",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": 4,
+          "replay_length": 4,
+          "floor": 4
+        },
+        {
+          "seed": 6989021038864847651,
+          "strategy": "fixed",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": 4,
+          "replay_length": 4,
+          "floor": 6
+        }
+      ]
+    },
+    {
+      "signature": [
+        "stop",
+        "GRID_UNVERIFIED",
+        "",
+        [
+          "permanent_grid_task_origin_or_occurrence_binding_unverified"
+        ]
+      ],
+      "affected_games": 6,
+      "examples": [
+        {
+          "seed": 4447576048071019863,
+          "strategy": "explore",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": 36,
+          "replay_length": 36,
+          "floor": 6
+        },
+        {
+          "seed": 4788982545526363735,
+          "strategy": "survival",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 65,
+          "replay_length": 65,
+          "floor": 3
+        }
+      ]
+    },
+    {
+      "signature": [
+        "stop",
+        "REWARD_UNVERIFIED",
+        "LAB",
+        [
+          "reward_page_semantics_unverified"
+        ]
+      ],
+      "affected_games": 5,
+      "examples": [
+        {
+          "seed": 7259056512279734136,
+          "strategy": "fixed",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 22,
+          "replay_length": 22,
+          "floor": 2
+        },
+        {
+          "seed": 7130250826862826342,
+          "strategy": "survival",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 56,
+          "replay_length": 56,
+          "floor": 4
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "other_inputs_not_independently_enumerated"
+      ],
+      "affected_games": 5,
+      "examples": [
+        {
+          "seed": 2232604170352079238,
+          "strategy": "explore",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": 4,
+          "replay_length": 4,
+          "floor": 7
+        },
+        {
+          "seed": 4565481097326346611,
+          "strategy": "fixed",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 4,
+          "replay_length": 4,
+          "floor": 5
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "poison_death_other_actions_unverified"
+      ],
+      "affected_games": 5,
+      "examples": [
+        {
+          "seed": 4542627514710340078,
+          "strategy": "survival",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": null,
+          "replay_length": 22,
+          "floor": 2
+        },
+        {
+          "seed": 1348303369806337307,
+          "strategy": "fixed",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": null,
+          "replay_length": 90,
+          "floor": 4
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "single_transform_optional_controls_unverified"
+      ],
+      "affected_games": 5,
+      "examples": [
+        {
+          "seed": 1491581680078885376,
+          "strategy": "survival",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": 2,
+          "replay_length": 2,
+          "floor": 5
+        },
+        {
+          "seed": 7092386581178961648,
+          "strategy": "fixed",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 2,
+          "replay_length": 2,
+          "floor": 1
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "spore_strike_or_end_other_actions_unverified"
+      ],
+      "affected_games": 3,
+      "examples": [
+        {
+          "seed": 4530843923071018419,
+          "strategy": "explore",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": null,
+          "replay_length": 40,
+          "floor": 4
+        },
+        {
+          "seed": 2389523786124080836,
+          "strategy": "fixed",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": null,
+          "replay_length": 112,
+          "floor": 4
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "unmapped_simulator_ids:81,82,83,84,85"
+      ],
+      "affected_games": 3,
+      "examples": [
+        {
+          "seed": 5618509694870954702,
+          "strategy": "fixed",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": 14,
+          "replay_length": 14,
+          "floor": 1
+        },
+        {
+          "seed": 6064672490789289642,
+          "strategy": "fixed",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 15,
+          "replay_length": 15,
+          "floor": 1
+        }
+      ]
+    },
+    {
+      "signature": [
+        "stop",
+        "GRID_UNVERIFIED",
+        "THE_CLERIC",
+        [
+          "permanent_grid_task_origin_or_occurrence_binding_unverified"
+        ]
+      ],
+      "affected_games": 3,
+      "examples": [
+        {
+          "seed": 3740190406209501968,
+          "strategy": "survival",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": 40,
+          "replay_length": 40,
+          "floor": 2
+        },
+        {
+          "seed": 6401095302785645069,
+          "strategy": "fixed",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": 75,
+          "replay_length": 75,
+          "floor": 5
+        }
+      ]
+    },
+    {
+      "signature": [
+        "stop",
+        "REWARD_UNVERIFIED",
+        "NEOW",
+        [
+          "reward_page_semantics_unverified"
+        ]
+      ],
+      "affected_games": 3,
+      "examples": [
+        {
+          "seed": 603428533623569784,
+          "strategy": "fixed",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 2,
+          "replay_length": 2,
+          "floor": 0
+        },
+        {
+          "seed": 4450369712461345723,
+          "strategy": "explore",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 2,
+          "replay_length": 2,
+          "floor": 0
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "native_reward_legal_oracle_partial"
+      ],
+      "affected_games": 3,
+      "examples": [
+        {
+          "seed": 5722521827812384978,
+          "strategy": "fixed",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 33,
+          "replay_length": 33,
+          "floor": 4
+        },
+        {
+          "seed": 1303111247660013372,
+          "strategy": "survival",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": null,
+          "replay_length": 171,
+          "floor": 6
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "inventory_or_claim_actions_unverified"
+      ],
+      "affected_games": 3,
+      "examples": [
+        {
+          "seed": 5722521827812384978,
+          "strategy": "fixed",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 33,
+          "replay_length": 33,
+          "floor": 4
+        },
+        {
+          "seed": 1303111247660013372,
+          "strategy": "survival",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": null,
+          "replay_length": 171,
+          "floor": 6
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "source_bound_simple_chest"
+      ],
+      "affected_games": 3,
+      "examples": [
+        {
+          "seed": 5722521827812384978,
+          "strategy": "fixed",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 33,
+          "replay_length": 33,
+          "floor": 4
+        },
+        {
+          "seed": 1303111247660013372,
+          "strategy": "survival",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": null,
+          "replay_length": 171,
+          "floor": 6
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "wing_optional_controls_not_verified"
+      ],
+      "affected_games": 3,
+      "examples": [
+        {
+          "seed": 7130250826862826342,
+          "strategy": "survival",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": null,
+          "replay_length": 56,
+          "floor": 4
+        },
+        {
+          "seed": 8189772511701307761,
+          "strategy": "explore",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": null,
+          "replay_length": 66,
+          "floor": 4
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "unresolved_choice_boundary:LIQUID_MEMORIES_POTION"
+      ],
+      "affected_games": 2,
+      "examples": [
+        {
+          "seed": 635738719842245469,
+          "strategy": "fixed",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": null,
+          "replay_length": 37,
+          "floor": 2
+        },
+        {
+          "seed": 3476756337591855372,
+          "strategy": "survival",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": null,
+          "replay_length": 74,
+          "floor": 6
+        }
+      ]
+    },
+    {
+      "signature": [
+        "stop",
+        "GRID_UNVERIFIED",
+        "UPGRADE_SHRINE",
+        [
+          "permanent_grid_task_origin_or_occurrence_binding_unverified"
+        ]
+      ],
+      "affected_games": 2,
+      "examples": [
+        {
+          "seed": 760936060637893109,
+          "strategy": "fixed",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 29,
+          "replay_length": 29,
+          "floor": 2
+        },
+        {
+          "seed": 7189111929741094444,
+          "strategy": "survival",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": 95,
+          "replay_length": 95,
+          "floor": 5
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "unmapped_simulator_ids:81,82,83"
+      ],
+      "affected_games": 2,
+      "examples": [
+        {
+          "seed": 1624818971102636990,
+          "strategy": "survival",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 12,
+          "replay_length": 12,
+          "floor": 1
+        },
+        {
+          "seed": 3476756337591855372,
+          "strategy": "survival",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": null,
+          "replay_length": 74,
+          "floor": 6
+        }
+      ]
+    },
+    {
+      "signature": [
+        "stop",
+        "GRID_UNVERIFIED",
+        "TRANSMORGRIFIER",
+        [
+          "permanent_grid_task_origin_or_occurrence_binding_unverified"
+        ]
+      ],
+      "affected_games": 2,
+      "examples": [
+        {
+          "seed": 7045323221548706014,
+          "strategy": "explore",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 62,
+          "replay_length": 62,
+          "floor": 3
+        },
+        {
+          "seed": 4565481097326346611,
+          "strategy": "fixed",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 84,
+          "replay_length": 84,
+          "floor": 5
+        }
+      ]
+    },
+    {
+      "signature": [
+        "stop",
+        "DELEGATED",
+        "",
+        [
+          "unmapped_simulator_ids:81,82,83,84,85",
+          "unresolved_choice_boundary:LIQUID_MEMORIES_POTION"
+        ]
+      ],
+      "affected_games": 1,
+      "examples": [
+        {
+          "seed": 635738719842245469,
+          "strategy": "fixed",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": 37,
+          "replay_length": 37,
+          "floor": 2
+        }
+      ]
+    },
+    {
+      "signature": [
+        "stop",
+        "REWARD_UNVERIFIED",
+        "THE_WOMAN_IN_BLUE",
+        [
+          "reward_page_semantics_unverified"
+        ]
+      ],
+      "affected_games": 1,
+      "examples": [
+        {
+          "seed": 8713343013559972533,
+          "strategy": "fixed",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": 26,
+          "replay_length": 26,
+          "floor": 5
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "serpent_optional_potions_unverified"
+      ],
+      "affected_games": 1,
+      "examples": [
+        {
+          "seed": 3605710284215868314,
+          "strategy": "survival",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": null,
+          "replay_length": 118,
+          "floor": 5
+        }
+      ]
+    },
+    {
+      "signature": [
+        "stop",
+        "DELEGATED",
+        "",
+        [
+          "unmapped_simulator_ids:81,82,83,84,85",
+          "unresolved_choice_boundary:WARCRY"
+        ]
+      ],
+      "affected_games": 1,
+      "examples": [
+        {
+          "seed": 5618509694870954702,
+          "strategy": "fixed",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": 14,
+          "replay_length": 14,
+          "floor": 1
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "unresolved_choice_boundary:WARCRY"
+      ],
+      "affected_games": 1,
+      "examples": [
+        {
+          "seed": 5618509694870954702,
+          "strategy": "fixed",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": 14,
+          "replay_length": 14,
+          "floor": 1
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "permanent_upgrade_optional_inputs_unverified"
+      ],
+      "affected_games": 1,
+      "examples": [
+        {
+          "seed": 316455741761734842,
+          "strategy": "explore",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": 61,
+          "replay_length": 61,
+          "floor": 3
+        }
+      ]
+    },
+    {
+      "signature": [
+        "stop",
+        "GRID_UNVERIFIED",
+        "WING_STATUE",
+        [
+          "permanent_grid_task_origin_or_occurrence_binding_unverified"
+        ]
+      ],
+      "affected_games": 1,
+      "examples": [
+        {
+          "seed": 782266063343431058,
+          "strategy": "explore",
+          "shard": "shard-0000.jsonl.gz",
+          "first_step": 72,
+          "replay_length": 72,
+          "floor": 3
+        }
+      ]
+    },
+    {
+      "signature": [
+        "stop",
+        "DELEGATED",
+        "",
+        [
+          "unmapped_simulator_ids:81,82,83",
+          "unresolved_choice_boundary:SECRET_WEAPON"
+        ]
+      ],
+      "affected_games": 1,
+      "examples": [
+        {
+          "seed": 1624818971102636990,
+          "strategy": "survival",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 12,
+          "replay_length": 12,
+          "floor": 1
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "unresolved_choice_boundary:SECRET_WEAPON"
+      ],
+      "affected_games": 1,
+      "examples": [
+        {
+          "seed": 1624818971102636990,
+          "strategy": "survival",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 12,
+          "replay_length": 12,
+          "floor": 1
+        }
+      ]
+    },
+    {
+      "signature": [
+        "stop",
+        "GRID_UNVERIFIED",
+        "OMINOUS_FORGE",
+        [
+          "permanent_grid_task_origin_or_occurrence_binding_unverified"
+        ]
+      ],
+      "affected_games": 1,
+      "examples": [
+        {
+          "seed": 3144886349783267185,
+          "strategy": "explore",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 109,
+          "replay_length": 109,
+          "floor": 4
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "setup_optional_controls_outside_observed_scope"
+      ],
+      "affected_games": 1,
+      "examples": [
+        {
+          "seed": 5667711590646113366,
+          "strategy": "survival",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": null,
+          "replay_length": 135,
+          "floor": 7
+        }
+      ]
+    },
+    {
+      "signature": [
+        "stop",
+        "DELEGATED",
+        "",
+        [
+          "unmapped_simulator_ids:81,82,83,84,85",
+          "unresolved_choice_boundary:SECRET_TECHNIQUE"
+        ]
+      ],
+      "affected_games": 1,
+      "examples": [
+        {
+          "seed": 6064672490789289642,
+          "strategy": "fixed",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 15,
+          "replay_length": 15,
+          "floor": 1
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "unresolved_choice_boundary:SECRET_TECHNIQUE"
+      ],
+      "affected_games": 1,
+      "examples": [
+        {
+          "seed": 6064672490789289642,
+          "strategy": "fixed",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 15,
+          "replay_length": 15,
+          "floor": 1
+        }
+      ]
+    },
+    {
+      "signature": [
+        "stop",
+        "EVENT_RESULT_UNVERIFIED",
+        "SHINING_LIGHT",
+        [
+          "event_outcome_page_unverified"
+        ]
+      ],
+      "affected_games": 1,
+      "examples": [
+        {
+          "seed": 3598902688778843544,
+          "strategy": "survival",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 31,
+          "replay_length": 31,
+          "floor": 2
+        }
+      ]
+    },
+    {
+      "signature": [
+        "stop",
+        "DELEGATED",
+        "",
+        [
+          "unmapped_simulator_ids:81,82,83",
+          "unresolved_choice_boundary:LIQUID_MEMORIES_POTION"
+        ]
+      ],
+      "affected_games": 1,
+      "examples": [
+        {
+          "seed": 3476756337591855372,
+          "strategy": "survival",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 74,
+          "replay_length": 74,
+          "floor": 6
+        }
+      ]
+    },
+    {
+      "signature": [
+        "stop",
+        "GRID_UNVERIFIED",
+        "WING_STATUE",
+        [
+          "A terminal cannot have pending decisions",
+          "native_event_leave_evidence_temporal_only",
+          "native_neow_card_optional_inputs_unverified",
+          "permanent_grid_task_origin_or_occurrence_binding_unverified",
+          "shop_potions_relics_cancel_and_full_native_mask_unverified"
+        ]
+      ],
+      "affected_games": 1,
+      "examples": [
+        {
+          "seed": 8788975272576165097,
+          "strategy": "explore",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": 115,
+          "replay_length": 115,
+          "floor": 8
+        }
+      ]
+    },
+    {
+      "signature": [
+        "incomplete_or_error",
+        "A terminal cannot have pending decisions"
+      ],
+      "affected_games": 1,
+      "examples": [
+        {
+          "seed": 8788975272576165097,
+          "strategy": "explore",
+          "shard": "shard-0001.jsonl.gz",
+          "first_step": null,
+          "replay_length": 115,
+          "floor": 8
+        }
+      ]
+    }
+  ],
+  "note": "Repeated signatures are leads. Establish the root cause using a replay before merging or fixing groups."
+}

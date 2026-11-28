@@ -1,0 +1,654 @@
+{
+  "source": {
+    "session.py": "83f03e93e8cca4d6cc9802270cb33823718046e33ff8d685def5655bb8eb7def",
+    "candidate.py": "5f757dceb52fb29d8690b010cf3b4e7e5f4a6d77dcfaa6cfd349269edc6e133f",
+    "verify.py": "b29ec6bd23a9442b97ab11e26e509f85100797a266780acc84a741aaa8a3058c"
+  },
+  "runtime": "experiments.sa_calibration_round7.neow.candidate",
+  "original_classes": {
+    "neow/NeowReward": "ed2915712a0052e960003bc885f4ecb61cc03a86886fde5be16c469a28558459",
+    "core/AbstractCreature": "deb9181d94c842a5dc1ae56b50c115925a4fbc086f682b53e5eca3a686f1fbb6"
+  },
+  "original_jar_sha256": "880ca5646d02065a061bbbdf7cc106dc1443d5afc6b9560f512486b098fd627b",
+  "rare_pool_saves": [
+    {
+      "instance": "compact_fixture_neow_maxhp_seed25",
+      "sha256": "3f68e5e33fa31a150ac5f7b01d6d48c57bee9dd4831bda3b614618b7caf3bdb8",
+      "seed": 25
+    },
+    {
+      "instance": "compact_fixture_neow_potions_001",
+      "sha256": "dd5ea6ce7afe4bb14618d53826ce2ab0f9f6a67f5b72513d07d50c5554c34ad3",
+      "seed": 1
+    },
+    {
+      "instance": "compact_fixture_grid193_upgrade_003",
+      "sha256": "56794ef0e6615439b7da00f45858c68077173dcaecd94ba55bc8e2a2070a5be5",
+      "seed": 4
+    },
+    {
+      "instance": "compact_fixture_grid193_remove_002",
+      "sha256": "7691bf682b16755f198120879f838fb760042ceb4820733ee3ee1b5ee5d1c7c3",
+      "seed": 17
+    },
+    {
+      "instance": "compact_fixture_neow_gold_001",
+      "sha256": "363280e500754498785297746b7d945dfc45727f52da3942203648d926f5ccf1",
+      "seed": 10
+    },
+    {
+      "instance": "compact_fixture_neow_transform_seed16",
+      "sha256": "cd796549e5ea95d7b891ec5cd62668badbbd1d7879c52b0893a2033656884e0d",
+      "seed": 16
+    },
+    {
+      "instance": "compact_fixture_neow_transform_seed46",
+      "sha256": "df0e4b667d83b644ba8e24c842527e60d9f6d5490dbc7aa2452069cd55ddb05e",
+      "seed": 46
+    },
+    {
+      "instance": "compact_fixture_neow_lament_002",
+      "sha256": "2dcd8fa68e4dc0004b65b197d691187b1f369b49fa2fbf76701bc5a3e30c3e98",
+      "seed": 23
+    }
+  ],
+  "real_leave_reference": [
+    {
+      "kind": "exchange",
+      "seed": 6,
+      "path": "AI_THE_SPIRE_静默紧凑环境_v1/native_runtime/compact_fixture_neow_black_star_001/bridge/sessions/5ab13c52-14cc-4265-8233-7efed951b47a/raw.jsonl",
+      "original_pair_sha": "bcf27f20d944d6781ccb1b21698f038dbc26a35f95ad194d10baa133f76be711",
+      "steps": [
+        {
+          "capture": "native_1795016891798_10626408252583:capture:4",
+          "raw_hash": "287166c502708eb00e06d8cd4037a1c5a2e03e8862da8d33440f1554da9ffad8",
+          "screen": "EVENT",
+          "choices": 4,
+          "amount": [
+            59,
+            66,
+            37
+          ],
+          "relics": [
+            [
+              "Ring of the Snake",
+              -1
+            ]
+          ]
+        },
+        {
+          "capture": "native_1795016891798_10626408252583:capture:5",
+          "raw_hash": "71b07f3d549f518096fffbbb287e4205eca4fa0ce04d2a510bf882d6256e2462",
+          "screen": "EVENT",
+          "choices": 1,
+          "amount": [
+            59,
+            66,
+            37
+          ],
+          "relics": [
+            [
+              "Black Star",
+              -1
+            ]
+          ]
+        },
+        {
+          "capture": "native_1795016891798_10626408252583:capture:6",
+          "raw_hash": "e847afe4882194a636ef1ffacb2f48f55ce815555830b209804225e391d4d561",
+          "screen": "MAP",
+          "choices": 3,
+          "amount": [
+            59,
+            66,
+            37
+          ],
+          "relics": [
+            [
+              "Black Star",
+              -1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "maxhp",
+      "seed": 25,
+      "path": "AI_THE_SPIRE_静默紧凑环境_v1/native_runtime/compact_fixture_neow_maxhp_seed25/bridge/sessions/1f0ff859-8d30-48fa-83c5-d447a412ae1e/raw.jsonl",
+      "original_pair_sha": "b52adc7c87efc40639ab111d34c9b26d88803b56502005173aa807b4508ccade",
+      "steps": [
+        {
+          "capture": "native_1795029663641_20563913513458:capture:4",
+          "raw_hash": "5b1c8ff797d7a8a4ce83f5ea3cfea1ec7c0947dd5ffca1719d7a14a08c48f0ca",
+          "screen": "EVENT",
+          "choices": 4,
+          "amount": [
+            59,
+            66,
+            99
+          ],
+          "relics": [
+            [
+              "Ring of the Snake",
+              -1
+            ]
+          ]
+        },
+        {
+          "capture": "native_1795029663641_20563913513458:capture:5",
+          "raw_hash": "b47d4df2d8ff2705c0b00404e1f6fd01dd01ac39d67530b5c42dfefef2bc01c7",
+          "screen": "EVENT",
+          "choices": 1,
+          "amount": [
+            65,
+            72,
+            99
+          ],
+          "relics": [
+            [
+              "Ring of the Snake",
+              -1
+            ]
+          ]
+        },
+        {
+          "capture": "native_1795029663641_20563913513458:capture:6",
+          "raw_hash": "36684b1c0d585b0e26f0b992351bbabb22867677c6f3dbfb3486e34583c40548",
+          "screen": "MAP",
+          "choices": 3,
+          "amount": [
+            65,
+            72,
+            99
+          ],
+          "relics": [
+            [
+              "Ring of the Snake",
+              -1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "common_relic",
+      "seed": 36,
+      "path": "AI_THE_SPIRE_静默紧凑环境_v1/native_runtime/compact_fixture_neow_common_seed36/bridge/sessions/e244573f-7596-4b82-b13c-eb3f5697328f/raw.jsonl",
+      "original_pair_sha": "701e3d2d5e3569ccee87e24dcf1a8ad7726ebc64d146bbd43a05a29604fd3da2",
+      "steps": [
+        {
+          "capture": "native_1795032381618_22233410425375:capture:4",
+          "raw_hash": "33a922408ecc178b39ee5259484477ecf4a4252c35076bb952e6cc4f9820ceae",
+          "screen": "EVENT",
+          "choices": 4,
+          "amount": [
+            59,
+            66,
+            99
+          ],
+          "relics": [
+            [
+              "Ring of the Snake",
+              -1
+            ]
+          ]
+        },
+        {
+          "capture": "native_1795032381618_22233410425375:capture:5",
+          "raw_hash": "c99203c48052fb214c6bfaee30f37cce272998966760c125c7c69f6c7834c832",
+          "screen": "EVENT",
+          "choices": 1,
+          "amount": [
+            59,
+            66,
+            99
+          ],
+          "relics": [
+            [
+              "Ring of the Snake",
+              -1
+            ],
+            [
+              "Nunchaku",
+              0
+            ]
+          ]
+        },
+        {
+          "capture": "native_1795032381618_22233410425375:capture:6",
+          "raw_hash": "b392e05e0b3a48eb89b0b59e501c6866f0324eb34bbe0c303dc21067a200c7e1",
+          "screen": "MAP",
+          "choices": 3,
+          "amount": [
+            59,
+            66,
+            99
+          ],
+          "relics": [
+            [
+              "Ring of the Snake",
+              -1
+            ],
+            [
+              "Nunchaku",
+              0
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "curse_settlement_reference": {
+    "file": "experiments/neow_reward_640/PAIRED.json",
+    "sha256": "a428f0727e6d35c63ffbbd143ddb30103ffe9f05d1db7c2b7d85935bc70f0e3e",
+    "keys": [
+      "native",
+      "game",
+      "communication",
+      "natural_runs",
+      "training_eligible"
+    ]
+  },
+  "repaired": 18,
+  "remaining": 3,
+  "same_seed_graphical_runs": 0,
+  "target_validation": "original shipped RNG, recovered original pools and retail bytecode",
+  "cases": [
+    {
+      "seed": 2895685479221259731,
+      "gift": 19,
+      "cost": 7,
+      "action": 113,
+      "page": "NEOW_RESULT_UNVERIFIED",
+      "remaining": "Pandora's Box confirmation grid"
+    },
+    {
+      "seed": 9063128132269471998,
+      "gift": 14,
+      "cost": 4,
+      "action": 112,
+      "page": "NEOW_RESULT",
+      "retail_relic": "Bird Faced Urn",
+      "resources": [
+        59,
+        66,
+        0
+      ],
+      "deck_size": 13,
+      "map_columns": [
+        1,
+        2,
+        6
+      ],
+      "duplicate_rejected": true
+    },
+    {
+      "seed": 6578230100570562700,
+      "gift": 14,
+      "cost": 3,
+      "action": 112,
+      "page": "NEOW_RESULT",
+      "retail_relic": "Tough Bandages",
+      "resources": [
+        59,
+        60,
+        99
+      ],
+      "deck_size": 13,
+      "map_columns": [
+        0,
+        3,
+        4,
+        5
+      ],
+      "duplicate_rejected": true
+    },
+    {
+      "seed": 7559247257074213334,
+      "gift": 14,
+      "cost": 4,
+      "action": 112,
+      "page": "NEOW_RESULT",
+      "retail_relic": "Girya",
+      "resources": [
+        59,
+        66,
+        0
+      ],
+      "deck_size": 13,
+      "map_columns": [
+        0,
+        1,
+        5,
+        6
+      ],
+      "duplicate_rejected": true
+    },
+    {
+      "seed": 489144267891004876,
+      "gift": 16,
+      "cost": 5,
+      "action": 112,
+      "page": "NEOW_RESULT",
+      "retail_curse": "Clumsy",
+      "resources": [
+        59,
+        66,
+        349
+      ],
+      "deck_size": 14,
+      "map_columns": [
+        1,
+        3,
+        5
+      ],
+      "duplicate_rejected": true
+    },
+    {
+      "seed": 6597257755388936130,
+      "gift": 18,
+      "cost": 6,
+      "action": 112,
+      "page": "NEOW_RESULT",
+      "resources": [
+        56,
+        78,
+        99
+      ],
+      "deck_size": 13,
+      "map_columns": [
+        1,
+        2,
+        6
+      ],
+      "duplicate_rejected": true
+    },
+    {
+      "seed": 6146807660497077223,
+      "gift": 18,
+      "cost": 5,
+      "action": 112,
+      "page": "NEOW_RESULT",
+      "retail_curse": "Normality",
+      "resources": [
+        71,
+        78,
+        99
+      ],
+      "deck_size": 14,
+      "map_columns": [
+        1,
+        3,
+        4
+      ],
+      "duplicate_rejected": true
+    },
+    {
+      "seed": 4304600389879503106,
+      "gift": 16,
+      "cost": 5,
+      "action": 112,
+      "page": "NEOW_RESULT",
+      "retail_curse": "Parasite",
+      "resources": [
+        59,
+        66,
+        349
+      ],
+      "deck_size": 14,
+      "map_columns": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "duplicate_rejected": true
+    },
+    {
+      "seed": 2276525645314603598,
+      "gift": 19,
+      "cost": 7,
+      "action": 113,
+      "page": "NEOW_RESULT_UNVERIFIED",
+      "remaining": "Pandora's Box confirmation grid"
+    },
+    {
+      "seed": 8342624812685842858,
+      "gift": 14,
+      "cost": 3,
+      "action": 112,
+      "page": "NEOW_RESULT",
+      "retail_relic": "CaptainsWheel",
+      "resources": [
+        59,
+        60,
+        99
+      ],
+      "deck_size": 13,
+      "map_columns": [
+        1,
+        2,
+        5
+      ],
+      "duplicate_rejected": true
+    },
+    {
+      "seed": 2031940982213067432,
+      "gift": 14,
+      "cost": 6,
+      "action": 112,
+      "page": "NEOW_RESULT",
+      "retail_relic": "Torii",
+      "resources": [
+        44,
+        66,
+        99
+      ],
+      "deck_size": 13,
+      "map_columns": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "duplicate_rejected": true
+    },
+    {
+      "seed": 4273728310309186154,
+      "gift": 14,
+      "cost": 4,
+      "action": 112,
+      "page": "NEOW_RESULT",
+      "retail_relic": "Shovel",
+      "resources": [
+        59,
+        66,
+        0
+      ],
+      "deck_size": 13,
+      "map_columns": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "duplicate_rejected": true
+    },
+    {
+      "seed": 4352024826161468537,
+      "gift": 14,
+      "cost": 5,
+      "action": 112,
+      "page": "NEOW_RESULT",
+      "retail_relic": "Old Coin",
+      "retail_curse": "Regret",
+      "resources": [
+        59,
+        66,
+        399
+      ],
+      "deck_size": 14,
+      "map_columns": [
+        1,
+        6
+      ],
+      "duplicate_rejected": true
+    },
+    {
+      "seed": 1661120556620733818,
+      "gift": 19,
+      "cost": 7,
+      "action": 113,
+      "page": "NEOW_RESULT_UNVERIFIED",
+      "remaining": "Pandora's Box confirmation grid"
+    },
+    {
+      "seed": 3824484185123788384,
+      "gift": 18,
+      "cost": 5,
+      "action": 112,
+      "page": "NEOW_RESULT",
+      "retail_curse": "Clumsy",
+      "resources": [
+        71,
+        78,
+        99
+      ],
+      "deck_size": 14,
+      "map_columns": [
+        0,
+        2,
+        4
+      ],
+      "duplicate_rejected": true
+    },
+    {
+      "seed": 8521535768747886774,
+      "gift": 14,
+      "cost": 5,
+      "action": 112,
+      "page": "NEOW_RESULT",
+      "retail_relic": "WingedGreaves",
+      "retail_curse": "Parasite",
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "deck_size": 14,
+      "map_columns": [
+        1,
+        2,
+        4,
+        6
+      ],
+      "duplicate_rejected": true
+    },
+    {
+      "seed": 2059662957154081332,
+      "gift": 14,
+      "cost": 5,
+      "action": 112,
+      "page": "NEOW_RESULT",
+      "retail_relic": "WingedGreaves",
+      "retail_curse": "Pain",
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "deck_size": 14,
+      "map_columns": [
+        0,
+        4,
+        6
+      ],
+      "duplicate_rejected": true
+    },
+    {
+      "seed": 7977397252744298182,
+      "gift": 18,
+      "cost": 5,
+      "action": 112,
+      "page": "NEOW_RESULT",
+      "retail_curse": "Decay",
+      "resources": [
+        71,
+        78,
+        99
+      ],
+      "deck_size": 14,
+      "map_columns": [
+        1,
+        2,
+        3,
+        6
+      ],
+      "duplicate_rejected": true
+    },
+    {
+      "seed": 2868562236289833605,
+      "gift": 14,
+      "cost": 5,
+      "action": 112,
+      "page": "NEOW_RESULT",
+      "retail_relic": "Peace Pipe",
+      "retail_curse": "Injury",
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "deck_size": 14,
+      "map_columns": [
+        0,
+        2,
+        6
+      ],
+      "duplicate_rejected": true
+    },
+    {
+      "seed": 2396666173491798132,
+      "gift": 18,
+      "cost": 5,
+      "action": 112,
+      "page": "NEOW_RESULT",
+      "retail_curse": "Doubt",
+      "resources": [
+        71,
+        78,
+        99
+      ],
+      "deck_size": 14,
+      "map_columns": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "duplicate_rejected": true
+    },
+    {
+      "seed": 3887478196195034627,
+      "gift": 14,
+      "cost": 5,
+      "action": 112,
+      "page": "NEOW_RESULT",
+      "retail_relic": "Pocketwatch",
+      "retail_curse": "Decay",
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "deck_size": 14,
+      "map_columns": [
+        0,
+        5,
+        6
+      ],
+      "duplicate_rejected": true
+    }
+  ]
+}

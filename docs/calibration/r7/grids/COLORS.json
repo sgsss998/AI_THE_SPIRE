@@ -1,0 +1,240 @@
+{
+  "independent_original_cards": 370,
+  "silent_positions_verified": 71,
+  "colorless_pool": 35,
+  "colorless_branches": 7,
+  "retained_curse_branches": 4,
+  "curse_counterexamples": 2,
+  "historical_wall": [
+    {
+      "page": "PERMANENT_CARD_GRID",
+      "game": "GRID",
+      "retail_hash": "10746bf293886436282ff44052afab9d3e3f73a957231b6d3014aaec1dad621c",
+      "deck_size": 14,
+      "measured_action_gaps": {
+        "missing": [],
+        "extra": []
+      }
+    },
+    {
+      "page": "PERMANENT_CARD_PREVIEW",
+      "game": "GRID",
+      "retail_hash": "c6e85f5d777ee83c0609b9dfdac4aa1ded0c9b36c5a976a80f9d76b886c87f25",
+      "deck_size": 14,
+      "measured_action_gaps": {
+        "missing": [],
+        "extra": []
+      }
+    },
+    {
+      "page": "PERMANENT_CARD_LEAVE",
+      "game": "EVENT",
+      "retail_hash": "b3e35c0323f0c1608dd50a84c171d966f2b999346623e091a0734a44ec340b9e",
+      "deck_size": 14,
+      "measured_action_gaps": {
+        "missing": [],
+        "extra": []
+      }
+    },
+    {
+      "page": "DELEGATED",
+      "game": "MAP",
+      "retail_hash": "5356fe8eff309c2705b503191f7aa125b33351aa829387470fe5e3b27b066cf5",
+      "deck_size": 14,
+      "measured_action_gaps": {}
+    }
+  ],
+  "results": [
+    {
+      "seed": 6000008,
+      "floor": 2,
+      "rng": [
+        0,
+        2829212147383029929,
+        11221093230197363408
+      ],
+      "chosen": "Master of Strategy",
+      "color": "colorless",
+      "position": 13,
+      "public_action": 122,
+      "offered": true,
+      "result": "Secret Technique",
+      "retail": "Secret Technique",
+      "matched": true
+    },
+    {
+      "seed": 4738271345228859177,
+      "floor": 2,
+      "rng": [
+        0,
+        58501506007776144,
+        10078901294413066598
+      ],
+      "chosen": "Sadistic Nature",
+      "color": "colorless",
+      "position": 13,
+      "public_action": 122,
+      "offered": true,
+      "result": "Deep Breath",
+      "retail": "Deep Breath",
+      "matched": true
+    },
+    {
+      "seed": 6140963554872353137,
+      "floor": 5,
+      "rng": [
+        0,
+        8842847641053227369,
+        12443550719156244139
+      ],
+      "chosen": "Enlightenment",
+      "color": "colorless",
+      "position": 13,
+      "public_action": 122,
+      "offered": true,
+      "result": "Swift Strike",
+      "retail": "Swift Strike",
+      "matched": true
+    },
+    {
+      "seed": 1004556073707001640,
+      "floor": 3,
+      "rng": [
+        0,
+        11511485398257754685,
+        16491943254871868774
+      ],
+      "chosen": "Mayhem",
+      "color": "colorless",
+      "position": 13,
+      "public_action": 122,
+      "offered": true,
+      "result": "Flash of Steel",
+      "retail": "Flash of Steel",
+      "matched": true
+    },
+    {
+      "seed": 7962018197116744451,
+      "floor": 2,
+      "rng": [
+        0,
+        3744732954819504863,
+        17438829736107808334
+      ],
+      "chosen": "Metamorphosis",
+      "color": "colorless",
+      "position": 13,
+      "public_action": 122,
+      "offered": true,
+      "result": "Enlightenment",
+      "retail": "Enlightenment",
+      "matched": true
+    },
+    {
+      "seed": 5983306378268988367,
+      "floor": 3,
+      "rng": [
+        0,
+        5704727153996760214,
+        7632992315513087712
+      ],
+      "chosen": "Chrysalis",
+      "color": "colorless",
+      "position": 14,
+      "public_action": 123,
+      "offered": true,
+      "result": "Apotheosis",
+      "retail": "Apotheosis",
+      "matched": true
+    },
+    {
+      "seed": 8151428374794849107,
+      "floor": 7,
+      "rng": [
+        0,
+        4470275546962013226,
+        15576183716000469729
+      ],
+      "chosen": "Master of Strategy",
+      "color": "colorless",
+      "position": 13,
+      "public_action": 122,
+      "offered": true,
+      "result": "Apotheosis",
+      "retail": "Apotheosis",
+      "matched": true
+    },
+    {
+      "seed": 8202363607760968562,
+      "floor": 2,
+      "rng": [
+        0,
+        3447360727564431543,
+        9377236205158456292
+      ],
+      "chosen": "Regret",
+      "color": "curse",
+      "position": 11,
+      "public_action": 120,
+      "offered": false,
+      "result": "Parasite",
+      "unchanged_public_deck": true,
+      "retail": "Normality",
+      "matched": false
+    },
+    {
+      "seed": 5446014639459640068,
+      "floor": 4,
+      "rng": [
+        0,
+        7586014835542284688,
+        34569560645949827
+      ],
+      "chosen": "Doubt",
+      "color": "curse",
+      "position": 14,
+      "public_action": 123,
+      "offered": false,
+      "result": "Normality",
+      "unchanged_public_deck": true,
+      "retail": "Normality",
+      "matched": true
+    },
+    {
+      "seed": 5983306378268988367,
+      "floor": 3,
+      "rng": [
+        0,
+        5704727153996760214,
+        7632992315513087712
+      ],
+      "chosen": "Regret",
+      "color": "curse",
+      "position": 13,
+      "public_action": 122,
+      "offered": false,
+      "result": "Injury",
+      "unchanged_public_deck": true,
+      "retail": "Shame",
+      "matched": false
+    },
+    {
+      "seed": 4070257053079867451,
+      "floor": 6,
+      "rng": [
+        0,
+        13531317714821675007,
+        1660019629842017323
+      ],
+      "chosen": "Doubt",
+      "color": "curse",
+      "position": 15,
+      "public_action": 124,
+      "offered": false,
+      "result": "Parasite",
+      "unchanged_public_deck": true,
+      "retail": "Parasite",
+      "matched": true
+    }
+  ]
+}

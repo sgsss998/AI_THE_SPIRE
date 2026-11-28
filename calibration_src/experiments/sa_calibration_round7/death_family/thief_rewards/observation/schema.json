@@ -1,0 +1,11 @@
+{
+  "base_dimension": 3122,
+  "dimension": 3127,
+  "start_index": 3122,
+  "width": 5,
+  "name": "monster_stolen_gold",
+  "slots": [0, 1, 2, 3, 4],
+  "dtype": "nonnegative_integer",
+  "unit": "gold",
+  "source": "Each physical LOOTER or MUGGER slot's accumulated stolen gold (Monster::miscInfo) during a combat frame. Every other slot and noncombat frame carries zero. The original 3122 fields preserve their order."
+}

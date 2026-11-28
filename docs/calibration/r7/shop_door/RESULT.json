@@ -1,0 +1,165 @@
+{
+  "source_journal": "a1d663d675d444dbe32d2e304430dbdfb71eb4d05d7261adbad6e2562c189b33",
+  "cases": [
+    {
+      "input": 245,
+      "raw_sha256": "e134d1eb0a40839d39af1a7aaf8f8867e04d47172e68f2f731c32428488cb1bf",
+      "real_belt": [
+        {
+          "can_discard": true,
+          "can_use": false,
+          "id": "PowerPotion",
+          "name": "Power Potion",
+          "requires_target": false
+        },
+        {
+          "can_discard": true,
+          "can_use": false,
+          "id": "DuplicationPotion",
+          "name": "Duplication Potion",
+          "requires_target": false
+        }
+      ],
+      "real_actions": [
+        105,
+        106,
+        110,
+        171
+      ],
+      "model_actions": [
+        105,
+        106,
+        110,
+        171
+      ],
+      "discard": 105,
+      "after_belt": [
+        0.0,
+        15.0
+      ],
+      "model_end": "SHOP_ROOM",
+      "before_remembered_shop_entries": 1,
+      "certified_before": false
+    },
+    {
+      "input": 245,
+      "raw_sha256": "e134d1eb0a40839d39af1a7aaf8f8867e04d47172e68f2f731c32428488cb1bf",
+      "real_belt": [
+        {
+          "can_discard": true,
+          "can_use": false,
+          "id": "PowerPotion",
+          "name": "Power Potion",
+          "requires_target": false
+        },
+        {
+          "can_discard": true,
+          "can_use": false,
+          "id": "DuplicationPotion",
+          "name": "Duplication Potion",
+          "requires_target": false
+        }
+      ],
+      "real_actions": [
+        105,
+        106,
+        110,
+        171
+      ],
+      "model_actions": [
+        105,
+        106,
+        110,
+        171
+      ],
+      "discard": 106,
+      "after_belt": [
+        35.0,
+        0.0
+      ],
+      "model_end": "SHOP_ROOM",
+      "before_remembered_shop_entries": 1,
+      "certified_before": false
+    },
+    {
+      "input": 248,
+      "raw_sha256": "f854063283c0960e4b75bca4feda7eebf59222e0e4c163480c5c17641a8d16c2",
+      "real_belt": [
+        {
+          "can_discard": true,
+          "can_use": false,
+          "id": "PowerPotion",
+          "name": "Power Potion",
+          "requires_target": false
+        },
+        {
+          "can_discard": true,
+          "can_use": false,
+          "id": "DuplicationPotion",
+          "name": "Duplication Potion",
+          "requires_target": false
+        }
+      ],
+      "real_actions": [
+        105,
+        106,
+        110,
+        171
+      ],
+      "model_actions": [
+        105,
+        106,
+        110,
+        171
+      ],
+      "discard": 105,
+      "after_belt": [
+        0.0,
+        15.0
+      ],
+      "model_end": "SHOP_ROOM",
+      "before_remembered_shop_entries": 14,
+      "certified_before": false
+    },
+    {
+      "input": 248,
+      "raw_sha256": "f854063283c0960e4b75bca4feda7eebf59222e0e4c163480c5c17641a8d16c2",
+      "real_belt": [
+        {
+          "can_discard": true,
+          "can_use": false,
+          "id": "PowerPotion",
+          "name": "Power Potion",
+          "requires_target": false
+        },
+        {
+          "can_discard": true,
+          "can_use": false,
+          "id": "DuplicationPotion",
+          "name": "Duplication Potion",
+          "requires_target": false
+        }
+      ],
+      "real_actions": [
+        105,
+        106,
+        110,
+        171
+      ],
+      "model_actions": [
+        105,
+        106,
+        110,
+        171
+      ],
+      "discard": 106,
+      "after_belt": [
+        35.0,
+        0.0
+      ],
+      "model_end": "SHOP_ROOM",
+      "before_remembered_shop_entries": 14,
+      "certified_before": false
+    }
+  ]
+}

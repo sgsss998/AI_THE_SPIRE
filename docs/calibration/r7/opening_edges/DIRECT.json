@@ -1,0 +1,1807 @@
+{
+  "repaired": {
+    "discovery3200": 104,
+    "fixed704": 21
+  },
+  "original_classes": {
+    "149": "MawBank",
+    "160": "Potion Belt",
+    "170": "Strawberry",
+    "175": "War Paint",
+    "7": "Calipers",
+    "16": "Dead Branch",
+    "106": "Du-Vu Doll",
+    "108": "FossilizedHelix",
+    "22": "Gambling Chip",
+    "23": "Ginger",
+    "30": "Ice Cream",
+    "31": "Incense Burner",
+    "36": "Lizard Tail",
+    "147": "Mango",
+    "161": "Prayer Wheel",
+    "66": "StoneCalendar",
+    "72": "The Specimen",
+    "132": "Thread and Needle",
+    "73": "Tingsha",
+    "78": "TungstenRod",
+    "79": "Turnip",
+    "81": "Unceasing Top"
+  },
+  "recovered_original_pools": [
+    {
+      "instance": "compact_fixture_neow_maxhp_seed25",
+      "sha256": "3f68e5e33fa31a150ac5f7b01d6d48c57bee9dd4831bda3b614618b7caf3bdb8",
+      "seed": 25
+    },
+    {
+      "instance": "compact_fixture_neow_potions_001",
+      "sha256": "dd5ea6ce7afe4bb14618d53826ce2ab0f9f6a67f5b72513d07d50c5554c34ad3",
+      "seed": 1
+    },
+    {
+      "instance": "compact_fixture_grid193_upgrade_003",
+      "sha256": "56794ef0e6615439b7da00f45858c68077173dcaecd94ba55bc8e2a2070a5be5",
+      "seed": 4
+    },
+    {
+      "instance": "compact_fixture_grid193_remove_002",
+      "sha256": "7691bf682b16755f198120879f838fb760042ceb4820733ee3ee1b5ee5d1c7c3",
+      "seed": 17
+    },
+    {
+      "instance": "compact_fixture_neow_gold_001",
+      "sha256": "363280e500754498785297746b7d945dfc45727f52da3942203648d926f5ccf1",
+      "seed": 10
+    },
+    {
+      "instance": "compact_fixture_neow_transform_seed16",
+      "sha256": "cd796549e5ea95d7b891ec5cd62668badbbd1d7879c52b0893a2033656884e0d",
+      "seed": 16
+    },
+    {
+      "instance": "compact_fixture_neow_transform_seed46",
+      "sha256": "df0e4b667d83b644ba8e24c842527e60d9f6d5490dbc7aa2452069cd55ddb05e",
+      "seed": 46
+    },
+    {
+      "instance": "compact_fixture_neow_lament_002",
+      "sha256": "2dcd8fa68e4dc0004b65b197d691187b1f369b49fa2fbf76701bc5a3e30c3e98",
+      "seed": 23
+    }
+  ],
+  "original_leave_receipts": [
+    {
+      "kind": "exchange",
+      "seed": 6,
+      "path": "AI_THE_SPIRE_静默紧凑环境_v1/native_runtime/compact_fixture_neow_black_star_001/bridge/sessions/5ab13c52-14cc-4265-8233-7efed951b47a/raw.jsonl",
+      "original_pair_sha": "bcf27f20d944d6781ccb1b21698f038dbc26a35f95ad194d10baa133f76be711",
+      "steps": [
+        {
+          "capture": "native_1795016891798_10626408252583:capture:4",
+          "raw_hash": "287166c502708eb00e06d8cd4037a1c5a2e03e8862da8d33440f1554da9ffad8",
+          "screen": "EVENT",
+          "choices": 4,
+          "amount": [
+            59,
+            66,
+            37
+          ],
+          "relics": [
+            [
+              "Ring of the Snake",
+              -1
+            ]
+          ]
+        },
+        {
+          "capture": "native_1795016891798_10626408252583:capture:5",
+          "raw_hash": "71b07f3d549f518096fffbbb287e4205eca4fa0ce04d2a510bf882d6256e2462",
+          "screen": "EVENT",
+          "choices": 1,
+          "amount": [
+            59,
+            66,
+            37
+          ],
+          "relics": [
+            [
+              "Black Star",
+              -1
+            ]
+          ]
+        },
+        {
+          "capture": "native_1795016891798_10626408252583:capture:6",
+          "raw_hash": "e847afe4882194a636ef1ffacb2f48f55ce815555830b209804225e391d4d561",
+          "screen": "MAP",
+          "choices": 3,
+          "amount": [
+            59,
+            66,
+            37
+          ],
+          "relics": [
+            [
+              "Black Star",
+              -1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "maxhp",
+      "seed": 25,
+      "path": "AI_THE_SPIRE_静默紧凑环境_v1/native_runtime/compact_fixture_neow_maxhp_seed25/bridge/sessions/1f0ff859-8d30-48fa-83c5-d447a412ae1e/raw.jsonl",
+      "original_pair_sha": "b52adc7c87efc40639ab111d34c9b26d88803b56502005173aa807b4508ccade",
+      "steps": [
+        {
+          "capture": "native_1795029663641_20563913513458:capture:4",
+          "raw_hash": "5b1c8ff797d7a8a4ce83f5ea3cfea1ec7c0947dd5ffca1719d7a14a08c48f0ca",
+          "screen": "EVENT",
+          "choices": 4,
+          "amount": [
+            59,
+            66,
+            99
+          ],
+          "relics": [
+            [
+              "Ring of the Snake",
+              -1
+            ]
+          ]
+        },
+        {
+          "capture": "native_1795029663641_20563913513458:capture:5",
+          "raw_hash": "b47d4df2d8ff2705c0b00404e1f6fd01dd01ac39d67530b5c42dfefef2bc01c7",
+          "screen": "EVENT",
+          "choices": 1,
+          "amount": [
+            65,
+            72,
+            99
+          ],
+          "relics": [
+            [
+              "Ring of the Snake",
+              -1
+            ]
+          ]
+        },
+        {
+          "capture": "native_1795029663641_20563913513458:capture:6",
+          "raw_hash": "36684b1c0d585b0e26f0b992351bbabb22867677c6f3dbfb3486e34583c40548",
+          "screen": "MAP",
+          "choices": 3,
+          "amount": [
+            65,
+            72,
+            99
+          ],
+          "relics": [
+            [
+              "Ring of the Snake",
+              -1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "common_relic",
+      "seed": 36,
+      "path": "AI_THE_SPIRE_静默紧凑环境_v1/native_runtime/compact_fixture_neow_common_seed36/bridge/sessions/e244573f-7596-4b82-b13c-eb3f5697328f/raw.jsonl",
+      "original_pair_sha": "701e3d2d5e3569ccee87e24dcf1a8ad7726ebc64d146bbd43a05a29604fd3da2",
+      "steps": [
+        {
+          "capture": "native_1795032381618_22233410425375:capture:4",
+          "raw_hash": "33a922408ecc178b39ee5259484477ecf4a4252c35076bb952e6cc4f9820ceae",
+          "screen": "EVENT",
+          "choices": 4,
+          "amount": [
+            59,
+            66,
+            99
+          ],
+          "relics": [
+            [
+              "Ring of the Snake",
+              -1
+            ]
+          ]
+        },
+        {
+          "capture": "native_1795032381618_22233410425375:capture:5",
+          "raw_hash": "c99203c48052fb214c6bfaee30f37cce272998966760c125c7c69f6c7834c832",
+          "screen": "EVENT",
+          "choices": 1,
+          "amount": [
+            59,
+            66,
+            99
+          ],
+          "relics": [
+            [
+              "Ring of the Snake",
+              -1
+            ],
+            [
+              "Nunchaku",
+              0
+            ]
+          ]
+        },
+        {
+          "capture": "native_1795032381618_22233410425375:capture:6",
+          "raw_hash": "b392e05e0b3a48eb89b0b59e501c6866f0324eb34bbe0c303dc21067a200c7e1",
+          "screen": "MAP",
+          "choices": 3,
+          "amount": [
+            59,
+            66,
+            99
+          ],
+          "relics": [
+            [
+              "Ring of the Snake",
+              -1
+            ],
+            [
+              "Nunchaku",
+              0
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "seed": 410299186149104573,
+      "group": "discovery3200",
+      "native_id": "FossilizedHelix",
+      "cost": 4,
+      "resources": [
+        59,
+        66,
+        0
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 1858623748623033300,
+      "group": "discovery3200",
+      "native_id": "Lizard Tail",
+      "cost": 4,
+      "resources": [
+        59,
+        66,
+        0
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 3534929343670291421,
+      "group": "discovery3200",
+      "native_id": "Tingsha",
+      "cost": 4,
+      "resources": [
+        59,
+        66,
+        0
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 5888745535292386022,
+      "group": "discovery3200",
+      "native_id": "Strawberry",
+      "cost": 2,
+      "resources": [
+        66,
+        73,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 2997025683258633562,
+      "group": "discovery3200",
+      "native_id": "Tingsha",
+      "cost": 5,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1,
+      "matched_original_curse": "Normality"
+    },
+    {
+      "seed": 1238357607548916100,
+      "group": "discovery3200",
+      "native_id": "Incense Burner",
+      "cost": 6,
+      "resources": [
+        44,
+        66,
+        99
+      ],
+      "counter": 0
+    },
+    {
+      "seed": 7513754288619466874,
+      "group": "discovery3200",
+      "native_id": "Du-Vu Doll",
+      "cost": 5,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": 2,
+      "matched_original_curse": "Pain"
+    },
+    {
+      "seed": 2512899484294512890,
+      "group": "discovery3200",
+      "native_id": "Du-Vu Doll",
+      "cost": 3,
+      "resources": [
+        59,
+        60,
+        99
+      ],
+      "counter": 1
+    },
+    {
+      "seed": 534676545093702853,
+      "group": "discovery3200",
+      "native_id": "Ginger",
+      "cost": 4,
+      "resources": [
+        59,
+        66,
+        0
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 7209810447124923926,
+      "group": "discovery3200",
+      "native_id": "MawBank",
+      "cost": 2,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 6706847158726869639,
+      "group": "discovery3200",
+      "native_id": "TungstenRod",
+      "cost": 4,
+      "resources": [
+        59,
+        66,
+        0
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 8760329091490349480,
+      "group": "discovery3200",
+      "native_id": "Lizard Tail",
+      "cost": 5,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1,
+      "matched_original_curse": "Doubt"
+    },
+    {
+      "seed": 7505616876270368765,
+      "group": "discovery3200",
+      "native_id": "Ice Cream",
+      "cost": 4,
+      "resources": [
+        59,
+        66,
+        0
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 3626469079226576811,
+      "group": "discovery3200",
+      "native_id": "Potion Belt",
+      "cost": 2,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 7095915667637627021,
+      "group": "discovery3200",
+      "native_id": "Unceasing Top",
+      "cost": 5,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1,
+      "matched_original_curse": "Decay"
+    },
+    {
+      "seed": 8780560674827910363,
+      "group": "discovery3200",
+      "native_id": "MawBank",
+      "cost": 2,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 3135495689288199313,
+      "group": "discovery3200",
+      "native_id": "War Paint",
+      "cost": 2,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1,
+      "matched_original_skill_indices": [
+        7,
+        10
+      ]
+    },
+    {
+      "seed": 4250916009045237847,
+      "group": "discovery3200",
+      "native_id": "Lizard Tail",
+      "cost": 5,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1,
+      "matched_original_curse": "Doubt"
+    },
+    {
+      "seed": 3309258562496343668,
+      "group": "discovery3200",
+      "native_id": "Prayer Wheel",
+      "cost": 6,
+      "resources": [
+        44,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 280657337610234718,
+      "group": "discovery3200",
+      "native_id": "TungstenRod",
+      "cost": 6,
+      "resources": [
+        44,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 1091004603517111314,
+      "group": "discovery3200",
+      "native_id": "Turnip",
+      "cost": 5,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1,
+      "matched_original_curse": "Shame"
+    },
+    {
+      "seed": 7317902201911344846,
+      "group": "discovery3200",
+      "native_id": "MawBank",
+      "cost": 2,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 7213477970476530191,
+      "group": "discovery3200",
+      "native_id": "Gambling Chip",
+      "cost": 6,
+      "resources": [
+        44,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 5957689138810376393,
+      "group": "discovery3200",
+      "native_id": "Prayer Wheel",
+      "cost": 3,
+      "resources": [
+        59,
+        60,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 3083283803822901032,
+      "group": "discovery3200",
+      "native_id": "Dead Branch",
+      "cost": 3,
+      "resources": [
+        59,
+        60,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 6052332308515202798,
+      "group": "discovery3200",
+      "native_id": "Potion Belt",
+      "cost": 2,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 1772764454321233375,
+      "group": "discovery3200",
+      "native_id": "StoneCalendar",
+      "cost": 3,
+      "resources": [
+        59,
+        60,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 3545376942919811319,
+      "group": "discovery3200",
+      "native_id": "StoneCalendar",
+      "cost": 5,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1,
+      "matched_original_curse": "Regret"
+    },
+    {
+      "seed": 8544594766931158758,
+      "group": "discovery3200",
+      "native_id": "Thread and Needle",
+      "cost": 4,
+      "resources": [
+        59,
+        66,
+        0
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 6975398796239089342,
+      "group": "discovery3200",
+      "native_id": "Ginger",
+      "cost": 3,
+      "resources": [
+        59,
+        60,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 413292584505300150,
+      "group": "discovery3200",
+      "native_id": "War Paint",
+      "cost": 2,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1,
+      "matched_original_skill_indices": [
+        9,
+        10
+      ]
+    },
+    {
+      "seed": 1764067686483713382,
+      "group": "discovery3200",
+      "native_id": "TungstenRod",
+      "cost": 3,
+      "resources": [
+        59,
+        60,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 7242368486062582092,
+      "group": "discovery3200",
+      "native_id": "Calipers",
+      "cost": 3,
+      "resources": [
+        59,
+        60,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 8045754062669265016,
+      "group": "discovery3200",
+      "native_id": "Gambling Chip",
+      "cost": 4,
+      "resources": [
+        59,
+        66,
+        0
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 8147432109467384542,
+      "group": "discovery3200",
+      "native_id": "Potion Belt",
+      "cost": 2,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 1182262712593418901,
+      "group": "discovery3200",
+      "native_id": "Incense Burner",
+      "cost": 3,
+      "resources": [
+        59,
+        60,
+        99
+      ],
+      "counter": 0
+    },
+    {
+      "seed": 3953571562426752025,
+      "group": "discovery3200",
+      "native_id": "Dead Branch",
+      "cost": 3,
+      "resources": [
+        59,
+        60,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 2707691723138116329,
+      "group": "discovery3200",
+      "native_id": "Du-Vu Doll",
+      "cost": 6,
+      "resources": [
+        44,
+        66,
+        99
+      ],
+      "counter": 1
+    },
+    {
+      "seed": 7551130260134066491,
+      "group": "discovery3200",
+      "native_id": "StoneCalendar",
+      "cost": 5,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1,
+      "matched_original_curse": "Shame"
+    },
+    {
+      "seed": 3729943700932310884,
+      "group": "discovery3200",
+      "native_id": "MawBank",
+      "cost": 2,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 517440613729416299,
+      "group": "discovery3200",
+      "native_id": "Potion Belt",
+      "cost": 2,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 8499520902876964520,
+      "group": "discovery3200",
+      "native_id": "Prayer Wheel",
+      "cost": 5,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1,
+      "matched_original_curse": "Doubt"
+    },
+    {
+      "seed": 3320607358707367513,
+      "group": "discovery3200",
+      "native_id": "FossilizedHelix",
+      "cost": 5,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1,
+      "matched_original_curse": "Clumsy"
+    },
+    {
+      "seed": 7637713872452768140,
+      "group": "discovery3200",
+      "native_id": "War Paint",
+      "cost": 2,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1,
+      "matched_original_skill_indices": [
+        6,
+        11
+      ]
+    },
+    {
+      "seed": 812040357275970699,
+      "group": "discovery3200",
+      "native_id": "Du-Vu Doll",
+      "cost": 4,
+      "resources": [
+        59,
+        66,
+        0
+      ],
+      "counter": 1
+    },
+    {
+      "seed": 1610635785292497707,
+      "group": "discovery3200",
+      "native_id": "Unceasing Top",
+      "cost": 6,
+      "resources": [
+        44,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 9062692806755986020,
+      "group": "discovery3200",
+      "native_id": "Gambling Chip",
+      "cost": 5,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1,
+      "matched_original_curse": "Writhe"
+    },
+    {
+      "seed": 6204360100298242306,
+      "group": "discovery3200",
+      "native_id": "The Specimen",
+      "cost": 5,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1,
+      "matched_original_curse": "Shame"
+    },
+    {
+      "seed": 4143707857507512728,
+      "group": "discovery3200",
+      "native_id": "StoneCalendar",
+      "cost": 5,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1,
+      "matched_original_curse": "Pain"
+    },
+    {
+      "seed": 6021399609394484349,
+      "group": "discovery3200",
+      "native_id": "Dead Branch",
+      "cost": 3,
+      "resources": [
+        59,
+        60,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 4109817112696783170,
+      "group": "discovery3200",
+      "native_id": "Mango",
+      "cost": 3,
+      "resources": [
+        73,
+        74,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 6709665521033168197,
+      "group": "discovery3200",
+      "native_id": "Dead Branch",
+      "cost": 4,
+      "resources": [
+        59,
+        66,
+        0
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 8171291526510585276,
+      "group": "discovery3200",
+      "native_id": "FossilizedHelix",
+      "cost": 6,
+      "resources": [
+        44,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 8036043625071388520,
+      "group": "discovery3200",
+      "native_id": "TungstenRod",
+      "cost": 6,
+      "resources": [
+        44,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 1941755307258727016,
+      "group": "discovery3200",
+      "native_id": "TungstenRod",
+      "cost": 6,
+      "resources": [
+        44,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 3820689214265847716,
+      "group": "discovery3200",
+      "native_id": "Strawberry",
+      "cost": 2,
+      "resources": [
+        66,
+        73,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 4436456668950475042,
+      "group": "discovery3200",
+      "native_id": "Calipers",
+      "cost": 6,
+      "resources": [
+        44,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 4029111577530505042,
+      "group": "discovery3200",
+      "native_id": "Calipers",
+      "cost": 3,
+      "resources": [
+        59,
+        60,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 1985301887675993858,
+      "group": "discovery3200",
+      "native_id": "Lizard Tail",
+      "cost": 6,
+      "resources": [
+        44,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 3922579919683392320,
+      "group": "discovery3200",
+      "native_id": "MawBank",
+      "cost": 2,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 2142556280261623246,
+      "group": "discovery3200",
+      "native_id": "Du-Vu Doll",
+      "cost": 3,
+      "resources": [
+        59,
+        60,
+        99
+      ],
+      "counter": 1
+    },
+    {
+      "seed": 9051164427764639076,
+      "group": "discovery3200",
+      "native_id": "Ice Cream",
+      "cost": 4,
+      "resources": [
+        59,
+        66,
+        0
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 4443797457291748199,
+      "group": "discovery3200",
+      "native_id": "Unceasing Top",
+      "cost": 6,
+      "resources": [
+        44,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 6970765448014420784,
+      "group": "discovery3200",
+      "native_id": "Ice Cream",
+      "cost": 6,
+      "resources": [
+        44,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 3411311392284444297,
+      "group": "discovery3200",
+      "native_id": "Calipers",
+      "cost": 5,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1,
+      "matched_original_curse": "Normality"
+    },
+    {
+      "seed": 5603024851213084465,
+      "group": "discovery3200",
+      "native_id": "Lizard Tail",
+      "cost": 6,
+      "resources": [
+        44,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 1243040545519878558,
+      "group": "discovery3200",
+      "native_id": "Tingsha",
+      "cost": 3,
+      "resources": [
+        59,
+        60,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 8881802380105408204,
+      "group": "discovery3200",
+      "native_id": "Calipers",
+      "cost": 4,
+      "resources": [
+        59,
+        66,
+        0
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 8797699008037622041,
+      "group": "discovery3200",
+      "native_id": "Lizard Tail",
+      "cost": 3,
+      "resources": [
+        59,
+        60,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 837097395540042748,
+      "group": "discovery3200",
+      "native_id": "Thread and Needle",
+      "cost": 3,
+      "resources": [
+        59,
+        60,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 2193036595829767376,
+      "group": "discovery3200",
+      "native_id": "MawBank",
+      "cost": 2,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 1754624316094693929,
+      "group": "discovery3200",
+      "native_id": "Gambling Chip",
+      "cost": 6,
+      "resources": [
+        44,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 2869814525752589872,
+      "group": "discovery3200",
+      "native_id": "Tingsha",
+      "cost": 6,
+      "resources": [
+        44,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 6315857305859267515,
+      "group": "discovery3200",
+      "native_id": "Gambling Chip",
+      "cost": 3,
+      "resources": [
+        59,
+        60,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 2164513131176223663,
+      "group": "discovery3200",
+      "native_id": "Incense Burner",
+      "cost": 4,
+      "resources": [
+        59,
+        66,
+        0
+      ],
+      "counter": 0
+    },
+    {
+      "seed": 8752699264045179602,
+      "group": "discovery3200",
+      "native_id": "Tingsha",
+      "cost": 4,
+      "resources": [
+        59,
+        66,
+        0
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 6260568556461973648,
+      "group": "discovery3200",
+      "native_id": "Ice Cream",
+      "cost": 3,
+      "resources": [
+        59,
+        60,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 8497755264223086496,
+      "group": "discovery3200",
+      "native_id": "Potion Belt",
+      "cost": 2,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 8816469087134454586,
+      "group": "discovery3200",
+      "native_id": "Mango",
+      "cost": 5,
+      "resources": [
+        73,
+        80,
+        99
+      ],
+      "counter": -1,
+      "matched_original_curse": "Normality"
+    },
+    {
+      "seed": 339412084492160878,
+      "group": "discovery3200",
+      "native_id": "Tingsha",
+      "cost": 5,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1,
+      "matched_original_curse": "Normality"
+    },
+    {
+      "seed": 3255532528479798939,
+      "group": "discovery3200",
+      "native_id": "War Paint",
+      "cost": 2,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1,
+      "matched_original_skill_indices": [
+        10,
+        11
+      ]
+    },
+    {
+      "seed": 8892109796971015062,
+      "group": "discovery3200",
+      "native_id": "Potion Belt",
+      "cost": 2,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 613988923781263228,
+      "group": "discovery3200",
+      "native_id": "Ginger",
+      "cost": 3,
+      "resources": [
+        59,
+        60,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 8336615881070656910,
+      "group": "discovery3200",
+      "native_id": "Tingsha",
+      "cost": 6,
+      "resources": [
+        44,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 4375043738343133853,
+      "group": "discovery3200",
+      "native_id": "TungstenRod",
+      "cost": 3,
+      "resources": [
+        59,
+        60,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 3995430068827886308,
+      "group": "discovery3200",
+      "native_id": "TungstenRod",
+      "cost": 5,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1,
+      "matched_original_curse": "Pain"
+    },
+    {
+      "seed": 1431747369063619970,
+      "group": "discovery3200",
+      "native_id": "Unceasing Top",
+      "cost": 4,
+      "resources": [
+        59,
+        66,
+        0
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 7017140670777023548,
+      "group": "discovery3200",
+      "native_id": "Tingsha",
+      "cost": 3,
+      "resources": [
+        59,
+        60,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 7486735972614388635,
+      "group": "discovery3200",
+      "native_id": "Calipers",
+      "cost": 4,
+      "resources": [
+        59,
+        66,
+        0
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 6040660989901141970,
+      "group": "discovery3200",
+      "native_id": "Ice Cream",
+      "cost": 4,
+      "resources": [
+        59,
+        66,
+        0
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 7381107449288685021,
+      "group": "discovery3200",
+      "native_id": "Mango",
+      "cost": 3,
+      "resources": [
+        73,
+        74,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 4394698537302677366,
+      "group": "discovery3200",
+      "native_id": "Prayer Wheel",
+      "cost": 6,
+      "resources": [
+        44,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 4888122660642775609,
+      "group": "discovery3200",
+      "native_id": "Lizard Tail",
+      "cost": 4,
+      "resources": [
+        59,
+        66,
+        0
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 4665483049342284268,
+      "group": "discovery3200",
+      "native_id": "Du-Vu Doll",
+      "cost": 5,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": 2,
+      "matched_original_curse": "Writhe"
+    },
+    {
+      "seed": 5937371668720486556,
+      "group": "discovery3200",
+      "native_id": "Du-Vu Doll",
+      "cost": 6,
+      "resources": [
+        44,
+        66,
+        99
+      ],
+      "counter": 1
+    },
+    {
+      "seed": 82423883015541537,
+      "group": "discovery3200",
+      "native_id": "Gambling Chip",
+      "cost": 5,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1,
+      "matched_original_curse": "Regret"
+    },
+    {
+      "seed": 1964390487440322960,
+      "group": "discovery3200",
+      "native_id": "TungstenRod",
+      "cost": 5,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1,
+      "matched_original_curse": "Decay"
+    },
+    {
+      "seed": 812005447040902606,
+      "group": "discovery3200",
+      "native_id": "Du-Vu Doll",
+      "cost": 4,
+      "resources": [
+        59,
+        66,
+        0
+      ],
+      "counter": 1
+    },
+    {
+      "seed": 8350980087740654870,
+      "group": "discovery3200",
+      "native_id": "Prayer Wheel",
+      "cost": 3,
+      "resources": [
+        59,
+        60,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 8379948577683424358,
+      "group": "discovery3200",
+      "native_id": "Dead Branch",
+      "cost": 4,
+      "resources": [
+        59,
+        66,
+        0
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 1102227035573910691,
+      "group": "discovery3200",
+      "native_id": "Du-Vu Doll",
+      "cost": 5,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": 2,
+      "matched_original_curse": "Writhe"
+    },
+    {
+      "seed": 2682862251441888242,
+      "group": "discovery3200",
+      "native_id": "MawBank",
+      "cost": 2,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 5091419999370200411,
+      "group": "discovery3200",
+      "native_id": "Potion Belt",
+      "cost": 2,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 5857763095892801940,
+      "group": "discovery3200",
+      "native_id": "Dead Branch",
+      "cost": 4,
+      "resources": [
+        59,
+        66,
+        0
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 24,
+      "group": "fixed704",
+      "native_id": "Ice Cream",
+      "cost": 5,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1,
+      "matched_original_curse": "Decay"
+    },
+    {
+      "seed": 1000048,
+      "group": "fixed704",
+      "native_id": "MawBank",
+      "cost": 2,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 2000023,
+      "group": "fixed704",
+      "native_id": "Prayer Wheel",
+      "cost": 6,
+      "resources": [
+        44,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 3000004,
+      "group": "fixed704",
+      "native_id": "Calipers",
+      "cost": 4,
+      "resources": [
+        59,
+        66,
+        0
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 5000056,
+      "group": "fixed704",
+      "native_id": "Prayer Wheel",
+      "cost": 6,
+      "resources": [
+        44,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 6000010,
+      "group": "fixed704",
+      "native_id": "Ginger",
+      "cost": 6,
+      "resources": [
+        44,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 6000019,
+      "group": "fixed704",
+      "native_id": "Ginger",
+      "cost": 5,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1,
+      "matched_original_curse": "Parasite"
+    },
+    {
+      "seed": 6000060,
+      "group": "fixed704",
+      "native_id": "Calipers",
+      "cost": 4,
+      "resources": [
+        59,
+        66,
+        0
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 6000063,
+      "group": "fixed704",
+      "native_id": "Tingsha",
+      "cost": 6,
+      "resources": [
+        44,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 7000011,
+      "group": "fixed704",
+      "native_id": "MawBank",
+      "cost": 2,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 7000015,
+      "group": "fixed704",
+      "native_id": "Strawberry",
+      "cost": 2,
+      "resources": [
+        66,
+        73,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 7000030,
+      "group": "fixed704",
+      "native_id": "Mango",
+      "cost": 6,
+      "resources": [
+        58,
+        80,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 8000015,
+      "group": "fixed704",
+      "native_id": "Lizard Tail",
+      "cost": 3,
+      "resources": [
+        59,
+        60,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 8000017,
+      "group": "fixed704",
+      "native_id": "War Paint",
+      "cost": 2,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1,
+      "matched_original_skill_indices": [
+        8,
+        11
+      ]
+    },
+    {
+      "seed": 9000012,
+      "group": "fixed704",
+      "native_id": "Tingsha",
+      "cost": 4,
+      "resources": [
+        59,
+        66,
+        0
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 9000013,
+      "group": "fixed704",
+      "native_id": "Mango",
+      "cost": 5,
+      "resources": [
+        73,
+        80,
+        99
+      ],
+      "counter": -1,
+      "matched_original_curse": "Clumsy"
+    },
+    {
+      "seed": 9000050,
+      "group": "fixed704",
+      "native_id": "MawBank",
+      "cost": 2,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 17000006,
+      "group": "fixed704",
+      "native_id": "Tingsha",
+      "cost": 4,
+      "resources": [
+        59,
+        66,
+        0
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 17000018,
+      "group": "fixed704",
+      "native_id": "Potion Belt",
+      "cost": 2,
+      "resources": [
+        59,
+        66,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 17000040,
+      "group": "fixed704",
+      "native_id": "StoneCalendar",
+      "cost": 3,
+      "resources": [
+        59,
+        60,
+        99
+      ],
+      "counter": -1
+    },
+    {
+      "seed": 17000044,
+      "group": "fixed704",
+      "native_id": "The Specimen",
+      "cost": 3,
+      "resources": [
+        59,
+        60,
+        99
+      ],
+      "counter": -1
+    }
+  ],
+  "sha": "c4cea8d972000bb22bca02496b94747733896ba50ec83ec389c3b6e5cb077aad",
+  "original_jar": "880ca5646d02065a061bbbdf7cc106dc1443d5afc6b9560f512486b098fd627b"
+}

@@ -1,0 +1,2125 @@
+{
+  "repaired": {
+    "discovery3200": 35,
+    "fixed704": 9
+  },
+  "branch_orders": 88,
+  "original_cards": 264,
+  "source": "Retail Astrolabe.onEquip and AbstractDungeon.transformCard, plus Astrolabe.giveCards and grid control bytecode",
+  "jar": "880ca5646d02065a061bbbdf7cc106dc1443d5afc6b9560f512486b098fd627b",
+  "source_sha": "93c262006ea16bc12d6b23bafdd137373d0145a96110bb8a47b116a30e940694",
+  "cases": [
+    {
+      "seed": 8806143475835556890,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Malaise",
+        "All Out Attack",
+        "Bullet Time"
+      ],
+      "rng_after": [
+        4,
+        2550266431331789518,
+        1132798464524461431
+      ]
+    },
+    {
+      "seed": 8806143475835556890,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Malaise",
+        "All Out Attack",
+        "Bullet Time"
+      ],
+      "rng_after": [
+        4,
+        2550266431331789518,
+        1132798464524461431
+      ]
+    },
+    {
+      "seed": 6106168765203051949,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Choke",
+        "Footwork",
+        "Sucker Punch"
+      ],
+      "rng_after": [
+        4,
+        1836293269396921150,
+        5365025548950629931
+      ]
+    },
+    {
+      "seed": 6106168765203051949,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Choke",
+        "Footwork",
+        "Sucker Punch"
+      ],
+      "rng_after": [
+        4,
+        1836293269396921150,
+        5365025548950629931
+      ]
+    },
+    {
+      "seed": 7585157208640538230,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "After Image",
+        "Quick Slash",
+        "Crippling Poison"
+      ],
+      "rng_after": [
+        4,
+        10813493598442508989,
+        16706209099015646576
+      ]
+    },
+    {
+      "seed": 7585157208640538230,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "After Image",
+        "Quick Slash",
+        "Crippling Poison"
+      ],
+      "rng_after": [
+        4,
+        10813493598442508989,
+        16706209099015646576
+      ]
+    },
+    {
+      "seed": 6813203758410623883,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Die Die Die",
+        "A Thousand Cuts",
+        "Grand Finale"
+      ],
+      "rng_after": [
+        4,
+        2144633151089978833,
+        15519994736869207976
+      ]
+    },
+    {
+      "seed": 6813203758410623883,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Die Die Die",
+        "A Thousand Cuts",
+        "Grand Finale"
+      ],
+      "rng_after": [
+        4,
+        2144633151089978833,
+        15519994736869207976
+      ]
+    },
+    {
+      "seed": 7892615884178840940,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Sucker Punch",
+        "Venomology",
+        "Underhanded Strike"
+      ],
+      "rng_after": [
+        4,
+        16617607322816521006,
+        3557002495079937991
+      ]
+    },
+    {
+      "seed": 7892615884178840940,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Sucker Punch",
+        "Venomology",
+        "Underhanded Strike"
+      ],
+      "rng_after": [
+        4,
+        16617607322816521006,
+        3557002495079937991
+      ]
+    },
+    {
+      "seed": 8447707635109887697,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Corpse Explosion",
+        "Expertise",
+        "Underhanded Strike"
+      ],
+      "rng_after": [
+        4,
+        8670540916757849244,
+        12946965907725408910
+      ]
+    },
+    {
+      "seed": 8447707635109887697,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Corpse Explosion",
+        "Expertise",
+        "Underhanded Strike"
+      ],
+      "rng_after": [
+        4,
+        8670540916757849244,
+        12946965907725408910
+      ]
+    },
+    {
+      "seed": 1436013814903844025,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Poisoned Stab",
+        "Blade Dance",
+        "Night Terror"
+      ],
+      "rng_after": [
+        4,
+        5928652831865509219,
+        8509771882852413394
+      ]
+    },
+    {
+      "seed": 1436013814903844025,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Poisoned Stab",
+        "Blade Dance",
+        "Night Terror"
+      ],
+      "rng_after": [
+        4,
+        5928652831865509219,
+        8509771882852413394
+      ]
+    },
+    {
+      "seed": 6901120616090320985,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Bane",
+        "Venomology",
+        "Quick Slash"
+      ],
+      "rng_after": [
+        4,
+        1548490218434028303,
+        13845316724656196395
+      ]
+    },
+    {
+      "seed": 6901120616090320985,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Bane",
+        "Venomology",
+        "Quick Slash"
+      ],
+      "rng_after": [
+        4,
+        1548490218434028303,
+        13845316724656196395
+      ]
+    },
+    {
+      "seed": 8797144388834162283,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "A Thousand Cuts",
+        "Choke",
+        "Deadly Poison"
+      ],
+      "rng_after": [
+        4,
+        2777295639215874982,
+        2554522461657780965
+      ]
+    },
+    {
+      "seed": 8797144388834162283,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "A Thousand Cuts",
+        "Choke",
+        "Deadly Poison"
+      ],
+      "rng_after": [
+        4,
+        2777295639215874982,
+        2554522461657780965
+      ]
+    },
+    {
+      "seed": 3117891911640138632,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Terror",
+        "Dagger Spray",
+        "Poisoned Stab"
+      ],
+      "rng_after": [
+        4,
+        11036607908618059222,
+        14965483542131563887
+      ]
+    },
+    {
+      "seed": 3117891911640138632,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Terror",
+        "Dagger Spray",
+        "Poisoned Stab"
+      ],
+      "rng_after": [
+        4,
+        11036607908618059222,
+        14965483542131563887
+      ]
+    },
+    {
+      "seed": 9109367628241118192,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Envenom",
+        "Grand Finale",
+        "Calculated Gamble"
+      ],
+      "rng_after": [
+        4,
+        6033797811072078642,
+        3800418489135387398
+      ]
+    },
+    {
+      "seed": 9109367628241118192,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Envenom",
+        "Grand Finale",
+        "Calculated Gamble"
+      ],
+      "rng_after": [
+        4,
+        6033797811072078642,
+        3800418489135387398
+      ]
+    },
+    {
+      "seed": 6887469826970716288,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Underhanded Strike",
+        "Calculated Gamble",
+        "Adrenaline"
+      ],
+      "rng_after": [
+        4,
+        1020523819536829042,
+        1793190534442036580
+      ]
+    },
+    {
+      "seed": 6887469826970716288,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Underhanded Strike",
+        "Calculated Gamble",
+        "Adrenaline"
+      ],
+      "rng_after": [
+        4,
+        1020523819536829042,
+        1793190534442036580
+      ]
+    },
+    {
+      "seed": 8497418039295604093,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Terror",
+        "Poisoned Stab",
+        "Blur"
+      ],
+      "rng_after": [
+        4,
+        8020683885810373678,
+        7972667447955470791
+      ]
+    },
+    {
+      "seed": 8497418039295604093,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Terror",
+        "Poisoned Stab",
+        "Blur"
+      ],
+      "rng_after": [
+        4,
+        8020683885810373678,
+        7972667447955470791
+      ]
+    },
+    {
+      "seed": 9001293939166783090,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Blade Dance",
+        "Masterful Stab",
+        "Leg Sweep"
+      ],
+      "rng_after": [
+        4,
+        2730859126795787670,
+        11671630759579981302
+      ]
+    },
+    {
+      "seed": 9001293939166783090,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Blade Dance",
+        "Masterful Stab",
+        "Leg Sweep"
+      ],
+      "rng_after": [
+        4,
+        2730859126795787670,
+        11671630759579981302
+      ]
+    },
+    {
+      "seed": 5066484044996965147,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "PiercingWail",
+        "Dash",
+        "Terror"
+      ],
+      "rng_after": [
+        4,
+        10759605011342869323,
+        12716332080068066770
+      ]
+    },
+    {
+      "seed": 5066484044996965147,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "PiercingWail",
+        "Dash",
+        "Terror"
+      ],
+      "rng_after": [
+        4,
+        10759605011342869323,
+        12716332080068066770
+      ]
+    },
+    {
+      "seed": 286335719996410195,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Acrobatics",
+        "Heel Hook",
+        "Deflect"
+      ],
+      "rng_after": [
+        4,
+        5620251146540002644,
+        9216566879322946216
+      ]
+    },
+    {
+      "seed": 286335719996410195,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Acrobatics",
+        "Heel Hook",
+        "Deflect"
+      ],
+      "rng_after": [
+        4,
+        5620251146540002644,
+        9216566879322946216
+      ]
+    },
+    {
+      "seed": 5557469239555390631,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Dodge and Roll",
+        "Terror",
+        "Crippling Poison"
+      ],
+      "rng_after": [
+        4,
+        15629950055561515191,
+        11262094990773398347
+      ]
+    },
+    {
+      "seed": 5557469239555390631,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Dodge and Roll",
+        "Terror",
+        "Crippling Poison"
+      ],
+      "rng_after": [
+        4,
+        15629950055561515191,
+        11262094990773398347
+      ]
+    },
+    {
+      "seed": 7096570307306016646,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "All Out Attack",
+        "Underhanded Strike",
+        "Bouncing Flask"
+      ],
+      "rng_after": [
+        4,
+        9709947363415777358,
+        13212054719147892754
+      ]
+    },
+    {
+      "seed": 7096570307306016646,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "All Out Attack",
+        "Underhanded Strike",
+        "Bouncing Flask"
+      ],
+      "rng_after": [
+        4,
+        9709947363415777358,
+        13212054719147892754
+      ]
+    },
+    {
+      "seed": 2058406417368758029,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Escape Plan",
+        "Outmaneuver",
+        "Bane"
+      ],
+      "rng_after": [
+        4,
+        6264279588611952961,
+        14868153141498745513
+      ]
+    },
+    {
+      "seed": 2058406417368758029,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Escape Plan",
+        "Outmaneuver",
+        "Bane"
+      ],
+      "rng_after": [
+        4,
+        6264279588611952961,
+        14868153141498745513
+      ]
+    },
+    {
+      "seed": 2972460928578698316,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "All Out Attack",
+        "Underhanded Strike",
+        "Dagger Spray"
+      ],
+      "rng_after": [
+        4,
+        12212689071226806769,
+        9857022368551376851
+      ]
+    },
+    {
+      "seed": 2972460928578698316,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "All Out Attack",
+        "Underhanded Strike",
+        "Dagger Spray"
+      ],
+      "rng_after": [
+        4,
+        12212689071226806769,
+        9857022368551376851
+      ]
+    },
+    {
+      "seed": 5839905543647579476,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Acrobatics",
+        "Backflip",
+        "Finisher"
+      ],
+      "rng_after": [
+        4,
+        11200914754930037582,
+        5028718228231294434
+      ]
+    },
+    {
+      "seed": 5839905543647579476,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Acrobatics",
+        "Backflip",
+        "Finisher"
+      ],
+      "rng_after": [
+        4,
+        11200914754930037582,
+        5028718228231294434
+      ]
+    },
+    {
+      "seed": 5142161897857748244,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Storm of Steel",
+        "Leg Sweep",
+        "Cloak And Dagger"
+      ],
+      "rng_after": [
+        4,
+        5519686010353299409,
+        2081384696595194869
+      ]
+    },
+    {
+      "seed": 5142161897857748244,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Storm of Steel",
+        "Leg Sweep",
+        "Cloak And Dagger"
+      ],
+      "rng_after": [
+        4,
+        5519686010353299409,
+        2081384696595194869
+      ]
+    },
+    {
+      "seed": 4180728556181773109,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Finisher",
+        "Tactician",
+        "Catalyst"
+      ],
+      "rng_after": [
+        4,
+        8961968058468199625,
+        12657048635630169661
+      ]
+    },
+    {
+      "seed": 4180728556181773109,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Finisher",
+        "Tactician",
+        "Catalyst"
+      ],
+      "rng_after": [
+        4,
+        8961968058468199625,
+        12657048635630169661
+      ]
+    },
+    {
+      "seed": 7425109515581144617,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Deflect",
+        "Catalyst",
+        "Blade Dance"
+      ],
+      "rng_after": [
+        4,
+        4546384215406923016,
+        16268764876965484365
+      ]
+    },
+    {
+      "seed": 7425109515581144617,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Deflect",
+        "Catalyst",
+        "Blade Dance"
+      ],
+      "rng_after": [
+        4,
+        4546384215406923016,
+        16268764876965484365
+      ]
+    },
+    {
+      "seed": 6658145964820337648,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Calculated Gamble",
+        "Doppelganger",
+        "Underhanded Strike"
+      ],
+      "rng_after": [
+        4,
+        8445849498444865236,
+        867653549580276448
+      ]
+    },
+    {
+      "seed": 6658145964820337648,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Calculated Gamble",
+        "Doppelganger",
+        "Underhanded Strike"
+      ],
+      "rng_after": [
+        4,
+        8445849498444865236,
+        867653549580276448
+      ]
+    },
+    {
+      "seed": 1267441771023215991,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Adrenaline",
+        "Predator",
+        "Underhanded Strike"
+      ],
+      "rng_after": [
+        4,
+        7915059880762339102,
+        12211120861251907544
+      ]
+    },
+    {
+      "seed": 1267441771023215991,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Adrenaline",
+        "Predator",
+        "Underhanded Strike"
+      ],
+      "rng_after": [
+        4,
+        7915059880762339102,
+        12211120861251907544
+      ]
+    },
+    {
+      "seed": 56516933962488297,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Infinite Blades",
+        "Doppelganger",
+        "Catalyst"
+      ],
+      "rng_after": [
+        4,
+        14913129683270100044,
+        17704272473014916139
+      ]
+    },
+    {
+      "seed": 56516933962488297,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Infinite Blades",
+        "Doppelganger",
+        "Catalyst"
+      ],
+      "rng_after": [
+        4,
+        14913129683270100044,
+        17704272473014916139
+      ]
+    },
+    {
+      "seed": 8766385273891879978,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Tools of the Trade",
+        "Burst",
+        "Corpse Explosion"
+      ],
+      "rng_after": [
+        4,
+        18343489695976576886,
+        8595208447129351247
+      ]
+    },
+    {
+      "seed": 8766385273891879978,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Tools of the Trade",
+        "Burst",
+        "Corpse Explosion"
+      ],
+      "rng_after": [
+        4,
+        18343489695976576886,
+        8595208447129351247
+      ]
+    },
+    {
+      "seed": 5149864372176103853,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Cloak And Dagger",
+        "Adrenaline",
+        "Dagger Spray"
+      ],
+      "rng_after": [
+        4,
+        10445282436132651136,
+        12037845398218832611
+      ]
+    },
+    {
+      "seed": 5149864372176103853,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Cloak And Dagger",
+        "Adrenaline",
+        "Dagger Spray"
+      ],
+      "rng_after": [
+        4,
+        10445282436132651136,
+        12037845398218832611
+      ]
+    },
+    {
+      "seed": 5695820329921433767,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Accuracy",
+        "Concentrate",
+        "Poisoned Stab"
+      ],
+      "rng_after": [
+        4,
+        10322077197730850288,
+        7238490495533484219
+      ]
+    },
+    {
+      "seed": 5695820329921433767,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Accuracy",
+        "Concentrate",
+        "Poisoned Stab"
+      ],
+      "rng_after": [
+        4,
+        10322077197730850288,
+        7238490495533484219
+      ]
+    },
+    {
+      "seed": 3421362593921076461,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Distraction",
+        "Masterful Stab",
+        "Masterful Stab"
+      ],
+      "rng_after": [
+        4,
+        18038860468320067344,
+        4954385813572769891
+      ]
+    },
+    {
+      "seed": 3421362593921076461,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Distraction",
+        "Masterful Stab",
+        "Masterful Stab"
+      ],
+      "rng_after": [
+        4,
+        18038860468320067344,
+        4954385813572769891
+      ]
+    },
+    {
+      "seed": 307658986406929419,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Catalyst",
+        "Glass Knife",
+        "Tools of the Trade"
+      ],
+      "rng_after": [
+        4,
+        3253653614200382636,
+        8664245951531465179
+      ]
+    },
+    {
+      "seed": 307658986406929419,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Catalyst",
+        "Glass Knife",
+        "Tools of the Trade"
+      ],
+      "rng_after": [
+        4,
+        3253653614200382636,
+        8664245951531465179
+      ]
+    },
+    {
+      "seed": 3694547450745464825,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Blade Dance",
+        "Bouncing Flask",
+        "Dash"
+      ],
+      "rng_after": [
+        4,
+        1086283055598998512,
+        13229176303688671007
+      ]
+    },
+    {
+      "seed": 3694547450745464825,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Blade Dance",
+        "Bouncing Flask",
+        "Dash"
+      ],
+      "rng_after": [
+        4,
+        1086283055598998512,
+        13229176303688671007
+      ]
+    },
+    {
+      "seed": 5378587462878682615,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Bullet Time",
+        "Backstab",
+        "Predator"
+      ],
+      "rng_after": [
+        4,
+        2995768205751432953,
+        14990791506685595175
+      ]
+    },
+    {
+      "seed": 5378587462878682615,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Bullet Time",
+        "Backstab",
+        "Predator"
+      ],
+      "rng_after": [
+        4,
+        2995768205751432953,
+        14990791506685595175
+      ]
+    },
+    {
+      "seed": 6347508543834201451,
+      "group": "discovery3200",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Sucker Punch",
+        "Backstab",
+        "Outmaneuver"
+      ],
+      "rng_after": [
+        4,
+        6238153449924705998,
+        16121987901367510018
+      ]
+    },
+    {
+      "seed": 6347508543834201451,
+      "group": "discovery3200",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Sucker Punch",
+        "Backstab",
+        "Outmaneuver"
+      ],
+      "rng_after": [
+        4,
+        6238153449924705998,
+        16121987901367510018
+      ]
+    },
+    {
+      "seed": 1000050,
+      "group": "fixed704",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Setup",
+        "Predator",
+        "Acrobatics"
+      ],
+      "rng_after": [
+        4,
+        17152687051680107322,
+        10316729779299272503
+      ]
+    },
+    {
+      "seed": 1000050,
+      "group": "fixed704",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Setup",
+        "Predator",
+        "Acrobatics"
+      ],
+      "rng_after": [
+        4,
+        17152687051680107322,
+        10316729779299272503
+      ]
+    },
+    {
+      "seed": 3000061,
+      "group": "fixed704",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Bullet Time",
+        "Endless Agony",
+        "Bane"
+      ],
+      "rng_after": [
+        4,
+        17508785086254045949,
+        3844531496159840097
+      ]
+    },
+    {
+      "seed": 3000061,
+      "group": "fixed704",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Bullet Time",
+        "Endless Agony",
+        "Bane"
+      ],
+      "rng_after": [
+        4,
+        17508785086254045949,
+        3844531496159840097
+      ]
+    },
+    {
+      "seed": 3000063,
+      "group": "fixed704",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Venomology",
+        "Calculated Gamble",
+        "Eviscerate"
+      ],
+      "rng_after": [
+        4,
+        16585033902609030418,
+        7795302320231069653
+      ]
+    },
+    {
+      "seed": 3000063,
+      "group": "fixed704",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Venomology",
+        "Calculated Gamble",
+        "Eviscerate"
+      ],
+      "rng_after": [
+        4,
+        16585033902609030418,
+        7795302320231069653
+      ]
+    },
+    {
+      "seed": 4000019,
+      "group": "fixed704",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Eviscerate",
+        "Choke",
+        "Deflect"
+      ],
+      "rng_after": [
+        4,
+        11153926876912023096,
+        222558575185559430
+      ]
+    },
+    {
+      "seed": 4000019,
+      "group": "fixed704",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Eviscerate",
+        "Choke",
+        "Deflect"
+      ],
+      "rng_after": [
+        4,
+        11153926876912023096,
+        222558575185559430
+      ]
+    },
+    {
+      "seed": 4000064,
+      "group": "fixed704",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Calculated Gamble",
+        "Dagger Throw",
+        "Venomology"
+      ],
+      "rng_after": [
+        4,
+        16967984678936405745,
+        12440784388751209910
+      ]
+    },
+    {
+      "seed": 4000064,
+      "group": "fixed704",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Calculated Gamble",
+        "Dagger Throw",
+        "Venomology"
+      ],
+      "rng_after": [
+        4,
+        16967984678936405745,
+        12440784388751209910
+      ]
+    },
+    {
+      "seed": 6000024,
+      "group": "fixed704",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Adrenaline",
+        "Dodge and Roll",
+        "Night Terror"
+      ],
+      "rng_after": [
+        4,
+        1802049643091859016,
+        12407491750101961138
+      ]
+    },
+    {
+      "seed": 6000024,
+      "group": "fixed704",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Adrenaline",
+        "Dodge and Roll",
+        "Night Terror"
+      ],
+      "rng_after": [
+        4,
+        1802049643091859016,
+        12407491750101961138
+      ]
+    },
+    {
+      "seed": 7000052,
+      "group": "fixed704",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Well Laid Plans",
+        "Dodge and Roll",
+        "Bane"
+      ],
+      "rng_after": [
+        4,
+        7075332157000320227,
+        9920794733247993576
+      ]
+    },
+    {
+      "seed": 7000052,
+      "group": "fixed704",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Well Laid Plans",
+        "Dodge and Roll",
+        "Bane"
+      ],
+      "rng_after": [
+        4,
+        7075332157000320227,
+        9920794733247993576
+      ]
+    },
+    {
+      "seed": 8000032,
+      "group": "fixed704",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Sucker Punch",
+        "Predator",
+        "Noxious Fumes"
+      ],
+      "rng_after": [
+        4,
+        10821035096629746105,
+        9765090753691611933
+      ]
+    },
+    {
+      "seed": 8000032,
+      "group": "fixed704",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Sucker Punch",
+        "Predator",
+        "Noxious Fumes"
+      ],
+      "rng_after": [
+        4,
+        10821035096629746105,
+        9765090753691611933
+      ]
+    },
+    {
+      "seed": 17000043,
+      "group": "fixed704",
+      "slots": [
+        4,
+        1,
+        10
+      ],
+      "deck_positions": [
+        5,
+        2,
+        11
+      ],
+      "replacements": [
+        "Infinite Blades",
+        "Unload",
+        "Noxious Fumes"
+      ],
+      "rng_after": [
+        4,
+        3200764931935129934,
+        11490085354969803548
+      ]
+    },
+    {
+      "seed": 17000043,
+      "group": "fixed704",
+      "slots": [
+        11,
+        10,
+        8
+      ],
+      "deck_positions": [
+        12,
+        11,
+        9
+      ],
+      "replacements": [
+        "Infinite Blades",
+        "Unload",
+        "Noxious Fumes"
+      ],
+      "rng_after": [
+        4,
+        3200764931935129934,
+        11490085354969803548
+      ]
+    }
+  ]
+}
