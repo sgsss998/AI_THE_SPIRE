@@ -1,0 +1,6306 @@
+{
+  "shards": 64,
+  "counts": {
+    "LAB": {
+      "False": 0,
+      "True": 97
+    },
+    "THE_WOMAN_IN_BLUE": {
+      "False": 0,
+      "True": 65
+    },
+    "WHEEL_OF_CHANGE": {
+      "False": 0,
+      "True": 20
+    }
+  },
+  "neow_cases": 176,
+  "session_sha256": "b83e98d65c6cb7933a19317a1efbb4327facf48dc64b70c8b24b80a600e58b6a",
+  "cases": [
+    {
+      "seed": 6015524606251546261,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 4,
+      "initial_rows": [
+        [
+          3,
+          14,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          44,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 4520475250290958088,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        171
+      ],
+      "floor": 4,
+      "initial_rows": [
+        [
+          3,
+          42,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          37,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 1513902205820336833,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 11,
+      "initial_rows": [
+        [
+          3,
+          4,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          35,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 5995900071988884865,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        171
+      ],
+      "floor": 4,
+      "initial_rows": [
+        [
+          3,
+          6,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          44,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 4365528180154415575,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          15,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          27,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 3224833645327050969,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 5,
+      "initial_rows": [
+        [
+          3,
+          27,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          32,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 6784335311493172813,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          39,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 1822493084426473719,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          5,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          44,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 5014834162515420337,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          17,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          21,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 5241936822517500722,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 7,
+      "initial_rows": [
+        [
+          3,
+          7,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          14,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 9154496433305893431,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          24,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          29,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 6312817255920327856,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          42,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          4,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 1272760281086782733,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          22,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          32,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 1941796143849513619,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 7,
+      "initial_rows": [
+        [
+          3,
+          44,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          40,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 4942812643351167938,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          12,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          36,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 1736316060915723507,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        112,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          31,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          33,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          18,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        112,
+        111,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 2363579778334046234,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        106,
+        171
+      ],
+      "floor": 5,
+      "initial_rows": [
+        [
+          3,
+          17,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          22,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "history": [
+        105,
+        110,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 1002813177993231857,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        171
+      ],
+      "floor": 5,
+      "initial_rows": [
+        [
+          3,
+          33,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          29,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "history": [
+        171
+      ]
+    },
+    {
+      "seed": 3363660413799515232,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          32,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 1619045992337431572,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        112,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          39,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          6,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          7,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 3635501896224511846,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        112,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          24,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          39,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          27,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 4228429271455015554,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 5,
+      "initial_rows": [
+        [
+          3,
+          28,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          6,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 4277205813976901352,
+      "event": "WHEEL_OF_CHANGE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          2,
+          69,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "history": [
+        171
+      ]
+    },
+    {
+      "seed": 6197526219685425261,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 7,
+      "initial_rows": [
+        [
+          3,
+          23,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          37,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 6727258856759576068,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          20,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          5,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 3921987256936410986,
+      "event": "WHEEL_OF_CHANGE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        171
+      ],
+      "floor": 5,
+      "initial_rows": [
+        [
+          2,
+          159,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 4103473320666056179,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          10,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          7,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 8039214738950569363,
+      "event": "WHEEL_OF_CHANGE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          2,
+          94,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 5459550040979131496,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 4,
+      "initial_rows": [
+        [
+          3,
+          23,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          37,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 4827971012098232780,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 5,
+      "initial_rows": [
+        [
+          3,
+          32,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          24,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 8479489585276018545,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        112,
+        171
+      ],
+      "floor": 4,
+      "initial_rows": [
+        [
+          3,
+          27,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          6,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          44,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        112,
+        105,
+        111,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 7280910177718302,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          17,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          21,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 878601382843833359,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        171
+      ],
+      "floor": 5,
+      "initial_rows": [
+        [
+          3,
+          35,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 6643964953579311659,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          39,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          24,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 824890587220384857,
+      "event": "WHEEL_OF_CHANGE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          2,
+          167,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 8365530679006989908,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        106,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          37,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          44,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "history": [
+        105,
+        110,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 4141262246266069555,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        112,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          31,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          31,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          18,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        112,
+        111,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 5165760047649624490,
+      "event": "WHEEL_OF_CHANGE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        171
+      ],
+      "floor": 5,
+      "initial_rows": [
+        [
+          2,
+          91,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 1260202741298244185,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          7,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          23,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 6473645866363716352,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 4,
+      "initial_rows": [
+        [
+          3,
+          4,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          21,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 7876925066717094970,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 5,
+      "initial_rows": [
+        [
+          3,
+          38,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          42,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 4533021195277813806,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        106,
+        171
+      ],
+      "floor": 4,
+      "initial_rows": [
+        [
+          3,
+          28,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          18,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "history": [
+        105,
+        110,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 6009640533642299053,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 4,
+      "initial_rows": [
+        [
+          3,
+          36,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          14,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 5779916121398250323,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          15,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          7,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 2953766981782555530,
+      "event": "WHEEL_OF_CHANGE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          2,
+          78,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 6103211558029796903,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          10,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 870550386563302813,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        106,
+        171
+      ],
+      "floor": 4,
+      "initial_rows": [
+        [
+          3,
+          38,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          31,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "history": [
+        105,
+        111,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 2503847198778332170,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          25,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          35,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 2895374590459504537,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          20,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          38,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 4807772296594324839,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          37,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          44,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 7272724680763377595,
+      "event": "WHEEL_OF_CHANGE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          2,
+          120,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 2375696221780548326,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 5,
+      "initial_rows": [
+        [
+          3,
+          15,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          38,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 5188603783232296449,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          38,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          7,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 6024829967586339209,
+      "event": "WHEEL_OF_CHANGE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          2,
+          163,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 2895356678172129144,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 4,
+      "initial_rows": [
+        [
+          3,
+          4,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          28,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 3158911301359809254,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        106,
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          25,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          7,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 6988968933549312923,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          24,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          33,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 30822486638342481,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          37,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          22,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 5814074507911888050,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 5,
+      "initial_rows": [
+        [
+          3,
+          11,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          31,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 640601048206687523,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 4,
+      "initial_rows": [
+        [
+          3,
+          12,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          4,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 2957474705120653900,
+      "event": "WHEEL_OF_CHANGE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          2,
+          51,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 7265386878449147068,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          6,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          44,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 6362705449303031031,
+      "event": "WHEEL_OF_CHANGE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          2,
+          25,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 7548331976790819721,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        112,
+        171
+      ],
+      "floor": 5,
+      "initial_rows": [
+        [
+          3,
+          38,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          23,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          25,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        112,
+        111,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 3654742460986042727,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          13,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          37,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 148778993050257483,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 7,
+      "initial_rows": [
+        [
+          3,
+          23,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          32,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 7661557212436556944,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          40,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          14,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 1071555523131538236,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          11,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          33,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 5215292859984329985,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 4,
+      "initial_rows": [
+        [
+          3,
+          31,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          35,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 7325458724093155409,
+      "event": "WHEEL_OF_CHANGE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        171
+      ],
+      "floor": 4,
+      "initial_rows": [
+        [
+          2,
+          121,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 529845085777787344,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          24,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          42,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 3649594426269865634,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          29,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          15,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 9016005585947251941,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        112,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          12,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          44,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          23,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        112,
+        111,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 644420614783005751,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          22,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          43,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 5314163648704233682,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        112,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          6,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          13,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          14,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        105,
+        110,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 3796713148851533980,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        171
+      ],
+      "floor": 5,
+      "initial_rows": [
+        [
+          3,
+          29,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          38,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "history": [
+        171
+      ]
+    },
+    {
+      "seed": 99360844991954892,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        171
+      ],
+      "floor": 4,
+      "initial_rows": [
+        [
+          3,
+          4,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          22,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "history": [
+        171
+      ]
+    },
+    {
+      "seed": 590840405705515757,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          27,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          5,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 8112290060113931340,
+      "event": "WHEEL_OF_CHANGE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          2,
+          79,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 1361798953659323856,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        112,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          36,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          28,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          33,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        105,
+        110,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 959345799482436811,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          35,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          42,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 4863199657175773312,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          31,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          5,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "history": [
+        171
+      ]
+    },
+    {
+      "seed": 4950796207193251347,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 5,
+      "initial_rows": [
+        [
+          3,
+          36,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          14,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 3043491565528112853,
+      "event": "WHEEL_OF_CHANGE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          2,
+          175,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "history": [
+        171
+      ]
+    },
+    {
+      "seed": 2884362136611756786,
+      "event": "WHEEL_OF_CHANGE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        171
+      ],
+      "floor": 5,
+      "initial_rows": [
+        [
+          2,
+          148,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "history": [
+        171
+      ]
+    },
+    {
+      "seed": 5062687884224315031,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          18,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          25,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 3570143838877565127,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          31,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          7,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 7160562443335727191,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        171
+      ],
+      "floor": 4,
+      "initial_rows": [
+        [
+          3,
+          25,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          18,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 4851273674737130065,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          29,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          23,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "history": [
+        171
+      ]
+    },
+    {
+      "seed": 3479731359521290855,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 5,
+      "initial_rows": [
+        [
+          3,
+          43,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          33,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 4171882379789485464,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          15,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          36,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 871178067767636826,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 11,
+      "initial_rows": [
+        [
+          3,
+          10,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          29,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 853455620237946718,
+      "event": "WHEEL_OF_CHANGE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        171
+      ],
+      "floor": 5,
+      "initial_rows": [
+        [
+          2,
+          64,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 4195184334464208696,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          7,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          24,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 6417734075179128920,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          40,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          18,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 3384180539256485211,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        112,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          23,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          12,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          37,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        112,
+        105,
+        111,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 1985552305402093680,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          23,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          43,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 8265193066500682950,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 4,
+      "initial_rows": [
+        [
+          3,
+          18,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          40,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 5403599470748072863,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          11,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          4,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 777718221320106186,
+      "event": "WHEEL_OF_CHANGE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        171
+      ],
+      "floor": 10,
+      "initial_rows": [
+        [
+          2,
+          159,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 6313812146883126782,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          4,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 6410776673230902216,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 5,
+      "initial_rows": [
+        [
+          3,
+          27,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          40,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 905726520586638867,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          31,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          43,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 7829768316560336272,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          6,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          28,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 6528268209054952223,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 5,
+      "initial_rows": [
+        [
+          3,
+          29,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          14,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 3722892877520983258,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          20,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          40,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 9420573433953369,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          36,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          35,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 3429232667191060389,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          22,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          10,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 1595161336704604200,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          43,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          21,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 2996687155894477665,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        112,
+        171
+      ],
+      "floor": 5,
+      "initial_rows": [
+        [
+          3,
+          5,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          6,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          27,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        112,
+        105,
+        111,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 1640781730800234701,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        171
+      ],
+      "floor": 5,
+      "initial_rows": [
+        [
+          3,
+          40,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          22,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 8070872204841203952,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        171
+      ],
+      "floor": 4,
+      "initial_rows": [
+        [
+          3,
+          4,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          24,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 8380632191381170310,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          24,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          7,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 3842829171394936343,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        171
+      ],
+      "floor": 4,
+      "initial_rows": [
+        [
+          3,
+          25,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 2063549195313746645,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          37,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          40,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 3407180584953278698,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 4,
+      "initial_rows": [
+        [
+          3,
+          12,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          33,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 1725098994062456085,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          37,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          39,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 7056350219324953532,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          24,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          44,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 6273142872885826719,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          23,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          40,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 5942809141403189758,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          36,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          10,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 859571918428624533,
+      "event": "WHEEL_OF_CHANGE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          2,
+          172,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 5859362617423671181,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          35,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 1830579021569257595,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          35,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          32,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 8880848467103524195,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        112,
+        171
+      ],
+      "floor": 5,
+      "initial_rows": [
+        [
+          3,
+          33,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          12,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          22,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        112,
+        105,
+        111,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 7644071227446415063,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 4,
+      "initial_rows": [
+        [
+          3,
+          29,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          29,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 4160383359800343817,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        112,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          20,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          39,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          32,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        112,
+        105,
+        111,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 6434996706150955642,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          27,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          28,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 321646880431982735,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          35,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 6489295311292895619,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          6,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          37,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 3520275643814299377,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          43,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          12,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 5173438920692326574,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 5,
+      "initial_rows": [
+        [
+          3,
+          43,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          43,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 327649055139965253,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          38,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 4144206473481534026,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        112,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          14,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          25,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          35,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 6614995944358805530,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 4,
+      "initial_rows": [
+        [
+          3,
+          40,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          42,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 4452866829941101896,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        171
+      ],
+      "floor": 5,
+      "initial_rows": [
+        [
+          3,
+          25,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          22,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "history": [
+        171
+      ]
+    },
+    {
+      "seed": 4331156212898996517,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          25,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          4,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 4842358494203423828,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        112,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          28,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          39,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          37,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        105,
+        110,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 1156006457452262359,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          10,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          6,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 8352197349963751665,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          33,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          42,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 5491755572304885681,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          38,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          20,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 5417925058155100511,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          27,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          35,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 9104121858879732909,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        171
+      ],
+      "floor": 4,
+      "initial_rows": [
+        [
+          3,
+          14,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 4518023187142386214,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          35,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          7,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 6082379636452677569,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          37,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          35,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 5278862335852518304,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        112,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          17,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          40,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          22,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 5450072156681851508,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          44,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          43,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 3167348847128644291,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          37,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          22,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 6401033523280263492,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 4,
+      "initial_rows": [
+        [
+          3,
+          36,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          36,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 2182662057809199807,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        171
+      ],
+      "floor": 4,
+      "initial_rows": [
+        [
+          3,
+          31,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 8423225526316050944,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        106,
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          36,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          44,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 2474235008220628703,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        171
+      ],
+      "floor": 4,
+      "initial_rows": [
+        [
+          3,
+          4,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 4596017575562401119,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          5,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          11,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 4627095714140300703,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          12,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          17,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 1908484106137588135,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        112,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          43,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          36,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          17,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        112,
+        105,
+        111,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 374225123960526173,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          6,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          28,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 4827170312436189943,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          21,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          43,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 1919266178376585404,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        112,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          18,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          38,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          21,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 1722447854062831387,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        171
+      ],
+      "floor": 4,
+      "initial_rows": [
+        [
+          3,
+          37,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 7413538082704851439,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        112,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          13,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          23,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          39,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        112,
+        111,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 8816200091225044671,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 4,
+      "initial_rows": [
+        [
+          3,
+          5,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          28,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 1469895594540962127,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 5,
+      "initial_rows": [
+        [
+          3,
+          32,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          37,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 4682629961921523598,
+      "event": "WHEEL_OF_CHANGE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        171
+      ],
+      "floor": 4,
+      "initial_rows": [
+        [
+          2,
+          175,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "history": [
+        171
+      ]
+    },
+    {
+      "seed": 8522855248128592346,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          31,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          31,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 6708411800216854598,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          20,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 1113277916789818007,
+      "event": "WHEEL_OF_CHANGE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        171
+      ],
+      "floor": 5,
+      "initial_rows": [
+        [
+          2,
+          120,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 7939082551578089480,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          6,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          11,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 1312056984586490580,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          27,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          13,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 8994266561376272822,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          6,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          11,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "history": [
+        171
+      ]
+    },
+    {
+      "seed": 7959637248416415503,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          17,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          6,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 6103493173807784712,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          44,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 4708949062541510544,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          21,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          33,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 4104416040411008559,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        112,
+        171
+      ],
+      "floor": 4,
+      "initial_rows": [
+        [
+          3,
+          22,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          37,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          37,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        112,
+        111,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 4138515920865235866,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        112,
+        171
+      ],
+      "floor": 4,
+      "initial_rows": [
+        [
+          3,
+          29,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          31,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          12,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 3972615489098804924,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          11,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          14,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 7737850492306940934,
+      "event": "WHEEL_OF_CHANGE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        171
+      ],
+      "floor": 4,
+      "initial_rows": [
+        [
+          2,
+          53,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 4219205581194080709,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        171
+      ],
+      "floor": 7,
+      "initial_rows": [
+        [
+          3,
+          22,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 8052802190772291208,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          17,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 4151733647469943060,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        111,
+        171
+      ],
+      "floor": 2,
+      "initial_rows": [
+        [
+          3,
+          32,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          33,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        105,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 8096347814615036833,
+      "event": "LAB",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          43,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          36,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 3458671493992650214,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          39,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          7,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 3921211214661306257,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        110,
+        111,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          20,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          3,
+          17,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        111,
+        110,
+        171
+      ]
+    },
+    {
+      "seed": 5289015448069287040,
+      "event": "THE_WOMAN_IN_BLUE",
+      "page": "COMBAT_REWARD",
+      "resolved": true,
+      "actions": [
+        105,
+        110,
+        171
+      ],
+      "floor": 3,
+      "initial_rows": [
+        [
+          3,
+          23,
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      "history": [
+        110,
+        171
+      ]
+    }
+  ]
+}

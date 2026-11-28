@@ -1,0 +1,151 @@
+{
+  "same_seed_original_samples": [
+    {
+      "source": "Living Wall",
+      "seed": 6000008,
+      "target": "2df1fd48-5e72-469f-8b45-98c4081c0a54",
+      "replacement": "Poisoned Stab",
+      "new_uuid": "7a4d1c33-b8db-4914-907f-eac8ba173c20",
+      "stages": [
+        {
+          "page": "PERMANENT_CARD_GRID",
+          "game": "GRID",
+          "retail_hash": "10746bf293886436282ff44052afab9d3e3f73a957231b6d3014aaec1dad621c",
+          "deck_size": 14,
+          "measured_action_gaps": {
+            "missing": [
+              122
+            ],
+            "extra": []
+          }
+        },
+        {
+          "page": "PERMANENT_CARD_PREVIEW",
+          "game": "GRID",
+          "retail_hash": "c6e85f5d777ee83c0609b9dfdac4aa1ded0c9b36c5a976a80f9d76b886c87f25",
+          "deck_size": 14,
+          "measured_action_gaps": {
+            "missing": [],
+            "extra": []
+          }
+        },
+        {
+          "page": "PERMANENT_CARD_LEAVE",
+          "game": "EVENT",
+          "retail_hash": "b3e35c0323f0c1608dd50a84c171d966f2b999346623e091a0734a44ec340b9e",
+          "deck_size": 14,
+          "measured_action_gaps": {
+            "missing": [],
+            "extra": []
+          }
+        },
+        {
+          "page": "DELEGATED",
+          "game": "MAP",
+          "retail_hash": "5356fe8eff309c2705b503191f7aa125b33351aa829387470fe5e3b27b066cf5",
+          "deck_size": 14,
+          "measured_action_gaps": {}
+        }
+      ]
+    },
+    {
+      "source": "Transmorgrifier",
+      "seed": 2000033,
+      "target": "c0683740-94e4-4649-8040-bbc948b2b2e1",
+      "replacement": "Storm of Steel",
+      "new_uuid": "8650356c-c8ce-4c53-94cb-16df24c98f1a",
+      "stages": [
+        {
+          "page": "PERMANENT_CARD_GRID",
+          "game": "GRID",
+          "retail_hash": "4fac98143a13d2ec197b6aeaba07acf3e0c3781260ac3556b215ddd84275fe96",
+          "deck_size": 14,
+          "measured_action_gaps": {
+            "missing": [],
+            "extra": []
+          }
+        },
+        {
+          "page": "PERMANENT_CARD_PREVIEW",
+          "game": "GRID",
+          "retail_hash": "604b0c10eb1f49e6452850476d0bd2cfad9034c6f45aa9c1212310a0e3c0fa4d",
+          "deck_size": 14,
+          "measured_action_gaps": {
+            "missing": [],
+            "extra": []
+          }
+        },
+        {
+          "page": "PERMANENT_CARD_LEAVE",
+          "game": "EVENT",
+          "retail_hash": "3074cf9a10a4cb5db633419a18353c95f170d43ec45c85d5f70a1288f8f507cb",
+          "deck_size": 14,
+          "measured_action_gaps": {
+            "missing": [],
+            "extra": []
+          }
+        },
+        {
+          "page": "DELEGATED",
+          "game": "MAP",
+          "retail_hash": "3519832bafc999a051a2848f7cb17e240f5f95129ec41a9bd289b12864cfd32f",
+          "deck_size": 14,
+          "measured_action_gaps": {}
+        }
+      ]
+    },
+    {
+      "source": "Upgrade Shrine",
+      "seed": 42,
+      "target": "35f05ff0-adfd-4d8f-9efa-16e42448088c",
+      "stages": [
+        {
+          "page": "PERMANENT_UPGRADE_GRID",
+          "game": "GRID",
+          "retail_hash": "f7a5991dccfea97f1c0188434a9ebef896d96ab241aef12c63ccaecc0b0e8333",
+          "deck_size": 13,
+          "measured_action_gaps": {
+            "missing": [],
+            "extra": []
+          }
+        },
+        {
+          "page": "PERMANENT_UPGRADE_CONFIRM",
+          "game": "GRID",
+          "retail_hash": "eae77b98e7e4353e4838fec652409e3e9189611f51eaeea7deace73d2dd612d7",
+          "deck_size": 13,
+          "measured_action_gaps": {
+            "missing": [],
+            "extra": []
+          }
+        },
+        {
+          "page": "PERMANENT_UPGRADE_RESULT",
+          "game": "EVENT",
+          "retail_hash": "80432457ad4d271cb38d2aedf0cfd94067eee2127df4f6c297b5c3dcb27a48a3",
+          "deck_size": 13,
+          "measured_action_gaps": {
+            "missing": [],
+            "extra": []
+          }
+        },
+        {
+          "page": "DELEGATED",
+          "game": "MAP",
+          "retail_hash": "33abc082af31f01aa19b5418104418925abc7e7f3ecf18c5bf5a4001cd365d7f",
+          "deck_size": 13,
+          "measured_action_gaps": {}
+        }
+      ]
+    }
+  ],
+  "original_methods": {
+    "events.exordium.Cleric": "d4180b78c4105f8881e65c28efe61e48edd2690806aa636d79e56e73a73275a6",
+    "events.shrines.PurificationShrine": "fd315112c3adaaefb27107f3249c35a6085fc3bc97248116510bc29d105c541e",
+    "cards.CardGroup": "ad45dbf95a23bb892c06b5f981ac12dbe62fabf1ec8387c1aa6eb54ad7a125b8",
+    "potions.AbstractPotion": "fc9d03964308ee0b7f67c9e805dccebc03b4f02c35e9fed90490d7b58bc3fdb6",
+    "potions.SmokeBomb": "f0800ce5b28fffaca1e6dfdfac2f168a4db50b0c5fd40d67f613f93b73db6b11",
+    "potions.FairyPotion": "470663aca2a22b3e48eda3d173a0b23ea895df19560412ce2957a9d9ddc6e603"
+  },
+  "same_seed_new_graphical_games": 0
+}

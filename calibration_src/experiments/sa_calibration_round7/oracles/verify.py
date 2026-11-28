@@ -16,7 +16,8 @@ from experiments.sa_calibration_round5.replay import original_inputs
 from experiments.sa_calibration_round6 import release as r6
 from experiments.sa_calibration_round6.reference import read, sha, write
 from experiments.sa_calibration_round6.rewards.verify import checkpoint, step
-from .step_checks import audit_frame, audit_transition, mismatch
+from . import step_checks
+from .step_checks import mismatch
 
 HERE = Path(__file__).resolve().parent
 EXPERIMENTS = HERE.parents[1]
@@ -96,11 +97,21 @@ def altered(frame, changes):
 
 
 def rewards(candidate):
+    checks=step_checks
+    if candidate.interface_signature().observation_dimension==3127:
+        from . import extended as checks
+    audit_frame,audit_transition=checks.audit_frame,checks.audit_transition
     journal = original_inputs()
     seed = journal[0]["before"]["raw"]["game_state"]["seed"] % (1 << 64)
     records = read(checked_file(R5, "replay/RESULT.json"))["records"]
     _, _, _, frozen = checkpoint(r5, seed, records)
-    engine, session, _, frame = checkpoint(candidate, seed, records)
+    engine=candidate.make_engine()
+    session=candidate.make_session(engine)
+    frame=session.reset(seed)
+    for record in records[:128]:
+        for action in record["actions_executed"]:
+            frame=step(session,frame,action)
+    candidate.interface_signature().assert_model_dimensions(len(frame.state.vector),len(frame.supported_actions))
     first = journal[128]
     assert first["index"] == 129
     bugs = compare("missing_reward_actions", first["legal"], view.allowed(frozen))

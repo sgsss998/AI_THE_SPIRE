@@ -1,0 +1,340 @@
+[
+  {
+    "seed": 31,
+    "fixture": "compact_fixture_neow_bell_seed31",
+    "journal_sha256": "b6d5adbc7ca4815f125f982b13e08dc41de972ec1946a681224ce9317ca4b274",
+    "inputs": 7,
+    "checkpoints": [
+      {
+        "page": "EVENT",
+        "floor": 0,
+        "wallet": 99,
+        "hp": 59,
+        "maximum_hp": 66,
+        "deck_size": 13,
+        "menu": [
+          "talk"
+        ],
+        "legal": [
+          110
+        ],
+        "capture_sha256": "18950807c5a15bc9557d3f9c3f97d9c04750230acab6c070e922ef6b94ab75ed"
+      },
+      {
+        "page": "EVENT",
+        "floor": 0,
+        "wallet": 99,
+        "hp": 59,
+        "maximum_hp": 66,
+        "deck_size": 13,
+        "menu": [
+          "remove a card from your deck",
+          "obtain 3 random potions",
+          "take 15 damage choose a rare colorless card to obtain",
+          "lose your starting relic obtain a random boss relic"
+        ],
+        "legal": [
+          110,
+          111,
+          112,
+          113
+        ],
+        "capture_sha256": "f36c04db346720fdad9e39344a3fb023024e8af3879ddbbd9faf2d7fa83c7de0"
+      },
+      {
+        "page": "GRID",
+        "floor": 0,
+        "wallet": 99,
+        "hp": 59,
+        "maximum_hp": 66,
+        "deck_size": 13,
+        "menu": null,
+        "legal": [
+          172
+        ],
+        "capture_sha256": "5d14c787fcf177f68440b8c4ba457fb23be4924015f72c2e5047643a0a6b9a9e"
+      },
+      {
+        "page": "COMBAT_REWARD",
+        "floor": 0,
+        "wallet": 99,
+        "hp": 59,
+        "maximum_hp": 66,
+        "deck_size": 14,
+        "menu": [
+          "relic",
+          "relic",
+          "relic"
+        ],
+        "legal": [
+          110,
+          111,
+          112,
+          171
+        ],
+        "capture_sha256": "fe6fd8d4cbb7d4d29fa478d786ec1b2f3dc9e128b4ffa7d1f368baa5067c6f7e"
+      },
+      {
+        "page": "COMBAT_REWARD",
+        "floor": 0,
+        "wallet": 99,
+        "hp": 59,
+        "maximum_hp": 66,
+        "deck_size": 14,
+        "menu": [
+          "relic",
+          "relic"
+        ],
+        "legal": [
+          110,
+          111,
+          171
+        ],
+        "capture_sha256": "0f8f56ad656a3cfe7f694d4684777b734d0174e9ae6b6c969497cd1cf363b3d5"
+      },
+      {
+        "page": "COMBAT_REWARD",
+        "floor": 0,
+        "wallet": 99,
+        "hp": 59,
+        "maximum_hp": 66,
+        "deck_size": 14,
+        "menu": [
+          "relic"
+        ],
+        "legal": [
+          110,
+          171
+        ],
+        "capture_sha256": "57cee8d686d1c8883b3f2bce70194b81e67d12130727cc87c9b37ee5228b7929"
+      },
+      {
+        "page": "COMBAT_REWARD",
+        "floor": 0,
+        "wallet": 99,
+        "hp": 59,
+        "maximum_hp": 66,
+        "deck_size": 14,
+        "menu": null,
+        "legal": [
+          171
+        ],
+        "capture_sha256": "97de1854c3a557326ebbcdf6aef3f0e58c0ff44be4adc9bf028cc8c6df0ae1ce"
+      },
+      {
+        "page": "MAP",
+        "floor": 0,
+        "wallet": 99,
+        "hp": 59,
+        "maximum_hp": 66,
+        "deck_size": 14,
+        "menu": [
+          "x=1",
+          "x=2",
+          "x=4",
+          "x=6"
+        ],
+        "legal": [
+          110,
+          111,
+          112,
+          113
+        ],
+        "capture_sha256": "638050941a49fd540ebd0cdf562736db52b831a37746e052290cef8cfe678d1a"
+      }
+    ]
+  },
+  {
+    "seed": 1000036,
+    "fixture": "compact_fixture_neow_tinyhouse_seed1000036",
+    "journal_sha256": "5a1ed41dbfa5be21653969393b0d45ce68f4944022b0b180de48c94a8417e618",
+    "inputs": 9,
+    "checkpoints": [
+      {
+        "page": "EVENT",
+        "floor": 0,
+        "wallet": 99,
+        "hp": 59,
+        "maximum_hp": 66,
+        "deck_size": 13,
+        "menu": [
+          "talk"
+        ],
+        "legal": [
+          110
+        ],
+        "capture_sha256": "8f72256a0e41864e13f59862d2ce69fda26b01948c0700ca43e78cca43cc005a"
+      },
+      {
+        "page": "EVENT",
+        "floor": 0,
+        "wallet": 99,
+        "hp": 59,
+        "maximum_hp": 66,
+        "deck_size": 13,
+        "menu": [
+          "remove a card from your deck",
+          "enemies in your next three combats have 1 hp",
+          "obtain a curse transform 2 cards",
+          "lose your starting relic obtain a random boss relic"
+        ],
+        "legal": [
+          110,
+          111,
+          112,
+          113
+        ],
+        "capture_sha256": "ed6856fed5678ac79bbb1207808e7ad036117bc73121a02f85864c56d7136c73"
+      },
+      {
+        "page": "COMBAT_REWARD",
+        "floor": 0,
+        "wallet": 99,
+        "hp": 64,
+        "maximum_hp": 71,
+        "deck_size": 13,
+        "menu": [
+          "gold",
+          "potion",
+          "card"
+        ],
+        "legal": [
+          110,
+          111,
+          112,
+          171
+        ],
+        "capture_sha256": "49abc5e943afd79f3b33d551cb13ad7563168a3dfc3bd8409dbcbffb72b72bad"
+      },
+      {
+        "page": "CARD_REWARD",
+        "floor": 0,
+        "wallet": 99,
+        "hp": 64,
+        "maximum_hp": 71,
+        "deck_size": 13,
+        "menu": [
+          "crippling cloud",
+          "cloak and dagger",
+          "dodge and roll"
+        ],
+        "legal": [
+          110,
+          111,
+          112,
+          177
+        ],
+        "capture_sha256": "13370d9c90ca018d0f5228e350fc1ae96ca1db6b8bf4b3a5da7600e2976cf172"
+      },
+      {
+        "page": "COMBAT_REWARD",
+        "floor": 0,
+        "wallet": 99,
+        "hp": 64,
+        "maximum_hp": 71,
+        "deck_size": 13,
+        "menu": [
+          "gold",
+          "potion",
+          "card"
+        ],
+        "legal": [
+          110,
+          111,
+          112,
+          171
+        ],
+        "capture_sha256": "d3eef8a566bffeddeeb886526ffca3fac6b7a07559168d2de99e4688bee9859f"
+      },
+      {
+        "page": "CARD_REWARD",
+        "floor": 0,
+        "wallet": 99,
+        "hp": 64,
+        "maximum_hp": 71,
+        "deck_size": 13,
+        "menu": [
+          "crippling cloud",
+          "cloak and dagger",
+          "dodge and roll"
+        ],
+        "legal": [
+          110,
+          111,
+          112,
+          177
+        ],
+        "capture_sha256": "e6cda3cdbb84c3372052a04fde122528dac589ad97409cdc44f5334499017ca9"
+      },
+      {
+        "page": "COMBAT_REWARD",
+        "floor": 0,
+        "wallet": 99,
+        "hp": 64,
+        "maximum_hp": 71,
+        "deck_size": 14,
+        "menu": [
+          "gold",
+          "potion"
+        ],
+        "legal": [
+          110,
+          111,
+          171
+        ],
+        "capture_sha256": "01fb68963a99d8e21b42ee0dbffaaf815a421bafb38fcccdb8967815b4331a8a"
+      },
+      {
+        "page": "COMBAT_REWARD",
+        "floor": 0,
+        "wallet": 99,
+        "hp": 64,
+        "maximum_hp": 71,
+        "deck_size": 14,
+        "menu": [
+          "gold"
+        ],
+        "legal": [
+          110,
+          171
+        ],
+        "capture_sha256": "a4931ec203c641ffe25d7b355659ca2d10519b605a36b2a8f9d00507ff606829"
+      },
+      {
+        "page": "COMBAT_REWARD",
+        "floor": 0,
+        "wallet": 149,
+        "hp": 64,
+        "maximum_hp": 71,
+        "deck_size": 14,
+        "menu": null,
+        "legal": [
+          171
+        ],
+        "capture_sha256": "f49ca4358c0c47873ec98abea9c858c71c4af7f47076b75c552cc7107a7ff411"
+      },
+      {
+        "page": "MAP",
+        "floor": 0,
+        "wallet": 149,
+        "hp": 64,
+        "maximum_hp": 71,
+        "deck_size": 14,
+        "menu": [
+          "x=0",
+          "x=3",
+          "x=4",
+          "x=5"
+        ],
+        "legal": [
+          105,
+          110,
+          111,
+          112,
+          113
+        ],
+        "capture_sha256": "869e731b3dfcad5c862e51024a8921f61f5bdb3b291d4ed6668aa89db898742a"
+      }
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "name": "_r7_curse_draw",
+  "file": "_r7_curse_draw.cpython-312-darwin.so",
+  "sha256": "e4805aeae141b87bc8f5fc88d4148cfec76e27104e27fc2c535eb066ae93153e",
+  "parent_sha256": "5f81347346994e460ceaa8e500ff3f08637a33f2eb4a220cff467fc8f6105fa5",
+  "sources": {
+    "experiments/sa_calibration_round7/grids/curse/correction.cpp": "fefbc27ef0c759c5cbe151cb60dd2c2fe9e62485b67a3b31f84c6ba577d71401",
+    "experiments/sa_calibration_round7/grids/curse/build.py": "486ac6e5aa5f67ea18a3077419960c84fd7060c0072d73d74735938bb117b194"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "seed": 54072726,
+  "frame": 263,
+  "source_sha256": "a31a6286c59fedfc7107dcad07a5ab838107051f98f5d5a6139e9e8d8354359a",
+  "real_potion": {
+    "can_discard": true,
+    "can_use": false,
+    "id": "Explosive Potion",
+    "is_thrown": true,
+    "name": "爆炸药水",
+    "native_target_required": false,
+    "requires_target": true
+  },
+  "real_options": [
+    "离开"
+  ],
+  "model_menu": [
+    105,
+    110
+  ],
+  "branches": [
+    {
+      "simulated_discard": false,
+      "belt": [
+        21.0,
+        0.0
+      ],
+      "gold": 128,
+      "deck_size": 16,
+      "real_action_taken": "leave"
+    },
+    {
+      "simulated_discard": true,
+      "belt": [
+        0.0,
+        0.0
+      ],
+      "gold": 128,
+      "deck_size": 16,
+      "real_action_taken": "leave"
+    }
+  ]
+}

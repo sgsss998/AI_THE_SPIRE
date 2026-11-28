@@ -1,0 +1,906 @@
+{
+  "interface": {
+    "state_version": "silent-compact-neow-black-star-v7+settled-neow-curse-and-all-gold-purge-v1+candidate-chest-flex-discard-v1+golden-wing-instance-removal-v1+neow-potion-reward-v1+settled-ordinary-acid-slime-v1+ordinary-zero-power-death-v1+ordinary-death-settlement-and-discard-v1+spore-public-history-and-terminal-v1+ordinary-death-targets-v1+settled-poisoned-ordinary-target-v1+r3-spore-receipts-v1+neow-direct-results-v1+neow-transform-two-grid-v1+neow-free-maxhp-leave-v1+neow-common-relic-leave-v1+permanent-removals-v1+opening-map-visible-choice-count-v1+first-fight-public-turn-counters-v1+ordinary-reward-source-v1+shining-light-ordinary-survivable-v1+public-paid-event-receipts-v1+public-hand-cost-icons-v1+neow-checked-direct-rules-v1+ordinary-reward-inventory-v1+ordinary-map-route-count-v1+ordinary-shop-affordable-rows-v1+visible-map-exits-v1+targeted-gold-row-v1+ending-map-visible-route-v1+neow-paid-250-gold-v1+public-permanent-upgrade-v1+neow-paid-rare-cards-v1+visible-match-board-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+linked-treasure-rewards-v1+r2-event-quotes-v1+public-hand-cost-icons-v1+privileged-draw-top-v1+tea-pending-v1+silent-a20-round4-v1+silent-a20-round5-v1+silent-a20-round6-v1+silent-a20-round7-v1+r7-combat-events-rewards-v2+r7-opening-shop-potions-v3+r7-casualties-hand-pandora-v4+r7-opening-thief-rewards-v5+privileged-thief-purses-v1+event-defeat-v1+r7-events-and-grids-v6+r7-native-choices-v7",
+    "state_sha256": "76b0e4c2156d535020ccfde19077d74ed45da044ae8b243e34e78d80d8e364e7",
+    "card_registry_sha256": "cc7dd2446135675ad273bbdc09914909f8ab1c0aca854a8c00dd3d8b6f91a26a",
+    "action_version": "silent-canonical-row-a193-v1",
+    "action_adapter_version": "canonical-row-choice64-v1+frontier-settled+compact-decisions-v2+public-transitions-v1+ordinary-events-rewards-v1+shop-reward-discard-gold-and-death-settlement-v1+ending-route-paid-neow-permanent-upgrade-cancel-and-complete-card-masks-v2+ordinary-targets-and-victory-loot-v1+match-poison-and-idol-v1+resource-events-shining-and-passive-boss-swap-v1+boss-combat-loot-and-wrist-discard-v1+settled-neow-and-linked-chest-rewards-v1+round1-flex-chest-v1+round2-v1+round3-calibration-v1+silent-a20-round4-v1+silent-a20-round5-v1+silent-a20-round6-v1+silent-a20-round7-v1+r7-combat-events-rewards-v2+r7-opening-shop-potions-v3+r7-casualties-hand-pandora-v4+r7-opening-thief-rewards-v5+r7-events-and-grids-v6+r7-native-choices-v7",
+    "action_contract_sha256": "0ae8ba53dfdde48ad0f4a4ae03cfd045fc2677ac50df3cae9a6ed7558962b78e",
+    "action_coordinates": "observation_monster_row",
+    "action_source_sha256": "d42fc1dc08d0063464440e200acefab50a0b9c2b2cadae50b52d6a6715afa5dc",
+    "state_decoder_sha256": "dfd4bd736dbab4ab7d63c6c99c3cc95368677dbd175679577b1432a5fe6b01b9",
+    "backend_build_sha256": "5f81347346994e460ceaa8e500ff3f08637a33f2eb4a220cff467fc8f6105fa5",
+    "backend_commit": "482b3ef29c93746ada7d6fd0fd16885d7cc30b1f",
+    "backend_observation_version": 4,
+    "backend_observation_dimension": 1761,
+    "backend_actions": 146,
+    "observation_dimension": 3127,
+    "actions": 193
+  },
+  "checked": [
+    {
+      "seed": 5,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 18,
+        "page": "DELEGATED",
+        "old_action": 172,
+        "new_action": [
+          110
+        ],
+        "old_menu": [
+          172,
+          179
+        ],
+        "new_menu": [
+          110,
+          111,
+          172,
+          179
+        ]
+      },
+      "earlier_decisions": 124,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 1000015,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 3,
+        "page": "NEOW_CARD_OFFER",
+        "old_action": 177,
+        "new_action": [
+          111
+        ],
+        "old_menu": [
+          177
+        ],
+        "new_menu": [
+          110,
+          111,
+          112,
+          177
+        ]
+      },
+      "earlier_decisions": 116,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 1000018,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 9,
+        "page": "DELEGATED",
+        "old_action": 172,
+        "new_action": [
+          110
+        ],
+        "old_menu": [
+          172,
+          179
+        ],
+        "new_menu": [
+          110,
+          172,
+          179
+        ]
+      },
+      "earlier_decisions": 77,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 1000024,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 32,
+        "page": "DELEGATED",
+        "old_action": 179,
+        "new_action": [
+          172
+        ],
+        "old_menu": [
+          172,
+          179
+        ],
+        "new_menu": [
+          110,
+          111,
+          112,
+          113,
+          114,
+          172,
+          179
+        ]
+      },
+      "earlier_decisions": 155,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 1000033,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 3,
+        "page": "NEOW_CARD_OFFER",
+        "old_action": 177,
+        "new_action": [
+          111
+        ],
+        "old_menu": [
+          177
+        ],
+        "new_menu": [
+          110,
+          111,
+          112,
+          177
+        ]
+      },
+      "earlier_decisions": 117,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 1000066,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 22,
+        "page": "DELEGATED",
+        "old_action": 172,
+        "new_action": [
+          179
+        ],
+        "old_menu": [
+          172,
+          179
+        ],
+        "new_menu": [
+          110,
+          172,
+          179
+        ]
+      },
+      "earlier_decisions": 163,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 2000021,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 13,
+        "page": "DELEGATED",
+        "old_action": 112,
+        "new_action": [
+          113
+        ],
+        "old_menu": [
+          110,
+          111,
+          112,
+          113
+        ],
+        "new_menu": [
+          110,
+          111,
+          112,
+          113
+        ]
+      },
+      "earlier_decisions": 158,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 2000032,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 18,
+        "page": "DELEGATED",
+        "old_action": 179,
+        "new_action": [
+          172
+        ],
+        "old_menu": [
+          172,
+          179
+        ],
+        "new_menu": [
+          110,
+          111,
+          112,
+          172,
+          179
+        ]
+      },
+      "earlier_decisions": 130,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 2000051,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 38,
+        "page": "DELEGATED",
+        "old_action": 179,
+        "new_action": [
+          172
+        ],
+        "old_menu": [
+          172,
+          179
+        ],
+        "new_menu": [
+          110,
+          111,
+          172,
+          179
+        ]
+      },
+      "earlier_decisions": 97,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 3000005,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 19,
+        "page": "DELEGATED",
+        "old_action": 172,
+        "new_action": [
+          110
+        ],
+        "old_menu": [
+          172,
+          179
+        ],
+        "new_menu": [
+          110,
+          172,
+          179
+        ]
+      },
+      "earlier_decisions": 122,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 3000019,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 30,
+        "page": "DELEGATED",
+        "old_action": 172,
+        "new_action": [
+          179
+        ],
+        "old_menu": [
+          172,
+          179
+        ],
+        "new_menu": [
+          110,
+          111,
+          112,
+          172,
+          179
+        ]
+      },
+      "earlier_decisions": 152,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 3000024,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 41,
+        "page": "DELEGATED",
+        "old_action": 179,
+        "new_action": [
+          112
+        ],
+        "old_menu": [
+          172,
+          179
+        ],
+        "new_menu": [
+          110,
+          111,
+          112,
+          172,
+          179
+        ]
+      },
+      "earlier_decisions": 137,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 3000043,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 19,
+        "page": "DELEGATED",
+        "old_action": 172,
+        "new_action": [
+          111
+        ],
+        "old_menu": [
+          172,
+          179
+        ],
+        "new_menu": [
+          110,
+          111,
+          172,
+          179
+        ]
+      },
+      "earlier_decisions": 111,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 3000050,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 27,
+        "page": "DELEGATED",
+        "old_action": 179,
+        "new_action": [
+          172
+        ],
+        "old_menu": [
+          172,
+          179
+        ],
+        "new_menu": [
+          110,
+          111,
+          172,
+          179
+        ]
+      },
+      "earlier_decisions": 105,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 3000055,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 26,
+        "page": "DELEGATED",
+        "old_action": 172,
+        "new_action": [
+          111
+        ],
+        "old_menu": [
+          172,
+          179
+        ],
+        "new_menu": [
+          110,
+          111,
+          112,
+          172,
+          179
+        ]
+      },
+      "earlier_decisions": 96,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 5000011,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 13,
+        "page": "DELEGATED",
+        "old_action": 179,
+        "new_action": [
+          172
+        ],
+        "old_menu": [
+          172,
+          179
+        ],
+        "new_menu": [
+          110,
+          172,
+          179
+        ]
+      },
+      "earlier_decisions": 58,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 5000027,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 27,
+        "page": "DELEGATED",
+        "old_action": 172,
+        "new_action": [
+          110
+        ],
+        "old_menu": [
+          172,
+          179
+        ],
+        "new_menu": [
+          110,
+          111,
+          172,
+          179
+        ]
+      },
+      "earlier_decisions": 110,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 5000029,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 22,
+        "page": "DELEGATED",
+        "old_action": 179,
+        "new_action": [
+          172
+        ],
+        "old_menu": [
+          172,
+          179
+        ],
+        "new_menu": [
+          110,
+          111,
+          172,
+          179
+        ]
+      },
+      "earlier_decisions": 128,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 5000031,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 8,
+        "page": "DELEGATED",
+        "old_action": 172,
+        "new_action": [
+          110
+        ],
+        "old_menu": [
+          172,
+          179
+        ],
+        "new_menu": [
+          110,
+          111,
+          112,
+          113,
+          114,
+          172,
+          179
+        ]
+      },
+      "earlier_decisions": 107,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 5000039,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 8,
+        "page": "DELEGATED",
+        "old_action": 172,
+        "new_action": [
+          110
+        ],
+        "old_menu": [
+          172,
+          179
+        ],
+        "new_menu": [
+          110,
+          111,
+          112,
+          113,
+          114,
+          172,
+          179
+        ]
+      },
+      "earlier_decisions": 80,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 5000052,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 11,
+        "page": "DELEGATED",
+        "old_action": 172,
+        "new_action": [
+          110
+        ],
+        "old_menu": [
+          172,
+          179
+        ],
+        "new_menu": [
+          110,
+          111,
+          112,
+          172,
+          179
+        ]
+      },
+      "earlier_decisions": 163,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 5000062,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 10,
+        "page": "DELEGATED",
+        "old_action": 179,
+        "new_action": [
+          172
+        ],
+        "old_menu": [
+          172,
+          179
+        ],
+        "new_menu": [
+          110,
+          111,
+          112,
+          113,
+          172,
+          179
+        ]
+      },
+      "earlier_decisions": 167,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 6000029,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 3,
+        "page": "NEOW_CARD_OFFER",
+        "old_action": 177,
+        "new_action": [
+          111
+        ],
+        "old_menu": [
+          177
+        ],
+        "new_menu": [
+          110,
+          111,
+          112,
+          177
+        ]
+      },
+      "earlier_decisions": 96,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 6000050,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 28,
+        "page": "DELEGATED",
+        "old_action": 172,
+        "new_action": [
+          179
+        ],
+        "old_menu": [
+          172,
+          179
+        ],
+        "new_menu": [
+          110,
+          111,
+          112,
+          172,
+          179
+        ]
+      },
+      "earlier_decisions": 145,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 7000008,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 31,
+        "page": "DELEGATED",
+        "old_action": 172,
+        "new_action": [
+          179
+        ],
+        "old_menu": [
+          172,
+          179
+        ],
+        "new_menu": [
+          110,
+          172,
+          179
+        ]
+      },
+      "earlier_decisions": 96,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 7000036,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 35,
+        "page": "DELEGATED",
+        "old_action": 172,
+        "new_action": [
+          110
+        ],
+        "old_menu": [
+          172,
+          179
+        ],
+        "new_menu": [
+          110,
+          111,
+          112,
+          172,
+          179
+        ]
+      },
+      "earlier_decisions": 109,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 7000046,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 26,
+        "page": "DELEGATED",
+        "old_action": 179,
+        "new_action": [
+          172
+        ],
+        "old_menu": [
+          172,
+          179
+        ],
+        "new_menu": [
+          110,
+          172,
+          179
+        ]
+      },
+      "earlier_decisions": 97,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 7000060,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 3,
+        "page": "NEOW_CARD_OFFER",
+        "old_action": 177,
+        "new_action": [
+          111
+        ],
+        "old_menu": [
+          177
+        ],
+        "new_menu": [
+          110,
+          111,
+          112,
+          177
+        ]
+      },
+      "earlier_decisions": 86,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 8000025,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 29,
+        "page": "SHOP_SCREEN",
+        "old_action": 111,
+        "new_action": [
+          112
+        ],
+        "old_menu": [
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          178
+        ],
+        "new_menu": [
+          110,
+          111,
+          112,
+          113,
+          114,
+          115,
+          116,
+          117,
+          118,
+          178
+        ]
+      },
+      "earlier_decisions": 152,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 8000045,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 8,
+        "page": "DELEGATED",
+        "old_action": 172,
+        "new_action": [
+          111
+        ],
+        "old_menu": [
+          172,
+          179
+        ],
+        "new_menu": [
+          110,
+          111,
+          112,
+          113,
+          172,
+          179
+        ]
+      },
+      "earlier_decisions": 83,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 8000049,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 20,
+        "page": "DELEGATED",
+        "old_action": 172,
+        "new_action": [
+          111
+        ],
+        "old_menu": [
+          172,
+          179
+        ],
+        "new_menu": [
+          110,
+          111,
+          172,
+          179
+        ]
+      },
+      "earlier_decisions": 85,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 8000057,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 24,
+        "page": "DELEGATED",
+        "old_action": 172,
+        "new_action": [
+          110
+        ],
+        "old_menu": [
+          172,
+          179
+        ],
+        "new_menu": [
+          110,
+          172,
+          179
+        ]
+      },
+      "earlier_decisions": 134,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 9000032,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 25,
+        "page": "DELEGATED",
+        "old_action": 179,
+        "new_action": [
+          172
+        ],
+        "old_menu": [
+          172,
+          179
+        ],
+        "new_menu": [
+          110,
+          172,
+          179
+        ]
+      },
+      "earlier_decisions": 119,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 17000005,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 21,
+        "page": "DELEGATED",
+        "old_action": 172,
+        "new_action": [
+          111
+        ],
+        "old_menu": [
+          172,
+          179
+        ],
+        "new_menu": [
+          110,
+          111,
+          172,
+          179
+        ]
+      },
+      "earlier_decisions": 129,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 17000031,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 10,
+        "page": "DELEGATED",
+        "old_action": 110,
+        "new_action": [
+          111
+        ],
+        "old_menu": [
+          110,
+          111
+        ],
+        "new_menu": [
+          110,
+          111
+        ]
+      },
+      "earlier_decisions": 148,
+      "first_old_path_issue": null
+    },
+    {
+      "seed": 17000057,
+      "earlier_terminal_reached": true,
+      "first_changed_policy_decision": {
+        "step": 73,
+        "page": "DELEGATED",
+        "old_action": 179,
+        "new_action": [
+          112
+        ],
+        "old_menu": [
+          172,
+          179
+        ],
+        "new_menu": [
+          110,
+          111,
+          112,
+          172,
+          179
+        ]
+      },
+      "earlier_decisions": 119,
+      "first_old_path_issue": null
+    }
+  ]
+}

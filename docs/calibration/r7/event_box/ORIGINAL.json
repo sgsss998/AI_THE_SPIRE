@@ -1,0 +1,98 @@
+{
+  "original_jar": "880ca5646d02065a061bbbdf7cc106dc1443d5afc6b9560f512486b098fd627b",
+  "methods": {
+    "events.exordium.BigFish#buttonEffect(I)V": [
+      "153: INVOKESPECIAL com.megacrit.cardcrawl.cards.curses.Regret.<init>()V",
+      "199: INVOKESPECIAL com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect.<init>(Lcom/megacrit/cardcrawl/cards/AbstractCard;FF)V",
+      "202: INVOKEVIRTUAL java.util.ArrayList.add(Ljava/lang/Object;)Z",
+      "222: INVOKEVIRTUAL com.megacrit.cardcrawl.rooms.AbstractRoom.spawnRelicAndObtain(FFLcom/megacrit/cardcrawl/relics/AbstractRelic;)V"
+    ],
+    "vfx.cardManip.ShowCardAndObtainEffect#<init>(Lcom/megacrit/cardcrawl/cards/AbstractCard;FFZ)V": [
+      "17: LDC Omamori",
+      "19: INVOKEVIRTUAL com.megacrit.cardcrawl.characters.AbstractPlayer.hasRelic(Ljava/lang/String;)Z",
+      "33: GETFIELD com.megacrit.cardcrawl.relics.AbstractRelic.counter:I",
+      "60: PUTFIELD com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect.isDone:Z"
+    ],
+    "rooms.AbstractRoom#spawnRelicAndObtain(FFLcom/megacrit/cardcrawl/relics/AbstractRelic;)V": [
+      "68: INVOKEVIRTUAL com.megacrit.cardcrawl.relics.AbstractRelic.obtain()V"
+    ],
+    "relics.AbstractRelic#obtain()V": [
+      "65: GETFIELD com.megacrit.cardcrawl.characters.AbstractPlayer.relics:Ljava/util/ArrayList;",
+      "68: INVOKEVIRTUAL java.util.ArrayList.size()I",
+      "96: GETFIELD com.megacrit.cardcrawl.characters.AbstractPlayer.relics:Ljava/util/ArrayList;",
+      "100: INVOKEVIRTUAL java.util.ArrayList.add(Ljava/lang/Object;)Z"
+    ],
+    "vfx.cardManip.ShowCardAndObtainEffect#update()V": [
+      "2: GETFIELD com.megacrit.cardcrawl.vfx.cardManip.ShowCardAndObtainEffect.duration:F",
+      "36: GETFIELD com.megacrit.cardcrawl.characters.AbstractPlayer.relics:Ljava/util/ArrayList;",
+      "67: INVOKEVIRTUAL com.megacrit.cardcrawl.relics.AbstractRelic.onObtainCard(Lcom/megacrit/cardcrawl/cards/AbstractCard;)V",
+      "129: INVOKEVIRTUAL com.megacrit.cardcrawl.relics.AbstractRelic.onMasterDeckChange()V"
+    ],
+    "relics.CeramicFish#onObtainCard(Lcom/megacrit/cardcrawl/cards/AbstractCard;)V": [
+      "3: BIPUSH 9",
+      "5: INVOKEVIRTUAL com.megacrit.cardcrawl.characters.AbstractPlayer.gainGold(I)V"
+    ],
+    "relics.DarkstonePeriapt#onObtainCard(Lcom/megacrit/cardcrawl/cards/AbstractCard;)V": [
+      "4: GETSTATIC com.megacrit.cardcrawl.cards.AbstractCard$CardColor.CURSE:Lcom/megacrit/cardcrawl/cards/AbstractCard$CardColor;",
+      "21: BIPUSH 6",
+      "24: INVOKEVIRTUAL com.megacrit.cardcrawl.characters.AbstractPlayer.increaseMaxHp(IZ)V"
+    ],
+    "relics.MoltenEgg2#onObtainCard(Lcom/megacrit/cardcrawl/cards/AbstractCard;)V": [
+      "4: GETSTATIC com.megacrit.cardcrawl.cards.AbstractCard$CardType.ATTACK:Lcom/megacrit/cardcrawl/cards/AbstractCard$CardType;",
+      "11: INVOKEVIRTUAL com.megacrit.cardcrawl.cards.AbstractCard.canUpgrade()Z",
+      "25: INVOKEVIRTUAL com.megacrit.cardcrawl.cards.AbstractCard.upgrade()V"
+    ],
+    "relics.MoltenEgg2#onEquip()V": [
+      "0: GETSTATIC com.megacrit.cardcrawl.dungeons.AbstractDungeon.combatRewardScreen:Lcom/megacrit/cardcrawl/screens/CombatRewardScreen;",
+      "3: GETFIELD com.megacrit.cardcrawl.screens.CombatRewardScreen.rewards:Ljava/util/ArrayList;"
+    ],
+    "relics.ToxicEgg2#onObtainCard(Lcom/megacrit/cardcrawl/cards/AbstractCard;)V": [
+      "4: GETSTATIC com.megacrit.cardcrawl.cards.AbstractCard$CardType.SKILL:Lcom/megacrit/cardcrawl/cards/AbstractCard$CardType;",
+      "11: INVOKEVIRTUAL com.megacrit.cardcrawl.cards.AbstractCard.canUpgrade()Z",
+      "25: INVOKEVIRTUAL com.megacrit.cardcrawl.cards.AbstractCard.upgrade()V"
+    ],
+    "relics.ToxicEgg2#onEquip()V": [
+      "0: GETSTATIC com.megacrit.cardcrawl.dungeons.AbstractDungeon.combatRewardScreen:Lcom/megacrit/cardcrawl/screens/CombatRewardScreen;",
+      "3: GETFIELD com.megacrit.cardcrawl.screens.CombatRewardScreen.rewards:Ljava/util/ArrayList;"
+    ],
+    "relics.FrozenEgg2#onObtainCard(Lcom/megacrit/cardcrawl/cards/AbstractCard;)V": [
+      "4: GETSTATIC com.megacrit.cardcrawl.cards.AbstractCard$CardType.POWER:Lcom/megacrit/cardcrawl/cards/AbstractCard$CardType;",
+      "11: INVOKEVIRTUAL com.megacrit.cardcrawl.cards.AbstractCard.canUpgrade()Z",
+      "25: INVOKEVIRTUAL com.megacrit.cardcrawl.cards.AbstractCard.upgrade()V"
+    ],
+    "relics.FrozenEgg2#onEquip()V": [
+      "0: GETSTATIC com.megacrit.cardcrawl.dungeons.AbstractDungeon.combatRewardScreen:Lcom/megacrit/cardcrawl/screens/CombatRewardScreen;",
+      "3: GETFIELD com.megacrit.cardcrawl.screens.CombatRewardScreen.rewards:Ljava/util/ArrayList;"
+    ],
+    "relics.DuVuDoll#onEquip()V": [
+      "1: ICONST_0",
+      "2: PUTFIELD com.megacrit.cardcrawl.relics.DuVuDoll.counter:I",
+      "8: GETFIELD com.megacrit.cardcrawl.characters.AbstractPlayer.masterDeck:Lcom/megacrit/cardcrawl/cards/CardGroup;",
+      "41: GETSTATIC com.megacrit.cardcrawl.cards.AbstractCard$CardType.CURSE:Lcom/megacrit/cardcrawl/cards/AbstractCard$CardType;",
+      "53: IADD",
+      "54: PUTFIELD com.megacrit.cardcrawl.relics.DuVuDoll.counter:I"
+    ],
+    "relics.DuVuDoll#onMasterDeckChange()V": [
+      "1: ICONST_0",
+      "2: PUTFIELD com.megacrit.cardcrawl.relics.DuVuDoll.counter:I",
+      "8: GETFIELD com.megacrit.cardcrawl.characters.AbstractPlayer.masterDeck:Lcom/megacrit/cardcrawl/cards/CardGroup;",
+      "41: GETSTATIC com.megacrit.cardcrawl.cards.AbstractCard$CardType.CURSE:Lcom/megacrit/cardcrawl/cards/AbstractCard$CardType;",
+      "53: IADD",
+      "54: PUTFIELD com.megacrit.cardcrawl.relics.DuVuDoll.counter:I"
+    ],
+    "relics.Sundial#onEquip()V": [
+      "1: ICONST_0",
+      "2: PUTFIELD com.megacrit.cardcrawl.relics.Sundial.counter:I"
+    ],
+    "relics.PotionBelt#onEquip()V": [
+      "4: GETFIELD com.megacrit.cardcrawl.characters.AbstractPlayer.potionSlots:I",
+      "7: ICONST_2",
+      "8: IADD",
+      "9: PUTFIELD com.megacrit.cardcrawl.characters.AbstractPlayer.potionSlots:I",
+      "30: INVOKESPECIAL com.megacrit.cardcrawl.potions.PotionSlot.<init>(I)V",
+      "33: INVOKEVIRTUAL java.util.ArrayList.add(Ljava/lang/Object;)Z",
+      "55: INVOKESPECIAL com.megacrit.cardcrawl.potions.PotionSlot.<init>(I)V",
+      "58: INVOKEVIRTUAL java.util.ArrayList.add(Ljava/lang/Object;)Z"
+    ]
+  }
+}

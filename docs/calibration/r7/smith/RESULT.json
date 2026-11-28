@@ -1,0 +1,83 @@
+{
+  "retail_jar": "880ca5646d02065a061bbbdf7cc106dc1443d5afc6b9560f512486b098fd627b",
+  "cancel_method_hash": "4ef630e89df9df51889dc6557fc5799c685bf4adf1c17c44d5c8d5dfe58d1580",
+  "cancel_operations": [
+    "276: GETFIELD com.megacrit.cardcrawl.screens.select.GridCardSelectScreen.forUpgrade:Z",
+    "303: GETFIELD com.megacrit.cardcrawl.screens.select.GridCardSelectScreen.confirmScreenUp:Z",
+    "312: INVOKEVIRTUAL com.megacrit.cardcrawl.screens.select.GridCardSelectScreen.cancelUpgrade()V",
+    "318: INVOKESTATIC com.megacrit.cardcrawl.dungeons.AbstractDungeon.closeCurrentScreen()V",
+    "341: INVOKEVIRTUAL com.megacrit.cardcrawl.rooms.CampfireUI.reopen()V",
+    "383: INVOKESTATIC com.megacrit.cardcrawl.dungeons.AbstractDungeon.closeCurrentScreen()V"
+  ],
+  "scope": "Original menus and actual confirmation; both cancel branches are simulator alternatives checked against the original method.",
+  "cases": [
+    {
+      "first_grid_input": 57,
+      "raw_before": "78300ea9c580b4546af2c6301405f146ca1c8c297fd74e74a688baa311407bb4",
+      "raw_preview": "446d75bc554ecea4cf7f792d5a983bd06539f9bb514b0e1d7453962bb7cf2f67",
+      "native_grid": [
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        173
+      ],
+      "native_preview": [
+        172,
+        173
+      ],
+      "native_actual_confirm_uuid": "a76b6896-37f6-4dfc-b9b1-d0d580bf4e9c",
+      "simulated_cancel_order": [
+        "preview to list",
+        "list to original rest menu"
+      ],
+      "reselected": 121,
+      "permanent_deck_index": 12
+    },
+    {
+      "first_grid_input": 92,
+      "raw_before": "f35de2929138803857c06fd4c88d635f7aafd8bd56e882764c742fcc12d13689",
+      "raw_preview": "445fd1b591f31adccfa39700abeea99c2968faddb2af83c597aeb987bbf22d0e",
+      "native_grid": [
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        173
+      ],
+      "native_preview": [
+        172,
+        173
+      ],
+      "native_actual_confirm_uuid": "161b71a1-ed7f-46fa-a346-52647423bc73",
+      "simulated_cancel_order": [
+        "preview to list",
+        "list to original rest menu"
+      ],
+      "reselected": 120,
+      "permanent_deck_index": 11
+    }
+  ]
+}

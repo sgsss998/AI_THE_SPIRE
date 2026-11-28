@@ -1,0 +1,411 @@
+{
+  "seed": 9763128100447777033,
+  "original_steps": 339,
+  "verified_tenth_card_triggers": 14,
+  "archive_sha256": "a1d663d675d444dbe32d2e304430dbdfb71eb4d05d7261adbad6e2562c189b33",
+  "top_predictions": 12,
+  "reshuffle_triggers": 1,
+  "native_rule": "880ca5646d02065a061bbbdf7cc106dc1443d5afc6b9560f512486b098fd627b",
+  "cases": [
+    {
+      "index": 111,
+      "floor": 10,
+      "real_before": "3f794a634975c92dd117daca846de88e17696c159c8f5855c927d40a8b145c9d",
+      "real_after": "cef992bd08e3b9b44a37f50e31e4b0113c21e45ad8c483f95ac63a5fa624f342",
+      "original_counter": [
+        9,
+        0
+      ],
+      "model_counter": [
+        9,
+        0
+      ],
+      "prior_draw": 6,
+      "next_draw": 5,
+      "new_hand_cards": [
+        [
+          "Strike_G",
+          0
+        ]
+      ],
+      "identified_preexisting_top": {
+        "uuid": "2f2b6255-5c9a-43da-837a-eb9b69622f70",
+        "card": "Strike_G",
+        "upgraded": 0
+      },
+      "reshuffle": false
+    },
+    {
+      "index": 126,
+      "floor": 10,
+      "real_before": "4eb041f29cf0b36cb1513c8a3ed5a7845ff4d98e280fec6d22e688bf44fe18ca",
+      "real_after": "870000f09858616ca94d73a45e2f11235c17eb656f16de9fac69b70fcfe9d3f7",
+      "original_counter": [
+        9,
+        0
+      ],
+      "model_counter": [
+        9,
+        0
+      ],
+      "prior_draw": 1,
+      "next_draw": 0,
+      "new_hand_cards": [
+        [
+          "Defend_G",
+          0
+        ]
+      ],
+      "identified_preexisting_top": {
+        "uuid": "978f15f5-9c9a-4761-9af9-0a2917273306",
+        "card": "Defend_G",
+        "upgraded": 0
+      },
+      "reshuffle": false
+    },
+    {
+      "index": 144,
+      "floor": 11,
+      "real_before": "06ada48bca9f40b1d50349ef71fbf9806247bc0ea74e6480b5722deb8c469e66",
+      "real_after": "28dfb553ef252389bc58a0728e53094edd6e9d0b21ce4d9c7f5ead2d0fa8e024",
+      "original_counter": [
+        9,
+        0
+      ],
+      "model_counter": [
+        9,
+        0
+      ],
+      "prior_draw": 7,
+      "next_draw": 6,
+      "new_hand_cards": [
+        [
+          "AscendersBane",
+          0
+        ]
+      ],
+      "identified_preexisting_top": {
+        "uuid": "327912a4-6f4b-45a8-93ed-44b36072f7b1",
+        "card": "AscendersBane",
+        "upgraded": 0
+      },
+      "reshuffle": false
+    },
+    {
+      "index": 168,
+      "floor": 12,
+      "real_before": "03b3d9b99d1c21d80911027ebc2824ccc1ee18889e95106c2395550db9cbe72a",
+      "real_after": "bf5962fa1c5cf525e2cb3a39adc2c9b0766ad3d09f1b0093375b5d0b68f8a46c",
+      "original_counter": [
+        9,
+        0
+      ],
+      "model_counter": [
+        9,
+        0
+      ],
+      "prior_draw": 13,
+      "next_draw": 10,
+      "new_hand_cards": [
+        [
+          "Survivor",
+          1
+        ],
+        [
+          "Dodge and Roll",
+          1
+        ],
+        [
+          "AscendersBane",
+          0
+        ]
+      ],
+      "identified_preexisting_top": null,
+      "reshuffle": false
+    },
+    {
+      "index": 180,
+      "floor": 12,
+      "real_before": "e0dde6a2ce3029ef1f01c71ab862c6e0febbf3bc007ed59e53f30b73c572d768",
+      "real_after": "47e0a6a70d74f39b9e9d9651e7db39855d8345fef075f832d3aa8e096f0da25e",
+      "original_counter": [
+        9,
+        0
+      ],
+      "model_counter": [
+        9,
+        0
+      ],
+      "prior_draw": 0,
+      "next_draw": 13,
+      "new_hand_cards": [
+        [
+          "Dodge and Roll",
+          1
+        ]
+      ],
+      "identified_preexisting_top": null,
+      "reshuffle": true
+    },
+    {
+      "index": 193,
+      "floor": 12,
+      "real_before": "3c5263776defa2d6704821eb6d26b1e61dcc455bb44556435073f84231f63919",
+      "real_after": "19f8eb506c86d35debc1cc630ef031d619b1c7c55cb6e02de9b6c1484cabf4cc",
+      "original_counter": [
+        9,
+        0
+      ],
+      "model_counter": [
+        9,
+        0
+      ],
+      "prior_draw": 13,
+      "next_draw": 12,
+      "new_hand_cards": [
+        [
+          "Shiv",
+          0
+        ],
+        [
+          "Blade Dance",
+          0
+        ]
+      ],
+      "identified_preexisting_top": {
+        "uuid": "5845c3be-265a-4078-9748-6dfb1e1146b2",
+        "card": "Blade Dance",
+        "upgraded": 0
+      },
+      "reshuffle": false
+    },
+    {
+      "index": 211,
+      "floor": 13,
+      "real_before": "86dad1e55a6da62a5cf96d683355e1a1b6c94079f2765bdb2e0bc723bc2d3fdb",
+      "real_after": "b7e3489628b07f553535d6c5a2c4c9d308c20bdacd16cafe1fd9a20e3ee0ec57",
+      "original_counter": [
+        9,
+        0
+      ],
+      "model_counter": [
+        9,
+        0
+      ],
+      "prior_draw": 9,
+      "next_draw": 8,
+      "new_hand_cards": [
+        [
+          "Defend_G",
+          0
+        ]
+      ],
+      "identified_preexisting_top": {
+        "uuid": "cc468cec-9983-42e8-9e52-495935c5bf56",
+        "card": "Defend_G",
+        "upgraded": 0
+      },
+      "reshuffle": false
+    },
+    {
+      "index": 225,
+      "floor": 13,
+      "real_before": "e2cbcd4d1cc817aa11d03b7afe851ebf32cbae2d86759e7d718112b7d85f6f47",
+      "real_after": "3608dfbccf4b86662ed276048100f6fd6c0001c2ae28a8411b2806f23a1de7d6",
+      "original_counter": [
+        9,
+        0
+      ],
+      "model_counter": [
+        9,
+        0
+      ],
+      "prior_draw": 12,
+      "next_draw": 11,
+      "new_hand_cards": [
+        [
+          "Blade Dance",
+          0
+        ]
+      ],
+      "identified_preexisting_top": {
+        "uuid": "5845c3be-265a-4078-9748-6dfb1e1146b2",
+        "card": "Blade Dance",
+        "upgraded": 0
+      },
+      "reshuffle": false
+    },
+    {
+      "index": 253,
+      "floor": 16,
+      "real_before": "c74616e814b8e632a6de9392721899e67afa057c7ec8a9a9eb351618b1a07bcf",
+      "real_after": "563d8fb91bf503e3b7072a213007bb0225a5a3a48c0736c79b12937a2d60d961",
+      "original_counter": [
+        9,
+        0
+      ],
+      "model_counter": [
+        9,
+        0
+      ],
+      "prior_draw": 16,
+      "next_draw": 15,
+      "new_hand_cards": [
+        [
+          "Strike_G",
+          0
+        ]
+      ],
+      "identified_preexisting_top": {
+        "uuid": "a16ead6e-8e30-4589-b2c9-28c84ef5a857",
+        "card": "Strike_G",
+        "upgraded": 0
+      },
+      "reshuffle": false
+    },
+    {
+      "index": 270,
+      "floor": 16,
+      "real_before": "525ef1cc9b01bda06b2a6e495a54f82ec9e480a8c0190bac52817b8762cf372b",
+      "real_after": "94575f37f091bd3493d49e1e8c83b7e5a8ada373c4300f9cb4707bc322e8e3b9",
+      "original_counter": [
+        9,
+        0
+      ],
+      "model_counter": [
+        9,
+        0
+      ],
+      "prior_draw": 17,
+      "next_draw": 16,
+      "new_hand_cards": [
+        [
+          "Shiv",
+          0
+        ],
+        [
+          "Defend_G",
+          0
+        ]
+      ],
+      "identified_preexisting_top": {
+        "uuid": "c7f8328f-ab98-4c94-a291-f0b73eff15ab",
+        "card": "Defend_G",
+        "upgraded": 0
+      },
+      "reshuffle": false
+    },
+    {
+      "index": 282,
+      "floor": 16,
+      "real_before": "76408fb40c277a9201a4c52229712335b153e41f5353518b6f7f52aee8673087",
+      "real_after": "34db93b79b8eb20cace1d2c137b480da928ed8a83a2f44df7a8259129b242af4",
+      "original_counter": [
+        9,
+        0
+      ],
+      "model_counter": [
+        9,
+        0
+      ],
+      "prior_draw": 4,
+      "next_draw": 3,
+      "new_hand_cards": [
+        [
+          "Defend_G",
+          0
+        ]
+      ],
+      "identified_preexisting_top": {
+        "uuid": "978f15f5-9c9a-4761-9af9-0a2917273306",
+        "card": "Defend_G",
+        "upgraded": 0
+      },
+      "reshuffle": false
+    },
+    {
+      "index": 296,
+      "floor": 16,
+      "real_before": "cba82e808a599d739830f5dc15e0c011c6c4fcbf575514e121793420c0eb171d",
+      "real_after": "e320679a641653fd76f06f68c5d629cf65cda39399947cfe7ca14c09cb4df1ea",
+      "original_counter": [
+        9,
+        0
+      ],
+      "model_counter": [
+        9,
+        0
+      ],
+      "prior_draw": 11,
+      "next_draw": 10,
+      "new_hand_cards": [
+        [
+          "Dodge and Roll",
+          1
+        ]
+      ],
+      "identified_preexisting_top": {
+        "uuid": "a76b6896-37f6-4dfc-b9b1-d0d580bf4e9c",
+        "card": "Dodge and Roll",
+        "upgraded": 1
+      },
+      "reshuffle": false
+    },
+    {
+      "index": 315,
+      "floor": 16,
+      "real_before": "305f08fb9e6589d9e64e6ac88725b58580c4d469933bd5479ed72e1e47ef2edc",
+      "real_after": "192a141ad95bf338e02f9e3fa83da8dd1e5e9f037b8252217a4ef0ef47892b13",
+      "original_counter": [
+        9,
+        0
+      ],
+      "model_counter": [
+        9,
+        0
+      ],
+      "prior_draw": 17,
+      "next_draw": 16,
+      "new_hand_cards": [
+        [
+          "Burn",
+          1
+        ]
+      ],
+      "identified_preexisting_top": {
+        "uuid": "d3718296-2640-4d1d-afc7-23dee57bce79",
+        "card": "Burn",
+        "upgraded": 1
+      },
+      "reshuffle": false
+    },
+    {
+      "index": 331,
+      "floor": 16,
+      "real_before": "19122a98dc44dac5125d8b77faf9acdbdcbfa8d35e75decc1421f2f9185176bf",
+      "real_after": "941072578f74e721d898ed450e65c02d02e8c75cbbe973c24a2cbf17f8821912",
+      "original_counter": [
+        9,
+        0
+      ],
+      "model_counter": [
+        9,
+        0
+      ],
+      "prior_draw": 5,
+      "next_draw": 4,
+      "new_hand_cards": [
+        [
+          "Burn",
+          1
+        ]
+      ],
+      "identified_preexisting_top": {
+        "uuid": "b4ed0987-c34d-4ce4-8ee0-45e337d0a4ad",
+        "card": "Burn",
+        "upgraded": 1
+      },
+      "reshuffle": false
+    }
+  ]
+}
